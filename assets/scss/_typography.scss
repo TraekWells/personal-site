@@ -48,11 +48,40 @@ p {
 }
 
 a {
-  font-size: 1.8rem;
+  font-size: inherit;
   position: relative;
   text-decoration: none;
 
-  &::after {
+  &:not(.navigation__link):not(.button) {
+    color: var(--color-primary-700);
+  }
+
+  &:not(.button)::before {
+    content: '';
+    background-color: var(--color-primary-300);
+    transform: translateX(0);
+    position: absolute;
+    bottom: -0.25rem;
+    left: 0;
+    right: 0;
+    height: 0.2rem;
+    transition: 0.2s ease all;
+  }
+
+  &:not(.button)::after {
+    content: '';
+    background-color: var(--color-primary-500);
+    transform: translateX(0);
+    position: absolute;
+    bottom: -0.25rem;
+    left: 0;
+    width: 0%;
+    height: 0.2rem;
+    transition: 0.2s ease all;
+  }
+
+  &:hover::after {
+    width: 100%;
   }
 }
 
@@ -65,5 +94,5 @@ a {
 
 li {
   font-size: 1.8rem;
-  line-height: 1.6;
+  line-height: 1.8;
 }

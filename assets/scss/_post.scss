@@ -1,0 +1,35 @@
+.post {
+  display: flex;
+  align-items: flex-start;
+
+  ul:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  &__content {
+    flex-basis: 70%;
+    margin-right: 6rem;
+  }
+
+  &__sidebar {
+    flex-basis: 30%;
+    background-color: var(--color-primary-100);
+    padding: 3rem;
+    border-radius: var(--border-radius-sm);
+    position: sticky;
+    top: 13rem;
+
+    p {
+      margin-top: 0;
+    }
+
+    li {
+      list-style: none;
+      margin-bottom: 0.5rem;
+    }
+
+    @include respond-to(phone) {
+      display: none;
+    }
+  }
+}

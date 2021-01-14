@@ -7,10 +7,14 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 10rem;
 }
 
 html,
-body {
+body,
+ul,
+li {
   margin: 0;
   padding: 0;
 }

@@ -6,4 +6,9 @@
   border-radius: 3rem;
   padding: 1rem 2.5rem;
   font-size: 1.8rem;
+  transition: 0.3s ease all;
+
+  &:hover {
+    background-color: var(--color-primary-700);
+  }
 }
