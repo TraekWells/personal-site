@@ -4,11 +4,19 @@
       <nuxt-link :to="blog.path">{{ blog.title }}</nuxt-link>
     </h3>
     <p>{{ blog.summary }}</p>
+    <a :href="blog.path" class="read-more"
+      >Read More <ArrowRightIcon></ArrowRightIcon
+    ></a>
   </article>
 </template>
 
 <script>
+import { ArrowRightIcon } from 'vue-feather-icons'
+
 export default {
+  components: {
+    ArrowRightIcon,
+  },
   props: {
     blog: {
       type: Object,
@@ -35,9 +43,23 @@ export default {
     margin-bottom: 2rem;
   }
 
-  &:hover {
+  .read-more {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    border-bottom: none;
+
     svg {
-      transform: translateX(2rem);
+      transition: 0.2s ease transform;
+      margin-left: 1rem;
+    }
+
+    &:hover {
+      border-bottom: none;
+
+      svg {
+        transform: translateX(1rem);
+      }
     }
   }
 }

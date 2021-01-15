@@ -8,12 +8,20 @@
         <nuxt-link :to="project.path">{{ project.title }}</nuxt-link>
       </h3>
       <p>{{ project.summary }}</p>
+      <a :href="project.path" class="read-more"
+        >Project Details <ArrowRightIcon></ArrowRightIcon
+      ></a>
     </div>
   </article>
 </template>
 
 <script>
+import { ArrowRightIcon } from 'vue-feather-icons'
+
 export default {
+  components: {
+    ArrowRightIcon,
+  },
   props: {
     project: {
       type: Object,
@@ -34,9 +42,23 @@ export default {
     padding: 2rem;
   }
 
-  &:hover {
+  .read-more {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    border-bottom: none;
+
     svg {
-      transform: translateX(2rem);
+      transition: 0.2s ease transform;
+      margin-left: 1rem;
+    }
+
+    &:hover {
+      border-bottom: none;
+
+      svg {
+        transform: translateX(1rem);
+      }
     }
   }
 }
