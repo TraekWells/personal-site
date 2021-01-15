@@ -1,14 +1,13 @@
 <template>
   <article class="project">
     <div class="project__image">
-      <img :src="project.image" :alt="project.title" />
+      <img :src="project.previewImage" :alt="project.title" />
     </div>
     <div class="project__content">
       <h3>
         <nuxt-link :to="project.path">{{ project.title }}</nuxt-link>
       </h3>
       <p>{{ project.summary }}</p>
-      <nuxt-link :to="project.path">View Projects</nuxt-link>
     </div>
   </article>
 </template>
@@ -18,6 +17,7 @@ export default {
   props: {
     project: {
       type: Object,
+      required: true,
     },
   },
 }
@@ -32,6 +32,12 @@ export default {
 
   &__content {
     padding: 2rem;
+  }
+
+  &:hover {
+    svg {
+      transform: translateX(2rem);
+    }
   }
 }
 </style>

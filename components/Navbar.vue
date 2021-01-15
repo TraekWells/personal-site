@@ -1,7 +1,7 @@
 <template>
-  <nav class="navigation">
+  <nav ref="navigation" class="navigation">
     <div class="container">
-      <nuxt-link to="/">
+      <nuxt-link to="/" style="border-bottom: none">
         <svg
           version="1.1"
           x="0px"
@@ -50,12 +50,44 @@
           >
         </li>
       </ul>
+      <button
+        ref="navigation__buttonOpen"
+        class="navigation__button-open button button--ghost"
+        @click="openMobileNav"
+      >
+        Menu
+      </button>
+      <button
+        ref="navigation__buttonClose"
+        class="navigation__button-close button button--ghost"
+        @click="closeMobileNav"
+      >
+        Close
+      </button>
     </div>
   </nav>
 </template>
 
 <script>
-export default {}
+export default {
+  watch: {
+    $route() {
+      this.closeMobileNav()
+    },
+  },
+  methods: {
+    openMobileNav() {
+      this.$refs.navigation__buttonOpen.style.display = 'none'
+      this.$refs.navigation__buttonClose.style.display = 'block'
+      this.$refs.navigation.classList.add('active')
+    },
+    closeMobileNav() {
+      this.$refs.navigation__buttonOpen.style.display = 'block'
+      this.$refs.navigation__buttonClose.style.display = 'none'
+      this.$refs.navigation.classList.remove('active')
+    },
+  },
+}
 </script>
 
 <style lang="scss">
@@ -66,13 +98,18 @@ export default {}
   left: 0;
   right: 0;
   padding: 2rem 0;
-  z-index: 10;
+  z-index: 15;
   box-shadow: 0 2px 1.5rem rgba(0, 0, 0, 0.05);
 
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    > a::after,
+    > a::before {
+      height: 0;
+    }
   }
 
   &__logo {
@@ -81,6 +118,10 @@ export default {}
 
   &__list {
     display: flex;
+
+    @include respond-to(phone) {
+      display: none;
+    }
   }
 
   &__item {
@@ -95,6 +136,44 @@ export default {}
     color: var(--color-gray-900);
     font-size: 1.6rem;
     text-decoration: none;
+  }
+
+  &__button-open {
+    display: none;
+
+    @include respond-to(phone) {
+      display: block;
+    }
+  }
+
+  &__button-close {
+    display: none;
+  }
+
+  &.active {
+    background-color: var(--color-primary-100);
+    height: 100%;
+
+    .navigation__list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -10;
+
+      li {
+        margin: 2rem 0;
+
+        a {
+          font-size: 2rem;
+        }
+      }
+    }
   }
 }
 </style>
