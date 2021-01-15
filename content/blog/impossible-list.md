@@ -1,6 +1,6 @@
 ---
 title: Impossible List
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+summary: Run a rig rum run a shot across the bow bowsprit rope's end salmagundi lateen sail reef mutiny killick.
 image: https://picsum.photos/460/280
 ---
 
@@ -14,7 +14,7 @@ Here goes.
 
 What am I focusing on?
 
-## Recently Completed Goals
+## Recently Completed
 
 - Move site to WordPress (July 2nd, 2020)
 - Start hip-hop music review blog ([May 1st, 2020](https://hiphopseason.com/))
@@ -33,7 +33,11 @@ What am I focusing on?
 ## Skill Goals
 
 - Learn how to skateboard
-- Do these tricks: Ollie, kickflip, 360 flip, Shove it
+- Do these tricks:
+  - Ollie
+  - Kickflip
+  - 360 flip
+  - Shove it
 - Become fluent in Spanish
 - Learn archery
 - Learn how to salsa dance
@@ -98,7 +102,7 @@ What am I focusing on?
 - Go to Rome
 - Do an Alaskan Cruise
 
-## Life/Charity Goals
+## Life and Charity Goals
 
 - Help a turtle cross the street
 - Volunteer at Minnesota Zoo
@@ -109,7 +113,6 @@ What am I focusing on?
 ## Video Game Goals
 
 - Make it Elder God rank in Mortal Kombat 11
-  - Does this work?
 - Get first place in Call of Duty: Warzone Solos
 - Get first place in Call of Duty: Warzone Duos
 - Get first place in Call of Duty: Warzone Trios
