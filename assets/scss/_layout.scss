@@ -3,7 +3,8 @@
   max-width: 90%;
 
   &--narrow {
-    max-width: 100rem;
+    width: 90%;
+    max-width: 90rem;
   }
 
   &--wide {
@@ -22,7 +23,11 @@
 }
 
 .section {
-  padding: 10rem 0 10rem;
+  padding: 10rem 0;
+
+  @include respond-to(phone) {
+    padding: 7rem 0;
+  }
 
   &--secondary {
     background-color: var(--color-secondary-100);

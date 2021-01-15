@@ -8,7 +8,10 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth;
-  scroll-padding-top: 10rem;
+
+  @include respond-to(tab-port) {
+    font-size: 59%;
+  }
 }
 
 html,

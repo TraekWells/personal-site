@@ -1,14 +1,29 @@
 .post {
   display: flex;
   align-items: flex-start;
+  @include respond-to(tab-port) {
+    flex-direction: column;
+  }
 
-  ul:not(:last-child) {
-    margin-bottom: 3rem;
+  ul {
+    margin-left: 2rem;
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+
+    ul {
+      margin-left: 2rem;
+    }
   }
 
   &__content {
     flex-basis: 70%;
     margin-right: 6rem;
+
+    @include respond-to(tab-port) {
+      flex-basis: 100%;
+      width: 100%;
+    }
   }
 
   &__sidebar {
@@ -19,17 +34,28 @@
     position: sticky;
     top: 13rem;
 
+    @include respond-to(tab-port) {
+      flex-basis: 100%;
+      order: -1;
+      position: static;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+
     p {
+      font-size: 1.6rem;
       margin-top: 0;
     }
 
-    li {
-      list-style: none;
-      margin-bottom: 0.5rem;
+    ul {
+      margin-left: 0;
     }
 
-    @include respond-to(phone) {
-      display: none;
+    li {
+      font-size: 1.6rem;
+      line-height: 1.8;
+      list-style: none;
+      margin-bottom: 0.5rem;
     }
   }
 }
