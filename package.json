@@ -17,7 +17,8 @@
     "fibers": "^5.0.0",
     "nuxt": "^2.14.6",
     "sass": "^1.32.0",
-    "sass-loader": "^10.1.0"
+    "sass-loader": "^10.1.0",
+    "vue-feather-icons": "^5.1.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",

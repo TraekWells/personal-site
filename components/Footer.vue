@@ -7,31 +7,31 @@
           href="https://twitter.com/TraekWells"
           class="social-icon"
           target="_blank"
-          >Twitter</a
+          ><TwitterIcon></TwitterIcon> Twitter</a
         >
         <a
           href="https://github.com/TraekWells"
           class="social-icon"
           target="_blank"
-          >GitHub</a
+          ><GithubIcon></GithubIcon> GitHub</a
         >
         <a
           href="https://codepen.io/traekwells"
           class="social-icon"
           target="_blank"
-          >CodePen</a
+          ><CodepenIcon></CodepenIcon> CodePen</a
         >
         <a
           href="https://www.instagram.com/traekwells/"
           class="social-icon"
           target="_blank"
-          >Instagram</a
+          ><InstagramIcon></InstagramIcon> Instagram</a
         >
         <a
           href="https://www.linkedin.com/in/traekwells/"
           class="social-icon"
           target="_blank"
-          >LinkedIn</a
+          ><LinkedinIcon></LinkedinIcon> LinkedIn</a
         >
       </div>
       <p>&copy; Traek Wells {{ date }}</p>
@@ -40,7 +40,22 @@
 </template>
 
 <script>
+import {
+  TwitterIcon,
+  InstagramIcon,
+  GithubIcon,
+  LinkedinIcon,
+  CodepenIcon,
+} from 'vue-feather-icons'
+
 export default {
+  components: {
+    TwitterIcon,
+    InstagramIcon,
+    GithubIcon,
+    LinkedinIcon,
+    CodepenIcon,
+  },
   data() {
     return {
       date: '',
@@ -72,8 +87,21 @@ export default {
 
 .social-icon {
   margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: none;
+
+  &:hover {
+    border-bottom: none;
+  }
+
+  svg {
+    margin-right: 1rem;
+  }
+
   &:not(:last-child) {
-    margin-right: 3rem;
+    margin-right: 4rem;
   }
 }
 </style>

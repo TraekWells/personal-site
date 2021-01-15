@@ -1,1 +1,3 @@
-feather.replace()
+window.addEventListener('DOMContentLoaded', function () {
+  feather.replace()
+})

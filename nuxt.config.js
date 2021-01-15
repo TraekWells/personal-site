@@ -13,10 +13,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
     ],
-    script: [
-      { src: 'https://unpkg.com/feather-icons' },
-      { src: '/js/main.js', defer: true },
-    ],
+    script: [],
     link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
   },
 
