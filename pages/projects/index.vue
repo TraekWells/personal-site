@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <main>
     <header class="header">
       <div class="container container--narrow">
         <h1>Projects</h1>
@@ -11,13 +11,16 @@
     </header>
     <section class="section">
       <div class="container container--narrow">
-        <article v-for="project in projects" :key="project.path">
-          <p>{{ project.title }}</p>
-          <nuxt-link :to="project.path">Go to Project</nuxt-link>
-        </article>
+        <div class="projects">
+          <ProjectCard
+            v-for="project in projects"
+            :key="project.path"
+            :project="project"
+          />
+        </div>
       </div>
     </section>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -30,4 +33,26 @@ export default {
 }
 </script>
 
-<style></style>
+<style lang="scss">
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 4rem 0;
+
+  @include respond-to(tab-port) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.project {
+  &__image {
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  &__content {
+    padding: 2rem;
+  }
+}
+</style>

@@ -1,19 +1,22 @@
 <template>
-  <div>
+  <main>
     <header class="header">
       <div class="container container--narrow">
         <h1>Blog</h1>
+        <p class="lead mb-4">
+          Lucas ipsum dolor sit amet leia chewbacca hutt hutt boba calamari leia
+          dagobah ahsoka antilles. Ben obi-wan kamino solo kessel.
+        </p>
       </div>
     </header>
     <section class="section">
       <div class="container container--narrow">
-        <article v-for="blog in blogs" :key="blog.path">
-          <p>{{ blog.title }}</p>
-          <nuxt-link :to="blog.path">Read blog</nuxt-link>
-        </article>
+        <div class="blogs">
+          <BlogCard v-for="blog in blogs" :key="blog.path" :blog="blog" />
+        </div>
       </div>
     </section>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -26,4 +29,11 @@ export default {
 }
 </script>
 
-<style></style>
+<style lang="scss">
+.blogs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem 0;
+}
+</style>

@@ -1,3 +1,1 @@
-;() => {
-  feather.replace()
-}
+feather.replace()
