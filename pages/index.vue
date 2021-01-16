@@ -25,6 +25,7 @@
     <div class="section">
       <div class="container container--narrow">
         <h2 class="text-center">Stuff I've Built</h2>
+        <hr />
         <p class="lead">
           Lucas ipsum dolor sit amet leia chewbacca hutt hutt boba calamari leia
           dagobah ahsoka antilles. Ben obi-wan kamino solo kessel.
@@ -41,6 +42,7 @@
     <div class="section section--secondary">
       <div class="container container--narrow">
         <h2 class="text-center">Stuff I've Written</h2>
+        <hr />
         <p class="lead mb-4">
           Lucas ipsum dolor sit amet leia chewbacca hutt hutt boba calamari leia
           dagobah ahsoka antilles. Ben obi-wan kamino solo kessel.
