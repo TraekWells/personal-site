@@ -36,7 +36,7 @@
         </li>
         <li class="navigation__item">
           <nuxt-link to="/blog"
-            ><span class="navigation__link">Blog</span></nuxt-link
+            ><span class="navigation__link">Writing</span></nuxt-link
           >
         </li>
         <li class="navigation__item">
@@ -51,6 +51,7 @@
         </li>
       </ul>
       <button
+        v-if="mobile"
         ref="navigation__buttonOpen"
         class="navigation__button-open button button--ghost"
         @click="openMobileNav"
@@ -70,19 +71,40 @@
 
 <script>
 export default {
+  data() {
+    return {
+      mobile: null,
+    }
+  },
   watch: {
     $route() {
       this.closeMobileNav()
     },
   },
+  mounted() {
+    window.innerWidth <= 600 ? (this.mobile = true) : (this.mobile = false)
+    window.addEventListener('resize', this.isMobile)
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.isMobile)
+  },
   methods: {
+    isMobile() {
+      if (window.innerWidth <= 600) {
+        this.mobile = true
+      } else {
+        this.mobile = false
+      }
+    },
     openMobileNav() {
       this.$refs.navigation__buttonOpen.style.display = 'none'
       this.$refs.navigation__buttonClose.style.display = 'block'
       this.$refs.navigation.classList.add('active')
     },
     closeMobileNav() {
-      this.$refs.navigation__buttonOpen.style.display = 'block'
+      if (this.mobile) {
+        this.$refs.navigation__buttonOpen.style.display = 'block'
+      }
       this.$refs.navigation__buttonClose.style.display = 'none'
       this.$refs.navigation.classList.remove('active')
     },
