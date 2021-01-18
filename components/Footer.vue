@@ -34,7 +34,7 @@
           ><LinkedinIcon></LinkedinIcon> LinkedIn</a
         >
       </div>
-      <p>&copy; Traek Wells {{ date }}</p>
+      <p>&copy; Traek Wells. {{ date }}.</p>
     </div>
   </footer>
 </template>
