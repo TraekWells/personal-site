@@ -3,13 +3,13 @@
     <header class="header">
       <div class="container container--narrow">
         <h1>{{ blog.title }}</h1>
+        <p class="lead">{{ blog.summary }}</p>
       </div>
     </header>
     <article>
       <div class="container container--narrow">
         <div class="post">
           <div class="post__content">
-            <p class="lead">{{ blog.summary }}</p>
             <nuxt-content :document="blog"></nuxt-content>
           </div>
           <div class="post__sidebar">
