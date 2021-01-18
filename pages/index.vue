@@ -23,6 +23,7 @@
       </div>
     </header>
     <div class="section">
+      <div class="wave-white"></div>
       <div class="container container--narrow">
         <h2 class="text-center">Stuff I've Built</h2>
         <hr />
@@ -46,6 +47,7 @@
       </div>
     </div>
     <div class="section section--secondary">
+      <div class="wave-yellow"></div>
       <div class="container container--narrow">
         <h2 class="text-center">Stuff I've Written</h2>
         <hr />
@@ -129,6 +131,7 @@ export default {
 
   &__content {
     flex-basis: 50%;
+    z-index: 10;
 
     p {
       font-size: 2rem;

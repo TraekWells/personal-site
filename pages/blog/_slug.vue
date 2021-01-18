@@ -6,7 +6,8 @@
         <p class="lead">{{ blog.summary }}</p>
       </div>
     </header>
-    <article>
+    <article class="section">
+      <div class="wave-white"></div>
       <div class="container container--narrow">
         <div class="post">
           <div class="post__content">

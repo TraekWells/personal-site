@@ -6,6 +6,7 @@
       </div>
     </header>
     <section class="section">
+      <div class="wave-white"></div>
       <div class="container container--narrow">
         <p>
           Welcome, I’m Traek Wells and I’m a self-taught freelance WordPress

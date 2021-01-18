@@ -1,5 +1,6 @@
 <template>
   <footer class="footer">
+    <div class="wave-yellow"></div>
     <div class="container">
       <p>Connect With Me</p>
       <div class="social-icons">
@@ -79,6 +80,19 @@ export default {
   padding: 5rem 0;
   text-align: center;
   margin-top: auto;
+  position: relative;
+
+  .wave-yellow {
+    position: absolute;
+    background-image: url('/img/wave-yellow.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: -10rem;
+    height: 10rem;
+    z-index: 0;
+  }
 }
 
 .social-icons {

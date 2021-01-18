@@ -14,9 +14,14 @@
 
 .header {
   background-color: var(--color-secondary-100);
-  padding: 15rem 0 3rem;
+  padding: 15rem 0 10rem;
   text-align: center;
   position: relative;
+
+  &__content {
+    position: relative;
+    z-index: 10;
+  }
 
   &--home {
     text-align: left;
@@ -24,7 +29,7 @@
 }
 
 .section {
-  padding: 14rem 0;
+  padding: 5rem 0 10rem;
   position: relative;
 
   @include respond-to(phone) {
@@ -33,6 +38,30 @@
 
   &--secondary {
     background-color: var(--color-secondary-100);
+  }
+
+  .wave-white {
+    position: absolute;
+    background-image: url('/img/wave-white.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: -10rem;
+    height: 10rem;
+    z-index: 0;
+  }
+
+  .wave-yellow {
+    position: absolute;
+    background-image: url('/img/wave-yellow.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: -10rem;
+    height: 10rem;
+    z-index: 0;
   }
 }
 
