@@ -20,12 +20,20 @@
             <h4>Project Links</h4>
             <ul>
               <li>
-                <a :href="project.linkToProject" target="_blank"
+                <a
+                  :href="project.linkToProject"
+                  target="_blank"
+                  rel="noreferrer noopener"
                   >View Live Project</a
                 >
               </li>
               <li v-if="project.linkToCode">
-                <a :href="project.linkToCode" target="_blank">View Code</a>
+                <a
+                  :href="project.linkToCode"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >View Code</a
+                >
               </li>
             </ul>
             <p>Table of Contents</p>

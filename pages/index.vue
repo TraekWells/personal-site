@@ -29,7 +29,11 @@
         <p class="lead">
           Stuff I've built through trial and error, a lot of breaks and just
           hoping that everything worked. Check out some of my smaller stuff here
-          <a href="https://codepen.io/traekwells" target="_blank">on CodePen</a
+          <a
+            href="https://codepen.io/traekwells"
+            target="_blank"
+            rel="noreferrer noopener"
+            >on CodePen</a
           >.
         </p>
         <div class="projects">
