@@ -7,30 +7,35 @@
           href="https://twitter.com/TraekWells"
           class="social-icon"
           target="_blank"
+          rel="noreferrer noopener"
           ><TwitterIcon></TwitterIcon> Twitter</a
         >
         <a
           href="https://github.com/TraekWells"
           class="social-icon"
           target="_blank"
+          rel="noreferrer noopener"
           ><GithubIcon></GithubIcon> GitHub</a
         >
         <a
           href="https://codepen.io/traekwells"
           class="social-icon"
           target="_blank"
+          rel="noreferrer noopener"
           ><CodepenIcon></CodepenIcon> CodePen</a
         >
         <a
           href="https://www.instagram.com/traekwells/"
           class="social-icon"
           target="_blank"
+          rel="noreferrer noopener"
           ><InstagramIcon></InstagramIcon> Instagram</a
         >
         <a
           href="https://www.linkedin.com/in/traekwells/"
           class="social-icon"
           target="_blank"
+          rel="noreferrer noopener"
           ><LinkedinIcon></LinkedinIcon> LinkedIn</a
         >
       </div>
