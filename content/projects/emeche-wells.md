@@ -1,26 +1,29 @@
 ---
 title: Emeche Wells
-summary: Holystone keel pillage blow the man down scourge of the seven seas gun man-of-war plunder fire in the hole interloper.
+summary: Emeche Wells is an athlete, photographer and blogger and needed a website to start building an online presence. Built with WordPress and customized to match his branding.
 previewImage: /img/emeche-wells-devices.jpg
-linkToProject: https://www.google.com
-linkToCode: https://www.google.com
+linkToProject: https://www.emechewells.com
 technology: WordPress, Javascript, CSS
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-Jack Ketch pirate belaying pin handsomely league gunwalls avast barque lugger spirits. Schooner pink rutters yo-ho-ho hornswaggle Gold Road barque Plate Fleet lugsail Letter of Marque. Blimey execution dock snow reef galleon hardtack stern schooner jack booty.
-
 ![Emeche's Website on different devices](/img/emeche-wells-devices.jpg)
 
-Code of conduct overhaul Buccaneer scurvy cackle fruit Shiver me timbers belaying pin rope's end aye killick. Blow the man down haul wind coffer deadlights log American Main belaying pin grapple fore yardarm. Barque quarter gabion Admiral of the Black Corsair Blimey Arr lee warp brigantine.
+## The Client
 
-Splice the main brace keelhaul broadside nipperkin Gold Road pink boatswain hang the jib list hail-shot. Ballast quarterdeck grog blossom bring a spring upon her cable jib dance the hempen jig parley pillage ye swing the lead. Take a caulk tender broadside chase cable Sail ho Yellow Jack topgallant ballast Sea Legs.
+Emeche Wells is an athlete, professional photographer and blogger who cares about sharing his experiences with anyone who plans on playing sports throughout college. Although he was new to marketing himself online, he had a pretty large following on other social media platforms. The website that he wanted would need to have the ability to be easily updated at will.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+More importantly, he stressed that since he’s a professional photographer, he would need a way to organize, display and edit photography projects to promote his work.
 
-Jack Ketch pirate belaying pin handsomely league gunwalls avast barque lugger spirits. Schooner pink rutters yo-ho-ho hornswaggle Gold Road barque Plate Fleet lugsail Letter of Marque. Blimey execution dock snow reef galleon hardtack stern schooner jack booty.
+## The Goal
 
-Code of conduct overhaul Buccaneer scurvy cackle fruit Shiver me timbers belaying pin rope's end aye killick. Blow the man down haul wind coffer deadlights log American Main belaying pin grapple fore yardarm. Barque quarter gabion Admiral of the Black Corsair Blimey Arr lee warp brigantine.
+The goal was to create a beautiful, functional website where Emeche could showcase his photography, artwork, blog and basketball journey. Seeing that he was new to website maintenance, it was also a goal of mine to make the website very easy to update as his brand gets more established.
 
-Splice the main brace keelhaul broadside nipperkin Gold Road pink boatswain hang the jib list hail-shot. Ballast quarterdeck grog blossom bring a spring upon her cable jib dance the hempen jig parley pillage ye swing the lead. Take a caulk tender broadside chase cable Sail ho Yellow Jack topgallant ballast Sea Legs.
+When it came to creating the photography projects on the site, I really wanted to make it as easy as humanly possible.
+
+Seeing that he’s also a blogger, having a well laid out display was an absolute must. I thought that by staggering the size of blog posts, it would help the reader scan blogs that they might want to read. Also, this would would very well on smaller devices.
+
+## The Result
+
+Emeche’s new website is 100% responsive on all devices. It’s clean, professional and reflects Emeche’s personality. The focus of the new site was the blog posts so that is featured at the top of the homepage with an interesting layout to capture attention.
+
+I’ve spoken with him since the launch and he’s glad that the photography section is super easy to add, remove and edit projects.

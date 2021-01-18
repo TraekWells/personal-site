@@ -1,26 +1,22 @@
 ---
 title: Hip Hop Season
-summary: Fluke doubloon take a caulk league gangplank piracy avast weigh anchor flogging chantey.
+summary: Hip Hop Season is a side project of mine where I review non-mainstream hip-hop music and blog about my thoughts about all things related to hip hop music and the culture. I built this as a custom Wordpress theme.
 previewImage: /img/hip-hop-season-devices.jpg
-linkToProject: https://www.google.com
-linkToCode: https://www.google.com
+linkToProject: https://www.hiphopseason.com
+linkToCode: https://github.com/TraekWells/hip-hop-season
 technology: WordPress, Javascript, CSS
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
 ![Hip Hop Season on different devices](/img/hip-hop-season-devices.jpg)
 
-Jack Ketch pirate belaying pin handsomely league gunwalls avast barque lugger spirits. Schooner pink rutters yo-ho-ho hornswaggle Gold Road barque Plate Fleet lugsail Letter of Marque. Blimey execution dock snow reef galleon hardtack stern schooner jack booty.
+## The Client
 
-Code of conduct overhaul Buccaneer scurvy cackle fruit Shiver me timbers belaying pin rope's end aye killick. Blow the man down haul wind coffer deadlights log American Main belaying pin grapple fore yardarm. Barque quarter gabion Admiral of the Black Corsair Blimey Arr lee warp brigantine.
+Hip Hop Season is a passion project done for myself. I’m an avid listener of hip hop music, mostly non-mainstream or underground specifically. I felt the need to create this website because there isn’t enough platforms where people review non-mainstream hip hop music.
 
-Splice the main brace keelhaul broadside nipperkin Gold Road pink boatswain hang the jib list hail-shot. Ballast quarterdeck grog blossom bring a spring upon her cable jib dance the hempen jig parley pillage ye swing the lead. Take a caulk tender broadside chase cable Sail ho Yellow Jack topgallant ballast Sea Legs.
+## The Goal
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The goal was to create a website where people can go to and read long-form non-mainstream hip hop music reviews. I wanted the reviews to be straight to the point and I also wanted to build in a 100 point rating system with four review categories. Also, I wanted a good amount of white space to help the user have a pleasant reading experience.
 
-Jack Ketch pirate belaying pin handsomely league gunwalls avast barque lugger spirits. Schooner pink rutters yo-ho-ho hornswaggle Gold Road barque Plate Fleet lugsail Letter of Marque. Blimey execution dock snow reef galleon hardtack stern schooner jack booty.
+## The Results
 
-Code of conduct overhaul Buccaneer scurvy cackle fruit Shiver me timbers belaying pin rope's end aye killick. Blow the man down haul wind coffer deadlights log American Main belaying pin grapple fore yardarm. Barque quarter gabion Admiral of the Black Corsair Blimey Arr lee warp brigantine.
-
-Splice the main brace keelhaul broadside nipperkin Gold Road pink boatswain hang the jib list hail-shot. Ballast quarterdeck grog blossom bring a spring upon her cable jib dance the hempen jig parley pillage ye swing the lead. Take a caulk tender broadside chase cable Sail ho Yellow Jack topgallant ballast Sea Legs.
+In the end, I built a website that is 100% responsive on all devices and has a lot of white space. On each review, the first paragraph is a summary of what I thought of the project so the user gets a glimpse of what I thought before diving into the rest of the review. Also, each review has scores broken out for the four different review categories.

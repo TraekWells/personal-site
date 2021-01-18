@@ -1,10 +1,9 @@
 ---
 title: Impossible List
-summary: Run a rig rum run a shot across the bow bowsprit rope's end salmagundi lateen sail reef mutiny killick.
-image: https://picsum.photos/460/280
+summary: An impossible list is a catalog of challenges that you have given yourself. Unlike a bucket list which is static and gets smaller as you complete the items, an impossible list will grow and evolve with you as you live.
 ---
 
-Ever since I came across <a href="https://www.google.com" target="_blank">Thomas Frank’s impossible list</a> I knew I had to make one for myself. He got the idea from a dude named <a href="https://impossiblehq.com/impossible-list/" target="_blank">Joel Runyon</a> who I believe is the founder of impossible lists. <a href="https://impossiblehq.com/the-impossible-list-is-not-a-bucket-list/" target="_blank">He explains</a> that the main difference between an impossible list and a bucket list is that while the bucket list is static and typically gets smaller as you cross items off, the impossible list evolves as you complete goal tasks. Let’s say for example you do 30 sit-ups straight, next time aim for 40 and add it to the impossible list.
+Ever since I came across <a href="https://www.google.com" target="_blank">Thomas Frank’s impossible list</a> I knew I had to make one for myself. He got the idea from a dude named <a href="https://impossiblehq.com/impossible-list/" target="_blank">Joel Runyon</a> who I believe is the founder of impossible lists.
 
 I’ll be 100% honest here, I took a lot of Thomas Frank’s goal categories because they were great categories quite frankly (no pun intended). Almost every productive person has goals that they want to achieve, but putting them somewhere public will not only hold you accountable, but also keep you reminded of what you’re aiming for.
 
@@ -12,7 +11,8 @@ Here goes.
 
 ## Current Focuses
 
-What am I focusing on?
+- Grow Twitter followers to 500
+- Pay off student loans by December 2022
 
 ## Recently Completed
 
@@ -21,7 +21,6 @@ What am I focusing on?
 
 ## Professional Goals
 
-- ~~Move site to WordPress (July 2nd, 2020)~~
 - Get 1,000 blog visits (all time)
 - Start a YouTube channel
 - Grow Twitter followers to 500
@@ -29,6 +28,14 @@ What am I focusing on?
 - Start hip-hop music review blog (May 1st, 2020)
 - Speak at a conference
 - Give a TED Talk
+
+## Technical Goals
+
+- ~~Move site to WordPress (July 2nd, 2020)~~
+- Move site to Nuxt
+- Learn React
+- Learn PHP
+- Learn Laravel
 
 ## Skill Goals
 
@@ -48,8 +55,8 @@ What am I focusing on?
 
 - Run a 5 minute mile
 - Finish a 5k
-- Finish under 22 minutes
-- Finish under 20 minutes
+  - Finish under 22 minutes
+  - Finish under 20 minutes
 - Finish a 10k
 - Finish a half marathon
 - Finish a marathon
@@ -113,6 +120,8 @@ What am I focusing on?
 ## Video Game Goals
 
 - Make it Elder God rank in Mortal Kombat 11
+- ~~Make it out of Bronze league in Street Fighter V~~
+  - Make it out of Silver league in Street Fighter V
 - Get first place in Call of Duty: Warzone Solos
 - Get first place in Call of Duty: Warzone Duos
 - Get first place in Call of Duty: Warzone Trios

@@ -4,8 +4,8 @@
       <div class="container container--narrow">
         <h1>Blog</h1>
         <p class="lead mb-4">
-          Lucas ipsum dolor sit amet leia chewbacca hutt hutt boba calamari leia
-          dagobah ahsoka antilles. Ben obi-wan kamino solo kessel.
+          Sharing what I've learned in the hopes of solidify the knowledge and
+          helping others however I can.
         </p>
       </div>
     </header>

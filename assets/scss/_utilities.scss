@@ -13,7 +13,23 @@
 
 .text-highlight {
   font-weight: bold;
-  color: var(--color-primary-700);
+  color: var(--color-primary-500);
+  position: relative;
+  transition: 0.2s ease all;
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 102%;
+    margin-left: -1%;
+    bottom: 0;
+    background-color: var(--color-primary-500);
+  }
+
+  &:hover {
+    color: var(--color-primary-700);
+  }
 }
 
 hr {

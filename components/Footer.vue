@@ -70,7 +70,7 @@ export default {
 
 <style lang="scss">
 .footer {
-  background-color: transparent;
+  background-color: var(--color-secondary-100);
   padding: 5rem 0;
   text-align: center;
   margin-top: auto;

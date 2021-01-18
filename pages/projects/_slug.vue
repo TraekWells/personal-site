@@ -8,7 +8,7 @@
         </p>
       </div>
     </header>
-    <section class="section">
+    <article>
       <div class="container container--narrow">
         <div class="post">
           <div class="post__content">
@@ -24,14 +24,20 @@
                   >View Live Project</a
                 >
               </li>
-              <li>
+              <li v-if="project.linkToCode">
                 <a :href="project.linkToCode" target="_blank">View Code</a>
+              </li>
+            </ul>
+            <p>Table of Contents</p>
+            <ul>
+              <li v-for="header in headers" :key="header.id">
+                <a :href="`#${header.link}`">{{ header.text }}</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
-    </section>
+    </article>
   </main>
 </template>
 
@@ -41,6 +47,20 @@ export default {
     const project = await $content(`projects/${params.slug}`).fetch()
 
     return { project }
+  },
+  data() {
+    return {
+      headers: [],
+    }
+  },
+  mounted() {
+    const headers = Array.from(document.querySelectorAll('h2'))
+    headers.forEach((header) => {
+      const headerObj = {}
+      headerObj.text = header.textContent
+      headerObj.link = header.id
+      this.headers.push(headerObj)
+    })
   },
 }
 </script>

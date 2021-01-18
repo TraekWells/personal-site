@@ -16,6 +16,7 @@
   background-color: var(--color-secondary-100);
   padding: 15rem 0 3rem;
   text-align: center;
+  position: relative;
 
   &--home {
     text-align: left;
@@ -24,6 +25,7 @@
 
 .section {
   padding: 14rem 0;
+  position: relative;
 
   @include respond-to(phone) {
     padding: 7rem 0;
@@ -32,4 +34,8 @@
   &--secondary {
     background-color: var(--color-secondary-100);
   }
+}
+
+img {
+  border-radius: var(--border-radius-sm);
 }

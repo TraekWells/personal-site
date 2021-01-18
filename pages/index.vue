@@ -27,8 +27,10 @@
         <h2 class="text-center">Stuff I've Built</h2>
         <hr />
         <p class="lead">
-          Lucas ipsum dolor sit amet leia chewbacca hutt hutt boba calamari leia
-          dagobah ahsoka antilles. Ben obi-wan kamino solo kessel.
+          Stuff I've built through trial and error, a lot of breaks and just
+          hoping that everything worked. Check out some of my smaller stuff here
+          <a href="https://codepen.io/traekwells" target="_blank">on CodePen</a
+          >.
         </p>
         <div class="projects">
           <ProjectCard
@@ -44,8 +46,8 @@
         <h2 class="text-center">Stuff I've Written</h2>
         <hr />
         <p class="lead mb-4">
-          Lucas ipsum dolor sit amet leia chewbacca hutt hutt boba calamari leia
-          dagobah ahsoka antilles. Ben obi-wan kamino solo kessel.
+          Sharing what I've learned in the hopes of solidify the knowledge and
+          helping others however I can.
         </p>
         <div class="blogs">
           <BlogCard v-for="blog in blogs" :key="blog.path" :blog="blog" />
@@ -123,6 +125,10 @@ export default {
 
   &__content {
     flex-basis: 50%;
+
+    p {
+      font-size: 2rem;
+    }
 
     @include respond-to(tab-port) {
       flex-basis: 70%;

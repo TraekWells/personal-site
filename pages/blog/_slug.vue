@@ -3,13 +3,13 @@
     <header class="header">
       <div class="container container--narrow">
         <h1>{{ blog.title }}</h1>
-        <p class="lead">{{ blog.summary }}</p>
       </div>
     </header>
-    <section class="section">
+    <article>
       <div class="container container--narrow">
         <div class="post">
           <div class="post__content">
+            <p class="lead">{{ blog.summary }}</p>
             <nuxt-content :document="blog"></nuxt-content>
           </div>
           <div class="post__sidebar">
@@ -22,7 +22,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </article>
   </main>
 </template>
 
@@ -30,7 +30,6 @@
 export default {
   async asyncData({ $content, params }) {
     const blog = await $content(`blog/${params.slug}`).fetch()
-
     return { blog }
   },
   data() {
@@ -52,6 +51,7 @@ export default {
 </script>
 
 <style lang="scss">
+/* This is to create some space above the header after a use clicks on an anchor link */
 h2 {
   &::before {
     display: block;
