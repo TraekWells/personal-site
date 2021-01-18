@@ -1,0 +1,22 @@
+---
+label: Project
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: summary
+  label: summary
+- type: file
+  name: previewImage
+  label: previewImage
+- type: text
+  name: linkToProject
+  label: linkToProject
+- type: text
+  name: linkToCode
+  label: linkToCode
+- type: text
+  name: technology
+  label: technology
