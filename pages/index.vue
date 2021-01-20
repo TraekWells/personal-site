@@ -9,25 +9,7 @@
           <div class="home-header__content">
             <h1>
               Front-end Developer. UI Designer.
-              <span class="underline"
-                ><svg
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  x="0px"
-                  y="0px"
-                  viewBox="0 0 569.3 38"
-                  style="enable-background: new 0 0 569.3 38"
-                  xml:space="preserve"
-                >
-                  <path
-                    class="st0"
-                    d="M1.5,30.1C100.4,9.8,443.9-6.6,551.2,5.8c79.2,9.1-145.8,9.3-232.4,12.2c-86.3,2.9-248.5,20.4-157.6,18.4
-	c93-2.1,229.2-10.6,297.7-6.6"
-                  />
-                </svg>
-                Good Person</span
-              >.
+              <span class="underline">Good Person</span>.
             </h1>
             <p>
               What’s up? I’m Traek. Welcome to my partition of the internet when
