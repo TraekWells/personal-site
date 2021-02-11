@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <div class="wave-yellow"></div>
+    <div class="wave-white"></div>
     <div class="container">
       <p>Connect With Me</p>
       <div class="social-icons">
@@ -9,38 +9,38 @@
           class="social-icon"
           target="_blank"
           rel="noreferrer noopener"
-          ><TwitterIcon></TwitterIcon> Twitter</a
-        >
+          ><TwitterIcon></TwitterIcon
+        ></a>
         <a
           href="https://github.com/TraekWells"
           class="social-icon"
           target="_blank"
           rel="noreferrer noopener"
-          ><GithubIcon></GithubIcon> GitHub</a
-        >
-        <a
-          href="https://codepen.io/traekwells"
-          class="social-icon"
-          target="_blank"
-          rel="noreferrer noopener"
-          ><CodepenIcon></CodepenIcon> CodePen</a
-        >
+          ><GithubIcon></GithubIcon
+        ></a>
         <a
           href="https://www.instagram.com/traekwells/"
           class="social-icon"
           target="_blank"
           rel="noreferrer noopener"
-          ><InstagramIcon></InstagramIcon> Instagram</a
-        >
+          ><InstagramIcon></InstagramIcon
+        ></a>
         <a
           href="https://www.linkedin.com/in/traekwells/"
           class="social-icon"
           target="_blank"
           rel="noreferrer noopener"
-          ><LinkedinIcon></LinkedinIcon> LinkedIn</a
-        >
+          ><LinkedinIcon></LinkedinIcon
+        ></a>
       </div>
-      <p>&copy; Traek Wells. {{ date }}.</p>
+      <p>
+        &copy; Traek Wells {{ date }}.
+        <a
+          href="https://github.com/TraekWells/personal-dev-site"
+          target="_blank"
+          >Source Code.</a
+        >
+      </p>
     </div>
   </footer>
 </template>
@@ -51,7 +51,6 @@ import {
   InstagramIcon,
   GithubIcon,
   LinkedinIcon,
-  CodepenIcon,
 } from 'vue-feather-icons'
 
 export default {
@@ -60,7 +59,6 @@ export default {
     InstagramIcon,
     GithubIcon,
     LinkedinIcon,
-    CodepenIcon,
   },
   data() {
     return {
@@ -76,15 +74,14 @@ export default {
 
 <style lang="scss">
 .footer {
-  background-color: var(--color-secondary-100);
   padding: 5rem 0;
   text-align: center;
   margin-top: auto;
   position: relative;
 
-  .wave-yellow {
+  .wave-white {
     position: absolute;
-    background-image: url('/img/wave-yellow.svg');
+    background-image: url('/img/wave-white.svg');
     background-repeat: no-repeat;
     background-size: cover;
     left: 0;
@@ -101,22 +98,21 @@ export default {
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 3rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .social-icon {
+  background-color: var(--color-primary-100);
+  padding: 1.5rem;
   margin-bottom: 2rem;
   display: flex;
+  border-radius: 50%;
   justify-content: center;
   align-items: center;
   border-bottom: none;
 
   &:hover {
     border-bottom: none;
-  }
-
-  svg {
-    margin-right: 1rem;
   }
 
   &:not(:last-child) {

@@ -26,24 +26,4 @@ export default {
 }
 </script>
 
-<style lang="scss">
-.read-more {
-  font-size: 1.8rem;
-  display: flex;
-  align-items: center;
-  border-bottom: none;
-
-  svg {
-    transition: 0.2s ease transform;
-    margin-left: 1rem;
-  }
-
-  &:hover {
-    border-bottom: none;
-
-    svg {
-      transform: translateX(1rem);
-    }
-  }
-}
-</style>
+<style lang="scss"></style>
