@@ -12,8 +12,8 @@
               <span class="underline">Good Person</span>.
             </h1>
             <p>
-              What’s up? I’m Traek. Welcome to my partition of the internet when
-              I share what I'm learning and show what I've built.
+              What’s up? I’m Traek, and welcome to my partition of the internet
+              when I share what I'm learning and show what I've built.
             </p>
             <nuxt-link to="/projects" class="button button--primary"
               >See My Work

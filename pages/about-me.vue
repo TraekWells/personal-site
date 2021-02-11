@@ -8,12 +8,7 @@
     <section class="section">
       <div class="wave-white"></div>
       <div class="container container--narrow">
-        <p>
-          Welcome, I’m Traek Wells and I’m a self-taught freelance WordPress
-          Developer from Saint Paul, Minnesota. As a Graphic Design major turned
-          Web Developer, I understand how to combine effective, user-first
-          design with efficient code.
-        </p>
+        <p>TODO: Tell the world a little bit about yourself.</p>
       </div>
     </section>
   </main>
