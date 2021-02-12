@@ -34,7 +34,7 @@
         ></a>
       </div>
       <p>
-        &copy; Traek Wells {{ date }}.
+        &copy; Traek Wells {{ date }}. Built with Nuxt.
         <a
           href="https://github.com/TraekWells/personal-dev-site"
           target="_blank"
@@ -112,6 +112,7 @@ export default {
   border-bottom: none;
 
   &:hover {
+    transform: translateY(-1rem);
     border-bottom: none;
   }
 

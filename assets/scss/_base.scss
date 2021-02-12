@@ -10,4 +10,6 @@ body {
   ::-webkit-scrollbar-thumb {
     background: var(--color-primary-700);
   }
+
+  overflow-x: hidden;
 }

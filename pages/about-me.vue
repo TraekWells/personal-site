@@ -8,7 +8,9 @@
     <section class="section">
       <div class="wave-white"></div>
       <div class="container container--narrow">
-        <p>TODO: Tell the world a little bit about yourself.</p>
+        <p class="text-center">
+          TODO: Tell the world a little bit about yourself.
+        </p>
       </div>
     </section>
   </main>

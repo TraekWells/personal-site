@@ -147,6 +147,6 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 4rem 0;
+  margin: 6rem 0;
 }
 </style>
