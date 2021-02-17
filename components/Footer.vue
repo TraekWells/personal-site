@@ -32,6 +32,13 @@
           rel="noreferrer noopener"
           ><LinkedinIcon></LinkedinIcon
         ></a>
+        <a
+          href="https://dribbble.com/TraekWells"
+          class="social-icon"
+          target="_blank"
+          rel="noreferrer noopener"
+          ><DribbbleIcon></DribbbleIcon
+        ></a>
       </div>
       <p>
         &copy; Traek Wells {{ date }}. Built with Nuxt.
@@ -52,6 +59,7 @@ import {
   InstagramIcon,
   GithubIcon,
   LinkedinIcon,
+  DribbbleIcon,
 } from 'vue-feather-icons'
 
 export default {
@@ -60,6 +68,7 @@ export default {
     InstagramIcon,
     GithubIcon,
     LinkedinIcon,
+    DribbbleIcon,
   },
   data() {
     return {
