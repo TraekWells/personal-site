@@ -6,6 +6,7 @@
       </div>
     </header>
     <section class="section">
+      <div class="wave-white"></div>
       <div class="container container--narrow">
         <p>Let me try to help you get back on track</p>
         <nuxt-link to="/" class="read-more"
