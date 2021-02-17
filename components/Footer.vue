@@ -40,6 +40,7 @@
           target="_blank"
           >Source Code.</a
         >
+        🐜
       </p>
     </div>
   </footer>

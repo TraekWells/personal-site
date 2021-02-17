@@ -15,5 +15,8 @@ export default {
     Navbar,
     Footer,
   },
+  mounted() {
+    console.log('%c🐜', 'font-size: 50px;')
+  },
 }
 </script>
