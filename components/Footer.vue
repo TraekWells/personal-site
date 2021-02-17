@@ -9,35 +9,40 @@
           class="social-icon"
           target="_blank"
           rel="noreferrer noopener"
-          ><TwitterIcon></TwitterIcon
+          alt="Link to Twitter"
+          ><TwitterIcon aria-label="Link to Twitter"></TwitterIcon
         ></a>
         <a
           href="https://github.com/TraekWells"
           class="social-icon"
           target="_blank"
           rel="noreferrer noopener"
-          ><GithubIcon></GithubIcon
+          alt="Link to GitHub"
+          ><GithubIcon aria-label="Link to Github"></GithubIcon
         ></a>
         <a
           href="https://www.instagram.com/traekwells/"
           class="social-icon"
           target="_blank"
           rel="noreferrer noopener"
-          ><InstagramIcon></InstagramIcon
+          alt="Link to Instagram"
+          ><InstagramIcon aria-label="Link to Instagram"></InstagramIcon
         ></a>
         <a
           href="https://www.linkedin.com/in/traekwells/"
           class="social-icon"
           target="_blank"
           rel="noreferrer noopener"
-          ><LinkedinIcon></LinkedinIcon
+          alt="Link to LinkedIn"
+          ><LinkedinIcon aria-label="Link to LinkedIn"></LinkedinIcon
         ></a>
         <a
           href="https://dribbble.com/TraekWells"
           class="social-icon"
           target="_blank"
           rel="noreferrer noopener"
-          ><DribbbleIcon></DribbbleIcon
+          alt="Link to Dribbble"
+          ><DribbbleIcon aria-label="Link to Dribbble"></DribbbleIcon
         ></a>
       </div>
       <p>

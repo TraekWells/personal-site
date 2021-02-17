@@ -11,7 +11,7 @@
       </h3>
       <p>{{ blog.summary }}</p>
       <a :href="blog.path" class="read-more"
-        >Read More <ArrowRightIcon></ArrowRightIcon
+        >Read More <ArrowRightIcon aria-label="Arrow icon"></ArrowRightIcon
       ></a>
     </div>
   </article>

@@ -9,7 +9,8 @@
       </h3>
       <p>{{ project.summary }}</p>
       <a :href="project.path" class="read-more"
-        >Project Details <ArrowRightIcon></ArrowRightIcon
+        >Project Details
+        <ArrowRightIcon aria-label="Arrow icon"></ArrowRightIcon
       ></a>
     </div>
   </article>

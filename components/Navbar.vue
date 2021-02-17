@@ -10,6 +10,7 @@
           style="enable-background: new 0 0 879.2 561.3"
           xml:space="preserve"
           class="navigation__logo"
+          aria-label="Logo"
         >
           <path
             class="st0"
