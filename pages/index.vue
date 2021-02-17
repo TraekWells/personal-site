@@ -42,7 +42,6 @@
             v-for="project in projects"
             :key="project.path"
             :project="project"
-            data-aos="fade-up"
           />
         </div>
       </div>
@@ -57,12 +56,7 @@
           helping others however I can.
         </p>
         <div class="blogs">
-          <BlogCard
-            v-for="blog in blogs"
-            :key="blog.path"
-            :blog="blog"
-            data-aos="fade-up"
-          />
+          <BlogCard v-for="blog in blogs" :key="blog.path" :blog="blog" />
         </div>
       </div>
     </div>
@@ -72,8 +66,6 @@
 <script>
 import ProjectCard from '@/components/ProjectCard'
 import BlogCard from '@/components/BlogCard'
-import aos from 'aos'
-import 'aos/dist/aos.css'
 
 export default {
   components: {
@@ -81,12 +73,11 @@ export default {
     BlogCard,
   },
   async asyncData({ $content }) {
-    const projects = await $content('projects').limit(2).fetch()
+    const projects = await $content('projects')
+      .where({ featured: true })
+      .fetch()
     const blogs = await $content('blog').fetch()
     return { projects, blogs }
-  },
-  mounted() {
-    aos.init()
   },
 }
 </script>

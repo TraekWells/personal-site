@@ -5,6 +5,7 @@ previewImage: /img/hip-hop-season-devices.jpg
 linkToProject: https://www.hiphopseason.com
 linkToCode: https://github.com/TraekWells/hip-hop-season
 technology: WordPress, Javascript, CSS
+featured: true
 ---
 
 ![Hip Hop Season on different devices](/img/hip-hop-season-devices.jpg)
