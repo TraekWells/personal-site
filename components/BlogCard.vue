@@ -1,5 +1,5 @@
 <template>
-  <article class="blog">
+  <article class="blog" data-aos="fade-up">
     <img
       class="blog__image"
       :src="blog.previewImage"

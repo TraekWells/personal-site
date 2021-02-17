@@ -1,5 +1,5 @@
 <template>
-  <article class="project">
+  <article class="project" data-aos="fade-up">
     <div class="project__image">
       <img :src="project.previewImage" :alt="project.title" />
     </div>
