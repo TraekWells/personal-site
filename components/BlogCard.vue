@@ -72,6 +72,7 @@ export default {
     margin-right: 4.5rem;
     height: 25rem;
     width: 25rem;
+    object-fit: cover;
 
     @include respond-to(phone) {
       display: none;

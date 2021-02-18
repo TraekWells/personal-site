@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="post">
     <header class="header">
       <div class="container container--narrow">
         <h1>{{ blog.title }}</h1>
@@ -9,11 +9,14 @@
     <article class="section">
       <div class="wave-white"></div>
       <div class="container container--narrow">
-        <div class="post">
-          <div class="post__content">
+        <div class="content">
+          <div class="content__image">
+            <img :src="blog.previewImage" :alt="blog.title" />
+          </div>
+          <div class="content__text">
             <nuxt-content :document="blog"></nuxt-content>
           </div>
-          <div class="post__sidebar">
+          <div class="content__sidebar">
             <p>Table of Contents</p>
             <ul>
               <li v-for="header in headers" :key="header.id">

@@ -1,7 +1,15 @@
-.post {
+.post .section:first-of-type {
+  padding-top: 0;
+}
+
+.content {
+  display: grid;
   padding: 5rem 0;
-  display: flex;
-  align-items: flex-start;
+  grid-template-areas:
+    'image image'
+    'content sidebar ';
+  grid-template-columns: 2.5fr 1fr;
+  gap: 4rem;
 
   .lead {
     text-align: left;
@@ -9,7 +17,11 @@
   }
 
   @include respond-to(tab-port) {
-    flex-direction: column;
+    grid-template-areas:
+      'image'
+      'sidebar'
+      'content';
+    grid-template-columns: 1fr;
   }
 
   ul {
@@ -23,8 +35,17 @@
     }
   }
 
+  .section:first-of-type {
+    padding-top: 0;
+  }
+
+  &__image {
+    grid-area: image;
+    max-height: 90rem;
+  }
+
   &__content {
-    flex-basis: 70%;
+    grid-area: content;
     margin-right: 6rem;
 
     @include respond-to(tab-port) {
@@ -38,7 +59,8 @@
   }
 
   &__sidebar {
-    flex-basis: 30%;
+    grid-area: sidebar;
+    align-self: start;
     background-color: var(--color-primary-100);
     padding: 3rem;
     border-radius: var(--border-radius-sm);
@@ -46,17 +68,15 @@
     top: 13rem;
 
     @include respond-to(tab-port) {
-      flex-basis: 100%;
-      order: -1;
       position: static;
       width: 100%;
       margin-bottom: 2rem;
     }
 
     p {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       margin-top: 0;
-      margin-bottom: 0.8rem;
+      margin-bottom: 3rem;
     }
 
     ul {
@@ -64,7 +84,7 @@
     }
 
     li {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       line-height: 1.8;
       list-style: none;
       margin-bottom: 0.5rem;

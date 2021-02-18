@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="post">
     <header class="header">
       <div class="container container--narrow">
         <h1>{{ project.title }}</h1>
@@ -11,11 +11,14 @@
     <article class="section">
       <div class="wave-white"></div>
       <div class="container container--narrow">
-        <div class="post">
-          <div class="post__content">
+        <div class="content">
+          <div class="content__image">
+            <img :src="project.previewImage" :alt="project.title" />
+          </div>
+          <div class="content__text">
             <nuxt-content :document="project"></nuxt-content>
           </div>
-          <div class="post__sidebar">
+          <div class="content__sidebar">
             <h4>Technology Used</h4>
             <p>{{ project.technology }}</p>
             <h4>Project Links</h4>
@@ -37,7 +40,7 @@
                 >
               </li>
             </ul>
-            <p>Table of Contents</p>
+            <h4>Table of Contents</h4>
             <ul>
               <li v-for="header in headers" :key="header.id">
                 <a :href="`#${header.link}`">{{ header.text }}</a>
