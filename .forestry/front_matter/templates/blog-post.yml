@@ -8,5 +8,3 @@ fields:
 - type: textarea
   name: summary
   label: Blog Summary
-pages:
-- content/blog/test-blog.md
