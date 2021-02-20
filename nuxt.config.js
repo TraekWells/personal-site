@@ -7,7 +7,8 @@ export default {
     htmlAttrs: {
       lang: 'en',
     },
-    title: 'Traek Wells | UI Developer',
+    title: 'Traek Wells',
+    titleTemplate: ' %s | UI Developer',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -16,6 +17,75 @@ export default {
         name: 'description',
         content:
           'Personal developer website for Traek Wells, a Front-end Developer and UI Designer',
+      },
+      // Twitter card preview
+      // Test on: https://cards-dev.twitter.com/validator
+      {
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      { hid: 'twitter:site', name: 'twitter:site', content: '@TraekWells' },
+      {
+        hid: 'twitter:url',
+        name: 'twitter:url',
+        content: 'https://traek.dev',
+      },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'Traek Wells | UI Developer',
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content:
+          'Personal developer website for Traek Wells, a Front-end Developer and UI Designer',
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: 'https://nuxtjs.org/nuxt-card.png',
+      },
+
+      // Facebook card preview
+      // Test on: https://developers.facebook.com/tools/debug/
+      {
+        hid: 'og:site_name',
+        property: 'og:site_name',
+        content: 'https://traek.dev',
+      },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://traek.dev',
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Traek Wells | UI Developer',
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content:
+          'Personal developer website for Traek Wells, a Front-end Developer and UI Designer',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://nuxtjs.org/nuxt-card.png',
+      },
+      {
+        hid: 'og:image:secure_url',
+        property: 'og:image:secure_url',
+        content: 'https://nuxtjs.org/nuxt-card.png',
+      },
+      {
+        hid: 'og:image:alt',
+        property: 'og:image:alt',
+        content: 'NuxtJS',
       },
     ],
     script: [],
