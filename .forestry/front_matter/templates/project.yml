@@ -4,19 +4,19 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Project Title
 - type: textarea
   name: summary
-  label: summary
+  label: Project Summary
 - type: file
   name: previewImage
-  label: previewImage
+  label: Preview Image
 - type: text
   name: linkToProject
-  label: linkToProject
+  label: Link To Project
 - type: text
   name: linkToCode
-  label: linkToCode
+  label: Link To Code
 - type: text
   name: technology
-  label: technology
+  label: Technology

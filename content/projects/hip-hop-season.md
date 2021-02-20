@@ -1,12 +1,21 @@
 ---
 title: Hip Hop Season
-summary: Hip Hop Season is a side project of mine where I review non-mainstream hip-hop music and blog about my thoughts about all things related to hip hop music and the culture. I built this as a custom Wordpress theme.
-previewImage: /img/hip-hop-season-devices.jpg
+summary: Hip Hop Season is a side project of mine where I review non-mainstream hip-hop
+  music and blog about my thoughts about all things related to hip hop music and the
+  culture. I built this as a custom Wordpress theme.
+previewImage: "/img/hip-hop-season-devices.jpg"
 linkToProject: https://www.hiphopseason.com
 linkToCode: https://github.com/TraekWells/hip-hop-season
 technology: WordPress, Javascript, CSS
 featured: true
+<<<<<<< HEAD
 ---
+
+=======
+
+---
+
+> > > > > > > df685431ae5c868e6daeac755a628df9fdf42530
 
 ## The Client
 
