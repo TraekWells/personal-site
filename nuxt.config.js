@@ -45,7 +45,7 @@ export default {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: 'https://nuxtjs.org/nuxt-card.png',
+        content: 'https://traek.dev/img/default-card-image.png',
       },
 
       // Facebook card preview
@@ -75,12 +75,12 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://nuxtjs.org/nuxt-card.png',
+        content: 'https://traek.dev/img/default-card-image.png',
       },
       {
         hid: 'og:image:secure_url',
         property: 'og:image:secure_url',
-        content: 'https://nuxtjs.org/nuxt-card.png',
+        content: 'https://traek.dev/img/default-card-image.png',
       },
       {
         hid: 'og:image:alt',

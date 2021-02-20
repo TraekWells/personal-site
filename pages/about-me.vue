@@ -1,5 +1,6 @@
 <template>
   <main>
+    <SocialHead title="About Me" description="I'll write this about me later" />
     <header class="header">
       <div class="container container--narrow">
         <h1>About Me</h1>
@@ -17,7 +18,13 @@
 </template>
 
 <script>
-export default {}
+import SocialHead from '@/components/SocialHead'
+
+export default {
+  components: {
+    SocialHead,
+  },
+}
 </script>
 
 <style></style>

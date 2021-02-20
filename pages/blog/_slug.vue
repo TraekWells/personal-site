@@ -1,5 +1,10 @@
 <template>
   <main class="post">
+    <SocialHead
+      :title="blog.title"
+      :description="blog.summary"
+      :image="`https://traek.dev${blog.previewImage}`"
+    />
     <header class="header">
       <div class="container container--narrow">
         <h1>{{ blog.title }}</h1>
@@ -31,7 +36,12 @@
 </template>
 
 <script>
+import SocialHead from '@/components/SocialHead'
+
 export default {
+  components: {
+    SocialHead,
+  },
   async asyncData({ $content, params }) {
     const blog = await $content(`blog/${params.slug}`).fetch()
     return { blog }

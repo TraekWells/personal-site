@@ -1,5 +1,9 @@
 <template>
   <main>
+    <SocialHead
+      title="Traek Wells | UI Developer"
+      description="I’m Traek, and welcome to my partition of the internet when I share what I'm learning and show what I've built."
+    />
     <header class="header header--home">
       <div class="container container--narrow">
         <div class="home-header">
@@ -66,11 +70,13 @@
 <script>
 import ProjectCard from '@/components/ProjectCard'
 import BlogCard from '@/components/BlogCard'
+import SocialHead from '@/components/SocialHead'
 
 export default {
   components: {
     ProjectCard,
     BlogCard,
+    SocialHead,
   },
   async asyncData({ $content }) {
     const projects = await $content('projects')

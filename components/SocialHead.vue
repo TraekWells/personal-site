@@ -17,7 +17,7 @@ export default {
     },
     image: {
       type: String,
-      default: 'https://nuxtjs.org/nuxt-card.png',
+      default: 'https://traek.dev/img/default-card-image.png',
     },
   },
 
