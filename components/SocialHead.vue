@@ -32,12 +32,12 @@ export default {
         {
           hid: 'twitter:description',
           name: 'twitter:description',
-          content: this.description,
+          content: this.summary,
         },
         {
           hid: 'twitter:image',
           name: 'twitter:image',
-          content: this.image,
+          content: this.previewImage,
         },
         {
           hid: 'twitter:image:alt',
@@ -52,17 +52,17 @@ export default {
         {
           hid: 'og:description',
           property: 'og:description',
-          content: this.description,
+          content: this.summary,
         },
         {
           hid: 'og:image',
           property: 'og:image',
-          content: this.image,
+          content: this.previewImage,
         },
         {
           hid: 'og:image:secure_url',
           property: 'og:image:secure_url',
-          content: this.image,
+          content: this.previewImage,
         },
         {
           hid: 'og:image:alt',
