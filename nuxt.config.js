@@ -52,39 +52,39 @@ export default {
       // Test on: https://developers.facebook.com/tools/debug/
       {
         hid: 'og:site_name',
-        property: 'og:site_name',
+        name: 'og:site_name',
         content: 'https://traek.dev',
       },
-      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:type', name: 'og:type', content: 'website' },
       {
         hid: 'og:url',
-        property: 'og:url',
+        name: 'og:url',
         content: 'https://traek.dev',
       },
       {
         hid: 'og:title',
-        property: 'og:title',
+        name: 'og:title',
         content: 'Traek Wells | UI Developer',
       },
       {
         hid: 'og:description',
-        property: 'og:description',
+        name: 'og:description',
         content:
           'Personal developer website for Traek Wells, a Front-end Developer and UI Designer',
       },
       {
         hid: 'og:image',
-        property: 'og:image',
+        name: 'og:image',
         content: 'https://traek.dev/img/default-card-image.png',
       },
       {
         hid: 'og:image:secure_url',
-        property: 'og:image:secure_url',
+        name: 'og:image:secure_url',
         content: 'https://traek.dev/img/default-card-image.png',
       },
       {
         hid: 'og:image:alt',
-        property: 'og:image:alt',
+        name: 'og:image:alt',
         content: 'NuxtJS',
       },
     ],
