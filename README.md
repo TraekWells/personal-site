@@ -11,3 +11,5 @@ Write this later.
 - [ ] Take a better footer image. Really just take a better image for social profiles.
 - [ ] Find a better font for the headers
 - [ ] Implement dark mode. Is this even an option anymore?
+- [ ] Add 'More Projects' under a single project post
+- [ ] Add 'More Blogs' under a single blog post

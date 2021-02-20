@@ -8,8 +8,6 @@ technology: WordPress, Javascript, CSS
 featured: true
 ---
 
-![Hip Hop Season on different devices](/img/hip-hop-season-devices.jpg)
-
 ## The Client
 
 Hip Hop Season is a passion project done for myself. I’m an avid listener of hip hop music, mostly non-mainstream or underground specifically. I felt the need to create this website because there isn’t enough platforms where people review non-mainstream hip hop music.

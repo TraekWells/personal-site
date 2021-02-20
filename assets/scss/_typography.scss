@@ -133,3 +133,10 @@ blockquote {
     }
   }
 }
+
+p code {
+  border-radius: 0.3rem;
+  padding: 0.4rem;
+  font-size: 1.6rem;
+  background-color: var(--color-primary-100);
+}

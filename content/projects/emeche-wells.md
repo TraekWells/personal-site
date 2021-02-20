@@ -4,10 +4,8 @@ summary: Emeche Wells is an athlete, photographer and blogger and needed a websi
 previewImage: /img/emeche-wells-devices.jpg
 linkToProject: https://www.emechewells.com
 technology: WordPress, Javascript, CSS
-featured: true
+featured: false
 ---
-
-![Emeche's Website on different devices](/img/emeche-wells-devices.jpg)
 
 ## The Client
 
