@@ -20,3 +20,6 @@ fields:
 - type: text
   name: technology
   label: Technology
+- name: featured
+  type: boolean
+  label: Featured
