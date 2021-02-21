@@ -39,9 +39,9 @@ export default {
   },
   data() {
     return {
-      title: 'Projects',
+      title: 'UI Developer',
       description:
-        "Stuff I've built through trial and error, a lot of breaks and just hoping that everything worked.",
+        'Personal developer website for Traek Wells, a Front-end Developer and UI Designer',
     }
   },
   head() {
