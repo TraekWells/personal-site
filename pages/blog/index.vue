@@ -1,10 +1,5 @@
 <template>
   <main>
-    <SocialHead
-      title="Blog"
-      description="Sharing what I've learned in the hopes of solidify the knowledge and
-            helping others however I can."
-    />
     <header class="header">
       <div class="container container--narrow">
         <div class="header__content">
@@ -28,16 +23,29 @@
 </template>
 
 <script>
-import SocialHead from '@/components/SocialHead'
-
 export default {
-  components: {
-    SocialHead,
-  },
   async asyncData({ $content }) {
     const blogs = await $content('blog').fetch()
-
     return { blogs }
+  },
+  data() {
+    return {
+      title: 'Blog',
+      description:
+        "Sharing what I've learned in the hopes of solidify the knowledge and helping others however I can.",
+    }
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.description,
+        },
+      ],
+    }
   },
 }
 </script>

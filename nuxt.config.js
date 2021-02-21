@@ -7,8 +7,8 @@ export default {
     htmlAttrs: {
       lang: 'en',
     },
-    title: 'Traek Wells',
-    titleTemplate: ' %s | UI Developer',
+    title: 'UI Developer',
+    titleTemplate: ' %s | Traek Wells',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -34,7 +34,7 @@ export default {
       {
         hid: 'twitter:title',
         name: 'twitter:title',
-        content: 'Traek Wells | UI Developer',
+        content: 'Traek Wells',
       },
       {
         hid: 'twitter:description',
@@ -52,39 +52,39 @@ export default {
       // Test on: https://developers.facebook.com/tools/debug/
       {
         hid: 'og:site_name',
-        name: 'og:site_name',
+        property: 'og:site_name',
         content: 'https://traek.dev',
       },
       { hid: 'og:type', name: 'og:type', content: 'website' },
       {
         hid: 'og:url',
-        name: 'og:url',
+        property: 'og:url',
         content: 'https://traek.dev',
       },
       {
         hid: 'og:title',
-        name: 'og:title',
-        content: 'Traek Wells | UI Developer',
+        property: 'og:title',
+        content: 'Traek Wells',
       },
       {
         hid: 'og:description',
-        name: 'og:description',
+        property: 'og:description',
         content:
           'Personal developer website for Traek Wells, a Front-end Developer and UI Designer',
       },
       {
         hid: 'og:image',
-        name: 'og:image',
+        property: 'og:image',
         content: 'https://traek.dev/img/default-card-image.png',
       },
       {
         hid: 'og:image:secure_url',
-        name: 'og:image:secure_url',
+        property: 'og:image:secure_url',
         content: 'https://traek.dev/img/default-card-image.png',
       },
       {
         hid: 'og:image:alt',
-        name: 'og:image:alt',
+        property: 'og:image:alt',
         content: 'NuxtJS',
       },
     ],

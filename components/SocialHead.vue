@@ -46,22 +46,22 @@ export default {
         },
         {
           hid: 'og:title',
-          name: 'og:title',
+          property: 'og:title',
           content: this.title,
         },
         {
           hid: 'og:description',
-          name: 'og:description',
+          property: 'og:description',
           content: this.description,
         },
         {
           hid: 'og:image',
-          name: 'og:image',
+          property: 'og:image',
           content: this.image,
         },
         {
           hid: 'og:image:secure_url',
-          name: 'og:image:secure_url',
+          property: 'og:image:secure_url',
           content: this.image,
         },
         {

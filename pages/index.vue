@@ -1,9 +1,5 @@
 <template>
   <main>
-    <SocialHead
-      title="Traek Wells | UI Developer"
-      description="I’m Traek, and welcome to my partition of the internet when I share what I'm learning and show what I've built."
-    />
     <header class="header header--home">
       <div class="container container--narrow">
         <div class="home-header">
@@ -70,13 +66,11 @@
 <script>
 import ProjectCard from '@/components/ProjectCard'
 import BlogCard from '@/components/BlogCard'
-import SocialHead from '@/components/SocialHead'
 
 export default {
   components: {
     ProjectCard,
     BlogCard,
-    SocialHead,
   },
   async asyncData({ $content }) {
     const projects = await $content('projects')
@@ -84,6 +78,25 @@ export default {
       .fetch()
     const blogs = await $content('blog').fetch()
     return { projects, blogs }
+  },
+  data() {
+    return {
+      title: 'Traek Wells',
+      description:
+        "Stuff I've built through trial and error, a lot of breaks and just hoping that everything worked.",
+    }
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.description,
+        },
+      ],
+    }
   },
 }
 </script>

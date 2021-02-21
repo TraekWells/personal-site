@@ -76,7 +76,7 @@ Salute to Google Firebase for the service it provides, free of charge to a limit
 
 ## Results
 
-I'm extremely happy with how this turned out in the end. It took a bit longer than I expected but I'm proud of this one. There was nothing more satisying than typing `firebase deploy` in watching the progress bars fill up. The design could use some polishing but done is better than perfect.
+I'm extremely happy with how this turned out in the end. It took a bit longer than I expected but I'm proud of this one. There was nothing more satisying than typing in `firebase deploy` and watching the progress bars fill up. The design could use some polishing but done is better than perfect.
 
 The amount of confidence this project gave me is invaluable. I learned a ton about building a fairly large project from scratch and the complexities of passing data as `props` from one Vue component to another.
 
