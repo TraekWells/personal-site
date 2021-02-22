@@ -63,7 +63,7 @@ export default {
     '@nuxtjs/style-resources',
   ],
   plausible: {
-    domain: 'https://traek.dev',
+    domain: 'traek.dev',
     trackLocalHost: false,
   },
   styleResources: {
