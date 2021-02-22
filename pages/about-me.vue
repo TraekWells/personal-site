@@ -17,22 +17,31 @@
 </template>
 
 <script>
+import getMetaData from '@/config/getMetaData.js'
+
 export default {
-  data() {
-    return {
-      title: 'About',
-      description:
-        'A little bit about Traek Wells and how he got started in Web Development',
-    }
+  computed: {
+    meta() {
+      const metaData = {
+        type: 'page',
+        url: `https://traek.dev/projects`,
+        title: 'About',
+        description:
+          'A little bit about Traek Wells and how he got interested in being a Front-End Developer',
+      }
+
+      return getMetaData(metaData)
+    },
   },
   head() {
     return {
-      title: this.title,
-      meta: [
+      title: 'About',
+      meta: [...this.meta],
+      link: [
         {
-          hid: 'description',
-          name: 'description',
-          content: this.description,
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `https://traek.dev/about-me`,
         },
       ],
     }

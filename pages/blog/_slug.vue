@@ -1,10 +1,5 @@
 <template>
   <main class="post">
-    <SocialHead
-      :title="blog.title"
-      :description="blog.summary"
-      :image="`https://traek.dev${blog.previewImage}`"
-    />
     <header class="header">
       <div class="container container--narrow">
         <h1>{{ blog.title }}</h1>
@@ -36,12 +31,9 @@
 </template>
 
 <script>
-import SocialHead from '@/components/SocialHead'
+import getMetaData from '@/config/getMetaData.js'
 
 export default {
-  components: {
-    SocialHead,
-  },
   async asyncData({ $content, params }) {
     const blog = await $content(`blog/${params.slug}`).fetch()
     return { blog }
@@ -51,7 +43,19 @@ export default {
       headers: [],
     }
   },
+  computed: {
+    meta() {
+      const metaData = {
+        type: 'article',
+        url: `https://traek.dev/blog/${this.$route.params.slug}`,
+        title: this.blog.title,
+        description: this.blog.summary,
+        image: this.blog.previewImage,
+      }
 
+      return getMetaData(metaData)
+    },
+  },
   mounted() {
     const headers = Array.from(document.querySelectorAll('h2'))
     headers.forEach((header) => {
@@ -60,6 +64,31 @@ export default {
       headerObj.link = header.id
       this.headers.push(headerObj)
     })
+  },
+  head() {
+    return {
+      title: this.blog.title,
+      meta: [
+        ...this.meta,
+        {
+          property: 'article:published_time',
+          content: this.blog.createdAt,
+        },
+        {
+          property: 'article:modified_time',
+          content: this.blog.updatedAt,
+        },
+        { name: 'twitter:label1', content: 'Written by' },
+        { name: 'twitter:data1', content: 'Traek Wells' },
+      ],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `https://traek.dev/blog/${this.$route.params.slug}`,
+        },
+      ],
+    }
   },
 }
 </script>

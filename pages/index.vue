@@ -66,6 +66,7 @@
 <script>
 import ProjectCard from '@/components/ProjectCard'
 import BlogCard from '@/components/BlogCard'
+import getMetaData from '@/config/getMetaData.js'
 
 export default {
   components: {
@@ -79,21 +80,28 @@ export default {
     const blogs = await $content('blog').fetch()
     return { projects, blogs }
   },
-  data() {
-    return {
-      title: 'Traek Wells',
-      description:
-        "Stuff I've built through trial and error, a lot of breaks and just hoping that everything worked.",
-    }
+  computed: {
+    meta() {
+      const metaData = {
+        type: 'page',
+        url: `https://traek.dev/`,
+        title: 'UI Developer',
+        description:
+          "What’s up? I’m Traek, and welcome to my partition of the internet when I share what I'm learning and show what I've built.",
+      }
+
+      return getMetaData(metaData)
+    },
   },
   head() {
     return {
-      title: this.title,
-      meta: [
+      title: 'UI Developer',
+      meta: [...this.meta],
+      link: [
         {
-          hid: 'description',
-          name: 'description',
-          content: this.description,
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `https://traek.dev/`,
         },
       ],
     }

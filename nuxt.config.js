@@ -1,3 +1,7 @@
+import getMetaData from './config/getMetaData.js'
+
+const meta = getMetaData()
+
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
@@ -10,6 +14,7 @@ export default {
     title: 'UI Developer',
     titleTemplate: ' %s | Traek Wells',
     meta: [
+      ...meta,
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
@@ -18,78 +23,21 @@ export default {
         content:
           'Personal developer website for Traek Wells, a Front-end Developer and UI Designer',
       },
-      // Twitter card preview
-      // Test on: https://cards-dev.twitter.com/validator
-      {
-        hid: 'twitter:card',
-        name: 'twitter:card',
-        content: 'summary_large_image',
-      },
-      { hid: 'twitter:site', name: 'twitter:site', content: '@TraekWells' },
-      {
-        hid: 'twitter:url',
-        name: 'twitter:url',
-        content: 'https://traek.dev',
-      },
-      {
-        hid: 'twitter:title',
-        name: 'twitter:title',
-        content: 'Traek Wells',
-      },
-      {
-        hid: 'twitter:description',
-        name: 'twitter:description',
-        content:
-          'Personal developer website for Traek Wells, a Front-end Developer and UI Designer',
-      },
-      {
-        hid: 'twitter:image',
-        name: 'twitter:image',
-        content: 'https://traek.dev/img/default-card-image.png',
-      },
 
-      // Facebook card preview
-      // Test on: https://developers.facebook.com/tools/debug/
-      {
-        hid: 'og:site_name',
-        property: 'og:site_name',
-        content: 'https://traek.dev',
-      },
-      { hid: 'og:type', name: 'og:type', content: 'website' },
-      {
-        hid: 'og:url',
-        property: 'og:url',
-        content: 'https://traek.dev',
-      },
-      {
-        hid: 'og:title',
-        property: 'og:title',
-        content: 'Traek Wells',
-      },
-      {
-        hid: 'og:description',
-        property: 'og:description',
-        content:
-          'Personal developer website for Traek Wells, a Front-end Developer and UI Designer',
-      },
-      {
-        hid: 'og:image',
-        property: 'og:image',
-        content: 'https://traek.dev/img/default-card-image.png',
-      },
-      {
-        hid: 'og:image:secure_url',
-        property: 'og:image:secure_url',
-        content: 'https://traek.dev/img/default-card-image.png',
-      },
-      {
-        hid: 'og:image:alt',
-        property: 'og:image:alt',
-        content: 'NuxtJS',
-      },
+      { property: 'og:image:width', content: '740' },
+      { property: 'og:image:height', content: '300' },
+      { name: 'twitter:site', content: '@TraekWells' },
+      { name: 'twitter:card', content: 'summary_large_image' },
     ],
     script: [],
-    link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+    link: [
+      { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+      {
+        hid: 'canonical',
+        rel: 'canonical',
+        href: 'https://traek.dev',
+      },
+    ],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)

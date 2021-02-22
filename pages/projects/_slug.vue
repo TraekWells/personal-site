@@ -1,10 +1,5 @@
 <template>
   <main class="post">
-    <SocialHead
-      :title="project.title"
-      :description="project.summary"
-      :image="`https://traek.dev${project.previewImage}`"
-    />
     <header class="header">
       <div class="container container--narrow">
         <h1>{{ project.title }}</h1>
@@ -59,11 +54,9 @@
 </template>
 
 <script>
-import SocialHead from '@/components/SocialHead'
+import getMetaData from '@/config/getMetaData.js'
+
 export default {
-  components: {
-    SocialHead,
-  },
   async asyncData({ $content, params }) {
     const project = await $content(`projects/${params.slug}`).fetch()
 
@@ -74,6 +67,19 @@ export default {
       headers: [],
     }
   },
+  computed: {
+    meta() {
+      const metaData = {
+        type: 'article',
+        url: `https://traek.dev/projects/${this.$route.params.slug}`,
+        title: this.project.title,
+        description: this.project.summary,
+        image: this.project.previewImage,
+      }
+
+      return getMetaData(metaData)
+    },
+  },
   mounted() {
     const headers = Array.from(document.querySelectorAll('h2'))
     headers.forEach((header) => {
@@ -82,6 +88,31 @@ export default {
       headerObj.link = header.id
       this.headers.push(headerObj)
     })
+  },
+  head() {
+    return {
+      title: this.project.title,
+      meta: [
+        ...this.meta,
+        {
+          property: 'article:published_time',
+          content: this.project.createdAt,
+        },
+        {
+          property: 'article:modified_time',
+          content: this.project.updatedAt,
+        },
+        { name: 'twitter:label1', content: 'Written by' },
+        { name: 'twitter:data1', content: 'Traek Wells' },
+      ],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `https://traek.dev/projects/${this.$route.params.slug}`,
+        },
+      ],
+    }
   },
 }
 </script>

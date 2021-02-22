@@ -23,26 +23,35 @@
 </template>
 
 <script>
+import getMetaData from '@/config/getMetaData.js'
+
 export default {
   async asyncData({ $content }) {
     const blogs = await $content('blog').fetch()
     return { blogs }
   },
-  data() {
-    return {
-      title: 'Blog',
-      description:
-        "Sharing what I've learned in the hopes of solidify the knowledge and helping others however I can.",
-    }
+  computed: {
+    meta() {
+      const metaData = {
+        type: 'page',
+        url: `https://traek.dev/blog`,
+        title: 'Blog',
+        description:
+          "Sharing what I've learned in the hopes solidify the knowledge and helping others however I can.",
+      }
+
+      return getMetaData(metaData)
+    },
   },
   head() {
     return {
-      title: this.title,
-      meta: [
+      title: 'Blog',
+      meta: [...this.meta],
+      link: [
         {
-          hid: 'description',
-          name: 'description',
-          content: this.description,
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `https://traek.dev/blog`,
         },
       ],
     }

@@ -31,27 +31,36 @@
 </template>
 
 <script>
+import getMetaData from '@/config/getMetaData.js'
+
 export default {
   async asyncData({ $content }) {
     const projects = await $content('projects').fetch()
 
     return { projects }
   },
-  data() {
-    return {
-      title: 'UI Developer',
-      description:
-        'Personal developer website for Traek Wells, a Front-end Developer and UI Designer',
-    }
+  computed: {
+    meta() {
+      const metaData = {
+        type: 'page',
+        url: `https://traek.dev/projects`,
+        title: 'Projects',
+        description:
+          "Stuff I've built through trial and error, a lot of breaks and just hoping that everything worked.",
+      }
+
+      return getMetaData(metaData)
+    },
   },
   head() {
     return {
-      title: this.title,
-      meta: [
+      title: 'Projects',
+      meta: [...this.meta],
+      link: [
         {
-          hid: 'description',
-          name: 'description',
-          content: this.description,
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `https://traek.dev/projects`,
         },
       ],
     }
