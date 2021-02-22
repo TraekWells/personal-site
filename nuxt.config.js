@@ -53,6 +53,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    'vue-plausible',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -61,6 +62,10 @@ export default {
     '@nuxt/content',
     '@nuxtjs/style-resources',
   ],
+  plausible: {
+    domain: 'https://traek.dev',
+    trackLocalHost: false,
+  },
   styleResources: {
     scss: ['~/assets/scss/_mixins.scss'],
   },
