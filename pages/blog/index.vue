@@ -5,8 +5,8 @@
         <div class="header__content">
           <h1>Blog</h1>
           <p class="lead mb-4">
-            Sharing what I've learned in the hopes of solidify the knowledge and
-            helping others however I can.
+            Sharing what I've learned in the hopes of solidifying the knowledge
+            and helping others however I can.
           </p>
         </div>
       </div>
