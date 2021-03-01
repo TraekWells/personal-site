@@ -54,6 +54,11 @@ Here goes.
 - Learn how to salsa dance
 - Learn how to ballroom dance
 - Type 70 wpm
+- Become a competent guitar player
+- Learn a full song on the guitar
+- Learn five full songs on the guitar
+- Perform a song on the guitar at a campfire
+- Perform a song on the guitar at a bar/restaurant
 
 ## Fitness Goals
 
@@ -78,7 +83,7 @@ Here goes.
 - Complete a 24 hour fast
 - Complete a 48 hour fast
 - Complete a 72 hour fast
-- Fast for 400 hours in a month
+- ~~Fast for 400 hours in a month~~
 - Intermittent fast for a full month, no exceptions
 - Go a month without alcohol
 - Go two months without alcohol
@@ -96,11 +101,6 @@ Here goes.
 - Write a fiction book (at least 50,000 words)
 - Self-publish a book on Amazon (less than 15,000)
 - Publish a paperback or hardcover book
-- Become a competent guitar player
-- Learn a full song on the guitar
-- Learn five full songs on the guitar
-- Perform a song on the guitar at a campfire
-- Perform a song on the guitar at a bar/restaurant
 - Sell a drawing online
 
 ## Fun Goals
