@@ -20,6 +20,7 @@ Here goes.
 
 ## Recently Completed
 
+- Fast for 400 hours in a month
 - Move site to WordPress (July 2nd, 2020)
 - Start hip-hop music review blog ([May 1st, 2020](https://hiphopseason.com/))
 
@@ -84,7 +85,7 @@ Here goes.
 - Complete a 48 hour fast
 - Complete a 72 hour fast
 - ~~Fast for 400 hours in a month~~
-- Intermittent fast for a full month, no exceptions
+- Intermittent fast for at least 13 hours, for a full month
 - Go a month without alcohol
 - Go two months without alcohol
 - Go three months without alcohol
