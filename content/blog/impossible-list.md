@@ -67,8 +67,8 @@ Here goes.
 ## Fitness Goals
 
 * Run a 5 minute mile
-* Finish a 5k
-  * Finish under 22 minutes
+* ~~Finish a 5k~~
+  * \~\~Finish under 22 minutes\~\~ (April 4th, 2021)
   * Finish under 20 minutes
 * Finish a 10k
 * Finish a half marathon
