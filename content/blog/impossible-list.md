@@ -18,7 +18,9 @@ I'm working on improving my User Interface and User Experience design skills whi
 
 I host a monthly [code meetup](https://www.meetup.com/Code-Challenge-Meetup-Group/ "code meetup") and we're working on a collaboration project to assist in helping people find and adopt rescue pets.
 
-I'm also in a constant battle with imposter syndrome and it's a back and forth battle. At the moment, I'm winning and feeling pretty confident but it comes and goes. 
+I'm also in a constant battle with imposter syndrome and it's a back and forth battle. At the moment, I'm winning and feeling pretty confident but it comes and goes.
+
+Lastly and always, I'm working on becoming a better person and appreciating the moment as much as I can.
 
 ## Recently Completed
 
