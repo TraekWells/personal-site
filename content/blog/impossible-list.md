@@ -26,7 +26,7 @@ Lastly and always, I'm working on becoming a better person and appreciating the 
 
 * Finish a 5k (April 4th, 2021)
   * Finish under 22 minutes (April 4th, 2021)
-* Build site with Nuxt (January 18th, 2021)
+* Build this site with Nuxt (January 18th, 2021)
 * Fast for 400 hours in a month (February 28th, 2021)
 * Move site to WordPress (July 2nd, 2020)
 * Start hip-hop music review blog ([May 1st, 2020](https://hiphopseason.com/))
@@ -44,7 +44,7 @@ Lastly and always, I'm working on becoming a better person and appreciating the 
 ## Technical Goals
 
 * ~~Move site to WordPress~~  (July 2nd, 2020)
-* ~~Build site with Nuxt~~  (January 18th, 2021)
+* ~~Build this site with Nuxt~~  (January 18th, 2021)
 * Learn Vue
 * Learn React
 * Learn PHP
