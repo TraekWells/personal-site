@@ -9,6 +9,7 @@ sections:
   label: Pages
   create: all
   match: "**/*"
+  new_doc_ext: ".vue"
 - type: directory
   path: content/blog
   label: Blog
