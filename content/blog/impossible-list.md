@@ -10,19 +10,24 @@ Ever since I came across <a href="https://www.google.com" target="_blank" rel="n
 
 I’ll be 100% honest here, I took a lot of Thomas Frank’s goal categories because they were great categories quite frankly (no pun intended). Almost every productive person has goals that they want to achieve, but putting them somewhere public will not only hold you accountable, but also keep you reminded of what you’re aiming for.
 
-Here goes.
+Let's get this party started.
 
 ## Current Focuses
 
-* Grow Twitter followers to 500
-* Pay off student loans by December 2022
-* Learn Vue
-* Learn React
+I'm working on improving my User Interface and User Experience design skills while simultaneously trying to learn Vue 3 and vanilla JavaScript more deeply (doing both is difficult).
+
+I host a monthly [code meetup](https://www.meetup.com/Code-Challenge-Meetup-Group/ "code meetup") and we're working on a collaboration project to assist in helping people find and adopt rescue pets.
+
+I'm also in a constant battle with imposter syndrome and it's a back and forth battle. At the moment, I'm winning and feeling pretty confident but it comes and goes.
+
+Lastly and always, I'm working on becoming a better person and appreciating the moment as much as I can.
 
 ## Recently Completed
 
-* Build site with Nuxt
-* Fast for 400 hours in a month
+* Finish a 5k (April 4th, 2021)
+  * Finish under 22 minutes (April 4th, 2021)
+* Build this site with Nuxt (January 18th, 2021)
+* Fast for 400 hours in a month (February 28th, 2021)
 * Move site to WordPress (July 2nd, 2020)
 * Start hip-hop music review blog ([May 1st, 2020](https://hiphopseason.com/))
 
@@ -32,14 +37,14 @@ Here goes.
 * Start a YouTube channel
 * Grow Twitter followers to 500
 * Grow Instagram followers to 500
-* ~~Start hip-hop music review blog (May 1st, 2020)~~
+* ~~Start hip-hop music review blog~~ ([May 1st, 2020](https://hiphopseason.com/))
 * Speak at a conference
 * Give a TED Talk
 
 ## Technical Goals
 
-* ~~Move site to WordPress (July 2nd, 2020)~~
-* ~~Build site with Nuxt~~
+* ~~Move site to WordPress~~  (July 2nd, 2020)
+* ~~Build this site with Nuxt~~  (January 18th, 2021)
 * Learn Vue
 * Learn React
 * Learn PHP
@@ -66,9 +71,9 @@ Here goes.
 
 ## Fitness Goals
 
-* Run a 5 minute mile
-* Finish a 5k
-  * Finish under 22 minutes
+* Run a 5-minute mile
+* ~~Finish a 5k~~  (April 4th, 2021)
+  * ~~Finish under 22 minutes~~  (April 4th, 2021)
   * Finish under 20 minutes
 * Finish a 10k
 * Finish a half marathon
@@ -87,8 +92,8 @@ Here goes.
 * Complete a 24 hour fast
 * Complete a 48 hour fast
 * Complete a 72 hour fast
-* ~~Fast for 400 hours in a month~~
-* Intermittent fast for at least 13 hours, for a full month
+* ~~Fast for 400 hours in a month~~  (February 28th, 2021)
+* Intermittent fast for at least 13 hours per day, for a full month
 * Go a month without alcohol
 * Go two months without alcohol
 * Go three months without alcohol
