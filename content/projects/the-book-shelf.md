@@ -1,13 +1,14 @@
 ---
-title: The Bookshelf
-summary: An website that allows users to discover new books, create a list of books to read later and review the books they've read.
-previewImage: /img/the-bookshelf-devices.jpg
+title: The Bookshelf Test
+summary: An website that allows users to discover new books, create a list of books
+  to read later and review the books they've read.
+previewImage: "/img/the-bookshelf-devices.jpg"
 linkToProject: https://thenewbookshelf.com
 linkToCode: https://github.com/TraekWells/the-bookshelf
 technology: Vue, Google Firebase, Google Books API, Tailwind CSS
 featured: true
----
 
+---
 One of my best friends reads quite a bit of books. He told me that currently, he doesn't really have a good system for keeping track of the books he's read (except for keeping them in a stack somewhere).
 
 Being the good friend that I am, I offered to build something that would help solve these problems knowing that it would take skills that were **JUST** outside of my skillset. This would force myself out of my comfort zone and test my problem solving skills.
