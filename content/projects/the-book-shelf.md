@@ -1,5 +1,5 @@
 ---
-title: The Bookshelf Test
+title: The Bookshelf
 summary: An website that allows users to discover new books, create a list of books
   to read later and review the books they've read.
 previewImage: "/img/the-bookshelf-devices.jpg"
