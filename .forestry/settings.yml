@@ -16,6 +16,8 @@ sections:
   label: Projects
   create: all
   match: "**/*"
+  templates:
+  - project
 upload_dir: static/img
 public_path: "/img"
 front_matter_path: ''
