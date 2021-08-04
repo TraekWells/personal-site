@@ -4,7 +4,7 @@ summary:
   Talk about all of the great things that happened by moving from Wordpress
   to Forestry.
 previewImage: '/img/impossible-list-blog-image.jpg'
-draftMode: true
+draft: true
 ---
 
 Talk about all of the great things that happened by moving from Wordpress to Forestry.

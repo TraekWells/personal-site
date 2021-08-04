@@ -6,7 +6,7 @@ linkToProject: https://www.hiphopseason.com
 linkToCode: https://github.com/TraekWells/hip-hop-season
 technology: WordPress, Javascript, CSS
 featured: true
-draftMode: false
+draft: false
 ---
 
 ## The Client
