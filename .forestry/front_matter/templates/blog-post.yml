@@ -14,5 +14,4 @@ fields:
   default: true
   hidden: false
   showOnly:
-    field: draft
     value: false
