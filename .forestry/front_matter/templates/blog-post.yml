@@ -11,7 +11,7 @@ fields:
 - name: draft
   type: boolean
   label: Draft
-  default: false
+  default: true
   hidden: false
 pages:
 - content/blog/moving-from-wordpress-to-forestry.md
