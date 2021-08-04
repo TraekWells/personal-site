@@ -2,13 +2,14 @@
 label: Blog Post
 hide_body: false
 fields:
-- type: text
-  name: title
-  label: Title
-- type: textarea
-  name: summary
-  label: Blog Summary
-- name: draft
-  type: boolean
-  label: Draft
-  default: true
+  - type: text
+    name: title
+    label: Title
+  - type: textarea
+    name: summary
+    label: Blog Summary
+  - name: draft
+    type: boolean
+    label: Draft
+    default: true
+    hidden: false
