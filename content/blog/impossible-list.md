@@ -6,7 +6,6 @@ summary:
   Unlike a bucket list which is static and gets smaller as you complete the items,
   an impossible list will grow and evolve with you as you live.
 previewImage: '/img/impossible-list-blog-image.jpg'
-createdAt: '02-10-2021'
 ---
 
 Ever since I came across <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Thomas Frank’s impossible list</a> I knew I had to make one for myself. He got the idea from a dude named <a href="https://impossiblehq.com/impossible-list/" target="_blank" rel="noopener noreferrer">Joel Runyon</a> who I believe is the founder of impossible lists.
