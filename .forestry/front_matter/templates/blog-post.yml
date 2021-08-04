@@ -12,4 +12,4 @@ fields:
   type: boolean
   label: Draft
   default: false
-  hidden: true
+  hidden: false
