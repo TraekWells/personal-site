@@ -14,6 +14,9 @@
             <img :src="blog.previewImage" :alt="blog.title" />
           </div>
           <div class="content__text">
+            <div class="content__info">
+              <p>Written on {{ $formatDate(blog.createdAt) }}</p>
+            </div>
             <nuxt-content :document="blog"></nuxt-content>
           </div>
           <div class="content__sidebar">
@@ -64,6 +67,7 @@ export default {
       headerObj.link = header.id
       this.headers.push(headerObj)
     })
+    console.log(this)
   },
   head() {
     return {

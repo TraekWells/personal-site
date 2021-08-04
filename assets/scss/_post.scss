@@ -27,7 +27,7 @@
   ul {
     margin-left: 2rem;
     &:not(:last-child) {
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
     }
 
     ul {
@@ -44,7 +44,25 @@
     max-height: 90rem;
   }
 
-  &__content {
+  &__info {
+    display: flex;
+    align-items: center;
+    color: var(--color-gray-500);
+    border-radius: var(--border-radius-sm);
+    margin-bottom: 2rem;
+
+    svg {
+      margin-right: 1rem;
+      width: 2rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+      margin-bottom: 0;
+    }
+  }
+
+  &__text {
     grid-area: content;
     margin-right: 6rem;
 
@@ -76,7 +94,7 @@
     p {
       font-size: 1.5rem;
       margin-top: 0;
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
     }
 
     ul {
