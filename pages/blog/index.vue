@@ -27,7 +27,10 @@ import getMetaData from '@/config/getMetaData.js'
 
 export default {
   async asyncData({ $content }) {
-    const blogs = await $content('blog').fetch()
+    const blogs = await $content('blog')
+      .sortBy('direction', 'desc')
+      .where({ draft: false })
+      .fetch()
     return { blogs }
   },
   computed: {

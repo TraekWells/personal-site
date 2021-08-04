@@ -5,6 +5,7 @@ previewImage: '/img/emeche-wells-devices.jpg'
 linkToProject: https://www.emechewells.com
 technology: WordPress, Javascript, CSS
 featured: false
+draft: false
 ---
 
 ## The Client
