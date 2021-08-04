@@ -4,8 +4,9 @@ summary: Talk about all of the great things that happened by moving from Wordpre
   to Forestry.
 previewImage: "/img/impossible-list-blog-image.jpg"
 draft: true
+previewimage: ''
 
 ---
-Talk about all of the great things that happened by moving from Wordpress to Forestry.
+Talk about all of the great things that happened by moving from WordPress to Forestry.
 
-## Why I decided to switch
+## Why did I decide to switch?
