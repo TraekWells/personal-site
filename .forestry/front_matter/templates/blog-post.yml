@@ -13,3 +13,5 @@ fields:
   label: Draft
   default: false
   hidden: false
+pages:
+- content/blog/moving-from-wordpress-to-forestry.md
