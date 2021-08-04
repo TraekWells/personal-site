@@ -11,5 +11,8 @@ fields:
 - name: draft
   type: boolean
   label: Draft
-  default: false
+  default: true
   hidden: false
+  showOnly:
+    field: draft
+    value: false
