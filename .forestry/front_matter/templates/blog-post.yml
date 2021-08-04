@@ -19,5 +19,3 @@ fields:
     maxSize: 64
   label: Preview image
   default: "/img/default-card-image.png"
-pages:
-- content/blog/moving-from-wordpress-to-forestry.md
