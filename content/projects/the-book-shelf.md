@@ -6,7 +6,7 @@ linkToProject: https://thenewbookshelf.com
 linkToCode: https://github.com/TraekWells/the-bookshelf
 technology: Vue, Google Firebase, Google Books API, Tailwind CSS
 featured: true
-draft: false
+draftMode: false
 ---
 
 One of my best friends reads quite a bit of books. He told me that currently, he doesn't really have a good system for keeping track of the books he's read (except for keeping them in a stack somewhere).
