@@ -8,8 +8,8 @@ fields:
   - type: textarea
     name: summary
     label: Blog Summary
-  - name: draft
-    type: boolean
+  - type: boolean
+    name: draft
     label: Draft
     default: true
     hidden: false
