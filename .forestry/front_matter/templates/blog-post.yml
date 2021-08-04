@@ -13,5 +13,10 @@ fields:
   label: Draft
   default: true
   hidden: false
+- name: previewimage
+  type: file
+  config:
+    maxSize: 64
+  label: previewimage
 pages:
 - content/blog/moving-from-wordpress-to-forestry.md
