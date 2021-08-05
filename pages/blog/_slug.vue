@@ -15,7 +15,10 @@
           </div>
           <div class="content__text">
             <div class="content__info">
-              <p>Written on {{ $formatDate(blog.createdAt) }}</p>
+              <p>
+                Written on {{ $formatDate(blog.createdAt) }} and takes about
+                {{ wordCount }} minutes to read.
+              </p>
             </div>
             <nuxt-content :document="blog"></nuxt-content>
           </div>
@@ -44,6 +47,7 @@ export default {
   data() {
     return {
       headers: [],
+      wordCount: null,
     }
   },
   computed: {
@@ -67,7 +71,16 @@ export default {
       headerObj.link = header.id
       this.headers.push(headerObj)
     })
-    console.log(this)
+    this.getWordCount()
+  },
+  methods: {
+    getWordCount() {
+      const wpm = 250
+      const body = document.querySelector('.nuxt-content')
+      const words = body.textContent.trim().split(/\s+/).length
+
+      this.wordCount = Math.ceil(words / wpm)
+    },
   },
   head() {
     return {
