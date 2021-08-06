@@ -10,9 +10,6 @@
       <div class="wave-white"></div>
       <div class="container container--narrow">
         <div class="content">
-          <div class="content__image">
-            <img :src="blog.previewImage" :alt="blog.title" />
-          </div>
           <div class="content__text">
             <div class="content__info">
               <p>

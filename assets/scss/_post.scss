@@ -4,10 +4,8 @@
 
 .content {
   display: grid;
-  padding: 5rem 0;
-  grid-template-areas:
-    'image image'
-    'content sidebar ';
+  padding: 0 0 5rem;
+  grid-template-areas: 'content sidebar ';
   grid-template-columns: 2.5fr 1fr;
   gap: 4rem;
 
@@ -18,7 +16,6 @@
 
   @include respond-to(tab-port) {
     grid-template-areas:
-      'image'
       'sidebar'
       'content';
     grid-template-columns: 1fr;
@@ -37,11 +34,6 @@
 
   .section:first-of-type {
     padding-top: 0;
-  }
-
-  &__image {
-    grid-area: image;
-    max-height: 90rem;
   }
 
   &__info {
