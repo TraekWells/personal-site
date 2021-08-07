@@ -50,7 +50,7 @@ Select your Git repository
 
 ## Editor Experience
 
-I haven't used every other CMS out there but so far Forestry has the best editing experience I've come across. Everything is super simple and
+I haven't used every other CMS out there but so far Forestry has the best editing experience I've come across. Everything is super simple and it doesn'
 
 ## Developer Experience
 
@@ -58,13 +58,17 @@ The beauty of using a headless CMS is that you can 'bring your own front-end'. I
 
 ## Other Stuff I Considered
 
-Being that WordPress gave you so many tools to help create and optimize your content, I had some concerns about leaving. There's essentially a plugin that you can use to do virtually anything 
+Being that WordPress gave you so many tools to help create and optimize your content, I had some concerns about leaving. There's essentially a plugin that you can use to do virtually anything
 
 ### Images
 
+Did I ever
+
 ### SEO
 
-Search Engine Optimization (SEO) was
+Search Engine Optimization (SEO) is one of the main reasons people use WordPress because there are numerous plugins that will handle all of the heavy lifting for you. How was I going to handle this without the help of a WordPress plugin?
+
+Turns out there are many resources in the Nuxt community to help generate the necessary meta tags dynamically. 
 
 ### Security
 
@@ -73,6 +77,8 @@ Search Engine Optimization (SEO) was
 As great as Forestry is, there are a few things that I feel would make it even better
 
 ### Schedule Posts
+
+It would be amazing if there was a built-in way of scheduling posts to go out. Currently, I set a `draft` boolean and a `publishedDate` in my post's front-matter and when I'm fetching my content, I only fetch and display content that has `draft: false`. I'm sure I could find a way to programmatically check if the `publishedDate` matches the current date.. but having it be built-in would be tremendous.
 
 ### Recognize Drafts in More Static Site Generators
 
