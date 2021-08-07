@@ -7,7 +7,7 @@
   padding: 0 0 5rem;
   grid-template-areas: 'content sidebar ';
   grid-template-columns: 2.5fr 1fr;
-  gap: 4rem;
+  gap: 5rem;
 
   .lead {
     text-align: left;
@@ -51,7 +51,6 @@
 
   &__text {
     grid-area: content;
-    margin-right: 6rem;
 
     @include respond-to(tab-port) {
       flex-basis: 100%;
