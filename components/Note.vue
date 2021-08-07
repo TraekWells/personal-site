@@ -18,6 +18,7 @@ export default {
   border-radius: var(--border-radius-xsm);
   padding: 2rem;
   position: relative;
+  margin: 2rem 0;
 
   svg {
     outline: 0.5rem solid var(--color-white);
