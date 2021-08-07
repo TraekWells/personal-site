@@ -83,5 +83,20 @@ export default {
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {},
+  build: {
+    babel: {
+      presets: [
+        [
+          '@babel/preset-env',
+          {
+            targets: {
+              esmodules: true,
+            },
+            loose: true,
+            shippedProposals: true,
+          },
+        ],
+      ],
+    },
+  },
 }
