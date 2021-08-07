@@ -29,10 +29,10 @@ This wasn't directly WordPress's fault but it _was_ clear that all of the bells 
 
 ### I Wanted a More Modern Development Process
 
-Another reason I decided to scout for other options was that I didn't love the developer experience with WordPress and wanted something more modern. Some of my pain points:
+Another reason I decided to scout for other options was that I didn't love the developer experience with WordPress and wanted something more modern. Here were a few of my pain points:
 
 * I ran into a bunch of trouble trying to get Prettier to work nice with PHP and eventually just said "F it, it's going to be ugly."
-* Couldn't find a good way to use components like you can with JavaScript frameworks.
+* I couldn't find a good way to use components like you can with JavaScript frameworks.
 * It was more of a pain than I'd like to admin to set up automatic reloading when you save a `.php` or a `.scss` file during development.
 
 I absolutely love [Vue](https://vuejs.org/ "VueJS") and basically use [NuxtJS](https://nuxtjs.org/ "NuxtJS"), which is a static site generator built with Vue, wherever I can. All I had to do was find a CMS that would allow me to use this technology as the base for my project.
@@ -50,14 +50,28 @@ Select your Git repository
 
 ## Editor Experience
 
+I haven't used every other CMS out there but so far Forestry has the best editing experience I've come across. Everything is super simple and
+
 ## Developer Experience
 
-The beauty of using a headless CMS is that you can 'bring your own front-end'. In other words, you can use whatever the hell you want to display your content.
+The beauty of using a headless CMS is that you can 'bring your own front-end'. In other words, you can use whatever you want to take care of displaying your content with template files as long as it can fetch and handle data from an API.
 
 ## Other Stuff I Considered
+
+Being that WordPress gave you so many tools to help create and optimize your content, I had some concerns about leaving. There's essentially a plugin that you can use to do virtually anything 
 
 ### Images
 
 ### SEO
 
+Search Engine Optimization (SEO) was
+
 ### Security
+
+## What I Feel Is Missing From Forestry
+
+As great as Forestry is, there are a few things that I feel would make it even better
+
+### Schedule Posts
+
+### Recognize Drafts in More Static Site Generators
