@@ -66,7 +66,7 @@
     grid-area: sidebar;
     align-self: start;
     background-color: var(--color-primary-100);
-    padding: 3rem;
+    padding: 2rem;
     border-radius: var(--border-radius-sm);
     position: sticky;
     top: 13rem;
@@ -88,10 +88,13 @@
     }
 
     li {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       line-height: 1.8;
       list-style: none;
-      margin-bottom: 0.5rem;
+
+      &:not(:last-child) {
+        margin-bottom: 0.8rem;
+      }
     }
   }
 }

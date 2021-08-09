@@ -4,6 +4,7 @@ Write this later.
 
 ## Todos
 
+- [ ] Add a short about me or share to the bottom of every article
 - [ ] Improve the footer with an image and short bio
 - [x] De-emphasize the social icons
 - [ ] Create category blog tags
