@@ -1,6 +1,6 @@
 ---
 draft: true
-previewImage: "/img/default-card-image.png"
+previewImage: "/img/moving-from-wordpress-to-forestry.jpg"
 title: Moving From Wordpress to Forestry
 summary: How moving from WordPress to Forestry drastically improved my performance
   and sky-rocketed my developer experience.
@@ -43,11 +43,19 @@ This brings me to...
 
 Click 'Add Site' in the upper right
 
+![](/img/forestry-add-site.png)
+
 Select a static site generator
+
+![](/img/forestry-select-ssg.png)
 
 Select your Git provider
 
+![](/img/forestry-select-git-provider.png)
+
 Select your Git repository
+
+![](/img/forestry-link-repo.png)
 
 **Voila!** Just like that, you're ready to start using the Forestry admin interface. Any change that you make will be reflected in your repo.
 
@@ -115,10 +123,14 @@ It would be amazing if there was a built-in way of scheduling posts to go out. C
 
 Forestry offers a nice way to allow you to preview your content before you publish it to the World. You can go into settings and start a preview server that will mimic your development command (for me it's the same thing as running `npm run dev`).
 
+![](/img/forestry-preview-settings.png)
+
 After that, on your blog posts, you'll be able to click on this eye icon to open a preview of your post:
+
+![](/img/forestry-preview-icon.png)
 
 The problem is that in order to refresh that Forestry preview page, you have to click on the eye icon again and it's _soooo_ very tempting to click on the big old 'Save' button that's right next to it. But clicking on the 'Save' button will actually publish your post which likely isn't what you want.
 
-I've accidentally published posts a few times when I meant to refresh the preview page. 
+I've accidentally published posts a few times when I meant to refresh the preview page.
 
 I wish there was a ghost button that said 'Preview' instead of the eye icon. That might not be the _best_ solution but it would help.
