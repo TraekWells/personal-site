@@ -11,9 +11,7 @@ createdAt: 2021-08-08T23:00:00.000-06:00
 
 I've been using WordPress for quite a while for any website or project that had any kind of blog-like content. It was my go-to Content Management System (CMS) because it gives you everything you could possibly need to begin creating and managing content out of the box. That's probably why [it's so popular](https://kinsta.com/blog/wordpress-statistics/ "WordPress popularity").
 
-But as a wise man once said: (is this tasteless)
-
-> Ask and you shall recieve
+As time went on and I became more and more tech-savvy, I started to realize that WordPress was overkill for what I needed.
 
 ## Why I Moved Away From WordPress?
 
@@ -43,7 +41,13 @@ This brings me to...
 
 [Forestry.io](https://forestry.io/ "Forestry io") is a Git-based headless CMS that allows you to manage markdown content with a truly beautiful editing experience. They offer a **very generous free plan** that allows you to run up to three sites and each site can have three different editors. Not only that but they have really nailed making getting started as easy as possible (after creating an account):
 
-Click 'Add Site' in the upper right Select a static site generator Select your Git provider Select your Git repository
+Click 'Add Site' in the upper right
+
+Select a static site generator
+
+Select your Git provider
+
+Select your Git repository
 
 **Voila!** Just like that, you're ready to start using the Forestry admin interface. Any change that you make will be reflected in your repo.
 
@@ -67,7 +71,7 @@ Overall, the Forestry user interface allows you to focus on the most important t
 
 The beauty of using a headless CMS is that you can 'bring your own front-end'. In other words, you can use whatever front-end technology you want to handle for displaying your content.
 
-In my case, I opted to use NuxtJS's [content module](https://content.nuxtjs.org/ "NuxtJS Content Module") and [SCSS](https://sass-lang.com/ "SCSS") because I'm comfortable with both.
+In my case, I opted to use NuxtJS with its [content module](https://content.nuxtjs.org/ "NuxtJS Content Module") and [SCSS](https://sass-lang.com/ "SCSS") because I'm comfortable with both.
 
 ## Other Stuff I Considered
 
@@ -77,15 +81,27 @@ Being that WordPress gave you so many tools to help create and optimize your con
 
 This was the biggest one.
 
-Search Engine Optimization (SEO) is one of the main reasons people use WordPress because there are numerous plugins that will handle all of the heavy lifting for you. How was I going to handle this without the help of a WordPress plugin?
+Setting up basic Search Engine Optimization (SEO) is super easy on WordPress because there are numerous plugins that will handle all of the heavy lifting for you. So how was I going to handle this without the help of a WordPress plugin?
 
-NuxtJS has some fantastic documentation and with their help, I was able to figure out [how to generate meta tags dynamically](https://nuxtjs.org/docs/2.x/features/meta-tags-seo "How to generate dynamic meta tags"), including open-graph tags.
+As it turns out, NuxtJS has some fantastic documentation and with their help, I was able to figure out [how to generate meta tags dynamically](https://nuxtjs.org/docs/2.x/features/meta-tags-seo "How to generate dynamic meta tags"), including open-graph tags. With this, I'm able to change the title, description, and image of my content, without relying on a third-party plugin.
 
-More importantly, as I mentioned earlier, with WordPress I found myself spending **far** too much time tweaking SEO settings because they were _right_ there in the editing interface. At the end of the day, my goal is to write.
+More importantly, as I mentioned earlier, with WordPress I found myself spending **far** too much time tweaking SEO settings because they were _right_ there in the editing interface.
+
+Now I can focus on what matters, writing.
 
 ### Images
 
-Anytime you upload an image to WordPress, it creates multiple sizes and versions of that image so that it can display the correct size depending on the user. The problem with this is that you're adding way more image files than you need to your media folder. 
+Anytime you upload an image to WordPress, it automatically creates multiple different sizes of that image. By doing this, you're allowing your media folder to swell to be unnecessarily large.
+
+Luckily, NuxtJS offers a module to help optimize images for you automatically.
+
+This is my process for handling images now that I'm not using WordPress anymore:
+
+* I source, resize, and run my image through [ImageOptim](https://imageoptim.com/mac "Image Optim")
+* Upload the image to Forestry
+* Use [Nuxt Images](https://image.nuxtjs.org/ "Nuxt Images") to further optimize them and deliver them to the user.
+
+Isn't NuxtJS great?
 
 ## What I Feel Is Missing From Forestry
 
@@ -95,6 +111,14 @@ As great as Forestry is, there are a few things that I feel would make it even b
 
 It would be amazing if there was a built-in way of scheduling posts to go out. Currently, I set a `draft` boolean and a `publishedDate` in my post's front-matter and when I'm fetching my content, I only fetch and display content that has `draft: false`. I'm sure I could find a way to do this programmatically, but having the option built-in would be fantastic.
 
-### Recognize Drafts in More Static Site Generators
-
 ### Add A Preview Button
+
+Forestry offers a nice way to allow you to preview your content before you publish it to the World. You can go into settings and start a preview server that will mimic your development command (for me it's the same thing as running `npm run dev`).
+
+After that, on your blog posts, you'll be able to click on this eye icon to open a preview of your post:
+
+The problem is that in order to refresh that Forestry preview page, you have to click on the eye icon again and it's _soooo_ very tempting to click on the big old 'Save' button that's right next to it. But clicking on the 'Save' button will actually publish your post which likely isn't what you want.
+
+I've accidentally published posts a few times when I meant to refresh the preview page. 
+
+I wish there was a ghost button that said 'Preview' instead of the eye icon. That might not be the _best_ solution but it would help.
