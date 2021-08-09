@@ -127,7 +127,7 @@ Forestry offers a nice way to allow you to preview your content before you publi
 
 After that, on your blog posts, you'll be able to click on this eye icon to open a preview of your post:
 
-![](/img/forestry-preview-icon.png)
+![](/img/forestry-preview.png)
 
 The problem is that in order to refresh that Forestry preview page, you have to click on the eye icon again and it's _soooo_ very tempting to click on the big old 'Save' button that's right next to it. But clicking on the 'Save' button will actually publish your post which likely isn't what you want.
 
@@ -137,4 +137,10 @@ I wish there was a ghost button that said 'Preview' instead of the eye icon. Tha
 
 ## Wrapping Up
 
-Moving away from WordPress and into Forestry was a great move for the future of my blog and my productivity. 
+Moving away from WordPress and into Forestry was a great move for the future of my blog and my productivity. The clean user interface allows me to focus on writing without getting caught up in the small details of optimizing and tweaking every little thing.
+
+I can't say I'd recommend Forestry for _every_ project though. Since it's a Git-based CMS, using it on a client project might cause some concerns since their content would have to be on a Git provider (although it could be a private repository). I'd probably opt to use an API-based CMS like [Prismic](https://prismic.io/ "Prismic") or [Contentful](https://www.contentful.com/ "Contentful") instead in that case.
+
+### Bonus
+
+I didn't talk about it much in this post but I use [Netlify](https://www.netlify.com/ "Netlify") to host a few of my sites and they make it **super** simple to set up a site with automatic deployments. This paired with Forestry is a perfect combination for streamlined development.
