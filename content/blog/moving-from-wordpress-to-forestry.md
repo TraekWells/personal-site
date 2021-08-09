@@ -1,9 +1,9 @@
 ---
-draft: true
+draft: false
 previewImage: "/img/moving-from-wordpress-to-forestry.jpg"
 title: Moving From Wordpress to Forestry
-summary: How moving from WordPress to Forestry drastically improved my performance
-  and sky-rocketed my developer experience.
+summary: Moving from WordPress to Forestry drastically improved my productivity, developer
+  experience and allowed me to work with more modern technology.
 createdAt: 2021-08-08T23:00:00.000-06:00
 
 ---
