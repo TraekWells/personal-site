@@ -53,6 +53,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    '@/modules/sitemapRouteGenerator',
     'vue-plausible',
   ],
 
@@ -61,6 +62,7 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     '@nuxtjs/style-resources',
+    '@nuxtjs/sitemap',
   ],
   plausible: {
     domain: 'traek.dev',
@@ -98,5 +100,8 @@ export default {
         ],
       ],
     },
+  },
+  sitemap: {
+    hostname: 'https://traek.dev',
   },
 }
