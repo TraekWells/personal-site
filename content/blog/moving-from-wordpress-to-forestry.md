@@ -57,7 +57,7 @@ Select your Git repository
 
 ![](/img/forestry-link-repo.png)
 
-**Voila!** Just like that, you're ready to start using the Forestry admin interface. Any change that you make will be reflected in your repo.
+**Voila!** Just like that, you're ready to start using the Forestry admin interface.
 
 ## Editor Experience
 
@@ -134,3 +134,7 @@ The problem is that in order to refresh that Forestry preview page, you have to 
 I've accidentally published posts a few times when I meant to refresh the preview page.
 
 I wish there was a ghost button that said 'Preview' instead of the eye icon. That might not be the _best_ solution but it would help.
+
+## Wrapping Up
+
+Moving away from WordPress and into Forestry was a great move for the future of my blog and my productivity. 
