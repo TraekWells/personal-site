@@ -47,7 +47,7 @@
         </li>
         <li class="navigation__item">
           <nuxt-link to="/about-me"
-            ><span class="navigation__link">About Me</span></nuxt-link
+            ><span class="navigation__link">Who I Am</span></nuxt-link
           >
         </li>
       </ul>
