@@ -5,7 +5,9 @@
 .content {
   display: grid;
   padding: 0 0 5rem;
-  grid-template-areas: 'content sidebar ';
+  grid-template-areas:
+    'image image'
+    'content sidebar';
   grid-template-columns: 2.5fr 1fr;
   gap: 5rem;
 
@@ -16,6 +18,7 @@
 
   @include respond-to(tab-port) {
     grid-template-areas:
+      'image'
       'sidebar'
       'content';
     grid-template-columns: 1fr;
@@ -60,6 +63,10 @@
     p:first-of-type {
       margin-top: 0;
     }
+  }
+
+  &__image {
+    grid-area: image;
   }
 
   &__sidebar {
