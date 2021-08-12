@@ -11,6 +11,9 @@ fields:
 - type: file
   name: previewImage
   label: Preview Image
+- name: featured
+  type: boolean
+  label: Featured?
 - type: text
   name: linkToProject
   label: Link To Project
@@ -20,6 +23,3 @@ fields:
 - type: text
   name: technology
   label: Technology
-- name: featured
-  type: boolean
-  label: Featured?
