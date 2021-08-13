@@ -4,7 +4,7 @@ previewImage: "/img/moving-from-wordpress-to-forestry.jpg"
 title: Moving From WordPress to Forestry
 summary: How moving from WordPress to Forestry drastically improved my productivity,
   developer experience and allowed me to work with more modern technology.
-createdAt: 2021-08-08T23:00:00.000-06:00
+createdAt: 2021-08-08T23:00:00-06:00
 
 ---
 <note>This is not an anti-WordPress post. In fact, I think WordPress is a fantastic tool and depending on the needs of the project, could be the perfect solution. This post is simply to promote how amazing Forestry is.</note>
@@ -144,3 +144,9 @@ I can't say I'd recommend Forestry for _every_ project though. Since it's a Git-
 ### Bonus
 
 I didn't talk about it much in this post but I use [Netlify](https://www.netlify.com/ "Netlify") to host a few of my sites and they make it **super** simple to set up a site with automatic deployments. This paired with Forestry is a perfect combination for streamlined development.
+
+### Takeaways
+
+* Forestry is a fantastic Git-based headless CMS and has drastically streamlined my process from development to content publishing.
+* The Forestry editing experience allows you to focus on what matters, writing content.
+* WordPress isn't a bad CMS by any means, but it's overkill for what I needed.
