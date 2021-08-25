@@ -8,7 +8,7 @@ createdAt: 2021-08-25T23:00:00-06:00
 ---
 ## Summary
 
-The `includes()` method checks if an element exists in an array.
+The `includes()` method checks if an element exists in an array and will return a `boolean`. 
 
 (Give an example)
 
