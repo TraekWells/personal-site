@@ -1,12 +1,12 @@
 ---
 draft: true
 previewImage: "/img/default-card-image.png"
-title: 'JavaScript Array Methods: includes()'
+title: JavaScript Array includes() Method
 summary: ''
 createdAt: 2021-08-25T23:00:00.000-06:00
 
 ---
-## Summary
+## Description
 
 The `includes()` method checks if an element exists in an array and will return a `boolean`. As you may have guessed, it returns `true` if the array has the value and it returns `false` if the array does not contain the value.
 
@@ -18,9 +18,14 @@ The `includes()` method checks if an element exists in an array and will return 
 
 ## Syntax
 
+    includes(searchElement)
+    includes(searchElement, fromIndex)
+
 ### Parameters
 
 ### Return Value
+
+This method will return `true` if the tested array includes the given value, otherwise it will return `false`.
 
 ## Use Cases
 
