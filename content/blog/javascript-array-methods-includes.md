@@ -25,7 +25,7 @@ The `includes()` method checks if an element exists in an array and will return 
 
 `searchElement`
 
-`fromIndex`
+`fromIndex` _(optional)_
 
 ### Return Value
 
