@@ -12,7 +12,9 @@ The `includes()` method checks if an element exists in an array and will return 
 
     const insects = ['grasshopper', 'ant', 'hornet', 'fly', 'praying-mantis'];
     
-    insects.includes('ant'); // true
+    insects.includes('ant'); 		// true
+    insects.includes('hornet'); 	// true
+    insects.includes('beetle'); 	// false
 
 ## Syntax
 
