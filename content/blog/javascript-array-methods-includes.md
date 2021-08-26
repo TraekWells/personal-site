@@ -18,14 +18,18 @@ The `includes()` method checks if an element exists in an array and will return 
 
 ## Syntax
 
-    includes(searchElement)
-    includes(searchElement, fromIndex)
+    array.includes(searchElement)
+    array.includes(searchElement, fromIndex)
 
 ### Parameters
 
 `searchElement`
 
+The value that you're checking for in the array.
+
 `fromIndex` _(optional)_
+
+The index in which to start searching for `searchElement`. If no value is provided, this method will search from the beginning of the array. 
 
 ### Return Value
 
