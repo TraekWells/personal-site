@@ -39,7 +39,3 @@ The index in which to start searching for `searchElement`. If no value is provid
 ### Return Value
 
 This method will return `true` if the tested array includes the given value, otherwise it will return `false`.
-
-## Use Cases
-
-### Check if an array contains a specific value
