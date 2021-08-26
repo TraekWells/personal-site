@@ -3,7 +3,7 @@ const url = 'https://traek.dev'
 const title = 'UI Developer | Traek Wells'
 const description =
   'Personal developer website for Traek Wells, a Front-end Developer and UI Designer'
-const image = '/img/default-card-image.png'
+const image = '/img/open-graph-image.jpg'
 
 export default (meta) => {
   return [
