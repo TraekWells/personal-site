@@ -1,7 +1,7 @@
 ---
-draft: true
+draft: false
 previewImage: "/img/javascript-hero-image.jpg"
-title: JavaScript Array includes() Method
+title: JavaScript Array .includes() Method
 summary: The JavaScript array.includes() method checks if an array contains a given
   value and returns either true or false.
 createdAt: 2021-08-25T23:00:00.000-06:00
