@@ -23,6 +23,10 @@ The `includes()` method checks if an element exists in an array and will return 
 
 ### Parameters
 
+`searchElement`
+
+`fromIndex`
+
 ### Return Value
 
 This method will return `true` if the tested array includes the given value, otherwise it will return `false`.
