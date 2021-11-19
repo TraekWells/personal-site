@@ -4,13 +4,13 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Book Title
 - type: text
   name: author
-  label: author
+  label: Author
 - type: file
   name: image
-  label: image
+  label: Book Art
 - type: textarea
   name: thoughts
-  label: thoughts
+  label: Thoughts
