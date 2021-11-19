@@ -41,6 +41,11 @@
           >
         </li>
         <li class="navigation__item">
+          <nuxt-link to="/bookshelf"
+            ><span class="navigation__link">Bookshelf</span></nuxt-link
+          >
+        </li>
+        <li class="navigation__item">
           <nuxt-link to="/blog/impossible-list"
             ><span class="navigation__link">Impossible List</span></nuxt-link
           >
