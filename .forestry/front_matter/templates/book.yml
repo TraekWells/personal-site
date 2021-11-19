@@ -1,0 +1,16 @@
+---
+label: Book
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: author
+  label: author
+- type: file
+  name: image
+  label: image
+- type: textarea
+  name: thoughts
+  label: thoughts
