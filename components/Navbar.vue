@@ -151,7 +151,7 @@ export default {
     list-style: none;
 
     &:not(:last-child) {
-      margin-right: 4rem;
+      margin-right: 3rem;
     }
   }
 

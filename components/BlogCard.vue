@@ -10,9 +10,9 @@
         <nuxt-link :to="blog.path">{{ blog.title }}</nuxt-link>
       </h3>
       <p>{{ blog.summary }}</p>
-      <a :href="blog.path" class="read-more"
+      <nuxt-link :to="blog.path" class="read-more"
         >Read More <ArrowRightIcon aria-label="Arrow icon"></ArrowRightIcon
-      ></a>
+      ></nuxt-link>
     </div>
   </article>
 </template>
