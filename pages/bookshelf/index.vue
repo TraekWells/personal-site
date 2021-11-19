@@ -12,8 +12,8 @@
     </header>
     <section class="section">
       <div class="wave-white"></div>
-      <div class="container container--narrow">
-        <div class="blogs">
+      <div class="container">
+        <div class="books">
           <Book v-for="book in books" :key="book.path" :book="book" />
         </div>
       </div>
@@ -57,3 +57,16 @@ export default {
   },
 }
 </script>
+
+<style scoped lang="scss">
+.books {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include respond-to(tab-land) {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+</style>

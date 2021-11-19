@@ -1,6 +1,8 @@
 ---
-title: 'Book title two'
-author: 'Dan Brown'
+title: 'The Daughter of Sparta'
+author: 'Claire M. Andrews'
+image: 'https://images-na.ssl-images-amazon.com/images/I/51LTO7XWNYS._SX332_BO1,204,203,200_.jpg'
+thoughts: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fermentum odio eu feugiat pretium nibh ipsum. Urna nunc id cursus metus aliquam. Lorem donec massa sapien faucibus et molestie ac. Amet est placerat in egestas erat imperdiet. Ut lectus arcu bibendum at. Posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Leo vel orci porta non pulvinar neque laoreet suspendisse. Faucibus purus in massa tempor nec feugiat nisl pretium. Id semper risus in hendrerit gravida rutrum quisque non. Faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Gravida neque convallis a cras. Nunc sed velit dignissim sodales. Sit amet mauris commodo quis imperdiet massa. Sollicitudin nibh sit amet commodo nulla. Tortor posuere ac ut consequat semper viverra nam libero justo. Sodales neque sodales ut etiam sit amet nisl purus. Malesuada pellentesque elit eget gravida cum. Netus et malesuada fames ac turpis egestas sed tempus.

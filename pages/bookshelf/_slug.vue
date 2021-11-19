@@ -3,7 +3,7 @@
     <header class="header">
       <div class="container container--narrow">
         <h1>{{ book.title }}</h1>
-        <p class="lead">{{ book.author }}</p>
+        <p class="lead">{{ book.thoughts }}</p>
       </div>
     </header>
     <article class="section">
@@ -13,7 +13,7 @@
           <div class="content__text">
             <div class="content__info">
               <p>
-                Written on date? and takes about
+                Written on {{ $formatDate(book.createdAt) }} and takes about
                 {{ wordCount }} minutes to read.
               </p>
             </div>
