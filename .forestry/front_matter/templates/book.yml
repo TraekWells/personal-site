@@ -15,4 +15,5 @@ fields:
   name: thoughts
   label: Thoughts
 pages:
+- content/bookshelf/cant-hurt-me.md
 - content/bookshelf/the-daughter-of-sparta.md
