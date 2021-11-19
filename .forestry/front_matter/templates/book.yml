@@ -14,3 +14,5 @@ fields:
 - type: textarea
   name: thoughts
   label: Thoughts
+pages:
+- content/bookshelf/the-daughter-of-sparta.md
