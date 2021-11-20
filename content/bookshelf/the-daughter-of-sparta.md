@@ -1,8 +1,11 @@
 ---
-title: 'The Daughter of Sparta'
-author: 'Claire M. Andrews'
-image: '/img/books/the-daughter-of-sparta.webp'
-thoughts: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+title: The Daughter of Sparta
+author: Claire M. Andrews
+image: /img/books/the-daughter-of-sparta.webp
+thoughts:
+  I'm a huge Greek mythology nerd so I was excited for this one. Ultimately,
+  it fell flat for me and it was a bit on the corny side but cool to see a female
+  protagonist.
 ---
 
 ## Impressions
