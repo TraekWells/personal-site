@@ -2,7 +2,9 @@
 title: The Daughter of Sparta
 author: Claire M. Andrews
 image: https://images-na.ssl-images-amazon.com/images/I/51LTO7XWNYS._SX332_BO1,204,203,200_.jpg
-thoughts: I'm a huge Greek mythology nerd but this book kind of fell flat for me
+thoughts: I'm a huge Greek mythology nerd so I was excited for this one. Ultimately,
+  it fell flat for me and it was a bit on the corny side but cool to see a female
+  protaginist.
 
 ---
 ## Impressions
