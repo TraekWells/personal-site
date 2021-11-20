@@ -1,7 +1,7 @@
 ---
 title: "Can't Hurt Me"
 author: 'David Goggins'
-image: 'https://images-na.ssl-images-amazon.com/images/I/41hN6mCSqGL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg'
+image: '/img/books/cant-hurt-me.webp'
 thoughts: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 ---
 

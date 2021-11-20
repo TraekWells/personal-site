@@ -5,7 +5,8 @@
         <div class="header__content">
           <h1>Bookshelf</h1>
           <p class="lead mb-4">
-            Something about the books I’ve read and my thoughts on about them.
+            Here's a collection of the books I've either read or listened to and
+            my thoughts about them.
           </p>
         </div>
       </div>

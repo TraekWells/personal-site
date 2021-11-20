@@ -1,7 +1,11 @@
 <template>
   <article class="project">
     <div class="project__image">
-      <img :src="project.previewImage" :alt="project.title" />
+      <nuxt-picture
+        :src="project.previewImage"
+        :alt="project.title"
+        loading="lazy"
+      />
     </div>
     <div class="project__content">
       <h3>
