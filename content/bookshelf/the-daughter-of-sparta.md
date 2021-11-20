@@ -9,11 +9,9 @@ thoughts: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fermentum odio eu feugiat pretium nibh ipsum. Urna nunc id cursus metus aliquam. Lorem donec massa sapien faucibus et molestie ac. Amet est placerat in egestas erat imperdiet. Ut lectus arcu bibendum at.
 
-Posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Leo vel orci porta non pulvinar neque laoreet suspendisse. Faucibus purus in massa tempor nec feugiat nisl pretium. Id semper risus in hendrerit gravida rutrum quisque non.
-
 ## Favorites
 
-Eget mi proin sed libero enim sed faucibus. Amet consectetur adipiscing elit ut aliquam purus sit. Nibh venenatis cras sed felis eget velit. Et ligula ullamcorper malesuada proin libero nunc. Phasellus vestibulum lorem sed risus ultricies tristique nulla. At tellus at urna condimentum mattis. Aliquam id diam maecenas ultricies mi eget mauris. Semper auctor neque vitae tempus quam pellentesque nec nam aliquam. Venenatis a condimentum vitae sapien. Eget duis at tellus at urna. Tortor vitae purus faucibus ornare suspendisse sed. Justo eget magna fermentum iaculis eu non diam phasellus.
+Posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Leo vel orci porta non pulvinar neque laoreet suspendisse. Faucibus purus in massa tempor nec feugiat nisl pretium. Id semper risus in hendrerit gravida rutrum quisque non.
 
 ## Who's this book for?
 

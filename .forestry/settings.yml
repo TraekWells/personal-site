@@ -4,6 +4,15 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: heading
+  label: Pages
+- type: directory
+  path: pages
+  label: Pages
+  create: all
+  match: "**/*"
+- type: heading
+  label: Blog
 - type: directory
   path: content/blog
   label: Blog
@@ -11,6 +20,8 @@ sections:
   match: "**/*"
   templates:
   - blog-post
+- type: heading
+  label: Projects
 - type: directory
   path: content/projects
   label: Projects
@@ -18,6 +29,13 @@ sections:
   match: "**/*"
   templates:
   - project
+- type: heading
+  label: Bookshelf
+- type: directory
+  path: content/bookshelf
+  label: Bookshelf
+  create: all
+  match: "**/*"
 upload_dir: static/img
 public_path: "/img"
 front_matter_path: ''
