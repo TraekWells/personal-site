@@ -1,11 +1,10 @@
 ---
-title: Can't Hurt Me
-author: David Goggins
-image: https://images-na.ssl-images-amazon.com/images/I/41hN6mCSqGL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg
-thoughts: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua.
-
+title: "Can't Hurt Me"
+author: 'David Goggins'
+image: '/img/books/cant-hurt-me.webp'
+thoughts: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 ---
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fermentum odio eu feugiat pretium nibh ipsum. Urna nunc id cursus metus aliquam. Lorem donec massa sapien faucibus et molestie ac. Amet est placerat in egestas erat imperdiet. Ut lectus arcu bibendum at.
 
 ## Impressions

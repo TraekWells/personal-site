@@ -55,6 +55,7 @@ export default {
     '@nuxtjs/eslint-module',
     '@/modules/sitemapRouteGenerator',
     'vue-plausible',
+    '@nuxt/image',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)

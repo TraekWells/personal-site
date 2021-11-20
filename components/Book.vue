@@ -1,6 +1,11 @@
 <template>
   <div class="book">
-    <img class="book__image" :src="book.image" :alt="book.title" />
+    <nuxt-picture
+      class="book__image"
+      :src="book.image"
+      :alt="book.title"
+      loading="lazy"
+    />
     <div class="book__details">
       <h3 class="book__title">
         <nuxt-link :to="book.path">{{ book.title }}</nuxt-link>
