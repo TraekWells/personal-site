@@ -30,6 +30,15 @@
         </div>
       </div>
     </article>
+    <article class="section section--secondary">
+      <div class="wave-yellow"></div>
+      <div class="container container--narrow">
+        <h2 class="text-center">Notes from other books</h2>
+        <div class="books mt-4">
+          <Book v-for="book in moreBooks" :key="book.path" :book="book" />
+        </div>
+      </div>
+    </article>
   </main>
 </template>
 
@@ -39,7 +48,12 @@ import getMetaData from '@/config/getMetaData.js'
 export default {
   async asyncData({ $content, params }) {
     const book = await $content(`bookshelf/${params.slug}`).fetch()
-    return { book }
+    const moreBooks = await $content(`bookshelf`)
+      .where({ draft: false })
+      .where({ title: { $ne: book.title } })
+      .fetch()
+    console.log(moreBooks)
+    return { book, moreBooks }
   },
   data() {
     return {
@@ -61,7 +75,7 @@ export default {
     },
   },
   mounted() {
-    const headers = Array.from(document.querySelectorAll('h2'))
+    const headers = Array.from(document.querySelectorAll('.content h2'))
     headers.forEach((header) => {
       const headerObj = {}
       headerObj.text = header.textContent

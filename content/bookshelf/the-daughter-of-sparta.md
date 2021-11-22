@@ -6,6 +6,7 @@ thoughts:
   I'm a huge Greek mythology nerd so I was excited for this one. Ultimately,
   it fell flat for me and it was a bit on the corny side but cool to see a female
   protagonist.
+draft: true
 ---
 
 ## Impressions
