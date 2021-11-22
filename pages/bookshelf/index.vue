@@ -58,16 +58,3 @@ export default {
   },
 }
 </script>
-
-<style scoped lang="scss">
-.books {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
-  @include respond-to(tab-land) {
-    align-items: center;
-    flex-direction: column;
-  }
-}
-</style>
