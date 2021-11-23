@@ -8,12 +8,15 @@ fields:
 - type: text
   name: author
   label: Author
-- type: file
-  name: image
-  label: Book Art
 - type: textarea
   name: thoughts
   label: Thoughts
+- name: draft
+  type: boolean
+  label: Draft
+- type: file
+  name: image
+  label: Book Art
 pages:
 - content/bookshelf/cant-hurt-me.md
 - content/bookshelf/the-daughter-of-sparta.md
