@@ -78,6 +78,7 @@ Lastly and always, I'm working on becoming a better person and appreciating the 
   * ~~Finish under 22 minutes~~ (April 4th, 2021)
   * Finish under 20 minutes
 * ~~Finish a 10k~~ (October 2nd, 2021)
+  * Finish under 45 minutes
 * Finish a half marathon
 * Finish a marathon
 * Finish a duathlon
