@@ -31,7 +31,7 @@ Lastly and always, I'm working on becoming a better person and appreciating the 
 * Build this site with Nuxt (January 18th, 2021)
 * Fast for 400 hours in a month (February 28th, 2021)
 * Start hip-hop music review blog ([May 1st, 2020](https://hiphopseason.com/))
-* Finish a 10k (October 2nd, 2021)
+* Finish a 10k ([October 2nd, 2021](/img/631bf879-e704-4baf-ba96-3e89998d3b11.jpeg))
 
 ## Professional Goals
 
@@ -77,7 +77,7 @@ Lastly and always, I'm working on becoming a better person and appreciating the 
 * ~~Finish a 5k~~ (April 4th, 2021)
   * ~~Finish under 22 minutes~~ (April 4th, 2021)
   * Finish under 20 minutes
-* ~~Finish a 10k~~ (October 2nd, 2021)
+* ~~Finish a 10k~~ ([October 2nd, 2021](/img/631bf879-e704-4baf-ba96-3e89998d3b11.jpeg))
   * Finish under 45 minutes
 * Finish a half marathon
 * Finish a marathon
