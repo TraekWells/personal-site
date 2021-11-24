@@ -31,7 +31,7 @@ Lastly and always, I'm working on becoming a better person and appreciating the 
 * Build this site with Nuxt (January 18th, 2021)
 * Fast for 400 hours in a month (February 28th, 2021)
 * Start hip-hop music review blog ([May 1st, 2020](https://hiphopseason.com/))
-* Finish a 10k ([October 2nd, 2021](/img/631bf879-e704-4baf-ba96-3e89998d3b11.jpeg))
+* Finish a 10k ([October 2nd, 2021](https://cdn.forestry.io/res2/mdQbqHDQPsAn38v6ExGm_5tZT7qyVpA8dn3DjHl_OyQ/fit/512/512/sm/0/aHR0cHM6Ly9hcHAu/Zm9yZXN0cnkuaW8v/cmFpbHMvYWN0aXZl/X3N0b3JhZ2UvYmxv/YnMvZXlKZmNtRnBi/SE1pT25zaWJXVnpj/MkZuWlNJNklrSkJh/SEJDVEdkeVVFSk5Q/U0lzSW1WNGNDSTZi/blZzYkN3aWNIVnlJ/am9pWW14dllsOXBa/Q0o5ZlE9PS0tNGVh/NWE0ZDY1MWM2NjRm/ODE2YTc0NjFlZjRj/MzFjOTA1MzM1MTEx/NC82MzFCRjg3OS1F/NzA0LTRCQUYtQkE5/Ni0zRTg5OTk4RDNC/MTEuanBlZw))
 
 ## Professional Goals
 
@@ -77,7 +77,7 @@ Lastly and always, I'm working on becoming a better person and appreciating the 
 * ~~Finish a 5k~~ (April 4th, 2021)
   * ~~Finish under 22 minutes~~ (April 4th, 2021)
   * Finish under 20 minutes
-* ~~Finish a 10k~~ ([October 2nd, 2021](/img/631bf879-e704-4baf-ba96-3e89998d3b11.jpeg))
+* ~~Finish a 10k~~ ([October 2nd, 2021](https://cdn.forestry.io/res2/mdQbqHDQPsAn38v6ExGm_5tZT7qyVpA8dn3DjHl_OyQ/fit/512/512/sm/0/aHR0cHM6Ly9hcHAu/Zm9yZXN0cnkuaW8v/cmFpbHMvYWN0aXZl/X3N0b3JhZ2UvYmxv/YnMvZXlKZmNtRnBi/SE1pT25zaWJXVnpj/MkZuWlNJNklrSkJh/SEJDVEdkeVVFSk5Q/U0lzSW1WNGNDSTZi/blZzYkN3aWNIVnlJ/am9pWW14dllsOXBa/Q0o5ZlE9PS0tNGVh/NWE0ZDY1MWM2NjRm/ODE2YTc0NjFlZjRj/MzFjOTA1MzM1MTEx/NC82MzFCRjg3OS1F/NzA0LTRCQUYtQkE5/Ni0zRTg5OTk4RDNC/MTEuanBlZw))
   * Finish under 45 minutes
 * Finish a half marathon
 * Finish a marathon
