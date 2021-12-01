@@ -8,9 +8,7 @@
     <section class="section">
       <div class="wave-white"></div>
       <div class="container container--narrow">
-        <p class="text-center">
-          TODO: Tell the world a little bit about yourself.
-        </p>
+        <nuxt-content :document="about"></nuxt-content>
       </div>
     </section>
   </main>
@@ -20,6 +18,10 @@
 import getMetaData from '@/config/getMetaData.js'
 
 export default {
+  async asyncData({ $content }) {
+    const about = await $content('about-me').fetch()
+    return { about }
+  },
   computed: {
     meta() {
       const metaData = {

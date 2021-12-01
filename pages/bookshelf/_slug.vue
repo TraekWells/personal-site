@@ -51,6 +51,7 @@ export default {
     const moreBooks = await $content(`bookshelf`)
       .where({ draft: false })
       .where({ title: { $ne: book.title } })
+      .limit(2)
       .fetch()
     console.log(moreBooks)
     return { book, moreBooks }

@@ -27,7 +27,7 @@ import getMetaData from '@/config/getMetaData.js'
 
 export default {
   async asyncData({ $content }) {
-    const books = await $content('bookshelf').fetch()
+    const books = await $content('bookshelf').where({ draft: false }).fetch()
     return { books }
   },
   computed: {
