@@ -7,19 +7,30 @@ draft: false
 image: "/img/the-almanak-of-naval-ravikant.jpg"
 
 ---
-Once I got about halfway through _The Almanack of Naval Ravikant,_ I knew it would be a book that I read many times. In fact, I liked it so much that I got a copy for a good friend of mine.
+Once I got about halfway through _The Almanack of Naval Ravikant,_ I knew it would be a book that I would read many times. In fact, I liked it so much that I got a copy for a good friend of mine.
 
-Eric Jorgenson has compiled snippets from Naval's articles, tweets, podcasts, and essays and put them in a readable, book format. \[For free I might add\](First, this book has an interesting structure to it. It's broken down into two distinct parts, Wealth and Happiness.).
+This book is organized into two parts, Wealth and Happiness. Eric Jorgenson has compiled snippets from Naval's articles, tweets, podcasts, and essays related to each part and put them in a readable, book format.
+
+The best part? [It's available for free](https://www.navalmanack.com/).
 
 ## Favorites
 
-I enjoyed the second half of the book titled "Happiness" much more than the first half. I think it's because happiness is much more important to me than building wealth is.
+I enjoyed the second half of the book titled "Happiness" much more than the first half. I think it's because happiness is much more important to me than building wealth is. (I'm also better at being happy).
 
 > The three big ones in life are wealth, health, and happiness. We pursue them in that order, but their imporantance is reverse.
 
 There's a chapter in the book titled "Happiness is Learned" which is a personal favorite of mine. In this chapter, he talks about how being unhappy is really just humans with desires they haven't achieved yet. One passage in particular:
 
 > Nature has no concept of happiness or unhappiness. Nature follows unbroken mathematical laws and a chain of cause and effect from the Big Bang to now. Everything is perfect exactly the way it is. It is only in our particular minds we are unhappy or not happy, and things are perfect or imperfect because of what we desire.
+
+In the "Wealth" part of the book, there's a chapter titled "Building Judgement". There's a line that I read over and over again and it's really stuck with me:
+
+> It's only after you're bored you have the great ideas. It's never going to be when you're stressed, or busy, running aronud or rushed. Make the time.
+
+I can relate to that 100% and it's **mostly** true for me. My best ideas seem to come when I'm either:
+
+1. Doing nothing and I'm bored just like Naval mentions, or
+2. In a state of suffering through exercise
 
 ## Who's this book for?
 
