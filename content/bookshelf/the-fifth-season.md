@@ -10,4 +10,6 @@ draft: true
 
 ## Favorites
 
+Of the reviews of this book that were negative, just about all of them had an issue with the switching of the reader's point of view. Honestly, that was one of my favorites aspects of _The Fifth Season_. 
+
 ## Who's this book for?
