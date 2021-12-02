@@ -13,6 +13,12 @@ This book is organized into two parts, Wealth and Happiness. Eric Jorgenson has 
 
 The best part? [It's available for free](https://www.navalmanack.com/).
 
+## Impressions
+
+Easily one of the best books I've ever read. If I was the kind of reader who highlighted books, the whole book would be highlighted. That's not an exaggeration. There are **sooo** many nuggets in this book.
+
+I will keep this book around to re-read and reference in the future.
+
 ## Favorites
 
 I enjoyed the second half of the book titled "Happiness" much more than the first half. I think it's because happiness is much more important to me than building wealth is. (I'm also better at being happy).
