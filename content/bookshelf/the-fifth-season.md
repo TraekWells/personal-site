@@ -2,8 +2,8 @@
 title: The Fifth Season
 author: N. K. Jemisin
 image: "/img/books/the-fifth-season.webp"
-thoughts: This is an interesting blend of science fiction and fantasy. Probably the
-  most original book I've ever read with a unique world.
+thoughts: An interesting blend of science fiction and fantasy filled with magic, tragedy
+  and intrigue. Easily the most original non-fiction book I've ever read.
 draft: true
 
 ---
