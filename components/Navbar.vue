@@ -125,7 +125,7 @@ export default {
   top: 0;
   left: 0;
   right: 0;
-  padding: 2rem 0;
+  padding: 2rem;
   z-index: 15;
   box-shadow: 0 2px 1.5rem rgba(0, 0, 0, 0.05);
 

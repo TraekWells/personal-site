@@ -1,11 +1,20 @@
 <template>
   <div class="book">
-    <nuxt-picture
-      class="book__image"
-      :src="book.image"
-      :alt="book.title"
-      loading="lazy"
-    />
+    <div class="book__art">
+      <nuxt-picture
+        class="book__image"
+        :src="book.image"
+        :alt="book.title"
+        loading="lazy"
+      />
+      <div class="book__rating">
+        <StarIcon
+          v-for="(star, index) in book.rating"
+          :key="index"
+          aria-label="Star icon"
+        />
+      </div>
+    </div>
     <div class="book__details">
       <h3 class="book__title">
         <nuxt-link :to="book.path">{{ book.title }}</nuxt-link>
@@ -20,9 +29,9 @@
 </template>
 
 <script>
-import { ArrowRightIcon } from 'vue-feather-icons'
+import { ArrowRightIcon, StarIcon } from 'vue-feather-icons'
 export default {
-  components: { ArrowRightIcon },
+  components: { ArrowRightIcon, StarIcon },
   props: {
     book: {
       type: Object,
@@ -38,14 +47,28 @@ export default {
   width: 45%;
   margin-bottom: 5rem;
 
+  &__art {
+    margin-right: 2rem;
+    flex: 0 0 15rem;
+  }
+
   &__image {
     border-radius: 0;
-    flex: 0 0 15rem;
-    margin-right: 2rem;
     align-self: flex-start;
 
     @include respond-to(phone) {
       margin-bottom: 2rem;
+    }
+  }
+
+  &__rating {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+
+    @include respond-to(phone) {
+      margin-bottom: 1rem;
+      justify-content: flex-start;
     }
   }
 
@@ -69,6 +92,13 @@ export default {
 
   @include respond-to(phone) {
     flex-direction: column;
+  }
+
+  .feather-star {
+    color: goldenrod;
+    fill: goldenrod;
+    width: 1.8rem;
+    height: 1.8rem;
   }
 }
 </style>
