@@ -5,6 +5,7 @@ thoughts: This is a literary goldmine full of gems regarding the pursuit of weal
   and happiness.
 draft: false
 image: "/img/the-almanak-of-naval-ravikant.jpg"
+rating: 5
 
 ---
 Once I got about halfway through _The Almanack of Naval Ravikant,_ I knew it would be a book that I would read many times. In fact, I liked it so much that I got a copy for a good friend of mine.
@@ -23,7 +24,7 @@ I will keep this book around to re-read and reference in the future.
 
 I enjoyed the second half of the book titled "Happiness" much more than the first half. I think it's because happiness is much more important to me than building wealth is. (I'm also better at being happy).
 
-> The three big ones in life are wealth, health, and happiness. We pursue them in that order, but their imporantance is reverse.
+> The three big ones in life are wealth, health, and happiness. We pursue them in that order, but their importance is reverse.
 
 There's a chapter in the book titled "Happiness is Learned" which is a personal favorite of mine. In this chapter, he talks about how being unhappy is really just humans with desires they haven't achieved yet. One passage in particular:
 
