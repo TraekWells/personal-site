@@ -40,6 +40,8 @@ Did I mention you can [read it for free](https://www.navalmanack.com/)?
 
 ## ✍️ My Top 3 Quotes
 
-* The three big ones in life are wealth, health, and happiness. We pursue them in that order, but their importance is reverse.
-* Nature has no concept of happiness or unhappiness. Nature follows unbroken mathematical laws and a chain of cause and effect from the Big Bang to now. Everything is perfect exactly the way it is. It is only in our particular minds we are unhappy or not happy, and things are perfect or imperfect because of what we desire.
-* A happy person isn't someone who's happy all the time. It's someone who effortlessly interprets events in such a way that they don't lost their innate peace.
+> The three big ones in life are wealth, health, and happiness. We pursue them in that order, but their importance is reverse.
+
+> Nature has no concept of happiness or unhappiness. Nature follows unbroken mathematical laws and a chain of cause and effect from the Big Bang to now. Everything is perfect exactly the way it is. It is only in our particular minds we are unhappy or not happy, and things are perfect or imperfect because of what we desire.
+
+> A happy person isn't someone who's happy all the time. It's someone who effortlessly interprets events in such a way that they don't lost their innate peace.
