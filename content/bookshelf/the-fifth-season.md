@@ -5,6 +5,7 @@ image: "/img/books/the-fifth-season.webp"
 thoughts: An interesting blend of science fiction and fantasy filled with magic, tragedy,
   and intrigue. Easily the most original non-fiction book I've ever read.
 draft: false
+rating: 5
 
 ---
 # ⛰ What It's About
