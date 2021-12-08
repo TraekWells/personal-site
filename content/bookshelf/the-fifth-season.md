@@ -8,7 +8,7 @@ draft: false
 rating: 5
 
 ---
-# ⛰ What It's About
+# 📕 What It's About
 
 _The Fifth Season_ is book one in the Broken Earth trilogy by N. K. Jemison.
 
@@ -26,7 +26,7 @@ _The Fifth Season_ randomly popped up as a recommended book on Amazon while I wa
 
 _The Fifth Season_ brought back my love for reading fiction. I've been on a non-fiction kick for a few months now but there's nothing like a good story to take you out of the real world for a while.
 
-Something that stood out to me was how grim and dark this book felt as I was reading it. I assume it's because of the re-occurring cataclysmic events but the world is in a post-apocalyptic setting and everything just feels grimey and cloudy.
+Something that stood out to me was how grim and dark this book felt as I was reading it. I assume it's because of the re-occurring cataclysmic events but the world is in a post-apocalyptic-esk setting and everything just feels grimey and cloudy.
 
 Lastly, I hope this turns into a TV show. N. K. Jemison's built an incredible world on paper and I couldn't imagine how fantastic it would be on screen.
 
@@ -41,6 +41,6 @@ Lastly, I hope this turns into a TV show. N. K. Jemison's built an incredible wo
 
 * I wish more time was spent in the Fulcrum. The Fulcrum is where orogenes learn how to control their powers and they progress through ranks. It's a Hogwarts of sorts.
 
-# 🥰 Who Would Like It?
+# 🦉 Who Would Like It?
 
 People who love science fiction and fantasy would absolutely love this book. As I mentioned previously, there's an interesting thing going on with the changing of the reader's point of view which I thought was great.
