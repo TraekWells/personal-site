@@ -1,13 +1,14 @@
 ---
 title: The Fifth Season
 author: N. K. Jemisin
-image: "/img/books/the-fifth-season.webp"
-thoughts: An interesting blend of science fiction and fantasy filled with magic, tragedy,
+image: '/img/books/the-fifth-season.webp'
+thoughts:
+  An interesting blend of science fiction and fantasy filled with magic, tragedy,
   and intrigue. Easily the most original non-fiction book I've ever read.
 draft: false
 rating: 5
-
 ---
+
 ## 📕 What It's About
 
 _The Fifth Season_ is book one in the Broken Earth trilogy by N. K. Jemison.
@@ -32,14 +33,14 @@ Lastly, I hope this turns into a TV show. N. K. Jemison's built an incredible wo
 
 ### What I Liked About It
 
-* All of the characters were great but I particularly loved Shaffa. He's a guardian who escorted Damaya to the Fulcrum to learn the ways of orogeny. While he's escorting her, you learn how hard of a 'being' Shaffa is. He's an interesting blend of ruthlessness and comforting.
-* I loved how the book shifted to a second-person point of view when describing the story for Essun. It's not something that I've come across before and it kept my mind curious about what was going on.
-* This book takes **originality** to an extreme. This is easily the most original book I've ever read with a unique kind of magic.
-* The last quarter or so of _The Fifth Season_ really makes it hard to put the book down. You start to build this connection with all three protagonists and the ending is absolutely flawless.
+- All of the characters were great but I particularly loved Shaffa. He's a guardian who escorted Damaya to the Fulcrum to learn the ways of orogeny. While he's escorting her, you learn how hard of a 'being' Shaffa is. He's an interesting blend of ruthlessness and comforting.
+- I loved how the book shifted to a second-person point of view when describing the story for Essun. It's not something that I've come across before and it kept my mind curious about what was going on.
+- This book takes **originality** to an extreme. This is easily the most original book I've ever read with a unique kind of magic.
+- The last quarter or so of _The Fifth Season_ really makes it hard to put the book down. You start to build this connection with all three protagonists and the ending is absolutely flawless.
 
 ### What I Didn't Like About It
 
-* I wish more time was spent in the Fulcrum. The Fulcrum is where orogenes learn how to control their powers and they progress through ranks. It's a Hogwarts of sorts.
+- I wish more time was spent in the Fulcrum. The Fulcrum is where orogenes learn how to control their powers and they progress through ranks. It's a Hogwarts of sorts.
 
 ## 🦉 Who Would Like It?
 
