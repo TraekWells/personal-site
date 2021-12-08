@@ -14,9 +14,6 @@ fields:
 - name: draft
   type: boolean
   label: Draft
-- type: file
-  name: image
-  label: Book Art
 - name: rating
   type: number
   label: Rating
@@ -28,6 +25,9 @@ fields:
     max: 5
     step: 
     required: true
+- type: file
+  name: image
+  label: Book Art
 pages:
 - content/bookshelf/cant-hurt-me.md
 - content/bookshelf/the-almanak-of-naval-ravikant.md
