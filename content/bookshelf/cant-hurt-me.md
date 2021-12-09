@@ -1,30 +1,48 @@
 ---
 title: Can't Hurt Me
 author: David Goggins
-image: '/img/books/cant-hurt-me.webp'
-thoughts:
-  Great book about pushing your limits and finding out who you really are
+image: "/img/books/cant-hurt-me.webp"
+thoughts: Great book about pushing your limits and finding out who you really are
   through suffering.
 draft: true
 rating: 4
+
 ---
+## 🚀 The Book in 3 Sentences
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fermentum odio eu feugiat pretium nibh ipsum. Urna nunc id cursus metus aliquam. Lorem donec massa sapien faucibus et molestie ac. Amet est placerat in egestas erat imperdiet. Ut lectus arcu bibendum at.
+1. You must not only embrace suffering, but you must seek it out to callus the mind.
+2. Most people are living their lives to bout 40% of their maximum potential.
+3. The untrained mind is very weak and will quit on you **much** quicker than the body.
 
-## Impressions
+## 🦍 Impressions
 
-Eget mi proin sed libero enim sed faucibus. Amet consectetur adipiscing elit ut aliquam purus sit. Nibh venenatis cras sed felis eget velit. Et ligula ullamcorper malesuada proin libero nunc. Phasellus vestibulum lorem sed risus ultricies tristique nulla. At tellus at urna condimentum mattis.
+As a fan of David Goggins and his savageness, I thoroughly enjoyed this book. I'll admit that it's probably not for everyone. It has vulgar language and a few nasty pictures. Personally, I like that he's being himself but I can understand how it wouldn't be for everyone.
 
-Aliquam id diam maecenas ultricies mi eget mauris. Semper auctor neque vitae tempus quam pellentesque nec nam aliquam. Venenatis a condimentum vitae sapien. Eget duis at tellus at urna. Tortor vitae purus faucibus ornare suspendisse sed. Justo eget magna fermentum iaculis eu non diam phasellus.
+He's accomplished some incredible things for a human being. Seemingly impossible things actually. I don't want to be like Goggins at all but I do want the armor he has on his mind. From the outside, it appears as if he's immune to suffering and I want that.
 
-## Favorites
+## 🔍 How I Discovered It
 
-In arcu cursus euismod quis viverra nibh cras pulvinar. Eu non diam phasellus vestibulum lorem sed risus. Amet volutpat consequat mauris nunc. Quam vulputate dignissim suspendisse in. Eu sem integer vitae justo. Nunc faucibus a pellentesque sit amet porttitor eget dolor. Turpis cursus in hac habitasse platea dictumst quisque sagittis purus.
+I discovered David Goggins through the Joe Rogan Experience. I suspect a lot of people discovered David that way. He's been a repeat guest at this point and his message really resonates with me.
 
-> What are you talking about?
+Suffering and it's been extremely beneficial to my life. That **used** to sound weird to me but when someone as hard as David Goggins comes along and says that we should not only embrace suffering but seek it out, it became less weird.
 
-Nisl tincidunt eget nullam non nisi est sit. A erat nam at lectus. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Blandit turpis cursus in hac habitasse platea dictumst quisque. Leo in vitae turpis massa. Montes nascetur ridiculus mus mauris. Faucibus pulvinar elementum integer enim neque volutpat. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Eget nunc scelerisque viverra mauris in aliquam sem fringilla ut. At tellus at urna condimentum mattis.
+I don't take it nearly as far as David does but I had to read his book.
 
-## Who's this book for?
+## 🤓 Who Should Read It?
 
-Tortor at auctor urna nunc id cursus metus aliquam eleifend. Purus gravida quis blandit turpis cursus. Urna neque viverra justo nec ultrices dui. Adipiscing enim eu turpis egestas pretium aenean pharetra. Habitasse platea dictumst vestibulum rhoncus est. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Elementum facilisis leo vel fringilla est ullamcorper eget nulla. Faucibus a pellentesque sit amet porttitor eget dolor morbi. Ipsum a arcu cursus vitae congue mauris rhoncus aenean vel. Arcu dui vivamus arcu felis.
+This book is for anyone who needs a kick in the ass to get going. What David Goggins went through to get where he's at is proof that we can overcome and conquer our minds.
+
+This isn't a how-to-be-tough book but it's more of proof that you can build an iron will one step at a time.
+
+## 🐛 How the Book Changed Me
+
+* I talk to myself **a lot** during runs, especially when I get tired. This isn't new for me as I've always done this, but the words that I'm using have changed after reading this book. Stuff like: "The mind is weak, the body is not. I'm a warrior."
+* I take control of the inner dialogue that goes on in my mind when I'm doing difficult stuff a lot more nowadays. I know that my mind wants to quit and having that awareness gives me a bigger sense of how it could limit me if I give in.
+
+## ✍️ My Top 3 Quotes
+
+> In life, there is no gift as overlooked or inevitable as failure.
+
+> We have access to so many more resources today than ever before and yet we are so much less capable than those who came before us. If you want to be one of the few to defy those trends in our ever-softening society, you will have to be willing to go to war with yourself and create a whole new identity, which requires an open mind.
+
+> There is no more time to waste. Hours and days evaporate like creeks in the desert. That's why it's okay to be cruel to yourself as long as you realize you're doing it to become better. We all need thicker skin to improve in life. Being soft when you look in the mirror isn't going to inspire the wholesale changes we need to shift our present and open up our future.
