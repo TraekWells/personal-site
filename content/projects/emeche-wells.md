@@ -16,8 +16,6 @@ Emeche Wells is an athlete, professional photographer and blogger who cares abou
 
 More importantly, he stressed that since he’s a professional photographer, he would need a way to organize, display and edit photography projects to promote his work.
 
-![](/img/emeche-wells-devices.jpg)
-
 ## The Goal
 
 The goal was to create a beautiful, functional website where Emeche could showcase his photography, artwork, blog and basketball journey. Seeing that he was new to website maintenance, it was also a goal of mine to make the website very easy to update as his brand gets more established.
