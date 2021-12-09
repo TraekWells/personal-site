@@ -4,7 +4,7 @@ author: David Goggins
 image: "/img/books/cant-hurt-me.webp"
 thoughts: Great book about pushing your limits and finding out who you really are
   through suffering.
-draft: true
+draft: false
 rating: 4
 
 ---
