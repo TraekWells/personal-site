@@ -3,17 +3,28 @@
     <header class="header">
       <div class="container container--narrow">
         <h1>{{ project.title }}</h1>
+        <hr />
         <p class="lead">
           {{ project.summary }}
         </p>
       </div>
     </header>
     <article class="section">
-      <div class="wave-white"></div>
+      <nuxt-picture
+        v-if="project.featuredImage"
+        class="featured-image"
+        :src="project.featuredImage"
+        :alt="project.title"
+      />
+      <div v-if="!project.featuredImage" class="wave-white"></div>
       <div class="container container--narrow">
         <div class="content">
           <div class="content__image">
-            <img :src="project.previewImage" :alt="project.title" />
+            <nuxt-picture
+              v-if="!project.featuredImage"
+              :src="project.previewImage"
+              :alt="project.title"
+            />
           </div>
           <div class="content__text">
             <nuxt-content :document="project"></nuxt-content>
@@ -117,4 +128,9 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.featured-image {
+  display: block;
+  margin-top: -10rem;
+}
+</style>
