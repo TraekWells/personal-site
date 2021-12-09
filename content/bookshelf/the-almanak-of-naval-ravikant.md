@@ -1,14 +1,13 @@
 ---
 title: The Almanack of Naval Ravikant
 author: Eric Jorgenson
-image: '/img/books/the-almanak-of-naval-ravikant.jpg'
-thoughts:
-  This is a literary goldmine full of gems regarding the pursuit of wealth
+image: "/img/books/the-almanak-of-naval-ravikant.jpg"
+thoughts: This is a literary goldmine full of gems regarding the pursuit of wealth
   and happiness.
 draft: false
 rating: 5
----
 
+---
 ## 🚀 The Book in 3 Sentences
 
 1. You will never become rich by trading your time for your money. The only way to financial freedom is by finding a way to make money while you sleep. (or win the lottery).
@@ -23,15 +22,15 @@ This book is organized into two parts, Wealth and Happiness. Eric Jorgenson has 
 
 The best part? [It's available for free](https://www.navalmanack.com/).
 
-## How I Discovered It
+## 🔍 How I Discovered It
 
 I don't remember exactly how I discovered it but I first heard of Naval on the Joe Rogan Experience. It was one of my favorite podcasts and it was one that I re-listened to a few times over.
 
 Then I came across [this famous tweetstorm](https://twitter.com/naval/status/1002103360646823936) and it was so profound that I really started to dig into this man.
 
-## Who Should Read It?
+## 🤓 Who Should Read It?
 
-_The Almanack of Naval Ravikant_ is for anyone curious about building wealth and training the skill of happiness. This is an absolute goldmine for both big picture and practical ideas about optimizing your mind to live a happier, more fulfilled life.
+_The Almanack of Naval Ravikant_ is for anyone curious about building wealth and training the skill of happiness. This is an absolute goldmine for both the big picture and practical ideas about optimizing your mind to live a happier, more fulfilled life.
 
 Naval states that building wealth is a skill just like riding a bike is a skill. It's something you can get better at by applying certain principles and focuses.
 
