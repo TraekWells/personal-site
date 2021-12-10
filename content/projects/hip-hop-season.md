@@ -13,7 +13,7 @@ draft: false
 images:
 - featured_image: "/img/hip-hop-season-featured-image.jpg"
   preview_image: "/img/hip-hop-season-devices.jpg"
-  featuredImage: "/img/books/the-fifth-season.webp"
+  featuredImage: "/img/hip-hop-season-featured-image.jpg"
   previewImage: "/img/hip-hop-season-devices.jpg"
 
 ---
