@@ -28,3 +28,21 @@ fields:
 - type: text
   name: technology
   label: Technology
+- name: images
+  type: field_group_list
+  fields:
+  - name: featured_image
+    type: file
+    config:
+      maxSize: 64
+    label: Featured Image
+  - name: preview_image
+    type: file
+    config:
+      maxSize: 64
+    label: Preview Image
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Images
