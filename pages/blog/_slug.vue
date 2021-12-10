@@ -30,6 +30,15 @@
         </div>
       </div>
     </article>
+    <article class="section section--secondary">
+      <div class="wave-yellow"></div>
+      <div class="container container--narrow">
+        <h2 class="text-center">More Stuff I've Written</h2>
+        <div class="blogs mt-4">
+          <BlogCard v-for="blog in moreBlogs" :key="blog.path" :blog="blog" />
+        </div>
+      </div>
+    </article>
   </main>
 </template>
 
@@ -39,7 +48,12 @@ import getMetaData from '@/config/getMetaData.js'
 export default {
   async asyncData({ $content, params }) {
     const blog = await $content(`blog/${params.slug}`).fetch()
-    return { blog }
+    const moreBlogs = await $content(`blog`)
+      .where({ draft: false })
+      .where({ title: { $ne: blog.title } })
+      .limit(2)
+      .fetch()
+    return { blog, moreBlogs }
   },
   data() {
     return {

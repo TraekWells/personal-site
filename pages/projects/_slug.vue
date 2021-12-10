@@ -61,6 +61,18 @@
         </div>
       </div>
     </article>
+    <article class="section">
+      <div class="container container--narrow">
+        <h2 class="text-center">More Projects</h2>
+        <div class="projects mt-4">
+          <ProjectCard
+            v-for="project in moreProjects"
+            :key="project.path"
+            :project="project"
+          />
+        </div>
+      </div>
+    </article>
   </main>
 </template>
 
@@ -70,8 +82,13 @@ import getMetaData from '@/config/getMetaData.js'
 export default {
   async asyncData({ $content, params }) {
     const project = await $content(`projects/${params.slug}`).fetch()
+    const moreProjects = await $content(`projects`)
+      .where({ draft: false })
+      .where({ title: { $ne: project.title } })
+      .limit(2)
+      .fetch()
 
-    return { project }
+    return { project, moreProjects }
   },
   data() {
     return {
