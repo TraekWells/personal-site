@@ -11,26 +11,16 @@ fields:
 - name: featured
   type: boolean
   label: Featured?
-- name: images
-  type: field_group_list
-  fields:
-  - name: featuredImage
-    type: file
-    config:
-      maxSize: 64
-    label: Featured Image
-    description: This is the image that shows at the top of the project page.
-  - name: previewImage
-    type: file
-    config:
-      maxSize: 64
-    label: Preview Image
-    description: This is the image that shows on the project feed.
+- name: featuredImage
+  type: file
   config:
-    min: 
-    max: 
-    labelField: 
-  label: Images
+    maxSize: 64
+  label: Featured Image
+- name: previewImage
+  type: file
+  config:
+    maxSize: 64
+  label: Preview Image
 - type: text
   name: linkToProject
   label: Link To Project
