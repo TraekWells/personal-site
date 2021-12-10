@@ -28,3 +28,10 @@ fields:
 - type: text
   name: technology
   label: Technology
+- name: images
+  type: field_group_list
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Images
