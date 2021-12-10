@@ -31,6 +31,7 @@ fields:
     max: 
     labelField: 
   label: Images
+  description: This is for the images of this project.
 - type: text
   name: linkToProject
   label: Link To Project
