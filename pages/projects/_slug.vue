@@ -109,7 +109,7 @@ export default {
     },
   },
   mounted() {
-    const headers = Array.from(document.querySelectorAll('h2'))
+    const headers = Array.from(document.querySelectorAll('.content h2'))
     headers.forEach((header) => {
       const headerObj = {}
       headerObj.text = header.textContent
