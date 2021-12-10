@@ -8,36 +8,19 @@ fields:
 - type: textarea
   name: summary
   label: Project Summary
-- type: file
-  name: previewImage
-  label: Preview Image
-- name: featuredImage
-  type: file
-  config:
-    maxSize: 64
-  label: Featured Image
 - name: featured
   type: boolean
   label: Featured?
-- type: text
-  name: linkToProject
-  label: Link To Project
-- type: text
-  name: linkToCode
-  label: Link To Code
-- type: text
-  name: technology
-  label: Technology
 - name: images
   type: field_group_list
   fields:
-  - name: featured_image
+  - name: featuredImage
     type: file
     config:
       maxSize: 64
     label: Featured Image
     description: This is the image that shows up at the top of the project page.
-  - name: preview_image
+  - name: previewImage
     type: file
     config:
       maxSize: 64
@@ -48,3 +31,12 @@ fields:
     max: 
     labelField: 
   label: Images
+- type: text
+  name: linkToProject
+  label: Link To Project
+- type: text
+  name: linkToCode
+  label: Link To Code
+- type: text
+  name: technology
+  label: Technology
