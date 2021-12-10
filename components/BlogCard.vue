@@ -73,6 +73,7 @@ export default {
     height: 25rem;
     width: 25rem;
     object-fit: cover;
+    border-radius: var(--border-radius-sm);
 
     @include respond-to(phone) {
       display: none;

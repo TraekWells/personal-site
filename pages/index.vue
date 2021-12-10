@@ -46,8 +46,47 @@
         </div>
       </div>
     </div>
+
     <div class="section section--secondary">
       <div class="wave-yellow"></div>
+      <div class="container container--narrow">
+        <h2 class="text-center">What I'm Good At</h2>
+        <hr />
+        <div class="skills">
+          <div class="skill">
+            <div class="skill__icon">
+              <PenToolIcon />
+            </div>
+            <div class="skill__details">
+              <h3>User Experience</h3>
+              <p>
+                User Experience was my first love and I take pride in designing
+                beautiful, fast, and accessible websites.
+              </p>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__icon">
+              <CodeIcon />
+            </div>
+            <div class="skill__details">
+              <h3>Front End Development</h3>
+              <p>
+                Coding was my second love and it's what gets me excited. React,
+                Vue, and WordPress are the tools I like to use most.
+              </p>
+            </div>
+          </div>
+        </div>
+        <p class="text-center mt-4 mb-5">
+          Also, I have experience with a handful of other front-end languages
+          and design tools.
+        </p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="wave-white"></div>
       <div class="container container--narrow">
         <h2 class="text-center">Stuff I've Written</h2>
         <hr />
@@ -67,11 +106,14 @@
 import ProjectCard from '@/components/ProjectCard'
 import BlogCard from '@/components/BlogCard'
 import getMetaData from '@/config/getMetaData.js'
+import { PenToolIcon, CodeIcon } from 'vue-feather-icons'
 
 export default {
   components: {
     ProjectCard,
     BlogCard,
+    PenToolIcon,
+    CodeIcon,
   },
   async asyncData({ $content }) {
     const projects = await $content('projects')
@@ -180,5 +222,43 @@ export default {
   flex-direction: column;
   align-items: center;
   margin: 6rem 0;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  justify-content: center;
+
+  @include respond-to(tab-port) {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+}
+.skill {
+  display: flex;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.skill {
+  &__icon {
+    background-color: var(--color-white);
+    align-self: flex-start;
+    border-radius: var(--border-radius-xsm);
+    flex-shrink: 0;
+    padding: 1rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    display: grid;
+    place-content: center;
+    margin-right: 2rem;
+    color: var(--color-primary-700);
+  }
+
+  &__details {
+  }
 }
 </style>
