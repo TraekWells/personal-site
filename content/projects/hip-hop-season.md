@@ -1,22 +1,18 @@
 ---
 title: Hip Hop Season
-summary: Hip Hop Season is a side project of mine where I review non-mainstream hip-hop
+summary:
+  Hip Hop Season is a side project of mine where I review non-mainstream hip-hop
   music and blog about my thoughts about all things related to hip hop music and the
   culture. I built this as a custom Wordpress theme.
-previewImage: "/img/hip-hop-season-devices.jpg"
-featuredImage: "/img/hip-hop-season-featured-image.jpg"
+previewImage: '/img/hip-hop-season-devices.jpg'
+featuredImage: '/img/hip-hop-season-featured-image.jpg'
 linkToProject: https://www.hiphopseason.com
 linkToCode: https://github.com/TraekWells/hip-hop-season
 technology: WordPress, Javascript, CSS
 featured: true
 draft: false
-images:
-- featured_image: "/img/hip-hop-season-featured-image.jpg"
-  preview_image: "/img/hip-hop-season-devices.jpg"
-  featuredImage: "/img/hip-hop-season-featured-image.jpg"
-  previewImage: "/img/hip-hop-season-devices.jpg"
-
 ---
+
 ## The Client
 
 Hip Hop Season is a passion project done for myself. I’m an avid listener of hip hop music, mostly non-mainstream or underground specifically. I felt the need to create this website because there isn’t enough platforms where people review non-mainstream hip hop music.
