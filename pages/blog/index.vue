@@ -37,7 +37,7 @@ export default {
     meta() {
       const metaData = {
         type: 'page',
-        url: `https://traek.dev/blog`,
+        url: `https://traekwells.com/blog`,
         title: 'Blog',
         description:
           "Sharing what I've learned in the hopes solidify the knowledge and helping others however I can.",
@@ -54,7 +54,7 @@ export default {
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: `https://traek.dev/blog`,
+          href: `https://traekwells.com/blog`,
         },
       ],
     }

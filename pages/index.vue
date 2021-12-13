@@ -129,7 +129,7 @@ export default {
     meta() {
       const metaData = {
         type: 'page',
-        url: `https://traek.dev/`,
+        url: `https://traekwells.com/`,
         title: 'UI Developer',
         description:
           "What’s up? I’m Traek, and welcome to my partition of the internet when I share what I'm learning and show what I've built.",
@@ -146,7 +146,7 @@ export default {
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: `https://traek.dev/`,
+          href: `https://traekwells.com/`,
         },
       ],
     }

@@ -35,7 +35,7 @@ export default {
       {
         hid: 'canonical',
         rel: 'canonical',
-        href: 'https://traek.dev',
+        href: 'https://traekwells.com',
       },
     ],
   },
@@ -66,7 +66,7 @@ export default {
     '@nuxtjs/sitemap',
   ],
   plausible: {
-    domain: 'traek.dev',
+    domain: 'traekwells.com',
     trackLocalHost: false,
   },
   styleResources: {
@@ -103,6 +103,6 @@ export default {
     },
   },
   sitemap: {
-    hostname: 'https://traek.dev',
+    hostname: 'https://traekwells.com',
   },
 }

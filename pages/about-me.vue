@@ -26,7 +26,7 @@ export default {
     meta() {
       const metaData = {
         type: 'page',
-        url: `https://traek.dev/projects`,
+        url: `https://traekwells.com/projects`,
         title: 'About',
         description:
           'A little bit about Traek Wells and how he got interested in being a Front-End Developer',
@@ -43,7 +43,7 @@ export default {
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: `https://traek.dev/about-me`,
+          href: `https://traekwells.com/about-me`,
         },
       ],
     }

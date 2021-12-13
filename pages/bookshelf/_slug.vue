@@ -65,7 +65,7 @@ export default {
     meta() {
       const metaData = {
         type: 'article',
-        url: `https://traek.dev/bookshelf/${this.$route.params.slug}`,
+        url: `https://traekwells.com/bookshelf/${this.$route.params.slug}`,
         title: this.book.title,
         description: this.book.summary,
         image: this.book.previewImage,
@@ -113,7 +113,7 @@ export default {
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: `https://traek.dev/bookshelf/${this.$route.params.slug}`,
+          href: `https://traekwells.com/bookshelf/${this.$route.params.slug}`,
         },
       ],
     }

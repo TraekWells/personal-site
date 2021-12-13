@@ -34,7 +34,7 @@ export default {
     meta() {
       const metaData = {
         type: 'page',
-        url: `https://traek.dev/bookshelf`,
+        url: `https://traekwells.com/bookshelf`,
         title: 'Bookshelf',
         description:
           'Something about the books I’ve read and my thoughts on about them.',
@@ -51,7 +51,7 @@ export default {
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: `https://traek.dev/bookshelf`,
+          href: `https://traekwells.com/bookshelf`,
         },
       ],
     }

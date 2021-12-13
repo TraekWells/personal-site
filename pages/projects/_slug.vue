@@ -137,7 +137,7 @@ export default {
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: `https://traek.dev/projects/${this.$route.params.slug}`,
+          href: `https://traekwells.com/projects/${this.$route.params.slug}`,
         },
       ],
     }

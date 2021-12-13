@@ -1,5 +1,5 @@
 const type = 'website'
-const url = 'https://traek.dev'
+const url = 'https://traekwells.com'
 const title = 'UI Developer | Traek Wells'
 const description =
   'Personal developer website for Traek Wells, a Front-end Developer and UI Designer'

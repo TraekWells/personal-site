@@ -65,7 +65,7 @@ export default {
     meta() {
       const metaData = {
         type: 'article',
-        url: `https://traek.dev/blog/${this.$route.params.slug}`,
+        url: `https://traekwells.com/blog/${this.$route.params.slug}`,
         title: this.blog.title,
         description: this.blog.summary,
         image: this.blog.previewImage,
@@ -113,7 +113,7 @@ export default {
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: `https://traek.dev/blog/${this.$route.params.slug}`,
+          href: `https://traekwells.com/blog/${this.$route.params.slug}`,
         },
       ],
     }
