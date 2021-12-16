@@ -30,5 +30,6 @@ fields:
   label: Book Art
 pages:
 - content/bookshelf/cant-hurt-me.md
+- content/bookshelf/inferno.md
 - content/bookshelf/the-almanak-of-naval-ravikant.md
 - content/bookshelf/the-fifth-season.md
