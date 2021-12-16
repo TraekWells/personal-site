@@ -1,7 +1,7 @@
 ---
 title: The Almanack of Naval Ravikant
 author: Eric Jorgenson
-image: "/img/books/the-almanak-of-naval-ravikant.jpg"
+image: "/img/book-cover-the-almanak-of-naval-ravikant.jpg"
 thoughts: This is a literary goldmine full of gems regarding the pursuit of wealth
   and happiness.
 draft: false
