@@ -46,7 +46,7 @@
           >
         </li>
         <li class="navigation__item">
-          <nuxt-link to="/blog/impossible-list"
+          <nuxt-link to="/journal/impossible-list"
             ><span class="navigation__link">Impossible List</span></nuxt-link
           >
         </li>
