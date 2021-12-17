@@ -10,15 +10,13 @@ createdAt: 2021-02-05T15:25:14.000-06:00
 ---
 Ever since I came across <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Thomas Frank’s impossible list</a> I knew I had to make one for myself. He got the idea from a dude named <a href="https://impossiblehq.com/impossible-list/" target="_blank" rel="noopener noreferrer">Joel Runyon</a> who I believe is the founder of impossible lists.
 
-I’ll be 100% honest here, I took a lot of Thomas Frank’s goal categories because they were great categories quite frankly (no pun intended). Almost every productive person has goals that they want to achieve, but putting them somewhere public will not only hold you accountable, but also keep you reminded of what you’re aiming for.
+I’ll be 100% honest here, I took a lot of Thomas Frank’s goal categories because they were great categories quite frankly (no pun intended). Almost every productive person has goals that they want to achieve, but putting them somewhere public will not only hold you accountable but also keep you reminded of what you’re aiming for.
 
 Let's get this party started.
 
 ## Current Focuses
 
 I'm working on improving my User Interface and User Experience design skills while simultaneously trying to learn Vue 3 and vanilla JavaScript more deeply (doing both is difficult).
-
-I host a monthly [code meetup](https://www.meetup.com/Code-Challenge-Meetup-Group/ "code meetup") and we're working on a collaboration project to assist in helping people find and adopt rescue pets.
 
 I'm also in a constant battle with imposter syndrome and it's a back and forth battle. At the moment, I'm winning and feeling pretty confident but it comes and goes.
 
