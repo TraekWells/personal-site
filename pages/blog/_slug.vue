@@ -35,7 +35,7 @@
       <div class="container container--narrow">
         <h2 class="text-center">More Stuff I've Written</h2>
         <div class="blogs mt-4">
-          <BlogCard v-for="blog in moreBlogs" :key="blog.path" :blog="blog" />
+          <BlogCard v-for="blog in moreBlogs" :key="blog.path" :post="blog" />
         </div>
       </div>
     </article>

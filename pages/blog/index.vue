@@ -5,8 +5,9 @@
         <div class="header__content">
           <h1>Blog</h1>
           <p class="lead mb-4">
-            Sharing what I've learned in the hopes of solidifying the knowledge
-            and helping others however I can.
+            Posts about topics ranging from User Interface design, HTML, CSS,
+            JavaScript and accessibility. See my
+            <nuxt-link to="/journal">journal</nuxt-link> for everything else.
           </p>
         </div>
       </div>
@@ -15,7 +16,7 @@
       <div class="wave-white"></div>
       <div class="container container--narrow">
         <div class="blogs">
-          <BlogCard v-for="blog in blogs" :key="blog.path" :blog="blog" />
+          <BlogCard v-for="blog in blogs" :key="blog.path" :post="blog" />
         </div>
       </div>
     </section>

@@ -95,7 +95,7 @@
           helping others however I can.
         </p>
         <div class="blogs">
-          <BlogCard v-for="blog in blogs" :key="blog.path" :blog="blog" />
+          <BlogCard v-for="blog in blogs" :key="blog.path" :post="blog" />
         </div>
       </div>
     </div>

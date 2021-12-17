@@ -2,15 +2,15 @@
   <article class="blog">
     <img
       class="blog__image"
-      :src="blog.previewImage"
-      :alt="`${blog.title} image`"
+      :src="post.previewImage"
+      :alt="`${post.title} image`"
     />
     <div class="blog__content">
       <h3>
-        <nuxt-link :to="blog.path">{{ blog.title }}</nuxt-link>
+        <nuxt-link :to="post.path">{{ post.title }}</nuxt-link>
       </h3>
-      <p>{{ blog.summary }}</p>
-      <nuxt-link :to="blog.path" class="read-more"
+      <p>{{ post.summary }}</p>
+      <nuxt-link :to="post.path" class="read-more"
         >Read More <ArrowRightIcon aria-label="Arrow icon"></ArrowRightIcon
       ></nuxt-link>
     </div>
@@ -25,7 +25,7 @@ export default {
     ArrowRightIcon,
   },
   props: {
-    blog: {
+    post: {
       type: Object,
       required: true,
     },

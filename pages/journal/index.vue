@@ -5,8 +5,9 @@
         <div class="header__content">
           <h1>Journal</h1>
           <p class="lead mb-4">
-            Sharing what I've learned in the hopes of solidifying the knowledge
-            and helping others however I can.
+            This is a place for me to share anything that doesn't fit into my
+            <nuxt-link to="/blog">blog</nuxt-link>. Most likely about life,
+            being productive, check ins and ants.
           </p>
         </div>
       </div>
@@ -15,7 +16,11 @@
       <div class="wave-white"></div>
       <div class="container container--narrow">
         <div class="blogs">
-          <BlogCard v-for="blog in blogs" :key="blog.path" :blog="blog" />
+          <BlogCard
+            v-for="journal in journals"
+            :key="journal.path"
+            :post="journal"
+          />
         </div>
       </div>
     </section>
