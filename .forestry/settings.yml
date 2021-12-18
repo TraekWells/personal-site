@@ -30,6 +30,13 @@ sections:
   templates:
   - project
 - type: heading
+  label: Journal
+- type: directory
+  path: content/journal
+  label: Journal
+  create: all
+  match: "**/*"
+- type: heading
   label: Bookshelf
 - type: directory
   path: content/bookshelf
