@@ -28,8 +28,7 @@ export default {
         type: 'page',
         url: `https://traekwells.com/projects`,
         title: 'About',
-        description:
-          'A little bit about Traek Wells and how he got interested in being a Front-End Developer',
+        description: 'A little bit about Traek Wells',
       }
 
       return getMetaData(metaData)
@@ -37,7 +36,7 @@ export default {
   },
   head() {
     return {
-      title: 'About',
+      title: 'About Traek Wells',
       meta: [...this.meta],
       link: [
         {

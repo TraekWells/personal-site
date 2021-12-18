@@ -5,10 +5,12 @@
         <div class="header__content">
           <h1>Projects</h1>
           <p class="lead">
-            Stuff I've built through trial and error, a lot of breaks and just
-            hoping that everything worked. Check out some of my smaller stuff
-            here
-            <a href="https://codepen.io/traekwells" target="_blank"
+            Here are some of the bigger projects that I've built that I'm proud
+            of. Check out some of my smaller stuff here
+            <a
+              href="https://codepen.io/traekwells"
+              target="_blank"
+              rel="noreferrer noopener"
               >on CodePen</a
             >.
           </p>

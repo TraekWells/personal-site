@@ -11,8 +11,8 @@ export default {
     htmlAttrs: {
       lang: 'en',
     },
-    title: 'UI Developer',
-    titleTemplate: ' %s | Traek Wells',
+    title: 'Traek Wells',
+    titleTemplate: ' %s | Front-End UI/UX Developer',
     meta: [
       ...meta,
       { charset: 'utf-8' },
@@ -21,7 +21,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Personal developer website for Traek Wells, a Front-end Developer and UI Designer',
+          'Traek is a front-end web developer skilled in HTML, CSS, JavaScript and user interface design. More importantly, he is a good person.',
       },
 
       { property: 'og:image:width', content: '740' },

@@ -37,7 +37,7 @@ export default {
         url: `https://traekwells.com/bookshelf`,
         title: 'Bookshelf',
         description:
-          'Something about the books I’ve read and my thoughts on about them.',
+          'Heres a collection of the books Ive either read or listened to and my thoughts about them.',
       }
 
       return getMetaData(metaData)

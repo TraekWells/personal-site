@@ -1,12 +1,18 @@
 const type = 'website'
 const url = 'https://traekwells.com'
-const title = 'UI Developer | Traek Wells'
+const title = 'Traek Wells | Front-End UI/UX Developer'
 const description =
   'Personal developer website for Traek Wells, a Front-end Developer and UI Designer'
 const image = '/img/open-graph-image.jpg'
+const keywords = 'UI, UX, Web Developer, HTML, CSS, JavaScript, React, Vue'
 
 export default (meta) => {
   return [
+    {
+      hid: 'keywords',
+      name: 'keywords',
+      content: keywords,
+    },
     {
       hid: 'description',
       name: 'description',

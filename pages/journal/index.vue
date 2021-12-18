@@ -6,8 +6,9 @@
           <h1>Journal</h1>
           <p class="lead mb-4">
             This is a place for me to share anything that doesn't fit into my
-            <nuxt-link to="/blog">blog</nuxt-link>. Most likely about life,
-            being productive, check ins and ants.
+            normal
+            <nuxt-link to="/blog">blog</nuxt-link> topics. Most likely about
+            life, being productive and ants.
           </p>
         </div>
       </div>
@@ -45,7 +46,7 @@ export default {
         url: `https://traekwells.com/journal`,
         title: 'Journal',
         description:
-          "Sharing what I've learned in the hopes solidify the knowledge and helping others however I can.",
+          "This is a place for me to share anything that doesn't fit into my normal blog topics. Most likely about life, being productive and ants.",
       }
 
       return getMetaData(metaData)

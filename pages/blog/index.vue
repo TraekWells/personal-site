@@ -5,8 +5,8 @@
         <div class="header__content">
           <h1>Blog</h1>
           <p class="lead mb-4">
-            Posts about topics ranging from User Interface design, HTML, CSS,
-            JavaScript and accessibility. See my
+            Posts about topics ranging from User Experience, User Interface
+            design, HTML, CSS, JavaScript and accessibility. See my
             <nuxt-link to="/journal">journal</nuxt-link> for everything else.
           </p>
         </div>

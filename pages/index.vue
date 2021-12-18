@@ -8,12 +8,12 @@
           </div>
           <div class="home-header__content">
             <h1>
-              Front-end Developer. UI Designer.
+              Web Developer. UI Designer.
               <span class="underline">Good Person</span>.
             </h1>
             <p>
-              What’s up? I’m Traek, and welcome to my partition of the internet
-              when I share what I'm learning and show what I've built.
+              Howdy, I'm Traek and welcome to my digital garden where you'll see
+              what I've built and written over the years.
             </p>
             <nuxt-link to="/projects" class="button button--primary"
               >See My Work
@@ -28,8 +28,8 @@
         <h2 class="text-center">Stuff I've Built</h2>
         <hr />
         <p class="lead">
-          Stuff I've built through trial and error, a lot of breaks and just
-          hoping that everything worked. Check out some of my smaller stuff here
+          Here are some of the bigger projects that I've built that I'm proud
+          of. Check out some of my smaller stuff here
           <a
             href="https://codepen.io/traekwells"
             target="_blank"
@@ -130,9 +130,9 @@ export default {
       const metaData = {
         type: 'page',
         url: `https://traekwells.com/`,
-        title: 'UI Developer',
+        title: 'Traek Wells',
         description:
-          "What’s up? I’m Traek, and welcome to my partition of the internet when I share what I'm learning and show what I've built.",
+          'Traek is a front-end web developer skilled in HTML, CSS, JavaScript and user interface design. More importantly, he is a good person.',
       }
 
       return getMetaData(metaData)
@@ -140,7 +140,6 @@ export default {
   },
   head() {
     return {
-      title: 'UI Developer',
       meta: [...this.meta],
       link: [
         {
