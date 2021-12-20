@@ -1,6 +1,6 @@
 ---
+pageTitle: About Me
+subtitle: Does this work?
 
 ---
-I'll fill this out later.
-
-I hope ya'll are doing well.
+This is the main body. Does this work?
