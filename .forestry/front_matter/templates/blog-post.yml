@@ -29,24 +29,18 @@ fields:
     time_format: ''
     display_utc: false
 - name: tags
-  type: select
-  default: ''
-  config:
-    required: false
-    options:
-    - JavaScript
-    - CSS
-    - HTML
-    - UI Design
-    - UX Design
-    - React
-    - Vue
-    - Life
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
+  type: tag_list
+  default:
+  - HTML
+  - CSS
+  - JavaScript
+  - UI
+  - UX
+  - React
+  - Vue
+  - TIL
+  - Accessibility
+  - Life
   label: Tags
 pages:
 - content/blog/javascript-array-includes-method.md
