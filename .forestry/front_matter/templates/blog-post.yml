@@ -30,7 +30,14 @@ fields:
     display_utc: false
 - name: tags
   type: tag_list
-  default: []
+  default:
+  - UI Design
+  - UX Design
+  - CSS
+  - JavaScript
+  - HTML
+  - React
+  - Vue
   label: Tags
 pages:
 - content/blog/javascript-array-includes-method.md
