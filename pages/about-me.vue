@@ -2,7 +2,8 @@
   <main>
     <header class="header">
       <div class="container container--narrow">
-        <h1>About Me</h1>
+        <h1>{{ about.pageTitle }}</h1>
+        <p class="lead mb-4">{{ about.subtitle }}</p>
       </div>
     </header>
     <section class="section">
