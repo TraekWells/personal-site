@@ -27,7 +27,7 @@ export default {
     meta() {
       const metaData = {
         type: 'page',
-        url: `https://traekwells.com/projects`,
+        url: `https://traekwells.com/about-me`,
         title: 'About',
         description: 'A little bit about Traek Wells',
       }
