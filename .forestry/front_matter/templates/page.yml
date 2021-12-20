@@ -1,4 +1,18 @@
 ---
 label: Page
 hide_body: false
-fields: []
+fields:
+- name: pageTitle
+  type: text
+  config:
+    required: false
+  label: Page Title
+- name: subtitle
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Subtitle
