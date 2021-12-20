@@ -28,10 +28,6 @@ fields:
 - type: file
   name: image
   label: Book Art
-- name: tags
-  type: tag_list
-  default: []
-  label: Tags
 pages:
 - content/bookshelf/cant-hurt-me.md
 - content/bookshelf/inferno.md
