@@ -41,6 +41,8 @@ fields:
   - TIL
   - Accessibility
   - Life
+  - Personal
+  - Career
   label: Tags
 pages:
 - content/blog/javascript-array-includes-method.md
