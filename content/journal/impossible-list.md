@@ -6,6 +6,7 @@ summary: An impossible list is a catalog of challenges that you have given yours
   an impossible list will grow and evolve with you as you live.
 previewImage: "/img/impossible-list-blog-image.jpg"
 createdAt: 2021-02-05T15:25:14.000-06:00
+tags: []
 
 ---
 Ever since I came across <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Thomas Frank’s impossible list</a> I knew I had to make one for myself. He got the idea from a dude named <a href="https://impossiblehq.com/impossible-list/" target="_blank" rel="noopener noreferrer">Joel Runyon</a> who I believe is the founder of impossible lists.
@@ -41,7 +42,7 @@ Lastly and always, I'm working on becoming a better person and appreciating the 
 * Speak at a conference
 * Give a TED Talk
 
-## Technical Goals
+## Coding Goals
 
 * ~~Move site to WordPress~~ (July 2nd, 2020)
 * ~~Build this site with Nuxt~~ (January 18th, 2021)
