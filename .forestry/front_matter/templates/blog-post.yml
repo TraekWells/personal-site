@@ -13,12 +13,6 @@ fields:
   label: Draft
   default: true
   hidden: false
-- name: previewImage
-  type: file
-  config:
-    maxSize: 64
-  label: Preview image
-  default: "/img/default-card-image.png"
 - name: createdAt
   type: datetime
   label: Date
