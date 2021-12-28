@@ -1,10 +1,11 @@
 ---
 draft: false
-previewImage: "/img/moving-from-wordpress-to-forestry.jpg"
+previewImage: ''
 title: Moving From WordPress to Forestry
 summary: How moving from WordPress to Forestry drastically improved my productivity,
   developer experience and allowed me to work with more modern technology.
-createdAt: 2021-08-08T23:00:00-06:00
+createdAt: 2021-08-08T23:00:00.000-06:00
+tags: []
 
 ---
 <note>This is not an anti-WordPress post. In fact, I think WordPress is a fantastic tool and depending on the needs of the project, could be the perfect solution. This post is simply to promote how amazing Forestry is.</note>
