@@ -4,6 +4,11 @@
       <div class="container container--narrow">
         <h1>{{ blog.title }}</h1>
         <p class="lead">{{ blog.summary }}</p>
+        <ul v-if="blog.tags" class="post__tags">
+          <li v-for="tag in blog.tags" :key="tag" class="post__tag">
+            {{ tag }}
+          </li>
+        </ul>
       </div>
     </header>
     <article class="section">

@@ -219,7 +219,7 @@ export default {
 .blogs {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  // align-items: center;
   margin: 6rem 0;
 }
 
