@@ -34,7 +34,7 @@ import getMetaData from '@/config/getMetaData.js'
 export default {
   async asyncData({ $content }) {
     const journals = await $content('journal')
-      .sortBy('direction', 'desc')
+      .sortBy('direction', 'asc')
       .where({ draft: false })
       .fetch()
     return { journals }

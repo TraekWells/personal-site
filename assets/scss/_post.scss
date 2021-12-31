@@ -84,6 +84,18 @@
     p:first-of-type {
       margin-top: 0;
     }
+
+    aside {
+      background-color: var(--color-primary-100);
+      padding: 2rem;
+      border-radius: var(--border-radius-sm);
+
+      p {
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 
   &__image {

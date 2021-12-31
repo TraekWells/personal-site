@@ -73,6 +73,7 @@ export default {
       headerObj.link = header.id
       this.headers.push(headerObj)
     })
+    console.log(headers)
     this.getWordCount()
   },
   methods: {

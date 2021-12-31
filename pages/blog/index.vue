@@ -29,7 +29,7 @@ import getMetaData from '@/config/getMetaData.js'
 export default {
   async asyncData({ $content }) {
     const blogs = await $content('blog')
-      .sortBy('direction', 'desc')
+      .sortBy('direction', 'asc')
       .where({ draft: false })
       .fetch()
     return { blogs }
