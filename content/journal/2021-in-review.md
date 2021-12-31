@@ -1,16 +1,15 @@
 ---
 draft: false
-previewImage: '/img/default-card-image.png'
+previewImage: "/img/default-card-image.png"
 tags:
-  - Life
-  - Personal
+- Life
+- Personal
 title: 2021 In Review
-summary:
-  2021 was great for me mentally, financially, and spiritually. Not so much
+summary: 2021 was great for me mentally, financially, and spiritually. Not so much
   physically.
 createdAt: 2021-12-28T00:00:00.000-06:00
----
 
+---
 Here we are at the end of 2021 and I’m feeling damned good about what’s going on in my life. I feel like I’m more focused than ever and I’m super energized to get better as a father, friend, and professional (in that order).
 
 <note>I didn’t take very many Ls in 2021 so I’m sure 2022 will have something to say about that because you know, balance.</note>
@@ -20,8 +19,8 @@ Here we are at the end of 2021 and I’m feeling damned good about what’s goin
 ### Got a new job
 
 <aside>
-  <p>🥈 This is my second biggest W of 2021 (having a baby narrowly edges it out for the number one spot).
-  </p>
+<p>🥈 This is my second biggest W of 2021 (having a baby narrowly edges it out for the number one spot).
+</p>
 </aside>
 
 This new job was a big move for my career. It’s a pretty massive leap in responsibility and is more aligned with my skills and career goals, which is fantastic.
@@ -43,8 +42,8 @@ Now I view myself as User-Focused Developer.
 ### Family
 
 <aside>
-  <p>🥇 My biggest W of 2021 is that I had my second (and last) kid this year! Great feeling to finally have this little dude around.
-  </p>
+<p>🥇 My biggest W of 2021 is that I had my second (and last) kid this year! Great feeling to finally have this little dude around.
+</p>
 </aside>
 
 Also, I got a dog. I’m not sure how I feel about this but it’s ok on most days.
@@ -107,7 +106,7 @@ I forgot how much I liked to read.
 
 I borrowed a Kindle from a co-worker and my god do I love reading on [this thing](https://www.amazon.com/Introducing-kindle-paperwhite-Signature-Edition/dp/B08B495319/ref=sr_1_2?crid=39YT32V6M2LKO&keywords=paperwhite&qid=1640958969&sprefix=paperwhite%2Caps%2C235&sr=8-2). Shoutout to her for letting me borrow it because I don’t think I would have bought one without having done so.
 
-For the longest period of time, I was back and forth on getting a Kindle because I thought I’d _miss the feeling of holding a real book._ **Turns out: \*\***I don’t miss it. The Kindle is amazing, the battery lasts forever, **books are cheaper**, it syncs with [Goodreads](https://www.goodreads.com/user/show/143010468-traek-wells) and I find myself doing a lot more reading than I used to.
+For the longest period of time, I was back and forth on getting a Kindle because I thought I’d _miss the feeling of holding a real book._ **Turns out: ****I don’t miss it. The Kindle is amazing, the battery lasts forever, **books are cheaper**, it syncs with [Goodreads](https://www.goodreads.com/user/show/143010468-traek-wells) and I find myself doing a lot more reading than I used to.
 
 I’ve never been the kind of person to make highlights in books. So instead, I’ve started keeping notes and summaries on what I call my [bookshelf](https://traekwells.com/bookshelf). This is a place for me to capture thoughts about **some** of the books that’s I’ve read that I can go back and reference.
 
@@ -156,3 +155,5 @@ I hate that I feel like I’m in this vortex of never-ending information consump
 ## 🎬 Conclusion
 
 I had a great year all around. The current state of the world gives me a little concern because I have to raise two kids in it but I’m optimistic.
+
+Happy new years everyone.
