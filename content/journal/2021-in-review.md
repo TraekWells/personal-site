@@ -106,7 +106,7 @@ I forgot how much I liked to read.
 
 I borrowed a Kindle from a co-worker and my god do I love reading on [this thing](https://www.amazon.com/Introducing-kindle-paperwhite-Signature-Edition/dp/B08B495319/ref=sr_1_2?crid=39YT32V6M2LKO&keywords=paperwhite&qid=1640958969&sprefix=paperwhite%2Caps%2C235&sr=8-2). Shoutout to her for letting me borrow it because I don’t think I would have bought one without having done so.
 
-For the longest period of time, I was back and forth on getting a Kindle because I thought I’d _miss the feeling of holding a real book._ **Turns out: ****I don’t miss it. The Kindle is amazing, the battery lasts forever, **books are cheaper**, it syncs with [Goodreads](https://www.goodreads.com/user/show/143010468-traek-wells) and I find myself doing a lot more reading than I used to.
+For the longest period of time, I was back and forth on getting a Kindle because I thought I’d "miss the feeling of holding a real book." **Turns out: ** I don’t miss it. The Kindle is amazing, the battery lasts forever, **books are cheaper**, it syncs with [Goodreads](https://www.goodreads.com/user/show/143010468-traek-wells) and I find myself doing a lot more reading than I used to.
 
 I’ve never been the kind of person to make highlights in books. So instead, I’ve started keeping notes and summaries on what I call my [bookshelf](https://traekwells.com/bookshelf). This is a place for me to capture thoughts about **some** of the books that’s I’ve read that I can go back and reference.
 
