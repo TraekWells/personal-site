@@ -11,12 +11,6 @@
       <div class="container container--narrow">
         <div class="content">
           <div class="content__text">
-            <div class="content__info">
-              <p>
-                Written on {{ $formatDate(book.createdAt) }} and takes about
-                {{ wordCount }} minutes to read.
-              </p>
-            </div>
             <nuxt-content :document="book"></nuxt-content>
           </div>
           <div class="content__sidebar">
