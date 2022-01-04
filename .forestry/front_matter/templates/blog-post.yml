@@ -39,7 +39,7 @@ fields:
   - User Interface
   label: Tags
 pages:
-- content/blog/jakob-s-law-and-how-to-use-it.md
+- content/blog/jakobs-law-and-how-to-use-it.md
 - content/blog/javascript-array-includes-method.md
 - content/blog/moving-from-wordpress-to-forestry.md
 - content/journal/2021-in-review.md
