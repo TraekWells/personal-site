@@ -62,15 +62,13 @@ This doesn’t mean that you **can’t** use a distinct and original layout for 
 
 Let’s pretend that CSS-Tricks had a design that was out of the norm:
 
-![Flipped CSS-Tricks layout](Jakob%E2%80%99s%20Law%20and%20How%20To%20Use%20It%2040d80cc3d93a48b5b67bf18e383feb6a/weird-layout.jpg)
-
-Flipped CSS-Tricks layout
+![Uncommon CSS Tricks navigation](/img/weird-layout.jpg "Uncommon CSS Tricks navigation example")
 
 Earlier I mentioned that clicking on the logo is commonly used as a shortcut to get to the website’s homepage. By going against what is common practice, seeing that the logo is on the right, this design will force the user to think about where to go to utilize that shortcut.
 
 ### Only use non-standard patterns if it will improve user experience
 
-There are occasions where going against the common practices can improve the overall user experience. Let’s take [Swallowtail Tea](https://swallowtailtea.com/) for example.
+There are occasions where going against common practices can improve the overall user experience. Let’s take [Swallowtail Tea](https://swallowtailtea.com/) for example.
 
 Swallowtail Tea sells tea, wares for brewing tea, and they offer wholesale. There are a few things to notice about their navigation:
 
@@ -95,7 +93,7 @@ If the answer to one of these questions is no, you’re likely better off going 
 
 ### Launching a new feature without user testing
 
-The easiest way to get into trouble when launching a new feature is skipping the user testing. It’s vital to user test for a successful website, especially if the website has elements that don’t follow common practices.
+The easiest way to get into trouble when launching a new feature is by skipping the user testing. It’s vital to user test for a successful website, especially if the website has elements that don’t follow common practices.
 
 ## Additional resources
 
