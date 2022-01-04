@@ -1,13 +1,14 @@
 ---
 draft: true
 tags:
-- User Experience
+  - User Experience
 title: Jakob’s Law and How To Use It
-summary: Jakob’s law is the most well-known of the Laws of UX and in this post, you’ll
+summary:
+  Jakob’s law is the most well-known of the Laws of UX and in this post, you’ll
   learn what it is and how to use it to help design usable websites.
 createdAt: 2022-01-04T00:00:00-06:00
-
 ---
+
 ## What is Jakob’s law?
 
 Taken from [Jakob’s Law of Internet User Experience](https://www.nngroup.com/videos/jakobs-law-internet-ux/):
@@ -18,10 +19,7 @@ Users spend most of their time on other sites. This means that users prefer your
 
 The internet is vast. There are currently [1.86 billion websites](https://firstsiteguide.com/how-many-websites/) and that number is rapidly growing. As people use the internet frequently and browse websites, they start to develop a [mental model](https://www.nngroup.com/articles/mental-models/) of how websites are _supposed_ to look and behave.
 
-<aside>
-💡 A mental model is what we think we know about a system, specifically how it works.
-
-</aside>
+<note>A mental model is what we think we know about a system, specifically how it works.</note>
 
 More importantly, users will come to **expect** the websites they use to be similar to the other websites they’ve used.
 
@@ -45,16 +43,16 @@ There are a few main takeaways from Jakob’s law.
 
 Let’s take navigation as an example. The navigation of a website is almost always the first thing the users see, and for good reason. It’s critical to display what content is available on that website right away. Most navigation follows this design pattern:
 
-* Logo in the upper left (sometimes centered in its own row)
-  * Clicking on the logo will bring the user back to the homepage
-* Search, account information, settings, etc. in the upper right
-* Navigation items somewhere in between
+- Logo in the upper left (sometimes centered in its own row)
+  - Clicking on the logo will bring the user back to the homepage
+- Search, account information, settings, etc. in the upper right
+- Navigation items somewhere in between
 
 ![Runner's World navigation](/img/runners-world-navigation.png "Runner's World navigation example")
 
-![Pocket navigation](/img/pocket-navigation.png "Pocket navigation example")
+![Pocket navigation](/img/pocket-navigation.png 'Pocket navigation example')
 
-![CSS Tricks navigation](/img/css-tricks-navigation.png "CSS Tricks navigation example")
+![CSS Tricks navigation](/img/css-tricks-navigation.png 'CSS Tricks navigation example')
 
 Users are familiar with this type of design. More importantly, they’ll know what to do when they see it and how to use it, seeing that it’s such a common design pattern.
 
@@ -62,7 +60,7 @@ This doesn’t mean that you **can’t** use a distinct and original layout for 
 
 Let’s pretend that CSS-Tricks had a design that was out of the norm:
 
-![Uncommon CSS Tricks navigation](/img/weird-layout.jpg "Uncommon CSS Tricks navigation example")
+![Uncommon CSS Tricks navigation](/img/weird-layout.jpg 'Uncommon CSS Tricks navigation example')
 
 Earlier I mentioned that clicking on the logo is commonly used as a shortcut to get to the website’s homepage. By going against what is common practice, seeing that the logo is on the right, this design will force the user to think about where to go to utilize that shortcut.
 
@@ -72,9 +70,9 @@ There are occasions where going against common practices can improve the overall
 
 Swallowtail Tea sells tea, wares for brewing tea, and they offer wholesale. There are a few things to notice about their navigation:
 
-* The logo is on the left and links to the homepage
-* As you hover each item, you get a snippet of text as a preview to the page
-* Although it’s a distinct, non-standard layout, it functions exactly as navigation should
+- The logo is on the left and links to the homepage
+- As you hover each item, you get a snippet of text as a preview to the page
+- Although it’s a distinct, non-standard layout, it functions exactly as navigation should
 
 ![swallowtail-homepage.png](Jakob%E2%80%99s%20Law%20and%20How%20To%20Use%20It%2040d80cc3d93a48b5b67bf18e383feb6a/swallowtail-homepage.png)
 

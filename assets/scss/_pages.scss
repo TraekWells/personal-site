@@ -1,0 +1,18 @@
+.about-me {
+  display: grid;
+  grid-template-columns: 25rem 1fr;
+  gap: 3rem;
+
+  &__image {
+    border-radius: var(--border-radius-sm);
+    overflow: hidden;
+  }
+
+  &__content {
+    p {
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+  }
+}

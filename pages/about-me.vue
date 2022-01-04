@@ -3,13 +3,19 @@
     <header class="header">
       <div class="container container--narrow">
         <h1>{{ about.pageTitle }}</h1>
-        <p class="lead mb-4">{{ about.subtitle }}</p>
       </div>
     </header>
     <section class="section">
       <div class="wave-white"></div>
       <div class="container container--narrow">
-        <nuxt-content :document="about"></nuxt-content>
+        <div class="about-me">
+          <div class="about-me__image">
+            <img src="/img/me-after-a-run.jpg" alt="Me after a run" />
+          </div>
+          <div class="about-me__content">
+            <nuxt-content :document="about"></nuxt-content>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -50,5 +56,3 @@ export default {
   },
 }
 </script>
-
-<style></style>
