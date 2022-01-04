@@ -48,6 +48,8 @@ Let’s take navigation as an example. The navigation of a website is almost alw
 - Search, account information, settings, etc. in the upper right
 - Navigation items somewhere in between
 
+Here are a few examples:
+
 ![Runner's World navigation](/img/runners-world-navigation.png "Runner's World navigation example")
 
 ![Pocket navigation](/img/pocket-navigation.png 'Pocket navigation example')
