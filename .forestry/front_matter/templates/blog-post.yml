@@ -28,8 +28,6 @@ fields:
   - HTML
   - CSS
   - JavaScript
-  - UI
-  - UX
   - React
   - Vue
   - TIL
@@ -37,6 +35,8 @@ fields:
   - Life
   - Personal
   - Career
+  - User Experience
+  - User Interface
   label: Tags
 pages:
 - content/blog/jakob-s-law-and-how-to-use-it.md
