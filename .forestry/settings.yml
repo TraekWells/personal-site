@@ -12,7 +12,7 @@ sections:
   create: all
   match: "*"
 - type: heading
-  label: Blog
+  label: Writing
 - type: directory
   path: content/blog
   label: Blog
@@ -20,6 +20,16 @@ sections:
   match: "**/*"
   templates:
   - blog-post
+- type: directory
+  path: content/journal
+  label: Journal
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/bookshelf
+  label: Bookshelf
+  create: all
+  match: "**/*"
 - type: heading
   label: Projects
 - type: directory
@@ -29,20 +39,6 @@ sections:
   match: "**/*"
   templates:
   - project
-- type: heading
-  label: Journal
-- type: directory
-  path: content/journal
-  label: Journal
-  create: all
-  match: "**/*"
-- type: heading
-  label: Bookshelf
-- type: directory
-  path: content/bookshelf
-  label: Bookshelf
-  create: all
-  match: "**/*"
 upload_dir: static/img
 public_path: "/img"
 front_matter_path: ''
