@@ -35,7 +35,7 @@ My new role is more specifically in the User Experience side of things and I’m
 
 I focus much more on the _why_ than I do the _what._
 
-Now I view myself as User-Focused Web Developer.
+Now I view myself as a User-Focused Web Developer.
 
 ## 🐜 Personal
 
