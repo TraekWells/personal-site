@@ -2,8 +2,9 @@
 rating: 3
 title: Once There Were Wolves
 author: Charlotte McConaghy
-thoughts: Myster
-draft: true
+thoughts: A thought provoking murder mystery and romance novel featuring wolves, gore
+  and conservationism.
+draft: false
 image: "/img/book-cover-once-there-were-wolves.jpg"
 
 ---
