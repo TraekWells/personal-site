@@ -46,7 +46,7 @@ Another thing I liked about _Inferno_ is that the problem that the antagonist wa
 
 ### What I Didn't Like About It
 
-I found it odd that the person who created this thing that would basically kill a bunch of people would leave so many clues as to where to find the thing they created. I mean, I get that it's a book so there has to be something that the main character is trying to do, but it
+I found it odd that the person who created this thing that would basically kill a bunch of people would leave so many clues as to where to find the thing they created.
 
 ## 🦉Who Would Like It?
 
