@@ -34,7 +34,7 @@ I love the author Charlotte McConaghy’s writing style. It’s elegant, beautif
 
 ### What I Liked About It
 
-My favorite aspect of _Once There Were Wolves_ is the descriptions of nature. It’s clear that Charlotte has a love for nature and it’s reflected in her writing of this book*.* Here are a few of my favorite passages from the book:
+My favorite aspect of _Once There Were Wolves_ is the descriptions of nature. It’s clear that Charlotte has a love for nature and it’s reflected in her writing of this book. Here are a few of my favorite passages from the book:
 
 > I am such a simple meal; I have no speed with which to run, no strength to fight her off. My skin is disastrously thin. Does she know this about me? Can she sense it, as the others of her kind don’t seem to? They are fooled by the power in our voices and our weapons, by our ability to cage them.
 
