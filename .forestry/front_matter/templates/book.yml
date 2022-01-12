@@ -10,7 +10,7 @@ fields:
   label: Author
 - type: textarea
   name: thoughts
-  label: Thoughts
+  label: Summary
 - name: draft
   type: boolean
   label: Draft
