@@ -31,8 +31,8 @@ Lastly and always, I'm working on becoming a better person and appreciating the 
   * Finish under 22 minutes (April 4th, 2021)
 * Build this site with Nuxt (January 18th, 2021)
 * Fast for 400 hours in a month (February 28th, 2021)
-* Start hip-hop music review blog ([May 1st, 2020](https://hiphopseason.com/))
 * Finish a 10k ([October 2nd, 2021](https://cdn.forestry.io/res2/mdQbqHDQPsAn38v6ExGm_5tZT7qyVpA8dn3DjHl_OyQ/fit/512/512/sm/0/aHR0cHM6Ly9hcHAu/Zm9yZXN0cnkuaW8v/cmFpbHMvYWN0aXZl/X3N0b3JhZ2UvYmxv/YnMvZXlKZmNtRnBi/SE1pT25zaWJXVnpj/MkZuWlNJNklrSkJh/SEJDVEdkeVVFSk5Q/U0lzSW1WNGNDSTZi/blZzYkN3aWNIVnlJ/am9pWW14dllsOXBa/Q0o5ZlE9PS0tNGVh/NWE0ZDY1MWM2NjRm/ODE2YTc0NjFlZjRj/MzFjOTA1MzM1MTEx/NC82MzFCRjg3OS1F/NzA0LTRCQUYtQkE5/Ni0zRTg5OTk4RDNC/MTEuanBlZw))
+* Pay off student loans by December 2022
 
 ## Professional Goals
 
@@ -105,7 +105,7 @@ Lastly and always, I'm working on becoming a better person and appreciating the 
 ## Financial Goals
 
 * Make $100 passive income per month
-* Pay off student loans by December 2022
+* ~~Pay off student loans by December 2022~~
 * Make $10,000 (gross) in a month
 * Have a positive net worth
 
@@ -137,8 +137,6 @@ Lastly and always, I'm working on becoming a better person and appreciating the 
 ## Video Game Goals
 
 * Make it Elder God rank in Mortal Kombat 11
-* ~~Make it out of Bronze league in Street Fighter V~~
-  * Make it out of Silver league in Street Fighter V
 * Get first place in Call of Duty: Warzone Solos
 * Get first place in Call of Duty: Warzone Duos
 * Get first place in Call of Duty: Warzone Trios
