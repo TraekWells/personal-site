@@ -5,10 +5,11 @@ author: N. K. Jemisin
 thoughts: The second book in the Broken Earth trilogy picks up where the first left
   off. The planet has been torn open by Alabster and Essun is looking for her missing
   daughter.
-draft: true
+draft: false
 image: "/img/book-cover-the-obelisk-gate.jpg"
 
 ---
+<note>Contains spoilers</note>
 ## 📕 What It's About
 
 In the previous book, Alabaster tapped into the power of the obelisks and tore a giant rift in the continent, exposing a drastic amount of geological stuff and triggering the current ‘Fifth Season’.
