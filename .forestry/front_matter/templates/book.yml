@@ -29,6 +29,7 @@ fields:
   name: image
   label: Book Art
 pages:
+- content/bookshelf/a-master-of-djinn.md
 - content/bookshelf/cant-hurt-me.md
 - content/bookshelf/inferno.md
 - content/bookshelf/once-there-were-wolves.md
