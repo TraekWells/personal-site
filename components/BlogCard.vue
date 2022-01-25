@@ -6,7 +6,7 @@
       </h3>
       <p>{{ post.summary }}</p>
       <nuxt-link :to="post.path" class="read-more"
-        >Read More <ArrowRightIcon aria-label="Arrow icon"></ArrowRightIcon
+        >Read This Post <ArrowRightIcon aria-label="Arrow icon"></ArrowRightIcon
       ></nuxt-link>
     </div>
   </article>
