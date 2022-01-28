@@ -48,13 +48,15 @@
     grid-template-columns: 1fr;
   }
 
-  ul {
+  ul,
+  ol {
     margin-left: 2rem;
     &:not(:last-child) {
       margin-bottom: 2rem;
     }
 
-    ul {
+    ul,
+    ol {
       margin-left: 2rem;
     }
   }
