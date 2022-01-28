@@ -1,0 +1,106 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.home-header {
+  display: flex;
+  justify-content: center;
+
+  @include respond-to(phone) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  h1 {
+    font-weight: normal;
+  }
+
+  &__image {
+    flex-basis: 35%;
+    margin-right: 6rem;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    border-radius: 1rem;
+    height: 40rem;
+    margin-bottom: -7rem;
+
+    @include respond-to(phone) {
+      display: none;
+    }
+
+    @include respond-to(tab-port) {
+      height: 35rem;
+      margin-right: 5rem;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: rgba(#561c6d, 0.55);
+    }
+
+    img {
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+
+  &__content {
+    flex-basis: 50%;
+    z-index: 10;
+
+    p {
+      font-size: 2rem;
+    }
+
+    @include respond-to(tab-port) {
+      flex-basis: 70%;
+    }
+  }
+}
+
+.blogs {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  margin: 6rem 0;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  justify-content: center;
+
+  @include respond-to(tab-port) {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+}
+.skill {
+  display: flex;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.skill {
+  &__icon {
+    background-color: var(--color-white);
+    align-self: flex-start;
+    border-radius: var(--border-radius-xsm);
+    flex-shrink: 0;
+    padding: 1rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    display: grid;
+    place-content: center;
+    margin-right: 2rem;
+    color: var(--color-primary-700);
+  }
+}
