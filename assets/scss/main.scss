@@ -1,12 +1,5 @@
-@import 'variables';
-@import 'transitions';
-@import 'mixins';
-@import 'reset';
-@import 'base';
-@import 'typography';
-@import 'buttons';
-@import 'utilities';
-@import 'layout';
-@import 'post';
-@import 'books';
-@import 'pages';
+@use 'abstracts';
+@use 'base';
+@use 'components';
+@use 'layout';
+@use 'pages';

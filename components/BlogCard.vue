@@ -27,29 +27,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss">
-.blog {
-  max-width: 65rem;
-  border-radius: 1rem;
-  transition: 0.2s ease all;
-  width: 100%;
-  display: flex;
-  z-index: 10;
-  margin: 3rem 0;
-
-  @include respond-to(phone) {
-    flex-direction: column;
-    padding: 3rem;
-    background-color: var(--color-white);
-  }
-
-  &.purple {
-    background-color: var(--color-primary-100);
-  }
-
-  &:not(:last-child) {
-    margin-bottom: 2rem;
-  }
-}
-</style>

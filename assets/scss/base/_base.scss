@@ -1,3 +1,5 @@
+@use '../abstracts/variables' as *;
+
 * {
   scrollbar-color: var(--color-primary-500) var(--color-primary-100);
 }

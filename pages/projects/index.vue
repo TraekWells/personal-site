@@ -69,27 +69,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss">
-.projects {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  margin: 4rem 0;
-
-  @include respond-to(tab-port) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-.project {
-  &__image {
-    border-radius: 1rem;
-    overflow: hidden;
-  }
-
-  &__content {
-    padding: 2rem;
-  }
-}
-</style>
