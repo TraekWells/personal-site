@@ -25,7 +25,7 @@
     <div class="section">
       <div class="wave-white"></div>
       <div class="container container--narrow">
-        <h2 class="text-center">Stuff I've Built</h2>
+        <h2>Stuff I've Built</h2>
         <hr />
         <p class="lead">
           Here are some of the bigger projects that I've built that I'm proud
@@ -48,9 +48,9 @@
     </div>
 
     <div class="section section--secondary">
-      <div class="wave-yellow"></div>
+      <div class="wave-purple"></div>
       <div class="container container--narrow">
-        <h2 class="text-center">What I'm Good At</h2>
+        <h2>What I'm Good At</h2>
         <hr />
         <div class="skills">
           <div class="skill">
@@ -88,7 +88,7 @@
     <div class="section">
       <div class="wave-white"></div>
       <div class="container container--narrow">
-        <h2 class="text-center">Stuff I've Written</h2>
+        <h2>Stuff I've Written</h2>
         <hr />
         <p class="lead mb-4">
           Sharing what I've learned in the hopes of solidify the knowledge and

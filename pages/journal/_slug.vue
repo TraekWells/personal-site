@@ -111,17 +111,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss">
-/* This is to create some space above the header after a use clicks on an anchor link */
-h2 {
-  &::before {
-    display: block;
-    content: '';
-    margin-top: -10rem;
-    height: 10rem;
-    visibility: hidden;
-    pointer-events: none;
-  }
-}
-</style>
