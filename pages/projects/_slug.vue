@@ -3,7 +3,6 @@
     <header class="header">
       <div class="container container--narrow">
         <h1>{{ project.title }}</h1>
-        <hr />
         <p class="lead">
           {{ project.summary }}
         </p>
@@ -63,8 +62,8 @@
     </article>
     <article class="section">
       <div class="container container--narrow">
-        <h2 class="text-center">More Projects</h2>
-        <div class="projects mt-4">
+        <h2>More Projects</h2>
+        <div class="projects">
           <ProjectCard
             v-for="project in moreProjects"
             :key="project.path"

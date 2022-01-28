@@ -10,7 +10,6 @@
     list-style: none;
     margin-bottom: 1.5rem;
     display: flex;
-    justify-content: center;
   }
 
   &__tag {
@@ -144,6 +143,17 @@
       &:not(:last-child) {
         margin-bottom: 0.8rem;
       }
+    }
+  }
+
+  h2 {
+    &::before {
+      display: block;
+      content: '';
+      margin-top: -10rem;
+      height: 10rem;
+      visibility: hidden;
+      pointer-events: none;
     }
   }
 }

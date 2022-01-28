@@ -37,15 +37,11 @@ ol[role='list'] {
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 
   @include respond-to(tab-port) {
     font-size: 59%;
   }
-}
-
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
 }
 
 /* Set core body defaults */

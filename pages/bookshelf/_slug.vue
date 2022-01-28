@@ -25,10 +25,10 @@
       </div>
     </article>
     <article class="section section--secondary">
-      <div class="wave-yellow"></div>
+      <div class="wave-white"></div>
       <div class="container container--narrow">
-        <h2 class="text-center">Notes from other books</h2>
-        <div class="books mt-4">
+        <h2>Notes from other books</h2>
+        <div class="books">
           <Book v-for="book in moreBooks" :key="book.path" :book="book" />
         </div>
       </div>
@@ -114,17 +114,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss">
-/* This is to create some space above the header after a use clicks on an anchor link */
-h2 {
-  &::before {
-    display: block;
-    content: '';
-    margin-top: -10rem;
-    height: 10rem;
-    visibility: hidden;
-    pointer-events: none;
-  }
-}
-</style>
