@@ -48,7 +48,7 @@
     </div>
 
     <div class="section section--secondary">
-      <div class="wave-white"></div>
+      <div class="wave-purple"></div>
       <div class="container container--narrow">
         <h2>What I'm Good At</h2>
         <hr />

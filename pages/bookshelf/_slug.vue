@@ -25,7 +25,7 @@
       </div>
     </article>
     <article class="section section--secondary">
-      <div class="wave-white"></div>
+      <div class="wave-purple"></div>
       <div class="container container--narrow">
         <h2>Notes from other books</h2>
         <div class="books">
