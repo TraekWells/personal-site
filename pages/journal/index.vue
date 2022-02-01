@@ -14,7 +14,6 @@
       </div>
     </header>
     <section class="section">
-      <div class="wave-white"></div>
       <div class="container container--narrow">
         <div class="blogs">
           <BlogCard
@@ -34,7 +33,7 @@ import getMetaData from '@/config/getMetaData.js'
 export default {
   async asyncData({ $content }) {
     const journals = await $content('journal')
-      .sortBy('direction', 'asc')
+      .sortBy('createdAt', 'desc')
       .where({ draft: false })
       .fetch()
     return { journals }

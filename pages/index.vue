@@ -120,7 +120,7 @@ export default {
       .where({ featured: true })
       .fetch()
     const blogs = await $content('blog')
-      .sortBy('direction', 'asc')
+      .sortBy('createdAt', 'desc')
       .where({ draft: false })
       .fetch()
     return { projects, blogs }

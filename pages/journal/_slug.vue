@@ -12,7 +12,6 @@
       </div>
     </header>
     <article class="section">
-      <div class="wave-white"></div>
       <div class="container container--narrow">
         <div class="content">
           <div class="content__text">

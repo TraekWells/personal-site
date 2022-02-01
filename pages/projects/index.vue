@@ -18,7 +18,6 @@
       </div>
     </header>
     <section class="section">
-      <div class="wave-white"></div>
       <div class="container container--narrow">
         <div class="projects">
           <ProjectCard

@@ -12,8 +12,7 @@
       </div>
     </header>
     <section class="section">
-      <div class="wave-white"></div>
-      <div class="container">
+      <div class="container container--narrow">
         <div class="books">
           <Book v-for="book in books" :key="book.path" :book="book" />
         </div>
@@ -27,7 +26,10 @@ import getMetaData from '@/config/getMetaData.js'
 
 export default {
   async asyncData({ $content }) {
-    const books = await $content('bookshelf').where({ draft: false }).fetch()
+    const books = await $content('bookshelf')
+      .where({ draft: false })
+      .sortBy('createdAt', 'desc')
+      .fetch()
     return { books }
   },
   computed: {

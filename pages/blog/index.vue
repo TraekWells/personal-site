@@ -13,7 +13,6 @@
       </div>
     </header>
     <section class="section">
-      <div class="wave-white"></div>
       <div class="container container--narrow">
         <div class="blogs">
           <BlogCard v-for="blog in blogs" :key="blog.path" :post="blog" />
@@ -29,7 +28,7 @@ import getMetaData from '@/config/getMetaData.js'
 export default {
   async asyncData({ $content }) {
     const blogs = await $content('blog')
-      .sortBy('direction', 'asc')
+      .sortBy('createdAt', 'desc')
       .where({ draft: false })
       .fetch()
     return { blogs }

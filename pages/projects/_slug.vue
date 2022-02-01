@@ -15,7 +15,6 @@
         :src="project.featuredImage"
         :alt="project.title"
       />
-      <div v-if="!project.featuredImage" class="wave-white"></div>
       <div class="container container--narrow">
         <div class="content">
           <div class="content__image">
@@ -143,10 +142,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss" scoped>
-.featured-image {
-  display: block;
-  margin-top: -10rem;
-}
-</style>

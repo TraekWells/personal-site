@@ -108,16 +108,15 @@
 
   &__image {
     grid-area: image;
+    margin-top: 1.5rem;
   }
 
   &__sidebar {
     grid-area: sidebar;
     align-self: start;
-    background-color: var(--color-primary-100);
-    padding: 2rem;
     border-radius: var(--border-radius-sm);
     position: sticky;
-    top: 13rem;
+    top: 12rem;
 
     @include respond-to(tab-port) {
       position: static;
