@@ -14,10 +14,11 @@
 
   &__tag {
     background-color: var(--color-white);
-    border: 1px solid var(--color-primary-300);
+    // border: 1px solid var(--color-primary-300);
     border-radius: 0.3rem;
-    padding: 0.3rem 0.5rem;
+    padding: 0.3rem 1rem;
     font-size: 1.2rem;
+    box-shadow: 0 2px 1.5rem rgba(0, 0, 0, 0.05);
 
     &:not(:last-child) {
       margin-right: 0.5rem;

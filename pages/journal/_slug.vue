@@ -2,13 +2,13 @@
   <main class="post">
     <header class="header">
       <div class="container container--narrow">
-        <h1>{{ journal.title }}</h1>
-        <p class="lead">{{ journal.summary }}</p>
         <ul v-if="journal.tags" class="post__tags">
           <li v-for="tag in journal.tags" :key="tag" class="post__tag">
             {{ tag }}
           </li>
         </ul>
+        <h1>{{ journal.title }}</h1>
+        <p class="lead">{{ journal.summary }}</p>
       </div>
     </header>
     <article class="section">
