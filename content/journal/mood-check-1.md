@@ -47,9 +47,9 @@ Not too many losses to report here. I’m working on building an office in my ba
 
 📖 Books Read: Since getting a kindle, I’ve been doing much more reading than usual.
 
-* [Once There Were Wolves](https://traekwells.com/bookshelf/once-there-were-wolves/):
-* [A Master of Djinn](https://traekwells.com/bookshelf/a-master-of-djinn/):
-* The Stone Sky:
+* [Once There Were Wolves](https://traekwells.com/bookshelf/once-there-were-wolves/)
+* [A Master of Djinn](https://traekwells.com/bookshelf/a-master-of-djinn/)
+* The Stone Sky
 
 🐜 Other Stuff Did:
 
