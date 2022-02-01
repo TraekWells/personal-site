@@ -116,7 +116,10 @@
     align-self: start;
     border-radius: var(--border-radius-sm);
     position: sticky;
+    padding: 1rem;
     top: 12rem;
+    opacity: 0.5;
+    transition: 0.3s ease opacity;
 
     @include respond-to(tab-port) {
       position: static;
@@ -124,7 +127,22 @@
       margin-bottom: 2rem;
     }
 
+    &:hover {
+      opacity: 1;
+    }
+
+    @include respond-to(tab-port) {
+      opacity: 1;
+    }
+
     p {
+      &:first-of-type {
+        color: var(--color-primary-700);
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.5rem;
+        letter-spacing: 0.05rem;
+      }
       font-size: 1.5rem;
       margin-top: 0;
       margin-bottom: 2rem;
