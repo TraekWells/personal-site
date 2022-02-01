@@ -4,7 +4,8 @@ tags:
 - Life
 - Personal
 title: 'Mood Check #1'
-summary: ''
+summary: I feel like I owned this month. My life is in a great spot and I'm feeling
+  better than ever.
 createdAt: 2022-01-31T00:00:00-06:00
 
 ---
