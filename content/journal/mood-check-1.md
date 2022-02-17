@@ -42,13 +42,13 @@ Not too many losses to report here. I’m working on building an office in my ba
 
 ## Recap
 
-### 📜 **Blogs Written**:
+### 📜 Blogs Written:
 
 Just the one post but I’m proud of it and that’s all that matters.
 
 * [Jakob’s Law and How To Use It](https://traekwells.com/blog/jakobs-law-and-how-to-use-it): A quick overview of a crucial law of UX to understand how to apply it to your work.
 
-### 📖 **Books Read**:
+### 📖 Books Read:
 
 Since getting a kindle, I’ve been doing much more reading than usual.
 
@@ -56,7 +56,7 @@ Since getting a kindle, I’ve been doing much more reading than usual.
 * [A Master of Djinn](https://traekwells.com/bookshelf/a-master-of-djinn/)
 * The Stone Sky
 
-### 🐜 **Other Stuff Did**:
+### 🐜 Other Stuff Did:
 
 * Fasted every day for at least 16 hours
 * Did a 24 hour fast
