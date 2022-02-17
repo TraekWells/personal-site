@@ -6,7 +6,7 @@ tags:
 title: 'Mood Check #1'
 summary: I feel like I owned this month. My life is in a great spot and I'm feeling
   better than ever.
-createdAt: 2022-01-31T00:00:00-06:00
+createdAt: 2022-01-31T00:00:00.000-06:00
 
 ---
 January was great. It’s likely due to the normal “New year, new me” that everyone gets but I really do feel like a new me. I didn’t make the mistake of setting resolutions for the year because every time I do, I either:
@@ -42,17 +42,17 @@ Not too many losses to report here. I’m working on building an office in my ba
 
 ## Recap
 
-📜 Blogs Written: Just the one post but I’m proud of it and that’s all that matters.
+📜 **Blogs Written**: Just the one post but I’m proud of it and that’s all that matters.
 
 * [Jakob’s Law and How To Use It](https://traekwells.com/blog/jakobs-law-and-how-to-use-it): A quick overview of a crucial law of UX to understand how to apply it to your work.
 
-📖 Books Read: Since getting a kindle, I’ve been doing much more reading than usual.
+📖 **Books Read**: Since getting a kindle, I’ve been doing much more reading than usual.
 
 * [Once There Were Wolves](https://traekwells.com/bookshelf/once-there-were-wolves/)
 * [A Master of Djinn](https://traekwells.com/bookshelf/a-master-of-djinn/)
 * The Stone Sky
 
-🐜 Other Stuff Did:
+🐜 **Other Stuff Did**:
 
 * Fasted every day for at least 16 hours
 * Did a 24 hour fast
