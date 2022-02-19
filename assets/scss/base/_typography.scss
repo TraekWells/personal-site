@@ -67,7 +67,7 @@ a {
   position: relative;
   text-decoration: none;
   border-bottom: 0.1em solid var(--color-primary-300);
-  transition: 0.2s ease all;
+  transition: 0.1s ease all;
 
   &:link {
     color: var(--color-primary-700);
@@ -75,7 +75,7 @@ a {
 
   &:hover,
   &:focus {
-    border-bottom: 0.1em solid var(--color-primary-500);
+    border-bottom: 0.2em solid var(--color-primary-500);
   }
 
   &:active {
