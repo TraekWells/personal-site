@@ -32,7 +32,6 @@ Lastly and always, I'm working on becoming a better person and appreciating the 
 * Intermittent fast for at least 13 hours per day, for a full month (January 2022)
 * Go a month without alcohol (January 2022)
 * Learn a full song on the guitar (January 16th, 2022)
-* Pay off student loans by December 2022
 
 ## Professional Goals
 
