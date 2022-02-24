@@ -27,11 +27,11 @@ Lastly and always, I'm working on becoming a better person and appreciating the 
 
 ## Recently Completed
 
-* Finish a 5k (April 4th, 2021)
-  * Finish under 22 minutes (April 4th, 2021)
-* Build this site with Nuxt (January 18th, 2021)
-* Fast for 400 hours in a month (February 28th, 2021)
-* Finish a 10k ([October 2nd, 2021](https://cdn.forestry.io/res2/mdQbqHDQPsAn38v6ExGm_5tZT7qyVpA8dn3DjHl_OyQ/fit/512/512/sm/0/aHR0cHM6Ly9hcHAu/Zm9yZXN0cnkuaW8v/cmFpbHMvYWN0aXZl/X3N0b3JhZ2UvYmxv/YnMvZXlKZmNtRnBi/SE1pT25zaWJXVnpj/MkZuWlNJNklrSkJh/SEJDVEdkeVVFSk5Q/U0lzSW1WNGNDSTZi/blZzYkN3aWNIVnlJ/am9pWW14dllsOXBa/Q0o5ZlE9PS0tNGVh/NWE0ZDY1MWM2NjRm/ODE2YTc0NjFlZjRj/MzFjOTA1MzM1MTEx/NC82MzFCRjg3OS1F/NzA0LTRCQUYtQkE5/Ni0zRTg5OTk4RDNC/MTEuanBlZw))
+* Learn a full song on the guitar (January 16th, 2022)
+* Complete a 24 hour fast (January 31st, 2022)
+* Intermittent fast for at least 13 hours per day, for a full month (January 2022)
+* Go a month without alcohol (January 2022)
+* Learn a full song on the guitar (January 16th, 2022)
 * Pay off student loans by December 2022
 
 ## Professional Goals
@@ -67,7 +67,7 @@ Lastly and always, I'm working on becoming a better person and appreciating the 
 * Learn how to ballroom dance
 * Type 70 wpm
 * Become a competent guitar player
-* Learn a full song on the guitar
+* ~~Learn a full song on the guitar~~
 * Learn five full songs on the guitar
 * Perform a song on the guitar at a campfire
 * Perform a song on the guitar at a bar/restaurant
@@ -93,12 +93,12 @@ Lastly and always, I'm working on becoming a better person and appreciating the 
 
 ## Health Goals
 
-* Complete a 24 hour fast
+* ~~Complete a 24 hour fast~~
 * Complete a 48 hour fast
 * Complete a 72 hour fast
 * ~~Fast for 400 hours in a month~~ (February 28th, 2021)
-* Intermittent fast for at least 13 hours per day, for a full month
-* Go a month without alcohol
+* ~~Intermittent fast for at least 13 hours per day, for a full month~~
+* ~~Go a month without alcohol~~
 * Go two months without alcohol
 * Go three months without alcohol
 
