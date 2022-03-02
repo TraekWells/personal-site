@@ -46,7 +46,7 @@ Zilch
 
 Really starting enjoy and actually **look forward** to my reading time. So many good books, such little time.
 
-* Project Hail Mary
+* [Project Hail Mary](/bookshelf/project-hail-mary "Project Hail Mary")
 * The Emperor’s Soul
 * The Shadow of the Gods
 
