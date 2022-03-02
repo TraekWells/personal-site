@@ -38,17 +38,19 @@ Since becoming a father five years ago, my number one priority has been to set m
 
 ## Recap
 
-📜 Blogs Written: Zilch
+### 📜 Blogs Written:
 
-📖 Books Read:
+Zilch
 
-Really starting to enjoy and **look forward** to my reading time. So many good books, such little time.
+### 📖 Books Read:
+
+Really starting enjoy and actually **look forward** to my reading time. So many good books, such little time.
 
 * Project Hail Mary
 * The Emperor’s Soul
 * The Shadow of the Gods
 
-🐜 Other Stuff Did:
+### 🐜 Other Stuff Did:
 
 * Made some progress on the basement
 * Established some long term goals
