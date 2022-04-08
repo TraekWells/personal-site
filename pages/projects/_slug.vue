@@ -29,7 +29,36 @@
           </div>
           <div class="content__sidebar">
             <h4>Technology Used</h4>
-            <p>{{ project.technology }}</p>
+            <ul class="technology">
+              <li
+                v-for="tech in technology"
+                :key="tech"
+                class="technology__item"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="technology__icon-wrapper"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <g fill="none">
+                    <path d="M0 0h24v24H0Z"></path>
+                    <g
+                      stroke-linecap="round"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M4.48 11.98h14.99"></path>
+                      <path d="M13.483 5.988L19.513 12l-6.04 6.01"></path>
+                    </g>
+                  </g>
+                </svg>
+                <span>{{ tech }}</span>
+              </li>
+            </ul>
             <h4>Project Links</h4>
             <ul>
               <li>
@@ -91,6 +120,7 @@ export default {
   data() {
     return {
       headers: [],
+      technology: [],
     }
   },
   computed: {
@@ -107,13 +137,26 @@ export default {
     },
   },
   mounted() {
-    const headers = Array.from(document.querySelectorAll('.content h2'))
-    headers.forEach((header) => {
-      const headerObj = {}
-      headerObj.text = header.textContent
-      headerObj.link = header.id
-      this.headers.push(headerObj)
-    })
+    this.getHeaders()
+    this.getTechnology()
+  },
+  methods: {
+    getHeaders() {
+      const headers = Array.from(document.querySelectorAll('.content h2'))
+
+      headers.forEach((header) => {
+        const headerObj = {}
+        headerObj.text = header.textContent
+        headerObj.link = header.id
+        this.headers.push(headerObj)
+      })
+    },
+    getTechnology() {
+      const technology = this.project.technology
+        .split(',')
+        .map((item) => item.trim())
+      this.technology = [...technology]
+    },
   },
   head() {
     return {
