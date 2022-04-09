@@ -28,8 +28,8 @@ Ziltch, but made great progress on two longer posts. Excited to share those next
 
 📖 Books Read:
 
-* WILL
-* Ring Shout
+* WILL: A memoir from Will Smith. I’m a gigantic fan of this man and hilariously, I finished his book the same day he smacked Chris Rock. **A very** embarrassing moment for Will but his memoir was a great read. It was a bit heavy-handed with the braggy parts of basically every chapter, but _if_ you can get over that, there’s a lot to take away from it.
+* Ring Shout: [P. Djèlí Clark](https://www.google.com/search?client=firefox-b-1-d&sxsrf=APq-WBt8Lzi0m6x1_7hvst1ZHUXGZI4gGA:1649473759694&q=P.+Dj%C3%A8l%C3%AD+Clark&stick=H4sIAAAAAAAAAOPgE-LVT9c3NMwyTCrLyCnPVoJyDQory83TSrRkspOt9JPy87P1y4syS0pS8-LL84uyrRJLSzLyixaxCgToKbhkHV6Rc3itgnNOYlH2DlbGXexMHAwAVLZ7-VkAAAA&sa=X&ved=2ahUKEwjZ8ozMgIb3AhVaG80KHazMBoAQmxMoAXoECGQQAw) might be my new favorite author. While I didn’t love [The Black God’s Drum](https://www.goodreads.com/book/show/38118138-the-black-god-s-drums), I did love [Masters of Djinn](https://traekwells.com/bookshelf/a-master-of-djinn) and I loved Ring Shout too. It’s essentially a fantasy/horror take on the KKK and hate-breeding hate. A short read, filled with action and a creative take on monsters.
 
 I started reading “The Mis-Education of the Negro” but stopped reading it because I found it **incredibly** boring.
 
