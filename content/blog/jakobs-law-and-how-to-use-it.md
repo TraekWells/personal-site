@@ -4,7 +4,7 @@ tags:
 - User Experience
 title: Jakob’s Law and How To Use It
 summary: Jakob’s law is the most well-known of the Laws of UX and in this post, you’ll
-  learn what it says and how to use it to help design usable websites.
+  learn what it says and how to use it to design usable websites.
 createdAt: 2022-01-04T00:00:00.000-06:00
 
 ---
