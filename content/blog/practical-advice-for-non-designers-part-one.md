@@ -15,7 +15,7 @@ Even though I **was** taught that it’s critical to start every serious design 
 
 It wasn’t until later in my career that I realized I was setting myself up for failure by not establishing a strong foundation.
 
-<note> 📝 Note: If you’re designing a side project for yourself, it might be ok to skip straight to the visuals. But for serious design projects that will potentially have a lot of users or if the design is for a client, set the project up for success by establishing a strong foundation by focusing on the user experience first. Make it beautiful afterwards.</note>
+<note>Note: If you’re designing a side project for yourself, it might be ok to skip straight to the visuals. But for serious design projects that will potentially have a lot of users or if the design is for a client, set the project up for success by establishing a strong foundation by focusing on the user experience first. Make it beautiful afterwards.</note>
 
 Here are the key areas I recommend you focus on **before** getting into the finer, visual details such as color, imagery, animations, which framework you’re going to use, and why it’s going to be React. (Kidding, I love react).
 
@@ -41,7 +41,7 @@ As a designer, your job is to _provide a design solution to a problem_. The answ
 * Call to action placement
 * General content flow
 
-<note> 📝 Providing a design solution to a problem is your primary job as a designer. Really spend the time here and make sure that the problem is well defined.</note>
+<note>Providing a design solution to a problem is your primary job as a designer. Really spend the time here and make sure that the problem is well defined.</note>
 
 ### Who’s the intended audience?
 
@@ -53,7 +53,7 @@ This step involves communicating with the people who will be using, or in the ca
 
 A common mistake is assuming that **you** are the user that the design needs to have a solution for. While that’s possible, it’s rarely the case.
 
-<note> 💡 A quick note: _sometimes_ you **can** skip this step or do less user research than normal because you **are** the user. If you’re designing a side project for a portfolio or you’re starting your own business, chances are you already understand the problem deeply.</note>
+<note>Note: _sometimes_ you **can** skip this step or do less user research than normal because you **are** the user. If you’re designing a side project for a portfolio or you’re starting your own business, chances are you already understand the problem deeply.</note>
 
 The answer is not who you _think_ the audience is. The answer who the user research concludes it is.
 
@@ -69,7 +69,7 @@ By eliminating the need the decide on colors and making them work well together,
 
 It’s _sooooo_ much fun to experiment with colors on design projects. It’s also _verrrrrry_ time-consuming so I highly recommend you do yourself the favor and design in grayscale first. Go crazy when the time is right.
 
-<note> 💡 Who’s to say that the final product won’t be a grayscale design anyways? You may not even need color.</note>
+<note>Who’s to say that the final product won’t be a grayscale design anyways? You may not even need color.</note>
 
 ### Default to simple, slowly add crazy
 
