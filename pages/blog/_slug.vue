@@ -16,10 +16,7 @@
         <div class="content">
           <div class="content__text">
             <div class="content__info">
-              <p>
-                Written on {{ $formatDate(blog.createdAt) }} and takes about
-                {{ wordCount }} minutes to read.
-              </p>
+              <p>About a {{ wordCount }} minute to read.</p>
             </div>
             <nuxt-content :document="blog"></nuxt-content>
           </div>
