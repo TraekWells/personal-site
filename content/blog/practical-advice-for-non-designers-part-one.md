@@ -6,7 +6,7 @@ title: 'Practical Advice For Non-Designers, Part One: User Experience'
 summary: This is part one of a two part series that aims to give non-designers some
   very high-level, practical advice for designing websites. This part focuses on overall
   user experience.
-createdAt: 2022-06-30T23:00:00-06:00
+createdAt: 2022-06-30T23:00:00.000-06:00
 
 ---
 Back when I was a new designer and I had a web design project to tackle, my typical first steps were to start deciding on colors, typefaces, and how the overall grid would look. Hell, I might have even started to pick out some images.
@@ -55,7 +55,7 @@ A common mistake is assuming that **you** are the user that the design needs to 
 
 <note>Note: _sometimes_ you **can** skip this step or do less user research than normal because you **are** the user. If you’re designing a side project for a portfolio or you’re starting your own business, chances are you already understand the problem deeply.</note>
 
-The answer is not who you _think_ the audience is. The answer who the user research concludes it is.
+As a designer, you're placed right in between what the product owner wants and what the user wants. They're both relying on you, so no pressure.
 
 ## Focus on structure
 
@@ -87,6 +87,14 @@ More than likely, your first idea will not be your final idea. If you’re anyth
 If you think about it that way, you’re doing your brain a disservice by going with your first idea because you’re not giving it time to generate new ideas when you’re out and about.
 
 The primary benefit of wireframing multiple ideas is that you’ll be able to test out multiple options and combine the best parts of them all into the final piece.
+
+## Get feedback
+
+Feedback is the designer’s best friend and you as the designer should be getting as much as it as possible. Building off of my last tip about wireframing multiple ideas, more than likely, the client will prefer a few ideas from different wireframes. After receiving feedback, you can then combine their preferences into the final design.
+
+Another benefit to getting feedback, preferably early in the design process, is that the client will be aware of the general design direction before it's too late in the design process.
+
+Feedback is an invaluable tool and it's critical to digest and apply it in the early stages of the design process. It's great for you and it's great for the client.
 
 ## Other tips
 
