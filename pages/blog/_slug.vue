@@ -16,7 +16,7 @@
         <div class="content">
           <div class="content__text">
             <div class="content__info">
-              <p>About a {{ wordCount }} minute to read.</p>
+              <p>About a {{ wordCount }} minute read.</p>
             </div>
             <nuxt-content :document="blog"></nuxt-content>
           </div>
