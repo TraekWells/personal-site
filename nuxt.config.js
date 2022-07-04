@@ -12,7 +12,7 @@ export default {
       lang: 'en',
     },
     title: 'Traek Wells',
-    titleTemplate: ' %s | Front-End UI/UX Developer',
+    titleTemplate: ' %s | Traek Wells',
     meta: [
       ...meta,
       { charset: 'utf-8' },
