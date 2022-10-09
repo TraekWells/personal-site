@@ -27,11 +27,11 @@ Lastly and always, I'm working on becoming a better person and appreciating the 
 
 ## Recently Completed
 
-* Learn a full song on the guitar (January 16th, 2022)
-* Complete a 24 hour fast (January 31st, 2022)
-* Learn five full songs on the guitar
-* Finish a half marathon
-* Finish a marathon
+* Learn a full song on the guitar (January, 2022)
+* Complete a 24 hour fast (January, 2022)
+* Learn five full songs on the guitar (May-ish, 2022)
+* Finish a half marathon (October, 2022)
+* Finish a marathon (October, 2022)
 
 ## Professional Goals
 
