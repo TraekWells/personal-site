@@ -47,10 +47,10 @@ Lastly and always, I'm working on becoming a better person and appreciating the 
 
 * ~~Move site to WordPress~~ (July 2nd, 2020)
 * ~~Build this site with Nuxt~~ (January 18th, 2021)
-* Learn Vue
-* Learn React
-* Learn PHP
-* Learn Laravel
+* Learn Vue basics
+* Learn React basics
+* Learn PHP basics
+* Learn Laravel basics
 
 ## Skill Goals
 
