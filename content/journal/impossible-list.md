@@ -134,7 +134,7 @@ Lastly and always, I'm working on becoming a better person and appreciating the 
 * Read 100 books
 
 ## Video Game Goals
-
+(This category might go away)
 * Make it Elder God rank in Mortal Kombat 11
 * Get first place in Call of Duty: Warzone Solos
 * Get first place in Call of Duty: Warzone Duos
