@@ -31,7 +31,7 @@ Lastly and always, I'm working on becoming a better person and appreciating the 
 * Complete a 24 hour fast (January 31st, 2022)
 * Intermittent fast for at least 13 hours per day, for a full month (January 2022)
 * Go a month without alcohol (January 2022)
-* Learn a full song on the guitar (January 16th, 2022)
+* Learn five full songs on the guitar
 
 ## Professional Goals
 
@@ -67,7 +67,7 @@ Lastly and always, I'm working on becoming a better person and appreciating the 
 * Type 70 wpm
 * Become a competent guitar player
 * ~~Learn a full song on the guitar~~
-* Learn five full songs on the guitar
+* ~~Learn five full songs on the guitar~~
 * Perform a song on the guitar at a campfire
 * Perform a song on the guitar at a bar/restaurant
 
