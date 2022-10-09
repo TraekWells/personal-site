@@ -29,9 +29,9 @@ Lastly and always, I'm working on becoming a better person and appreciating the 
 
 * Learn a full song on the guitar (January 16th, 2022)
 * Complete a 24 hour fast (January 31st, 2022)
-* Intermittent fast for at least 13 hours per day, for a full month (January 2022)
-* Go a month without alcohol (January 2022)
 * Learn five full songs on the guitar
+* Finish a half marathon
+* Finish a marathon
 
 ## Professional Goals
 
@@ -79,8 +79,8 @@ Lastly and always, I'm working on becoming a better person and appreciating the 
   * Finish under 20 minutes
 * ~~Finish a 10k~~ ([October 2nd, 2021](https://cdn.forestry.io/res2/mdQbqHDQPsAn38v6ExGm_5tZT7qyVpA8dn3DjHl_OyQ/fit/512/512/sm/0/aHR0cHM6Ly9hcHAu/Zm9yZXN0cnkuaW8v/cmFpbHMvYWN0aXZl/X3N0b3JhZ2UvYmxv/YnMvZXlKZmNtRnBi/SE1pT25zaWJXVnpj/MkZuWlNJNklrSkJh/SEJDVEdkeVVFSk5Q/U0lzSW1WNGNDSTZi/blZzYkN3aWNIVnlJ/am9pWW14dllsOXBa/Q0o5ZlE9PS0tNGVh/NWE0ZDY1MWM2NjRm/ODE2YTc0NjFlZjRj/MzFjOTA1MzM1MTEx/NC82MzFCRjg3OS1F/NzA0LTRCQUYtQkE5/Ni0zRTg5OTk4RDNC/MTEuanBlZw))
   * Finish under 45 minutes
-* Finish a half marathon
-* Finish a marathon
+* ~~Finish a half marathon~~
+* ~~Finish a marathon~~
 * Finish a duathlon
 * Finish a triathlon
 * Complete a GORUCK challenge
