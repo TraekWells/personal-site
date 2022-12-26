@@ -4,7 +4,9 @@ const meta = getMetaData();
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: false,
+  nitro: {
+    preset: "netlify",
+  },
   app: {
     head: {
       htmlAttrs: {
