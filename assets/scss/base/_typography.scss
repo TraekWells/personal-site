@@ -1,4 +1,4 @@
-@use '../abstracts/variables' as *;
+@use "../abstracts/variables" as *;
 
 html {
   font-family: var(--font-family-body);
@@ -99,7 +99,7 @@ li {
   position: relative;
 }
 
-.post pre[class*='language-'] {
+.post pre[class*="language-"] {
   font-size: 1.4rem;
   width: 100%;
   margin: 2rem 0 4rem;
@@ -127,7 +127,7 @@ blockquote {
 
   svg {
     transition: 0.2s ease transform;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
   }
 
   &:hover {

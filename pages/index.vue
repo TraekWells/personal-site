@@ -15,9 +15,9 @@
               Howdy, I'm Traek and welcome to my digital garden where you'll see
               what I've built and written over the years.
             </p>
-            <nuxt-link to="/projects" class="button button--primary"
+            <NuxtLink to="/projects" class="button button--primary"
               >See My Work
-            </nuxt-link>
+            </NuxtLink>
           </div>
         </div>
       </div>
@@ -55,7 +55,7 @@
         <div class="skills">
           <div class="skill">
             <div class="skill__icon">
-              <PenToolIcon />
+              <Icon name="uil:illustration" height="26" width="26" />
             </div>
             <div class="skill__details">
               <h3>User Experience</h3>
@@ -67,7 +67,7 @@
           </div>
           <div class="skill">
             <div class="skill__icon">
-              <CodeIcon />
+              <Icon name="uil:code-branch" height="26" width="26" />
             </div>
             <div class="skill__details">
               <h3>Front End Development</h3>
@@ -102,53 +102,34 @@
   </main>
 </template>
 
-<script>
-import ProjectCard from '@/components/ProjectCard'
-import BlogCard from '@/components/BlogCard'
-import getMetaData from '@/config/getMetaData.js'
-import { PenToolIcon, CodeIcon } from 'vue-feather-icons'
+<script setup>
+import getMetaData from "@/config/getMetaData";
 
-export default {
-  components: {
-    ProjectCard,
-    BlogCard,
-    PenToolIcon,
-    CodeIcon,
-  },
-  async asyncData({ $content }) {
-    const projects = await $content('projects')
-      .where({ featured: true })
-      .fetch()
-    const blogs = await $content('blog')
-      .sortBy('createdAt', 'desc')
-      .where({ draft: false })
-      .fetch()
-    return { projects, blogs }
-  },
-  computed: {
-    meta() {
-      const metaData = {
-        type: 'page',
-        url: `https://traekwells.com/`,
-        title: 'Traek Wells',
-        description:
-          'Traek is a front-end web developer skilled in HTML, CSS, JavaScript and user interface design. More importantly, he is a good person.',
-      }
+const { data: projects } = await useAsyncData("projects", () => {
+  return queryContent("/projects").where({ featured: true }).find();
+});
+const { data: blogs } = await useAsyncData("blogs", () => {
+  return queryContent("/blog").where({ draft: false }).find();
+});
 
-      return getMetaData(metaData)
+const getMeta = () => {
+  const metaData = {
+    type: "page",
+    url: `https://traekwells.com/`,
+    title: "Traek Wells",
+    description:
+      "Traek is a front-end web developer skilled in HTML, CSS, JavaScript and user interface design.",
+  };
+  return getMetaData(metaData);
+};
+useHead({
+  meta: getMeta,
+  link: [
+    {
+      hid: "canonical",
+      rel: "canonical",
+      href: `https://traekwells.com/`,
     },
-  },
-  head() {
-    return {
-      meta: [...this.meta],
-      link: [
-        {
-          hid: 'canonical',
-          rel: 'canonical',
-          href: `https://traekwells.com/`,
-        },
-      ],
-    }
-  },
-}
+  ],
+});
 </script>

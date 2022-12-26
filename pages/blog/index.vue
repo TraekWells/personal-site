@@ -7,7 +7,7 @@
           <p class="lead mb-4">
             Posts about topics ranging from User Experience, User Interface
             design, HTML, CSS, JavaScript and accessibility. See my
-            <nuxt-link to="/journal">journal</nuxt-link> for everything else.
+            <NuxtLink to="/journal">journal</NuxtLink> for everything else.
           </p>
         </div>
       </div>
@@ -22,42 +22,33 @@
   </main>
 </template>
 
-<script>
-import getMetaData from '@/config/getMetaData.js'
+<script setup>
+import getMetaData from "@/config/getMetaData.js";
 
-export default {
-  async asyncData({ $content }) {
-    const blogs = await $content('blog')
-      .sortBy('createdAt', 'desc')
-      .where({ draft: false })
-      .fetch()
-    return { blogs }
-  },
-  computed: {
-    meta() {
-      const metaData = {
-        type: 'page',
-        url: `https://traekwells.com/blog`,
-        title: 'Blog',
-        description:
-          "Sharing what I've learned in the hopes solidify the knowledge and helping others however I can.",
-      }
+const { data: blogs } = await useAsyncData("blogs", () => {
+  return queryContent("/blog").where({ draft: false }).find();
+});
 
-      return getMetaData(metaData)
+const getMeta = () => {
+  const metaData = {
+    type: "page",
+    url: `https://traekwells.com/blog`,
+    title: "Blog",
+    description:
+      "Sharing what I've learned in the hopes solidify the knowledge and helping others however I can.",
+  };
+
+  return getMetaData(metaData);
+};
+useHead({
+  title: "Blog",
+  meta: getMeta,
+  link: [
+    {
+      hid: "canonical",
+      rel: "canonical",
+      href: `https://traekwells.com/blog`,
     },
-  },
-  head() {
-    return {
-      title: 'Blog',
-      meta: [...this.meta],
-      link: [
-        {
-          hid: 'canonical',
-          rel: 'canonical',
-          href: `https://traekwells.com/blog`,
-        },
-      ],
-    }
-  },
-}
+  ],
+});
 </script>

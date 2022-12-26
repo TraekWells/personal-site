@@ -2,41 +2,39 @@
   <div class="book">
     <div class="book__art">
       <nuxt-picture
-        class="book__image"
         :src="book.image"
         :alt="book.title"
         loading="lazy"
+        class="book__image"
       />
       <div class="book__rating">
-        <StarIcon
-          v-for="(star, index) in book.rating"
-          :key="index"
+        <Icon
+          v-for="star in book.rating"
+          :key="book.title"
+          class="feather-star"
           aria-label="Star icon"
+          name="fe:star"
         />
       </div>
     </div>
     <div class="book__details">
       <h3 class="book__title">
-        <nuxt-link :to="book.path">{{ book.title }}</nuxt-link>
+        <NuxtLink :to="book._path">{{ book.title }}</NuxtLink>
       </h3>
       <p class="book__author">{{ book.author }}</p>
       <p class="book__thoughts">{{ book.thoughts }}</p>
-      <nuxt-link :to="book.path" class="read-more"
-        >Book Notes <ArrowRightIcon aria-label="Arrow icon"></ArrowRightIcon
-      ></nuxt-link>
+      <NuxtLink :to="book._path" class="read-more"
+        >Book Notes <Icon name="uil:arrow-right" height="26" width="26"
+      /></NuxtLink>
     </div>
   </div>
 </template>
 
-<script>
-import { ArrowRightIcon, StarIcon } from 'vue-feather-icons'
-export default {
-  components: { ArrowRightIcon, StarIcon },
-  props: {
-    book: {
-      type: Object,
-      required: true,
-    },
+<script setup>
+const props = defineProps({
+  book: {
+    type: Object,
+    required: true,
   },
-}
+});
 </script>

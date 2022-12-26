@@ -25,7 +25,7 @@
             />
           </div>
           <div class="content__text">
-            <nuxt-content :document="project"></nuxt-content>
+            <ContentDoc />
           </div>
           <div class="content__sidebar">
             <h4>Technology Used</h4>
@@ -80,7 +80,7 @@
             </ul>
             <h4>Table of Contents</h4>
             <ul>
-              <li v-for="header in headers" :key="header.id">
+              <li v-for="header in tableOfContents" :key="header.id">
                 <a :href="`#${header.link}`">{{ header.text }}</a>
               </li>
             </ul>
@@ -103,85 +103,79 @@
   </main>
 </template>
 
-<script>
-import getMetaData from '@/config/getMetaData.js'
+<script setup>
+import getMetaData from "@/config/getMetaData.js";
+import { ref, onMounted } from "vue";
+const tableOfContents = ref([]);
+const technology = ref([]);
+const { path } = useRoute();
 
-export default {
-  async asyncData({ $content, params }) {
-    const project = await $content(`projects/${params.slug}`).fetch()
-    const moreProjects = await $content(`projects`)
-      .where({ draft: false })
-      .where({ title: { $ne: project.title } })
-      .limit(2)
-      .fetch()
+const { data: project } = await useAsyncData(`content-${path}`, () => {
+  return queryContent("/projects").where({ _path: path }).findOne();
+});
 
-    return { project, moreProjects }
-  },
-  data() {
-    return {
-      headers: [],
-      technology: [],
-    }
-  },
-  computed: {
-    meta() {
-      const metaData = {
-        type: 'article',
-        url: `https://traek.dev/projects/${this.$route.params.slug}`,
-        title: this.project.title,
-        description: this.project.summary,
-        image: this.project.previewImage,
-      }
+const { data: moreProjects } = await useAsyncData(
+  `more-content-${path}`,
+  () => {
+    return queryContent("/projects")
+      .where({ _path: { $ne: path } })
+      .find();
+  }
+);
 
-      return getMetaData(metaData)
+const getHeaders = () => {
+  const headers = Array.from(document.querySelectorAll(".content h2"));
+  headers.forEach((header) => {
+    const headerObj = {};
+    headerObj.text = header.textContent;
+    headerObj.link = header.id;
+    tableOfContents.value.push(headerObj);
+  });
+};
+
+const getTechnology = () => {
+  const techList = project.value.technology
+    .split(",")
+    .map((item) => item.trim());
+  technology.value.push(...techList);
+};
+
+onMounted(() => {
+  getHeaders();
+  getTechnology();
+});
+
+const getMeta = () => {
+  const metaData = {
+    type: "article",
+    url: `https://traekwells.com${path}`,
+    title: project.value.title,
+    description: project.value.summary,
+    image: project.value.previewImage,
+  };
+  return getMetaData(
+    metaData,
+    {
+      property: "article:published_time",
+      content: project.value.createdAt,
     },
-  },
-  mounted() {
-    this.getHeaders()
-    this.getTechnology()
-  },
-  methods: {
-    getHeaders() {
-      const headers = Array.from(document.querySelectorAll('.content h2'))
-
-      headers.forEach((header) => {
-        const headerObj = {}
-        headerObj.text = header.textContent
-        headerObj.link = header.id
-        this.headers.push(headerObj)
-      })
+    {
+      property: "article:modified_time",
+      content: project.value.updatedAt,
     },
-    getTechnology() {
-      const technology = this.project.technology
-        .split(',')
-        .map((item) => item.trim())
-      this.technology = [...technology]
+    { name: "twitter:label1", content: "Written by" },
+    { name: "twitter:data1", content: "Traek Wells" }
+  );
+};
+useHead({
+  meta: getMeta,
+  title: project.value.title,
+  link: [
+    {
+      hid: "canonical",
+      rel: "canonical",
+      href: `https://traekwells.com${path}`,
     },
-  },
-  head() {
-    return {
-      title: this.project.title,
-      meta: [
-        ...this.meta,
-        {
-          property: 'article:published_time',
-          content: this.project.createdAt,
-        },
-        {
-          property: 'article:modified_time',
-          content: this.project.updatedAt,
-        },
-        { name: 'twitter:label1', content: 'Written by' },
-        { name: 'twitter:data1', content: 'Traek Wells' },
-      ],
-      link: [
-        {
-          hid: 'canonical',
-          rel: 'canonical',
-          href: `https://traekwells.com/projects/${this.$route.params.slug}`,
-        },
-      ],
-    }
-  },
-}
+  ],
+});
 </script>

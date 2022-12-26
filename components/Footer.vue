@@ -10,40 +10,40 @@
           target="_blank"
           rel="noreferrer noopener"
           alt="Link to Twitter"
-          ><TwitterIcon aria-label="Link to Twitter"></TwitterIcon
-        ></a>
+          ><Icon name="uil:twitter" height="26" width="26"
+        /></a>
         <a
           href="https://github.com/TraekWells"
           class="social-icon"
           target="_blank"
           rel="noreferrer noopener"
           alt="Link to GitHub"
-          ><GithubIcon aria-label="Link to Github"></GithubIcon
-        ></a>
+          ><Icon name="uil:github" height="26" width="26"
+        /></a>
         <a
           href="https://www.instagram.com/traekwells/"
           class="social-icon"
           target="_blank"
           rel="noreferrer noopener"
           alt="Link to Instagram"
-          ><InstagramIcon aria-label="Link to Instagram"></InstagramIcon
-        ></a>
+          ><Icon name="uil:instagram" height="26" width="26"
+        /></a>
         <a
           href="https://www.linkedin.com/in/traekwells/"
           class="social-icon"
           target="_blank"
           rel="noreferrer noopener"
           alt="Link to LinkedIn"
-          ><LinkedinIcon aria-label="Link to LinkedIn"></LinkedinIcon
-        ></a>
+          ><Icon name="uil:linkedin" height="26" width="26"
+        /></a>
         <a
           href="https://dribbble.com/TraekWells"
           class="social-icon"
           target="_blank"
           rel="noreferrer noopener"
           alt="Link to Dribbble"
-          ><DribbbleIcon aria-label="Link to Dribbble"></DribbbleIcon
-        ></a>
+          ><Icon name="uil:dribbble" height="26" width="26"
+        /></a>
       </div>
       <p>
         &copy; Traek Wells {{ date }}. Built with Nuxt.
@@ -59,31 +59,13 @@
   </footer>
 </template>
 
-<script>
-import {
-  TwitterIcon,
-  InstagramIcon,
-  GithubIcon,
-  LinkedinIcon,
-  DribbbleIcon,
-} from 'vue-feather-icons'
+<script setup>
+import { onMounted, ref } from "vue";
 
-export default {
-  components: {
-    TwitterIcon,
-    InstagramIcon,
-    GithubIcon,
-    LinkedinIcon,
-    DribbbleIcon,
-  },
-  data() {
-    return {
-      date: '',
-    }
-  },
-  mounted() {
-    const year = new Date().getFullYear()
-    this.date = year
-  },
-}
+const date = ref(0);
+
+onMounted(() => {
+  const year = new Date().getFullYear();
+  date.value = year;
+});
 </script>

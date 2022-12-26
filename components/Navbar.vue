@@ -1,7 +1,7 @@
 <template>
   <nav ref="navigation" class="navigation">
     <div class="container">
-      <nuxt-link to="/" style="border-bottom: none">
+      <NuxtLink to="/" style="border-bottom: none">
         <svg
           version="1.1"
           x="0px"
@@ -28,31 +28,31 @@
     C879.2,106.9,878.9,102.3,878.3,97.7z"
           />
         </svg>
-      </nuxt-link>
+      </NuxtLink>
       <ul class="navigation__list">
         <li class="navigation__item">
-          <nuxt-link to="/projects"
-            ><span class="navigation__link">Projects</span></nuxt-link
+          <NuxtLink to="/projects"
+            ><span class="navigation__link">Projects</span></NuxtLink
           >
         </li>
         <li class="navigation__item">
-          <nuxt-link to="/blog"
-            ><span class="navigation__link">Writing</span></nuxt-link
+          <NuxtLink to="/blog"
+            ><span class="navigation__link">Writing</span></NuxtLink
           >
         </li>
         <li class="navigation__item">
-          <nuxt-link to="/bookshelf"
-            ><span class="navigation__link">Bookshelf</span></nuxt-link
+          <NuxtLink to="/bookshelf"
+            ><span class="navigation__link">Bookshelf</span></NuxtLink
           >
         </li>
         <li class="navigation__item">
-          <nuxt-link to="/journal/impossible-list"
-            ><span class="navigation__link">Impossible List</span></nuxt-link
+          <NuxtLink to="/journal/impossible-list"
+            ><span class="navigation__link">Impossible List</span></NuxtLink
           >
         </li>
         <li class="navigation__item">
-          <nuxt-link to="/about-me"
-            ><span class="navigation__link">Who I Am</span></nuxt-link
+          <NuxtLink to="/about-me"
+            ><span class="navigation__link">Who I Am</span></NuxtLink
           >
         </li>
       </ul>
@@ -80,40 +80,40 @@ export default {
   data() {
     return {
       mobile: null,
-    }
+    };
   },
   watch: {
     $route() {
-      this.closeMobileNav()
+      this.closeMobileNav();
     },
   },
   mounted() {
-    window.innerWidth <= 600 ? (this.mobile = true) : (this.mobile = false)
-    window.addEventListener('resize', this.isMobile)
+    window.innerWidth <= 600 ? (this.mobile = true) : (this.mobile = false);
+    window.addEventListener("resize", this.isMobile);
   },
   destroyed() {
-    window.removeEventListener('resize', this.isMobile)
+    window.removeEventListener("resize", this.isMobile);
   },
   methods: {
     isMobile() {
       if (window.innerWidth <= 600) {
-        this.mobile = true
+        this.mobile = true;
       } else {
-        this.mobile = false
+        this.mobile = false;
       }
     },
     openMobileNav() {
-      this.$refs.navigation__buttonOpen.style.display = 'none'
-      this.$refs.navigation__buttonClose.style.display = 'block'
-      this.$refs.navigation.classList.add('active')
+      this.$refs.navigation__buttonOpen.style.display = "none";
+      this.$refs.navigation__buttonClose.style.display = "block";
+      this.$refs.navigation.classList.add("active");
     },
     closeMobileNav() {
       if (this.mobile) {
-        this.$refs.navigation__buttonOpen.style.display = 'block'
+        this.$refs.navigation__buttonOpen.style.display = "block";
       }
-      this.$refs.navigation__buttonClose.style.display = 'none'
-      this.$refs.navigation.classList.remove('active')
+      this.$refs.navigation__buttonClose.style.display = "none";
+      this.$refs.navigation.classList.remove("active");
     },
   },
-}
+};
 </script>

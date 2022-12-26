@@ -2,28 +2,22 @@
   <article class="blog">
     <div class="blog__content">
       <h3>
-        <nuxt-link :to="post.path">{{ post.title }}</nuxt-link>
+        <NuxtLink :to="post._path">{{ post.title }}</NuxtLink>
       </h3>
       <p>{{ post.summary }}</p>
-      <nuxt-link :to="post.path" class="read-more"
-        >Read This Post <ArrowRightIcon aria-label="Arrow icon"></ArrowRightIcon
-      ></nuxt-link>
+      <NuxtLink :to="post._path" class="read-more"
+        >Read This Post <Icon name="uil:arrow-right" height="26" width="26"
+      /></NuxtLink>
     </div>
   </article>
 </template>
 
-<script>
-import { ArrowRightIcon } from 'vue-feather-icons'
-
-export default {
-  components: {
-    ArrowRightIcon,
+<script setup>
+// import { ArrowRightIcon } from 'vue-feather-icons'
+const props = defineProps({
+  post: {
+    type: Object,
+    required: true,
   },
-  props: {
-    post: {
-      type: Object,
-      required: true,
-    },
-  },
-}
+});
 </script>
