@@ -9,29 +9,21 @@
     </div>
     <div class="project__content">
       <h3>
-        <nuxt-link :to="project.path">{{ project.title }}</nuxt-link>
+        <NuxtLink :to="project._path">{{ project.title }}</NuxtLink>
       </h3>
       <p>{{ project.summary }}</p>
-      <a :href="project.path" class="read-more"
-        >Project Details
-        <ArrowRightIcon aria-label="Arrow icon"></ArrowRightIcon
-      ></a>
+      <NuxtLink :to="project._path" class="read-more"
+        >Project Details <Icon name="uil:arrow-right" height="26" width="26" />
+      </NuxtLink>
     </div>
   </article>
 </template>
 
-<script>
-import { ArrowRightIcon } from 'vue-feather-icons'
-
-export default {
-  components: {
-    ArrowRightIcon,
+<script setup>
+const props = defineProps({
+  project: {
+    type: Object,
+    required: true,
   },
-  props: {
-    project: {
-      type: Object,
-      required: true,
-    },
-  },
-}
+});
 </script>

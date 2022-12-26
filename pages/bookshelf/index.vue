@@ -14,49 +14,39 @@
     <section class="section">
       <div class="container container--narrow">
         <div class="books">
-          <Book v-for="book in books" :key="book.path" :book="book" />
+          <Book v-for="book in books" :key="book._path" :book="book" />
         </div>
       </div>
     </section>
   </main>
 </template>
 
-<script>
-import getMetaData from '@/config/getMetaData.js'
+<script setup>
+import getMetaData from "@/config/getMetaData.js";
 
-export default {
-  async asyncData({ $content }) {
-    const books = await $content('bookshelf')
-      .where({ draft: false })
-      .sortBy('createdAt', 'desc')
-      .fetch()
-    return { books }
-  },
-  computed: {
-    meta() {
-      const metaData = {
-        type: 'page',
-        url: `https://traekwells.com/bookshelf`,
-        title: 'Bookshelf',
-        description:
-          'Heres a collection of the books Ive either read or listened to and my thoughts about them.',
-      }
+const { data: books } = await useAsyncData("books", () => {
+  return queryContent("/bookshelf").find();
+});
+const getMeta = () => {
+  const metaData = {
+    type: "page",
+    url: `https://traekwells.com/bookshelf`,
+    title: "Bookshelf",
+    description:
+      "Heres a collection of the books I've either read or listened to and my thoughts about them.",
+  };
 
-      return getMetaData(metaData)
+  return getMetaData(metaData);
+};
+useHead({
+  meta: getMeta,
+  title: "Bookshelf",
+  link: [
+    {
+      hid: "canonical",
+      rel: "canonical",
+      href: `https://traekwells.com/bookshelf`,
     },
-  },
-  head() {
-    return {
-      title: 'Bookshelf',
-      meta: [...this.meta],
-      link: [
-        {
-          hid: 'canonical',
-          rel: 'canonical',
-          href: `https://traekwells.com/bookshelf`,
-        },
-      ],
-    }
-  },
-}
+  ],
+});
 </script>

@@ -4,6 +4,7 @@ Write this later.
 
 ## Todos
 
+- [ ] Remove fiction books from Bookshelf
 - [ ] Add a short about me or share to the bottom of every article
 - [ ] Improve the footer with an image and short bio
 - [x] De-emphasize the social icons
@@ -14,3 +15,4 @@ Write this later.
 - [ ] Implement dark mode. Is this even an option anymore?
 - [x] Add 'More Projects' under a single project post
 - [x] Add 'More Blogs' under a single blog post
+- [ ] Create Table of Contents component

@@ -1,6 +1,7 @@
 ---
 title: Emeche Wells
-summary: Emeche Wells is an athlete, photographer and blogger and needed a website
+summary:
+  Emeche Wells is an athlete, photographer and blogger and needed a website
   to start building an online presence. Built with WordPress and customized to match
   his branding.
 previewImage: "/img/emeche-wells-devices.jpg"
@@ -9,8 +10,8 @@ linkToProject: https://www.emechewells.com
 technology: WordPress, Javascript, CSS
 featured: true
 draft: false
-
 ---
+
 ## The Client
 
 Emeche Wells is an athlete, professional photographer and blogger who cares about sharing his experiences with anyone who plans on playing sports throughout college. Although he was new to marketing himself online, he had a pretty large following on other social media platforms. The website that he wanted would need to have the ability to be easily updated at will.

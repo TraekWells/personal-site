@@ -1,4 +1,4 @@
-@use '../abstracts/mixins' as *;
+@use "../abstracts/mixins" as *;
 
 .projects {
   display: grid;
@@ -26,11 +26,6 @@
     display: flex;
     align-items: center;
     border-bottom: none;
-
-    svg {
-      transition: 0.2s ease transform;
-      margin-left: 1rem;
-    }
 
     &:hover {
       border-bottom: none;
