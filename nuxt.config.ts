@@ -6,6 +6,7 @@ const meta = getMetaData();
 export default defineNuxtConfig({
   nitro: {
     preset: "netlify",
+    prerender: { routes: ["/sitemap.xml"] },
   },
   app: {
     head: {
@@ -48,5 +49,4 @@ export default defineNuxtConfig({
   },
   css: ["@/assets/scss/main.scss"],
   modules: ["@nuxt/content", "@nuxt/image-edge", "nuxt-icon"],
-  nitro: { prerender: { routes: ["/sitemap.xml"] } },
 });
