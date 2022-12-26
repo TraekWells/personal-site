@@ -1,7 +1,7 @@
 <template>
   <div class="book">
     <div class="book__art">
-      <nuxt-picture
+      <img
         :src="book.image"
         :alt="book.title"
         loading="lazy"

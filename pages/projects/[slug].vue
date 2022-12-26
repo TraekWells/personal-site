@@ -9,7 +9,7 @@
       </div>
     </header>
     <article class="section">
-      <nuxt-picture
+      <img
         v-if="project.featuredImage"
         class="featured-image"
         :src="project.featuredImage"
@@ -18,7 +18,7 @@
       <div class="container container--narrow">
         <div class="content">
           <div class="content__image">
-            <nuxt-picture
+            <img
               v-if="!project.featuredImage"
               :src="project.previewImage"
               :alt="project.title"
