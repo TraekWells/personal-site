@@ -1,0 +1,1 @@
+import{a as t,o as n,b as c,e as s,f as a,r,h as _}from"./entry.3d41bf26.js";const l={},d={class:"note"};function i(e,f){const o=_;return n(),c("div",d,[s(o,{name:"uil:info-circle",height:"26",width:"26"}),a("p",null,[r(e.$slots,"default")])])}const p=t(l,[["render",i]]);export{p as default};
