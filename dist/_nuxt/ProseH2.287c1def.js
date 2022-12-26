@@ -1,1 +1,0 @@
-import{i as o,j as s,o as d,b as i,r as a}from"./entry.3d41bf26.js";const l=["id"],p=o({__name:"ProseH2",props:{id:null},setup(t){const{anchorLinks:e}=s().public.content;return(e==null?void 0:e.depth)>=2&&(e!=null&&e.exclude.includes(2)),(n,u)=>(d(),i("h2",{id:t.id},[a(n.$slots,"default")],8,l))}});export{p as default};
