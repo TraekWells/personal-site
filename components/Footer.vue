@@ -46,7 +46,8 @@
         /></a>
       </div>
       <p>
-        &copy; Traek Wells {{ date }}. Built with Nuxt.
+        &copy; Traek Wells {{ date }}. Built with
+        <a href="https://nuxt.com/" target="_blank" rel="noreferrer">Nuxt</a>.
         <a
           href="https://github.com/TraekWells/personal-dev-site"
           target="_blank"
