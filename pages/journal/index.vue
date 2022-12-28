@@ -30,7 +30,10 @@
 <script setup>
 import getMetaData from "@/config/getMetaData.js";
 const { data: journals } = await useAsyncData("journals", () => {
-  return queryContent("/journal").where({ draft: false }).find();
+  return queryContent("/journal")
+    .where({ draft: false })
+    .sort({ createdAt: -1 })
+    .find();
 });
 const getMeta = () => {
   const metaData = {
