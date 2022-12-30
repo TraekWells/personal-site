@@ -1,13 +1,14 @@
 ---
 draft: false
 tags:
-- User Experience
+  - User Experience
 title: Jakob’s Law and How To Use It
-summary: Jakob’s law is the most well-known of the Laws of UX and in this post, you’ll
+summary:
+  Jakob’s law is the most well-known of the Laws of UX and in this post, you’ll
   learn what it says and how to use it to design usable websites.
 createdAt: 2022-01-04T00:00:00.000-06:00
-
 ---
+
 ## What is Jakob’s law?
 
 Taken from [Jakob’s Law of Internet User Experience](https://www.nngroup.com/videos/jakobs-law-internet-ux/):
@@ -18,7 +19,9 @@ Users spend most of their time on other sites. This means that users prefer your
 
 The internet is vast. There are currently [1.86 billion websites](https://firstsiteguide.com/how-many-websites/) and that number is rapidly growing. As people use the internet frequently and browse websites, they start to develop a [mental model](https://www.nngroup.com/articles/mental-models/) of how websites are _supposed_ to look and behave.
 
-<note>A mental model is what we think we know about a system, specifically how it works.</note>
+::note
+A mental model is what we think we know about a system, specifically how it works.
+::
 
 More importantly, users will come to **expect** the websites they use to be similar to the other websites they’ve used.
 
@@ -42,10 +45,10 @@ Here are some of the main takeaways from Jakob’s law.
 
 Let’s take navigation as an example. The navigation of a website is almost always the first thing the users see, and for good reason. It’s critical to display what content is available on that website right away. Most navigation follows this design pattern:
 
-* Logo in the upper left (sometimes centered in its own row)
-  * Clicking on the logo will bring the user back to the homepage
-* Search, account information, settings, etc. in the upper right
-* Navigation items somewhere in the middle
+- Logo in the upper left (sometimes centered in its own row)
+  - Clicking on the logo will bring the user back to the homepage
+- Search, account information, settings, etc. in the upper right
+- Navigation items somewhere in the middle
 
 Here are a some examples:
 
@@ -71,9 +74,9 @@ There are occasions where going against common practices can improve the user ex
 
 Swallowtail Tea sells tea, wares for brewing tea, and they offer wholesale. There are a few things to notice about their navigation:
 
-* The logo is on the left and links to the homepage
-* As you hover each item, you get a snippet of text as a preview to the page
-* Although it’s a distinct, non-standard layout, it functions as navigation should
+- The logo is on the left and links to the homepage
+- As you hover each item, you get a snippet of text as a preview to the page
+- Although it’s a distinct, non-standard layout, it functions as navigation should
 
 <video controls>
 <source src="/videos/swallowtail-navigation.mp4" type="video/mp4">
