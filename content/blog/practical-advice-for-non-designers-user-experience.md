@@ -82,7 +82,7 @@ Who’s to say that the final product won’t be a grayscale design anyways? You
 
 ### Default to simple, slowly add crazy
 
-If there’s any piece of advice that has never failed me, it’s to always default to simple. Trust in [Jakob’s Law](https://traekwells.com/blog/jakobs-law-and-how-to-use-it "Jakob's Law and how to use it") and leverage what internet users are already accustomed to using. Starting with a simple design gives you a few advantages:
+If there’s any piece of advice that has never failed me, it’s to always default to simple. Trust in [Jakob’s Law](/blog/jakobs-law-and-how-to-use-it) and leverage what internet users are already accustomed to using. Starting with a simple design gives you a few advantages:
 
 1. It’s easier to enhance a simple design than it is to simplify a complex design
 2. Simple designs give you a nice ‘square one’ to iterate from
