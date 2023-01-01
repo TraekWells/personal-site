@@ -1,14 +1,17 @@
 ---
 draft: false
-previewImage: ''
+previewImage: ""
 title: Moving From WordPress to Forestry
-summary: How moving from WordPress to Forestry drastically improved my productivity,
+summary:
+  How moving from WordPress to Forestry drastically improved my productivity,
   developer experience and allowed me to work with more modern technology.
 createdAt: 2021-08-08T23:00:00.000-06:00
 tags: []
-
 ---
-<note>This is not an anti-WordPress post. In fact, I think WordPress is a fantastic tool and depending on the needs of the project, could be the perfect solution. This post is simply to promote how amazing Forestry is.</note>
+
+::note
+This is not an anti-WordPress post. In fact, I think WordPress is a fantastic tool and depending on the needs of the project, could be the perfect solution. This post is simply to promote how amazing Forestry is.
+::
 
 I've been using WordPress for quite a while for any website or project that had any kind of blog-like content. It was my go-to Content Management System (CMS) because it gives you everything you could possibly need to begin creating and managing content out of the box. That's probably why [it's so popular](https://kinsta.com/blog/wordpress-statistics/ "WordPress popularity").
 
@@ -30,9 +33,9 @@ This wasn't directly WordPress's fault but it _was_ clear that all of the bells 
 
 Another reason I decided to scout for other options was that I didn't love the developer experience with WordPress and wanted something more modern. Here were a few of my pain points:
 
-* I ran into a bunch of trouble trying to get Prettier to work nice with PHP and eventually just said "F it, it's going to be ugly."
-* I couldn't find a good way to use reusable components like you can with JavaScript frameworks (template parts were _ok_ but they aren't as flexible).
-* It was more of a pain than I'd like to admin to set up automatic reloading when you save a `.php` or a `.scss` file during development.
+- I ran into a bunch of trouble trying to get Prettier to work nice with PHP and eventually just said "F it, it's going to be ugly."
+- I couldn't find a good way to use reusable components like you can with JavaScript frameworks (template parts were _ok_ but they aren't as flexible).
+- It was more of a pain than I'd like to admin to set up automatic reloading when you save a `.php` or a `.scss` file during development.
 
 I absolutely love [Vue](https://vuejs.org/ "VueJS") and basically use [NuxtJS](https://nuxtjs.org/ "NuxtJS"), which is a static site generator built with Vue, wherever I can. All I had to do was find a CMS that would allow me to use this technology as the base for my project.
 
@@ -66,9 +69,9 @@ Seeing that Forestry is for markdown-based sites, the editing experience is slim
 
 I've used a fair amount CMSs in the past and so far Forestry has the best editing experience I've come across. Everything is super simple and it gives you everything you need including:
 
-* Keyboard shortcuts for many popular formatting and markdown options
-* The ability to see and edit values from your post's [front matter](https://forestry.io/docs/settings/front-matter-templates/#what-are-front-matter-templates "What is front matter?")
-* An option to preview your post before it's published (although this does take a little bit of configuring depending on the static site generator you're using)
+- Keyboard shortcuts for many popular formatting and markdown options
+- The ability to see and edit values from your post's [front matter](https://forestry.io/docs/settings/front-matter-templates/#what-are-front-matter-templates "What is front matter?")
+- An option to preview your post before it's published (although this does take a little bit of configuring depending on the static site generator you're using)
 
 ![Forestry editing experience](/img/forestry-editing-experience.png "Forestry editing experience")
 
@@ -106,9 +109,9 @@ Luckily, NuxtJS offers a module to help optimize images for you automatically.
 
 This is my process for handling images now that I'm not using WordPress anymore:
 
-* I source, resize, and run my image through [ImageOptim](https://imageoptim.com/mac "Image Optim")
-* Upload the image to Forestry
-* Use [Nuxt Images](https://image.nuxtjs.org/ "Nuxt Images") to further optimize them and deliver them to the user.
+- I source, resize, and run my image through [ImageOptim](https://imageoptim.com/mac "Image Optim")
+- Upload the image to Forestry
+- Use [Nuxt Images](https://image.nuxtjs.org/ "Nuxt Images") to further optimize them and deliver them to the user.
 
 Isn't NuxtJS great?
 
@@ -148,6 +151,6 @@ I didn't talk about it much in this post but I use [Netlify](https://www.netlify
 
 ### Takeaways
 
-* Forestry is a fantastic Git-based headless CMS and has drastically streamlined my process from development to content publishing.
-* The Forestry editing experience allows you to focus on what matters, writing content.
-* WordPress isn't a bad CMS by any means, but it's overkill for what I needed.
+- Forestry is a fantastic Git-based headless CMS and has drastically streamlined my process from development to content publishing.
+- The Forestry editing experience allows you to focus on what matters, writing content.
+- WordPress isn't a bad CMS by any means, but it's overkill for what I needed.
