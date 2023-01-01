@@ -5,25 +5,31 @@ tags:
   - Life
   - Personal
 title: 2022 In Review
-summary: Building off of last year, 2022 was incredible in all aspects of my life.
+summary: Another trip around the fireball in our sky and another year of a life that I'm grateful to have.
 createdAt: 2022-12-31T00:00:00.000-06:00
 ---
+
+Most people say that the previous year flew by. For me, 2022 _felt_ like it took forever to end. That's not necessarily a bad thing because I'm in no rush for my short time on Earth to pass by. But I do find it interesting how people can interpret how fast or slow time can pass by even though it's going at a steady pace.
+
+Anyways..
+
+Let's talk about 2022.
 
 ## 🐜 Personal Life
 
 ### Family
 
-Family is doing great. I'm extremely grateful that everyone is healthy, happy and we all seem to like each other. Whenever someone asks me how I feel about being a father, I always tell them that the first year is the hardest and it's _smooth_ sailing after that. Well, I've slighly adjusted my stance on that. My daughter is in the first grade and she's already a smart-a\*\*. She likely gets it from me so I can't be mad and it's slightly hilarious but also slightly difficult.
+Family is doing great. I'm extremely grateful that everyone is healthy, happy and we all seem to like each other. Whenever someone asks me how I feel about being a father, I always tell them that the first year is the hardest and it's _smooth_ sailing after that. Well, I've slightly adjusted my stance on that. My daughter is in the first grade and she's already a smarta\*\*. She likely gets it from me so I can't be mad and it's hilarious but also difficult.
 
 ## 🌮 Health & Fitness
 
-### Fitness
-
-One of my major goals last year was to run my first marathon. I'm happy to say that I accomplished that goal and I plan on doing another one at some point (although not next year). The best thing about completing the marathon wasn't the actual race but it was the training. I lost a good amount of weight and my body doesn't seem to have any issues with maintaining that weight.
-
 ### Health
 
-I started doing jui-jitsu in 2022 and while I absolutely love it, damn it's hard on the body. Between the ligament strain and micro-fractures, this is for sure the most injury-ridden I've ever been. Jui-Jitsu is something I see myself in for the long haul. I'm a very competitive person and this sport is great for that. Nothing like one on one combat for fun right?
+I started doing jui-jitsu in 2022 and while I absolutely love it, damn it's hard on the body. Between the ligament strain, micro-fractures and the ever-tender ears, this is the most injury-ridden I've ever been. Jui-Jitsu is something I see myself in for the long haul. I'm a very competitive person and this sport is great for that. Nothing like one on one combat for fun right?
+
+### Fitness
+
+One of my major goals last year was to run my first marathon. I'm happy to say that I accomplished that goal and I plan on doing another one at some point (although not next year). The best thing about completing the marathon wasn't the actual race but it was the training. I lost a good amount of weight, learned that I could push myself further than I thought possible and listened to **a lot** of great podcasts.
 
 ## 👨🏾‍💻 Career
 
@@ -47,7 +53,7 @@ Music is perfect the way it is.
 
 ### Front-end
 
-Some projects I've been apart of this past year have pushed me to improve my front-end coding skills. I'm basically still going **all in** on JavaScript and I plan to continue that for the long-haul.
+Some projects I've been apart of this past year have pushed me to improve my front-end coding skills. I'm basically still going **all in** on JavaScript and I plan to continue that for the foreseeable future.
 
 On another note, I feel like I've been completely out of the loop on industry news. I'm a frequent visitor of [CSS Tricks](https://css-tricks.com/){:target="\_blank"} I alluded to this earlier in this post but it feels impossible to stay up-to-date in both the design world and the development world.
 
@@ -69,9 +75,15 @@ I read every night and it's always something I look forward to. I [read 30-ish b
 - [The Stormlight Archive](https://www.goodreads.com/series/49075-the-stormlight-archive){:target="\_blank"} by Brandon Sanderson
 - [The Mistborn Trilogy](https://www.goodreads.com/series/40910-the-mistborn-saga){:target="\_blank"} by Brandon Sanderson
 
+### How I feel
+
+I feel grateful.
+
+I'm a hard worker and I have a high standard for myself. That said, it would be foolish of me to think some luck didn't play in my favor. I'm lucky to be alive in this time of general opulence. I'm **very** far from being rich but I'm eternally grateful for what I have.
+
 ## 🎭 2022 Goal Review
 
-Let's see if I actually accomplished any of the goals that I said I wanted to do in last year's review.
+Enough with the sappy stuff, let's see if I actually accomplished any of the goals that I said I wanted to do in last year's review.
 
 - ✅ **Be more present**. I'm giving myself a green check on this one. Overall, I worried a lot less last year and felt that I appreciated the moments much more. I feel lucky to be alive and even luckier to have the people in my life that I do.
 - ✅ **Grow as a UX professional**. This is super vague but I belive I accomplished this one. I grew as a front-end developer, I dabbled in front-end unit testing and learned **a lot** more about user interviews and the CI/CD process.
@@ -107,3 +119,19 @@ I've freelanced off and on for years now. Never in an official capacity but I've
 I'm also going to attempt to learn Spanish next year. With so many people on this planet that speak so many different languages, I almost feel ashamed that I can only speak English (and barely even that).
 
 ## 🎬 Conclusion
+
+Over the past 365 days, I've build on a lot of my core skills, did a good amount of reading and found out that my physical limits can be pushed pretty far.
+
+I'm hoping 2023 will be as great, if not better than 2022. I have a feeling that it will be. I'm a firm believer in putting things out into the universe. In my experience, the universe has a way of giving you what you want.
+
+Cheers to everyone. Take a look at this amazing video I found.
+
+<div>
+  <div style="position:relative;padding-top:56.25%;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0Ict7HVYlFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" allowfullscreen></iframe>
+</div>
+</div>
+
+Can you imagine being in the crowd during this performance? Just _incredible_.
+
+Until next time.
