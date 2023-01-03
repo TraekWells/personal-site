@@ -18,7 +18,7 @@
             <!-- <div class="content__info">
               <p>About a {{ wordCount }} minute read.</p>
             </div> -->
-            <ContentDoc />
+            <ContentRenderer :value="blog" />
           </div>
           <div class="content__sidebar">
             <p>Table of Contents</p>

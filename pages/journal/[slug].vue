@@ -18,7 +18,7 @@
             <div class="content__info">
               <p>Written on {{ formatDate(journal.createdAt) }}.</p>
             </div>
-            <ContentDoc />
+            <ContentRenderer :value="journal" />
           </div>
           <div class="content__sidebar">
             <TableOfContents v-if="headers" :headers="headers" />
