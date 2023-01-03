@@ -34,7 +34,7 @@ import { ref, onMounted } from "vue";
 import getMetaData from "@/config/getMetaData.js";
 const { path } = useRoute();
 const headers = ref([]);
-const wordCount = ref(0);
+// const wordCount = ref(0);
 
 const { data: journal } = await useAsyncData(`content-${path}`, () => {
   return queryContent("/journal").where({ _path: path }).findOne();
@@ -54,15 +54,19 @@ const formatDate = (date) => {
 // };
 
 const createTableOfContents = async () => {
-  const contentHeaders = await Array.from(
-    document.querySelectorAll(".content h2")
-  );
-  contentHeaders.forEach((header) => {
-    const headerObj = {};
-    headerObj.text = header.textContent;
-    headerObj.link = header.id;
-    headers.value.push(headerObj);
-  });
+  try {
+    const contentHeaders = await Array.from(
+      document.querySelectorAll(".content h2")
+    );
+    contentHeaders.forEach((header) => {
+      const headerObj = {};
+      headerObj.text = header.textContent;
+      headerObj.link = header.id;
+      headers.value.push(headerObj);
+    });
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 onMounted(() => {
