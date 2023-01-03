@@ -21,12 +21,7 @@
             <ContentDoc />
           </div>
           <div class="content__sidebar">
-            <p>Table of Contents</p>
-            <ul v-if="tableOfContents">
-              <li v-for="header in tableOfContents" :key="header.id">
-                <a :href="`#${header.link}`">{{ header.text }}</a>
-              </li>
-            </ul>
+            <TableOfContents :headers="headers" />
           </div>
         </div>
       </div>
@@ -38,7 +33,7 @@
 import { ref, onMounted } from "vue";
 import getMetaData from "@/config/getMetaData.js";
 const { path } = useRoute();
-const tableOfContents = ref([]);
+const headers = ref([]);
 const wordCount = ref(0);
 
 const { data: journal } = await useAsyncData(`content-${path}`, () => {
@@ -59,13 +54,14 @@ const formatDate = (date) => {
 // };
 
 const createTableOfContents = async () => {
-  const headers = await Array.from(document.querySelectorAll(".content h2"));
-  console.log(headers);
-  headers.forEach((header) => {
+  const contentHeaders = await Array.from(
+    document.querySelectorAll(".content h2")
+  );
+  contentHeaders.forEach((header) => {
     const headerObj = {};
     headerObj.text = header.textContent;
     headerObj.link = header.id;
-    tableOfContents.value.push(headerObj);
+    headers.value.push(headerObj);
   });
 };
 
