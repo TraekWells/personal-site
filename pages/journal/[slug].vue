@@ -21,7 +21,7 @@
             <ContentDoc />
           </div>
           <div class="content__sidebar">
-            <TableOfContents :headers="headers" />
+            <TableOfContents v-if="headers" :headers="headers" />
           </div>
         </div>
       </div>
