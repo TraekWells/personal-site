@@ -16,10 +16,7 @@
         <div class="content">
           <div class="content__text">
             <div class="content__info">
-              <p>
-                Written on {{ formatDate(journal.createdAt) }} and takes about
-                {{ wordCount }} minutes to read.
-              </p>
+              <p>Written on {{ formatDate(journal.createdAt) }}.</p>
             </div>
             <ContentDoc />
           </div>
@@ -53,13 +50,13 @@ const formatDate = (date) => {
   return new Date(date).toLocaleDateString("en", options);
 };
 
-const getWordCount = () => {
-  const wpm = 250;
-  const body = document.querySelector(".content__text");
-  const words = body.textContent.trim().split(/\s+/).length;
+// const getWordCount = () => {
+//   const wpm = 250;
+//   const body = document.querySelector(".content__text");
+//   const words = body.textContent.trim().split(/\s+/).length;
 
-  wordCount.value = Math.ceil(words / wpm);
-};
+//   wordCount.value = Math.ceil(words / wpm);
+// };
 
 const createTableOfContents = async () => {
   const headers = await Array.from(document.querySelectorAll(".content h2"));
@@ -74,7 +71,7 @@ const createTableOfContents = async () => {
 
 onMounted(() => {
   createTableOfContents();
-  getWordCount();
+  // getWordCount();
 });
 
 const getMeta = () => {

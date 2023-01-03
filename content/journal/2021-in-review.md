@@ -2,17 +2,20 @@
 draft: false
 previewImage: "/img/default-card-image.png"
 tags:
-- Life
-- Personal
+  - Life
+  - Personal
 title: 2021 In Review
-summary: 2021 was great for me mentally, financially, and spiritually. Not so much
+summary:
+  2021 was great for me mentally, financially, and spiritually. Not so much
   physically.
 createdAt: 2021-12-28T00:00:00.000-06:00
-
 ---
+
 Here we are at the end of 2021 and I’m feeling damned good about what’s going on in my life. I feel like I’m more focused than ever and I’m super energized to get better as a father, friend, and professional (in that order).
 
-<note>I didn’t take very many Ls in 2021 so I’m sure 2022 will have something to say about that because you know, balance.</note>
+::note
+I didn’t take very many Ls in 2021 so I’m sure 2022 will have something to say about that because you know, balance.
+::
 
 ## 👨🏾‍💻 Career
 

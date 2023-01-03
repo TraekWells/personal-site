@@ -15,9 +15,9 @@
       <div class="container container--narrow">
         <div class="content">
           <div class="content__text">
-            <div class="content__info">
+            <!-- <div class="content__info">
               <p>About a {{ wordCount }} minute read.</p>
-            </div>
+            </div> -->
             <ContentDoc />
           </div>
           <div class="content__sidebar">
@@ -47,7 +47,7 @@ import { onMounted, ref } from "vue";
 import getMetaData from "@/config/getMetaData.js";
 const { path } = useRoute();
 const tableOfContents = ref([]);
-const wordCount = ref(0);
+// const wordCount = ref(0);
 
 const { data: blog } = await useAsyncData(`content-${path}`, () => {
   return queryContent("/blog").where({ _path: path }).findOne();
@@ -59,13 +59,13 @@ const { data: moreBlogs } = await useAsyncData(`more-content-${path}`, () => {
     .find();
 });
 
-const getWordCount = () => {
-  const wpm = 250;
-  const body = document.querySelector(".content__info + div");
-  const words = body.textContent.trim().split(/\s+/).length;
+// const getWordCount = () => {
+//   const wpm = 250;
+//   const body = document.querySelector(".content__info + div");
+//   const words = body.textContent.trim().split(/\s+/).length;
 
-  wordCount.value = Math.ceil(words / wpm);
-};
+//   wordCount.value = Math.ceil(words / wpm);
+// };
 onMounted(() => {
   const headers = Array.from(document.querySelectorAll(".content h2"));
   headers.forEach((header) => {
@@ -74,7 +74,7 @@ onMounted(() => {
     headerObj.link = header.id;
     tableOfContents.value.push(headerObj);
   });
-  getWordCount();
+  // getWordCount();
 });
 
 const getMeta = () => {
