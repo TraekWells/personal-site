@@ -9,8 +9,8 @@ export default defineNuxtConfig({
     prerender: { routes: ["/sitemap.xml"] },
   },
   routeRules: {
-    "/journal/**": { static: true },
-    "/blog/**": { static: true },
+    "/journal/**": { swr: true },
+    "/blog/**": { swr: true },
   },
   app: {
     head: {

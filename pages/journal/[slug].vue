@@ -1,34 +1,3 @@
-<template>
-  <main class="post">
-    <header class="header">
-      <div class="container container--narrow">
-        <ul v-if="journal.tags" class="post__tags">
-          <li v-for="tag in journal.tags" :key="tag" class="post__tag">
-            {{ tag }}
-          </li>
-        </ul>
-        <h1>{{ journal.title }}</h1>
-        <p class="lead">{{ journal.summary }}</p>
-      </div>
-    </header>
-    <article class="section">
-      <div class="container container--narrow">
-        <div class="content">
-          <div class="content__text">
-            <div class="content__info">
-              <p>Written on {{ formatDate(journal.createdAt) }}.</p>
-            </div>
-            <ContentRenderer :value="journal" />
-          </div>
-          <div class="content__sidebar">
-            <TableOfContents v-if="headers" :headers="headers" />
-          </div>
-        </div>
-      </div>
-    </article>
-  </main>
-</template>
-
 <script setup>
 import { ref, onMounted } from "vue";
 import getMetaData from "@/config/getMetaData.js";
@@ -58,11 +27,12 @@ const createTableOfContents = async () => {
     const contentHeaders = await Array.from(
       document.querySelectorAll(".content h2")
     );
+    console.log(contentHeaders);
     contentHeaders.forEach((header) => {
       const headerObj = {};
       headerObj.text = header.textContent;
       headerObj.link = header.id;
-      headers.value.push(headerObj);
+      headers.value?.push(headerObj);
     });
   } catch (error) {
     console.log(error);
@@ -70,6 +40,8 @@ const createTableOfContents = async () => {
 };
 
 onMounted(() => {
+  // const contentHeaders = Array.from(document.querySelectorAll(".content h2"));
+  // console.log(contentHeaders);
   createTableOfContents();
   // getWordCount();
 });
@@ -108,3 +80,34 @@ useHead({
   ],
 });
 </script>
+
+<template>
+  <main class="post">
+    <header class="header">
+      <div class="container container--narrow">
+        <ul v-if="journal.tags" class="post__tags">
+          <li v-for="tag in journal.tags" :key="tag" class="post__tag">
+            {{ tag }}
+          </li>
+        </ul>
+        <h1>{{ journal.title }}</h1>
+        <p class="lead">{{ journal.summary }}</p>
+      </div>
+    </header>
+    <article class="section">
+      <div class="container container--narrow">
+        <div class="content">
+          <div class="content__text">
+            <div class="content__info">
+              <p>Written on {{ formatDate(journal.createdAt) }}.</p>
+            </div>
+            <ContentRenderer :value="journal" />
+          </div>
+          <div class="content__sidebar">
+            <TableOfContents v-if="headers" :headers="headers" />
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+</template>
