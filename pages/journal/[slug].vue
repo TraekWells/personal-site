@@ -25,7 +25,7 @@
           </div>
           <div class="content__sidebar">
             <p>Table of Contents</p>
-            <ul>
+            <ul v-if="tableOfContents">
               <li v-for="header in tableOfContents" :key="header.id">
                 <a :href="`#${header.link}`">{{ header.text }}</a>
               </li>
@@ -61,14 +61,19 @@ const getWordCount = () => {
   wordCount.value = Math.ceil(words / wpm);
 };
 
-onMounted(() => {
+const createTableOfContents = () => {
   const headers = Array.from(document.querySelectorAll(".content h2"));
+  // console.log(headers);
   headers.forEach((header) => {
     const headerObj = {};
     headerObj.text = header.textContent;
     headerObj.link = header.id;
     tableOfContents.value.push(headerObj);
   });
+};
+
+onMounted(() => {
+  createTableOfContents();
   getWordCount();
 });
 
