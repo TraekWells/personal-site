@@ -18,10 +18,15 @@
             <div class="content__info">
               <p>Written on {{ formatDate(journal.createdAt) }}.</p>
             </div>
-            <ContentRenderer :value="journal" />
+            <ContentDoc />
           </div>
           <div class="content__sidebar">
-            <TableOfContents v-if="!pending" :headers="headers" />
+            <p>Table of Contents</p>
+            <ul>
+              <li v-for="header in tableOfContents" :key="header.text">
+                <NuxtLink :to="`#${header.link}`">{{ header.text }}</NuxtLink>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -30,10 +35,10 @@
 </template>
 
 <script setup>
-import { ref, watch } from "vue";
+import { ref, onMounted } from "vue";
 import getMetaData from "@/config/getMetaData.js";
 const { path } = useRoute();
-const headers = ref([]);
+const tableOfContents = ref([]);
 // const wordCount = ref(0);
 
 const { pending, data: journal } = await useAsyncData(`content-${path}`, () => {
@@ -53,25 +58,14 @@ const formatDate = (date) => {
 //   wordCount.value = Math.ceil(words / wpm);
 // };
 
-const createTableOfContents = async () => {
-  try {
-    const contentHeaders = await Array.from(
-      document.querySelectorAll(".content h2")
-    );
-    console.log(contentHeaders);
-    contentHeaders.forEach((header) => {
-      const headerObj = {};
-      headerObj.text = header.textContent;
-      headerObj.link = header.id;
-      headers.value?.push(headerObj);
-    });
-  } catch (error) {
-    console.log(error);
-  }
-};
-
-watch(headers, () => {
-  createTableOfContents();
+onMounted(() => {
+  const headers = Array.from(document.querySelectorAll(".content h2"));
+  headers.forEach((header) => {
+    const headerObj = {};
+    headerObj.text = header.textContent;
+    headerObj.link = header.id;
+    tableOfContents.value.push(headerObj);
+  });
 });
 
 const getMeta = () => {

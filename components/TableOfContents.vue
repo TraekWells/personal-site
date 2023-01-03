@@ -1,7 +1,7 @@
 <template>
   <p>Table of Contents</p>
   <ul>
-    <li v-for="header in headers" :key="header.id">
+    <li v-for="header of headers" :key="header.id">
       <NuxtLink :to="`#${header.link}`">{{ header.text }}</NuxtLink>
       <!-- <a :href="`#${header.link}`">{{ header.text }}</a> -->
     </li>
@@ -11,7 +11,7 @@
 <script setup>
 const props = defineProps({
   headers: {
-    type: Object,
+    type: Array,
   },
 });
 </script>
