@@ -55,15 +55,15 @@ const formatDate = (date) => {
 
 const getWordCount = () => {
   const wpm = 250;
-  const body = document.querySelector(".content__info + div");
+  const body = document.querySelector(".content__text");
   const words = body.textContent.trim().split(/\s+/).length;
 
   wordCount.value = Math.ceil(words / wpm);
 };
 
-const createTableOfContents = () => {
-  const headers = Array.from(document.querySelectorAll(".content h2"));
-  // console.log(headers);
+const createTableOfContents = async () => {
+  const headers = await Array.from(document.querySelectorAll(".content h2"));
+  console.log(headers);
   headers.forEach((header) => {
     const headerObj = {};
     headerObj.text = header.textContent;
