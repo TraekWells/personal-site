@@ -5,6 +5,7 @@ Write this later.
 ## Todos
 
 - [x] Add 404 page
+- [ ] Fix word count
 - [ ] Remove fiction books from Bookshelf
 - [ ] Add a short about me or share to the bottom of every article
 - [ ] Improve the footer with an image and short bio
