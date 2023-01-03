@@ -37,12 +37,18 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import getMetaData from "@/config/getMetaData.js";
-const { path } = useRoute();
 const tableOfContents = ref([]);
 // const wordCount = ref(0);
 
+const { path } = useRoute();
+
+let queryPath = path;
+if (queryPath[queryPath.length - 1] === "/") {
+  queryPath = queryPath.replace(/.$/, "");
+}
+
 const { data: journal } = await useAsyncData(`content-${path}`, () => {
-  return queryContent("/journal").where({ _path: path }).findOne();
+  return queryContent("/journal").where({ _path: queryPath }).findOne();
 });
 
 const formatDate = (date) => {

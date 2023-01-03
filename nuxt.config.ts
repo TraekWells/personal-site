@@ -4,6 +4,9 @@ const meta = getMetaData();
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  experimental: {
+    payloadExtraction: true,
+  },
   nitro: {
     preset: "netlify",
     prerender: { routes: ["/sitemap.xml"] },

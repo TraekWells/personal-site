@@ -74,7 +74,6 @@ onMounted(() => {
     headerObj.link = header.id;
     tableOfContents.value.push(headerObj);
   });
-  // getWordCount();
 });
 
 const getMeta = () => {
