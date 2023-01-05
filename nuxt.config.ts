@@ -31,7 +31,7 @@ export default defineNuxtConfig({
         { name: "twitter:site", content: "@TraekWells" },
         { name: "twitter:card", content: "summary" },
       ],
-      script: [],
+      script: [{ src: "https://plausible.io/js/script.js", defer: true }],
       link: [
         { rel: "icon", type: "image/png", href: "/favicon.png" },
         {
