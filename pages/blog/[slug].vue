@@ -49,8 +49,13 @@ const { path } = useRoute();
 const tableOfContents = ref([]);
 // const wordCount = ref(0);
 
+let queryPath = path;
+if (queryPath[queryPath.length - 1] === "/") {
+  queryPath = queryPath.replace(/.$/, "");
+}
+
 const { data: blog } = await useAsyncData(`content-${path}`, () => {
-  return queryContent("/blog").where({ _path: path }).findOne();
+  return queryContent("/blog").where({ _path: queryPath }).findOne();
 });
 
 const { data: moreBlogs } = await useAsyncData(`more-content-${path}`, () => {

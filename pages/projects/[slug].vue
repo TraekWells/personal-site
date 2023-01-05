@@ -110,8 +110,13 @@ const tableOfContents = ref([]);
 const technology = ref([]);
 const { path } = useRoute();
 
+let queryPath = path;
+if (queryPath[queryPath.length - 1] === "/") {
+  queryPath = queryPath.replace(/.$/, "");
+}
+
 const { data: project } = await useAsyncData(`content-${path}`, () => {
-  return queryContent("/projects").where({ _path: path }).findOne();
+  return queryContent("/projects").where({ _path: queryPath }).findOne();
 });
 
 const { data: moreProjects } = await useAsyncData(

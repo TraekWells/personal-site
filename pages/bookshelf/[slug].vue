@@ -42,8 +42,14 @@ import getMetaData from "@/config/getMetaData.js";
 import { onMounted, ref } from "vue";
 const { path } = useRoute();
 const tableOfContents = ref([]);
+
+let queryPath = path;
+if (queryPath[queryPath.length - 1] === "/") {
+  queryPath = queryPath.replace(/.$/, "");
+}
+
 const { data: book } = await useAsyncData(`content-${path}`, () => {
-  return queryContent("/bookshelf").where({ _path: path }).findOne();
+  return queryContent("/bookshelf").where({ _path: queryPath }).findOne();
 });
 
 const { data: moreBooks } = await useAsyncData(`more-content-${path}`, () => {
