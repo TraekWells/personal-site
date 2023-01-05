@@ -16,7 +16,7 @@
         <div class="content">
           <div class="content__text">
             <div class="content__info">
-              <!-- <p>Written on {{ formatDate(journal.createdAt) }}.</p> -->
+              <p>Written on {{ formatDate(journal.createdAt) }}.</p>
             </div>
             <ContentDoc />
           </div>
@@ -41,19 +41,19 @@ const tableOfContents = ref([]);
 const { path } = useRoute();
 // const wordCount = ref(0);
 
-// let queryPath = path;
-// if (queryPath[queryPath.length - 1] === "/") {
-//   queryPath = queryPath.replace(/.$/, "");
-// }
+let queryPath = path;
+if (queryPath[queryPath.length - 1] === "/") {
+  queryPath = queryPath.replace(/.$/, "");
+}
 
 const { data: journal } = await useAsyncData(`content-${path}`, () => {
-  return queryContent("/journal").where({ _path: path }).findOne();
+  return queryContent("/journal").where({ _path: queryPath }).findOne();
 });
 
-// const formatDate = (date) => {
-//   const options = { year: "numeric", month: "long", day: "numeric" };
-//   return new Date(date).toLocaleDateString("en", options);
-// };
+const formatDate = (date) => {
+  const options = { year: "numeric", month: "long", day: "numeric" };
+  return new Date(date).toLocaleDateString("en", options);
+};
 
 // const getWordCount = () => {
 //   const wpm = 250;
