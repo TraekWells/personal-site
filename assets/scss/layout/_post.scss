@@ -1,5 +1,5 @@
-@use '../abstracts/variables' as *;
-@use '../abstracts/mixins' as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .post .section:first-of-type {
   padding-top: 0;
@@ -37,8 +37,8 @@
   display: grid;
   padding: 0 0 5rem;
   grid-template-areas:
-    'image image'
-    'content sidebar';
+    "image image"
+    "content sidebar";
   grid-template-columns: 2.5fr 1fr;
   gap: 5rem;
 
@@ -49,9 +49,9 @@
 
   @include respond-to(tab-port) {
     grid-template-areas:
-      'image'
-      'sidebar'
-      'content';
+      "image"
+      "sidebar"
+      "content";
     grid-template-columns: 1fr;
   }
 
@@ -174,7 +174,7 @@
   h2 {
     &::before {
       display: block;
-      content: '';
+      content: "";
       margin-top: -10rem;
       height: 10rem;
       visibility: hidden;

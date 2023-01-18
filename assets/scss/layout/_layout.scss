@@ -1,5 +1,5 @@
-@use '../abstracts/variables' as *;
-@use '../abstracts/mixins' as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .container {
   margin: 0 auto;
@@ -18,8 +18,9 @@
 
 .header {
   background-color: var(--color-primary-100);
-  padding: 12rem 0 4rem;
+  padding: 12rem 0;
   position: relative;
+  text-align: center;
 
   &__content {
     position: relative;
@@ -45,7 +46,7 @@
 
   .wave-white {
     position: absolute;
-    background-image: url('/img/wave-white.svg');
+    background-image: url("/img/wave-white.svg");
     background-repeat: no-repeat;
     background-size: cover;
     left: 0;
@@ -57,7 +58,7 @@
 
   .wave-purple {
     position: absolute;
-    background-image: url('/img/wave-purple.svg');
+    background-image: url("/img/wave-purple.svg");
     background-repeat: no-repeat;
     background-size: cover;
     left: 0;

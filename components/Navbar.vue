@@ -56,6 +56,9 @@
           >
         </li>
       </ul>
+      <NuxtLink to="/contact-me" class="button button--ghost"
+        >Contact Me
+      </NuxtLink>
       <button
         v-if="mobile"
         ref="navigation__buttonOpen"

@@ -90,6 +90,14 @@ a {
   font-size: 2rem;
 }
 
+.eyebrow {
+  display: block;
+  text-transform: uppercase;
+  color: var(--color-primary-700);
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-medium);
+}
+
 li {
   font-size: 1.7rem;
   line-height: 1.8;
