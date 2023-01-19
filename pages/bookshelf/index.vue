@@ -1,17 +1,13 @@
 <template>
+  <PageHeader eyebrow="Reading" title="Bookshelf">
+    <p class="lead">
+      Here's a collection of the books I've either read or listened to and my
+      thoughts about them.
+    </p>
+  </PageHeader>
   <main>
-    <header class="header">
-      <div class="container container--narrow">
-        <div class="header__content">
-          <h1>Bookshelf</h1>
-          <p class="lead mb-4">
-            Here's a collection of the books I've either read or listened to and
-            my thoughts about them.
-          </p>
-        </div>
-      </div>
-    </header>
     <section class="section">
+      <div class="wave-white"></div>
       <div class="container container--narrow">
         <div class="books">
           <Book v-for="book in books" :key="book._path" :book="book" />

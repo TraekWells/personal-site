@@ -1,11 +1,8 @@
 <template>
+  <PageHeader eyebrow="About me" title="My story" />
   <main>
-    <header class="header">
-      <div class="container container--narrow">
-        <h1>About Me</h1>
-      </div>
-    </header>
     <section class="section">
+      <div class="wave-white"></div>
       <div class="container container--narrow">
         <div class="about-me">
           <div class="about-me__image">

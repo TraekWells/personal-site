@@ -5,6 +5,7 @@
         <span class="eyebrow">{{ props.eyebrow }}</span
         >{{ props.title }}
       </h1>
+      <slot></slot>
     </div>
   </header>
 </template>

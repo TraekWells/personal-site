@@ -1,9 +1,14 @@
 <template>
   <PageHeader eyebrow="Contact me" title="Get in touch" />
-  <section>
+  <section class="section">
     <div class="wave-white"></div>
     <div class="container container--narrow">
       <h3>Let's work together</h3>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia odit
+        amet voluptates sunt voluptate qui.
+      </p>
+      <h3>Connect with me</h3>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia odit
         amet voluptates sunt voluptate qui.

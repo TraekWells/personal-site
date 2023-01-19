@@ -1,18 +1,14 @@
 <template>
+  <PageHeader eyebrow="Writing" title="Some blogs that I’ve written">
+    <p class="lead">
+      Posts about topics ranging from User Experience, User Interface design,
+      HTML, CSS, JavaScript and accessibility. See my
+      <NuxtLink to="/journal">journal</NuxtLink> for everything else.
+    </p>
+  </PageHeader>
   <main>
-    <header class="header">
-      <div class="container container--narrow">
-        <div class="header__content">
-          <h1>Blog</h1>
-          <p class="lead mb-4">
-            Posts about topics ranging from User Experience, User Interface
-            design, HTML, CSS, JavaScript and accessibility. See my
-            <NuxtLink to="/journal">journal</NuxtLink> for everything else.
-          </p>
-        </div>
-      </div>
-    </header>
     <section class="section">
+      <div class="wave-white"></div>
       <div class="container container--narrow">
         <div class="blogs">
           <BlogCard v-for="blog in blogs" :key="blog.path" :post="blog" />

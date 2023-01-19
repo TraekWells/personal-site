@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <div class="wave-white"></div>
+    <div class="wave-purple"></div>
     <div class="container">
       <p>Connect With Me</p>
       <div class="social-icons">

@@ -1,19 +1,17 @@
 <template>
+  <PageHeader
+    eyebrow="Journal"
+    title="Here's some personal stuff that I've written"
+  >
+    <p class="lead">
+      This is a place for me to share anything that doesn't fit into my normal
+      <NuxtLink to="/blog">blog</NuxtLink> topics. Most likely about life, being
+      productive and ants.
+    </p>
+  </PageHeader>
   <main>
-    <header class="header">
-      <div class="container container--narrow">
-        <div class="header__content">
-          <h1>Journal</h1>
-          <p class="lead mb-4">
-            This is a place for me to share anything that doesn't fit into my
-            normal
-            <NuxtLink to="/blog">blog</NuxtLink> topics. Most likely about life,
-            being productive and ants.
-          </p>
-        </div>
-      </div>
-    </header>
     <section class="section">
+      <div class="wave-white"></div>
       <div class="container container--narrow">
         <div class="blogs">
           <BlogCard
