@@ -16,22 +16,6 @@
   }
 }
 
-.header {
-  background-color: var(--color-primary-100);
-  padding: 12rem 0;
-  position: relative;
-  text-align: center;
-
-  &__content {
-    position: relative;
-    z-index: 10;
-  }
-
-  &--home {
-    text-align: left;
-  }
-}
-
 .section {
   padding: 5rem 0 10rem;
   position: relative;
