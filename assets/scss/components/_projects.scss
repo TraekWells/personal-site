@@ -2,8 +2,8 @@
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  grid-template-columns: 1fr;
+  gap: 4rem;
   margin: 4rem 0;
 
   @include respond-to(tab-port) {
@@ -12,13 +12,12 @@
 }
 
 .project {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  gap: 5rem;
   &__image {
     border-radius: 1rem;
     overflow: hidden;
-  }
-
-  &__content {
-    padding: 2rem;
   }
 
   .read-more {

@@ -1,28 +1,28 @@
-@use '../abstracts/variables' as *;
-@use '../abstracts/mixins' as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .home-header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 
   @include respond-to(phone) {
     flex-direction: column;
     text-align: center;
   }
 
-  h1 {
-    font-weight: normal;
-  }
-
   &__image {
-    flex-basis: 35%;
-    margin-right: 6rem;
+    flex-basis: 40%;
     position: relative;
     z-index: 10;
-    overflow: hidden;
+    // overflow: hidden;
     border-radius: 1rem;
-    height: 40rem;
+    height: 50rem;
     margin-bottom: -7rem;
+    background: linear-gradient(
+        hsla(var(--color-primary-700) / 0.5),
+        hsla(var(--color-primary-700) / 0.5)
+      ),
+      url("~/img/about-me-image.jpg");
 
     @include respond-to(phone) {
       display: none;
@@ -33,14 +33,16 @@
       margin-right: 5rem;
     }
 
-    &::before {
-      content: '';
+    &::after {
+      content: "";
+      border-radius: 1rem;
       position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      background-color: rgba(#561c6d, 0.55);
+      top: 1rem;
+      bottom: -1rem;
+      right: -1rem;
+      left: 1rem;
+      background-color: var(--color-secondary-500);
+      z-index: -10;
     }
 
     img {
@@ -50,16 +52,22 @@
   }
 
   &__content {
+    h1 {
+      font-size: 6rem;
+      line-height: 1.2;
+    }
+
     flex-basis: 50%;
     z-index: 10;
-
-    p {
-      font-size: 2rem;
-    }
 
     @include respond-to(tab-port) {
       flex-basis: 70%;
     }
+  }
+
+  .amp {
+    font-weight: var(--font-weight-normal);
+    font-size: 5rem;
   }
 }
 

@@ -3,21 +3,24 @@
     <header class="header header--home">
       <div class="container container--narrow">
         <div class="home-header">
-          <div class="home-header__image">
-            <img src="/img/about-me-image.jpg" alt="An image of Traek Wells" />
-          </div>
           <div class="home-header__content">
-            <h1>
-              Web Developer. UI Designer.
-              <span class="underline">Good Person</span>.
-            </h1>
-            <p>
+            <p class="eyebrow">Howdy. I'm Traek.</p>
+            <h1>Web Developer <span class="amp">&amp;</span> UI Designer.</h1>
+            <p class="lead">
               Howdy, I'm Traek and welcome to my digital garden where you'll see
               what I've built and written over the years.
             </p>
-            <NuxtLink to="/projects" class="button button--primary"
-              >See My Work
-            </NuxtLink>
+            <div class="d-inline">
+              <NuxtLink to="/projects" class="button button--primary mr-2"
+                >See My Work
+              </NuxtLink>
+              <NuxtLink to="/contact-me" class="button button--ghost"
+                >Contact Me
+              </NuxtLink>
+            </div>
+          </div>
+          <div class="home-header__image">
+            <!-- <img src="/img/about-me-image.jpg" alt="An image of Traek Wells" /> -->
           </div>
         </div>
       </div>
@@ -26,7 +29,6 @@
       <div class="wave-white"></div>
       <div class="container container--narrow">
         <h2>Stuff I've Built</h2>
-        <hr />
         <p class="lead">
           Here are some of the bigger projects that I've built that I'm proud
           of. Check out some of my smaller stuff here
