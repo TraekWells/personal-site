@@ -33,3 +33,19 @@
   color: hsl(var(--color-primary-500));
   font-weight: bold;
 }
+
+.fancy-image {
+  position: relative;
+
+  &::after {
+    content: "";
+    border-radius: var(--border-radius-sm);
+    position: absolute;
+    top: 1rem;
+    bottom: -1rem;
+    right: -1rem;
+    left: 1rem;
+    background-color: hsl(var(--color-secondary-500));
+    z-index: -10;
+  }
+}

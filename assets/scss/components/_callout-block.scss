@@ -1,0 +1,35 @@
+@use "../abstracts/mixins" as m;
+
+.callout-blocks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.callout-block {
+  background-color: hsl(var(--color-white));
+
+  &__icon {
+    background-color: hsl(var(--color-white));
+    align-self: flex-start;
+    border-radius: var(--border-radius-xsm);
+    color: hsl(var(--color-primary-700));
+  }
+
+  &__title {
+    color: hsl(var(--color-primary-700));
+    font-weight: var(--font-weight-medium);
+  }
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  justify-content: center;
+
+  @include m.respond-to(tab-port) {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+}

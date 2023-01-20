@@ -63,6 +63,7 @@ p {
 }
 
 a {
+  // Should I use clamp here?
   font-size: inherit;
   position: relative;
   text-decoration: none;
@@ -158,4 +159,7 @@ p code {
   padding: 0.4rem;
   font-size: 1.6rem;
   background-color: hsl(var(--color-primary-100));
+}
+
+.fancy-header {
 }
