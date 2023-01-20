@@ -1,5 +1,5 @@
-@use '../abstracts/variables' as *;
-@use '../abstracts/mixins' as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .blog {
   max-width: 80rem;
@@ -13,11 +13,11 @@
   @include respond-to(phone) {
     flex-direction: column;
     padding: 3rem;
-    background-color: var(--color-white);
+    background-color: hsl(var(--color-white));
   }
 
   &.purple {
-    background-color: var(--color-primary-100);
+    background-color: hsl(var(--color-primary-100));
   }
 
   &:not(:last-child) {

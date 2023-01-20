@@ -53,7 +53,6 @@
       <div class="wave-purple"></div>
       <div class="container container--narrow">
         <h2>What I'm Good At</h2>
-        <hr />
         <div class="skills">
           <div class="skill">
             <div class="skill__icon">
@@ -91,7 +90,6 @@
       <div class="wave-white"></div>
       <div class="container container--narrow">
         <h2>Stuff I've Written</h2>
-        <hr />
         <p class="lead mb-4">
           Sharing what I've learned in the hopes of solidify the knowledge and
           helping others however I can.

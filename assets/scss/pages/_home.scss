@@ -41,7 +41,7 @@
       bottom: -1rem;
       right: -1rem;
       left: 1rem;
-      background-color: var(--color-secondary-500);
+      background-color: hsl(var(--color-secondary-500));
       z-index: -10;
     }
 
@@ -99,7 +99,7 @@
 
 .skill {
   &__icon {
-    background-color: var(--color-white);
+    background-color: hsl(var(--color-white));
     align-self: flex-start;
     border-radius: var(--border-radius-xsm);
     flex-shrink: 0;
@@ -110,6 +110,6 @@
     place-content: center;
     margin-right: 2rem;
     margin: 0 2rem 2rem 0;
-    color: var(--color-primary-700);
+    color: hsl(var(--color-primary-700));
   }
 }
