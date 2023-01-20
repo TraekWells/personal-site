@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 4rem;
-  margin: 4rem 0;
+  margin: 5rem 0;
 
   @include respond-to(tab-port) {
     grid-template-columns: repeat(1, 1fr);

@@ -8,6 +8,12 @@
 
 .callout-block {
   background-color: hsl(var(--color-white));
+  padding: 2rem;
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: var(--border-radius-xsm);
 
   &__icon {
     background-color: hsl(var(--color-white));
@@ -19,6 +25,12 @@
   &__title {
     color: hsl(var(--color-primary-700));
     font-weight: var(--font-weight-medium);
+  }
+
+  &__details {
+    p {
+      margin: 1rem 0 0;
+    }
   }
 }
 

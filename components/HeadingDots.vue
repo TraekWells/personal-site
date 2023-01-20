@@ -1,13 +1,13 @@
 <template>
   <svg
-    width="70px"
-    height="70px"
+    width="60px"
+    height="60px"
     viewBox="0 0 70 70"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
+    class="fancy-header__dots"
   >
-    <title>Group 3 Copy</title>
     <g
       id="Symbols"
       stroke="none"

@@ -37,10 +37,10 @@
           experience that your users will love.
         </h2>
         <div class="d-grid-two-columns">
-          <div class="d-grid__half">
+          <div class="d-grid__column">
             <img src="https://via.placeholder.com/450" alt="" />
           </div>
-          <div class="d-grid__half">
+          <div class="d-grid__column">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -63,10 +63,7 @@
       <div class="container container--narrow">
         <div class="d-grid-two-columns">
           <div class="d-grid__half">
-            <div class="fancy-header">
-              <HeadingDots />
-              <h2>Skills I have</h2>
-            </div>
+            <FancyHeader title="Skills I have" />
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit
               sint facere itaque reiciendis ut aperiam.
@@ -81,10 +78,34 @@
                 </div>
                 <div class="callout-block__details">
                   <p class="callout-block__title">UI Design</p>
-                  <p>
-                    User Experience was my first love and I take pride in
-                    designing beautiful, fast, and accessible websites.
-                  </p>
+                  <p>User Experience was my first love.</p>
+                </div>
+              </div>
+              <div class="callout-block">
+                <div class="callout-block__icon">
+                  <Icon name="uil:illustration" height="26" width="26" />
+                </div>
+                <div class="callout-block__details">
+                  <p class="callout-block__title">Web Development</p>
+                  <p>User Experience was my first love.</p>
+                </div>
+              </div>
+              <div class="callout-block">
+                <div class="callout-block__icon">
+                  <Icon name="uil:illustration" height="26" width="26" />
+                </div>
+                <div class="callout-block__details">
+                  <p class="callout-block__title">Wordpress</p>
+                  <p>User Experience was my first love.</p>
+                </div>
+              </div>
+              <div class="callout-block">
+                <div class="callout-block__icon">
+                  <Icon name="uil:illustration" height="26" width="26" />
+                </div>
+                <div class="callout-block__details">
+                  <p class="callout-block__title">Convinced?</p>
+                  <p>User Experience was my first love.</p>
                 </div>
               </div>
             </div>
@@ -95,7 +116,7 @@
     <div class="section">
       <div class="wave-white"></div>
       <div class="container container--narrow">
-        <h2>Stuff I've Built</h2>
+        <FancyHeader title="Projects I've built" />
         <p class="lead">
           Here are some of the bigger projects that I've built that I'm proud
           of. Check out some of my smaller stuff here
@@ -116,14 +137,40 @@
       </div>
     </div>
 
-    <div class="section">
-      <div class="wave-white"></div>
+    <div class="section section--secondary">
+      <div class="wave-purple"></div>
       <div class="container container--narrow">
-        <h2>Stuff I've Written</h2>
+        <FancyHeader title="Beliefs" />
         <p class="lead mb-4">
           Sharing what I've learned in the hopes of solidify the knowledge and
           helping others however I can.
         </p>
+        <div class="d-grid-three-columns">
+          <div class="d-grid__column">
+            <Icon name="uil:illustration" height="26" width="26" />
+            <p>Header</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+              assumenda?
+            </p>
+          </div>
+          <div class="d-grid__column">
+            <Icon name="uil:illustration" height="26" width="26" />
+            <p>Header</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+              assumenda?
+            </p>
+          </div>
+          <div class="d-grid__column">
+            <Icon name="uil:illustration" height="26" width="26" />
+            <p>Header</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+              assumenda?
+            </p>
+          </div>
+        </div>
         <div class="blogs">
           <BlogCard v-for="blog in blogs" :key="blog.path" :post="blog" />
         </div>
