@@ -53,7 +53,9 @@
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-            <NuxtLink to="/process">Learn more about the process</NuxtLink>
+            <NuxtLink to="/process" class="read-more"
+              >Learn more about the process <Icon type="arrowRight"
+            /></NuxtLink>
           </div>
         </div>
       </div>
@@ -68,13 +70,15 @@
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit
               sint facere itaque reiciendis ut aperiam.
             </p>
-            <NuxtLink to="/services">Learn more</NuxtLink>
+            <NuxtLink to="/services" class="read-more"
+              >Learn more <Icon type="arrowRight"
+            /></NuxtLink>
           </div>
           <div class="d-grid__half">
             <div class="callout-blocks">
               <div class="callout-block">
                 <div class="callout-block__icon">
-                  <span>icon here</span>
+                  <Icon type="design" />
                 </div>
                 <div class="callout-block__details">
                   <p class="callout-block__title">UI Design</p>
@@ -83,7 +87,7 @@
               </div>
               <div class="callout-block">
                 <div class="callout-block__icon">
-                  <span>icon here</span>
+                  <Icon type="development" />
                 </div>
                 <div class="callout-block__details">
                   <p class="callout-block__title">Web Development</p>
@@ -92,7 +96,7 @@
               </div>
               <div class="callout-block">
                 <div class="callout-block__icon">
-                  <span>icon here</span>
+                  <Icon type="design" />
                 </div>
                 <div class="callout-block__details">
                   <p class="callout-block__title">Wordpress</p>
@@ -101,7 +105,7 @@
               </div>
               <div class="callout-block">
                 <div class="callout-block__icon">
-                  <span>icon here</span>
+                  <Icon type="design" />
                 </div>
                 <div class="callout-block__details">
                   <p class="callout-block__title">Convinced?</p>
@@ -134,6 +138,9 @@
             :project="project"
           />
         </div>
+        <NuxtLink to="/services" class="read-more"
+          >See more projects <Icon type="arrowRight"
+        /></NuxtLink>
       </div>
     </div>
 
@@ -142,8 +149,7 @@
       <div class="container container--narrow">
         <FancyHeader title="Beliefs" />
         <p class="lead mb-4">
-          Sharing what I've learned in the hopes of solidify the knowledge and
-          helping others however I can.
+          Something about my beliefs as a designer and developer.
         </p>
         <div class="d-grid-three-columns">
           <div class="d-grid__column">
@@ -164,6 +170,7 @@
           </div>
           <div class="d-grid__column">
             <Icon name="uil:illustration" height="26" width="26" />
+            <span>icon here</span>
             <h4>Header</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
@@ -178,10 +185,25 @@
       <div class="wave-white"></div>
       <div class="container container--narrow">
         <h2 class="text-center">Don't take my word for it</h2>
-        <p class="lead text-center">
+        <p class="lead text-center centered-block">
           Lucas ipsum dolor sit amet leia chewbacca hutt hutt boba calamari leia
           dagobah ahsoka antilles. Ben obi-wan kamino solo kessel.
         </p>
+        <div class="testimonials">
+          <Testimonial
+            body="Lucas ipsum dolor sit amet leia chewbacca hutt hutt
+        boba calamari leia dagobah ahsoka antilles. Ben obi-wan kamino solo
+        kessel."
+            authorName="Emeche Wells"
+            authorImage="https://i.pravatar.cc/300"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container container--narrow">
+        <CallToAction />
       </div>
     </section>
   </main>

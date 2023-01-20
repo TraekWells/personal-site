@@ -2,49 +2,28 @@
   <footer class="footer">
     <div class="wave-purple"></div>
     <div class="container">
-      <p>Connect With Me</p>
-      <div class="social-icons">
-        <a
-          href="https://twitter.com/TraekWells"
-          class="social-icon"
-          target="_blank"
-          rel="noreferrer noopener"
-          alt="Link to Twitter"
-          ><Icon name="uil:twitter" height="26" width="26"
-        /></a>
-        <a
-          href="https://github.com/TraekWells"
-          class="social-icon"
-          target="_blank"
-          rel="noreferrer noopener"
-          alt="Link to GitHub"
-          ><Icon name="uil:github" height="26" width="26"
-        /></a>
-        <a
-          href="https://www.instagram.com/traekwells/"
-          class="social-icon"
-          target="_blank"
-          rel="noreferrer noopener"
-          alt="Link to Instagram"
-          ><Icon name="uil:instagram" height="26" width="26"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/traekwells/"
-          class="social-icon"
-          target="_blank"
-          rel="noreferrer noopener"
-          alt="Link to LinkedIn"
-          ><Icon name="uil:linkedin" height="26" width="26"
-        /></a>
-        <a
-          href="https://dribbble.com/TraekWells"
-          class="social-icon"
-          target="_blank"
-          rel="noreferrer noopener"
-          alt="Link to Dribbble"
-          ><Icon name="uil:dribbble" height="26" width="26"
-        /></a>
+      <div class="d-grid-two-columns">
+        <div class="d-grid__column"></div>
+        <div class="d-grid__column">
+          <p><strong>Pages</strong></p>
+          <ul>
+            <li><NuxtLink to="/services">Services</NuxtLink></li>
+            <li><NuxtLink to="/services">Services</NuxtLink></li>
+            <li><NuxtLink to="/services">Services</NuxtLink></li>
+            <li><NuxtLink to="/services">Services</NuxtLink></li>
+            <li><NuxtLink to="/services">Services</NuxtLink></li>
+          </ul>
+          <p><strong>Social Media</strong></p>
+          <ul>
+            <li><NuxtLink to="/services">Services</NuxtLink></li>
+            <li><NuxtLink to="/services">Services</NuxtLink></li>
+            <li><NuxtLink to="/services">Services</NuxtLink></li>
+            <li><NuxtLink to="/services">Services</NuxtLink></li>
+            <li><NuxtLink to="/services">Services</NuxtLink></li>
+          </ul>
+        </div>
       </div>
+      <p>Connect With Me</p>
       <p>
         &copy; Traek Wells {{ date }}. Built with
         <a href="https://nuxt.com/" target="_blank" rel="noreferrer">Nuxt</a>.
