@@ -1,7 +1,8 @@
 @use "../abstracts/variables" as *;
 
 .button {
-  display: inline-block;
+  display: flex;
+  align-items: center;
 }
 
 .button,

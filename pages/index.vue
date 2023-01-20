@@ -12,7 +12,7 @@
             </p>
             <div class="d-inline">
               <NuxtLink to="/projects" class="button button--primary mr-2"
-                >See My Work
+                >See My Work <Icon type="arrowRight" />
               </NuxtLink>
               <NuxtLink to="/contact-me" class="button button--ghost"
                 >Contact Me
@@ -74,7 +74,7 @@
             <div class="callout-blocks">
               <div class="callout-block">
                 <div class="callout-block__icon">
-                  <Icon name="uil:illustration" height="26" width="26" />
+                  <span>icon here</span>
                 </div>
                 <div class="callout-block__details">
                   <p class="callout-block__title">UI Design</p>
@@ -83,7 +83,7 @@
               </div>
               <div class="callout-block">
                 <div class="callout-block__icon">
-                  <Icon name="uil:illustration" height="26" width="26" />
+                  <span>icon here</span>
                 </div>
                 <div class="callout-block__details">
                   <p class="callout-block__title">Web Development</p>
@@ -92,7 +92,7 @@
               </div>
               <div class="callout-block">
                 <div class="callout-block__icon">
-                  <Icon name="uil:illustration" height="26" width="26" />
+                  <span>icon here</span>
                 </div>
                 <div class="callout-block__details">
                   <p class="callout-block__title">Wordpress</p>
@@ -101,7 +101,7 @@
               </div>
               <div class="callout-block">
                 <div class="callout-block__icon">
-                  <Icon name="uil:illustration" height="26" width="26" />
+                  <span>icon here</span>
                 </div>
                 <div class="callout-block__details">
                   <p class="callout-block__title">Convinced?</p>
@@ -147,7 +147,7 @@
         </p>
         <div class="d-grid-three-columns">
           <div class="d-grid__column">
-            <Icon name="uil:illustration" height="26" width="26" />
+            <span>icon here</span>
             <h4>Header</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
@@ -155,7 +155,7 @@
             </p>
           </div>
           <div class="d-grid__column">
-            <Icon name="uil:illustration" height="26" width="26" />
+            <span>icon here</span>
             <h4>Header</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
