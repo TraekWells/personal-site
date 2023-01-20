@@ -19,8 +19,8 @@
     height: 50rem;
     margin-bottom: -7rem;
     background: linear-gradient(
-        hsla(var(--color-primary-700) / 0.5),
-        hsla(var(--color-primary-700) / 0.5)
+        hsl(var(--color-primary-700)),
+        hsl(var(--color-primary-700))
       ),
       url("~/img/about-me-image.jpg");
 

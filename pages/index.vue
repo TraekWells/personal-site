@@ -7,8 +7,8 @@
             <p class="eyebrow">Howdy. I'm Traek.</p>
             <h1>Web Developer <span class="amp">&amp;</span> UI Designer.</h1>
             <p class="lead">
-              Howdy, I'm Traek and welcome to my digital garden where you'll see
-              what I've built and written over the years.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
+              impedit iure ea aut culpa consectetur.
             </p>
             <div class="d-inline">
               <NuxtLink to="/projects" class="button button--primary mr-2"

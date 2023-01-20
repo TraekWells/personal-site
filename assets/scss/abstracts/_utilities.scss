@@ -29,16 +29,7 @@
   margin-right: 2rem;
 }
 
-hr {
-  width: 10rem;
-  height: 0.5rem;
-  margin: 1.5rem 0 3rem;
-  border-radius: 1rem;
-  background-color: var(--color-secondary-500);
-  border: none;
-}
-
 .underline {
-  color: var(--color-primary-500);
+  color: hsl(var(--color-primary-500));
   font-weight: bold;
 }
