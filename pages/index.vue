@@ -137,7 +137,7 @@
       </div>
     </div>
 
-    <div class="section section--secondary">
+    <section class="section section--secondary">
       <div class="wave-purple"></div>
       <div class="container container--narrow">
         <FancyHeader title="Beliefs" />
@@ -148,7 +148,7 @@
         <div class="d-grid-three-columns">
           <div class="d-grid__column">
             <Icon name="uil:illustration" height="26" width="26" />
-            <p>Header</p>
+            <h4>Header</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
               assumenda?
@@ -156,7 +156,7 @@
           </div>
           <div class="d-grid__column">
             <Icon name="uil:illustration" height="26" width="26" />
-            <p>Header</p>
+            <h4>Header</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
               assumenda?
@@ -164,18 +164,26 @@
           </div>
           <div class="d-grid__column">
             <Icon name="uil:illustration" height="26" width="26" />
-            <p>Header</p>
+            <h4>Header</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
               assumenda?
             </p>
           </div>
-        </div>
-        <div class="blogs">
-          <BlogCard v-for="blog in blogs" :key="blog.path" :post="blog" />
         </div>
       </div>
-    </div>
+    </section>
+
+    <section class="section">
+      <div class="wave-white"></div>
+      <div class="container container--narrow">
+        <h2 class="text-center">Don't take my word for it</h2>
+        <p class="lead text-center">
+          Lucas ipsum dolor sit amet leia chewbacca hutt hutt boba calamari leia
+          dagobah ahsoka antilles. Ben obi-wan kamino solo kessel.
+        </p>
+      </div>
+    </section>
   </main>
 </template>
 
