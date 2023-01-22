@@ -1,13 +1,13 @@
 .d-grid-two-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5rem;
+  gap: var(--gap, 6rem);
 }
 
 .d-grid-three-columns {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 5rem;
+  gap: 6rem;
 }
 
 .d-inline {

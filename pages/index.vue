@@ -153,7 +153,7 @@
         </p>
         <div class="d-grid-three-columns">
           <div class="d-grid__column">
-            <span>icon here</span>
+            <Icon type="arrowRight" />
             <h4>Header</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
@@ -161,7 +161,7 @@
             </p>
           </div>
           <div class="d-grid__column">
-            <span>icon here</span>
+            <Icon type="arrowRight" />
             <h4>Header</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
@@ -170,7 +170,7 @@
           </div>
           <div class="d-grid__column">
             <Icon name="uil:illustration" height="26" width="26" />
-            <span>icon here</span>
+            <Icon type="arrowRight" />
             <h4>Header</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,

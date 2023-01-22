@@ -6,7 +6,7 @@
         v-if="authorImage"
         :src="authorImage"
         :alt="`Testimonial from ${authorName}`"
-        class="testimonial__author-image"
+        class="image-rounded image-small"
       />
       <p>{{ authorName }}</p>
     </div>

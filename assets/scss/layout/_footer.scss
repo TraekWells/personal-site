@@ -1,9 +1,9 @@
 @use "../abstracts/variables" as *;
 
 .footer {
+  --gap: 7rem;
   background-color: hsl(var(--color-primary-100));
   padding: 5rem 0;
-  text-align: center;
   margin-top: auto;
   position: relative;
 
