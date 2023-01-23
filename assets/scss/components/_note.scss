@@ -2,7 +2,7 @@
 
 .note {
   background-color: hsl(var(--color-primary-100));
-  border-radius: hsl(var(--border-radius-xsm));
+  border-radius: var(--border-radius-xsm);
   padding: 2rem;
   position: relative;
   margin: 2rem 0;

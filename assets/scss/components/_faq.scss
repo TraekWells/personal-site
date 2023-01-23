@@ -1,7 +1,35 @@
 .faq {
+  overflow: hidden;
+  &__question,
+  &__answer {
+    padding: 1.5rem;
+  }
   &__question {
     background-color: hsl(var(--color-primary-100));
-    padding: 1rem;
     border-radius: var(--border-radius-xsm);
+    display: flex;
+    justify-content: space-between;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__answer {
+    display: none;
+  }
+
+  .icon {
+    transition: 0.2s linear;
+  }
+
+  &.open {
+    .faq__answer {
+      display: block;
+    }
+    .icon {
+      transition: 0.2s linear;
+      transform: rotate(180deg);
+    }
   }
 }
