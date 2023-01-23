@@ -1,0 +1,7 @@
+.faq {
+  &__question {
+    background-color: hsl(var(--color-primary-100));
+    padding: 1rem;
+    border-radius: var(--border-radius-xsm);
+  }
+}

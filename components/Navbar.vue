@@ -36,23 +36,23 @@
           >
         </li>
         <li class="navigation__item">
-          <NuxtLink to="/blog"
-            ><span class="navigation__link">Writing</span></NuxtLink
-          >
-        </li>
-        <li class="navigation__item">
-          <NuxtLink to="/bookshelf"
-            ><span class="navigation__link">Bookshelf</span></NuxtLink
-          >
-        </li>
-        <li class="navigation__item">
-          <NuxtLink to="/journal/impossible-list"
-            ><span class="navigation__link">Impossible List</span></NuxtLink
+          <NuxtLink to="/services"
+            ><span class="navigation__link">Services</span></NuxtLink
           >
         </li>
         <li class="navigation__item">
           <NuxtLink to="/about-me"
             ><span class="navigation__link">Who I Am</span></NuxtLink
+          >
+        </li>
+        <li class="navigation__item">
+          <NuxtLink to="/blog"
+            ><span class="navigation__link">Writing</span></NuxtLink
+          >
+        </li>
+        <li class="navigation__item">
+          <NuxtLink to="/journal/impossible-list"
+            ><span class="navigation__link">Impossible List</span></NuxtLink
           >
         </li>
       </ul>

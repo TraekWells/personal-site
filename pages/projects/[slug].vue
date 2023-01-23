@@ -8,7 +8,7 @@
         </p>
       </div>
     </header>
-    <article class="section">
+    <article class="section pb-7">
       <img
         v-if="project.featuredImage"
         class="featured-image"
@@ -88,9 +88,9 @@
         </div>
       </div>
     </article>
-    <article class="section">
+    <article class="section pb-7">
       <div class="container container--narrow">
-        <h2>More Projects</h2>
+        <FancyHeader title="More Projects" />
         <div class="projects">
           <ProjectCard
             v-for="project in moreProjects"
@@ -100,6 +100,11 @@
         </div>
       </div>
     </article>
+    <section class="section">
+      <div class="container container--narrow">
+        <CallToAction />
+      </div>
+    </section>
   </main>
 </template>
 

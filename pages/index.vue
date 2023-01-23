@@ -4,7 +4,7 @@
       <div class="container container--narrow">
         <div class="home-header">
           <div class="home-header__content">
-            <p class="eyebrow">Howdy. I'm Traek.</p>
+            <p class="eyebrow">Howdy, I'm Traek.</p>
             <h1>Web Developer <span class="amp">&amp;</span> UI Designer.</h1>
             <p class="lead">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
@@ -64,7 +64,7 @@
       <div class="wave-purple"></div>
       <div class="container container--narrow">
         <div class="d-grid-two-columns">
-          <div class="d-grid__half">
+          <div class="d-grid__column">
             <FancyHeader title="Skills I have" />
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit
@@ -74,7 +74,7 @@
               >Learn more <Icon type="arrowRight"
             /></NuxtLink>
           </div>
-          <div class="d-grid__half">
+          <div class="d-grid__column">
             <div class="callout-blocks">
               <div class="callout-block">
                 <div class="callout-block__icon">
@@ -200,7 +200,6 @@
         </div>
       </div>
     </section>
-
     <section class="section">
       <div class="container container--narrow">
         <CallToAction />

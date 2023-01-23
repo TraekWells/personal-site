@@ -11,7 +11,8 @@
         <p class="lead">{{ blog.summary }}</p>
       </div>
     </header>
-    <article class="section">
+    <article class="section pb-7">
+      <div class="wave-white"></div>
       <div class="container container--narrow">
         <div class="content">
           <div class="content__text">
@@ -31,14 +32,19 @@
         </div>
       </div>
     </article>
-    <article class="section section--secondary">
+    <article class="section pb-7">
       <div class="container container--narrow">
-        <h2>More Stuff I've Written</h2>
+        <FancyHeader title="More stuff I've written" />
         <div class="blogs">
           <BlogCard v-for="blog in moreBlogs" :key="blog.path" :post="blog" />
         </div>
       </div>
     </article>
+    <section class="section">
+      <div class="container container--narrow">
+        <CallToAction />
+      </div>
+    </section>
   </main>
 </template>
 
