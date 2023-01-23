@@ -5,11 +5,6 @@
   display: flex;
   justify-content: space-between;
 
-  @include respond-to(phone) {
-    flex-direction: column;
-    text-align: center;
-  }
-
   &__image-container {
     flex-basis: 40%;
     z-index: 10;

@@ -16,19 +16,19 @@
             </div>
             <div class="d-grid__column">
               <Icon type="arrowRight" />
-              <h4>Header</h4>
+              <h4>Responsive design</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Corporis, assumenda?
               </p>
               <Icon type="arrowRight" />
-              <h4>Header</h4>
+              <h4>Accessible for all</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Corporis, assumenda?
               </p>
               <Icon type="arrowRight" />
-              <h4>Header</h4>
+              <h4>Users first</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Corporis, assumenda?
@@ -48,19 +48,19 @@
             </div>
             <div class="d-grid__column">
               <Icon type="arrowRight" />
-              <h4>Header</h4>
+              <h4>Performant</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Corporis, assumenda?
               </p>
               <Icon type="arrowRight" />
-              <h4>Header</h4>
+              <h4>Accessible for all</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Corporis, assumenda?
               </p>
               <Icon type="arrowRight" />
-              <h4>Header</h4>
+              <h4>Hosting and domain</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Corporis, assumenda?
