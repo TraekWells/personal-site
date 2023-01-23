@@ -37,8 +37,18 @@
   &__item {
     list-style: none;
 
+    a {
+      border-bottom: none;
+    }
+
     &:not(:last-child) {
       margin-right: 3.5rem;
+    }
+
+    &:hover {
+      a {
+        border-bottom: 0.2em solid hsl(var(--color-primary-500));
+      }
     }
   }
 

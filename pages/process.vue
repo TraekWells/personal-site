@@ -57,7 +57,7 @@
         <div class="process-block">
           <div class="process-number">6</div>
           <div class="process-description">
-            <h3></h3>
+            <h3>Maintenance</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Reiciendis itaque sequi repudiandae, quos inventore temporibus.

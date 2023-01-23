@@ -42,7 +42,7 @@
         </li>
         <li class="navigation__item">
           <NuxtLink to="/about-me"
-            ><span class="navigation__link">Who I Am</span></NuxtLink
+            ><span class="navigation__link">About Me</span></NuxtLink
           >
         </li>
         <li class="navigation__item">

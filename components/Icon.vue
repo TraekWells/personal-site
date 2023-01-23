@@ -68,6 +68,18 @@
       />
     </g>
   </svg>
+  <svg
+    v-if="type === 'chevron'"
+    class="icon"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path fill="none" d="M0 0h24v24H0Z" />
+    <path
+      fill="#323232"
+      d="M7.46 10.53l4 4c.29.29.76.29 1.06 0l4-4c.29-.3.29-.77 0-1.07 -.3-.3-.77-.3-1.07 0l-4 4h1.06l-4-4c-.3-.3-.77-.3-1.07 0 -.3.29-.3.76 0 1.06Z"
+    />
+  </svg>
 </template>
 
 <script setup>
@@ -78,9 +90,3 @@ const props = defineProps({
   },
 });
 </script>
-
-<style scoped>
-svg {
-  fill: currentColor;
-}
-</style>
