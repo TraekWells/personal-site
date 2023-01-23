@@ -1,13 +1,23 @@
+@use "../abstracts/mixins" as m;
+
 .d-grid-two-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--gap, 6rem);
+
+  @include m.respond-to(phone) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .d-grid-three-columns {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 6rem;
+
+  @include m.respond-to(phone) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .d-inline {

@@ -4,6 +4,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+
+  @include m.respond-to(phone) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .callout-block {
@@ -32,6 +36,10 @@
     p {
       margin: 1rem 0 0;
     }
+  }
+
+  @include m.respond-to(phone) {
+    aspect-ratio: auto;
   }
 }
 

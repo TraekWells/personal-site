@@ -9,6 +9,10 @@
   &--narrow {
     width: 90%;
     max-width: 95rem;
+
+    @include respond-to(phone) {
+      width: 80%;
+    }
   }
 
   &--wide {
@@ -50,5 +54,13 @@
     top: -10rem;
     height: 10rem;
     z-index: 0;
+  }
+
+  .wave-white,
+  .wave-purple {
+    @include respond-to(phone) {
+      top: -5rem;
+      left: -2rem;
+    }
   }
 }
