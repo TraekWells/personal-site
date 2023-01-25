@@ -36,6 +36,10 @@
       margin: 1rem 0 0;
     }
   }
+
+  @include m.respond-to(phone) {
+    aspect-ratio: auto;
+  }
 }
 
 .skills {
