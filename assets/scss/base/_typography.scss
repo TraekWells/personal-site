@@ -9,10 +9,6 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
-::selection {
-  background-color: hsl(var(--color-primary-300));
-}
-
 body {
   color: hsl(var(--color-gray-900));
 }
@@ -165,6 +161,6 @@ p code {
   &__dots {
     position: absolute;
     top: -1rem;
-    left: -1.5rem;
+    left: -2rem;
   }
 }
