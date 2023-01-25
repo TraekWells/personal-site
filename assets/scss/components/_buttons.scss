@@ -49,7 +49,7 @@ button.button {
 
     &:active,
     &:focus {
-      color: hsl(var(--color-white));
+      color: hsl(var(--color-primary-500));
     }
   }
 }

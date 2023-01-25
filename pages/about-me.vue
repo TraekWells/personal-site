@@ -1,19 +1,27 @@
 <template>
   <PageHeader eyebrow="About me" title="My story" />
   <main>
-    <section class="section">
+    <article class="section pb-7">
       <div class="wave-white"></div>
       <div class="container container--narrow">
-        <div class="about-me">
-          <div class="about-me__image">
-            <img src="/img/me-after-a-run.jpg" alt="Me after a run" />
-          </div>
-          <div class="about-me__content">
+        <div class="content">
+          <div class="content__text">
+            <!-- <div class="content__info">
+              <p>About a {{ wordCount }} minute read.</p>
+            </div> -->
             <ContentDoc />
+          </div>
+          <div class="content__sidebar">
+            <p>Table of Contents</p>
+            <ul>
+              <li v-for="header in tableOfContents" :key="header.id">
+                <a :href="`#${header.link}`">{{ header.text }}</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
+    </article>
   </main>
 </template>
 

@@ -15,6 +15,10 @@
   display: grid;
   grid-template-columns: 1.5fr 2fr;
   gap: 5rem;
+
+  @include respond-to(phone-large) {
+    grid-template-columns: 1fr;
+  }
   &__image {
     border-radius: 1rem;
     overflow: hidden;

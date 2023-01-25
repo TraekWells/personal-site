@@ -96,7 +96,7 @@
               </div>
               <div class="callout-block">
                 <div class="callout-block__icon">
-                  <Icon type="design" />
+                  <Icon type="wordpress" />
                 </div>
                 <div class="callout-block__details">
                   <p class="callout-block__title">Wordpress</p>
@@ -122,14 +122,7 @@
       <div class="container container--narrow">
         <FancyHeader title="Projects I've built" />
         <p class="lead">
-          Here are some of the bigger projects that I've built that I'm proud
-          of. Check out some of my smaller stuff here
-          <a
-            href="https://codepen.io/traekwells"
-            target="_blank"
-            rel="noreferrer noopener"
-            >on CodePen</a
-          >.
+          I've had the great pleasure of working on some great projects.
         </p>
         <div class="projects">
           <ProjectCard

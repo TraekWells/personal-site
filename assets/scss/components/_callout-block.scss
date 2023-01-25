@@ -4,12 +4,15 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+
+  @include m.respond-to(phone-large) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .callout-block {
   background-color: hsl(var(--color-white));
   padding: 2rem;
-  aspect-ratio: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

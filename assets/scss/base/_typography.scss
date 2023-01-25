@@ -101,6 +101,7 @@ a {
   color: hsl(var(--color-primary-700));
   font-size: 1.5rem;
   font-weight: var(--font-weight-medium);
+  margin-top: 0;
 }
 
 li {
@@ -163,7 +164,7 @@ p code {
   position: relative;
   &__dots {
     position: absolute;
-    top: -2rem;
-    left: -2.5rem;
+    top: -1rem;
+    left: -1.5rem;
   }
 }

@@ -1,5 +1,5 @@
 @use "../abstracts/variables" as *;
-@use "../abstracts/mixins" as *;
+@use "../abstracts/mixins" as m;
 
 .container {
   margin: 0 auto;
@@ -9,6 +9,10 @@
   &--narrow {
     width: 90%;
     max-width: 95rem;
+
+    @include m.respond-to(phone-large) {
+      width: 85%;
+    }
   }
 
   &--wide {
@@ -20,7 +24,7 @@
   padding: 5rem 0 17rem;
   position: relative;
 
-  @include respond-to(phone) {
+  @include m.respond-to(phone) {
     padding: 7rem 0;
   }
 
@@ -50,5 +54,12 @@
     top: -10rem;
     height: 10rem;
     z-index: 0;
+  }
+
+  .wave-purple,
+  .wave-white {
+    @include m.respond-to(phone) {
+      top: -4rem;
+    }
   }
 }

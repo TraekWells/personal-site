@@ -1,6 +1,6 @@
 <template>
   <PageHeader eyebrow="Contact me" title="Get in touch" />
-  <section class="section">
+  <section class="section pb-7">
     <div class="wave-white"></div>
     <div class="container container--narrow">
       <div class="d-grid-two-columns">

@@ -29,7 +29,7 @@
   &__list {
     display: flex;
 
-    @include respond-to(phone) {
+    @include respond-to(tab-port) {
       display: none;
     }
   }
@@ -61,7 +61,7 @@
   &__button-open {
     display: none;
 
-    @include respond-to(phone) {
+    @include respond-to(tab-port) {
       display: block;
     }
   }

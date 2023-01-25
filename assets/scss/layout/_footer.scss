@@ -1,7 +1,7 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as m;
 
 .footer {
-  --gap: 7rem;
   background-color: hsl(var(--color-primary-100));
   padding: 5rem 0;
   margin-top: auto;
@@ -17,6 +17,10 @@
     top: -10rem;
     height: 10rem;
     z-index: 0;
+
+    @include m.respond-to(phone) {
+      top: -5rem;
+    }
   }
 }
 

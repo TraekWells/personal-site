@@ -50,11 +50,6 @@
             ><span class="navigation__link">Writing</span></NuxtLink
           >
         </li>
-        <li class="navigation__item">
-          <NuxtLink to="/journal/impossible-list"
-            ><span class="navigation__link">Impossible List</span></NuxtLink
-          >
-        </li>
       </ul>
       <NuxtLink v-if="!mobile" to="/contact-me" class="button button--ghost"
         >Contact Me <Icon type="arrowRight" />
@@ -99,7 +94,7 @@ export default {
   },
   methods: {
     isMobile() {
-      if (window.innerWidth <= 600) {
+      if (window.innerWidth <= 750) {
         this.mobile = true;
       } else {
         this.mobile = false;
