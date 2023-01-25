@@ -162,7 +162,6 @@
             </p>
           </div>
           <div class="d-grid__column">
-            <Icon name="uil:illustration" height="26" width="26" />
             <Icon type="arrowRight" />
             <h4>Header</h4>
             <p>

@@ -1,6 +1,6 @@
 <template>
   <div class="note">
-    <Icon name="uil:info-circle" height="26" width="26" />
+    <Icon type="infoCircle" />
     <slot></slot>
   </div>
 </template>
