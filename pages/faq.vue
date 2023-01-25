@@ -4,6 +4,7 @@
     <section class="section pb-7">
       <div class="wave-white"></div>
       <div class="container container--narrow">
+        <FancyHeader title="Cost, Contracts and Payments" />
         <h2>Cost, Contracts and Payment</h2>
         <Question
           question="How much will it cost?"

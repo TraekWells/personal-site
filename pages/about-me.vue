@@ -12,7 +12,7 @@
             <ContentDoc />
           </div>
           <div class="content__sidebar">
-            <p>Table of Contents</p>
+            <p class="eyebrow">Table of Contents</p>
             <ul>
               <li v-for="header in tableOfContents" :key="header.id">
                 <a :href="`#${header.link}`">{{ header.text }}</a>
