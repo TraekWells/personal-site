@@ -1,6 +1,6 @@
 <template>
   <PageHeader eyebrow="Services" title="Here's how I can help" />
-  <main>
+  <main id="main">
     <section class="section">
       <div class="wave-white"></div>
       <div class="container container--narrow">

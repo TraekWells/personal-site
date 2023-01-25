@@ -1,6 +1,6 @@
 <template>
   <PageHeader eyebrow="Process" title="How does the process work?" />
-  <main>
+  <main id="main">
     <section class="section pb-7">
       <div class="wave-white"></div>
       <div class="container container--narrow">

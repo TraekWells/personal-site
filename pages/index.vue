@@ -1,10 +1,10 @@
 <template>
-  <main>
+  <main id="main">
     <header class="header header--home">
       <div class="container container--narrow">
         <div class="home-header">
           <div class="home-header__content">
-            <p class="eyebrow">Howdy, I'm Traek.</p>
+            <p class="eyebrow">Howdy, I'm Traek. 🐜</p>
             <h1>
               <span class="home-header__highlight"
                 >Web Developer <span class="amp">&amp;</span> UI Designer.</span

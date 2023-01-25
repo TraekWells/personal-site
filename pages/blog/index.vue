@@ -6,7 +6,7 @@
       <NuxtLink to="/journal">journal</NuxtLink> for everything else.
     </p>
   </PageHeader>
-  <main>
+  <main id="main">
     <section class="section">
       <div class="wave-white"></div>
       <div class="container container--narrow">

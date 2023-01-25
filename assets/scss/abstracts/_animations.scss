@@ -3,3 +3,9 @@
     background-position: -200% 0;
   }
 }
+
+@keyframes pointy-arrow {
+  to {
+    left: 2rem;
+  }
+}

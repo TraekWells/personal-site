@@ -2,6 +2,7 @@
   <svg
     v-if="type === 'arrowRight'"
     class="icon"
+    alt="Arrow point to the right"
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
   >

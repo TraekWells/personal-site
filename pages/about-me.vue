@@ -1,6 +1,6 @@
 <template>
   <PageHeader eyebrow="About me" title="My story" />
-  <main>
+  <main id="main">
     <article class="section pb-7">
       <div class="wave-white"></div>
       <div class="container container--narrow">

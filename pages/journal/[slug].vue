@@ -1,5 +1,5 @@
 <template>
-  <main class="post">
+  <main id="main" class="post">
     <header class="header">
       <div class="container container--narrow">
         <ul v-if="journal.tags" class="post__tags">

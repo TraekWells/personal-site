@@ -1,6 +1,6 @@
 <template>
   <PageHeader eyebrow="FAQ" title="Frequently Asked Questions" />
-  <main>
+  <main id="main">
     <section class="section pb-7">
       <div class="wave-white"></div>
       <div class="container container--narrow">
