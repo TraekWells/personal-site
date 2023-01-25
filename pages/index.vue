@@ -5,7 +5,11 @@
         <div class="home-header">
           <div class="home-header__content">
             <p class="eyebrow">Howdy, I'm Traek.</p>
-            <h1>Web Developer <span class="amp">&amp;</span> UI Designer.</h1>
+            <h1>
+              <span class="home-header__highlight"
+                >Web Developer <span class="amp">&amp;</span> UI Designer.</span
+              >
+            </h1>
             <p class="lead">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
               impedit iure ea aut culpa consectetur.

@@ -1,5 +1,6 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
+@use "../abstracts/animations" as *;
 
 .home-header {
   display: flex;
@@ -48,6 +49,27 @@
   .amp {
     font-weight: var(--font-weight-normal);
     font-size: 5rem;
+  }
+
+  &__highlight {
+    -webkit-text-fill-color: transparent;
+    -webkit-animation-duration: 6s;
+    animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: shimmer;
+    animation-name: shimmer;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(
+      90deg,
+      hsl(var(--color-primary-900)) 35%,
+      hsl(var(--color-primary-500)) 50%,
+      hsl(var(--color-primary-900)) 55%
+    );
+    background-size: 250% 100%;
   }
 }
 
