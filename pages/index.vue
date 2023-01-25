@@ -151,7 +151,7 @@
         <div class="d-grid-three-columns">
           <div class="d-grid__column">
             <Icon type="arrowRight" />
-            <h4>Header</h4>
+            <h3>Header</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
               assumenda?
@@ -159,7 +159,7 @@
           </div>
           <div class="d-grid__column">
             <Icon type="arrowRight" />
-            <h4>Header</h4>
+            <h3>Header</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
               assumenda?
@@ -167,7 +167,7 @@
           </div>
           <div class="d-grid__column">
             <Icon type="arrowRight" />
-            <h4>Header</h4>
+            <h3>Header</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
               assumenda?
