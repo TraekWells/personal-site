@@ -1,9 +1,16 @@
+@use "../abstracts/mixins" as m;
+
 .process {
   &-block {
     margin-bottom: 4rem;
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 4rem;
+
+    @include m.respond-to(phone-large) {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
   }
 
   &-number {
