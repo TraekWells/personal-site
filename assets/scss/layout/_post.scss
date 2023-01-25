@@ -144,13 +144,6 @@
     }
 
     p {
-      &:first-of-type {
-        color: hsl(var(--color-primary-700));
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 1.5rem;
-        letter-spacing: 0.05rem;
-      }
       font-size: 1.5rem;
       margin-top: 0;
       margin-bottom: 2rem;

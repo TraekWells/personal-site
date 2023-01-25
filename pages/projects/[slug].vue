@@ -28,7 +28,7 @@
             <ContentDoc />
           </div>
           <div class="content__sidebar">
-            <h4>Technology Used</h4>
+            <p class="eyebrow">Technology Used</p>
             <ul class="technology">
               <li
                 v-for="tech in technology"
@@ -59,7 +59,7 @@
                 <span>{{ tech }}</span>
               </li>
             </ul>
-            <h4>Project Links</h4>
+            <p class="eyebrow">Project Links</p>
             <ul>
               <li>
                 <a
@@ -78,12 +78,7 @@
                 >
               </li>
             </ul>
-            <h4>Table of Contents</h4>
-            <ul>
-              <li v-for="header in tableOfContents" :key="header.id">
-                <a :href="`#${header.link}`">{{ header.text }}</a>
-              </li>
-            </ul>
+            <TableOfContents :headers="tableOfContents" />
           </div>
         </div>
       </div>
