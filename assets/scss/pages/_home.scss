@@ -5,7 +5,7 @@
 .home-header {
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 4rem;
 
   @include respond-to(tab-port) {
     display: block;
@@ -15,7 +15,7 @@
     flex-basis: 40%;
     z-index: 10;
     height: 50rem;
-    margin-bottom: -7rem;
+    margin-bottom: -10rem;
 
     @include respond-to(tab-port) {
       display: none;
@@ -54,8 +54,8 @@
 
   &__highlight {
     -webkit-text-fill-color: transparent;
-    -webkit-animation-duration: 6s;
-    animation-duration: 6s;
+    -webkit-animation-duration: 7s;
+    animation-duration: 7s;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
     -webkit-animation-name: shimmer;

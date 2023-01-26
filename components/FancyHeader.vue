@@ -1,7 +1,7 @@
 <template>
   <div class="fancy-header">
     <HeadingDots />
-    <h2>{{ title }}</h2>
+    <h2 class="mt-0">{{ title }}</h2>
   </div>
 </template>
 

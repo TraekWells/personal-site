@@ -11,9 +11,9 @@
               >
             </h1>
             <p class="lead">
-              As a <span class="underline">user-centric</span> web developer and
-              designer, I understand how to bridge the gap between building
-              something that works and making it look great.
+              As a <span class="underline">user-focused</span> designer and
+              developer, I help people by building platforms that look good,
+              perform great and exceeds user needs.
             </p>
             <div class="d-inline">
               <NuxtLink to="/projects" class="button button--primary mr-2"
@@ -47,10 +47,8 @@
           </div>
           <div class="d-grid__column">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              When someone visits your website, it's in everyone's best interest
+              that they find the answers their looking for.
             </p>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -71,9 +69,10 @@
         <div class="d-grid-two-columns">
           <div class="d-grid__column">
             <FancyHeader title="Skills I have" />
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit
-              sint facere itaque reiciendis ut aperiam.
+            <p class="lead">
+              I've spent a lot of time over the years trying to get better at
+              both design and development, in order to deliver the best possible
+              product.
             </p>
             <NuxtLink to="/services" class="read-more"
               >Learn more <Icon type="arrowRight"
@@ -150,24 +149,24 @@
         </p>
         <div class="d-grid-three-columns">
           <div class="d-grid__column">
-            <Icon type="arrowRight" />
-            <h4>Users come first</h4>
+            <Icon type="user" />
+            <h3>Users come first</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
               assumenda?
             </p>
           </div>
           <div class="d-grid__column">
-            <Icon type="arrowRight" />
-            <h4>Transparency is key</h4>
+            <Icon type="communication" />
+            <h3>Communication is key</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
               assumenda?
             </p>
           </div>
           <div class="d-grid__column">
-            <Icon type="arrowRight" />
-            <h4>Fun and exciting</h4>
+            <Icon type="fun" />
+            <h3>Enjoy the process</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
               assumenda?
