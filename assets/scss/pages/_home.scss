@@ -5,6 +5,7 @@
 .home-header {
   display: flex;
   justify-content: space-between;
+  gap: 2rem;
 
   @include respond-to(tab-port) {
     display: block;
@@ -34,11 +35,11 @@
   &__content {
     h1 {
       font-size: 6rem;
-      font-size: clamp(5rem, 6.5vw, 6rem);
+      font-size: clamp(4.5rem, 6.3vw, 5.5rem);
       line-height: 1.1;
     }
 
-    flex-basis: 55%;
+    flex-basis: 60%;
     z-index: 10;
 
     @include respond-to(tab-port) {

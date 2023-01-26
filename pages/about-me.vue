@@ -6,9 +6,6 @@
       <div class="container container--narrow">
         <div class="content">
           <div class="content__text">
-            <!-- <div class="content__info">
-              <p>About a {{ wordCount }} minute read.</p>
-            </div> -->
             <ContentDoc />
           </div>
           <div class="content__sidebar">

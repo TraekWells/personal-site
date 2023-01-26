@@ -7,12 +7,13 @@
             <p class="eyebrow">Howdy, I'm Traek. 🐜</p>
             <h1>
               <span class="home-header__highlight"
-                >Web Developer <span class="amp">&amp;</span> UI Designer.</span
+                >I build beautiful websites that work.</span
               >
             </h1>
             <p class="lead">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
-              impedit iure ea aut culpa consectetur.
+              As a <span class="underline">user-centric</span> web developer and
+              designer, I understand how to bridge the gap between building
+              something that works and making it look great.
             </p>
             <div class="d-inline">
               <NuxtLink to="/projects" class="button button--primary mr-2"
@@ -37,7 +38,7 @@
       <div class="wave-white"></div>
       <div class="container container--narrow">
         <h2>
-          The goal isn’t to just build a website. The goal is to craft an
+          The goal isn’t just to build a website. The goal is to craft an
           experience that your users will love.
         </h2>
         <div class="d-grid-two-columns">
@@ -135,9 +136,6 @@
             :project="project"
           />
         </div>
-        <NuxtLink to="/services" class="read-more"
-          >See more projects <Icon type="arrowRight"
-        /></NuxtLink>
       </div>
     </div>
 
@@ -146,12 +144,14 @@
       <div class="container container--narrow">
         <FancyHeader title="Beliefs" />
         <p class="lead mb-4">
-          Something about my beliefs as a designer and developer.
+          Over the years, I've gathered a few things that I've come to
+          prioritize in the work I do. I approach every project with these in
+          mind.
         </p>
         <div class="d-grid-three-columns">
           <div class="d-grid__column">
             <Icon type="arrowRight" />
-            <h4>Header</h4>
+            <h4>Users come first</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
               assumenda?
@@ -159,7 +159,7 @@
           </div>
           <div class="d-grid__column">
             <Icon type="arrowRight" />
-            <h4>Header</h4>
+            <h4>Transparency is key</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
               assumenda?
@@ -167,7 +167,7 @@
           </div>
           <div class="d-grid__column">
             <Icon type="arrowRight" />
-            <h4>Header</h4>
+            <h4>Fun and exciting</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
               assumenda?
@@ -182,8 +182,7 @@
       <div class="container container--narrow">
         <h2 class="text-center">Don't take my word for it</h2>
         <p class="lead text-center centered-block">
-          Lucas ipsum dolor sit amet leia chewbacca hutt hutt boba calamari leia
-          dagobah ahsoka antilles. Ben obi-wan kamino solo kessel.
+          Here are some kind words from people I've worked with in the past.
         </p>
         <div class="testimonials">
           <Testimonial
@@ -209,9 +208,6 @@ import getMetaData from "@/config/getMetaData";
 
 const { data: projects } = await useAsyncData("projects", () => {
   return queryContent("/projects").where({ featured: true }).find();
-});
-const { data: blogs } = await useAsyncData("blogs", () => {
-  return queryContent("/blog").where({ draft: false }).find();
 });
 
 const getMeta = () => {
