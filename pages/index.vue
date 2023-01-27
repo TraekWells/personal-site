@@ -66,59 +66,52 @@
     <section class="section section--secondary">
       <div class="wave-purple"></div>
       <div class="container container--narrow">
-        <div class="d-grid-two-columns">
-          <div class="d-grid__column">
-            <FancyHeader title="Skills I have" />
-            <p class="lead">
-              I've spent a lot of time over the years trying to get better at
-              both design and development, in order to deliver the best possible
-              product.
-            </p>
-            <NuxtLink to="/services" class="read-more"
-              >Learn more <Icon type="arrowRight"
-            /></NuxtLink>
+        <FancyHeader title="Skills I have" />
+        <p class="lead">
+          I've spent a lot of time over the years trying to get better at both
+          design and development, in order to deliver the best possible product.
+        </p>
+        <div class="callout-blocks">
+          <div class="callout-block">
+            <div class="callout-block__icon">
+              <Icon type="design" />
+            </div>
+            <div class="callout-block__details">
+              <p class="callout-block__title">UI Design</p>
+              <p>User Experience was my first love.</p>
+            </div>
           </div>
-          <div class="d-grid__column">
-            <div class="callout-blocks">
-              <div class="callout-block">
-                <div class="callout-block__icon">
-                  <Icon type="design" />
-                </div>
-                <div class="callout-block__details">
-                  <p class="callout-block__title">UI Design</p>
-                  <p>User Experience was my first love.</p>
-                </div>
-              </div>
-              <div class="callout-block">
-                <div class="callout-block__icon">
-                  <Icon type="development" />
-                </div>
-                <div class="callout-block__details">
-                  <p class="callout-block__title">Web Development</p>
-                  <p>User Experience was my first love.</p>
-                </div>
-              </div>
-              <div class="callout-block">
-                <div class="callout-block__icon">
-                  <Icon type="wordpress" />
-                </div>
-                <div class="callout-block__details">
-                  <p class="callout-block__title">Wordpress</p>
-                  <p>User Experience was my first love.</p>
-                </div>
-              </div>
-              <div class="callout-block">
-                <div class="callout-block__icon">
-                  <Icon type="design" />
-                </div>
-                <div class="callout-block__details">
-                  <p class="callout-block__title">Convinced?</p>
-                  <p>User Experience was my first love.</p>
-                </div>
-              </div>
+          <div class="callout-block">
+            <div class="callout-block__icon">
+              <Icon type="development" />
+            </div>
+            <div class="callout-block__details">
+              <p class="callout-block__title">Web Development</p>
+              <p>User Experience was my first love.</p>
+            </div>
+          </div>
+          <div class="callout-block">
+            <div class="callout-block__icon">
+              <Icon type="wordpress" />
+            </div>
+            <div class="callout-block__details">
+              <p class="callout-block__title">Wordpress</p>
+              <p>User Experience was my first love.</p>
+            </div>
+          </div>
+          <div class="callout-block">
+            <div class="callout-block__icon">
+              <Icon type="design" />
+            </div>
+            <div class="callout-block__details">
+              <p class="callout-block__title">Convinced?</p>
+              <p>User Experience was my first love.</p>
             </div>
           </div>
         </div>
+        <NuxtLink to="/services" class="read-more"
+          >Learn more about my services <Icon type="arrowRight"
+        /></NuxtLink>
       </div>
     </section>
     <div class="section">
@@ -173,6 +166,9 @@
             </p>
           </div>
         </div>
+        <NuxtLink to="/about-me" class="read-more"
+          >Learn more about me <Icon type="arrowRight"
+        /></NuxtLink>
       </div>
     </section>
 
