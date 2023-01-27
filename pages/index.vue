@@ -72,42 +72,30 @@
           design and development, in order to deliver the best possible product.
         </p>
         <div class="callout-blocks">
-          <div class="callout-block">
-            <div class="callout-block__icon">
-              <Icon type="design" />
-            </div>
-            <div class="callout-block__details">
-              <p class="callout-block__title">UI Design</p>
-              <p>User Experience was my first love.</p>
-            </div>
-          </div>
-          <div class="callout-block">
-            <div class="callout-block__icon">
-              <Icon type="development" />
-            </div>
-            <div class="callout-block__details">
-              <p class="callout-block__title">Web Development</p>
-              <p>User Experience was my first love.</p>
-            </div>
-          </div>
-          <div class="callout-block">
-            <div class="callout-block__icon">
-              <Icon type="wordpress" />
-            </div>
-            <div class="callout-block__details">
-              <p class="callout-block__title">Wordpress</p>
-              <p>User Experience was my first love.</p>
-            </div>
-          </div>
-          <div class="callout-block">
-            <div class="callout-block__icon">
-              <Icon type="design" />
-            </div>
-            <div class="callout-block__details">
-              <p class="callout-block__title">Convinced?</p>
-              <p>User Experience was my first love.</p>
-            </div>
-          </div>
+          <CalloutBox
+            icon="design"
+            title="UI Design"
+            body="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis, assumenda?"
+          />
+          <CalloutBox
+            icon="development"
+            title="Web Development"
+            body="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis, assumenda?"
+          />
+          <CalloutBox
+            icon="wordpress"
+            title="WordPress"
+            body="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis, assumenda?"
+          />
+          <CalloutBox
+            icon="user"
+            title="Convinced?"
+            body="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis, assumenda?"
+          />
         </div>
         <NuxtLink to="/services" class="read-more"
           >Learn more about my services <Icon type="arrowRight"
@@ -141,42 +129,22 @@
           mind.
         </p>
         <div class="callout-blocks">
-          <div class="callout-block">
-            <div class="callout-block__icon">
-              <Icon type="user" />
-            </div>
-            <div class="callout-block__details">
-              <p class="callout-block__title">Users come first</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corporis, assumenda?
-              </p>
-            </div>
-          </div>
-          <div class="callout-block">
-            <div class="callout-block__icon">
-              <Icon type="communication" />
-            </div>
-            <div class="callout-block__details">
-              <p class="callout-block__title">Communication is key</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corporis, assumenda?
-              </p>
-            </div>
-          </div>
-          <div class="callout-block">
-            <div class="callout-block__icon">
-              <Icon type="fun" />
-            </div>
-            <div class="callout-block__details">
-              <p class="callout-block__title">Enjoy the process</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corporis, assumenda?
-              </p>
-            </div>
-          </div>
+          <CalloutBox
+            icon="user"
+            title="Users come first"
+            body="Optimizing websites for the user is absolutely critical in earning their trust and building credibility."
+          />
+          <CalloutBox
+            icon="communication"
+            title="Communication is key"
+            body="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis, assumenda?"
+          />
+          <CalloutBox
+            icon="fun"
+            title="Honesty"
+            body="A lot of problems can be solved with honesty. If there's something I'm unable to do, I'll let you know what point you in the right direction."
+          />
         </div>
         <NuxtLink to="/about-me" class="read-more"
           >Learn more about me <Icon type="arrowRight"
