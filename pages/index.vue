@@ -140,32 +140,88 @@
           prioritize in the work I do. I approach every project with these in
           mind.
         </p>
-        <div class="d-grid-three-columns">
-          <div class="d-grid__column">
-            <Icon type="user" />
-            <h3>Users come first</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
-              assumenda?
-            </p>
+        <div class="callout-blocks">
+          <div class="callout-block">
+            <div class="callout-block__icon">
+              <Icon type="user" />
+            </div>
+            <div class="callout-block__details">
+              <p class="callout-block__title">Users come first</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis, assumenda?
+              </p>
+            </div>
           </div>
-          <div class="d-grid__column">
-            <Icon type="communication" />
-            <h3>Communication is key</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
-              assumenda?
-            </p>
+          <div class="callout-block">
+            <div class="callout-block__icon">
+              <Icon type="user" />
+            </div>
+            <div class="callout-block__details">
+              <p class="callout-block__title">Users come first</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis, assumenda?
+              </p>
+            </div>
           </div>
-          <div class="d-grid__column">
-            <Icon type="fun" />
-            <h3>Enjoy the process</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
-              assumenda?
-            </p>
+          <div class="callout-block">
+            <div class="callout-block__icon">
+              <Icon type="user" />
+            </div>
+            <div class="callout-block__details">
+              <p class="callout-block__title">Users come first</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis, assumenda?
+              </p>
+            </div>
           </div>
         </div>
+        <!-- <div class="d-grid-three-columns">
+          <div class="d-grid__column">
+            <div class="callout-block">
+              <div class="callout-block__icon">
+                <Icon type="user" />
+              </div>
+              <div class="callout-block__details">
+                <p class="callout-block__title">Users come first</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corporis, assumenda?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="d-grid__column">
+            <div class="callout-block">
+              <div class="callout-block__icon">
+                <Icon type="communication" />
+              </div>
+              <div class="callout-block__details">
+                <p class="callout-block__title">Communication is key</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corporis, assumenda?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="d-grid__column">
+            <div class="callout-block">
+              <div class="callout-block__icon">
+                <Icon type="fun" />
+              </div>
+              <div class="callout-block__details">
+                <p class="callout-block__title">Enjoy the process</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corporis, assumenda?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> -->
         <NuxtLink to="/about-me" class="read-more"
           >Learn more about me <Icon type="arrowRight"
         /></NuxtLink>
