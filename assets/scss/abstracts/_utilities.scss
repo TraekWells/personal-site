@@ -29,6 +29,12 @@
   margin-bottom: 10rem;
 }
 
+.mt-15 {
+  margin-top: 1.5rem;
+}
+.mr-2 {
+  margin-right: 2rem;
+}
 .mr-2 {
   margin-right: 2rem;
 }
@@ -45,7 +51,7 @@
 .fancy-image {
   position: relative;
 
-  &::after {
+  &::before {
     content: "";
     border-radius: var(--border-radius-sm);
     position: absolute;
@@ -64,6 +70,10 @@
 
 .image-small {
   width: 6rem;
+}
+
+.text-small {
+  font-size: 1.3rem;
 }
 
 .list-unstyled {

@@ -25,11 +25,16 @@
             </div>
           </div>
           <div class="home-header__image-container fancy-image">
-            <img
-              src="/img/about-me-image.jpg"
-              class="home-header__image"
-              alt="An image of Traek Wells"
-            />
+            <figure class="home-header__image">
+              <img
+                src="/img/about-me-image.jpg"
+                class="home-header__image"
+                alt="An image of Traek Wells"
+              />
+              <figcaption class="text-small text-center mt-15">
+                No one told me that my tie clip was crooked.
+              </figcaption>
+            </figure>
           </div>
         </div>
       </div>
