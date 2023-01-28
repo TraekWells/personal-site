@@ -3,7 +3,7 @@
 .d-grid-two-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--gap, 6rem);
+  gap: var(--gap, 4rem);
 
   @include m.respond-to(phone-large) {
     grid-template-columns: 1fr;
@@ -14,7 +14,7 @@
 .d-grid-three-columns {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 6rem;
+  gap: 2.5rem;
 
   @include m.respond-to(phone-large) {
     grid-template-columns: 1fr;

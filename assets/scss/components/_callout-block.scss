@@ -2,12 +2,9 @@
 
 .callout-blocks {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
-
-  @include m.respond-to(phone-large) {
-    grid-template-columns: 1fr;
-  }
+  margin: 4rem 0;
 }
 
 .callout-block {

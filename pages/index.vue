@@ -11,9 +11,9 @@
               >
             </h1>
             <p class="lead">
-              As a <span class="underline">user-centric</span> web developer and
-              designer, I understand how to bridge the gap between building
-              something that works and making it look great.
+              As a <span class="underline">user-focused</span> designer and
+              developer, I help people by building platforms that look good,
+              perform great and exceeds user needs.
             </p>
             <div class="d-inline">
               <NuxtLink to="/projects" class="button button--primary mr-2"
@@ -52,10 +52,8 @@
           </div>
           <div class="d-grid__column">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              When someone visits your website, it's in everyone's best interest
+              that they find the answers their looking for.
             </p>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -73,58 +71,40 @@
     <section class="section section--secondary">
       <div class="wave-purple"></div>
       <div class="container container--narrow">
-        <div class="d-grid-two-columns">
-          <div class="d-grid__column">
-            <FancyHeader title="Skills I have" />
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit
-              sint facere itaque reiciendis ut aperiam.
-            </p>
-            <NuxtLink to="/services" class="read-more"
-              >Learn more <Icon type="arrowRight"
-            /></NuxtLink>
-          </div>
-          <div class="d-grid__column">
-            <div class="callout-blocks">
-              <div class="callout-block">
-                <div class="callout-block__icon">
-                  <Icon type="design" />
-                </div>
-                <div class="callout-block__details">
-                  <p class="callout-block__title">UI Design</p>
-                  <p>User Experience was my first love.</p>
-                </div>
-              </div>
-              <div class="callout-block">
-                <div class="callout-block__icon">
-                  <Icon type="development" />
-                </div>
-                <div class="callout-block__details">
-                  <p class="callout-block__title">Web Development</p>
-                  <p>User Experience was my first love.</p>
-                </div>
-              </div>
-              <div class="callout-block">
-                <div class="callout-block__icon">
-                  <Icon type="wordpress" />
-                </div>
-                <div class="callout-block__details">
-                  <p class="callout-block__title">Wordpress</p>
-                  <p>User Experience was my first love.</p>
-                </div>
-              </div>
-              <div class="callout-block">
-                <div class="callout-block__icon">
-                  <Icon type="design" />
-                </div>
-                <div class="callout-block__details">
-                  <p class="callout-block__title">Convinced?</p>
-                  <p>User Experience was my first love.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <FancyHeader title="Skills I have" />
+        <p class="lead">
+          I've spent a lot of time over the years trying to get better at both
+          design and development, in order to deliver the best possible product.
+        </p>
+        <div class="callout-blocks">
+          <CalloutBox
+            icon="design"
+            title="UI Design"
+            body="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis, assumenda?"
+          />
+          <CalloutBox
+            icon="development"
+            title="Web Development"
+            body="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis, assumenda?"
+          />
+          <CalloutBox
+            icon="wordpress"
+            title="WordPress"
+            body="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis, assumenda?"
+          />
+          <CalloutBox
+            icon="user"
+            title="Convinced?"
+            body="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis, assumenda?"
+          />
         </div>
+        <NuxtLink to="/services" class="read-more"
+          >Learn more about my services <Icon type="arrowRight"
+        /></NuxtLink>
       </div>
     </section>
     <div class="section">
@@ -153,32 +133,27 @@
           prioritize in the work I do. I approach every project with these in
           mind.
         </p>
-        <div class="d-grid-three-columns">
-          <div class="d-grid__column">
-            <Icon type="arrowRight" />
-            <h4>Users come first</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
-              assumenda?
-            </p>
-          </div>
-          <div class="d-grid__column">
-            <Icon type="arrowRight" />
-            <h4>Transparency is key</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
-              assumenda?
-            </p>
-          </div>
-          <div class="d-grid__column">
-            <Icon type="arrowRight" />
-            <h4>Fun and exciting</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
-              assumenda?
-            </p>
-          </div>
+        <div class="callout-blocks">
+          <CalloutBox
+            icon="user"
+            title="Users come first"
+            body="Optimizing websites for the user is absolutely critical in earning their trust and building credibility."
+          />
+          <CalloutBox
+            icon="communication"
+            title="Communication is key"
+            body="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis, assumenda?"
+          />
+          <CalloutBox
+            icon="fun"
+            title="Honesty"
+            body="A lot of problems can be solved with honesty. If there's something I'm unable to do, I'll let you know what point you in the right direction."
+          />
         </div>
+        <NuxtLink to="/about-me" class="read-more"
+          >Learn more about me <Icon type="arrowRight"
+        /></NuxtLink>
       </div>
     </section>
 
