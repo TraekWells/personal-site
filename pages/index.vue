@@ -81,22 +81,17 @@
           <CalloutBox
             icon="design"
             title="UI Design"
-            body="I'm meticulous about designing websites for a new brand or an existing one."
+            body="Meticulously designing good looking websites for an existing brand, or a brand new one."
           />
           <CalloutBox
             icon="development"
             title="Web Development"
-            body="Going from a static design to an interactive website"
+            body="Taking an existing design or one I've created and building that into to an interactive, usable website."
           />
           <CalloutBox
             icon="user"
             title="User Experience"
-            body="It's vital to solve problems for the user."
-          />
-          <CalloutBox
-            icon="question"
-            title="Convinced?"
-            body="Contact me today to start the process of turning your idea into a living website."
+            body="Making the digital product as usable and enjoyable as possible for the user. This is very important."
           />
         </div>
         <NuxtLink to="/services" class="read-more"
@@ -138,14 +133,13 @@
           />
           <CalloutBox
             icon="communication"
-            title="Communication is key"
-            body="Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corporis, assumenda?"
+            title="I'm here for you"
+            body="I'm here to help your product. You come with the idea of the project and I'll turn it into a reality."
           />
           <CalloutBox
             icon="fun"
             title="Honesty"
-            body="A lot of problems can be solved with honesty. If there's something I'm unable to do, I'll let you know what point you in the right direction."
+            body="I'm transparent about what I can and can't do. You can trust me to give you an honest quote for your project."
           />
         </div>
         <NuxtLink to="/about-me" class="read-more"

@@ -2,7 +2,7 @@
 
 .callout-blocks {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 2rem;
   margin: 4rem 0;
 }

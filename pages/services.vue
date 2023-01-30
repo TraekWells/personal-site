@@ -71,8 +71,9 @@
         <article class="mb-10">
           <FancyHeader title="Tools that I use" />
           <p class="lead">
-            Lucas ipsum dolor sit amet leia chewbacca hutt hutt boba calamari
-            leia dagobah ahsoka antilles. Ben obi-wan kamino solo kessel.
+            I've used a handful of different tools over the years and they all
+            help to accomplish the same goal. Here are some tools that I've come
+            to like the most.
           </p>
           <div class="tools">
             <Tool>
