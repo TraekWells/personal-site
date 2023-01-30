@@ -6,7 +6,7 @@
         <div class="d-grid__column">
           <img
             class="image-rounded image-small"
-            src="https://i.pravatar.cc/50"
+            src="/img/footer-image.jpg"
             alt="An image of Traek Wells"
           />
           <p>

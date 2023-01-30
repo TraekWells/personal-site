@@ -11,9 +11,9 @@
               >
             </h1>
             <p class="lead">
-              As a <span class="underline">user-focused</span> designer and
-              developer, I help people by building platforms that look good,
-              perform great and exceeds user needs.
+              As a <strong>user-focused</strong> designer and developer, I help
+              people by building digital products that look good, perform great
+              and exceed user needs.
             </p>
             <div class="d-inline">
               <NuxtLink to="/projects" class="button button--primary mr-2"
@@ -52,18 +52,19 @@
           </div>
           <div class="d-grid__column">
             <p>
-              When someone visits your website, it's in everyone's best interest
-              that they find the answers their looking for.
+              It's far too easy to fall into the trap of designing a digital
+              product that meet the needs of the designer. Ultimately though,
+              the goal should be to design and build something that cater to
+              your users.
             </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <NuxtLink to="/process" class="read-more"
-              >Learn more about the process <Icon type="arrowRight"
-            /></NuxtLink>
+            <p><strong>That's where I come in.</strong></p>
+            <p>I pride myself in creating websites that:</p>
+            <ul>
+              <li>Optimize digial usability</li>
+              <li>Give the users what their looking for</li>
+              <li>Look great on all devices</li>
+            </ul>
+            <p>All while putting the <strong>user first</strong></p>
           </div>
         </div>
       </div>
@@ -80,26 +81,22 @@
           <CalloutBox
             icon="design"
             title="UI Design"
-            body="Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corporis, assumenda?"
+            body="I'm meticulous about designing websites for a new brand or an existing one."
           />
           <CalloutBox
             icon="development"
             title="Web Development"
-            body="Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corporis, assumenda?"
-          />
-          <CalloutBox
-            icon="wordpress"
-            title="WordPress"
-            body="Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corporis, assumenda?"
+            body="Going from a static design to an interactive website"
           />
           <CalloutBox
             icon="user"
+            title="User Experience"
+            body="It's vital to solve problems for the user."
+          />
+          <CalloutBox
+            icon="question"
             title="Convinced?"
-            body="Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corporis, assumenda?"
+            body="Contact me today to start the process of turning your idea into a living website."
           />
         </div>
         <NuxtLink to="/services" class="read-more"
@@ -112,7 +109,7 @@
       <div class="container container--narrow">
         <FancyHeader title="Projects I've built" />
         <p class="lead">
-          I've had the great pleasure of working on some great projects.
+          I've had the great pleasure of working on some amazing projects.
         </p>
         <div class="projects">
           <ProjectCard

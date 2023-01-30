@@ -9,8 +9,13 @@
   padding: 2rem;
   max-width: 50rem;
 
+  > * {
+    margin-top: 0;
+  }
+
   &__author {
     display: flex;
+    align-items: center;
     gap: 2rem;
   }
 
