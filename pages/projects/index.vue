@@ -1,7 +1,7 @@
 <template>
   <PageHeader eyebrow="Work" title="What I've worked on recently">
     <p class="lead">
-      Here are some of the bigger projects that I've built that I'm proud of.
+      Here are some of my favorite projects that I've worked on.
     </p>
   </PageHeader>
   <section class="section pb-7">

@@ -32,6 +32,7 @@ h1 {
   font-size: 3.5rem;
   margin-bottom: 2rem;
   font-weight: var(--font-weight-heavy);
+  color: hsl(var(--color-primary-900));
 }
 
 h2 {
@@ -92,14 +93,14 @@ strong {
 
 .lead {
   max-width: 80rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   font-size: 2.2rem;
 }
 
 .eyebrow {
   display: block;
   text-transform: uppercase;
-  color: hsl(var(--color-primary-700));
+  color: hsl(var(--color-primary-500));
   font-size: 1.5rem;
   font-weight: var(--font-weight-medium);
   margin-top: 0;

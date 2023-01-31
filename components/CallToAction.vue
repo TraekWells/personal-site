@@ -3,8 +3,9 @@
     <div class="call-to-action__content">
       <h3>Let's work together</h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse dolorem
-        sequi ad!
+        Elevate your online presence with a user-focused website. Reach out for
+        a discovery call & let's turn your ideas into a stunning digital
+        experience.
       </p>
       <div class="d-inline">
         <NuxtLink to="/contact-me" class="button button--ghost"

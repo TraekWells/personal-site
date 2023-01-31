@@ -11,9 +11,9 @@
               >
             </h1>
             <p class="lead">
-              As a <strong>user-focused</strong> designer and developer, I help
-              people by building digital products that look good, perform great
-              and exceed user needs.
+              I'm a freelance web designer and developer, focusing on helping
+              small businesses build an online presence, while putting the
+              <strong>user first</strong>.
             </p>
             <div class="d-inline">
               <NuxtLink to="/projects" class="button button--primary mr-2"
@@ -133,8 +133,8 @@
           />
           <CalloutBox
             icon="communication"
-            title="I'm here for you"
-            body="I'm here to help your product. You come with the idea of the project and I'll turn it into a reality."
+            title="Total package"
+            body="Gone are the days where you had to choose between a beautiful website or a fast one. You can have both."
           />
           <CalloutBox
             icon="fun"

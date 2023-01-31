@@ -10,8 +10,9 @@
             alt="An image of Traek Wells"
           />
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est alias
-            tenetur modi ad esse nisi.
+            I'm a freelance web designer and developer, focusing on helping
+            small businesses build an online presence, while putting the user
+            first.
           </p>
         </div>
         <div class="d-grid__column">
