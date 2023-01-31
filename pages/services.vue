@@ -68,7 +68,7 @@
           <p class="lead">
             I've used a handful of different tools over the years and they all
             help to accomplish the same goal. Here are some tools that I've come
-            to like the most.
+            to love.
           </p>
           <div class="tools">
             <Tool>

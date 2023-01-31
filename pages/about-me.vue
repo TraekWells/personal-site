@@ -9,12 +9,7 @@
             <ContentDoc />
           </div>
           <div class="content__sidebar">
-            <p class="eyebrow">Table of Contents</p>
-            <ul>
-              <li v-for="header in tableOfContents" :key="header.id">
-                <a :href="`#${header.link}`">{{ header.text }}</a>
-              </li>
-            </ul>
+            <TableOfContents :headers="tableOfContents" />
           </div>
         </div>
       </div>
@@ -23,7 +18,19 @@
 </template>
 
 <script setup>
+import { ref, onMounted } from "vue";
 import getMetaData from "@/config/getMetaData";
+const tableOfContents = ref([]);
+
+onMounted(() => {
+  const headers = Array.from(document.querySelectorAll(".content h2"));
+  headers.forEach((header) => {
+    const headerObj = {};
+    headerObj.text = header.textContent;
+    headerObj.link = header.id;
+    tableOfContents.value.push(headerObj);
+  });
+});
 
 const getMeta = () => {
   const metaData = {

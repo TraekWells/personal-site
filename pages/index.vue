@@ -62,7 +62,6 @@
             <ul>
               <li>Optimize digial usability</li>
               <li>Give the users what their looking for</li>
-              <li>Look great on all devices</li>
             </ul>
             <p>All while putting the <strong>user first</strong></p>
           </div>
