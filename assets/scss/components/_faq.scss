@@ -25,6 +25,9 @@
 
   &.open {
     .faq__answer {
+      > :first-child {
+        margin-top: 0;
+      }
       display: block;
     }
     .icon {

@@ -4,17 +4,15 @@
       {{ question }}
       <Icon type="chevron" />
     </p>
-    <p class="faq__answer">{{ answer }}</p>
+    <p class="faq__answer">
+      <slot>{{ answer }}</slot>
+    </p>
   </article>
 </template>
 
 <script setup>
 const props = defineProps({
   question: {
-    type: String,
-    required: true,
-  },
-  answer: {
     type: String,
     required: true,
   },
