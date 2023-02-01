@@ -16,7 +16,8 @@
   &-number {
     background-color: hsl(var(--color-secondary-300));
     aspect-ratio: 1;
-    width: 6rem;
+    width: 5.5rem;
+    margin-top: -1.15rem;
     flex-grow: 0;
     display: flex;
     justify-content: center;

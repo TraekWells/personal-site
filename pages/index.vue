@@ -132,8 +132,8 @@
           />
           <CalloutBox
             icon="communication"
-            title="Total package"
-            body="Gone are the days where you had to choose between a beautiful website or a fast one. You can have both."
+            title="Focused attention"
+            body="I only work with one or two clients at a time which allows me to give clients the attention they need."
           />
           <CalloutBox
             icon="fun"
@@ -156,9 +156,7 @@
         </p>
         <div class="testimonials">
           <Testimonial
-            body="Lucas ipsum dolor sit amet leia chewbacca hutt hutt
-        boba calamari leia dagobah ahsoka antilles. Ben obi-wan kamino solo
-        kessel."
+            body="Traek created a website for me where I can share my artwork, blogs, and accomplishments with the world. He really pulled off a design that fits my personality and passion, so if anyone is looking for a website designer. He’s the perfect person to work with."
             authorName="Emeche Wells"
             authorImage="https://i.pravatar.cc/300"
           />

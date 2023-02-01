@@ -107,8 +107,9 @@ strong {
 }
 
 li {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   line-height: 1.8;
+  margin-bottom: 1rem;
 }
 
 .nuxt-content-highlight {
@@ -164,6 +165,7 @@ p code {
 
 .fancy-header {
   position: relative;
+  margin-top: 3rem;
   &__dots {
     position: absolute;
     top: -1rem;

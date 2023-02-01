@@ -3,12 +3,12 @@
   <section class="section pb-7">
     <div class="wave-white"></div>
     <div class="container container--narrow">
-      <div class="d-grid-two-columns">
+      <div class="d-grid-two-columns half">
         <div class="d-grid__half">
           <h3>Let's work together</h3>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
-            odit amet voluptates sunt voluptate qui.
+            Shoot me a message and let's get started on turning your project
+            into a reality.
           </p>
           <a class="big-link" href="mailto:howdy@traekwells.com"
             >howdy@traekwells.com</a
@@ -17,23 +17,21 @@
         <div class="d-grid__half">
           <h3>Connect with me</h3>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
-            odit amet voluptates sunt voluptate qui.
+            I'm not super active on social media but give me a follow to see
+            what I'm working on.
           </p>
-          <div class="d-inline">
-            <a
-              class="big-link mr-2"
-              href="https://www.linkedin.com/in/traekwells/"
-              target="_blank"
-              >LinkedIn</a
-            >
-            <a
-              class="big-link"
-              href="https://twitter.com/TraekWells"
-              target="_blank"
-              >Twitter</a
-            >
-          </div>
+          <a
+            class="big-link mr-2"
+            href="https://www.linkedin.com/in/traekwells/"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a
+            class="big-link"
+            href="https://twitter.com/TraekWells"
+            target="_blank"
+            >Twitter</a
+          >
         </div>
       </div>
     </div>

@@ -61,29 +61,59 @@
         >
         <Question question="Do I own my website when it's finished?">
           <p>
-            <strong>Yes absolutely</strong>. I'll take care of the development
-            and/or the design and once that part is finished and approved, I'll
-            happily assist you getting the website on a webhost. You own 100% of
-            the website from that point forward.
+            <strong>Yes absolutely</strong>. After the project is finished and
+            I've received the final payment, the website is 100% yours to own
+            and manage. I'll happily assist you in getting the website live on
+            the internet so people can visit, free of charge.
           </p>
         </Question>
         <Question
           question="Are you available for maintence and updates afterwards?"
         >
+          <p>
+            After every project, I'll remain available for general maintenance
+            and updates for 30 days following the completion of the project,
+            free of charge. This is to ensure that all of your questions are
+            answered and you're feeling comfortable with your new website.
+          </p>
+          <p>
+            Optionally, I'm available as a monthly retainer. The rates for that
+            vary depending on how much time you'd need and what kind of updates
+            you'd need me to make.
+          </p>
         </Question>
 
         <FancyHeader title="The process" />
-        <Question question="How long will the process take?"></Question>
-        <Question
-          question="What happens when my website is finished?"
-        ></Question>
+        <Question question="How long will the process take?">
+          <p>
+            I like to spend a minimum of six weeks on a project. That gives me
+            plenty of time to go through the design and development phases in
+            detail. This also allows us to have enough time to communicate
+            feedback during the process.
+          </p>
+          <p>
+            I understand that some projects have a bit more urgency to them and
+            I'm open adjusting the timeline. In my experience, the more time a
+            project is allotted, the more successful it will be.
+          </p>
+        </Question>
 
         <FancyHeader title="Everything else" />
         <Question question="Why do you like ants so much?">
-          <p>I just think ants are super cool.</p>
+          <p>
+            Because they're amazing little creatures. Here are some ant facts:
+          </p>
+          <ul>
+            <li>Ants can lift up to 50 times their body weight.</li>
+            <li>There are over 12,000 species of ants.</li>
+            <li>
+              Ants have two stomaches. One for them and one for sharing with
+              other ants.
+            </li>
+          </ul>
         </Question>
         <Question question="What's your favorite color?">
-          <p>I love me a dark, wine red.</p>
+          <p>I love me a dark wine-like red.</p>
         </Question>
       </div>
     </section>
