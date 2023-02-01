@@ -1,5 +1,10 @@
 <template>
-  <PageHeader eyebrow="About me" title="My story" />
+  <PageHeader eyebrow="About me" title="My story">
+    <p class="lead">
+      From goals of being a concept artist to a zoologist, life led me to my
+      true passion of being a User Interface designer and developer.
+    </p>
+  </PageHeader>
   <main id="main">
     <article class="section pb-7">
       <div class="wave-white"></div>
