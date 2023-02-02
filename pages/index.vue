@@ -26,7 +26,7 @@
         <div class="home-header__image-container fancy-image">
           <figure class="home-header__image">
             <img
-              src="/img/about-me-image.jpg"
+              src="/img/about-me-hero-image.jpg"
               class="home-header__image"
               alt="An image of Traek Wells"
             />
