@@ -109,7 +109,7 @@
               things are running smoothly and all of your questions are
               answered.
             </p>
-            <p>After that 30 day period, there are a few options:</p>
+            <p>After that 30 day period, there are two options:</p>
             <ul>
               <li>
                 We can say our goodbyes, both go our own ways and hopefully work
@@ -117,7 +117,7 @@
               </li>
               <li>
                 Or I'm available as a monthly retainer to be available for
-                general updates and maintenance.
+                general updates and maintenance
               </li>
             </ul>
           </div>

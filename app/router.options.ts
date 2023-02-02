@@ -1,11 +1,11 @@
 import { RouterConfig } from "@nuxt/schema";
 
 export default <RouterConfig>{
-  scrollBehavior(_to, _from, savedPosition) {
-    if (savedPosition) {
-      return savedPosition;
-    } else {
-      return { top: 0 };
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return { el: to.hash };
     }
+
+    return { top: 0 };
   },
 };
