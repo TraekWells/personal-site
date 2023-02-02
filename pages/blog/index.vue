@@ -31,7 +31,7 @@ const getMeta = () => {
     url: `https://traekwells.com/blog`,
     title: "Blog",
     description:
-      "Sharing what I've learned in the hopes solidify the knowledge and helping others however I can.",
+      "A blog where I share what I've learned in the design and front-end development fields.",
   };
 
   return getMetaData(metaData);

@@ -1,7 +1,7 @@
 <template>
   <PageHeader
     eyebrow="Journal"
-    title="Here's some personal stuff that I've written"
+    title="Here's some stuff that doesn't fit into my usual design and development topics."
   >
     <p class="lead">
       This is a place for me to share anything that doesn't fit into my normal

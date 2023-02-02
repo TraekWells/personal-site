@@ -9,7 +9,8 @@
     </div>
   </header>
   <main id="main" class="post">
-    <article class="section">
+    <article class="section pb-7">
+      <div class="wave-white"></div>
       <div class="container container--narrow">
         <div class="content">
           <div class="content__text">
@@ -21,9 +22,9 @@
         </div>
       </div>
     </article>
-    <article class="section section--secondary">
+    <article class="section pb-7">
       <div class="container container--narrow">
-        <h2>Notes from other books</h2>
+        <FancyHeader title="Notes from other books" />
         <div class="books">
           <Book v-for="book in moreBooks" :key="book.path" :book="book" />
         </div>

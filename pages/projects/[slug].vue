@@ -156,7 +156,6 @@ const getMeta = () => {
     url: `https://traekwells.com${path}`,
     title: project.value.title,
     description: project.value.summary,
-    image: project.value.previewImage,
   };
   return getMetaData(
     metaData,

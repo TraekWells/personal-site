@@ -36,7 +36,7 @@ const getMeta = () => {
     url: `https://traekwells.com/projects`,
     title: "Projects",
     description:
-      "Stuff I've built through trial and error, a lot of breaks and just hoping that everything worked.",
+      "Here are some projects that I've worked on that I had a blast doing. I've had the pleasure of working with some great people.",
   };
   return getMetaData(metaData);
 };

@@ -133,7 +133,8 @@ const getMeta = () => {
     type: "page",
     url: `https://traekwells.com/faq`,
     title: "Traek Wells",
-    description: "FAQs",
+    description:
+      "As a client, you might have some questions that a lot of other people have as well. I've compiled this list of questions and I've answered them to clear up any confusion.",
   };
   return getMetaData(metaData);
 };

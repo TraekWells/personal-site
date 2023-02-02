@@ -88,7 +88,6 @@ const getMeta = () => {
     url: `https://traekwells.com${path}`,
     title: blog.value.title,
     description: blog.value.summary,
-    image: blog.value.previewImage,
   };
   return getMetaData(
     metaData,

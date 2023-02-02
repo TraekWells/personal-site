@@ -26,6 +26,12 @@
   }
 }
 
+.d-grid__column {
+  > :first-child {
+    margin-top: 0;
+  }
+}
+
 .d-inline {
   display: flex;
 }

@@ -43,7 +43,7 @@ const getMeta = () => {
     url: `https://traekwells.com/about-me`,
     title: "Traek Wells",
     description:
-      "Traek is a front-end web developer skilled in HTML, CSS, JavaScript and user interface design.",
+      "I'm a freelance User Interface designer and web developer who takes pride in putting the user first in every step of the design process. Let's work together and build your online presence today.",
   };
   return getMetaData(metaData);
 };

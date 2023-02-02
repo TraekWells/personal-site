@@ -140,7 +140,8 @@ const getMeta = () => {
     type: "page",
     url: `https://traekwells.com/process`,
     title: "Traek Wells",
-    description: "Process description",
+    description:
+      "This lays out the step by step process from starting with an email to me, all the way to launching the finished project and celebrating. The goal of this page is to clear up any confusion on what to expect during the process.",
   };
   return getMetaData(metaData);
 };

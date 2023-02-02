@@ -29,7 +29,7 @@ const getMeta = () => {
     url: `https://traekwells.com/bookshelf`,
     title: "Bookshelf",
     description:
-      "Heres a collection of the books I've either read or listened to and my thoughts about them.",
+      "Heres a collection of some books I've either read or listened to and my thoughts about them.",
   };
 
   return getMetaData(metaData);
