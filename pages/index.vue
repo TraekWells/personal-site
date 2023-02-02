@@ -1,44 +1,44 @@
 <template>
-  <main id="main">
-    <header class="header header--home">
-      <div class="container container--narrow">
-        <div class="home-header">
-          <div class="home-header__content">
-            <p class="eyebrow">Howdy, I'm Traek. 🐜</p>
-            <h1>
-              <span class="home-header__highlight"
-                >I build beautiful websites that work.</span
-              >
-            </h1>
-            <p class="lead">
-              I'm a freelance web designer and developer, focusing on helping
-              small businesses build an online presence, while putting the
-              <strong>user first</strong>.
-            </p>
-            <div class="d-inline">
-              <NuxtLink to="/projects" class="button button--primary mr-2"
-                >See My Work <Icon type="arrowRight" />
-              </NuxtLink>
-              <NuxtLink to="/contact-me" class="button button--ghost"
-                >Contact Me
-              </NuxtLink>
-            </div>
-          </div>
-          <div class="home-header__image-container fancy-image">
-            <figure class="home-header__image">
-              <img
-                src="/img/about-me-image.jpg"
-                class="home-header__image"
-                alt="An image of Traek Wells"
-              />
-              <figcaption class="text-small text-center mt-15">
-                No one told me that my tie clip was crooked.
-              </figcaption>
-            </figure>
+  <header class="header header--home">
+    <div class="container container--narrow">
+      <div class="home-header">
+        <div class="home-header__content">
+          <p class="eyebrow">Howdy, I'm Traek. 🐜</p>
+          <h1>
+            <span class="home-header__highlight"
+              >I build beautiful websites that work.</span
+            >
+          </h1>
+          <p class="lead">
+            I'm a freelance web designer and developer, focusing on helping
+            small businesses build an online presence, while putting the
+            <strong>user first</strong>.
+          </p>
+          <div class="d-inline">
+            <NuxtLink to="/projects" class="button button--primary mr-2"
+              >See My Work <Icon type="arrowRight" />
+            </NuxtLink>
+            <NuxtLink to="/contact-me" class="button button--ghost"
+              >Contact Me
+            </NuxtLink>
           </div>
         </div>
+        <div class="home-header__image-container fancy-image">
+          <figure class="home-header__image">
+            <img
+              src="/img/about-me-image.jpg"
+              class="home-header__image"
+              alt="An image of Traek Wells"
+            />
+            <figcaption class="text-small text-center mt-15">
+              No one told me that my tie clip was crooked.
+            </figcaption>
+          </figure>
+        </div>
       </div>
-    </header>
+    </div>
+  </header>
+  <main id="main">
     <section class="section">
       <div class="wave-white"></div>
       <div class="container container--narrow">
@@ -98,7 +98,7 @@
         /></NuxtLink>
       </div>
     </section>
-    <div class="section">
+    <section class="section">
       <div class="wave-white"></div>
       <div class="container container--narrow">
         <FancyHeader title="Projects I've built" />
@@ -113,8 +113,7 @@
           />
         </div>
       </div>
-    </div>
-
+    </section>
     <section class="section section--secondary">
       <div class="wave-purple"></div>
       <div class="container container--narrow">
@@ -146,7 +145,6 @@
         /></NuxtLink>
       </div>
     </section>
-
     <section class="section">
       <div class="wave-white"></div>
       <div class="container container--narrow">

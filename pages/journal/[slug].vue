@@ -1,16 +1,16 @@
 <template>
+  <header class="header">
+    <div class="container container--narrow">
+      <ul v-if="journal.tags" class="post__tags">
+        <li v-for="tag in journal.tags" :key="tag" class="post__tag">
+          {{ tag }}
+        </li>
+      </ul>
+      <h1>{{ journal.title }}</h1>
+      <p class="lead">{{ journal.summary }}</p>
+    </div>
+  </header>
   <main id="main" class="post">
-    <header class="header">
-      <div class="container container--narrow">
-        <ul v-if="journal.tags" class="post__tags">
-          <li v-for="tag in journal.tags" :key="tag" class="post__tag">
-            {{ tag }}
-          </li>
-        </ul>
-        <h1>{{ journal.title }}</h1>
-        <p class="lead">{{ journal.summary }}</p>
-      </div>
-    </header>
     <article class="section">
       <div class="wave-white"></div>
       <div class="container container--narrow">

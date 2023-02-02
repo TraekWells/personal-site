@@ -4,23 +4,25 @@
       Here are some of my favorite projects that I've worked on.
     </p>
   </PageHeader>
-  <section class="section pb-7">
-    <div class="wave-white"></div>
-    <div class="container container--narrow">
-      <div class="projects">
-        <ProjectCard
-          v-for="project in projects"
-          :key="project.path"
-          :project="project"
-        />
+  <main id="main">
+    <section class="section pb-7">
+      <div class="wave-white"></div>
+      <div class="container container--narrow">
+        <div class="projects">
+          <ProjectCard
+            v-for="project in projects"
+            :key="project.path"
+            :project="project"
+          />
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="section">
-    <div class="container container--narrow">
-      <CallToAction />
-    </div>
-  </section>
+    </section>
+    <section class="section">
+      <div class="container container--narrow">
+        <CallToAction />
+      </div>
+    </section>
+  </main>
 </template>
 
 <script setup>

@@ -20,6 +20,12 @@
   }
 }
 
+main {
+  section:first-child {
+    padding-top: 2rem;
+  }
+}
+
 .section {
   padding: 5rem 0 17rem;
   position: relative;

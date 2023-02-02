@@ -1,5 +1,9 @@
 <template>
-  <PageHeader eyebrow="Services" title="Here's how I can help" />
+  <PageHeader eyebrow="Services" title="Here's how I can help">
+    <p class="lead">
+      I have the skills to design and build you a beautiful website that works.
+    </p>
+  </PageHeader>
   <main id="main">
     <section class="section">
       <div class="wave-white"></div>

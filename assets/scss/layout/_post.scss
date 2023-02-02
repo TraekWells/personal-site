@@ -88,6 +88,10 @@
   &__text {
     grid-area: content;
 
+    h2:first-child {
+      margin-top: 0;
+    }
+
     @include respond-to(tab-port) {
       flex-basis: 100%;
       width: 100%;

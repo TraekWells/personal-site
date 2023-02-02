@@ -1,14 +1,14 @@
 <template>
+  <header class="header">
+    <div class="container container--narrow">
+      <h1>
+        {{ book.title }}
+        <span class="book__author">Written by {{ book.author }}</span>
+      </h1>
+      <p class="lead">{{ book.thoughts }}</p>
+    </div>
+  </header>
   <main id="main" class="post">
-    <header class="header">
-      <div class="container container--narrow">
-        <h1>
-          {{ book.title }}
-          <span class="book__author">Written by {{ book.author }}</span>
-        </h1>
-        <p class="lead">{{ book.thoughts }}</p>
-      </div>
-    </header>
     <article class="section">
       <div class="container container--narrow">
         <div class="content">
