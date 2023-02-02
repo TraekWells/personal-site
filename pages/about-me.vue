@@ -6,7 +6,7 @@
     </p>
   </PageHeader>
   <main id="main">
-    <article class="section pb-7">
+    <article class="section pt-0 pb-7">
       <div class="wave-white"></div>
       <div class="container container--narrow">
         <div class="content">
