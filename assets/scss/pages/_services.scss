@@ -4,6 +4,7 @@
   border-radius: var(--border-radius-sm);
   object-fit: cover;
   min-height: 35rem;
+  max-height: 40rem;
 
   @include m.respond-to(phone-large) {
     min-height: auto;

@@ -48,7 +48,11 @@
         </h2>
         <div class="d-grid-two-columns">
           <div class="d-grid__column">
-            <img src="https://via.placeholder.com/450" alt="" />
+            <img
+              class="service-image"
+              src="/img/homepage-featured-image.jpg"
+              alt="Picture of mobile wireframes"
+            />
           </div>
           <div class="d-grid__column">
             <p>
