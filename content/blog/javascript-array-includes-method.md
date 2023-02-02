@@ -1,6 +1,5 @@
 ---
 draft: false
-previewImage: '/img/javascript-hero-image.jpg'
 title: JavaScript Array .includes() Method
 summary:
   The JavaScript array.includes() method checks if an array contains a given
@@ -15,18 +14,17 @@ tags:
 The `includes()` method checks if an element exists in an array and will return a `boolean`. As you may have guessed, it returns `true` if the array has the value and it returns `false` if the array does not contain the value.
 
 ```js
-const insects = ['grasshopper', 'ant', 'hornet', 'fly']
-
-insects.includes('ant') // true
-insects.includes('hornet') // true
-insects.includes('beetle') // false
+const insects = ["grasshopper", "ant", "hornet", "fly"];
+insects.includes("ant"); // true
+insects.includes("hornet"); // true
+insects.includes("beetle"); // false
 ```
 
 ## Syntax
 
 ```js
-array.includes(searchElement)
-array.includes(searchElement, fromIndex)
+array.includes(searchElement);
+array.includes(searchElement, fromIndex);
 ```
 
 ### Parameters

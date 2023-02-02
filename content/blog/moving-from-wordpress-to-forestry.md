@@ -1,6 +1,5 @@
 ---
 draft: false
-previewImage: ""
 title: Moving From WordPress to Forestry
 summary:
   How moving from WordPress to Forestry drastically improved my productivity,

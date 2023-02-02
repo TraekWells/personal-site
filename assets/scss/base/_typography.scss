@@ -161,18 +161,21 @@ blockquote {
   }
 }
 
-// pre,
-// code {
-//   border-radius: 0.3rem;
-//   font-size: 1.5rem;
-//   background-color: hsl(var(--color-primary-100));
-// }
-// pre {
-//   padding: 2rem;
-//   font-size: 1.6rem;
-//   width: 110%;
-//   margin-left: -3%;
-// }
+pre,
+code {
+  border-radius: 0.3rem;
+  font-size: 1.5rem;
+  background-color: hsl(var(--color-primary-100));
+  font-family: monospace;
+}
+
+pre {
+  padding: 2rem;
+  font-size: 1.6rem;
+  width: 110%;
+  margin-left: -3%;
+}
+
 .fancy-header {
   position: relative;
   margin-top: 3rem;
