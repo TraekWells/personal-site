@@ -4,6 +4,7 @@ Write this later.
 
 ## Todos
 
+- [ ] Write meta descriptions
 - [ ] Fix word count
 - [ ] Find a better font for the headers
 - [ ] Create some spacing tokens
