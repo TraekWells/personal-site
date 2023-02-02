@@ -4,11 +4,7 @@
     <div class="container container--narrow">
       <div class="d-grid-two-columns">
         <div class="d-grid__column">
-          <img
-            class="image-rounded image-small"
-            src="/img/footer-image.jpg"
-            alt="An image of Traek Wells"
-          />
+          <p><strong>About me</strong></p>
           <p>
             I'm a freelance web designer and developer, focusing on helping
             small businesses build an online presence, while putting the user
@@ -28,7 +24,7 @@
               </ul>
             </div>
             <div class="d-grid__column">
-              <p><strong>Social Media</strong></p>
+              <p><strong>Social media</strong></p>
               <ul class="list-unstyled">
                 <li>
                   <NuxtLink to="https://twitter.com/TraekWells" target="_blank"

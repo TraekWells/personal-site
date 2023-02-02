@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as m;
 
 html {
   font-family: var(--font-family-body);
@@ -95,6 +96,10 @@ strong {
   max-width: 80rem;
   margin-bottom: 4rem;
   font-size: 2.2rem;
+
+  @include m.respond-to(phone-large) {
+    font-size: 2rem;
+  }
 }
 
 .eyebrow {

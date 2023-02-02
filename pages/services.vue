@@ -18,7 +18,11 @@
           </p>
           <div class="d-grid-two-columns">
             <div class="d-grid__column">
-              <img src="https://via.placeholder.com/450" alt="" />
+              <img
+                class="service-image"
+                src="/img/ui-design-image.jpg"
+                alt="An image of drawings and a laptop"
+              />
             </div>
             <div class="d-grid__column">
               <Icon type="responsive" />
@@ -46,7 +50,11 @@
           </p>
           <div class="d-grid-two-columns">
             <div class="d-grid__column">
-              <img src="https://via.placeholder.com/450" alt="" />
+              <img
+                class="service-image"
+                src="/img/web-development-image.jpg"
+                alt="An image of two computers with code on them"
+              />
             </div>
             <div class="d-grid__column">
               <Icon type="performant" />

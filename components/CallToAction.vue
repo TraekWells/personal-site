@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="call-to-action__image">
-      <img src="https://i.pravatar.cc/1000" alt="An image of Traek Wells" />
+      <img src="/img/footer-image.jpg" alt="An image of Traek Wells" />
     </div>
   </article>
 </template>

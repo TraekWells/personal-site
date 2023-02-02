@@ -1,0 +1,11 @@
+@use "../abstracts/mixins" as m;
+
+.service-image {
+  border-radius: var(--border-radius-sm);
+  object-fit: cover;
+  min-height: 35rem;
+
+  @include m.respond-to(phone-large) {
+    min-height: auto;
+  }
+}
