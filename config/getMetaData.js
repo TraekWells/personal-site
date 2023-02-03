@@ -1,6 +1,6 @@
 const type = "website";
 const url = "https://traekwells.com";
-const title = "Traek Wells | Front-End UI/UX Developer";
+const title = "Traek Wells | User Focused Web Designer and Developer";
 const description =
   "Start building your online presence today by working with me. I'm a freelance User Interface designer and developer who always puts the user first.";
 const image = "/img/open-graph-image.jpg";
