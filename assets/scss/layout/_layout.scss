@@ -1,5 +1,5 @@
-@use '../abstracts/variables' as *;
-@use '../abstracts/mixins' as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as m;
 
 .container {
   margin: 0 auto;
@@ -9,6 +9,10 @@
   &--narrow {
     width: 90%;
     max-width: 95rem;
+
+    @include m.respond-to(phone-large) {
+      width: 85%;
+    }
   }
 
   &--wide {
@@ -16,36 +20,21 @@
   }
 }
 
-.header {
-  background-color: var(--color-primary-100);
-  padding: 12rem 0 4rem;
-  position: relative;
-
-  &__content {
-    position: relative;
-    z-index: 10;
-  }
-
-  &--home {
-    text-align: left;
-  }
-}
-
 .section {
-  padding: 5rem 0 10rem;
+  padding: 5rem 0 17rem;
   position: relative;
 
-  @include respond-to(phone) {
+  @include m.respond-to(phone) {
     padding: 7rem 0;
   }
 
   &--secondary {
-    background-color: var(--color-primary-100);
+    background-color: hsl(var(--color-primary-100));
   }
 
   .wave-white {
     position: absolute;
-    background-image: url('/img/wave-white.svg');
+    background-image: url("/img/wave-white.svg");
     background-repeat: no-repeat;
     background-size: cover;
     left: 0;
@@ -57,7 +46,7 @@
 
   .wave-purple {
     position: absolute;
-    background-image: url('/img/wave-purple.svg');
+    background-image: url("/img/wave-purple.svg");
     background-repeat: no-repeat;
     background-size: cover;
     left: 0;
@@ -65,5 +54,12 @@
     top: -10rem;
     height: 10rem;
     z-index: 0;
+  }
+
+  .wave-purple,
+  .wave-white {
+    @include m.respond-to(phone) {
+      top: -4rem;
+    }
   }
 }

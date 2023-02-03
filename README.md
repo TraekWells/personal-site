@@ -1,20 +1,11 @@
-# Personal Dev Site
+# Personal Site
 
-Write this later.
+This is my site that I use to market myself, document my learnings and tinker with new technology.
 
 ## Todos
 
-- [x] Add 404 page
+- [ ] Write meta descriptions
 - [ ] Fix word count
-- [ ] Remove fiction books from Bookshelf
-- [ ] Add a short about me or share to the bottom of every article
-- [ ] Improve the footer with an image and short bio
-- [x] De-emphasize the social icons
-- [x] Create category blog tags
-- [ ] Think of a more interesting layout
-- [ ] Take a better footer image. Really just take a better image for social profiles.
-- [x] Find a better font for the headers
-- [ ] Implement dark mode. Is this even an option anymore?
-- [x] Add 'More Projects' under a single project post
-- [x] Add 'More Blogs' under a single blog post
-- [ ] Create Table of Contents component
+- [ ] Find a better font for the headers
+- [ ] Create some spacing tokens
+- [ ] When I have more blogs, create a categories page

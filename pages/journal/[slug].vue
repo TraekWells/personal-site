@@ -1,17 +1,18 @@
 <template>
-  <main class="post">
-    <header class="header">
-      <div class="container container--narrow">
-        <ul v-if="journal.tags" class="post__tags">
-          <li v-for="tag in journal.tags" :key="tag" class="post__tag">
-            {{ tag }}
-          </li>
-        </ul>
-        <h1>{{ journal.title }}</h1>
-        <p class="lead">{{ journal.summary }}</p>
-      </div>
-    </header>
+  <header class="header">
+    <div class="container container--narrow">
+      <ul v-if="journal.tags" class="post__tags">
+        <li v-for="tag in journal.tags" :key="tag" class="post__tag">
+          {{ tag }}
+        </li>
+      </ul>
+      <h1>{{ journal.title }}</h1>
+      <p class="lead">{{ journal.summary }}</p>
+    </div>
+  </header>
+  <main id="main" class="post">
     <article class="section">
+      <div class="wave-white"></div>
       <div class="container container--narrow">
         <div class="content">
           <div class="content__text">
@@ -21,12 +22,7 @@
             <ContentDoc />
           </div>
           <div class="content__sidebar">
-            <p>Table of Contents</p>
-            <ul>
-              <li v-for="header in tableOfContents" :key="header.text">
-                <a :href="`#${header.link}`">{{ header.text }}</a>
-              </li>
-            </ul>
+            <TableOfContents :headers="tableOfContents" />
           </div>
         </div>
       </div>
@@ -79,7 +75,6 @@ const getMeta = () => {
     url: `https://traekwells.com${path}`,
     title: journal.value.title,
     description: journal.value.summary,
-    image: journal.value.previewImage,
   };
   return getMetaData(
     metaData,

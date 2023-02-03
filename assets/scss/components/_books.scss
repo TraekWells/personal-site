@@ -1,4 +1,4 @@
-@use '../abstracts/mixins' as *;
+@use "../abstracts/mixins" as *;
 
 .books {
   display: flex;
@@ -47,7 +47,11 @@
   }
 
   &__author {
+    display: block;
     margin: 0 0 0.75rem;
+    font-size: 1.6rem;
+    color: hsl(var(--color-gray-900));
+    font-weight: var(--font-weight-normal);
   }
 
   &__thoughts {

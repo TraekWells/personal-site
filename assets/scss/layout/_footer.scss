@@ -1,14 +1,15 @@
-@use '../abstracts/variables' as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as m;
 
 .footer {
+  background-color: hsl(var(--color-primary-100));
   padding: 5rem 0;
-  text-align: center;
-  margin-top: auto;
+  margin-top: 4rem;
   position: relative;
 
-  .wave-white {
+  .wave-purple {
     position: absolute;
-    background-image: url('/img/wave-white.svg');
+    background-image: url("/img/wave-purple.svg");
     background-repeat: no-repeat;
     background-size: cover;
     left: 0;
@@ -16,6 +17,10 @@
     top: -10rem;
     height: 10rem;
     z-index: 0;
+
+    @include m.respond-to(phone) {
+      top: -5rem;
+    }
   }
 }
 
@@ -29,7 +34,7 @@
 }
 
 .social-icon {
-  background-color: var(--color-primary-100);
+  background-color: hsl(var(--color-white));
   padding: 1.5rem;
   margin-bottom: 2rem;
   display: flex;

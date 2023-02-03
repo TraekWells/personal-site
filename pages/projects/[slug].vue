@@ -1,14 +1,14 @@
 <template>
-  <main class="post">
-    <header class="header">
-      <div class="container container--narrow">
-        <h1>{{ project.title }}</h1>
-        <p class="lead">
-          {{ project.summary }}
-        </p>
-      </div>
-    </header>
-    <article class="section">
+  <header class="header">
+    <div class="container container--narrow">
+      <h1>{{ project.title }}</h1>
+      <p class="lead">
+        {{ project.summary }}
+      </p>
+    </div>
+  </header>
+  <main id="main" class="post">
+    <article class="section pb-7">
       <img
         v-if="project.featuredImage"
         class="featured-image"
@@ -28,7 +28,7 @@
             <ContentDoc />
           </div>
           <div class="content__sidebar">
-            <h4>Technology Used</h4>
+            <p class="eyebrow">Technology Used</p>
             <ul class="technology">
               <li
                 v-for="tech in technology"
@@ -59,7 +59,7 @@
                 <span>{{ tech }}</span>
               </li>
             </ul>
-            <h4>Project Links</h4>
+            <p class="eyebrow">Project Links</p>
             <ul>
               <li>
                 <a
@@ -78,19 +78,14 @@
                 >
               </li>
             </ul>
-            <h4>Table of Contents</h4>
-            <ul>
-              <li v-for="header in tableOfContents" :key="header.id">
-                <a :href="`#${header.link}`">{{ header.text }}</a>
-              </li>
-            </ul>
+            <TableOfContents :headers="tableOfContents" />
           </div>
         </div>
       </div>
     </article>
-    <article class="section">
+    <article class="section pb-7">
       <div class="container container--narrow">
-        <h2>More Projects</h2>
+        <FancyHeader title="More Projects" />
         <div class="projects">
           <ProjectCard
             v-for="project in moreProjects"
@@ -100,6 +95,11 @@
         </div>
       </div>
     </article>
+    <section class="section">
+      <div class="container container--narrow">
+        <CallToAction />
+      </div>
+    </section>
   </main>
 </template>
 
@@ -156,7 +156,6 @@ const getMeta = () => {
     url: `https://traekwells.com${path}`,
     title: project.value.title,
     description: project.value.summary,
-    image: project.value.previewImage,
   };
   return getMetaData(
     metaData,

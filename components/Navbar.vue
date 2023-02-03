@@ -36,26 +36,24 @@
           >
         </li>
         <li class="navigation__item">
-          <NuxtLink to="/blog"
-            ><span class="navigation__link">Writing</span></NuxtLink
-          >
-        </li>
-        <li class="navigation__item">
-          <NuxtLink to="/bookshelf"
-            ><span class="navigation__link">Bookshelf</span></NuxtLink
-          >
-        </li>
-        <li class="navigation__item">
-          <NuxtLink to="/journal/impossible-list"
-            ><span class="navigation__link">Impossible List</span></NuxtLink
+          <NuxtLink to="/services"
+            ><span class="navigation__link">Services</span></NuxtLink
           >
         </li>
         <li class="navigation__item">
           <NuxtLink to="/about-me"
-            ><span class="navigation__link">Who I Am</span></NuxtLink
+            ><span class="navigation__link">About Me</span></NuxtLink
+          >
+        </li>
+        <li class="navigation__item">
+          <NuxtLink to="/blog"
+            ><span class="navigation__link">Writing</span></NuxtLink
           >
         </li>
       </ul>
+      <NuxtLink v-if="!mobile" to="/contact-me" class="button button--ghost"
+        >Contact Me <Icon type="arrowRight" />
+      </NuxtLink>
       <button
         v-if="mobile"
         ref="navigation__buttonOpen"
@@ -96,7 +94,7 @@ export default {
   },
   methods: {
     isMobile() {
-      if (window.innerWidth <= 600) {
+      if (window.innerWidth <= 750) {
         this.mobile = true;
       } else {
         this.mobile = false;

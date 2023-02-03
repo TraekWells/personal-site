@@ -1,5 +1,5 @@
-@use '../abstracts/variables' as *;
-@use '../abstracts/mixins' as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .post .section:first-of-type {
   padding-top: 0;
@@ -10,11 +10,11 @@
     list-style: none;
     margin-bottom: 1.5rem;
     display: flex;
+    justify-content: center;
   }
 
   &__tag {
-    background-color: var(--color-white);
-    // border: 1px solid var(--color-primary-300);
+    background-color: hsl(var(--color-white));
     border-radius: 0.3rem;
     padding: 0.3rem 1rem;
     font-size: 1.2rem;
@@ -37,8 +37,8 @@
   display: grid;
   padding: 0 0 5rem;
   grid-template-areas:
-    'image image'
-    'content sidebar';
+    "image image"
+    "content sidebar";
   grid-template-columns: 2.5fr 1fr;
   gap: 5rem;
 
@@ -49,9 +49,9 @@
 
   @include respond-to(tab-port) {
     grid-template-areas:
-      'image'
-      'sidebar'
-      'content';
+      "image"
+      "sidebar"
+      "content";
     grid-template-columns: 1fr;
   }
 
@@ -75,7 +75,7 @@
   &__info {
     display: flex;
     align-items: center;
-    color: var(--color-gray-500);
+    color: hsl(var(--color-gray-500));
     border-radius: var(--border-radius-sm);
     margin-bottom: 2rem;
 
@@ -88,6 +88,10 @@
   &__text {
     grid-area: content;
 
+    h2:first-child {
+      margin-top: 0;
+    }
+
     @include respond-to(tab-port) {
       flex-basis: 100%;
       width: 100%;
@@ -98,7 +102,7 @@
     }
 
     aside {
-      background-color: var(--color-primary-100);
+      background-color: hsl(var(--color-primary-100));
       padding: 2rem;
       border-radius: var(--border-radius-sm);
 
@@ -144,13 +148,6 @@
     }
 
     p {
-      &:first-of-type {
-        color: var(--color-primary-700);
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 1.5rem;
-        letter-spacing: 0.05rem;
-      }
       font-size: 1.5rem;
       margin-top: 0;
       margin-bottom: 2rem;
@@ -174,7 +171,7 @@
   h2 {
     &::before {
       display: block;
-      content: '';
+      content: "";
       margin-top: -10rem;
       height: 10rem;
       visibility: hidden;

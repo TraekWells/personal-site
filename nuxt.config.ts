@@ -55,5 +55,10 @@ export default defineNuxtConfig({
     },
   },
   css: ["@/assets/scss/main.scss"],
-  modules: ["@nuxt/content", "nuxt-icon"],
+  modules: ["@nuxt/content"],
+  content: {
+    highlight: {
+      theme: "min-light",
+    },
+  },
 });

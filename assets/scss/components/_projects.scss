@@ -2,9 +2,9 @@
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  margin: 4rem 0;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  margin: 5rem 0;
 
   @include respond-to(tab-port) {
     grid-template-columns: repeat(1, 1fr);
@@ -12,18 +12,21 @@
 }
 
 .project {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  gap: 5rem;
+
+  @include respond-to(phone-large) {
+    grid-template-columns: 1fr;
+  }
   &__image {
     border-radius: 1rem;
     overflow: hidden;
   }
 
-  &__content {
-    padding: 2rem;
-  }
-
   .read-more {
     font-size: 1.8rem;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     border-bottom: none;
 

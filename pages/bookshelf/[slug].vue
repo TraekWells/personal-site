@@ -1,34 +1,30 @@
 <template>
-  <main class="post">
-    <header class="header">
-      <div class="container container--narrow">
-        <h1>
-          {{ book.title }}
-          <span class="book__author">Written by {{ book.author }}</span>
-        </h1>
-        <p class="lead">{{ book.thoughts }}</p>
-      </div>
-    </header>
-    <article class="section">
+  <header class="header">
+    <div class="container container--narrow">
+      <h1>
+        {{ book.title }}
+        <span class="book__author">Written by {{ book.author }}</span>
+      </h1>
+      <p class="lead">{{ book.thoughts }}</p>
+    </div>
+  </header>
+  <main id="main" class="post">
+    <article class="section pb-7">
+      <div class="wave-white"></div>
       <div class="container container--narrow">
         <div class="content">
           <div class="content__text">
             <ContentDoc />
           </div>
           <div class="content__sidebar">
-            <p>Table of Contents</p>
-            <ul>
-              <li v-for="header in tableOfContents" :key="header.id">
-                <a :href="`#${header.link}`">{{ header.text }}</a>
-              </li>
-            </ul>
+            <TableOfContents :headers="tableOfContents" />
           </div>
         </div>
       </div>
     </article>
-    <article class="section section--secondary">
+    <article class="section pb-7">
       <div class="container container--narrow">
-        <h2>Notes from other books</h2>
+        <FancyHeader title="Notes from other books" />
         <div class="books">
           <Book v-for="book in moreBooks" :key="book.path" :book="book" />
         </div>

@@ -1,0 +1,26 @@
+.testimonials {
+  display: grid;
+  place-content: center;
+}
+
+.testimonial {
+  background-color: hsl(var(--color-primary-100));
+  border-radius: var(--border-radius-sm);
+  padding: 2rem;
+  max-width: 65rem;
+
+  > * {
+    margin-top: 0;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__author-image {
+    border-radius: 50%;
+    width: 6rem;
+  }
+}

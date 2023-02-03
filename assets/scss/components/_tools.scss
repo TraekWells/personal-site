@@ -1,0 +1,16 @@
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.tool {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(var(--color-primary-100));
+  border-radius: var(--border-radius-xsm);
+  padding: 2rem;
+  aspect-ratio: 1;
+  width: 11rem;
+}

@@ -1,54 +1,55 @@
-@use '../abstracts/variables' as *;
+@use "../abstracts/variables" as *;
 
 .button {
-  display: inline-block;
+  display: flex;
+  align-items: center;
 }
 
 .button,
 button.button {
   text-decoration: none;
   border-radius: 3rem;
-  padding: 1rem 2.5rem;
-  font-size: 1.8rem;
+  padding: 0.65rem 1.75rem;
+  font-size: 1.7rem;
   transition: 0.3s ease all;
   cursor: pointer;
 
   &--primary {
-    background-color: var(--color-primary-500);
-    color: var(--color-white);
+    background-color: hsl(var(--color-primary-500));
+    color: hsl(var(--color-white));
     border: none;
 
     &:link {
-      color: var(--color-white);
+      color: hsl(var(--color-white));
     }
     &:hover {
-      background-color: var(--color-primary-700);
+      background-color: hsl(var(--color-primary-700));
       border: none;
     }
 
     &:active,
     &:focus {
-      color: var(--color-white);
+      color: hsl(var(--color-white));
     }
   }
 
   &--ghost {
-    background-color: var(--color-white);
-    border: 2px solid var(--color-primary-500);
-    color: var(--color-primary-500);
+    background-color: hsl(var(--color-white));
+    border: 2px solid hsl(var(--color-primary-500));
+    color: hsl(var(--color-primary-500));
 
     &:link {
-      color: var(--color-primary-500);
+      color: hsl(var(--color-primary-500));
     }
     &:hover {
-      background-color: var(--color-primary-700);
-      color: var(--color-white);
+      background-color: hsl(var(--color-primary-700));
+      color: hsl(var(--color-white));
       border: 2px solid transparent;
     }
 
     &:active,
     &:focus {
-      color: var(--color-white);
+      color: hsl(var(--color-primary-500));
     }
   }
 }

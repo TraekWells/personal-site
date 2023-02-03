@@ -9,7 +9,7 @@
       </h3>
       <p>{{ project.summary }}</p>
       <NuxtLink :to="project._path" class="read-more"
-        >Project Details <Icon name="uil:arrow-right" height="26" width="26" />
+        >Project Details <Icon type="arrowRight" />
       </NuxtLink>
     </div>
   </article>

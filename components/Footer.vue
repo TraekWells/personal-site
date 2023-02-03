@@ -1,51 +1,66 @@
 <template>
   <footer class="footer">
-    <div class="wave-white"></div>
-    <div class="container">
-      <p>Connect With Me</p>
-      <div class="social-icons">
-        <a
-          href="https://twitter.com/TraekWells"
-          class="social-icon"
-          target="_blank"
-          rel="noreferrer noopener"
-          alt="Link to Twitter"
-          ><Icon name="uil:twitter" height="26" width="26"
-        /></a>
-        <a
-          href="https://github.com/TraekWells"
-          class="social-icon"
-          target="_blank"
-          rel="noreferrer noopener"
-          alt="Link to GitHub"
-          ><Icon name="uil:github" height="26" width="26"
-        /></a>
-        <a
-          href="https://www.instagram.com/traekwells/"
-          class="social-icon"
-          target="_blank"
-          rel="noreferrer noopener"
-          alt="Link to Instagram"
-          ><Icon name="uil:instagram" height="26" width="26"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/traekwells/"
-          class="social-icon"
-          target="_blank"
-          rel="noreferrer noopener"
-          alt="Link to LinkedIn"
-          ><Icon name="uil:linkedin" height="26" width="26"
-        /></a>
-        <a
-          href="https://dribbble.com/TraekWells"
-          class="social-icon"
-          target="_blank"
-          rel="noreferrer noopener"
-          alt="Link to Dribbble"
-          ><Icon name="uil:dribbble" height="26" width="26"
-        /></a>
+    <div class="wave-purple"></div>
+    <div class="container container--narrow">
+      <div class="d-grid-two-columns">
+        <div class="d-grid__column">
+          <p><strong>About me</strong></p>
+          <p>
+            I'm a freelance web designer and developer, focusing on helping
+            small businesses build an online presence, while putting the user
+            first.
+          </p>
+        </div>
+        <div class="d-grid__column">
+          <div class="d-grid-two-columns">
+            <div class="d-grid__column">
+              <p><strong>Pages</strong></p>
+              <ul class="list-unstyled">
+                <li><NuxtLink to="/services">Services</NuxtLink></li>
+                <li><NuxtLink to="/projects">Projects</NuxtLink></li>
+                <li><NuxtLink to="/process">Process</NuxtLink></li>
+                <li><NuxtLink to="/faq">FAQ</NuxtLink></li>
+                <li><NuxtLink to="/about-me">About Me</NuxtLink></li>
+              </ul>
+            </div>
+            <div class="d-grid__column">
+              <p><strong>Social media</strong></p>
+              <ul class="list-unstyled">
+                <li>
+                  <NuxtLink to="https://twitter.com/TraekWells" target="_blank"
+                    >Twitter</NuxtLink
+                  >
+                </li>
+                <li>
+                  <NuxtLink
+                    to="https://www.linkedin.com/in/traekwells/"
+                    target="_blank"
+                    >LinkedIn</NuxtLink
+                  >
+                </li>
+                <li>
+                  <NuxtLink
+                    to="https://www.instagram.com/traekwells/"
+                    target="_blank"
+                    >Instagram</NuxtLink
+                  >
+                </li>
+                <li>
+                  <NuxtLink to="https://dribbble.com/TraekWells" target="_blank"
+                    >Dribbble</NuxtLink
+                  >
+                </li>
+                <li>
+                  <NuxtLink to="https://github.com/TraekWells" target="_blank"
+                    >GitHub</NuxtLink
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-      <p>
+      <p class="text-center mt-4">
         &copy; Traek Wells {{ date }}. Built with
         <a href="https://nuxt.com/" target="_blank" rel="noreferrer">Nuxt</a>.
         <a

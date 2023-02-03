@@ -24,7 +24,7 @@
       <p class="book__author">{{ book.author }}</p>
       <p class="book__thoughts">{{ book.thoughts }}</p>
       <NuxtLink :to="book._path" class="read-more"
-        >Book Notes <Icon name="uil:arrow-right" height="26" width="26"
+        >Book notes <Icon type="arrowRight"
       /></NuxtLink>
     </div>
   </div>

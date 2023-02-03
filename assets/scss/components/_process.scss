@@ -1,0 +1,29 @@
+@use "../abstracts/mixins" as m;
+
+.process {
+  &-block {
+    margin-bottom: 4rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 4rem;
+
+    @include m.respond-to(phone-large) {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+
+  &-number {
+    background-color: hsl(var(--color-secondary-300));
+    aspect-ratio: 1;
+    width: 5.5rem;
+    margin-top: -1.15rem;
+    flex-grow: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: var(--font-weight-medium);
+    font-size: 2rem;
+    border-radius: var(--border-radius-xsm);
+  }
+}
