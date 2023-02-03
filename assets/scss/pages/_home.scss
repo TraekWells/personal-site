@@ -54,8 +54,8 @@
 
   &__highlight {
     -webkit-text-fill-color: transparent;
-    -webkit-animation-duration: 7s;
-    animation-duration: 7s;
+    -webkit-animation-duration: 5.5s;
+    animation-duration: 5.5s;
     animation-delay: 0;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
@@ -71,7 +71,7 @@
       hsl(var(--color-primary-500)) 50%,
       hsl(var(--color-primary-900)) 55%
     );
-    background-size: 250% 100%;
+    background-size: 240% 100%;
   }
 }
 
