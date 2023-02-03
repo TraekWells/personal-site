@@ -1,13 +1,13 @@
 ---
 title: The Bookshelf
 summary:
-  An website that allows users to discover new books, create a list of books
+  A website that allows users to discover new books, create a list of books
   to read later and review the books they've read.
-previewImage: '/img/the-bookshelf-devices.jpg'
+previewImage: "/img/the-bookshelf-devices.jpg"
 linkToProject: https://thenewbookshelf.com
 linkToCode: https://github.com/TraekWells/the-bookshelf
 technology: Vue, Google Firebase, Google Books API, Tailwind CSS
-featured: true
+featured: false
 draft: false
 ---
 

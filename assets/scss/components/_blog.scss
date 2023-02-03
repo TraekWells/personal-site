@@ -12,7 +12,6 @@
 
   @include respond-to(phone) {
     flex-direction: column;
-    padding: 3rem;
     background-color: hsl(var(--color-white));
   }
 

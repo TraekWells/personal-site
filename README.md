@@ -4,7 +4,7 @@ This is my site that I use to market myself, document my learnings and tinker wi
 
 ## Todos
 
-- [ ] Write meta descriptions
+- [ ] Add labels to tool icons
 - [ ] Fix word count
 - [ ] Find a better font for the headers
 - [ ] Create some spacing tokens
