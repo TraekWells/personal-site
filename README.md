@@ -4,6 +4,7 @@ This is my site that I use to market myself, document my learnings and tinker wi
 
 ## Todos
 
+- [ ] Find a better way to manage meta tags
 - [ ] Add labels to tool icons
 - [ ] Fix word count
 - [ ] Find a better font for the headers

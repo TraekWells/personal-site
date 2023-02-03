@@ -62,20 +62,20 @@ import getMetaData from "@/config/getMetaData";
 const getMeta = () => {
   const metaData = {
     type: "page",
-    url: `https://traekwells.com/about-me`,
-    title: "Traek Wells",
+    url: `https://traekwells.com/contact-me`,
     description:
       "Contact me today so that we can start to turn your web project into a reality.",
   };
   return getMetaData(metaData);
 };
 useHead({
+  title: "Contact Me",
   meta: getMeta,
   link: [
     {
       hid: "canonical",
       rel: "canonical",
-      href: `https://traekwells.com/about-me`,
+      href: `https://traekwells.com/contact-me`,
     },
   ],
 });

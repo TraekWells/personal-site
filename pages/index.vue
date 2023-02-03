@@ -184,13 +184,13 @@ const getMeta = () => {
   const metaData = {
     type: "page",
     url: `https://traekwells.com/`,
-    title: "Traek Wells",
     description:
       "Start building your online presence today by working with me. I'm a freelance User Interface designer and developer who always puts the user first.",
   };
   return getMetaData(metaData);
 };
 useHead({
+  title: "Home",
   meta: getMeta,
   link: [
     {

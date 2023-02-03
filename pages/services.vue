@@ -116,19 +116,20 @@ import getMetaData from "@/config/getMetaData";
 const getMeta = () => {
   const metaData = {
     type: "page",
-    url: `https://traekwells.com/process`,
-    title: "Traek Wells",
-    description: "Process description",
+    url: `https://traekwells.com/services`,
+    description:
+      "I offer web design and web development services to small businesses that want to build or expand their online presence.",
   };
   return getMetaData(metaData);
 };
 useHead({
+  title: "Services",
   meta: getMeta,
   link: [
     {
       hid: "canonical",
       rel: "canonical",
-      href: `https://traekwells.com/process`,
+      href: `https://traekwells.com/services`,
     },
   ],
 });

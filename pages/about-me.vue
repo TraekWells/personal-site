@@ -41,13 +41,13 @@ const getMeta = () => {
   const metaData = {
     type: "page",
     url: `https://traekwells.com/about-me`,
-    title: "Traek Wells",
     description:
       "I'm a freelance User Interface designer and web developer who takes pride in putting the user first in every step of the design process. Let's work together and build your online presence today.",
   };
   return getMetaData(metaData);
 };
 useHead({
+  title: "About Me",
   meta: getMeta,
   link: [
     {

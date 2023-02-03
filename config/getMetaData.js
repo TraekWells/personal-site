@@ -2,9 +2,10 @@ const type = "website";
 const url = "https://traekwells.com";
 const title = "Traek Wells | Front-End UI/UX Developer";
 const description =
-  "Personal developer website for Traek Wells, a Front-end Developer and UI Designer";
+  "Start building your online presence today by working with me. I'm a freelance User Interface designer and developer who always puts the user first.";
 const image = "/img/open-graph-image.jpg";
-const keywords = "UI, UX, Web Developer, HTML, CSS, JavaScript, React, Vue";
+const keywords =
+  "UI, UX, Freelance Web designer, Freelance Web developer, HTML, CSS, JavaScript, React, Vue, Wordpress";
 
 export default (meta) => {
   return [
