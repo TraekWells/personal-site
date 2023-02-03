@@ -29,6 +29,13 @@ h4 {
   color: hsl(var(--color-primary-700));
 }
 
+h1,
+h2 {
+  @include m.respond-to(phone-large) {
+    line-height: 1.3;
+  }
+}
+
 h1 {
   font-size: 3.5rem;
   margin-bottom: 2rem;
@@ -174,6 +181,10 @@ pre {
   font-size: 1.6rem;
   width: 110%;
   margin-left: -3%;
+
+  @include m.respond-to(phone-large) {
+    width: 100%;
+  }
 }
 
 .fancy-header {

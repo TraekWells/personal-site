@@ -42,10 +42,10 @@
     <section class="section">
       <div class="wave-white"></div>
       <div class="container container--narrow">
-        <h2>
-          The goal isn’t just to build a website. The goal is to craft an
-          experience that your users will love.
-        </h2>
+        <p class="lead">
+          The goal isn’t just to simply <em>build</em> a website. The goal is to
+          craft an experience that your <strong>users will love</strong>.
+        </p>
         <div class="d-grid-two-columns">
           <div class="d-grid__column">
             <img
@@ -57,17 +57,17 @@
           <div class="d-grid__column">
             <p>
               It's far too easy to fall into the trap of designing a digital
-              product that meet the needs of the designer. Ultimately though,
-              the goal should be to design and build something that cater to
-              your users.
+              product that meet the needs of just the designer. Ultimately
+              though, the goal should be to design and build something that
+              caters to your users.
             </p>
             <p><strong>That's where I come in.</strong></p>
             <p>I pride myself in creating websites that:</p>
             <ul>
-              <li>Optimize digial usability</li>
+              <li>Optimize digital usability</li>
               <li>Give the users what their looking for</li>
             </ul>
-            <p>All while putting the <strong>user first</strong></p>
+            <p>All while putting the <strong>user first</strong>.</p>
           </div>
         </div>
       </div>
@@ -77,8 +77,9 @@
       <div class="container container--narrow">
         <FancyHeader title="Skills I have" />
         <p class="lead">
-          I've spent a lot of time over the years trying to get better at both
-          design and development, in order to deliver the best possible product.
+          I've spent a lot of time over the years working hard to get better at
+          both design and development, in order to deliver the best possible
+          product.
         </p>
         <div class="callout-blocks">
           <CalloutBox
@@ -152,7 +153,7 @@
     <section class="section">
       <div class="wave-white"></div>
       <div class="container container--narrow">
-        <h2 class="text-center">Don't take my word for it</h2>
+        <h2 class="text-center">What others have said about me</h2>
         <p class="lead text-center centered-block">
           Here are some kind words from people I've worked with in the past.
         </p>

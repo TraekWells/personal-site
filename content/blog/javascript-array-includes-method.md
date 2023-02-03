@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 title: JavaScript Array .includes() Method
 summary:
   The JavaScript array.includes() method checks if an array contains a given
