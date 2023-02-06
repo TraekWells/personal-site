@@ -68,7 +68,7 @@
           </p>
         </Question>
         <Question
-          question="Are you available for maintence and updates afterwards?"
+          question="Are you available for maintenance and updates afterwards?"
         >
           <p>
             After every project, I'll remain available for general maintenance
@@ -86,10 +86,10 @@
         <FancyHeader title="The process" />
         <Question question="How long will the process take?">
           <p>
-            I like to spend a minimum of six weeks on a project. That gives me
-            plenty of time to go through the design and development phases in
-            detail. This also allows us to have enough time to communicate
-            feedback during the process.
+            I like to spend a minimum of <strong>six</strong> weeks on a
+            project. That gives me plenty of time to go through the design and
+            development phases in detail. This also allows us to have enough
+            time to communicate feedback during the process.
           </p>
           <p>
             I understand that some projects have a bit more urgency to them and
