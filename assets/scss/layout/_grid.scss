@@ -7,6 +7,11 @@
 
   &.half {
     grid-template-columns: 1fr 1fr;
+
+    @include m.respond-to(phone-large) {
+      grid-template-columns: 1fr;
+      gap: var(--gap, 6rem);
+    }
   }
 
   @include m.respond-to(phone-large) {
