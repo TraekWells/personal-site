@@ -67,6 +67,11 @@ p {
   line-height: 1.6;
 }
 
+label,
+input {
+  font-size: 1.8rem;
+}
+
 a {
   // Should I use clamp here?
   font-size: inherit;

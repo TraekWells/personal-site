@@ -1,0 +1,28 @@
+.form {
+  label {
+    margin-bottom: 0.75rem;
+  }
+  input,
+  textarea {
+    padding: 1rem;
+    border-radius: var(--border-radius-xsm);
+    border: 0;
+    box-shadow: 0 0 0 0.1rem hsl(var(--color-gray-700));
+    font-size: 1.8rem;
+
+    &::placeholder {
+      font-size: 1.8rem;
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 0 0.1rem hsl(var(--color-primary-700));
+    }
+  }
+
+  &-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+}

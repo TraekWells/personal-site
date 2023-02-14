@@ -6,32 +6,51 @@
       <div class="container container--narrow">
         <div class="d-grid-two-columns half">
           <div class="d-grid__half">
-            <h3>Let's work together</h3>
+            <form name="contact-form" class="form" data-netlify="true">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Enter your name"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter your email address"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="more-details">Anything else?</label>
+                <textarea
+                  id="more-details"
+                  cols="30"
+                  rows="6"
+                  name="more-details"
+                  placeholder="Any other details I should know?"
+                ></textarea>
+              </div>
+              <button class="button button--primary">
+                Send Message <Icon type="arrowRight" />
+              </button>
+            </form>
+          </div>
+          <div class="d-grid__half">
             <p>
-              Shoot me a message and let's get started on turning your project
-              into a reality.
+              I'll respond to your message within 24 to 48 hours as long as I'm
+              not on vacation. Prefer to send a direct email and skip the form?
+              Feel free to send me a message to email below. Looking forward to
+              chatting with you!
             </p>
             <a class="big-link" href="mailto:howdy@traekwells.com"
               >howdy@traekwells.com</a
-            >
-          </div>
-          <div class="d-grid__half">
-            <h3>Connect with me</h3>
-            <p>
-              I'm not super active on social media but give me a follow to see
-              what I'm working on.
-            </p>
-            <a
-              class="big-link mr-2"
-              href="https://www.linkedin.com/in/traekwells/"
-              target="_blank"
-              >LinkedIn</a
-            >
-            <a
-              class="big-link"
-              href="https://twitter.com/TraekWells"
-              target="_blank"
-              >Twitter</a
             >
           </div>
         </div>
