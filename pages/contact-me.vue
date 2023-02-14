@@ -6,7 +6,13 @@
       <div class="container container--narrow">
         <div class="d-grid-two-columns half">
           <div class="d-grid__half">
-            <form name="contact-form" class="form" data-netlify="true">
+            <form
+              name="contact-form"
+              action="/thank-you"
+              class="form"
+              method="post"
+              data-netlify="true"
+            >
               <div class="form-group">
                 <label for="name">Name</label>
                 <input
