@@ -1,7 +1,7 @@
 <template>
   <article class="project">
     <div class="project__image">
-      <nuxt-img
+      <img
         format="webp"
         :src="project.previewImage"
         :alt="project.title"

@@ -25,8 +25,7 @@
         </div>
         <div class="home-header__image-container fancy-image">
           <figure class="home-header__image">
-            <nuxt-img
-              format="webp"
+            <img
               src="/img/about-me-hero-image.jpg"
               class="home-header__image"
               alt="An image of Traek Wells"
@@ -49,8 +48,7 @@
         </p>
         <div class="d-grid-two-columns">
           <div class="d-grid__column">
-            <nuxt-img
-              format="webp"
+            <img
               class="service-image"
               src="/img/homepage-featured-image.jpg"
               alt="Picture of mobile wireframes"

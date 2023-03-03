@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="call-to-action__image">
-      <nuxt-img
+      <img
         format="webp"
         src="/img/footer-image.jpg"
         alt="An image of Traek Wells"
