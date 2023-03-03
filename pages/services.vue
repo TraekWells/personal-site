@@ -18,7 +18,8 @@
           </p>
           <div class="d-grid-two-columns">
             <div class="d-grid__column">
-              <img
+              <nuxt-img
+                format="wep"
                 class="service-image"
                 src="/img/ui-design-image.jpg"
                 alt="An image of drawings and a laptop"
@@ -50,7 +51,8 @@
           </p>
           <div class="d-grid-two-columns">
             <div class="d-grid__column">
-              <img
+              <nuxt-img
+                format="wep"
                 class="service-image"
                 src="/img/web-development-image.jpg"
                 alt="An image of two computers with code on them"
@@ -84,19 +86,35 @@
           </p>
           <div class="tools">
             <Tool>
-              <img src="/img/react-logo.png" alt="React JS icon" />
+              <nuxt-img
+                format="wep"
+                src="/img/react-logo.png"
+                alt="React JS icon"
+              />
             </Tool>
             <Tool>
-              <img src="/img/vue-js-logo.png" alt="Vue JS icon" />
+              <nuxt-img
+                format="wep"
+                src="/img/vue-js-logo.png"
+                alt="Vue JS icon"
+              />
             </Tool>
             <Tool>
-              <img src="/img/wordpress-logo.png" alt="WordPress icon" />
+              <nuxt-img
+                format="wep"
+                src="/img/wordpress-logo.png"
+                alt="WordPress icon"
+              />
             </Tool>
             <Tool>
-              <img src="/img/sass-logo.png" alt="SASS icon" />
+              <nuxt-img format="wep" src="/img/sass-logo.png" alt="SASS icon" />
             </Tool>
             <Tool>
-              <img src="/img/sketch-logo.png" alt="Sketch icon" />
+              <nuxt-img
+                format="wep"
+                src="/img/sketch-logo.png"
+                alt="Sketch icon"
+              />
             </Tool>
           </div>
         </article>
