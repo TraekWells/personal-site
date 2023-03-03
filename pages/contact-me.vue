@@ -12,7 +12,9 @@
               class="form"
               method="post"
               data-netlify="true"
+              data-netlify-honeypot="bot-field"
             >
+              <input value="contact-form" name="form-name" type="hidden" />
               <div class="form-group">
                 <label for="name">Name</label>
                 <input

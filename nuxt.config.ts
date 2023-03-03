@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   },
   nitro: {
     preset: "netlify",
-    prerender: { routes: ["/sitemap.xml"] },
+    prerender: { routes: ["/sitemap.xml", "/contact-me.html"] },
   },
   routeRules: {
     "/journal/**": { swr: true },
