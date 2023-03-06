@@ -67,7 +67,7 @@
           href="https://github.com/TraekWells/personal-dev-site"
           target="_blank"
           rel="noreferrer"
-          >Source Code.</a
+          >Source Code</a
         >
         🐜
       </p>
