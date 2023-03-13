@@ -10,6 +10,7 @@ linkToProject: https://www.emechewells.com
 technology: WordPress, Javascript, CSS
 featured: true
 draft: false
+type: project
 ---
 
 ## The Client

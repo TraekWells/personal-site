@@ -2,12 +2,14 @@
 title: The Almanack of Naval Ravikant
 author: Eric Jorgenson
 image: "/img/book-cover-the-almanak-of-naval-ravikant.jpg"
-thoughts: This is a literary goldmine full of gems regarding the pursuit of wealth
+thoughts:
+  This is a literary goldmine full of gems regarding the pursuit of wealth
   and happiness.
 draft: false
 rating: 5
-
+type: book
 ---
+
 ## 🚀 The Book in 3 Sentences
 
 1. You will never become rich by trading your time for your money. The only way to financial freedom is by finding a way to make money while you sleep. (or win the lottery).

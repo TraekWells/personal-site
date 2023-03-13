@@ -5,8 +5,9 @@ previewImage: "/img/default-card-image.png"
 featuredImage: "/img/default-card-image.png"
 linkToCode: https://github.com/TraekWells/green-throne-pet
 technology: WordPress
-featured: true
+featured: false
 draft: true
+type: project
 ---
 
 ## The Client

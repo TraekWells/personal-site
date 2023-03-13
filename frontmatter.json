@@ -1,0 +1,188 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "blog",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Summary",
+          "name": "summary",
+          "type": "string"
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Is in draft",
+          "name": "draft",
+          "type": "draft",
+          "default": true
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+
+        {
+          "title": "Type",
+          "name": "type",
+          "type": "string",
+          "hidden": true
+        }
+      ]
+    },
+    {
+      "name": "project",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Summary",
+          "name": "summary",
+          "type": "string"
+        },
+        {
+          "title": "Link To Project",
+          "name": "linkToProject",
+          "type": "string"
+        },
+        {
+          "title": "Link To Code",
+          "name": "linkToCode",
+          "type": "string"
+        },
+        {
+          "title": "Preview Image",
+          "name": "previewImage",
+          "type": "image"
+        },
+        {
+          "title": "Featured Image",
+          "name": "featuredImage",
+          "type": "image"
+        },
+        {
+          "title": "Technology Used",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Is in draft",
+          "name": "draft",
+          "type": "draft",
+          "default": true
+        },
+        {
+          "title": "Featured Project?",
+          "name": "featured",
+          "type": "boolean",
+          "default": false
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Type",
+          "name": "type",
+          "type": "string",
+          "hidden": true
+        }
+      ]
+    },
+    {
+      "name": "book",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Author",
+          "name": "author",
+          "type": "string"
+        },
+        {
+          "title": "Thoughts",
+          "name": "thoughts",
+          "type": "string"
+        },
+        {
+          "title": "Rating",
+          "name": "rating",
+          "type": "number"
+        },
+        {
+          "title": "Book Cover",
+          "name": "image",
+          "type": "image"
+        },
+        {
+          "title": "Is in draft",
+          "name": "draft",
+          "type": "draft",
+          "default": true
+        },
+        {
+          "title": "Type",
+          "name": "type",
+          "type": "string",
+          "hidden": true
+        }
+      ]
+    }
+  ],
+  "frontMatter.framework.id": "nuxt",
+  "frontMatter.content.publicFolder": "static",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "Blog",
+      "path": "[[workspace]]/content/blog",
+      "originalPath": "[[workspace]]/content/blog"
+    },
+    {
+      "title": "Bookshelf",
+      "path": "[[workspace]]/content/bookshelf",
+      "originalPath": "[[workspace]]/content/bookshelf"
+    },
+    {
+      "title": "Journal",
+      "path": "[[workspace]]/content/journal",
+      "originalPath": "[[workspace]]/content/journal"
+    },
+    {
+      "title": "Projects",
+      "path": "[[workspace]]/content/projects"
+    }
+  ],
+  "frontMatter.taxonomy.tags": [
+    "JavaScript",
+    "Life",
+    "Personal",
+    "User Experience"
+  ],
+  "frontMatter.taxonomy.categories": []
+}

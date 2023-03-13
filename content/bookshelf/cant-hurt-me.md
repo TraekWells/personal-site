@@ -2,12 +2,14 @@
 title: Can't Hurt Me
 author: David Goggins
 image: "/img/book-cover-cant-hurt-me.webp"
-thoughts: Great book about pushing your limits and finding out who you really are
+thoughts:
+  Great book about pushing your limits and finding out who you really are
   through suffering.
 draft: false
 rating: 4
-
+type: book
 ---
+
 ## 🚀 The Book in 3 Sentences
 
 1. You must not only embrace suffering, but you must seek it out to callus the mind.
@@ -36,8 +38,8 @@ This isn't a how-to-be-tough book but it's more of proof that you can build an i
 
 ## 🐛 How the Book Changed Me
 
-* I talk to myself **a lot** during runs, especially when I get tired. This isn't new for me as I've always done this, but the words that I'm using have changed after reading this book. Stuff like: "The mind is weak, the body is not. I'm a warrior."
-* I take control of the inner dialogue that goes on in my mind when I'm doing difficult stuff a lot more nowadays. I know that my mind wants to quit and having that awareness gives me a bigger sense of how it could limit me if I give in.
+- I talk to myself **a lot** during runs, especially when I get tired. This isn't new for me as I've always done this, but the words that I'm using have changed after reading this book. Stuff like: "The mind is weak, the body is not. I'm a warrior."
+- I take control of the inner dialogue that goes on in my mind when I'm doing difficult stuff a lot more nowadays. I know that my mind wants to quit and having that awareness gives me a bigger sense of how it could limit me if I give in.
 
 ## ✍️ My Top 3 Quotes
 
