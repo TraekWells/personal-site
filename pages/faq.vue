@@ -86,7 +86,7 @@
         <FancyHeader title="The process" />
         <Question question="How long will the process take?">
           <p>
-            I like to spend a minimum of <strong>six</strong> weeks on a
+            I like to spend a minimum of <strong>eight</strong> weeks on a
             project. That gives me plenty of time to go through the design and
             development phases in detail. This also allows us to have enough
             time to communicate feedback during the process.

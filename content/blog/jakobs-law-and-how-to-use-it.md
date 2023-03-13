@@ -7,6 +7,7 @@ summary:
   Jakob’s law is the most well-known of the Laws of UX and in this post, you’ll
   learn what it says and how to use it to design usable websites.
 createdAt: 2022-01-04T00:00:00.000-06:00
+type: blog
 ---
 
 ## What is Jakob’s law?
