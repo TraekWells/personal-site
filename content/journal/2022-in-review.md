@@ -59,7 +59,7 @@ On another note, I feel like I've been completely out of the loop on industry ne
 
 ### Balance improving both
 
-Another year passed where I don't know how to get better at both design and development. Or maybe I'm just not noticing my improvements in both. It seems that I'm either getting better at design as a whole and my develpment skills fade **or** I'm getting better at development and my design skills fade.
+Another year passed where I don't know how to get better at both design and development. Or maybe I'm just not noticing my improvements in both. It seems that I'm either getting better at design as a whole and my development skills fade **or** I'm getting better at development and my design skills fade.
 
 ## 🧞 Self Reflection
 
@@ -86,7 +86,7 @@ I'm a hard worker and I have a high standard for myself. That said, it would be 
 Enough with the sappy stuff, let's see if I actually accomplished any of the goals that I said I wanted to do in last year's review.
 
 - ✅ **Be more present**. I'm giving myself a green check on this one. Overall, I worried a lot less last year and felt that I appreciated the moments much more. I feel lucky to be alive and even luckier to have the people in my life that I do.
-- ✅ **Grow as a UX professional**. This is super vague but I belive I accomplished this one. I grew as a front-end developer, I dabbled in front-end unit testing and learned **a lot** more about user interviews and the CI/CD process.
+- ✅ **Grow as a UX professional**. This is super vague but I believe I accomplished this one. I grew as a front-end developer, I dabbled in front-end unit testing and learned **a lot** more about user interviews and the CI/CD process.
 - ✅ **Read more**. See "Reading" above.
 - ❌ **Create more**. This was a massive fail. I didn't create nearly enough of really anything. On that note though, I did post two blogs that I'm proud of:
   - [Jakob’s Law and How To Use It](/blog/jakobs-law-and-how-to-use-it)
@@ -97,7 +97,7 @@ Enough with the sappy stuff, let's see if I actually accomplished any of the goa
 
 ### Continue to build healthy habits
 
-I've done an _okay_ job of building some healthly habits this past year but there are few that I've been struggling to hammer home. These are the habits that **I am** going to build next year:
+I've done an _okay_ job of building some healthy habits this past year but there are few that I've been struggling to hammer home. These are the habits that **I am** going to build next year:
 
 - Waking up early (5 AM would be ideal)
 - Fasting 16 hours per day, minimum

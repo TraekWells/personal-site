@@ -61,7 +61,7 @@
             </ul>
             <p class="eyebrow">Project Links</p>
             <ul>
-              <li>
+              <li v-if="project.linkToProject">
                 <a
                   :href="project.linkToProject"
                   target="_blank"

@@ -4,7 +4,6 @@ summary:
   A website that allows users to discover new books, create a list of books
   to read later and review the books they've read.
 previewImage: "/img/the-bookshelf-devices.jpg"
-linkToProject: https://thenewbookshelf.com
 linkToCode: https://github.com/TraekWells/the-bookshelf
 technology: Vue, Google Firebase, Google Books API, Tailwind CSS
 featured: false
@@ -13,7 +12,7 @@ draft: false
 
 One of my best friends reads quite a bit of books. He told me that currently, he doesn't really have a good system for keeping track of the books he's read (except for keeping them in a stack somewhere).
 
-Being the good friend that I am, I offered to build something that would help solve these problems knowing that it would take skills that were **JUST** outside of my skillset. This would force myself out of my comfort zone and test my problem solving skills.
+Being the good friend that I am, I offered to build something that would help solve these problems knowing that it would take skills that were **JUST** outside of my skill set. This would force myself out of my comfort zone and test my problem solving skills.
 
 From the beginning, my plan was to use [Vue](https://vuejs.org/) since I'm infatuated with that framework. Everything about it just makes sense to me. That's not to say that I'm an expert in it, because I'm **far** from it, but Vue just calls to me.
 
@@ -69,7 +68,7 @@ From reading on Twitter, it seems that some people can do this effectively but I
 
 I'll admit that this is probably a bit unfair since this was my first time ever using [Tailwind CSS](https://tailwindcss.com/) in a real project but handling your styles with classes feels weird to me. Tailwind isn't the first utility-first CSS framework I've used and I'm sure I'll use others in the future.
 
-Even though I expected slower results because I had to learn how to use their system, I **massively** underestimated how much time would be spent refering to their docs for guidance. With that being said, [their docs](https://tailwindcss.com/docs) are top-notch and extremely well-written.
+Even though I expected slower results because I had to learn how to use their system, I **massively** underestimated how much time would be spent referring to their docs for guidance. With that being said, [their docs](https://tailwindcss.com/docs) are top-notch and extremely well-written.
 
 I will use Tailwind CSS again in the near future to give it another proper shot, but as of now, I prefer to write the CSS myself.
 
@@ -79,7 +78,7 @@ Salute to Google Firebase for the service it provides, free of charge to a limit
 
 ## Results
 
-I'm extremely happy with how this turned out in the end. It took a bit longer than I expected but I'm proud of this one. There was nothing more satisying than typing in `firebase deploy` and watching the progress bars fill up. The design could use some polishing but done is better than perfect.
+I'm extremely happy with how this turned out in the end. It took a bit longer than I expected but I'm proud of this one. There was nothing more satisfying than typing in `firebase deploy` and watching the progress bars fill up. The design could use some polishing but done is better than perfect.
 
 The amount of confidence this project gave me is invaluable. I learned a ton about building a fairly large project from scratch and the complexities of passing data as `props` from one Vue component to another.
 
