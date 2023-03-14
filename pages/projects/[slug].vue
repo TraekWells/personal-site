@@ -31,7 +31,7 @@
             <p class="eyebrow">Technology Used</p>
             <ul class="technology">
               <li
-                v-for="tech in technology"
+                v-for="tech in project.technology"
                 :key="tech"
                 class="technology__item"
               >
@@ -107,7 +107,6 @@
 import getMetaData from "@/config/getMetaData.js";
 import { ref, onMounted } from "vue";
 const tableOfContents = ref([]);
-const technology = ref([]);
 const { path } = useRoute();
 
 let queryPath = path;
@@ -138,16 +137,8 @@ const getHeaders = () => {
   });
 };
 
-const getTechnology = () => {
-  const techList = project.value.technology
-    .split(",")
-    .map((item) => item.trim());
-  technology.value.push(...techList);
-};
-
 onMounted(() => {
   getHeaders();
-  getTechnology();
 });
 
 const getMeta = () => {

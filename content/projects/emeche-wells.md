@@ -1,13 +1,15 @@
 ---
 title: Emeche Wells
 summary:
-  Emeche Wells is an athlete, photographer and blogger and needed a website
-  to start building an online presence. Built with WordPress and customized to match
-  his branding.
-previewImage: "/img/emeche-wells-devices.jpg"
-featuredImage: "/img/emeche-wells-featured-image.jpg"
+  Emeche Wells is an athlete, photographer and blogger and needed a website to
+  start building an online presence. Built with WordPress and customized to
+  match his branding.
+previewImage: /img/emeche-wells-devices.jpg
+featuredImage: /img/emeche-wells-featured-image.jpg
 linkToProject: https://www.emechewells.com
-technology: WordPress, Javascript, CSS
+technology:
+  - WordPress
+  - JavaScript
 featured: true
 draft: false
 type: project
