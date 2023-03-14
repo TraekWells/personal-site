@@ -183,5 +183,6 @@
     "Personal",
     "User Experience"
   ],
-  "frontMatter.taxonomy.categories": []
+  "frontMatter.taxonomy.categories": [],
+  "frontMatter.content.fmHighlight": false
 }
