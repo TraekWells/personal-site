@@ -34,7 +34,6 @@
           "default": "{{now}}",
           "isPublishDate": true
         },
-
         {
           "title": "Type",
           "name": "type",
@@ -80,8 +79,8 @@
         },
         {
           "title": "Technology Used",
-          "name": "tags",
-          "type": "tags"
+          "name": "technology",
+          "type": "list"
         },
         {
           "title": "Is in draft",
@@ -184,5 +183,6 @@
     "Personal",
     "User Experience"
   ],
-  "frontMatter.taxonomy.categories": []
+  "frontMatter.taxonomy.categories": [],
+  "frontMatter.content.fmHighlight": false
 }

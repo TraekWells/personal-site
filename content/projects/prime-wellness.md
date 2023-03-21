@@ -1,12 +1,14 @@
 ---
 title: Prime Wellness
-summary: Prime Wellness focuses on optimizing holistic health and helping people achieve their goals. Build in WordPress for easy editing capabilities.
-previewImage: "/img/default-card-image.png"
-featuredImage: "/img/default-card-image.png"
+summary: Prime Wellness focuses on optimizing holistic health and helping people
+  achieve their goals. Build in WordPress for easy editing capabilities.
+previewImage: /img/prime-wellness-thumbnail-image.jpg
+featuredImage: /img/prime-wellness-featured-image.jpg
 linkToCode: https://github.com/TraekWells/prime-wellness
-technology: WordPress
-featured: false
-draft: true
+technology:
+  - WordPress
+featured: true
+draft: false
 type: project
 ---
 
