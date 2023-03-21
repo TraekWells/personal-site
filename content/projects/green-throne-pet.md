@@ -2,7 +2,7 @@
 title: Green Throne Pet
 summary:
   Green Throne Pet is a pet waste clean up service offered in the Denver area
-  that needed a website to market their services and gain traffic. Build with
+  that needed a website to market their services and gain traffic. Built with
   WordPress for easy editing.
 previewImage: /img/green-throne-thumbnail-image.jpg
 featuredImage: /img/green-throne-featured-image.jpg
@@ -34,8 +34,6 @@ Besides designing and building a responsive website, this project had a few othe
 In the end, Green Throne Pet received a custom design tailored to guide the user to get a quote for the dog cleaning service. At the end of every page, there's a call to action to allow the user to initial the quote request process.
 
 One of the most challenging and fun parts of this project was the quote request form. Given the importance of this page to both of the user and the business owner, I really took the time to make this as user friendly as possible while keeping the pricing very transparent.
-
-(show a screenshot or gif of the 'quote page')
 
 I chose to build this in WordPress to give the client the ability to easily log into an admin dashboard and make any necessary content updates to their site.
 
