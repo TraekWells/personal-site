@@ -11,7 +11,7 @@ linkToCode: https://github.com/TraekWells/hip-hop-season
 technology:
   - WordPress
   - JavaScript
-featured: true
+featured: false
 draft: false
 type: project
 ---

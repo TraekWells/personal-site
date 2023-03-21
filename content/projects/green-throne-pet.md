@@ -4,14 +4,14 @@ summary:
   Green Throne Pet is a pet waste clean up service offered in the Denver area
   that needed a website to market their services and gain traffic. Build with
   WordPress for easy editing.
-previewImage: /img/default-card-image.png
-featuredImage: /img/default-card-image.png
+previewImage: /img/green-throne-thumbnail-image.jpg
+featuredImage: /img/green-throne-featured-image.jpg
 linkToCode: https://github.com/TraekWells/green-throne-pet
 technology:
   - WordPress
   - CSS
-featured: false
-draft: true
+featured: true
+draft: false
 type: project
 ---
 
