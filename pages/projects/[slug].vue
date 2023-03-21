@@ -174,3 +174,9 @@ useHead({
   ],
 });
 </script>
+
+<style scoped>
+.header {
+  padding-bottom: 1rem;
+}
+</style>
