@@ -5,7 +5,7 @@ summary:
   An impossible list is a catalog of challenges that you have given yourself.
   Unlike a bucket list which is static and gets smaller as you complete the items,
   an impossible list will grow and evolve with you as you live.
-previewImage: '/img/impossible-list-blog-image.jpg'
+previewImage: "/img/impossible-list-blog-image.jpg"
 createdAt: 2021-02-05T15:25:14.000-06:00
 tags:
   - Life
@@ -41,20 +41,17 @@ Lastly and always, I'm working on becoming a better person and appreciating the 
 - Start a YouTube channel
 - Grow Twitter followers to 500
 - Grow Instagram followers to 500
-- ~~Start hip-hop music review blog~~ ([May 1st, 2020](https://hiphopseason.com/))
 - Speak at a conference
 - Give a TED Talk
-
-## Coding Goals
-
-- ~~Move site to WordPress~~ (July 2nd, 2020)
-- ~~Build this site with Nuxt~~ (January 18th, 2021)
-- Learn Vue 3 basics
-- ~~Learn React basics~~
 - Learn PHP basics
 - Learn Laravel basics
 - Learn Typescript
 - Learn how to unit test
+- ~~Learn Vue 3 basics~~
+- ~~Move site to WordPress~~ (July 2nd, 2020)
+- ~~Build this site with Nuxt~~ (January 18th, 2021)
+- ~~Learn React basics~~
+- ~~Start hip-hop music review blog~~ ([May 1st, 2020](https://hiphopseason.com/))
 
 ## Skill Goals
 
@@ -71,13 +68,28 @@ Lastly and always, I'm working on becoming a better person and appreciating the 
 - Learn how to sword fight
 - Type 70 wpm
 - Become a competent guitar player
+- Perform a song on the guitar at a campfire
+- Perform a song on the guitar at a bar/restaurant
 - ~~Learn a full song on the guitar~~
 - ~~Learn five full songs on the guitar~~
 - ~~Learn ten full songs on the guitar~~
-- Perform a song on the guitar at a campfire
-- Perform a song on the guitar at a bar/restaurant
 
-## Fitness Goals
+## Health and Wellness
+
+### Health
+
+- Get to 15% body fat
+- Complete a 48 hour fast
+- Complete a 72 hour fast
+- Abstain from alcohol
+  - ~~For one month~~
+  - For two months
+  - For three months
+- ~~Complete a 24 hour fast~~
+- ~~Fast for 400 hours in a month~~ (February 28th, 2021)
+- ~~Intermittent fast for at least 13 hours per day, for a full month~~
+
+### Fitness
 
 - Run a 5-minute mile
 - ~~Finish a 5k~~ (April 4th, 2021)
@@ -87,6 +99,7 @@ Lastly and always, I'm working on becoming a better person and appreciating the 
   - Finish under 45 minutes
 - ~~Finish a half marathon~~
 - ~~Finish a marathon~~
+  - Finish at 4 hours or less
 - Finish a duathlon
   - Sprint distance
   - Normal distance
@@ -98,25 +111,13 @@ Lastly and always, I'm working on becoming a better person and appreciating the 
 - Do 100 push-ups straight
 - Do 20 pull-ups straight
 - Do 25 pull-ups straight
-- Get 15% body fat
-
-## Health Goals
-
-- ~~Complete a 24 hour fast~~
-- Complete a 48 hour fast
-- Complete a 72 hour fast
-- ~~Fast for 400 hours in a month~~ (February 28th, 2021)
-- ~~Intermittent fast for at least 13 hours per day, for a full month~~
-- ~~Go a month without alcohol~~
-- Go two months without alcohol
-- Go three months without alcohol
 
 ## Financial Goals
 
 - Make $100 passive income per month
-- ~~Pay off student loans by December 2022~~
 - Make $10,000 (gross) in a month
 - Have a positive net worth
+- ~~Pay off student loans by December 2022~~
 
 ## Creative Goals
 
@@ -140,7 +141,7 @@ Lastly and always, I'm working on becoming a better person and appreciating the 
 - Help a turtle cross the street
 - Volunteer at Minnesota Zoo
 - Volunteer at Como Zoo
-- ~~Volunteer at Feed the Starving Children~~
 - Read 100 books ([GoodReads](https://www.goodreads.com/user/show/143010468-traek-wells))
+- ~~Volunteer at Feed the Starving Children~~
 
 Similar to who I got the idea from, I would encourage you to create your own impossible list. It’s kind of difficult to come up with goals off of the top of your head, at least it was for me, so I would recommend checking out Thomas’ or taking goals from this one. I think it’s ideal to have it somewhere digital but there’s nothing wrong with paper and pencil too. Just make sure you account for adding sub-goals and even sub-categories.
