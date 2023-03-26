@@ -10,7 +10,7 @@
             >
           </h1>
           <p class="lead">
-            I'm a freelance web designer and developer, focusing on helping
+            I'm a freelance web designer and developer, specializing in helping
             small businesses build an online presence, while putting the
             <strong>user first</strong>.
           </p>
