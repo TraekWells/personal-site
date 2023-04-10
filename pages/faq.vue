@@ -107,7 +107,7 @@
             <li>Ants can lift up to 50 times their body weight.</li>
             <li>There are over 12,000 species of ants.</li>
             <li>
-              Ants have two stomaches. One for them and one for sharing with
+              Ants have two stomachs. One for them and one for sharing with
               other ants.
             </li>
           </ul>
