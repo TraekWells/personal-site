@@ -76,9 +76,10 @@
               your needs.
             </p>
             <p>
-              This is one of the reason I like to give myself six full weeks. In
-              the event that something isn't quite working as expected, there's
-              still time to fix without drastically changing the launch date.
+              This is one of the reason I like to give myself eight full weeks.
+              In the event that something isn't quite working as expected,
+              there's still time to fix without drastically changing the launch
+              date.
             </p>
           </div>
         </div>
