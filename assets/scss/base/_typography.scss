@@ -204,7 +204,7 @@ pre {
 
 .skip-to-content {
   background-color: hsl(var(--color-primary-700));
-  color: hsl(var(--color-white));
+  color: hsl(var(--color-white)) !important;
   font-size: 1.6rem;
   left: 0;
   padding: 1.5rem;
