@@ -66,8 +66,8 @@
             <ul>
               <li>Optimize digital usability</li>
               <li>Give the users what their looking for</li>
+              <li>Meet the needs of the business</li>
             </ul>
-            <p>All while putting the <strong>user first</strong>.</p>
           </div>
         </div>
       </div>
@@ -159,7 +159,7 @@
         </p>
         <div class="testimonials">
           <Testimonial
-            body='"Traek created a website for me where I can share my artwork, blogs, and accomplishments with the world. He really pulled off a design that fits my personality and passion, so if anyone is looking for a website designer. He’s the perfect person to work with."'
+            body="Traek created a website for me where I can share my artwork, blogs, and accomplishments with the world. He really pulled off a design that fits my personality and passion, so if anyone is looking for a website designer. He’s the perfect person to work with."
             authorName="– Emeche Wells"
           />
         </div>
