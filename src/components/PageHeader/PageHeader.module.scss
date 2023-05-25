@@ -1,0 +1,21 @@
+.header {
+  background-color: hsl(var(--color-primary-100));
+  padding-block-start: 12rem;
+  padding-block-end: 4rem;
+  position: relative;
+  text-align: center;
+
+  .lead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 10;
+  }
+
+  &--home {
+    text-align: left;
+  }
+}

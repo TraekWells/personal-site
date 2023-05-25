@@ -1,0 +1,8 @@
+.section {
+  padding-block: 4rem;
+  position: relative;
+
+  &--secondary {
+    background-color: hsl(var(--color-primary-100));
+  }
+}
