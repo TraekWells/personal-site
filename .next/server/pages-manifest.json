@@ -1,7 +1,7 @@
 {
   "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/_error": "pages/_error.js",
   "/about-me": "pages/about-me.html",
   "/contact-me": "pages/contact-me.html",
   "/faq": "pages/faq.html",
@@ -13,7 +13,7 @@
   "/journal": "pages/journal.js",
   "/projects": "pages/projects.js",
   "/": "pages/index.js",
-  "/journal/[id]": "pages/journal/[id].js",
   "/projects/[id]": "pages/projects/[id].js",
+  "/journal/[id]": "pages/journal/[id].js",
   "/404": "pages/404.html"
 }
