@@ -1,0 +1,16 @@
+@use "../abstracts/variables" as *;
+
+* {
+  scrollbar-color: hsl(var(--color-primary-500)) hsl(var(--color-primary-100));
+}
+
+body {
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--color-primary-300));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--color-primary-700));
+  }
+  overflow-x: hidden;
+}
