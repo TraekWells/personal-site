@@ -1,3 +1,5 @@
+import { useId } from "react";
+
 const FancyHeaderDots = () => {
   return (
     <svg
@@ -9,19 +11,13 @@ const FancyHeaderDots = () => {
       xmlnsXlink="http://www.w3.org/1999/xlink"
       className="fancy-header__dots"
     >
-      <g
-        id="Symbols"
-        stroke="none"
-        strokeWidth="1"
-        fill="none"
-        fillRule="evenodd"
-      >
-        <g id="Group-3-Copy" fill="#FFCA7F">
-          <circle id="Oval" cx="5" cy="5" r="5"></circle>
-          <circle id="Oval-Copy-7" cx="5" cy="35" r="5"></circle>
-          <circle id="Oval-Copy-10" cx="5" cy="65" r="5"></circle>
-          <circle id="Oval-Copy-5" cx="35" cy="5" r="5"></circle>
-          <circle id="Oval-Copy-6" cx="65" cy="5" r="5"></circle>
+      <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+        <g fill="#FFCA7F">
+          <circle cx="5" cy="5" r="5"></circle>
+          <circle cx="5" cy="35" r="5"></circle>
+          <circle cx="5" cy="65" r="5"></circle>
+          <circle cx="35" cy="5" r="5"></circle>
+          <circle cx="65" cy="5" r="5"></circle>
         </g>
       </g>
     </svg>
