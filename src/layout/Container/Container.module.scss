@@ -1,0 +1,20 @@
+@use "@/styles/abstracts/mixins" as m;
+
+.container {
+  margin-inline: auto;
+  max-width: 95%;
+  max-width: 105rem;
+
+  &--narrow {
+    width: 90%;
+    max-width: 95rem;
+  }
+
+  &--wide {
+    max-width: 140rem;
+  }
+
+  .lead {
+    margin-inline: auto;
+  }
+}
