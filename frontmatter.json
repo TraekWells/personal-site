@@ -138,16 +138,19 @@
   "frontMatter.preview.host": "http://localhost:3000",
   "frontMatter.content.pageFolders": [
     {
-      "title": "blog",
-      "path": "[[workspace]]/src/posts/blog"
+      "title": "Blog",
+      "path": "[[workspace]]/src/posts/blog",
+      "filePrefix": null
     },
     {
-      "title": "journal",
-      "path": "[[workspace]]/src/posts/journal"
+      "title": "Journal",
+      "path": "[[workspace]]/src/posts/journal",
+      "filePrefix": null
     },
     {
-      "title": "projects",
-      "path": "[[workspace]]/src/posts/projects"
+      "title": "Projects",
+      "path": "[[workspace]]/src/posts/projects",
+      "filePrefix": null
     }
   ],
   "frontMatter.taxonomy.tags": [
