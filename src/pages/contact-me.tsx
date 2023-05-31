@@ -91,6 +91,7 @@ const ContactMe = () => {
               allowFullScreen={false}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
+              title="Map of the Como area in Saint Paul, MN"
             ></iframe>
           </Container>
         </Section>

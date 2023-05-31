@@ -2,12 +2,18 @@ import Icon from "@/components/Icon";
 import PageHeader from "@/components/PageHeader";
 import Container from "@/layout/Container";
 import Section from "@/layout/Section";
+import { NextSeo } from "next-seo";
 import Link from "next/link";
 import React from "react";
 
 const FourOhFour = () => {
   return (
     <>
+      <NextSeo
+        title="404"
+        description="Uh oh, you've reached a page that doesn't exist. Sorry about that."
+        canonical="https://www.traekwells.com/404"
+      />
       <PageHeader eyebrow="Uh oh" title="Page not found" />
       <main id="main">
         <Section>
