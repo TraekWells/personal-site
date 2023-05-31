@@ -4,6 +4,7 @@ import Logo from "../Logo";
 import styles from "./Navbar.module.scss";
 import Icon from "../Icon/Icon";
 import { useRouter } from "next/router";
+import VisuallyHidden from "../VisuallyHidden";
 
 const Navbar = () => {
   const route = useRouter();
@@ -21,6 +22,7 @@ const Navbar = () => {
     >
       <nav className={`${styles["navigation"]}`}>
         <Link href="/" style={{ borderBottom: "none" }}>
+          <VisuallyHidden>Company logo</VisuallyHidden>
           <Logo />
         </Link>
         <ul className={styles["navigation__list"]}>
