@@ -6,4 +6,9 @@
   &--secondary {
     background-color: hsl(var(--color-primary-100));
   }
+
+  &--slim {
+    padding-block-start: 2rem;
+    padding-block-end: 3rem;
+  }
 }

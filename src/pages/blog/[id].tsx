@@ -89,7 +89,7 @@ const BlogPost = ({ code, frontmatter, blogs }: BlogPostProps) => {
             </div>
           </Container>
         </Section>
-        <Section>
+        <Section slim>
           <Container narrow>
             <FancyHeader>More stuff I've written</FancyHeader>
             <div className="blogs">

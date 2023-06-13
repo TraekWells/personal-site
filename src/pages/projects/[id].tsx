@@ -142,7 +142,7 @@ const ProjectPost = ({ code, frontmatter, projects }: ProjectPostProps) => {
             </div>
           </Container>
         </Section>
-        <Section>
+        <Section slim>
           <Container narrow>
             <FancyHeader>More Projects</FancyHeader>
             <div className="projects">
