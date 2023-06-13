@@ -1,8 +1,14 @@
 .section {
-  padding-block: 4rem;
+  padding-block-start: 6rem;
+  padding-block-end: 12rem;
   position: relative;
 
   &--secondary {
     background-color: hsl(var(--color-primary-100));
+  }
+
+  &--slim {
+    padding-block-start: 2rem;
+    padding-block-end: 3rem;
   }
 }

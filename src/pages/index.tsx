@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Head from "next/head";
 import { getAllProjectPostsData } from "../../lib/posts";
 import Container from "@/layout/Container";
 import Section from "@/layout/Section";
@@ -80,6 +79,7 @@ const Home = ({ projects }: HomepageProps) => {
             </div>
           </div>
         </Container>
+        <Wave color="white" />
       </header>
       <main id="main">
         <Section>
@@ -116,7 +116,7 @@ const Home = ({ projects }: HomepageProps) => {
               </div>
             </div>
           </Container>
-          {/* <Wave color="purple" position="bottom" /> */}
+          <Wave color="purple" />
         </Section>
         <Section secondary>
           <Container narrow>
@@ -147,6 +147,7 @@ const Home = ({ projects }: HomepageProps) => {
               Learn more about my services <Icon type="arrowRight" />
             </Link>
           </Container>
+          <Wave color="white" />
         </Section>
         <Section>
           <Container narrow>
@@ -168,9 +169,9 @@ const Home = ({ projects }: HomepageProps) => {
               })}
             </div>
           </Container>
+          <Wave color="purple" />
         </Section>
         <Section secondary>
-          {/* Wave */}
           <Container narrow>
             <FancyHeader>Beliefs</FancyHeader>
             <p className="lead mb-4">
@@ -199,9 +200,9 @@ const Home = ({ projects }: HomepageProps) => {
               Learn more about me <Icon type="arrowRight" />
             </Link>
           </Container>
+          <Wave color="white" />
         </Section>
         <Section>
-          {/* Wave */}
           <Container narrow>
             <h2 className="text-center">What others have said about me</h2>
             <p className="lead text-center centered-block">

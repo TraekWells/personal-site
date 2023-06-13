@@ -3,6 +3,7 @@ import Section from "@/layout/Section";
 import Container from "@/layout/Container";
 import Icon from "@/components/Icon";
 import { NextSeo } from "next-seo";
+import Wave from "@/components/Wave";
 
 const ContactMe = () => {
   return (

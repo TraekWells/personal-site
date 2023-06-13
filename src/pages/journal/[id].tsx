@@ -93,7 +93,7 @@ const JournalPost = ({ code, frontmatter, journals }: JournalPostProps) => {
             </div>
           </Container>
         </Section>
-        <Section>
+        <Section slim>
           <Container narrow>
             <FancyHeader>More stuff I've written</FancyHeader>
             <div className="blogs">
