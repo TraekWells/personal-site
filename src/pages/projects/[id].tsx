@@ -73,6 +73,7 @@ const ProjectPost = ({ code, frontmatter, projects }: ProjectPostProps) => {
             src={frontmatter.featuredImage}
             alt={frontmatter.title}
             className="featured-image"
+            style={{ marginTop: -8 + "rem" }}
           />
           <Container narrow>
             <div className="content">
