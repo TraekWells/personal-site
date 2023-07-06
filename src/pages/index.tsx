@@ -100,9 +100,9 @@ const Home = ({ projects }: HomepageProps) => {
               <div className="d-grid__column">
                 <p>
                   It's far too easy to fall into the trap of designing a digital
-                  product that meet the needs of just the designer. Ultimately
-                  though, the goal shouldx be to design and build something that
-                  caters to your users.
+                  product that meet the needs of just the designer. Ultimately,
+                  the goal should be to design and build something that caters
+                  to your users.
                 </p>
                 <p>
                   <strong>That's where I come in.</strong>
