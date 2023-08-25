@@ -115,6 +115,20 @@ const Home = ({ projects }: HomepageProps) => {
                 </ul>
               </div>
             </div>
+            <FancyHeader>What Makes Me Different?</FancyHeader>
+            <p>I believe that every project</p>
+            <ul>
+              <li>I only do custom design work</li>
+              <li>
+                I don't use themes. I believe that every project requires a
+                unique solution.
+              </li>
+              <li>
+                Since I only work with a small amount of clients at a time, each
+                one gets my full attention.
+              </li>
+              <li>Test bullet</li>
+            </ul>
           </Container>
           <Wave color="purple" />
         </Section>
