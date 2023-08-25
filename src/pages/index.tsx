@@ -128,7 +128,6 @@ const Home = ({ projects }: HomepageProps) => {
                 one gets my full attention.
               </li>
               <li>Test bullet</li>
-              <li>Test bullet</li>
             </ul>
           </Container>
           <Wave color="purple" />
