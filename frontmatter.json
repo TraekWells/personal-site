@@ -30,7 +30,12 @@
           "title": "Tags",
           "name": "tags",
           "type": "choice",
-          "choices": ["JavaScript", "Life", "Personal", "User Experience"]
+          "choices": [
+            "JavaScript",
+            "Life",
+            "Personal",
+            "User Experience"
+          ]
         },
         {
           "title": "Type",
@@ -38,7 +43,11 @@
           "default": "blog",
           "hidden": true,
           "type": "choice",
-          "choices": ["blog", "project", "journal"]
+          "choices": [
+            "blog",
+            "project",
+            "journal"
+          ]
         }
       ]
     },
@@ -75,7 +84,10 @@
           "title": "Technology Used",
           "name": "technology",
           "type": "choice",
-          "choices": ["WordPress", "JavaScript"]
+          "choices": [
+            "WordPress",
+            "JavaScript"
+          ]
         },
         {
           "title": "Featured?",
@@ -93,7 +105,11 @@
           "default": "project",
           "hidden": true,
           "type": "choice",
-          "choices": ["blog", "project", "journal"]
+          "choices": [
+            "blog",
+            "project",
+            "journal"
+          ]
         }
       ]
     },
@@ -127,7 +143,11 @@
           "default": "journal",
           "hidden": true,
           "type": "choice",
-          "choices": ["blog", "project", "journal"]
+          "choices": [
+            "blog",
+            "project",
+            "journal"
+          ]
         }
       ]
     }
@@ -152,11 +172,5 @@
       "path": "[[workspace]]/src/posts/projects",
       "filePrefix": null
     }
-  ],
-  "frontMatter.taxonomy.tags": [
-    "JavaScript",
-    "Life",
-    "Personal",
-    "User Experience"
   ]
 }

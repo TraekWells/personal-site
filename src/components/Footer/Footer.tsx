@@ -94,18 +94,18 @@ const Footer = () => {
             </div>
           </div>
           <p className="text-center mt-4">
-            &copy; Traek Wells {new Date().getFullYear()}. Built with
-            <a href="https://nuxt.com/" target="_blank" rel="noreferrer">
-              Nuxt
+            &copy; Traek Wells {new Date().getFullYear()}. Built with{" "}
+            <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
+              NextJS
             </a>
-            .
+            .{" "}
             <a
               href="https://github.com/TraekWells/personal-dev-site"
               target="_blank"
               rel="noreferrer"
             >
               Source Code
-            </a>
+            </a>{" "}
             🐜
           </p>
         </div>
