@@ -1,11 +1,15 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 
-interface TableOfContentProps {
-  headers: Element[] | undefined;
-}
+const TableOfContents = () => {
+  const [headers, setHeaders] = React.useState<Element[] | null>(null);
 
-const TableOfContents = ({ headers }: TableOfContentProps) => {
+  React.useEffect(() => {
+    const headers = Array.from(document.querySelectorAll(".content h2"));
+    setHeaders(headers);
+  }, []);
   return (
     <>
       <p className="eyebrow">Table of Contents</p>

@@ -3,24 +3,12 @@ import Link from "next/link";
 import Logo from "../Logo";
 import styles from "./Navbar.module.scss";
 import Icon from "../Icon/Icon";
-import { useRouter } from "next/router";
 import VisuallyHidden from "../VisuallyHidden";
 
 const Navbar = () => {
-  const route = useRouter();
-  const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
-
-  React.useEffect(() => {
-    setMobileMenuOpen(false);
-  }, [route]);
-
   return (
-    <div
-      className={`${styles["navigation-wrapper"]} ${
-        mobileMenuOpen ? styles["active"] : ""
-      } `}
-    >
-      <nav className={`${styles["navigation"]}`}>
+    <nav className={`${styles["navigation-wrapper"]} `}>
+      <div className={`${styles["navigation"]}`}>
         <Link href="/" style={{ borderBottom: "none" }}>
           <VisuallyHidden>Company logo</VisuallyHidden>
           <Logo />
@@ -54,15 +42,15 @@ const Navbar = () => {
         >
           Contact Me <Icon type="arrowRight" />
         </Link>
-        <button
+        {/* <button
           className="button button--ghost"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           data-mobile-menu-toggle
         >
           {!mobileMenuOpen ? "Menu" : "Close"}
-        </button>
-      </nav>
-    </div>
+        </button> */}
+      </div>
+    </nav>
   );
 };
 

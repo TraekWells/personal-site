@@ -137,18 +137,6 @@ li {
   margin-bottom: 1rem;
 }
 
-.nuxt-content-highlight {
-  position: relative;
-}
-
-.post pre[class*="language-"] {
-  font-size: 1.4rem;
-  width: 100%;
-  margin: 2rem 0 4rem;
-  white-space: pre-wrap;
-  max-height: 65rem;
-}
-
 blockquote {
   background-color: hsl(var(--color-primary-100));
   padding: 2rem;
@@ -178,25 +166,6 @@ blockquote {
     svg {
       transform: translateX(1rem);
     }
-  }
-}
-
-pre,
-code {
-  border-radius: 0.3rem;
-  font-size: 1.5rem;
-  background-color: hsl(var(--color-primary-100));
-  font-family: monospace;
-}
-
-pre {
-  padding: 2rem;
-  font-size: 1.6rem;
-  width: 110%;
-  margin-left: -3%;
-
-  @include m.respond-to(phone-large) {
-    width: 100%;
   }
 }
 
