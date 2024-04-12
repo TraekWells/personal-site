@@ -141,7 +141,7 @@ const Home = async () => {
                 return (
                   <ProjectCard
                     key={project.slug}
-                    slug={project.slug}
+                    slug={`/projects/${project.slug}`}
                     title={project.title}
                     previewImage={project.previewImage}
                     summary={project.summary}
