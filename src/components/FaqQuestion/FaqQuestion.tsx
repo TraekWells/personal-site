@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Icon from "@/components/Icon";
 
@@ -7,7 +8,7 @@ interface FaqQuestionProps {
 }
 
 function FaqQuestion({ question, children }: FaqQuestionProps) {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = React.useState<boolean>(false);
 
   return (
     <article className={`faq ${isOpen ? "open" : ""}`}>
@@ -15,7 +16,7 @@ function FaqQuestion({ question, children }: FaqQuestionProps) {
         {question}
         <Icon type="chevron" />
       </p>
-      <p className="faq__answer">{children}</p>
+      <div className="faq__answer">{children}</div>
     </article>
   );
 }

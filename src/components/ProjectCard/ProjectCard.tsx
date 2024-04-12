@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Icon from "../Icon";
 
-interface ProjectCardProps {
+export interface ProjectCardProps {
   previewImage: string;
   title: string;
   slug: string;
