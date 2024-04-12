@@ -3,7 +3,6 @@ import "../styles/main.scss";
 import { inter } from "@/fonts";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import PlausibleProvider from "next-plausible";
 
 export const metadata: Metadata = {
   title: {
@@ -22,7 +21,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang="en" className={inter.className}>
       <head>
         <link rel="icon" href="favicon.png" sizes="any" />
-        <PlausibleProvider domain="traekwells.com" />
+        <script
+          defer
+          data-domain="traekwells.com"
+          src="https://plausible.io/js/script.js"
+        ></script>
       </head>
       <body>
         <Navbar />
