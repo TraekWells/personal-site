@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import Logo from "../Logo";
@@ -6,9 +8,14 @@ import Icon from "../Icon/Icon";
 import VisuallyHidden from "../VisuallyHidden";
 
 const Navbar = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
   return (
-    <nav className={`${styles["navigation-wrapper"]} `}>
-      <div className={`${styles["navigation"]}`}>
+    <div
+      className={`${styles["navigation-wrapper"]} ${
+        mobileMenuOpen ? styles["active"] : ""
+      } `}
+    >
+      <nav className={`${styles["navigation"]}`}>
         <Link href="/" style={{ borderBottom: "none" }}>
           <VisuallyHidden>Company logo</VisuallyHidden>
           <Logo />
@@ -42,15 +49,15 @@ const Navbar = () => {
         >
           Contact Me <Icon type="arrowRight" />
         </Link>
-        {/* <button
+        <button
           className="button button--ghost"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           data-mobile-menu-toggle
         >
           {!mobileMenuOpen ? "Menu" : "Close"}
-        </button> */}
-      </div>
-    </nav>
+        </button>
+      </nav>
+    </div>
   );
 };
 

@@ -21,6 +21,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang="en" className={inter.className}>
       <head>
         <link rel="icon" href="favicon.png" sizes="any" />
+        <script
+          defer
+          data-domain="traekwells.com"
+          src="https://plausible.io/js/script.js"
+        ></script>
       </head>
       <body>
         <Navbar />
