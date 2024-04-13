@@ -1,0 +1,159 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "blog",
+      "pageBundle": false,
+      "previewPath": null,
+      "filePrefix": null,
+      "fields": [
+        {
+          "title": "draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "summary",
+          "name": "summary",
+          "type": "string"
+        },
+        {
+          "title": "createdAt",
+          "name": "createdAt",
+          "type": "datetime"
+        },
+        {
+          "title": "type",
+          "name": "type",
+          "type": "choice",
+          "choices": ["blog", "journal", "project"]
+        }
+      ]
+    },
+    {
+      "name": "journal",
+      "pageBundle": false,
+      "filePrefix": null,
+      "fields": [
+        {
+          "title": "draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "summary",
+          "name": "summary",
+          "type": "string"
+        },
+        {
+          "title": "createdAt",
+          "name": "createdAt",
+          "type": "datetime"
+        },
+        {
+          "title": "type",
+          "name": "type",
+          "type": "choice",
+          "choices": ["blog", "journal", "project"]
+        }
+      ]
+    },
+    {
+      "name": "project",
+      "pageBundle": false,
+      "filePrefix": null,
+      "fields": [
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "summary",
+          "name": "summary",
+          "type": "string"
+        },
+        {
+          "title": "previewImage",
+          "name": "previewImage",
+          "type": "image"
+        },
+        {
+          "title": "featuredImage",
+          "name": "featuredImage",
+          "type": "image"
+        },
+        {
+          "title": "technology",
+          "name": "technology",
+          "type": "list"
+        },
+        {
+          "title": "featured",
+          "name": "featured",
+          "type": "boolean"
+        },
+        {
+          "title": "draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "type",
+          "name": "type",
+          "type": "choice",
+          "choices": ["blog", "journal", "project"]
+        },
+        {
+          "title": "linkToCode",
+          "name": "linkToCode",
+          "type": "string"
+        },
+        {
+          "title": "linkToProject",
+          "name": "linkToProject",
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "frontMatter.framework.id": "next",
+  "frontMatter.content.publicFolder": "public",
+  "frontMatter.preview.host": "http://localhost:3000",
+  "frontMatter.content.defaultFileType": "mdx",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "Blog",
+      "path": "[[workspace]]/src/content/blog"
+    },
+    {
+      "title": "Journal",
+      "path": "[[workspace]]/src/content/journal"
+    },
+    {
+      "title": "Projects",
+      "path": "[[workspace]]/src/content/projects"
+    }
+  ],
+  "frontMatter.git.enabled": true
+}
