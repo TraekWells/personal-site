@@ -169,6 +169,20 @@ blockquote {
   }
 }
 
+[data-bright-theme] {
+  code > div {
+    padding: 0 !important;
+    padding: 0 1.3em !important;
+  }
+  width: calc(100% + 4em);
+
+  margin-left: -2em !important;
+}
+
+pre {
+  font-size: 1.6rem;
+}
+
 .fancy-header {
   position: relative;
   margin-top: 3rem;
