@@ -6,6 +6,30 @@ import Logo from "../Logo";
 import styles from "./Navbar.module.scss";
 import Icon from "../Icon/Icon";
 import VisuallyHidden from "../VisuallyHidden";
+import NavbarItem from "./NavbarItem";
+
+const NavItems = [
+  {
+    title: "Services",
+    href: "/services",
+  },
+  {
+    title: "Projects",
+    href: "/projects",
+  },
+  {
+    title: "About Me",
+    href: "/about-me",
+  },
+  {
+    title: "Writing",
+    href: "/blog",
+  },
+  {
+    title: "Now",
+    href: "/now",
+  },
+];
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
@@ -21,26 +45,36 @@ const Navbar = () => {
           <Logo />
         </Link>
         <ul className={styles["navigation__list"]}>
-          <li className={styles["navigation__item"]}>
-            <Link href="/projects">
-              <span className={styles["navigation__link"]}>Projects</span>
-            </Link>
-          </li>
-          <li className={styles["navigation__item"]}>
-            <Link href="/services">
-              <span className={styles["navigation__link"]}>Services</span>
-            </Link>
-          </li>
-          <li className={styles["navigation__item"]}>
-            <Link href="/about-me">
-              <span className={styles["navigation__link"]}>About Me</span>
-            </Link>
-          </li>
-          <li className={styles["navigation__item"]}>
-            <Link href="/blog">
-              <span className={styles["navigation__link"]}>Writing</span>
-            </Link>
-          </li>
+          <NavbarItem
+            title="Projects"
+            href="/projects"
+            itemClass={styles["navigation__item"]}
+            linkClass={styles["navigation__link"]}
+          />
+          <NavbarItem
+            title="Services"
+            href="/services"
+            itemClass={styles["navigation__item"]}
+            linkClass={styles["navigation__link"]}
+          />
+          <NavbarItem
+            title="About Me"
+            href="/about-me"
+            itemClass={styles["navigation__item"]}
+            linkClass={styles["navigation__link"]}
+          />
+          <NavbarItem
+            title="Writing"
+            href="/blog"
+            itemClass={styles["navigation__item"]}
+            linkClass={styles["navigation__link"]}
+          />
+          <NavbarItem
+            title="Now"
+            href="/now"
+            itemClass={styles["navigation__item"]}
+            linkClass={styles["navigation__link"]}
+          />
         </ul>
         <Link
           href="/contact-me"
