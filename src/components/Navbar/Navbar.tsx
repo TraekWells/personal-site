@@ -7,8 +7,9 @@ import styles from "./Navbar.module.scss";
 import Icon from "../Icon/Icon";
 import VisuallyHidden from "../VisuallyHidden";
 import NavbarItem from "./NavbarItem";
+import { usePathname, useRouter } from "next/navigation";
 
-const NavItems = [
+const navItems = [
   {
     title: "Services",
     href: "/services",
@@ -33,6 +34,12 @@ const NavItems = [
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
+  const path = usePathname();
+
+  React.useEffect(() => {
+    // Close the mobile menu when the user navigates to a new page
+    setMobileMenuOpen(false);
+  }, [path]);
   return (
     <div
       className={`${styles["navigation-wrapper"]} ${
@@ -45,36 +52,17 @@ const Navbar = () => {
           <Logo />
         </Link>
         <ul className={styles["navigation__list"]}>
-          <NavbarItem
-            title="Projects"
-            href="/projects"
-            itemClass={styles["navigation__item"]}
-            linkClass={styles["navigation__link"]}
-          />
-          <NavbarItem
-            title="Services"
-            href="/services"
-            itemClass={styles["navigation__item"]}
-            linkClass={styles["navigation__link"]}
-          />
-          <NavbarItem
-            title="About Me"
-            href="/about-me"
-            itemClass={styles["navigation__item"]}
-            linkClass={styles["navigation__link"]}
-          />
-          <NavbarItem
-            title="Writing"
-            href="/blog"
-            itemClass={styles["navigation__item"]}
-            linkClass={styles["navigation__link"]}
-          />
-          <NavbarItem
-            title="Now"
-            href="/now"
-            itemClass={styles["navigation__item"]}
-            linkClass={styles["navigation__link"]}
-          />
+          {navItems.map((item, index) => {
+            return (
+              <NavbarItem
+                key={index}
+                title={item.title}
+                href={item.href}
+                itemClass={styles["navigation__item"]}
+                linkClass={styles["navigation__link"]}
+              />
+            );
+          })}
         </ul>
         <Link
           href="/contact-me"
