@@ -2,11 +2,11 @@ import Link from "next/link";
 import Icon from "../Icon";
 import styles from "./BlogCard.module.scss";
 
-interface BlogCardProps {
+type BlogCardProps = {
   title: string;
   summary: string;
   slug: string;
-}
+};
 
 function BlogCard({ title, summary, slug }: BlogCardProps) {
   return (

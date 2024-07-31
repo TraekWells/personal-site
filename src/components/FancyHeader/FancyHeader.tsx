@@ -1,8 +1,8 @@
 import FancyHeaderDots from "./FancyHeaderDots";
 
-interface FancyHeaderProps {
+type FancyHeaderProps = {
   children?: React.ReactNode;
-}
+};
 
 const FancyHeader = ({ children }: FancyHeaderProps) => {
   return (

@@ -1,6 +1,6 @@
-interface VideoProps {
+type VideoProps = {
   source: string;
-}
+};
 
 function Video({ source }: VideoProps) {
   return (

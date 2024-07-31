@@ -1,9 +1,9 @@
 import styles from "./Note.module.scss";
 import Icon from "../Icon";
 
-interface NoteProps {
+type NoteProps = {
   children: React.ReactNode;
-}
+};
 
 const Note = ({ children }: NoteProps) => {
   return (

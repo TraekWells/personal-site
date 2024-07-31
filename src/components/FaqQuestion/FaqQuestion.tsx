@@ -2,10 +2,10 @@
 import React from "react";
 import Icon from "@/components/Icon";
 
-interface FaqQuestionProps {
+type FaqQuestionProps = {
   question: string;
   children: React.ReactNode;
-}
+};
 
 function FaqQuestion({ question, children }: FaqQuestionProps) {
   const [isOpen, setIsOpen] = React.useState<boolean>(false);
