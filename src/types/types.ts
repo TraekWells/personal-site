@@ -1,4 +1,4 @@
-export interface ProjectType {
+export type ProjectType = {
   slug: string;
   title: string;
   summary: string;
@@ -12,7 +12,7 @@ export interface ProjectType {
   type: string;
 }
 
-export interface BlogType {
+export type BlogType = {
   slug: string;
   title: string;
   summary: string;
@@ -20,7 +20,7 @@ export interface BlogType {
   draft: boolean;
 }
 
-export interface JournalType {
+export type JournalType = {
   slug: string;
   title: string;
   summary: string;

@@ -7,10 +7,7 @@ const Page = () => {
   return (
     <>
       <PageHeader eyebrow="What I'm doing" title="Now">
-        <p className="lead">
-          From goals of being a concept artist to a zoologist, life led me to my
-          true passion of being a User Interface designer and developer.{" "}
-        </p>
+        <p className="lead">What am I up to?</p>
       </PageHeader>
       <main className="post">
         <Section>
@@ -18,7 +15,16 @@ const Page = () => {
             <div className="content">
               <div className="content__text">
                 <h2>⏱️ Currently</h2>
-                <p>Trying to find my purpose</p>
+                <ul>
+                  <li>Learning the electric guitar</li>
+                  <li>Building my little brother a website</li>
+                  <li>Learning about modern CSS stuff</li>
+                  <li>Training for a half-marathon</li>
+                </ul>
+                <h2>🤔 What's next?</h2>
+                <ul>
+                  <li>Probably going to re-design this website again</li>
+                </ul>
               </div>
               <div className="content__sidebar">
                 <TableOfContents />
