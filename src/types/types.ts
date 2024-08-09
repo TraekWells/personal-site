@@ -10,7 +10,7 @@ export type ProjectType = {
   featured: boolean;
   draft: boolean;
   type: string;
-}
+};
 
 export type BlogType = {
   slug: string;
@@ -18,7 +18,7 @@ export type BlogType = {
   summary: string;
   tags: string[];
   draft: boolean;
-}
+};
 
 export type JournalType = {
   slug: string;
@@ -26,4 +26,4 @@ export type JournalType = {
   summary: string;
   tags: string[];
   draft: boolean;
-}
+};

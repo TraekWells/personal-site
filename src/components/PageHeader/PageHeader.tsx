@@ -2,12 +2,12 @@ import Container from "@/layout/Container";
 import styles from "./PageHeader.module.scss";
 import Wave from "../Wave";
 
-interface PageHeaderProps {
+type PageHeaderProps = {
   title: string;
   children?: React.ReactNode;
   eyebrow?: string;
   tags?: string[];
-}
+};
 
 const PageHeader = ({ children, title, eyebrow, tags }: PageHeaderProps) => {
   return (

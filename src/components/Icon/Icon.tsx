@@ -1,6 +1,21 @@
-interface IconProps {
-  type: string;
-}
+export type IconOptions =
+  | "arrowRight"
+  | "design"
+  | "development"
+  | "chevron"
+  | "hosting"
+  | "infoCircle"
+  | "user"
+  | "communication"
+  | "fun"
+  | "accessibility"
+  | "host"
+  | "responsive"
+  | "performant";
+
+type IconProps = {
+  type: IconOptions;
+};
 
 const Icon = ({ type }: IconProps) => {
   switch (type) {

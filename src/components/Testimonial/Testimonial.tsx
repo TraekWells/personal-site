@@ -1,7 +1,7 @@
-interface TestimonalProps {
+type TestimonalProps = {
   quote: string;
   author: string;
-}
+};
 
 const Testimonial = ({ quote, author }: TestimonalProps) => {
   return (

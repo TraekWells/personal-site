@@ -8,9 +8,9 @@ const bodyFont = Inter({
   subsets: ["latin"],
 });
 
-interface SiteLayoutProps {
+type SiteLayoutProps = {
   children: React.ReactNode;
-}
+};
 
 const SiteLayout = ({ children }: SiteLayoutProps) => {
   return (

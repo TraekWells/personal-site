@@ -1,8 +1,8 @@
 import styles from "./Wave.module.scss";
 
-interface WaveProps {
+type WaveProps = {
   color: "purple" | "white";
-}
+};
 
 const Wave = ({ color }: WaveProps) => {
   let Component =

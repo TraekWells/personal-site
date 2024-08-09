@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./Container.module.scss";
 
-interface ContainerProps {
+type ContainerProps = {
   children: React.ReactNode;
   narrow?: boolean;
   wide?: boolean;
-}
+};
 
 const Container = ({ children, narrow, wide }: ContainerProps) => {
   return (

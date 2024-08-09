@@ -1,5 +1,3 @@
-import { useId } from "react";
-
 const FancyHeaderDots = () => {
   return (
     <svg

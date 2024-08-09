@@ -1,12 +1,12 @@
 import Link from "next/link";
 import Icon from "../Icon";
 
-export interface ProjectCardProps {
+export type ProjectCardProps = {
   previewImage: string;
   title: string;
   slug: string;
   summary: string;
-}
+};
 
 const ProjectCard = ({
   previewImage,

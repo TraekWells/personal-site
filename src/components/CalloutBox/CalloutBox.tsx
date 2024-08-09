@@ -1,11 +1,10 @@
-import styles from "./CalloutBox.module.scss";
-import Icon from "../Icon";
+import Icon, { IconOptions } from "../Icon";
 
-interface CalloutBoxProps {
+type CalloutBoxProps = {
   title: string;
   body: string;
-  iconType: string;
-}
+  iconType: IconOptions;
+};
 
 const CalloutBox = ({ title, body, iconType }: CalloutBoxProps) => {
   return (

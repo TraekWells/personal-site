@@ -1,10 +1,9 @@
-import * as React from "react";
 import styles from "./VisuallyHidden.module.scss";
 
-interface VisuallyHiddenProps {
+type VisuallyHiddenProps = {
   children: React.ReactNode;
   props?: React.HTMLAttributes<HTMLElement>;
-}
+};
 
 const VisuallyHidden = ({ children, props }: VisuallyHiddenProps) => {
   return (

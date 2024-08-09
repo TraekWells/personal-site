@@ -1,7 +1,6 @@
 import styles from "./CallToAction.module.scss";
 import Link from "next/link";
 import Icon from "../Icon";
-import Image from "next/image";
 
 const CallToAction = () => {
   return (
