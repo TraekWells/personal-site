@@ -11,20 +11,20 @@ import { usePathname, useRouter } from "next/navigation";
 
 const navItems = [
   {
-    title: "Services",
-    href: "/services",
-  },
-  {
     title: "Projects",
     href: "/projects",
+  },
+  {
+    title: "Writing",
+    href: "/blog",
   },
   {
     title: "About Me",
     href: "/about-me",
   },
   {
-    title: "Writing",
-    href: "/blog",
+    title: "Impossible List",
+    href: "/journal/impossible-list",
   },
   {
     title: "Now",

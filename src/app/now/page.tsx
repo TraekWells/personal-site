@@ -6,9 +6,7 @@ import Section from "@/layout/Section";
 const Page = () => {
   return (
     <>
-      <PageHeader eyebrow="What I'm doing" title="Now">
-        <p className="lead">What am I up to?</p>
-      </PageHeader>
+      <PageHeader eyebrow="What I'm doing" title="Now"></PageHeader>
       <main className="post">
         <Section>
           <Container narrow>
