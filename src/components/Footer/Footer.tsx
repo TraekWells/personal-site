@@ -26,9 +26,6 @@ const Footer = () => {
                 </p>
                 <ul className="list-unstyled">
                   <li>
-                    <Link href="/services">Services</Link>
-                  </li>
-                  <li>
                     <Link href="/projects">Projects</Link>
                   </li>
                   <li>
