@@ -1,12 +1,13 @@
 import PageHeader from "@/components/PageHeader";
 import TableOfContents from "@/components/TableOfContents";
+import { CONTENT_PATHS } from "@/constants";
 import { loadContent } from "@/helpers/file-helpers";
 import Container from "@/layout/Container";
 import Section from "@/layout/Section";
 import { Metadata } from "next";
 
 export const generateMetadata = async (): Promise<Metadata> => {
-  const { frontmatter } = await loadContent("/src/app/now/content");
+  const { frontmatter } = await loadContent(`${CONTENT_PATHS["pages"]}/now`);
 
   return {
     title: frontmatter.title,
@@ -15,7 +16,7 @@ export const generateMetadata = async (): Promise<Metadata> => {
 };
 
 const Page = async () => {
-  const { content } = await loadContent("/src/app/now/content");
+  const { content } = await loadContent(`${CONTENT_PATHS["pages"]}/now`);
   return (
     <>
       <PageHeader eyebrow="What I'm doing" title="Now"></PageHeader>

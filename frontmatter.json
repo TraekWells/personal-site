@@ -135,6 +135,23 @@
           "type": "string"
         }
       ]
+    },
+    {
+      "name": "page",
+      "pageBundle": false,
+      "filePrefix": null,
+      "fields": [
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "summary",
+          "name": "summary",
+          "type": "string"
+        }
+      ]
     }
   ],
   "frontMatter.framework.id": "next",
@@ -153,6 +170,10 @@
     {
       "title": "Projects",
       "path": "[[workspace]]/src/content/projects"
+    },
+    {
+      "title": "Pages",
+      "path": "[[workspace]]/src/content/pages"
     }
   ],
   "frontMatter.git.enabled": true
