@@ -1,9 +1,21 @@
 import PageHeader from "@/components/PageHeader";
 import TableOfContents from "@/components/TableOfContents";
+import { loadContent } from "@/helpers/file-helpers";
 import Container from "@/layout/Container";
 import Section from "@/layout/Section";
+import { Metadata } from "next";
 
-const Page = () => {
+export const generateMetadata = async (): Promise<Metadata> => {
+  const { frontmatter } = await loadContent("/src/app/now/content");
+
+  return {
+    title: frontmatter.title,
+    description: frontmatter.summary,
+  };
+};
+
+const Page = async () => {
+  const { content } = await loadContent("/src/app/now/content");
   return (
     <>
       <PageHeader eyebrow="What I'm doing" title="Now"></PageHeader>
@@ -11,19 +23,7 @@ const Page = () => {
         <Section>
           <Container narrow>
             <div className="content">
-              <div className="content__text">
-                <h2>⏱️ Currently</h2>
-                <ul>
-                  <li>Learning the electric guitar</li>
-                  <li>Building my little brother a website</li>
-                  <li>Learning about modern CSS stuff</li>
-                  <li>Training for a half-marathon</li>
-                </ul>
-                <h2>🤔 What's next?</h2>
-                <ul>
-                  <li>Probably going to re-design this website again</li>
-                </ul>
-              </div>
+              <div className="content__text">{content}</div>
               <div className="content__sidebar">
                 <TableOfContents />
               </div>
