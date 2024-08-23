@@ -1,0 +1,9 @@
+.alert {
+  background-color: hsl(var(--color-secondary-100));
+  padding-block: 1rem;
+
+  * {
+    padding: 0;
+    margin: 0;
+  }
+}

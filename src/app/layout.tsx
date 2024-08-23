@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import "../styles/main.scss";
-import { inter } from "@/fonts";
+import { bodyFont } from "@/fonts";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Alert from "@/components/Alert";
 
 export const metadata: Metadata = {
   title: {
@@ -18,7 +19,7 @@ type RootLayoutProps = {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en" className={inter.className}>
+    <html lang="en" className={bodyFont.className}>
       <head>
         <link rel="icon" href="favicon.png" sizes="any" />
         <script
@@ -28,6 +29,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
         ></script>
       </head>
       <body>
+        <Alert>
+          <p className="text-center">
+            ⚠️ Currently under maintenance. You've been warned.
+          </p>
+        </Alert>
         <Navbar />
         {children}
         <Footer />
