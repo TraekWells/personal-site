@@ -32,6 +32,10 @@ const Home = async () => {
                   I build beautiful websites that work.
                 </span>
               </h1>
+              <span>
+                I know it's ironic that right now, this site doesn't really
+                work.
+              </span>
               <p className="lead">
                 I'm a freelance web designer and developer, specializing in
                 helping small businesses build an online presence, while putting

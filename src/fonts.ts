@@ -1,6 +1,5 @@
-import { Inter } from "next/font/google";
+import { Manrope } from "next/font/google";
 
-export const inter = Inter({
+export const bodyFont = Manrope({
   subsets: ["latin"],
-  display: "swap",
 });
