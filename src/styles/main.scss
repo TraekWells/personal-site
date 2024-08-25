@@ -1,5 +1,7 @@
-@use "abstracts";
-@use "base";
-@use "components";
-@use "layout";
-@use "pages";
+@use "./reset";
+@use "./base";
+@use "./variables";
+@use "./typography";
+@use "./utilities";
+
+@layer reset, base, variables, typography, utilities;

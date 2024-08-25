@@ -1,6 +1,5 @@
 import React from "react";
 
-import { ProjectType } from "@/types/types";
 import PageHeader from "@/components/PageHeader";
 import Container from "@/layout/Container";
 import Section from "@/layout/Section";

@@ -1,6 +1,5 @@
 import Container from "@/layout/Container";
 import styles from "./PageHeader.module.scss";
-import Wave from "../Wave";
 
 type PageHeaderProps = {
   title: string;
@@ -28,7 +27,6 @@ const PageHeader = ({ children, title, eyebrow, tags }: PageHeaderProps) => {
         </h1>
         {children}
       </Container>
-      <Wave color="white" />
     </header>
   );
 };
