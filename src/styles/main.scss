@@ -1,7 +1,11 @@
+// Can I import these partials in their own layers?
+// Does this work?
+// @layer reset {
+//   @import "./reset";
+// }
+
 @use "./reset";
 @use "./base";
-@use "./variables";
+@use "./tokens";
 @use "./typography";
 @use "./utilities";
-
-@layer reset, base, variables, typography, utilities;
