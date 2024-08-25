@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import "../styles/main.scss";
 import { bodyFont } from "@/fonts";
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Alert from "@/components/Alert";
+import SiteNavigation from "@/components/SiteNavigation";
 
 export const metadata: Metadata = {
   title: {
@@ -34,7 +34,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             ⚠️ Currently under maintenance. You've been warned.
           </p>
         </Alert>
-        <Navbar />
+        <SiteNavigation />
         {children}
         <Footer />
       </body>

@@ -21,7 +21,7 @@ const AboutMe = async () => {
   const { content } = await loadContent(`${CONTENT_PATHS["pages"]}/about-me`);
   return (
     <>
-      <PageHeader eyebrow="About me" title="My story">
+      <PageHeader title="My story">
         <p className="lead">
           From goals of being a concept artist to a zoologist, life led me to my
           true passion of being a User Interface designer and developer.

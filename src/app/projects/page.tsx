@@ -1,7 +1,6 @@
 import React from "react";
 import PageHeader from "@/components/PageHeader";
 import ProjectCard from "@/components/ProjectCard";
-import CallToAction from "@/components/CallToAction";
 import Section from "@/layout/Section";
 import Container from "@/layout/Container";
 import { getContentList } from "@/helpers/file-helpers";
@@ -18,7 +17,7 @@ const Projects = async () => {
   const projects = await getContentList(CONTENT_PATHS["projects"]);
   return (
     <>
-      <PageHeader title="Projects" eyebrow="Work">
+      <PageHeader title="Projects">
         <p className="lead">
           Here are some of my favorite projects that I've worked on.
         </p>
@@ -39,11 +38,6 @@ const Projects = async () => {
                 );
               })}
             </div>
-          </Container>
-        </Section>
-        <Section>
-          <Container narrow>
-            <CallToAction />
           </Container>
         </Section>
       </main>

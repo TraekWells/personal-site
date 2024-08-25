@@ -19,7 +19,7 @@ const Page = async () => {
   const { content } = await loadContent(`${CONTENT_PATHS["pages"]}/now`);
   return (
     <>
-      <PageHeader eyebrow="What I'm doing" title="Now"></PageHeader>
+      <PageHeader title="Now"></PageHeader>
       <main className="post">
         <Section>
           <Container narrow>

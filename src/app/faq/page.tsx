@@ -1,4 +1,3 @@
-import CallToAction from "@/components/CallToAction";
 import FancyHeader from "@/components/FancyHeader";
 import FaqQuestion from "@/components/FaqQuestion";
 import PageHeader from "@/components/PageHeader";
@@ -15,7 +14,7 @@ export const metadata: Metadata = {
 const FAQ = () => {
   return (
     <>
-      <PageHeader eyebrow="FAQ" title="Frequently Asked Questions" />
+      <PageHeader title="Frequently Asked Questions" />
       <main id="main">
         <Section>
           <Container>
@@ -132,11 +131,6 @@ const FAQ = () => {
             <FaqQuestion question="What's your favorite color?">
               <p>I love me a dark wine-like red.</p>
             </FaqQuestion>
-          </Container>
-        </Section>
-        <Section>
-          <Container>
-            <CallToAction />
           </Container>
         </Section>
       </main>

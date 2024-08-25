@@ -1,4 +1,3 @@
-import CallToAction from "@/components/CallToAction";
 import PageHeader from "@/components/PageHeader";
 import { Metadata } from "next";
 
@@ -11,7 +10,7 @@ export const metadata: Metadata = {
 const Process = () => {
   return (
     <>
-      <PageHeader eyebrow="Process" title="How does the process work?" />
+      <PageHeader title="How does the process work?" />
       <main id="main">
         <section className="section pb-7">
           <div className="wave-white"></div>
@@ -140,11 +139,6 @@ const Process = () => {
                 </ul>
               </div>
             </div>
-          </div>
-        </section>
-        <section className="section">
-          <div className="container container--narrow">
-            <CallToAction />
           </div>
         </section>
       </main>

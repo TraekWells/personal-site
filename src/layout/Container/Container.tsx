@@ -4,16 +4,11 @@ import styles from "./Container.module.scss";
 type ContainerProps = {
   children: React.ReactNode;
   narrow?: boolean;
-  wide?: boolean;
 };
 
-const Container = ({ children, narrow, wide }: ContainerProps) => {
+const Container = ({ children, narrow }: ContainerProps) => {
   return (
-    <div
-      className={`${styles.container} ${
-        narrow ? styles["container--narrow"] : ""
-      } ${wide ? styles["container--wide"] : ""}`}
-    >
+    <div className={`${styles.container} ${narrow && styles.containerNarrow} `}>
       {children}
     </div>
   );

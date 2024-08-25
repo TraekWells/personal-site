@@ -1,7 +1,6 @@
 import React from "react";
 import PageHeader from "@/components/PageHeader";
 import BlogCard from "@/components/BlogCard";
-import CallToAction from "@/components/CallToAction";
 import Section from "@/layout/Section";
 import Container from "@/layout/Container";
 import Link from "next/link";
@@ -19,8 +18,8 @@ const Blog = async () => {
   const blogs = await getContentList(CONTENT_PATHS["blog"]);
   return (
     <>
-      <PageHeader title="Some blogs that I’ve written" eyebrow="Writing">
-        <p className="lead">
+      <PageHeader title="Some blogs that I’ve written">
+        <p>
           Posts about topics ranging from User Experience, User Interface
           design, HTML, CSS, JavaScript and accessibility. See my{" "}
           <Link href="/journal">journal</Link> for everything else.
@@ -41,11 +40,6 @@ const Blog = async () => {
                 );
               })}
             </div>
-          </Container>
-        </Section>
-        <Section>
-          <Container narrow>
-            <CallToAction />
           </Container>
         </Section>
       </main>

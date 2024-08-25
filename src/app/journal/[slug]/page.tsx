@@ -3,7 +3,6 @@ import PageHeader from "@/components/PageHeader";
 import Section from "@/layout/Section";
 import Container from "@/layout/Container";
 import FancyHeader from "@/components/FancyHeader";
-import CallToAction from "@/components/CallToAction";
 import BlogCard from "@/components/BlogCard";
 import TableOfContents from "@/components/TableOfContents";
 import { getContentList, loadContent } from "@/helpers/file-helpers";
@@ -76,11 +75,6 @@ const JournalPost = async ({ params }: any) => {
                 })}
               </div>
             </div>
-          </Container>
-        </Section>
-        <Section>
-          <Container narrow>
-            <CallToAction />
           </Container>
         </Section>
       </main>
