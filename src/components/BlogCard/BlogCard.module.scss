@@ -1,5 +1,3 @@
-@use "../../styles/abstracts/mixins" as m;
-
 .blog {
   max-width: 80rem;
   border-radius: 1rem;
@@ -8,11 +6,6 @@
   display: flex;
   z-index: 10;
   margin: 3rem 0;
-
-  @include m.respond-to(phone) {
-    flex-direction: column;
-    background-color: hsl(var(--color-white));
-  }
 
   &:not(:last-child) {
     margin-bottom: 2rem;

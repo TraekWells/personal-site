@@ -19,7 +19,7 @@ type RootLayoutProps = {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en" className={bodyFont.className}>
+    <html lang="en" className={bodyFont.className} data-theme="light">
       <head>
         <link rel="icon" href="favicon.png" sizes="any" />
         <script

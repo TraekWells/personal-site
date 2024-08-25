@@ -1,11 +1,9 @@
 import styles from "./Footer.module.scss";
 import Link from "next/link";
-import Wave from "@/components/Wave";
 
 const Footer = () => {
   return (
     <footer className={styles["footer"]}>
-      <Wave color="purple" />
       <div className="container container--narrow">
         <div className="d-grid-two-columns">
           <div className="d-grid__column">
