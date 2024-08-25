@@ -1,21 +1,15 @@
 .header {
-  background-color: hsl(var(--color-primary-100));
-  padding-block-start: 12rem;
-  padding-block-end: 8rem;
+  padding-block-start: var(--space-56);
+  padding-block-end: var(--space-24);
   position: relative;
-  text-align: center;
+
+  p {
+    font-size: var(--font-size-md);
+    max-width: 60ch;
+  }
 
   .lead {
     margin-left: auto;
     margin-right: auto;
-  }
-
-  &__content {
-    position: relative;
-    z-index: 10;
-  }
-
-  &--home {
-    text-align: left;
   }
 }

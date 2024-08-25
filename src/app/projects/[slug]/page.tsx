@@ -6,7 +6,6 @@ import Section from "@/layout/Section";
 import TableOfContents from "@/components/TableOfContents";
 import FancyHeader from "@/components/FancyHeader";
 import ProjectCard from "@/components/ProjectCard";
-import CallToAction from "@/components/CallToAction";
 import { getContentList, loadContent } from "@/helpers/file-helpers";
 import { CONTENT_PATHS } from "@/constants";
 import { Metadata } from "next";
@@ -140,11 +139,6 @@ const ProjectPost = async ({ params }: ProjectPostProps) => {
                 );
               })}
             </div>
-          </Container>
-        </Section>
-        <Section>
-          <Container narrow>
-            <CallToAction />
           </Container>
         </Section>
       </main>

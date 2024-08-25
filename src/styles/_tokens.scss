@@ -1,54 +1,47 @@
 :root {
-  --color-primary-lightest: hsl(283, 47%, 99%);
-  --color-primary-lighter: hsl(283, 47%, 97%);
+  /* Color stuff  */
+  --color-primary-lightest: hsl(283, 47%, 97%);
   --color-primary-light: hsl(283, 46%, 73%);
   --color-primary: hsl(283, 50%, 54%);
   --color-primary-dark: hsl(287, 50%, 42%);
   --color-primary-darker: hsl(283, 59%, 24%);
   --color-primary-darkest: hsl(283, 89%, 15%);
-
   --color-secondary-lightest: hsl(30, 63%, 97%);
   --color-secondary-light: hsl(35, 100%, 93%);
   --color-secondary: hsl(34, 100%, 86%);
   --color-secondary-dark: hsl(35, 100%, 75%);
   --color-secondary-darkest: hsl(36, 99%, 31%);
-
   --color-base-lightest: hsl(300, 8%, 95%);
   --color-base-light: hsl(285, 7%, 89%);
   --color-base: hsl(282, 7%, 52%);
   --color-base-dark: hsl(285, 7%, 33%);
   --color-base-darkest: hsl(103, 7%, 19%);
-
   --color-neutral: hsl(0, 0%, 100%);
-
   --color-error: hsl(0, 91%, 92%);
   --color-error: hsl(0, 91%, 37%);
-
   --color-success: hsl(130, 100%, 93%);
   --color-success: hsl(130, 100%, 33%);
-
   --color-warning-light: hsl(42, 100%, 91%);
   --color-warning: hsl(42, 100%, 45%);
-
   --color-info: hsl(190, 100%, 95%);
   --color-info: hsl(190, 100%, 45%);
-
   --color-disabled: var(--color-base-light);
 
+  /* Font Stuff  */
   --font-weight-normal: 500;
   --font-weight-bold: 600;
   --font-weight-bolder: 700;
   --font-weight-boldest: 800;
 
-  --font-size-xs: 1.2rem;
-  --font-size-sm: 1.4rem;
-  --font-size-base: calc(17rem / 16);
-  --font-size-md: 1.8rem;
-  --font-size-lg: 1.8rem;
-  --font-size-xl: 2rem;
-  --font-size-2xl: 2.4rem;
-  --font-size-3xl: 3.2rem;
-  --font-size-4xl: 3.2rem;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1.0625rem;
+  --font-size-md: 1.25rem;
+  --font-size-lg: 1.5rem;
+  --font-size-xl: 1.8125rem;
+  --font-size-2xl: 2.1875rem;
+  --font-size-3xl: 2.625rem;
+  --font-size-4xl: 3.1875rem;
 
   --breakpoint-xsm: 37.5em;
   --breakpoint-sm: 43.75em;
@@ -56,7 +49,22 @@
   --breakpoint-lg: 62.5em;
   --breakpoint-xlg: 62.5em;
 
-  --border-radius-sm: 0.5rem;
-  --border-radius-md: 1rem;
-  --border-radius-lg: 2rem;
+  /* Border Radius  */
+  --border-radius-sm: 0.25rem;
+  --border-radius-md: 0.5rem;
+  --border-radius-lg: 1rem;
+
+  /* Spacing  */
+  --space-4: 0.25rem;
+  --space-8: 0.5rem;
+  --space-16: 1rem;
+  --space-24: 1.5rem;
+  --space-32: 2em;
+  --space-40: 2.5rem;
+  --space-48: 3rem;
+  --space-56: 3.5rem;
+  --space-64: 4rem;
+  --space-72: 4.5rem;
+  --space-120: 7.5rem;
+  --space-152: 9.5rem;
 }

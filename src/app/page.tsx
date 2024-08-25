@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import Container from "@/layout/Container";
 import Section from "@/layout/Section";
 import Icon from "@/components/Icon";
-import CallToAction from "@/components/CallToAction";
 import FancyHeader from "@/components/FancyHeader";
 import CalloutBox from "@/components/CalloutBox";
 import Testimonial from "@/components/Testimonial";
