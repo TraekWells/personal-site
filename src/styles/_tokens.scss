@@ -7,7 +7,7 @@
   --color-primary-darker: hsl(283, 59%, 24%);
   --color-primary-darkest: hsl(283, 89%, 15%);
 
-  --color-secondary-lightet: hsl(30, 63%, 97%);
+  --color-secondary-lightest: hsl(30, 63%, 97%);
   --color-secondary-light: hsl(35, 100%, 93%);
   --color-secondary: hsl(34, 100%, 86%);
   --color-secondary-dark: hsl(35, 100%, 75%);
@@ -36,8 +36,19 @@
   --color-disabled: var(--color-base-light);
 
   --font-weight-normal: 500;
-  --font-weight-medium: 600;
-  --font-weight-heavy: 800;
+  --font-weight-bold: 600;
+  --font-weight-bolder: 700;
+  --font-weight-boldest: 800;
+
+  --font-size-xs: 1.2rem;
+  --font-size-sm: 1.4rem;
+  --font-size-base: calc(17rem / 16);
+  --font-size-md: 1.8rem;
+  --font-size-lg: 1.8rem;
+  --font-size-xl: 2rem;
+  --font-size-2xl: 2.4rem;
+  --font-size-3xl: 3.2rem;
+  --font-size-4xl: 3.2rem;
 
   --breakpoint-xsm: 37.5em;
   --breakpoint-sm: 43.75em;
@@ -45,7 +56,7 @@
   --breakpoint-lg: 62.5em;
   --breakpoint-xlg: 62.5em;
 
-  --border-radius-xsm: 0.5rem;
-  --border-radius-sm: 1rem;
+  --border-radius-sm: 0.5rem;
+  --border-radius-md: 1rem;
   --border-radius-lg: 2rem;
 }
