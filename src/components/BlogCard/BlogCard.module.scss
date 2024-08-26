@@ -1,13 +1,7 @@
 .blog {
-  max-width: 80rem;
-  border-radius: 1rem;
+  background-color: var(--color-surface);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-32) var(--space-24);
   transition: 0.2s ease all;
   width: 100%;
-  display: flex;
-  z-index: 10;
-  margin: 3rem 0;
-
-  &:not(:last-child) {
-    margin-bottom: 2rem;
-  }
 }

@@ -1,0 +1,16 @@
+.skipToContent {
+  background-color: var(--color-primary-700);
+  color: var(--color-white);
+  font-size: var(--font-size-base);
+  left: 0;
+  padding: 1.5rem;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+}
+
+.skipToContent:focus {
+  border-bottom: none;
+  transform: translateY(0%);
+  z-index: 1000;
+}

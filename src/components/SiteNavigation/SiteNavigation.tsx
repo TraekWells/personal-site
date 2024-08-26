@@ -1,9 +1,11 @@
 import Link from "next/link";
+import styles from "./SiteNavigation.module.scss";
+import VisuallyHidden from "../VisuallyHidden";
 
 const SiteNavigation = () => {
   return (
-    <nav>
-      <ul>
+    <nav className={styles.nav}>
+      <ul className={styles.navList}>
         <li>
           <Link href="/">Home</Link>
         </li>
@@ -20,6 +22,10 @@ const SiteNavigation = () => {
           <Link href="/now">Now</Link>
         </li>
       </ul>
+      <button>
+        🎨
+        <VisuallyHidden>Swap color mode</VisuallyHidden>
+      </button>
     </nav>
   );
 };

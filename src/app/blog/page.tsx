@@ -16,9 +16,10 @@ export const metadata: Metadata = {
 
 const Blog = async () => {
   const blogs = await getContentList(CONTENT_PATHS["blog"]);
+
   return (
     <>
-      <PageHeader title="Some blogs that I’ve written">
+      <PageHeader title="Writing">
         <p>
           Posts about topics ranging from User Experience, User Interface
           design, HTML, CSS, JavaScript and accessibility. See my{" "}
@@ -27,19 +28,19 @@ const Blog = async () => {
       </PageHeader>
       <main id="main">
         <Section>
-          <Container narrow>
-            <div className="blogs">
-              {blogs.map((blog, index) => {
-                return (
-                  <BlogCard
-                    key={index}
-                    title={blog.title}
-                    slug={`/blog/${blog.slug}`}
-                    summary={blog.summary}
-                  />
-                );
-              })}
-            </div>
+          <Container>
+            {blogs.map((blog, index) => {
+              console.log(blog);
+              return (
+                <BlogCard
+                  key={index}
+                  title={blog.title}
+                  slug={`/blog/${blog.slug}`}
+                  summary={blog.summary}
+                  tags={blog.tags}
+                />
+              );
+            })}
           </Container>
         </Section>
       </main>

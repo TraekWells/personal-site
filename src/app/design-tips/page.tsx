@@ -1,7 +1,11 @@
-import React from "react";
+import PageHeader from "@/components/PageHeader";
 
 const DesignTips = () => {
-  return <div>Design Tips coming soon</div>;
+  return (
+    <PageHeader title="Design Tips">
+      <p>Elevate Your UI with Modern Styling Techniques</p>
+    </PageHeader>
+  );
 };
 
 export default DesignTips;

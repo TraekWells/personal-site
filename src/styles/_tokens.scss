@@ -16,14 +16,14 @@
   --color-base: hsl(282, 7%, 52%);
   --color-base-dark: hsl(285, 7%, 33%);
   --color-base-darkest: hsl(103, 7%, 19%);
-  --color-neutral: hsl(0, 0%, 100%);
-  --color-error: hsl(0, 91%, 92%);
+  --color-surface: hsl(0, 0%, 100%);
+  --color-error-light: hsl(0, 91%, 92%);
   --color-error: hsl(0, 91%, 37%);
-  --color-success: hsl(130, 100%, 93%);
+  --color-success-light: hsl(130, 100%, 93%);
   --color-success: hsl(130, 100%, 33%);
   --color-warning-light: hsl(42, 100%, 91%);
   --color-warning: hsl(42, 100%, 45%);
-  --color-info: hsl(190, 100%, 95%);
+  --color-info-light: hsl(190, 100%, 95%);
   --color-info: hsl(190, 100%, 45%);
   --color-disabled: var(--color-base-light);
 
