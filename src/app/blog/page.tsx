@@ -7,6 +7,8 @@ import Link from "next/link";
 import { getContentList } from "@/helpers/file-helpers";
 import { CONTENT_PATHS } from "@/constants";
 import { Metadata } from "next";
+import GridWithSidebar from "@/layout/GridWithSidebar";
+import BlogCardList from "@/components/BlogCardList";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -29,18 +31,10 @@ const Blog = async () => {
       <main id="main">
         <Section>
           <Container>
-            {blogs.map((blog, index) => {
-              console.log(blog);
-              return (
-                <BlogCard
-                  key={index}
-                  title={blog.title}
-                  slug={`/blog/${blog.slug}`}
-                  summary={blog.summary}
-                  tags={blog.tags}
-                />
-              );
-            })}
+            <GridWithSidebar>
+              <BlogCardList blogs={blogs} />
+              <p>Sidebar</p>
+            </GridWithSidebar>
           </Container>
         </Section>
       </main>

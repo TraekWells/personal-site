@@ -1,4 +1,7 @@
 .postTags {
   display: flex;
   gap: var(--space-16);
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }

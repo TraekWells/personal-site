@@ -1,6 +1,6 @@
 :root {
   /* Color stuff  */
-  --color-primary-lightest: hsl(283, 47%, 97%);
+  --color-primary-lightest: hsl(283, 47%, 96%);
   --color-primary-light: hsl(283, 46%, 73%);
   --color-primary: hsl(283, 50%, 54%);
   --color-primary-dark: hsl(287, 50%, 42%);
@@ -26,6 +26,7 @@
   --color-info-light: hsl(190, 100%, 95%);
   --color-info: hsl(190, 100%, 45%);
   --color-disabled: var(--color-base-light);
+  --color-text: var(--color-base-darkest)
 
   /* Font Stuff  */
   --font-weight-normal: 500;

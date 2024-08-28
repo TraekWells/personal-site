@@ -8,7 +8,9 @@ type ContainerProps = {
 
 const Container = ({ children, narrow }: ContainerProps) => {
   return (
-    <div className={`${styles.container} ${narrow && styles.containerNarrow} `}>
+    <div
+      className={`${styles.container} ${narrow ? styles.containerNarrow : ""} `}
+    >
       {children}
     </div>
   );

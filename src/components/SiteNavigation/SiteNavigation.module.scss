@@ -17,16 +17,17 @@
   &List {
     display: flex;
     list-style: none;
+  }
 
-    a {
-      --border-size: 2px;
-      display: block;
-      padding: var(--space-16) var(--space-16);
-      border-bottom: var(--border-size) solid transparent;
+  &Link {
+    --border-size: 2px;
+    display: block;
+    padding: var(--space-24) var(--space-16);
+    border-bottom: var(--border-size) solid transparent;
+    color: var(--color-body-text);
 
-      &:hover {
-        border-bottom: var(--border-size) solid var(--color-primary-dark);
-      }
+    &:hover {
+      border-bottom: var(--border-size) solid var(--color-primary-dark);
     }
   }
 }

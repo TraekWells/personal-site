@@ -1,3 +1,5 @@
+import styles from "./Icon.module.scss";
+
 export type IconOptions =
   | "arrowRight"
   | "design"
@@ -22,7 +24,7 @@ const Icon = ({ type }: IconProps) => {
     case "arrowRight":
       return (
         <svg
-          className="icon"
+          className={styles.icon}
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -36,7 +38,7 @@ const Icon = ({ type }: IconProps) => {
     case "design":
       return (
         <svg
-          className="icon"
+          className={styles.icon}
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -56,7 +58,7 @@ const Icon = ({ type }: IconProps) => {
     case "development":
       return (
         <svg
-          className="icon"
+          className={styles.icon}
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -71,7 +73,7 @@ const Icon = ({ type }: IconProps) => {
     case "chevron":
       return (
         <svg
-          className="icon"
+          className={styles.icon}
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -85,7 +87,7 @@ const Icon = ({ type }: IconProps) => {
     case "infoCircle":
       return (
         <svg
-          className="icon"
+          className={styles.icon}
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -102,7 +104,7 @@ const Icon = ({ type }: IconProps) => {
     case "user":
       return (
         <svg
-          className="icon"
+          className={styles.icon}
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -117,7 +119,7 @@ const Icon = ({ type }: IconProps) => {
     case "communication":
       return (
         <svg
-          className="icon"
+          className={styles.icon}
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -131,7 +133,7 @@ const Icon = ({ type }: IconProps) => {
     case "fun":
       return (
         <svg
-          className="icon"
+          className={styles.icon}
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -148,7 +150,7 @@ const Icon = ({ type }: IconProps) => {
     case "accessibility":
       return (
         <svg
-          className="icon"
+          className={styles.icon}
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -166,7 +168,7 @@ const Icon = ({ type }: IconProps) => {
     case "host":
       return (
         <svg
-          className="icon"
+          className={styles.icon}
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -190,7 +192,7 @@ const Icon = ({ type }: IconProps) => {
     case "responsive":
       return (
         <svg
-          className="icon"
+          className={styles.icon}
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -206,7 +208,7 @@ const Icon = ({ type }: IconProps) => {
     case "performant":
       return (
         <svg
-          className="icon"
+          className={styles.icon}
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"

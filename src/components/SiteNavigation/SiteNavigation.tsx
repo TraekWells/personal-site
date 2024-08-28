@@ -1,31 +1,42 @@
 import Link from "next/link";
 import styles from "./SiteNavigation.module.scss";
 import VisuallyHidden from "../VisuallyHidden";
+import Button from "../Button";
 
 const SiteNavigation = () => {
   return (
     <nav className={styles.nav}>
       <ul className={styles.navList}>
         <li>
-          <Link href="/">Home</Link>
+          <Link className={styles.navLink} href="/">
+            Home
+          </Link>
         </li>
         <li>
-          <Link href="/blog">Writing</Link>
+          <Link className={styles.navLink} href="/blog">
+            Writing
+          </Link>
         </li>
         <li>
-          <Link href="/design-tips">Design Tips 🔥</Link>
+          <Link className={styles.navLink} href="/design-tips">
+            Design Tips 🔥
+          </Link>
         </li>
         <li>
-          <Link href="/journal/impossible-list">Impossible List</Link>
+          <Link className={styles.navLink} href="/journal/impossible-list">
+            Impossible List
+          </Link>
         </li>
         <li>
-          <Link href="/now">Now</Link>
+          <Link className={styles.navLink} href="/now">
+            Now
+          </Link>
         </li>
       </ul>
-      <button>
+      <Button>
         🎨
         <VisuallyHidden>Swap color mode</VisuallyHidden>
-      </button>
+      </Button>
     </nav>
   );
 };

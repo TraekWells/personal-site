@@ -1,0 +1,13 @@
+.readMore {
+  display: flex;
+  align-self: flex-start;
+
+  svg {
+    width: 24px;
+  }
+
+  svg,
+  g {
+    fill: inherit;
+  }
+}

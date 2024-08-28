@@ -1,0 +1,8 @@
+.button {
+  background-color: var(--color-primary-lightest);
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  border-radius: var(--border-radius-sm);
+  padding: var(--space-24);
+}
