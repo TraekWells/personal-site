@@ -9,6 +9,7 @@ import { getContentList, loadContent } from "@/helpers/file-helpers";
 import { CONTENT_PATHS } from "@/constants";
 import WordCount from "@/components/WordCount";
 import { Metadata } from "next";
+import GridWithSidebar from "@/layout/GridWithSidebar";
 
 export const generateStaticParams = async () => {
   const blogs = await getContentList(CONTENT_PATHS["blog"]);
@@ -47,15 +48,14 @@ const BlogPost = async ({ params }: any) => {
       <main className="post">
         <Section>
           <Container>
-            <div className="content">
-              <div className="content__text">
+            <GridWithSidebar>
+              <article>
                 <WordCount />
                 {content}
-              </div>
-              <div className="content__sidebar">
-                <TableOfContents />
-              </div>
-            </div>
+              </article>
+
+              <TableOfContents />
+            </GridWithSidebar>
           </Container>
         </Section>
         <Section slim>

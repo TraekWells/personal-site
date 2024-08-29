@@ -1,14 +1,10 @@
 .container {
   margin-inline: auto;
-  width: 105rem;
+  width: 85rem;
   max-width: 90%;
 
   &Narrow {
     width: 90%;
-    max-width: 95rem;
-  }
-
-  .lead {
-    margin-inline: auto;
+    max-width: 80rem;
   }
 }

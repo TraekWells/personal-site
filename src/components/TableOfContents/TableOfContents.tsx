@@ -11,8 +11,8 @@ const TableOfContents = () => {
     setHeaders(headers);
   }, []);
   return (
-    <>
-      <p className="eyebrow">Table of Contents</p>
+    <aside>
+      <p>Table of Contents</p>
       <ul>
         {headers?.map((header, index) => {
           return (
@@ -22,7 +22,7 @@ const TableOfContents = () => {
           );
         })}
       </ul>
-    </>
+    </aside>
   );
 };
 
