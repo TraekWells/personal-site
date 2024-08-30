@@ -4,7 +4,6 @@ import PageHeader from "@/components/PageHeader";
 import Container from "@/layout/Container";
 import Section from "@/layout/Section";
 import TableOfContents from "@/components/TableOfContents";
-import FancyHeader from "@/components/FancyHeader";
 import ProjectCard from "@/components/ProjectCard";
 import { getContentList, loadContent } from "@/helpers/file-helpers";
 import { CONTENT_PATHS } from "@/constants";
@@ -125,7 +124,7 @@ const ProjectPost = async ({ params }: ProjectPostProps) => {
         </Section>
         <Section slim>
           <Container narrow>
-            <FancyHeader>More Projects</FancyHeader>
+            <h2>More Projects</h2>
             <div className="projects">
               {moreProjects.map((project, index) => {
                 return (

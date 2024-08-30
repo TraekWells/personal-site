@@ -1,12 +1,5 @@
-import Link from "next/link";
 import type { Metadata } from "next";
-import Container from "@/layout/Container";
-import Section from "@/layout/Section";
-import Icon from "@/components/Icon";
-import FancyHeader from "@/components/FancyHeader";
-import CalloutBox from "@/components/CalloutBox";
-import Testimonial from "@/components/Testimonial";
-import ProjectCard from "@/components/ProjectCard";
+
 import { getContentList } from "@/helpers/file-helpers";
 import { CONTENT_PATHS } from "@/constants";
 
@@ -17,10 +10,9 @@ export const metadata: Metadata = {
 };
 
 const Home = async () => {
-  const projects = await getContentList(CONTENT_PATHS["projects"]);
   return (
     <main id="main">
-      <p>under construction</p>
+      <h1>Coming Soon (maybe)</h1>
     </main>
   );
 };
