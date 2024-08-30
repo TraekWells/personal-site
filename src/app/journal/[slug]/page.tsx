@@ -42,7 +42,7 @@ const JournalPost = async ({ params }: any) => {
 
   return (
     <>
-      <PageHeader title={frontmatter.title} tags={frontmatter.tags}>
+      <PageHeader title={frontmatter.title}>
         <p className="lead">{frontmatter.summary}</p>
       </PageHeader>
       <ContentWrapper>

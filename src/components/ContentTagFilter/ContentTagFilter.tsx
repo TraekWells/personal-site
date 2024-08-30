@@ -1,3 +1,4 @@
+import slugify from "@/utilities/slugify";
 import Link from "next/link";
 
 type ContentTagFilterProps = {
@@ -12,7 +13,7 @@ const ContentTagFilter = ({ tags }: ContentTagFilterProps) => {
         return (
           <ul key={tag}>
             <li>
-              <Link href="#">{tag}</Link>
+              <Link href={`/tags/${slugify(tag)}`}>{tag}</Link>
             </li>
           </ul>
         );

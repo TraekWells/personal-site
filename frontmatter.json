@@ -69,12 +69,6 @@
           "title": "createdAt",
           "name": "createdAt",
           "type": "datetime"
-        },
-        {
-          "title": "type",
-          "name": "type",
-          "type": "choice",
-          "choices": ["blog", "journal", "project"]
         }
       ]
     },
