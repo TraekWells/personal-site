@@ -9,6 +9,9 @@ import { getContentList, loadContent } from "@/helpers/file-helpers";
 import { CONTENT_PATHS } from "@/constants";
 import WordCount from "@/components/WordCount";
 import { Metadata } from "next";
+import ContentWrapper from "@/layout/ContentWrapper";
+import GridWithSidebar from "@/layout/GridWithSidebar";
+import BlogCardList from "@/components/BlogCardList";
 
 export const generateStaticParams = async () => {
   const journal = await getContentList(CONTENT_PATHS["journal"]);
@@ -44,40 +47,25 @@ const JournalPost = async ({ params }: any) => {
       <PageHeader title={frontmatter.title} tags={frontmatter.tags}>
         <p className="lead">{frontmatter.summary}</p>
       </PageHeader>
-      <main className="post">
+      <ContentWrapper>
         <Section>
           <Container>
-            <div className="content">
-              <div className="content__text">
+            <GridWithSidebar>
+              <article className="flow">
                 <WordCount />
                 {content}
-              </div>
-              <div className="content__sidebar">
-                <TableOfContents />
-              </div>
-            </div>
+              </article>
+              <TableOfContents />
+            </GridWithSidebar>
           </Container>
         </Section>
         <Section slim>
           <Container>
-            <FancyHeader>More stuff I've written</FancyHeader>
-            <div className="blogs">
-              <div className="blogs">
-                {moreJournals.map((journal) => {
-                  return (
-                    <BlogCard
-                      key={journal.slug}
-                      title={journal.title}
-                      slug={journal.slug}
-                      summary={journal.summary}
-                    />
-                  );
-                })}
-              </div>
-            </div>
+            <h2>More stuff I've written</h2>
+            <BlogCardList blogs={moreJournals} />
           </Container>
         </Section>
-      </main>
+      </ContentWrapper>
     </>
   );
 };

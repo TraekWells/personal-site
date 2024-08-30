@@ -8,6 +8,7 @@ import { CONTENT_PATHS } from "@/constants";
 import { Metadata } from "next";
 import GridWithSidebar from "@/layout/GridWithSidebar";
 import BlogCardList from "@/components/BlogCardList";
+import ContentWrapper from "@/layout/ContentWrapper";
 
 export const metadata: Metadata = {
   title: "Journal",
@@ -26,7 +27,7 @@ const Journal = async () => {
           being productive and ants.
         </p>
       </PageHeader>
-      <main id="main">
+      <ContentWrapper>
         <Section>
           <Container>
             <GridWithSidebar>
@@ -35,7 +36,7 @@ const Journal = async () => {
             </GridWithSidebar>
           </Container>
         </Section>
-      </main>
+      </ContentWrapper>
     </>
   );
 };

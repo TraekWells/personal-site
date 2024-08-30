@@ -3,6 +3,7 @@ import TableOfContents from "@/components/TableOfContents";
 import { CONTENT_PATHS } from "@/constants";
 import { loadContent } from "@/helpers/file-helpers";
 import Container from "@/layout/Container";
+import ContentWrapper from "@/layout/ContentWrapper";
 import Section from "@/layout/Section";
 import { Metadata } from "next";
 
@@ -27,7 +28,7 @@ const AboutMe = async () => {
           true passion of being a User Interface designer and developer.
         </p>
       </PageHeader>
-      <main className="post">
+      <ContentWrapper>
         <Section>
           <Container narrow>
             <div className="content">
@@ -38,7 +39,7 @@ const AboutMe = async () => {
             </div>
           </Container>
         </Section>
-      </main>
+      </ContentWrapper>
     </>
   );
 };

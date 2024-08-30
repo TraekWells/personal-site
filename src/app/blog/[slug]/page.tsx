@@ -9,6 +9,8 @@ import { CONTENT_PATHS } from "@/constants";
 import WordCount from "@/components/WordCount";
 import { Metadata } from "next";
 import GridWithSidebar from "@/layout/GridWithSidebar";
+import ContentWrapper from "@/layout/ContentWrapper";
+import BlogCardList from "@/components/BlogCardList";
 
 export const generateStaticParams = async () => {
   const blogs = await getContentList(CONTENT_PATHS["blog"]);
@@ -44,7 +46,7 @@ const BlogPost = async ({ params }: any) => {
       <PageHeader title={frontmatter.title} tags={frontmatter.tags}>
         <p className="lead">{frontmatter.summary}</p>
       </PageHeader>
-      <main className="post">
+      <ContentWrapper>
         <Section>
           <Container>
             <GridWithSidebar>
@@ -60,23 +62,10 @@ const BlogPost = async ({ params }: any) => {
         <Section slim>
           <Container>
             <h2>More stuff I've written</h2>
-            <div className="blogs">
-              <div className="blogs">
-                {moreBlogs.map((blog, index) => {
-                  return (
-                    <BlogCard
-                      key={index}
-                      title={blog.title}
-                      slug={blog.slug}
-                      summary={blog.summary}
-                    />
-                  );
-                })}
-              </div>
-            </div>
+            <BlogCardList blogs={moreBlogs} />
           </Container>
         </Section>
-      </main>
+      </ContentWrapper>
     </>
   );
 };

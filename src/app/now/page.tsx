@@ -3,6 +3,7 @@ import TableOfContents from "@/components/TableOfContents";
 import { CONTENT_PATHS } from "@/constants";
 import { loadContent } from "@/helpers/file-helpers";
 import Container from "@/layout/Container";
+import ContentWrapper from "@/layout/ContentWrapper";
 import GridWithSidebar from "@/layout/GridWithSidebar";
 import Section from "@/layout/Section";
 import { Metadata } from "next";
@@ -20,8 +21,8 @@ const Page = async () => {
   const { content } = await loadContent(`${CONTENT_PATHS["pages"]}/now`);
   return (
     <>
-      <PageHeader title="Now"></PageHeader>
-      <main>
+      <PageHeader title="Now" />
+      <ContentWrapper>
         <Section>
           <Container narrow>
             <GridWithSidebar>
@@ -30,7 +31,7 @@ const Page = async () => {
             </GridWithSidebar>
           </Container>
         </Section>
-      </main>
+      </ContentWrapper>
     </>
   );
 };

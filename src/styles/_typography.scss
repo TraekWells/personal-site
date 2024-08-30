@@ -61,6 +61,13 @@ p {
   font-weight: var(--font-weight-normal);
 }
 
+.prose {
+  h2 {
+    font-size: var(--font-size-2xl);
+    color: var(--color-primary-darker);
+  }
+}
+
 label,
 input {
   font-size: var(--font-size-md);
