@@ -7,8 +7,8 @@ import { getContentList } from "@/helpers/file-helpers";
 import { CONTENT_PATHS } from "@/constants";
 import { Metadata } from "next";
 import GridWithSidebar from "@/layout/GridWithSidebar";
-import BlogCardList from "@/components/BlogCardList";
 import ContentWrapper from "@/layout/ContentWrapper";
+import ContentCardList from "@/components/ContentCardList";
 
 export const metadata: Metadata = {
   title: "Journal",
@@ -31,7 +31,7 @@ const Journal = async () => {
         <Section>
           <Container>
             <GridWithSidebar>
-              <BlogCardList blogs={journals} />
+              <ContentCardList content={journals} type="journal" />
               {/* <p>Sidebar</p> */}
             </GridWithSidebar>
           </Container>

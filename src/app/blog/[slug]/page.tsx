@@ -2,7 +2,6 @@ import React from "react";
 import PageHeader from "@/components/PageHeader";
 import Section from "@/layout/Section";
 import Container from "@/layout/Container";
-import BlogCard from "@/components/BlogCard";
 import TableOfContents from "@/components/TableOfContents";
 import { getContentList, loadContent } from "@/helpers/file-helpers";
 import { CONTENT_PATHS } from "@/constants";
@@ -10,7 +9,7 @@ import WordCount from "@/components/WordCount";
 import { Metadata } from "next";
 import GridWithSidebar from "@/layout/GridWithSidebar";
 import ContentWrapper from "@/layout/ContentWrapper";
-import BlogCardList from "@/components/BlogCardList";
+import ContentCardList from "@/components/ContentCardList";
 
 export const generateStaticParams = async () => {
   const blogs = await getContentList(CONTENT_PATHS["blog"]);
@@ -62,7 +61,7 @@ const BlogPost = async ({ params }: any) => {
         <Section slim>
           <Container>
             <h2>More stuff I've written</h2>
-            <BlogCardList blogs={moreBlogs} />
+            <ContentCardList content={moreBlogs} type="blog" />
           </Container>
         </Section>
       </ContentWrapper>

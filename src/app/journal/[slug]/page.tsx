@@ -2,8 +2,6 @@ import React from "react";
 import PageHeader from "@/components/PageHeader";
 import Section from "@/layout/Section";
 import Container from "@/layout/Container";
-import FancyHeader from "@/components/FancyHeader";
-import BlogCard from "@/components/BlogCard";
 import TableOfContents from "@/components/TableOfContents";
 import { getContentList, loadContent } from "@/helpers/file-helpers";
 import { CONTENT_PATHS } from "@/constants";
@@ -11,13 +9,13 @@ import WordCount from "@/components/WordCount";
 import { Metadata } from "next";
 import ContentWrapper from "@/layout/ContentWrapper";
 import GridWithSidebar from "@/layout/GridWithSidebar";
-import BlogCardList from "@/components/BlogCardList";
+import ContentCardList from "@/components/ContentCardList";
 
 export const generateStaticParams = async () => {
   const journal = await getContentList(CONTENT_PATHS["journal"]);
 
-  return journal.map((blog) => ({
-    slug: blog.slug,
+  return journal.map((journal) => ({
+    slug: journal.slug,
   }));
 };
 
@@ -62,7 +60,7 @@ const JournalPost = async ({ params }: any) => {
         <Section slim>
           <Container>
             <h2>More stuff I've written</h2>
-            <BlogCardList blogs={moreJournals} />
+            <ContentCardList content={moreJournals} type="journal" />
           </Container>
         </Section>
       </ContentWrapper>

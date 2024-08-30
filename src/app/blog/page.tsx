@@ -7,7 +7,7 @@ import { getContentList } from "@/helpers/file-helpers";
 import { CONTENT_PATHS } from "@/constants";
 import { Metadata } from "next";
 import GridWithSidebar from "@/layout/GridWithSidebar";
-import BlogCardList from "@/components/BlogCardList";
+import ContentCardList from "@/components/ContentCardList";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -31,7 +31,7 @@ const Blog = async () => {
         <Section>
           <Container>
             <GridWithSidebar>
-              <BlogCardList blogs={blogs} />
+              <ContentCardList content={blogs} type="blog" />
               {/* <p>Sidebar</p> */}
             </GridWithSidebar>
           </Container>

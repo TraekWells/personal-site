@@ -1,10 +1,11 @@
+import Container from "@/layout/Container";
 import styles from "./Footer.module.scss";
 import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className={styles["footer"]}>
-      <div className="container container--narrow">
+    <footer className={styles.footer}>
+      <Container narrow>
         <div className="d-grid-two-columns">
           <div className="d-grid__column">
             <p>
@@ -90,7 +91,7 @@ const Footer = () => {
           </a>{" "}
           🐜
         </p>
-      </div>
+      </Container>
     </footer>
   );
 };

@@ -27,13 +27,13 @@
   --color-info-light: hsl(190, 100%, 95%);
   --color-info: hsl(190, 100%, 45%);
   --color-disabled: var(--color-base-light);
-  --color-text: var(--color-base-darkest)
+  --color-text: var(--color-base-darkest);
 
   /* Font Stuff  */
-  --font-weight-normal: 500;
-  --font-weight-bold: 600;
-  --font-weight-bolder: 700;
-  --font-weight-boldest: 800;
+  --font-weight-normal: 525;
+  --font-weight-bold: 700;
+  --font-weight-bolder: 800;
+  --font-weight-boldest: 900;
 
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
@@ -43,7 +43,7 @@
   --font-size-xl: 1.8125rem;
   --font-size-2xl: 2.1875rem;
   --font-size-3xl: 2.625rem;
-  --font-size-4xl: 3.1875rem;
+  --font-size-4xl: clamp(2.4rem, 4vw, 3.1875rem);
 
   --breakpoint-xsm: 37.5em;
   --breakpoint-sm: 43.75em;

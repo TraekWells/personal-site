@@ -1,9 +1,9 @@
 .note {
   background-color: var(--color-primary-lightest);
   border-radius: var(--border-radius-xsm);
-  padding: 2rem;
+  padding: var(--space-24);
   position: relative;
-  margin: 2rem 0;
+  margin: var(--space-24) 0;
 
   svg {
     outline: 0.35rem solid var(--color-base-white);
