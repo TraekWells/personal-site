@@ -8,6 +8,7 @@ import { CONTENT_PATHS } from "@/constants";
 import { Metadata } from "next";
 import GridWithSidebar from "@/layout/GridWithSidebar";
 import ContentCardList from "@/components/ContentCardList";
+import ContentTagFilter from "@/components/ContentTagFilter";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -17,6 +18,9 @@ export const metadata: Metadata = {
 
 const Blog = async () => {
   const blogs = await getContentList(CONTENT_PATHS["blog"]);
+  const tags = blogs.flatMap((blog) => blog.tags).filter(Boolean);
+  // This is sweet, it removes duplicates from the tags array
+  const uniqueTags = [...new Set(tags)];
 
   return (
     <>
@@ -32,7 +36,7 @@ const Blog = async () => {
           <Container>
             <GridWithSidebar>
               <ContentCardList content={blogs} type="blog" />
-              {/* <p>Sidebar</p> */}
+              <ContentTagFilter tags={uniqueTags} />
             </GridWithSidebar>
           </Container>
         </Section>
