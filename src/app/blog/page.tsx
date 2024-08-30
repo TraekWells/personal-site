@@ -33,7 +33,7 @@ const Blog = async () => {
           <Container>
             <GridWithSidebar>
               <BlogCardList blogs={blogs} />
-              <p>Sidebar</p>
+              {/* <p>Sidebar</p> */}
             </GridWithSidebar>
           </Container>
         </Section>

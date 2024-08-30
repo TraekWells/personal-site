@@ -13,12 +13,10 @@ export type BlogCardProps = {
 function BlogCard({ title, summary, slug, tags }: BlogCardProps) {
   return (
     <article className={styles.blog}>
-      {tags && <PostTags tags={tags} />}
       <h3>
         <Link href={slug}>{title}</Link>
       </h3>
       <p>{summary}</p>
-      <ReadMore slug={slug} />
     </article>
   );
 }

@@ -2,7 +2,6 @@ import React from "react";
 import PageHeader from "@/components/PageHeader";
 import Section from "@/layout/Section";
 import Container from "@/layout/Container";
-import FancyHeader from "@/components/FancyHeader";
 import BlogCard from "@/components/BlogCard";
 import TableOfContents from "@/components/TableOfContents";
 import { getContentList, loadContent } from "@/helpers/file-helpers";
@@ -49,7 +48,7 @@ const BlogPost = async ({ params }: any) => {
         <Section>
           <Container>
             <GridWithSidebar>
-              <article>
+              <article className="flow">
                 <WordCount />
                 {content}
               </article>
@@ -60,7 +59,7 @@ const BlogPost = async ({ params }: any) => {
         </Section>
         <Section slim>
           <Container>
-            <FancyHeader>More stuff I've written</FancyHeader>
+            <h2>More stuff I've written</h2>
             <div className="blogs">
               <div className="blogs">
                 {moreBlogs.map((blog, index) => {
