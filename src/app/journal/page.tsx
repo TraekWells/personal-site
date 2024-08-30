@@ -1,12 +1,13 @@
 import React from "react";
 import PageHeader from "@/components/PageHeader";
-import BlogCard from "@/components/BlogCard";
 import Section from "@/layout/Section";
 import Container from "@/layout/Container";
 import Link from "next/link";
 import { getContentList } from "@/helpers/file-helpers";
 import { CONTENT_PATHS } from "@/constants";
 import { Metadata } from "next";
+import GridWithSidebar from "@/layout/GridWithSidebar";
+import BlogCardList from "@/components/BlogCardList";
 
 export const metadata: Metadata = {
   title: "Journal",
@@ -27,19 +28,11 @@ const Journal = async () => {
       </PageHeader>
       <main id="main">
         <Section>
-          <Container narrow>
-            <div className="blogs">
-              {journals.map((journal, index) => {
-                return (
-                  <BlogCard
-                    key={index}
-                    title={journal.title}
-                    slug={`/journal/${journal.slug}`}
-                    summary={journal.summary}
-                  />
-                );
-              })}
-            </div>
+          <Container>
+            <GridWithSidebar>
+              <BlogCardList blogs={journals} />
+              {/* <p>Sidebar</p> */}
+            </GridWithSidebar>
           </Container>
         </Section>
       </main>

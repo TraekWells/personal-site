@@ -1,23 +1,19 @@
 .note {
-  background-color: hsl(var(--color-primary-100));
+  background-color: var(--color-primary-lightest);
   border-radius: var(--border-radius-xsm);
   padding: 2rem;
   position: relative;
   margin: 2rem 0;
 
   svg {
-    outline: 0.5rem solid hsl(var(--color-white));
+    outline: 0.35rem solid var(--color-base-white);
     position: absolute;
     top: -0.5rem;
     left: -0.5rem;
     width: 2rem;
     height: 2rem;
-    background-color: hsl(var(--color-white));
+    background-color: var(--color-base-white);
     border-radius: 50%;
-    color: hsl(var(--color-primary-500));
-  }
-
-  p {
-    margin: 0;
+    color: var(--color-primary-darkest);
   }
 }

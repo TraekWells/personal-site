@@ -7,7 +7,7 @@ type NoteProps = {
 
 const Note = ({ children }: NoteProps) => {
   return (
-    <div className={styles["note"]}>
+    <div className={styles.note}>
       <Icon type="infoCircle" />
       {children}
     </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import PageHeader from "@/components/PageHeader";
-import BlogCard from "@/components/BlogCard";
 import Section from "@/layout/Section";
 import Container from "@/layout/Container";
 import Link from "next/link";
