@@ -18,7 +18,9 @@ export const generateMetadata = async (): Promise<Metadata> => {
 };
 
 const Page = async () => {
-  const { content } = await loadContent(`${CONTENT_PATHS["pages"]}/now`);
+  const { content, headers } = await loadContent(
+    `${CONTENT_PATHS["pages"]}/now`
+  );
   return (
     <>
       <PageHeader title="Now" />
@@ -27,7 +29,7 @@ const Page = async () => {
           <Container>
             <GridWithSidebar>
               <article className="flow">{content}</article>
-              <TableOfContents />
+              <TableOfContents headers={headers} />
             </GridWithSidebar>
           </Container>
         </Section>

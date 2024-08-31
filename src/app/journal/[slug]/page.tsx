@@ -32,7 +32,7 @@ export const generateMetadata = async ({ params }: any): Promise<Metadata> => {
 };
 
 const JournalPost = async ({ params }: any) => {
-  const { frontmatter, content } = await loadContent(
+  const { frontmatter, content, headers } = await loadContent(
     `${CONTENT_PATHS["journal"]}/${params.slug}`
   );
   const journals = await getContentList(CONTENT_PATHS["journal"]);
@@ -54,7 +54,7 @@ const JournalPost = async ({ params }: any) => {
                 <WordCount />
                 {content}
               </article>
-              <TableOfContents />
+              <TableOfContents headers={headers} />
             </GridWithSidebar>
             <TextLinkWithIcon href="/journal">
               Back to all posts

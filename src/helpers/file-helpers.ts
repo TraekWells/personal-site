@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import { compileMDX } from "next-mdx-remote/rsc";
 import { mdxComponents, mdxOptions } from "./mdx-config";
 import React from "react";
+import { extractHeaders } from "./extract-headers";
 
 export const getContentList = async (directory: string): Promise<any[]> => {
   const fileNames = await readDirectory(directory);
@@ -25,6 +26,7 @@ export const getContentList = async (directory: string): Promise<any[]> => {
 
 export const loadContent = React.cache(async (slug: string): Promise<any> => {
   const rawContent = await readFile(`${slug}.mdx`);
+  const headers = extractHeaders(rawContent);
 
   const { frontmatter, content } = await compileMDX({
     source: rawContent,
@@ -32,7 +34,7 @@ export const loadContent = React.cache(async (slug: string): Promise<any> => {
     ...mdxOptions,
   });
 
-  return { frontmatter, content };
+  return { frontmatter, content, headers };
 });
 
 function readFile(localPath: string) {

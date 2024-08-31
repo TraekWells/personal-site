@@ -31,7 +31,7 @@ export const generateMetadata = async ({ params }: any): Promise<Metadata> => {
 };
 
 const BlogPost = async ({ params }: any) => {
-  const { frontmatter, content } = await loadContent(
+  const { frontmatter, content, headers } = await loadContent(
     `${CONTENT_PATHS["blog"]}/${params.slug}`
   );
 
@@ -48,7 +48,7 @@ const BlogPost = async ({ params }: any) => {
                 <WordCount />
                 {content}
               </article>
-              <TableOfContents />
+              <TableOfContents headers={headers} />
             </GridWithSidebar>
             <TextLinkWithIcon href="/blog">Back to all posts</TextLinkWithIcon>
           </Container>

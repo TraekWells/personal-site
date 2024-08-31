@@ -4,6 +4,7 @@ import { CONTENT_PATHS } from "@/constants";
 import { loadContent } from "@/helpers/file-helpers";
 import Container from "@/layout/Container";
 import ContentWrapper from "@/layout/ContentWrapper";
+import GridWithSidebar from "@/layout/GridWithSidebar";
 import Section from "@/layout/Section";
 import { Metadata } from "next";
 
@@ -19,7 +20,9 @@ export const generateMetadata = async (): Promise<Metadata> => {
 };
 
 const AboutMe = async () => {
-  const { content } = await loadContent(`${CONTENT_PATHS["pages"]}/about-me`);
+  const { content, headers } = await loadContent(
+    `${CONTENT_PATHS["pages"]}/about-me`
+  );
   return (
     <>
       <PageHeader title="My story">
@@ -30,13 +33,11 @@ const AboutMe = async () => {
       </PageHeader>
       <ContentWrapper>
         <Section>
-          <Container narrow>
-            <div className="content">
-              <div className="content__text">{content}</div>
-              <div className="content__sidebar">
-                <TableOfContents />
-              </div>
-            </div>
+          <Container>
+            <GridWithSidebar>
+              <article className="prose flow">{content}</article>
+              <TableOfContents headers={headers} />
+            </GridWithSidebar>
           </Container>
         </Section>
       </ContentWrapper>
