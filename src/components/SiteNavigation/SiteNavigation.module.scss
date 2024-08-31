@@ -1,22 +1,16 @@
+.navWrapper {
+  position: relative;
+}
+
 .nav {
   display: flex;
-  position: relative;
   isolation: isolate;
   justify-content: space-between;
-
-  &::before {
-    content: "";
-    height: 15px;
-    width: 15px;
-    background-color: var(--color-primary-dark);
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
 
   &List {
     display: flex;
     list-style: none;
+    padding: 0;
   }
 
   &Link {

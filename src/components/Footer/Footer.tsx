@@ -6,8 +6,8 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <Container narrow>
-        <div className="d-grid-two-columns">
-          <div className="d-grid__column">
+        <div className={styles.grid}>
+          <div className="column">
             <p>
               <strong>About me</strong>
             </p>
@@ -17,67 +17,61 @@ const Footer = () => {
               first.
             </p>
           </div>
-          <div className="d-grid__column">
-            <div className="d-grid-two-columns">
-              <div className="d-grid__column">
-                <p>
-                  <strong>Pages</strong>
-                </p>
-                <ul className="list-unstyled">
-                  <li>
-                    <Link href="/projects">Projects</Link>
-                  </li>
-                  <li>
-                    <Link href="/about-me">About Me</Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="d-grid__column">
-                <p>
-                  <strong>Social media</strong>
-                </p>
-                <ul className="list-unstyled">
-                  <li>
-                    <Link href="https://twitter.com/TraekWells" target="_blank">
-                      Twitter
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="https://www.linkedin.com/in/traekwells/"
-                      target="_blank"
-                    >
-                      LinkedIn
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="https://www.instagram.com/ui.traek/"
-                      target="_blank"
-                    >
-                      Instagram
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="https://dribbble.com/TraekWells"
-                      target="_blank"
-                    >
-                      Dribbble
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="https://github.com/TraekWells" target="_blank">
-                      GitHub
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
+          <div className="column">
+            <p>
+              <strong>Pages</strong>
+            </p>
+            <ul>
+              <li>
+                <Link href="/projects">Projects</Link>
+              </li>
+              <li>
+                <Link href="/about-me">About Me</Link>
+              </li>
+            </ul>
+          </div>
+          <div className="column">
+            <p>
+              <strong>Social media</strong>
+            </p>
+            <ul>
+              <li>
+                <Link href="https://twitter.com/TraekWells" target="_blank">
+                  Twitter
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.linkedin.com/in/traekwells/"
+                  target="_blank"
+                >
+                  LinkedIn
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.instagram.com/ui.traek/"
+                  target="_blank"
+                >
+                  Instagram
+                </Link>
+              </li>
+              <li>
+                <Link href="https://dribbble.com/TraekWells" target="_blank">
+                  Dribbble
+                </Link>
+              </li>
+              <li>
+                <Link href="https://github.com/TraekWells" target="_blank">
+                  GitHub
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
-        <p className="text-center mt-4">
-          &copy; Traek Wells {new Date().getFullYear()}. Built with{" "}
+
+        <p className="text-center">
+          ©️ Traek Wells {new Date().getFullYear()}. Built with{" "}
           <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
             NextJS
           </a>

@@ -6,8 +6,8 @@ import Container from "@/layout/Container";
 
 const SiteNavigation = () => {
   return (
-    <nav className={styles.nav}>
-      <Container>
+    <Container className={styles.navWrapper}>
+      <nav className={styles.nav}>
         <ul className={styles.navList}>
           <li>
             <Link className={styles.navLink} href="/">
@@ -39,8 +39,8 @@ const SiteNavigation = () => {
           🎨
           <VisuallyHidden>Swap color mode</VisuallyHidden>
         </Button>
-      </Container>
-    </nav>
+      </nav>
+    </Container>
   );
 };
 

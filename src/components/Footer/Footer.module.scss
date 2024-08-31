@@ -2,4 +2,15 @@
   background-color: var(--color-primary-lightest);
   padding-block: 5rem;
   position: relative;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: var(--space-24);
 }

@@ -1,6 +1,9 @@
+import { ButtonHTMLAttributes } from "react";
 import styles from "./Button.module.scss";
 
-type ButtonProps = {
+// How do I add the defaul HTML button props to my Button component?
+
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   children: React.ReactNode;
 };
 
