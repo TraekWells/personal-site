@@ -50,7 +50,7 @@ const JournalPost = async ({ params }: any) => {
         <Section>
           <Container>
             <GridWithSidebar>
-              <article className="flow">
+              <article className="prose flow">
                 <WordCount />
                 {content}
               </article>

@@ -2,6 +2,10 @@
   scrollbar-color: var(--color-primary-dark) var(--color-primary-lightest);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   ::-webkit-scrollbar-track {
     background: var(--color-primary-300);
