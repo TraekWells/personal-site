@@ -11,27 +11,27 @@ const SiteNavigation = () => {
         <ul className={styles.navList}>
           <li>
             <Link className={styles.navLink} href="/">
-              Home
+              🛖 Home
             </Link>
           </li>
           <li>
             <Link className={styles.navLink} href="/blog">
-              Writing
+              ✏️ Writing
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link className={styles.navLink} href="/design-tips">
               Design Tips 🔥
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link className={styles.navLink} href="/journal/impossible-list">
-              Impossible List
+              🤷🏽‍♂️ Impossible List
             </Link>
           </li>
           <li>
             <Link className={styles.navLink} href="/now">
-              Now
+              👀 Now
             </Link>
           </li>
         </ul>

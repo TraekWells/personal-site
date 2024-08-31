@@ -9,7 +9,7 @@ type ContentCardListProps = {
 
 const ContentCardList = ({ content, type }: ContentCardListProps) => {
   return (
-    <div className={styles.blogCardList}>
+    <div className={styles.contentCardList}>
       {content.map((content, index) => {
         return (
           <ContentCard

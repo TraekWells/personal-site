@@ -1,4 +1,5 @@
 import slugify from "@/utilities/slugify";
+import styles from "./ContentTagFilter.module.scss";
 import Link from "next/link";
 
 type ContentTagFilterProps = {
@@ -7,17 +8,17 @@ type ContentTagFilterProps = {
 
 const ContentTagFilter = ({ tags }: ContentTagFilterProps) => {
   return (
-    <div className="contentTagFilter">
-      <h3>Filter By Tag</h3>
-      {tags.map((tag) => {
-        return (
-          <ul key={tag}>
-            <li>
+    <div className={styles.contentTagFilter}>
+      <h3 className="header-4">Filter By Tag</h3>
+      <ul>
+        {tags.map((tag) => {
+          return (
+            <li key={tag}>
               <Link href={`/tags/${slugify(tag)}`}>{tag}</Link>
             </li>
-          </ul>
-        );
-      })}
+          );
+        })}
+      </ul>
     </div>
   );
 };

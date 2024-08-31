@@ -2,7 +2,6 @@ import React from "react";
 import PageHeader from "@/components/PageHeader";
 import Section from "@/layout/Section";
 import Container from "@/layout/Container";
-import TableOfContents from "@/components/TableOfContents";
 import { getContentList } from "@/helpers/file-helpers";
 import { CONTENT_PATHS } from "@/constants";
 import { Metadata } from "next";
@@ -11,6 +10,9 @@ import ContentWrapper from "@/layout/ContentWrapper";
 import slugify from "@/utilities/slugify";
 import unslug from "@/utilities/unslug";
 import ContentCard from "@/components/ContentCard";
+import Link from "next/link";
+import Icon from "@/components/Icon";
+import TextLinkWithIcon from "@/components/TextLinkWithIcon";
 
 export const generateStaticParams = async () => {
   const blogs = await getContentList(CONTENT_PATHS["blog"]);
@@ -50,6 +52,7 @@ const Tag = async ({ params }: any) => {
       <ContentWrapper>
         <Section>
           <Container>
+            <TextLinkWithIcon href="/blog">Back to all posts</TextLinkWithIcon>
             <GridWithSidebar>
               <article className="flow">
                 {taggedBlogs.map((blog) => {
@@ -63,8 +66,6 @@ const Tag = async ({ params }: any) => {
                   );
                 })}
               </article>
-
-              <TableOfContents />
             </GridWithSidebar>
           </Container>
         </Section>

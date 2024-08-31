@@ -26,7 +26,7 @@ const Page = async () => {
         <Section>
           <Container narrow>
             <GridWithSidebar>
-              <article>{content}</article>
+              <article className="flow">{content}</article>
               <TableOfContents />
             </GridWithSidebar>
           </Container>
