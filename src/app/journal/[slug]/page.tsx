@@ -10,6 +10,7 @@ import { Metadata } from "next";
 import ContentWrapper from "@/layout/ContentWrapper";
 import GridWithSidebar from "@/layout/GridWithSidebar";
 import ContentCardList from "@/components/ContentCardList";
+import TextLinkWithIcon from "@/components/TextLinkWithIcon";
 
 export const generateStaticParams = async () => {
   const journal = await getContentList(CONTENT_PATHS["journal"]);
@@ -55,12 +56,9 @@ const JournalPost = async ({ params }: any) => {
               </article>
               <TableOfContents />
             </GridWithSidebar>
-          </Container>
-        </Section>
-        <Section slim>
-          <Container>
-            <h2>More stuff I've written</h2>
-            <ContentCardList content={moreJournals} type="journal" />
+            <TextLinkWithIcon href="/journal">
+              Back to all posts
+            </TextLinkWithIcon>
           </Container>
         </Section>
       </ContentWrapper>

@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
-
-import { getContentList } from "@/helpers/file-helpers";
-import { CONTENT_PATHS } from "@/constants";
+import Container from "@/layout/Container";
 
 export const metadata: Metadata = {
   title: "Home | UX Designer & Front-End Developer",
@@ -12,7 +10,9 @@ export const metadata: Metadata = {
 const Home = async () => {
   return (
     <main id="main">
-      <h1>Coming Soon (maybe)</h1>
+      <Container>
+        <h1>Coming Soon (maybe)</h1>
+      </Container>
     </main>
   );
 };

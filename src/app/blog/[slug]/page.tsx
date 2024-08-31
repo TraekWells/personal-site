@@ -9,7 +9,7 @@ import WordCount from "@/components/WordCount";
 import { Metadata } from "next";
 import GridWithSidebar from "@/layout/GridWithSidebar";
 import ContentWrapper from "@/layout/ContentWrapper";
-import ContentCardList from "@/components/ContentCardList";
+import TextLinkWithIcon from "@/components/TextLinkWithIcon";
 
 export const generateStaticParams = async () => {
   const blogs = await getContentList(CONTENT_PATHS["blog"]);
@@ -34,11 +34,6 @@ const BlogPost = async ({ params }: any) => {
   const { frontmatter, content } = await loadContent(
     `${CONTENT_PATHS["blog"]}/${params.slug}`
   );
-  const blogs = await getContentList(CONTENT_PATHS["blog"]);
-  const moreBlogs = blogs
-    .filter((blog) => blog.draft === false)
-    .filter((blog) => blog.title !== frontmatter.title)
-    .sort(() => 0.5 - Math.random());
 
   return (
     <>
@@ -53,15 +48,9 @@ const BlogPost = async ({ params }: any) => {
                 <WordCount />
                 {content}
               </article>
-
               <TableOfContents />
             </GridWithSidebar>
-          </Container>
-        </Section>
-        <Section slim>
-          <Container>
-            <h2>More stuff I've written</h2>
-            <ContentCardList content={moreBlogs} type="blog" />
+            <TextLinkWithIcon href="/blog">Back to all posts</TextLinkWithIcon>
           </Container>
         </Section>
       </ContentWrapper>

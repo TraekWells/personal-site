@@ -8,7 +8,6 @@ type ContainerProps = {
 };
 
 const Container = ({ children, narrow, className }: ContainerProps) => {
-  console.log(className);
   return (
     <div
       className={`${styles.container} ${narrow ? styles.containerNarrow : ""} ${

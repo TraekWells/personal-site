@@ -9,9 +9,10 @@ type TextLinkWithIconProps = {
 
 const TextLinkWithIcon = ({ href, children }: TextLinkWithIconProps) => {
   return (
-    <Link href={href} className={styles.textLinkWithIcon}>
-      <Icon type="arrowRight" /> {children}
-    </Link>
+    <span className={styles.textLinkWithIcon}>
+      <Icon type="arrowLeft" />
+      <Link href={href}>{children}</Link>
+    </span>
   );
 };
 

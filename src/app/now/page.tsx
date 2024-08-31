@@ -24,7 +24,7 @@ const Page = async () => {
       <PageHeader title="Now" />
       <ContentWrapper>
         <Section>
-          <Container narrow>
+          <Container>
             <GridWithSidebar>
               <article className="flow">{content}</article>
               <TableOfContents />
