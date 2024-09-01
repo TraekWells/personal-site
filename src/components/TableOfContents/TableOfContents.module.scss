@@ -1,6 +1,7 @@
 .tableOfContent {
   position: sticky;
-  top: 0;
+  top: 1rem;
+  align-self: flex-start;
 
   ul {
     list-style: none;
