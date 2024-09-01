@@ -10,8 +10,6 @@ import ContentWrapper from "@/layout/ContentWrapper";
 import slugify from "@/utilities/slugify";
 import unslug from "@/utilities/unslug";
 import ContentCard from "@/components/ContentCard";
-import Link from "next/link";
-import Icon from "@/components/Icon";
 import TextLinkWithIcon from "@/components/TextLinkWithIcon";
 
 export const generateStaticParams = async () => {

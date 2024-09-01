@@ -1,25 +1,15 @@
 "use client";
 import React from "react";
 
-const WordCount = () => {
-  const [wordCount, setWordCount] = React.useState<number | null>(null);
-  const wpm = 250;
+type WordCountProps = {
+  wordCount: number;
+};
 
-  React.useEffect(() => {
-    const body = document.querySelector(".content > div");
+const WordCount = ({ wordCount }: WordCountProps) => {
+  const wpm = 200;
+  const averageMinutes = Math.ceil(wordCount / wpm);
 
-    if (body?.textContent) {
-      const words = body.textContent.trim().split(/\s+/).length;
-      const count = Math.ceil(words / wpm);
-      setWordCount(count);
-    }
-  }, [wordCount]);
-
-  return (
-    <div className="content__info">
-      <p>About a {wordCount} minute read.</p>
-    </div>
-  );
+  return <p>About a {averageMinutes} minute read.</p>;
 };
 
 export default WordCount;

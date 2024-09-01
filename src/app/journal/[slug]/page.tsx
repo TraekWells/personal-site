@@ -9,7 +9,6 @@ import WordCount from "@/components/WordCount";
 import { Metadata } from "next";
 import ContentWrapper from "@/layout/ContentWrapper";
 import GridWithSidebar from "@/layout/GridWithSidebar";
-import ContentCardList from "@/components/ContentCardList";
 import TextLinkWithIcon from "@/components/TextLinkWithIcon";
 
 export const generateStaticParams = async () => {
@@ -32,14 +31,9 @@ export const generateMetadata = async ({ params }: any): Promise<Metadata> => {
 };
 
 const JournalPost = async ({ params }: any) => {
-  const { frontmatter, content, headers } = await loadContent(
+  const { frontmatter, content, headers, wordCount } = await loadContent(
     `${CONTENT_PATHS["journal"]}/${params.slug}`
   );
-  const journals = await getContentList(CONTENT_PATHS["journal"]);
-  const moreJournals = journals
-    .filter((journal) => journal.draft === false)
-    .filter((journal) => journal.title !== frontmatter.title)
-    .sort(() => 0.5 - Math.random());
 
   return (
     <>
@@ -51,7 +45,7 @@ const JournalPost = async ({ params }: any) => {
           <Container>
             <GridWithSidebar>
               <article className="prose flow">
-                <WordCount />
+                <WordCount wordCount={wordCount} />
                 {content}
               </article>
               <TableOfContents headers={headers} />

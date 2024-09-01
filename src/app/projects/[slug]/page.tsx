@@ -35,7 +35,7 @@ export const generateMetadata = async ({ params }: any): Promise<Metadata> => {
 };
 
 const ProjectPost = async ({ params }: ProjectPostProps) => {
-  const { frontmatter, content } = await loadContent(
+  const { frontmatter, content, headers } = await loadContent(
     `${CONTENT_PATHS["projects"]}/${params.slug}`
   );
   const projects = await getContentList(CONTENT_PATHS["projects"]);
@@ -117,7 +117,7 @@ const ProjectPost = async ({ params }: ProjectPostProps) => {
                     </li>
                   )}
                 </ul>
-                <TableOfContents />
+                <TableOfContents headers={headers} />
               </div>
             </div>
           </Container>

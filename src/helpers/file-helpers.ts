@@ -5,7 +5,7 @@ import { compileMDX } from "next-mdx-remote/rsc";
 import { mdxComponents, mdxOptions } from "./mdx-config";
 import React from "react";
 import { extractHeaders } from "./extract-headers";
-
+import { getWordCount } from "./get-word-count";
 export const getContentList = async (directory: string): Promise<any[]> => {
   const fileNames = await readDirectory(directory);
   const contentArray = [];
@@ -27,6 +27,7 @@ export const getContentList = async (directory: string): Promise<any[]> => {
 export const loadContent = React.cache(async (slug: string): Promise<any> => {
   const rawContent = await readFile(`${slug}.mdx`);
   const headers = extractHeaders(rawContent);
+  const wordCount = getWordCount(rawContent);
 
   const { frontmatter, content } = await compileMDX({
     source: rawContent,
@@ -34,7 +35,7 @@ export const loadContent = React.cache(async (slug: string): Promise<any> => {
     ...mdxOptions,
   });
 
-  return { frontmatter, content, headers };
+  return { frontmatter, content, headers, wordCount };
 });
 
 function readFile(localPath: string) {
