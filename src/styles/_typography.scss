@@ -124,16 +124,3 @@ blockquote {
     margin: 0;
   }
 }
-
-[data-bright-theme] {
-  code > div {
-    padding: 0 1.3em !important;
-  }
-  width: calc(100% + 4em);
-
-  margin-block: -2em !important;
-}
-
-pre {
-  font-size: var(--font-size-sm);
-}
