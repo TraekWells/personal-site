@@ -1,19 +1,26 @@
 .note {
   background-color: var(--color-primary-lightest);
-  border-radius: var(--border-radius-xsm);
-  padding: var(--space-24);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-16) var(--space-24);
   position: relative;
   margin: var(--space-24) 0;
+
+  &.info {
+    background-color: var(--color-info-light);
+  }
+
+  &.warning {
+    background-color: var(--color-warning-light);
+  }
 
   svg {
     outline: 0.35rem solid var(--color-base-white);
     position: absolute;
     top: -0.5rem;
     left: -0.5rem;
-    width: 1rem;
-    height: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
     background-color: var(--color-base-white);
     border-radius: 50%;
-    color: var(--color-primary-darkest);
   }
 }
