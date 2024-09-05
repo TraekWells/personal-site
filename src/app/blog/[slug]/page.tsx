@@ -50,6 +50,7 @@ const BlogPost = async ({ params }: any) => {
               </article>
               <TableOfContents headers={headers} />
             </GridWithSidebar>
+            <hr />
             <TextLinkWithIcon href="/blog">Back to all posts</TextLinkWithIcon>
           </Container>
         </Section>

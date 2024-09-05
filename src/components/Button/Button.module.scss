@@ -4,13 +4,13 @@
   display: inline-flex;
   align-items: center;
   border-radius: var(--border-radius-sm);
-  padding: var(--space-16) var(--space-24);
+  padding: var(--space-8) var(--space-16);
   align-self: center;
   cursor: pointer;
 
   &:hover,
   &:focus {
-    background-color: var(--color-primary-light);
+    background-color: var(--color-primary-lighter);
   }
 
   &:active {

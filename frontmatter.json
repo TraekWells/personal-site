@@ -8,35 +8,29 @@
       "filePrefix": null,
       "fields": [
         {
-          "title": "draft",
+          "title": "Draft",
           "name": "draft",
           "type": "draft"
         },
         {
-          "title": "tags",
+          "title": "Tags",
           "name": "tags",
           "type": "tags"
         },
         {
-          "title": "title",
+          "title": "Title",
           "name": "title",
           "type": "string"
         },
         {
-          "title": "summary",
+          "title": "Summary",
           "name": "summary",
           "type": "string"
         },
         {
-          "title": "createdAt",
+          "title": "Created At",
           "name": "createdAt",
           "type": "datetime"
-        },
-        {
-          "title": "type",
-          "name": "type",
-          "type": "choice",
-          "choices": ["blog", "journal", "project"]
         }
       ]
     },
@@ -46,53 +40,47 @@
       "filePrefix": null,
       "fields": [
         {
-          "title": "title",
+          "title": "Title",
           "name": "title",
           "type": "string"
         },
         {
-          "title": "summary",
+          "title": "Summary",
           "name": "summary",
           "type": "string"
         },
         {
-          "title": "previewImage",
+          "title": "Preview Image",
           "name": "previewImage",
           "type": "image"
         },
         {
-          "title": "featuredImage",
+          "title": "Featured Image",
           "name": "featuredImage",
           "type": "image"
         },
         {
-          "title": "technology",
+          "title": "Technology",
           "name": "technology",
           "type": "list"
         },
         {
-          "title": "featured",
+          "title": "Featured",
           "name": "featured",
           "type": "boolean"
         },
         {
-          "title": "draft",
+          "title": "Draft",
           "name": "draft",
           "type": "draft"
         },
         {
-          "title": "type",
-          "name": "type",
-          "type": "choice",
-          "choices": ["blog", "journal", "project"]
-        },
-        {
-          "title": "linkToCode",
+          "title": "Link To Code",
           "name": "linkToCode",
           "type": "string"
         },
         {
-          "title": "linkToProject",
+          "title": "Link To Project",
           "name": "linkToProject",
           "type": "string"
         }

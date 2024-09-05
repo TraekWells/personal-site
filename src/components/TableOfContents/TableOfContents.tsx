@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import styles from "./TableOfContents.module.scss";
 import slugify from "@/utilities/slugify";

@@ -16,3 +16,19 @@ body {
   }
   overflow-x: hidden;
 }
+
+// hr {
+//   position: relative;
+//   margin: var(--space-40) 0;
+//   height: 50px;
+//   border: dashed black;
+
+//   &::after {
+//     content: "🐜";
+//     position: absolute;
+//     height: 1rem;
+//     width: 1rem;
+//     right: 0;
+//     transform: rotateX(90deg) rotateY(90deg);
+//   }
+// }
