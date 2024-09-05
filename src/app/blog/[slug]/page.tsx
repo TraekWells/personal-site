@@ -10,6 +10,7 @@ import { Metadata } from "next";
 import GridWithSidebar from "@/layout/GridWithSidebar";
 import ContentWrapper from "@/layout/ContentWrapper";
 import TextLinkWithIcon from "@/components/TextLinkWithIcon";
+import FancyRule from "@/components/FancyRule";
 
 export const generateStaticParams = async () => {
   const blogs = await getContentList(CONTENT_PATHS["blog"]);
@@ -49,8 +50,8 @@ const BlogPost = async ({ params }: any) => {
                 {content}
               </article>
               <TableOfContents headers={headers} />
+              <FancyRule />
             </GridWithSidebar>
-            <hr />
             <TextLinkWithIcon href="/blog">Back to all posts</TextLinkWithIcon>
           </Container>
         </Section>
