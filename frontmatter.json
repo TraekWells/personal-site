@@ -41,38 +41,6 @@
       ]
     },
     {
-      "name": "journal",
-      "pageBundle": false,
-      "filePrefix": null,
-      "fields": [
-        {
-          "title": "draft",
-          "name": "draft",
-          "type": "draft"
-        },
-        {
-          "title": "tags",
-          "name": "tags",
-          "type": "tags"
-        },
-        {
-          "title": "title",
-          "name": "title",
-          "type": "string"
-        },
-        {
-          "title": "summary",
-          "name": "summary",
-          "type": "string"
-        },
-        {
-          "title": "createdAt",
-          "name": "createdAt",
-          "type": "datetime"
-        }
-      ]
-    },
-    {
       "name": "project",
       "pageBundle": false,
       "filePrefix": null,

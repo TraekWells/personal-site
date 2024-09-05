@@ -19,11 +19,3 @@ export type BlogType = {
   tags: string[];
   draft: boolean;
 };
-
-export type JournalType = {
-  slug: string;
-  title: string;
-  summary: string;
-  tags: string[];
-  draft: boolean;
-};
