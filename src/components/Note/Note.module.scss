@@ -4,13 +4,16 @@
   padding: var(--space-16) var(--space-24);
   position: relative;
   margin: var(--space-24) 0;
+  border: 2px solid var(--color-primary-light);
 
   &.info {
     background-color: var(--color-info-light);
+    border: 2px solid var(--color-info);
   }
 
   &.warning {
     background-color: var(--color-warning-light);
+    border: 2px solid var(--color-warning);
   }
 
   svg {

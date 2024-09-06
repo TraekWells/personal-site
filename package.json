@@ -19,6 +19,7 @@
     "next-sitemap": "^4.2.3",
     "react": "^18",
     "react-dom": "^18",
+    "react-feather": "^2.0.10",
     "rehype-slug": "^6.0.0",
     "remark-gfm": "^3.0.1",
     "sass": "^1.74.1"

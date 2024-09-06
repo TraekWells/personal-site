@@ -2,4 +2,18 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: var(--space-8);
+  color: var(--color-link);
+
+  svg {
+    transition: all var(--transition-slow) ease;
+    transform: translateX(0);
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      transform: translateX(-8px);
+    }
+  }
 }

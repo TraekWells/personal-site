@@ -1,0 +1,10 @@
+.wordCount {
+  color: var(--color-text-light);
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+
+  p {
+    font-size: var(--font-size-sm);
+  }
+}

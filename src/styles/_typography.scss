@@ -54,7 +54,7 @@ h2 {
 
 h3 {
   font-size: var(--font-size-xl);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-boldest);
 }
 
 h4 {
@@ -89,15 +89,12 @@ a {
   text-decoration: none;
   border-bottom: var(--border-size) solid var(--color-primary);
   transition: 0.1s ease border;
-
-  &:link {
-    color: var(--color-primary);
-  }
+  color: var(--color-link);
 
   // Come back to this
   &:hover,
   &:focus {
-    color: var(--color-primary-darker);
+    color: var(--color-primary-darkest);
     border-bottom: var(--border-size) solid var(--color-primary-darker);
   }
 

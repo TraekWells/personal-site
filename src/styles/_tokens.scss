@@ -5,8 +5,8 @@
   --color-primary-light: hsl(283, 46%, 73%);
   --color-primary: hsl(283, 50%, 54%);
   --color-primary-dark: hsl(287, 50%, 42%);
-  --color-primary-darker: hsl(283, 59%, 24%);
-  --color-primary-darkest: hsl(283, 89%, 15%);
+  --color-primary-darker: hsl(283, 59%, 30%);
+  --color-primary-darkest: hsl(283, 89%, 20%);
   --color-secondary-lightest: hsl(30, 63%, 97%);
   --color-secondary-light: hsl(35, 100%, 93%);
   --color-secondary: hsl(34, 100%, 86%);
@@ -16,25 +16,26 @@
   --color-base-lightest: hsl(300, 8%, 95%);
   --color-base-light: hsl(285, 7%, 89%);
   --color-base: hsl(282, 7%, 52%);
-  --color-base-dark: hsl(285, 7%, 33%);
+  --color-base-dark: hsl(285, 7%, 36%);
   --color-base-darkest: hsl(103, 7%, 19%);
   --color-surface: hsl(0, 0%, 100%);
   --color-error-light: hsl(0, 91%, 92%);
   --color-error: hsl(0, 91%, 37%);
   --color-success-light: hsl(130, 100%, 93%);
   --color-success: hsl(130, 100%, 33%);
-  --color-warning-light: hsl(42, 100%, 91%);
+  --color-warning-light: hsl(42, 95%, 95%);
   --color-warning: hsl(42, 100%, 45%);
-  --color-info-light: hsl(205, 100%, 96%);
-  --color-info: hsl(190, 100%, 45%);
+  --color-info-light: hsl(205, 100%, 97%);
+  --color-info: hsl(190, 100%, 42%);
   --color-disabled: var(--color-base-light);
+  --color-text-light: var(--color-base-dark);
   --color-text: var(--color-base-darkest);
+  --color-link: var(--color-primary-darker);
 
   /* Font Stuff  */
   --font-weight-normal: 525;
-  --font-weight-bold: 700;
-  --font-weight-bolder: 800;
-  --font-weight-boldest: 900;
+  --font-weight-bold: 600;
+  --font-weight-boldest: 800;
 
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
@@ -70,4 +71,6 @@
   --space-72: 4.5rem;
   --space-120: 7.5rem;
   --space-152: 9.5rem;
+
+  --transition-slow: 300ms;
 }

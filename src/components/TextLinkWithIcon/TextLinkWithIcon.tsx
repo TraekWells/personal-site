@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "./TextLinkWithIcon.module.scss";
-import Icon from "../Icon";
+import { ArrowLeft } from "react-feather";
 
 type TextLinkWithIconProps = {
   href: string;
@@ -10,7 +10,7 @@ type TextLinkWithIconProps = {
 const TextLinkWithIcon = ({ href, children }: TextLinkWithIconProps) => {
   return (
     <span className={styles.textLinkWithIcon}>
-      <Icon type="arrowLeft" />
+      <ArrowLeft />
       <Link href={href}>{children}</Link>
     </span>
   );

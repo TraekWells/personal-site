@@ -1,17 +1,16 @@
 import styles from "./Note.module.scss";
-import Icon from "../Icon";
+import { Info } from "react-feather";
 
 type NoteProps = {
-  type?: "info" | "warning";
+  type: "info" | "warning" | "error";
   children: React.ReactNode;
 };
 
-const Note = ({ type, children }: NoteProps) => {
-  // Handle dynamic styles baased on type prop
-
+const Note = ({ type = "info", children }: NoteProps) => {
+  // Change the icon based on the type
   return (
-    <div className={styles.note}>
-      <Icon type="infoCircle" />
+    <div className={`${styles.note} ${styles[type]}`}>
+      <Info color={`var(--color-${type})`} />
       {children}
     </div>
   );

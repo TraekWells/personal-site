@@ -3,3 +3,4 @@
 Todos:
 
 - [ ] Add plausible
+- [ ] Use unique icons

@@ -3,9 +3,5 @@
   align-items: center;
   justify-content: center;
   margin: var(--space-64) auto;
-
-  hr {
-    width: 250px;
-    height: 2px;
-  }
+  gap: var(--space-16);
 }

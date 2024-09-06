@@ -3,6 +3,7 @@ import styles from "./FancyRule.module.scss";
 const FancyRule = () => {
   return (
     <span className={styles.fancyRule}>
+      🐜
       <svg
         width="348"
         height="30"
@@ -11,12 +12,11 @@ const FancyRule = () => {
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M1 19C105 -33 212 48 347 24"
-          stroke="black"
-          stroke-dasharray="10 10"
+          d="M347 19C243 -33 136 48 1 24"
+          stroke="var(--color-base-darkest)"
+          strokeDasharray="10 10"
         />
       </svg>
-      🐜
     </span>
   );
 };
