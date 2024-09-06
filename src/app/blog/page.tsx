@@ -37,8 +37,8 @@ const Blog = async () => {
         <Section>
           <Container>
             <GridWithSidebar>
-              <ContentCardList content={blogs} type="blog" />
               <ContentTagFilter tags={uniqueTags} />
+              <ContentCardList content={blogs} type="blog" />
             </GridWithSidebar>
           </Container>
         </Section>

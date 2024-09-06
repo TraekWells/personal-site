@@ -5,6 +5,8 @@
   position: relative;
   margin: var(--space-24) 0;
   border: 2px solid var(--color-primary-light);
+  margin-inline-start: calc(var(--space-24) * -1);
+  width: calc(100% + var(--space-24) * 2);
 
   &.info {
     background-color: var(--color-info-light);

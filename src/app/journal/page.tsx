@@ -30,10 +30,7 @@ const Journal = async () => {
       <ContentWrapper>
         <Section>
           <Container>
-            <GridWithSidebar>
-              <ContentCardList content={journals} type="journal" />
-              {/* <p>Sidebar</p> */}
-            </GridWithSidebar>
+            <ContentCardList content={journals} type="journal" />
           </Container>
         </Section>
       </ContentWrapper>

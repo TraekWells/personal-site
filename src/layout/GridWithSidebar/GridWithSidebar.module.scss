@@ -1,5 +1,13 @@
 .gridWithSidebar {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: var(--space-40);
+  display: flex;
+  flex-direction: row-reverse;
+  gap: var(--space-48);
+
+  > aside {
+    flex: 0 0 14rem;
+  }
+
+  & > * + * {
+    flex: 1 1 auto;
+  }
 }

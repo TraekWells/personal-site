@@ -5,7 +5,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <Container narrow>
+      <Container>
         <div className={styles.grid}>
           <div className="column">
             <p>

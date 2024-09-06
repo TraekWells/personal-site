@@ -10,6 +10,8 @@ import { Metadata } from "next";
 import ContentWrapper from "@/layout/ContentWrapper";
 import GridWithSidebar from "@/layout/GridWithSidebar";
 import TextLinkWithIcon from "@/components/TextLinkWithIcon";
+import ProseContainer from "@/components/ProseContainer";
+import FancyRule from "@/components/FancyRule";
 
 export const generateStaticParams = async () => {
   const journal = await getContentList(CONTENT_PATHS["journal"]);
@@ -44,11 +46,12 @@ const JournalPost = async ({ params }: any) => {
         <Section>
           <Container>
             <GridWithSidebar>
-              <article className="prose flow">
+              <TableOfContents headers={headers} />
+              <ProseContainer>
                 <WordCount wordCount={wordCount} />
                 {content}
-              </article>
-              <TableOfContents headers={headers} />
+                <FancyRule />
+              </ProseContainer>
             </GridWithSidebar>
             <TextLinkWithIcon href="/journal">
               Back to all posts

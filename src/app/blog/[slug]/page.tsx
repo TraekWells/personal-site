@@ -11,6 +11,7 @@ import GridWithSidebar from "@/layout/GridWithSidebar";
 import ContentWrapper from "@/layout/ContentWrapper";
 import TextLinkWithIcon from "@/components/TextLinkWithIcon";
 import FancyRule from "@/components/FancyRule";
+import ProseContainer from "@/components/ProseContainer";
 
 export const generateStaticParams = async () => {
   const blogs = await getContentList(CONTENT_PATHS["blog"]);
@@ -45,12 +46,12 @@ const BlogPost = async ({ params }: any) => {
         <Section>
           <Container>
             <GridWithSidebar>
-              <article className="prose flow">
+              <TableOfContents headers={headers} />
+              <ProseContainer>
                 <WordCount wordCount={wordCount} />
                 {content}
-              </article>
-              <TableOfContents headers={headers} />
-              <FancyRule />
+                <FancyRule />
+              </ProseContainer>
             </GridWithSidebar>
             <TextLinkWithIcon href="/blog">Back to all posts</TextLinkWithIcon>
           </Container>

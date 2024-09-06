@@ -1,4 +1,5 @@
 import PageHeader from "@/components/PageHeader";
+import ProseContainer from "@/components/ProseContainer";
 import TableOfContents from "@/components/TableOfContents";
 import { CONTENT_PATHS } from "@/constants";
 import { loadContent } from "@/helpers/file-helpers";
@@ -28,8 +29,8 @@ const Page = async () => {
         <Section>
           <Container>
             <GridWithSidebar>
-              <article className="flow">{content}</article>
               <TableOfContents headers={headers} />
+              <ProseContainer>{content}</ProseContainer>
             </GridWithSidebar>
           </Container>
         </Section>
