@@ -19,11 +19,11 @@ const SiteNavigation = () => {
               ✏️ Writing
             </Link>
           </li>
-          {/* <li>
+          <li>
             <Link className={styles.navLink} href="/design-tips">
               Design Tips 🔥
             </Link>
-          </li> */}
+          </li>
           <li>
             <Link className={styles.navLink} href="/journal/impossible-list">
               🤷🏽‍♂️ Impossible List

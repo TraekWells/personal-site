@@ -41,20 +41,22 @@ h3 {
 }
 
 h1 {
-  font-size: var(--font-size-4xl);
+  font-size: var(--font-size-3xl);
   margin-block-end: var(--space-16);
   font-weight: var(--font-weight-boldest);
   color: var(--color-primary-darker);
 }
 
 h2 {
-  font-size: var(--font-size-3xl);
+  font-size: var(--font-size-xl);
   font-weight: var(--font-weight-boldest);
+  color: var(--color-primary-darker);
 }
 
 h3 {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-lg);
   font-weight: var(--font-weight-boldest);
+  color: var(--color-primary-darker);
 }
 
 h4 {
@@ -68,13 +70,6 @@ a {
   font-size: var(--font-size-base);
   text-wrap: pretty;
   max-width: 70ch;
-}
-
-.prose {
-  h2 {
-    font-size: var(--font-size-2xl);
-    color: var(--color-primary-darker);
-  }
 }
 
 label,

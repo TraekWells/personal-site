@@ -11,6 +11,7 @@ import slugify from "@/utilities/slugify";
 import unslug from "@/utilities/unslug";
 import ContentCard from "@/components/ContentCard";
 import TextLinkWithIcon from "@/components/TextLinkWithIcon";
+import ProseContainer from "@/components/ProseContainer";
 
 export const generateStaticParams = async () => {
   const blogs = await getContentList(CONTENT_PATHS["blog"]);
@@ -50,21 +51,21 @@ const Tag = async ({ params }: any) => {
       <ContentWrapper>
         <Section>
           <Container>
-            <TextLinkWithIcon href="/blog">Back to all posts</TextLinkWithIcon>
-            <GridWithSidebar>
-              <article className="flow">
-                {taggedBlogs.map((blog) => {
-                  return (
-                    <ContentCard
-                      title={blog.title}
-                      summary={blog.summary}
-                      slug={`/blog/${blog.slug}`}
-                      key={blog.slug}
-                    />
-                  );
-                })}
-              </article>
-            </GridWithSidebar>
+            <ProseContainer>
+              <TextLinkWithIcon href="/blog">
+                Back to all posts
+              </TextLinkWithIcon>
+              {taggedBlogs.map((blog) => {
+                return (
+                  <ContentCard
+                    title={blog.title}
+                    summary={blog.summary}
+                    slug={`/blog/${blog.slug}`}
+                    key={blog.slug}
+                  />
+                );
+              })}
+            </ProseContainer>
           </Container>
         </Section>
       </ContentWrapper>

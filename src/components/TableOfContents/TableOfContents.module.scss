@@ -3,6 +3,12 @@
   top: 1rem;
   align-self: flex-start;
 
+  h4 {
+    font-size: var(--font-size-base);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-boldest);
+  }
+
   ul {
     list-style: none;
     padding: 0;
