@@ -1,3 +1,5 @@
+@use "../../styles/breakpoints" as *;
+
 .navWrapper {
   position: relative;
 }
@@ -7,13 +9,26 @@
   isolation: isolate;
   justify-content: space-between;
   align-items: center;
+  margin-block: var(--space-16);
+
+  @media screen and (min-width: $breakpoint-md) {
+    margin-block: 0;
+  }
 
   &List {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    gap: var(--space-24);
-    margin-block: var(--space-16);
+    display: none;
+
+    @media screen and (min-width: $breakpoint-md) {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      gap: var(--space-8);
+      margin-block: var(--space-16);
+    }
+
+    @media screen and (min-width: $breakpoint-lg) {
+      gap: var(--space-24);
+    }
   }
 
   &Link {

@@ -1,0 +1,9 @@
+@use "../../styles/breakpoints" as *;
+
+.mobileMenuToggle {
+  display: block;
+
+  @media screen and (min-width: $breakpoint-md) {
+    display: none;
+  }
+}

@@ -1,13 +1,16 @@
+import React from "react";
 import Link from "next/link";
 import styles from "./SiteNavigation.module.scss";
 import VisuallyHidden from "../VisuallyHidden";
 import Button from "../Button";
 import Container from "@/layout/Container";
+import MobileMenuToggle from "../MobileMenuToggle";
 
 const SiteNavigation = () => {
   return (
     <Container className={styles.navWrapper}>
       <nav className={styles.nav}>
+        <MobileMenuToggle />
         <ul className={styles.navList}>
           <li>
             <Link className={styles.navLink} href="/">

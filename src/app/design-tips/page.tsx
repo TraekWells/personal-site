@@ -3,7 +3,7 @@ import PageHeader from "@/components/PageHeader";
 const DesignTips = () => {
   return (
     <PageHeader title="Design Tips">
-      <p>Elevate Your UI with Modern Styling Techniques</p>
+      <p>Some design related tips I've learned over the years.</p>
     </PageHeader>
   );
 };
