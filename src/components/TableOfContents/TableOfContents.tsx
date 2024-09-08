@@ -8,8 +8,10 @@ type TableOfContentsProps = {
 
 const TableOfContents = ({ headers }: TableOfContentsProps) => {
   return (
-    <aside className={styles.tableOfContent}>
-      <h4>Table of Contents</h4>
+    <aside className={styles.tableOfContents}>
+      <header>
+        <h4 className="eyebrowify">Table of Contents</h4>
+      </header>
       <ul>
         {headers.map((header, index) => {
           return (

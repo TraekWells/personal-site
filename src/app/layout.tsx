@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "../styles/main.scss";
-import { bodyFont } from "@/fonts";
+import { bodyFont, codeFont } from "@/fonts";
 import Footer from "@/components/Footer";
 import Alert from "@/components/Alert";
 import SiteNavigation from "@/components/SiteNavigation";
@@ -19,7 +19,11 @@ type RootLayoutProps = {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en" className={bodyFont.className} data-theme="light">
+    <html
+      lang="en"
+      className={`${bodyFont.variable} ${codeFont.variable}`}
+      data-theme="light"
+    >
       <head>
         <link rel="icon" href="favicon.png" sizes="any" />
         <script

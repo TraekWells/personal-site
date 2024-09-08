@@ -1,7 +1,14 @@
-.tableOfContent {
-  position: sticky;
-  top: 1rem;
-  align-self: flex-start;
+@use "../../styles/breakpoints" as *;
+
+.tableOfContents {
+  display: none;
+
+  @media screen and (min-width: $breakpoint-md) {
+    position: sticky;
+    display: block;
+    top: 1rem;
+    align-self: flex-start;
+  }
 
   h4 {
     font-size: var(--font-size-base);

@@ -8,8 +8,10 @@ type ContentTagFilterProps = {
 
 const ContentTagFilter = ({ tags }: ContentTagFilterProps) => {
   return (
-    <div className={styles.contentTagFilter}>
-      <h3 className="header-4">Filter By Tag</h3>
+    <aside className={styles.contentTagFilter}>
+      <header>
+        <h4 className="eyebrowify">Filter By Tag</h4>
+      </header>
       <ul>
         {tags.map((tag) => {
           return (
@@ -19,7 +21,7 @@ const ContentTagFilter = ({ tags }: ContentTagFilterProps) => {
           );
         })}
       </ul>
-    </div>
+    </aside>
   );
 };
 

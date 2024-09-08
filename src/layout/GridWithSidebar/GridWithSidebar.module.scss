@@ -1,13 +1,23 @@
+@use "../../styles/breakpoints" as *;
+
 .gridWithSidebar {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   gap: var(--space-56);
 
   > aside {
-    flex: 0 0 14rem;
+    flex: 0 0 auto;
   }
 
-  & > * + * {
-    flex: 1 1 auto;
+  @media screen and (min-width: $breakpoint-md) {
+    flex-direction: row-reverse;
+
+    > aside {
+      flex: 0 0 14rem;
+    }
+
+    & > * + * {
+      flex: 1 1 auto;
+    }
   }
 }
