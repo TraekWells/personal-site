@@ -1,6 +1,7 @@
 import slugify from "@/utilities/slugify";
 import styles from "./ContentTagFilter.module.scss";
 import Link from "next/link";
+import { Tag } from "react-feather";
 
 type ContentTagFilterProps = {
   tags: string[];
@@ -15,7 +16,8 @@ const ContentTagFilter = ({ tags }: ContentTagFilterProps) => {
       <ul>
         {tags.map((tag) => {
           return (
-            <li key={tag}>
+            <li className={styles.tagItem} key={tag}>
+              <Tag size="16" />
               <Link href={`/tags/${slugify(tag)}`}>{tag}</Link>
             </li>
           );

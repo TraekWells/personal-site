@@ -18,3 +18,9 @@
     align-self: flex-start;
   }
 }
+
+.tagItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+}
