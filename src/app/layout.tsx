@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "../styles/main.scss";
 import { bodyFont, codeFont } from "@/fonts";
 import Footer from "@/components/Footer";
-import Alert from "@/components/Alert";
 import SiteNavigation from "@/components/SiteNavigation";
 import { cookies } from "next/headers";
 
@@ -37,11 +36,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
         ></script>
       </head>
       <body>
-        <Alert>
-          <p className="text-center">
-            ⚠️ Currently under maintenance. You've been warned.
-          </p>
-        </Alert>
         <SiteNavigation initialTheme={theme} />
         {children}
         <Footer />

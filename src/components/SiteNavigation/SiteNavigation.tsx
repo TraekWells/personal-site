@@ -10,39 +10,41 @@ type SiteNavigationProps = {
 
 const SiteNavigation = ({ initialTheme }: SiteNavigationProps) => {
   return (
-    <Container className={styles.navWrapper}>
-      <nav className={styles.nav}>
-        <MobileMenuToggle />
-        <ul className={styles.navList}>
-          <li>
-            <Link className={styles.navLink} href="/">
-              🛖 Home
-            </Link>
-          </li>
-          <li>
-            <Link className={styles.navLink} href="/blog">
-              ✏️ Writing
-            </Link>
-          </li>
-          <li>
-            <Link className={styles.navLink} href="/design-tips">
-              Design Tips 🔥
-            </Link>
-          </li>
-          <li>
-            <Link className={styles.navLink} href="/journal/impossible-list">
-              🤷🏽‍♂️ Impossible List
-            </Link>
-          </li>
-          <li>
-            <Link className={styles.navLink} href="/now">
-              👀 Now
-            </Link>
-          </li>
-        </ul>
-        <ColorThemeToggle initialTheme={initialTheme} />
-      </nav>
-    </Container>
+    <div className={styles.navWrapper}>
+      <Container>
+        <nav className={styles.nav}>
+          <MobileMenuToggle />
+          <ul className={styles.navList}>
+            <li>
+              <Link className={styles.navLink} href="/">
+                🛖 Home
+              </Link>
+            </li>
+            <li>
+              <Link className={styles.navLink} href="/blog">
+                ✏️ Writing
+              </Link>
+            </li>
+            <li>
+              <Link className={styles.navLink} href="/design-tips">
+                Design Tips 🔥
+              </Link>
+            </li>
+            <li>
+              <Link className={styles.navLink} href="/journal/impossible-list">
+                🤷🏽‍♂️ Impossible List
+              </Link>
+            </li>
+            <li>
+              <Link className={styles.navLink} href="/now">
+                👀 Now
+              </Link>
+            </li>
+          </ul>
+          <ColorThemeToggle initialTheme={initialTheme} />
+        </nav>
+      </Container>
+    </div>
   );
 };
 

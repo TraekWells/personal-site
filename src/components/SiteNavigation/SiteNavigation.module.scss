@@ -2,6 +2,16 @@
 
 .navWrapper {
   position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    background-color: var(--color-primary-darker);
+    top: 0;
+    left: 0;
+  }
 }
 
 .nav {
@@ -23,7 +33,7 @@
       list-style: none;
       padding: 0;
       gap: var(--space-8);
-      margin-block: var(--space-16);
+      margin-block: var(--space-24);
     }
 
     @media screen and (min-width: $breakpoint-lg) {
