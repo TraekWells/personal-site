@@ -1,12 +1,14 @@
-import React from "react";
 import Link from "next/link";
 import styles from "./SiteNavigation.module.scss";
-import VisuallyHidden from "../VisuallyHidden";
-import Button from "../Button";
 import Container from "@/layout/Container";
 import MobileMenuToggle from "../MobileMenuToggle";
+import ColorThemeToggle from "../ColorThemeToggle";
 
-const SiteNavigation = () => {
+type SiteNavigationProps = {
+  initialTheme: string;
+};
+
+const SiteNavigation = ({ initialTheme }: SiteNavigationProps) => {
   return (
     <Container className={styles.navWrapper}>
       <nav className={styles.nav}>
@@ -38,10 +40,7 @@ const SiteNavigation = () => {
             </Link>
           </li>
         </ul>
-        <Button>
-          🎨
-          <VisuallyHidden>Swap color mode</VisuallyHidden>
-        </Button>
+        <ColorThemeToggle initialTheme={initialTheme} />
       </nav>
     </Container>
   );

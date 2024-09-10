@@ -6,9 +6,11 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   className?: string;
 };
 
-const Button = ({ children, className }: ButtonProps) => {
+const Button = ({ children, className, ...props }: ButtonProps) => {
   return (
-    <button className={`${styles.button} ${className}`}>{children}</button>
+    <button className={`${styles.button} ${className}`} {...props}>
+      {children}
+    </button>
   );
 };
 

@@ -4,6 +4,7 @@ import { bodyFont, codeFont } from "@/fonts";
 import Footer from "@/components/Footer";
 import Alert from "@/components/Alert";
 import SiteNavigation from "@/components/SiteNavigation";
+import { cookies } from "next/headers";
 
 export const metadata: Metadata = {
   title: {
@@ -18,11 +19,14 @@ type RootLayoutProps = {
 };
 
 export default function RootLayout({ children }: RootLayoutProps) {
+  const savedTheme = cookies().get("color-theme");
+  const theme = savedTheme?.value || "light";
+
   return (
     <html
       lang="en"
       className={`${bodyFont.variable} ${codeFont.variable}`}
-      data-theme="light"
+      data-theme={theme}
     >
       <head>
         <link rel="icon" href="favicon.png" sizes="any" />
@@ -38,7 +42,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             ⚠️ Currently under maintenance. You've been warned.
           </p>
         </Alert>
-        <SiteNavigation />
+        <SiteNavigation initialTheme={theme} />
         {children}
         <Footer />
       </body>
