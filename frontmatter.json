@@ -111,19 +111,19 @@
   "frontMatter.content.pageFolders": [
     {
       "title": "Blog",
-      "path": "[[workspace]]/src/content/blog"
+      "path": "[[workspace]]/content/blog"
     },
     {
       "title": "Journal",
-      "path": "[[workspace]]/src/content/journal"
+      "path": "[[workspace]]/content/journal"
     },
     {
       "title": "Projects",
-      "path": "[[workspace]]/src/content/projects"
+      "path": "[[workspace]]/content/projects"
     },
     {
       "title": "Pages",
-      "path": "[[workspace]]/src/content/pages"
+      "path": "[[workspace]]/content/pages"
     }
   ],
   "frontMatter.git.enabled": true
