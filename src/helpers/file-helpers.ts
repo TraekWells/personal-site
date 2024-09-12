@@ -6,6 +6,7 @@ import { mdxComponents, mdxOptions } from "./mdx-config";
 import React from "react";
 import { extractHeaders } from "./extract-headers";
 import { getWordCount } from "./get-word-count";
+
 export const getContentList = async (directory: string): Promise<any[]> => {
   const fileNames = await readDirectory(directory);
   const contentArray = [];
@@ -24,7 +25,7 @@ export const getContentList = async (directory: string): Promise<any[]> => {
   return contentArray;
 };
 
-export const loadContent = React.cache(async (slug: string): Promise<any> => {
+export const loadContent = async (slug: string): Promise<any> => {
   const rawContent = await readFile(`${slug}.mdx`);
   const headers = extractHeaders(rawContent);
   const wordCount = getWordCount(rawContent);
@@ -36,7 +37,7 @@ export const loadContent = React.cache(async (slug: string): Promise<any> => {
   });
 
   return { frontmatter, content, headers, wordCount };
-});
+};
 
 function readFile(localPath: string) {
   return fs.readFile(path.join(process.cwd(), localPath), "utf8");
