@@ -6,6 +6,7 @@ import { mdxComponents, mdxOptions } from "./mdx-config";
 import React from "react";
 import { extractHeaders } from "./extract-headers";
 import { getWordCount } from "./get-word-count";
+
 export const getContentList = async (directory: string): Promise<any[]> => {
   const fileNames = await readDirectory(directory);
   const contentArray = [];
