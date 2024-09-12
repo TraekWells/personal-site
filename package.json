@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": false,
   "scripts": {
+    "prebuild": "rm -rf .next",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
