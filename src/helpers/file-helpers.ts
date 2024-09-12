@@ -1,4 +1,4 @@
-import fs from "fs";
+import fs from "fs/promises";
 import path from "path";
 import matter from "gray-matter";
 import { compileMDX } from "next-mdx-remote/rsc";
@@ -6,14 +6,11 @@ import { mdxComponents, mdxOptions } from "./mdx-config";
 import React from "react";
 import { extractHeaders } from "./extract-headers";
 import { getWordCount } from "./get-word-count";
-
-// Function to get the list of content (MDX files) from a given directory
-export const getContentList = (directory: string): any[] => {
-  const fileNames = readDirectory(directory);
+export const getContentList = async (directory: string): Promise<any[]> => {
+  const fileNames = await readDirectory(directory);
   const contentArray = [];
-
   for (let fileName of fileNames) {
-    const rawContent = readFile(`${directory}/${fileName}`);
+    const rawContent = await readFile(`${directory}/${fileName}`);
     const { data: frontmatter } = matter(rawContent);
 
     const contentObject = {
@@ -27,9 +24,8 @@ export const getContentList = (directory: string): any[] => {
   return contentArray;
 };
 
-// Function to load the content of a specific slug
-export const loadContent = async (slug: string): Promise<any> => {
-  const rawContent = readFile(`${slug}.mdx`);
+export const loadContent = React.cache(async (slug: string): Promise<any> => {
+  const rawContent = await readFile(`${slug}.mdx`);
   const headers = extractHeaders(rawContent);
   const wordCount = getWordCount(rawContent);
 
@@ -40,14 +36,12 @@ export const loadContent = async (slug: string): Promise<any> => {
   });
 
   return { frontmatter, content, headers, wordCount };
-};
+});
 
-// Function to read a file (synchronously) at build time
 function readFile(localPath: string) {
-  return fs.readFileSync(path.join(process.cwd(), localPath), "utf8");
+  return fs.readFile(path.join(process.cwd(), localPath), "utf8");
 }
 
-// Function to read the contents of a directory (synchronously) at build time
 function readDirectory(localPath: string) {
-  return fs.readdirSync(path.join(process.cwd(), localPath));
+  return fs.readdir(path.join(process.cwd(), localPath));
 }
