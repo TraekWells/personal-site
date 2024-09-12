@@ -10,8 +10,6 @@ import GridWithSidebar from "@/layout/GridWithSidebar";
 import ContentCardList from "@/components/ContentCardList";
 import ContentTagFilter from "@/components/ContentTagFilter";
 
-export const dynamicParams = true;
-
 export const metadata: Metadata = {
   title: "Blog",
   description:
