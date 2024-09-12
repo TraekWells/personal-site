@@ -13,14 +13,16 @@ import TextLinkWithIcon from "@/components/TextLinkWithIcon";
 import FancyRule from "@/components/FancyRule";
 import ProseContainer from "@/components/ProseContainer";
 
+// Generate static params for blog post slugs
 export const generateStaticParams = async () => {
-  const blogs = await getContentList(CONTENT_PATHS["blog"]);
+  const blogs = getContentList(CONTENT_PATHS["blog"]);
 
   return blogs.map((blog) => ({
     slug: blog.slug,
   }));
 };
 
+// Generate metadata for each blog post
 export const generateMetadata = async ({ params }: any): Promise<Metadata> => {
   const { frontmatter } = await loadContent(
     `${CONTENT_PATHS["blog"]}/${params.slug}`
@@ -32,6 +34,7 @@ export const generateMetadata = async ({ params }: any): Promise<Metadata> => {
   };
 };
 
+// Blog post component
 const BlogPost = async ({ params }: any) => {
   const { frontmatter, content, headers, wordCount } = await loadContent(
     `${CONTENT_PATHS["blog"]}/${params.slug}`
