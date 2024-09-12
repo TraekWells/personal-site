@@ -15,7 +15,7 @@ import ProseContainer from "@/components/ProseContainer";
 
 // Generate static params for blog post slugs
 export const generateStaticParams = async () => {
-  const blogs = getContentList(CONTENT_PATHS["blog"]);
+  const blogs = await getContentList(CONTENT_PATHS["blog"]);
 
   return blogs.map((blog) => ({
     slug: blog.slug,
