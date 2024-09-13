@@ -6,23 +6,34 @@ import { mdxComponents, mdxOptions } from "./mdx-config";
 import React from "react";
 import { extractHeaders } from "./extract-headers";
 import { getWordCount } from "./get-word-count";
+import { BlogFrontmatterTypes } from "@/types/types";
 
 export const getContentList = async (directory: string): Promise<any[]> => {
   const fileNames = await readDirectory(directory);
-  const contentArray = [];
+  const contentArray: BlogFrontmatterTypes[] = [];
   for (let fileName of fileNames) {
     const rawContent = await readFile(`${directory}/${fileName}`);
     const { data: frontmatter } = matter(rawContent);
 
-    const contentObject = {
+    const contentObject: BlogFrontmatterTypes = {
       slug: fileName.replace(".mdx", ""),
-      ...frontmatter,
+      title: frontmatter.title,
+      summary: frontmatter.summary,
+      tags: frontmatter.tags,
+      draft: frontmatter.draft,
+      createdAt: frontmatter.createdAt,
     };
 
     contentArray.push(contentObject);
   }
 
-  return contentArray;
+  const sortedContent = contentArray.sort((a, b) => {
+    const dateA = new Date(a.createdAt);
+    const dateB = new Date(b.createdAt);
+    return dateB.getTime() - dateA.getTime();
+  });
+
+  return sortedContent;
 };
 
 export const loadContent = React.cache(async (slug: string): Promise<any> => {

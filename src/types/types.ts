@@ -12,10 +12,11 @@ export type ProjectType = {
   type: string;
 };
 
-export type BlogType = {
+export type BlogFrontmatterTypes = {
   slug: string;
   title: string;
   summary: string;
   tags: string[];
   draft: boolean;
+  createdAt: Date;
 };

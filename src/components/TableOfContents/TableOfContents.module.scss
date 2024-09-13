@@ -3,7 +3,7 @@
 .tableOfContents {
   display: none;
 
-  @media screen and (min-width: $breakpoint-md) {
+  @media screen and (min-width: $breakpoint-lg) {
     position: sticky;
     display: block;
     top: 1rem;

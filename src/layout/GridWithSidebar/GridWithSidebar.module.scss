@@ -9,7 +9,7 @@
     flex: 0 0 auto;
   }
 
-  @media screen and (min-width: $breakpoint-md) {
+  @media screen and (min-width: $breakpoint-lg) {
     flex-direction: row-reverse;
 
     > aside {
