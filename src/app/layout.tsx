@@ -3,7 +3,7 @@ import "../styles/main.scss";
 import { bodyFont, codeFont } from "@/fonts";
 import Footer from "@/components/Footer";
 import SiteNavigation from "@/components/SiteNavigation";
-import { cookies } from "next/headers";
+// import { cookies } from "next/headers";
 
 export const metadata: Metadata = {
   title: {
@@ -18,15 +18,11 @@ type RootLayoutProps = {
 };
 
 export default function RootLayout({ children }: RootLayoutProps) {
-  const savedTheme = cookies().get("color-theme");
-  const theme = savedTheme?.value || "light";
+  // const savedTheme = cookies().get("color-theme");
+  // const theme = savedTheme?.value || "light";
 
   return (
-    <html
-      lang="en"
-      className={`${bodyFont.variable} ${codeFont.variable}`}
-      data-theme={theme}
-    >
+    <html lang="en" className={`${bodyFont.variable} ${codeFont.variable}`}>
       <head>
         <link rel="icon" href="favicon.png" sizes="any" />
         <script
@@ -36,7 +32,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         ></script>
       </head>
       <body>
-        <SiteNavigation initialTheme={theme} />
+        <SiteNavigation />
         {children}
         <Footer />
       </body>
