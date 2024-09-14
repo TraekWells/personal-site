@@ -16,4 +16,9 @@
   &:active {
     background-color: var(--color-primary);
   }
+
+  &.unstyled {
+    background-color: transparent;
+    padding: 0;
+  }
 }
