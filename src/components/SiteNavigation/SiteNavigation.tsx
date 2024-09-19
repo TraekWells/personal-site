@@ -40,7 +40,7 @@ const SiteNavigation = ({ initialTheme }: SiteNavigationProps) => {
               </Link>
             </li>
           </ul>
-          <ColorThemeToggle initialTheme={initialTheme} />
+          {/* <ColorThemeToggle initialTheme={initialTheme} /> */}
         </nav>
       </Container>
     </div>
