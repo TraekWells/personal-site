@@ -2,16 +2,6 @@
 
 .navWrapper {
   position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    height: 13px;
-    width: 13px;
-    background-color: var(--color-primary-darker);
-    top: 0;
-    left: 0;
-  }
 }
 
 .nav {
