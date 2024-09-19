@@ -13,7 +13,6 @@ const SiteNavigation = ({ initialTheme }: SiteNavigationProps) => {
     <div className={styles.navWrapper}>
       <Container>
         <nav className={styles.nav}>
-          <MobileMenuToggle />
           <ul className={styles.navList}>
             <li>
               <Link className={styles.navLink} href="/">

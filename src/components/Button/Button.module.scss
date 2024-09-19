@@ -17,8 +17,9 @@
     background-color: var(--color-primary);
   }
 
-  &.unstyled {
+  &Unstyled {
     background-color: transparent;
-    padding: 0;
+    border: none;
+    cursor: pointer;
   }
 }

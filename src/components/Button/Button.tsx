@@ -10,9 +10,9 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 const Button = ({ children, unstyled, className, ...props }: ButtonProps) => {
   return (
     <button
-      className={`${styles.button} ${
-        unstyled ? styles.unstyled : ""
-      } ${className}`}
+      className={`${unstyled ? styles.buttonUnstyled : styles.button} ${
+        className ? className : ""
+      }`}
       {...props}
     >
       {children}

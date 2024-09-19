@@ -8,3 +8,5 @@ Todos:
 - [ ] Add a `Back to top` button
 - [ ] Do something with the content filters
 - [ ] Add cool animations
+- [ ] Add language to codeblocks
+- [ ] Add search
