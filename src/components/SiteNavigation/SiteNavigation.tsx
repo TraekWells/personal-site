@@ -4,16 +4,15 @@ import Container from "@/layout/Container";
 import MobileMenuToggle from "../MobileMenuToggle";
 import ColorThemeToggle from "../ColorThemeToggle";
 
-// type SiteNavigationProps = {
-//   initialTheme: string;
-// };
+type SiteNavigationProps = {
+  initialTheme: string;
+};
 
-const SiteNavigation = () => {
+const SiteNavigation = ({ initialTheme }: SiteNavigationProps) => {
   return (
     <div className={styles.navWrapper}>
       <Container>
         <nav className={styles.nav}>
-          <MobileMenuToggle />
           <ul className={styles.navList}>
             <li>
               <Link className={styles.navLink} href="/">
@@ -41,7 +40,7 @@ const SiteNavigation = () => {
               </Link>
             </li>
           </ul>
-          {/* <ColorThemeToggle initialTheme={initialTheme} /> */}
+          <ColorThemeToggle initialTheme={initialTheme} />
         </nav>
       </Container>
     </div>

@@ -3,12 +3,18 @@ import styles from "./Button.module.scss";
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   children: React.ReactNode;
+  unstyled?: boolean;
   className?: string;
 };
 
-const Button = ({ children, className, ...props }: ButtonProps) => {
+const Button = ({ children, unstyled, className, ...props }: ButtonProps) => {
   return (
-    <button className={`${styles.button} ${className}`} {...props}>
+    <button
+      className={`${unstyled ? styles.buttonUnstyled : styles.button} ${
+        className ? className : ""
+      }`}
+      {...props}
+    >
       {children}
     </button>
   );
