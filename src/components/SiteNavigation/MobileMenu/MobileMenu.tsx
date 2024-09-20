@@ -5,6 +5,8 @@ import Button from "@/components/Button";
 import styles from "./MobileMenu.module.scss";
 import { X as Close } from "react-feather";
 import Link from "next/link";
+import FocusLock from "react-focus-lock";
+import { RemoveScroll } from "react-remove-scroll";
 
 type MobileMenuProps = {
   items: NavItemTypes[];
@@ -14,24 +16,28 @@ type MobileMenuProps = {
 
 const MobileMenu = ({ items, isOpen, setIsOpen }: MobileMenuProps) => {
   return createPortal(
-    <React.Fragment>
-      <Button
-        unstyled
-        className={styles.mobileCloseButton}
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        <Close />
-      </Button>
-      <ul className={styles.mobileMenu}>
-        {items.map((item, index) => {
-          return (
-            <li key={index}>
-              <Link href={item.href}>{item.label}</Link>
-            </li>
-          );
-        })}
-      </ul>
-    </React.Fragment>,
+    <FocusLock returnFocus={true}>
+      <RemoveScroll>
+        <div className="mobile-test">
+          <Button
+            unstyled
+            className={styles.mobileCloseButton}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <Close />
+          </Button>
+          <ul className={styles.mobileMenu}>
+            {items.map((item, index) => {
+              return (
+                <li key={index}>
+                  <Link href={item.href}>{item.label}</Link>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </RemoveScroll>
+    </FocusLock>,
     document.querySelector("#mobile-menu-portal") as HTMLElement
   );
 };
