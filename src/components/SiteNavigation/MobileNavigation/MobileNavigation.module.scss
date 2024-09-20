@@ -1,0 +1,14 @@
+.mobileNavigation {
+  background-color: var(--color-primary-lightest);
+  position: absolute;
+  list-style: none;
+  inset: var(--space-16);
+  padding: 0;
+  border-radius: var(--border-radius-md);
+  z-index: 5;
+  text-align: right;
+}
+
+.mobileCloseButton {
+  z-index: 10;
+}
