@@ -1,14 +1,41 @@
+"use client";
 import Link from "next/link";
 import styles from "./SiteNavigation.module.scss";
 import Container from "@/layout/Container";
-import MobileMenuToggle from "../MobileMenuToggle";
 import ColorThemeToggle from "../ColorThemeToggle";
+import MobileMenuToggle from "../MobileMenuToggle";
+import { useWindowSize } from "@uidotdev/usehooks";
 
 type SiteNavigationProps = {
   initialTheme: string;
 };
 
+const navItems = [
+  {
+    label: "Home 🛖",
+    href: "/",
+  },
+  {
+    label: "✏️ Writing",
+    href: "/blog",
+  },
+  {
+    label: "Design Tips 🔥",
+    href: "/",
+  },
+  {
+    label: "🤷🏽‍♂️ Impossible List",
+    href: "/journal/impossible-list",
+  },
+  {
+    label: "👀 Now",
+    href: "/now",
+  },
+];
+
 const SiteNavigation = ({ initialTheme }: SiteNavigationProps) => {
+  const size = useWindowSize();
+
   return (
     <div className={styles.navWrapper}>
       <Container>
@@ -40,6 +67,7 @@ const SiteNavigation = ({ initialTheme }: SiteNavigationProps) => {
               </Link>
             </li>
           </ul>
+          <MobileMenuToggle />
           {/* <ColorThemeToggle initialTheme={initialTheme} /> */}
         </nav>
       </Container>
