@@ -1,7 +1,11 @@
-import * as React from 'react';
+import styles from "./Eyebrow.module.scss";
 
-function Eyebrow() {
-  return <div></div>;
-}
+type EyebrowProps = {
+  children: React.ReactNode;
+};
+
+const Eyebrow = ({ children }: EyebrowProps) => {
+  return <h4 className={styles.eyebrow}>🐜 {children}</h4>;
+};
 
 export default Eyebrow;
