@@ -6,6 +6,7 @@ import { NavItemTypes } from "../SiteNavigation";
 import Button from "@/components/Button";
 import { Menu, X } from "react-feather";
 import styles from "./MobileNavigation.module.scss";
+import MobileMenu from "../MobileMenu";
 
 type MobileNavigationProps = {
   items: NavItemTypes[];
@@ -28,24 +29,7 @@ const MobileNavigation = ({ items, initialTheme }: MobileNavigationProps) => {
           </Button>
         </>
       ) : (
-        <>
-          <Button
-            unstyled
-            className={styles.mobileCloseButton}
-            onClick={handleMobileToggle}
-          >
-            <X />
-          </Button>
-          <ul className={styles.mobileNavigation}>
-            {items.map((item, index) => {
-              return (
-                <li key={index}>
-                  <Link href={item.href}>{item.label}</Link>
-                </li>
-              );
-            })}
-          </ul>
-        </>
+        <MobileMenu items={items} isOpen={isOpen} setIsOpen={setIsOpen} />
       )}
     </>
   );

@@ -35,6 +35,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <SiteNavigation initialTheme={theme} />
         {children}
         <Footer />
+        <div id="mobile-menu-portal"></div>
       </body>
     </html>
   );
