@@ -14,12 +14,14 @@ const DesktopNavigation = ({ items, initialTheme }: DesktopNavigationProps) => {
         {items.map((item, index) => {
           return (
             <li key={index}>
-              <Link href={item.href}>{item.label}</Link>
+              <Link href={item.href} className={styles.desktopNavigationLink}>
+                {item.label}
+              </Link>
             </li>
           );
         })}
       </ul>
-      <ColorThemeToggle initialTheme={initialTheme} />
+      {/* <ColorThemeToggle initialTheme={initialTheme} /> */}
     </>
   );
 };

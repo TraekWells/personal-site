@@ -7,6 +7,9 @@ import Button from "@/components/Button";
 import { Menu, X } from "react-feather";
 import styles from "./MobileNavigation.module.scss";
 import MobileMenu from "../MobileMenu";
+import { usePathname } from "next/navigation";
+import path from "path";
+import Greeting from "@/components/Greeting";
 
 type MobileNavigationProps = {
   items: NavItemTypes[];
@@ -15,6 +18,11 @@ type MobileNavigationProps = {
 
 const MobileNavigation = ({ items, initialTheme }: MobileNavigationProps) => {
   const [isOpen, setIsOpen] = React.useState(false);
+  const pathname = usePathname();
+
+  React.useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
 
   const handleMobileToggle = () => {
     setIsOpen(!isOpen);
@@ -23,7 +31,7 @@ const MobileNavigation = ({ items, initialTheme }: MobileNavigationProps) => {
     <>
       {!isOpen ? (
         <>
-          <p>Good Afternoon</p>
+          <Greeting />
           <Button unstyled onClick={handleMobileToggle}>
             <Menu />
           </Button>

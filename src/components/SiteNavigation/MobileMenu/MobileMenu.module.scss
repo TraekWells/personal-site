@@ -1,14 +1,19 @@
 .mobileMenu {
   background-color: var(--color-primary-lightest);
   position: absolute;
-  list-style: none;
+  display: flex;
+  flex-direction: column;
   inset: var(--space-16);
-  padding: 0;
   border-radius: var(--border-radius-md);
-  z-index: 5;
-  text-align: right;
+
+  ul {
+    padding: 0;
+    list-style: none;
+  }
 }
 
 .mobileCloseButton {
-  z-index: 10;
+  align-self: flex-end;
+  margin-block: var(--space-16);
+  margin-inline-end: var(--space-32);
 }
