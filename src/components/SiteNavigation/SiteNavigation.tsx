@@ -1,49 +1,58 @@
-import Link from "next/link";
+"use client";
 import styles from "./SiteNavigation.module.scss";
 import Container from "@/layout/Container";
-import MobileMenuToggle from "../MobileMenuToggle";
 import ColorThemeToggle from "../ColorThemeToggle";
+import { useWindowSize } from "@uidotdev/usehooks";
+import DesktopNavigation from "./DesktopNavigation";
+import MobileNavigation from "./MobileNavigation";
 
 type SiteNavigationProps = {
   initialTheme: string;
 };
 
+export type NavItemTypes = {
+  label: string;
+  href: string;
+};
+
+const navItems: NavItemTypes[] = [
+  {
+    label: "🛖 Home",
+    href: "/",
+  },
+  {
+    label: "✏️ Writing",
+    href: "/blog",
+  },
+  {
+    label: "🔥 Design Tips ",
+    href: "/design-tips",
+  },
+  {
+    label: "🤷🏽‍♂️ Impossible List",
+    href: "/journal/impossible-list",
+  },
+  {
+    label: "👀 Now",
+    href: "/now",
+  },
+];
+
 const SiteNavigation = ({ initialTheme }: SiteNavigationProps) => {
+  const size = useWindowSize();
+  // Is this too slow?
+  const isMobile = size.width && size.width <= 749;
+
   return (
-    <div className={styles.navWrapper}>
-      <Container>
-        <nav className={styles.nav}>
-          <ul className={styles.navList}>
-            <li>
-              <Link className={styles.navLink} href="/">
-                🛖 Home
-              </Link>
-            </li>
-            <li>
-              <Link className={styles.navLink} href="/blog">
-                ✏️ Writing
-              </Link>
-            </li>
-            <li>
-              <Link className={styles.navLink} href="/design-tips">
-                Design Tips 🔥
-              </Link>
-            </li>
-            <li>
-              <Link className={styles.navLink} href="/journal/impossible-list">
-                🤷🏽‍♂️ Impossible List
-              </Link>
-            </li>
-            <li>
-              <Link className={styles.navLink} href="/now">
-                👀 Now
-              </Link>
-            </li>
-          </ul>
-          {/* <ColorThemeToggle initialTheme={initialTheme} /> */}
-        </nav>
-      </Container>
-    </div>
+    <Container>
+      <nav className={styles.nav}>
+        {isMobile ? (
+          <MobileNavigation items={navItems} initialTheme={initialTheme} />
+        ) : (
+          <DesktopNavigation items={navItems} initialTheme={initialTheme} />
+        )}
+      </nav>
+    </Container>
   );
 };
 
