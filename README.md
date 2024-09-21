@@ -10,3 +10,4 @@ Todos:
 - [ ] Add cool animations
 - [ ] Add language to codeblocks
 - [ ] Add search
+- [ ] Figure out how to animate the mobile menu out

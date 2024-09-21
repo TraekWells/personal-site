@@ -1,6 +1,7 @@
 @use "../../styles/breakpoints" as *;
 .container {
   margin-inline: auto;
+  width: 100%;
   max-width: calc(63rem + var(--space-32));
   padding-inline: var(--space-32);
 

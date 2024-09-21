@@ -4,23 +4,4 @@
   justify-content: space-between;
   align-items: center;
   margin-block: var(--space-16);
-
-  &List {
-    display: none;
-  }
-
-  &Link {
-    --border-size: 2px;
-    border-radius: var(--border-radius-sm);
-    display: block;
-    padding: var(--space-8) var(--space-16);
-    border-bottom: var(--border-size) solid transparent;
-    color: var(--color-body-text);
-    font-size: var(--font-size-sm);
-
-    &:hover {
-      border-bottom: var(--border-size) solid transparent;
-      background-color: var(--color-primary-lightest);
-    }
-  }
 }

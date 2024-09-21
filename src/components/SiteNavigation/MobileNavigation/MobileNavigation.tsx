@@ -1,14 +1,11 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
 import { NavItemTypes } from "../SiteNavigation";
 import Button from "@/components/Button";
-import { Menu, X } from "react-feather";
-import styles from "./MobileNavigation.module.scss";
+import { Menu } from "react-feather";
 import MobileMenu from "../MobileMenu";
 import { usePathname } from "next/navigation";
-import path from "path";
 import Greeting from "@/components/Greeting";
 
 type MobileNavigationProps = {
