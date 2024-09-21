@@ -30,7 +30,7 @@ const MobileNavigation = ({ items, initialTheme }: MobileNavigationProps) => {
         <>
           <Greeting />
           <Button unstyled onClick={handleMobileToggle}>
-            <Menu />
+            <Menu color="var(--color-text)" />
           </Button>
         </>
       ) : (
