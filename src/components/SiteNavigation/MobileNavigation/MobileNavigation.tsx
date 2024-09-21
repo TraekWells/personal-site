@@ -26,15 +26,15 @@ const MobileNavigation = ({ items, initialTheme }: MobileNavigationProps) => {
   };
   return (
     <>
-      {!isOpen ? (
+      {isOpen ? (
+        <MobileMenu items={items} isOpen={isOpen} setIsOpen={setIsOpen} />
+      ) : (
         <>
           <Greeting />
           <Button unstyled onClick={handleMobileToggle}>
             <Menu color="var(--color-text)" />
           </Button>
         </>
-      ) : (
-        <MobileMenu items={items} isOpen={isOpen} setIsOpen={setIsOpen} />
       )}
     </>
   );
