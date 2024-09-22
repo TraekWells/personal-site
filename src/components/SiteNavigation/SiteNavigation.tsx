@@ -29,10 +29,6 @@ const navItems: NavItemTypes[] = [
     href: "/design-tips",
   },
   {
-    label: "🤷🏽‍♂️ Impossible List",
-    href: "/journal/impossible-list",
-  },
-  {
     label: "👀 Now",
     href: "/now",
   },

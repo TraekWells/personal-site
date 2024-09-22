@@ -28,6 +28,12 @@ const Footer = () => {
               <li>
                 <Link href="/about-me">About Me</Link>
               </li>
+              <li>
+                <Link href="/journal/impossible-list">Impossible List</Link>
+              </li>
+              <li>
+                <Link href="/now">Now</Link>
+              </li>
             </ul>
           </div>
           <div className="column">
