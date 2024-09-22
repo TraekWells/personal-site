@@ -10,7 +10,7 @@ import { Metadata } from "next";
 import ContentWrapper from "@/layout/ContentWrapper";
 import GridWithSidebar from "@/layout/GridWithSidebar";
 import TextLinkWithIcon from "@/components/TextLinkWithIcon";
-import ProseContainer from "@/components/ProseContainer";
+import ProseContainer from "@/layout/ProseContainer";
 import FancyRule from "@/components/FancyRule";
 
 export const generateStaticParams = async () => {

@@ -11,7 +11,7 @@ import GridWithSidebar from "@/layout/GridWithSidebar";
 import ContentWrapper from "@/layout/ContentWrapper";
 import TextLinkWithIcon from "@/components/TextLinkWithIcon";
 import FancyRule from "@/components/FancyRule";
-import ProseContainer from "@/components/ProseContainer";
+import ProseContainer from "@/layout/ProseContainer";
 
 // Generate static params for blog post slugs
 export const generateStaticParams = async () => {

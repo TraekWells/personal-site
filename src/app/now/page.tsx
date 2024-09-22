@@ -1,5 +1,5 @@
 import PageHeader from "@/components/PageHeader";
-import ProseContainer from "@/components/ProseContainer";
+import ProseContainer from "@/layout/ProseContainer";
 import TableOfContents from "@/components/TableOfContents";
 import { CONTENT_PATHS } from "@/constants";
 import { loadContent } from "@/helpers/file-helpers";
