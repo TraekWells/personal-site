@@ -24,10 +24,10 @@ const navItems: NavItemTypes[] = [
     label: "✏️ Writing",
     href: "/blog",
   },
-  {
-    label: "🔥 Design Tips ",
-    href: "/design-tips",
-  },
+  // {
+  //   label: "🔥 Design Tips ",
+  //   href: "/design-tips",
+  // },
   {
     label: "👀 Now",
     href: "/now",

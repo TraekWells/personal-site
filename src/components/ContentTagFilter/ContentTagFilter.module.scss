@@ -10,13 +10,6 @@
   a {
     font-size: var(--font-size-sm);
   }
-
-  @media screen and (min-width: $breakpoint-md) {
-    position: sticky;
-    display: block;
-    top: 1rem;
-    align-self: flex-start;
-  }
 }
 
 .tagItem {
