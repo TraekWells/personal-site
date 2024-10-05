@@ -16,6 +16,8 @@ body {
   }
 
   position: relative;
+  display: flex;
+  flex-direction: column;
 
   &[data-scroll-locked] {
     padding-left: var(--space-16) !important;
@@ -26,8 +28,6 @@ body {
   }
 
   min-height: 100vh;
-
   padding: var(--space-16);
-
   overflow-x: hidden;
 }

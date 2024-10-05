@@ -7,6 +7,7 @@ import { Menu } from "react-feather";
 import MobileMenu from "../MobileMenu";
 import { usePathname } from "next/navigation";
 import Greeting from "@/components/Greeting";
+import Avatar from "@/components/Avatar";
 
 type MobileNavigationProps = {
   items: NavItemTypes[];
@@ -30,7 +31,7 @@ const MobileNavigation = ({ items, initialTheme }: MobileNavigationProps) => {
         <MobileMenu items={items} isOpen={isOpen} setIsOpen={setIsOpen} />
       ) : (
         <>
-          <Greeting />
+          <Avatar />
           <Button unstyled onClick={handleMobileToggle}>
             <Menu color="var(--color-text)" />
           </Button>

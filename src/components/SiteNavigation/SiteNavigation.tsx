@@ -5,6 +5,7 @@ import ColorThemeToggle from "../ColorThemeToggle";
 import { useWindowSize } from "@uidotdev/usehooks";
 import DesktopNavigation from "./DesktopNavigation";
 import MobileNavigation from "./MobileNavigation";
+import Avatar from "../Avatar";
 
 type SiteNavigationProps = {
   initialTheme: string;
@@ -17,19 +18,23 @@ export type NavItemTypes = {
 
 const navItems: NavItemTypes[] = [
   {
-    label: "🛖 Home",
+    label: "Home",
     href: "/",
   },
   {
-    label: "✏️ Writing",
+    label: "Writing",
     href: "/blog",
   },
+  {
+    label: "Impossible List",
+    href: "/journal/impossible-list",
+  },
   // {
-  //   label: "🔥 Design Tips ",
+  //   label: "Design Tips ",
   //   href: "/design-tips",
   // },
   {
-    label: "👀 Now",
+    label: "Now",
     href: "/now",
   },
 ];
@@ -40,7 +45,7 @@ const SiteNavigation = ({ initialTheme }: SiteNavigationProps) => {
   const isMobile = size.width && size.width <= 749;
 
   return (
-    <Container>
+    <Container className={styles.siteNavigationWrapper}>
       <nav className={styles.nav}>
         {isMobile ? (
           <MobileNavigation items={navItems} initialTheme={initialTheme} />

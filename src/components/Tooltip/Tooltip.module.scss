@@ -1,0 +1,7 @@
+.tooltip {
+  border-bottom: 3px dashed var(--color-primary-dark);
+
+  &:hover {
+    cursor: pointer;
+  }
+}

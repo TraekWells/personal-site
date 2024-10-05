@@ -4,6 +4,10 @@
   }
 }
 
+.header-huge {
+  font-size: var(--font-size-5xl);
+}
+
 .header-1 {
   font-size: var(--font-size-4xl);
 }
@@ -17,6 +21,10 @@
 }
 
 .header-4 {
+  font-size: var(--font-size-lg);
+}
+
+.lead {
   font-size: var(--font-size-lg);
 }
 

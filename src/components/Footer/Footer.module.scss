@@ -1,6 +1,7 @@
 @use "../../styles/breakpoints" as *;
 
 .footer {
+  margin-top: auto;
   background-color: var(--color-primary-lightest);
   position: relative;
   border-radius: var(--border-radius-md);
