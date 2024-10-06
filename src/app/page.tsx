@@ -3,7 +3,8 @@ import Container from "@/layout/Container";
 import Eyebrow from "@/components/Eyebrow";
 import Tooltip from "@/components/Tooltip";
 import Section from "@/layout/Section";
-import Image from "next/image";
+import Grid from "@/layout/Grid";
+import BioWithToggle from "@/components/BioWithToggle";
 
 export const metadata: Metadata = {
   title: "Home | UX Designer & Front-End Developer",
@@ -25,14 +26,7 @@ const Home = async () => {
         </p>
 
         <Section>
-          <figure>
-            <Image
-              src="/images/header-image.webp"
-              height={350}
-              width={350}
-              alt="Traek Wells"
-            />
-          </figure>
+          <BioWithToggle />
         </Section>
       </Container>
     </main>
