@@ -17,7 +17,8 @@ const Projects = async () => {
   const projects = await getContentList(CONTENT_PATHS["projects"]);
   return (
     <>
-      <PageHeader title="Projects">
+      <PageHeader>
+        <h1>Projects</h1>
         <p className="lead">
           Here are some of my favorite projects that I've worked on.
         </p>

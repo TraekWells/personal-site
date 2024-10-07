@@ -46,6 +46,7 @@ const SiteNavigation = ({ initialTheme }: SiteNavigationProps) => {
 
   return (
     <Container className={styles.siteNavigationWrapper}>
+      <Avatar />
       <nav className={styles.nav}>
         {isMobile ? (
           <MobileNavigation items={navItems} initialTheme={initialTheme} />

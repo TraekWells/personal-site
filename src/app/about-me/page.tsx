@@ -25,7 +25,8 @@ const AboutMe = async () => {
   );
   return (
     <>
-      <PageHeader title="My story">
+      <PageHeader>
+        <h1>My Story</h1>
         <p className="lead">
           From goals of being a concept artist to a zoologist, life led me to my
           true passion of being a User Interface designer and developer.

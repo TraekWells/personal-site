@@ -1,19 +1,25 @@
 import Container from "@/layout/Container";
 import styles from "./PageHeader.module.scss";
 import PostTags from "../PostTags";
+import classNames from "classnames";
 
 type PageHeaderProps = {
-  title: string;
   children?: React.ReactNode;
   tags?: string[];
+  huge?: boolean;
+  plain?: boolean;
 };
 
-const PageHeader = ({ children, title, tags }: PageHeaderProps) => {
+const PageHeader = ({ children, tags, huge, plain }: PageHeaderProps) => {
+  const headerClasses = classNames(styles.header, {
+    [styles.headerHuge]: huge,
+    [styles.headerPlain]: plain,
+  });
+
   return (
-    <header className={styles.header}>
+    <header className={headerClasses}>
       <Container>
         {tags && tags.length > 0 && <PostTags tags={tags} />}
-        <h1>{title}</h1>
         {children}
       </Container>
     </header>

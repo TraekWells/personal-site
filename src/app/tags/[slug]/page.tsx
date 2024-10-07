@@ -47,7 +47,9 @@ const Tag = async ({ params }: any) => {
 
   return (
     <>
-      <PageHeader title={`Posts tagged ${unsluged}`}></PageHeader>
+      <PageHeader>
+        <h1>{`Posts tagged ${unsluged}`}</h1>
+      </PageHeader>
       <ContentWrapper>
         <Section>
           <Container>

@@ -24,7 +24,8 @@ const Page = async () => {
   );
   return (
     <>
-      <PageHeader title="Now">
+      <PageHeader>
+        <h1>Now</h1>
         <p>What I've been up to.</p>
       </PageHeader>
       <ContentWrapper>

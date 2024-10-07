@@ -42,7 +42,8 @@ const BlogPost = async ({ params }: any) => {
 
   return (
     <>
-      <PageHeader title={frontmatter.title} tags={frontmatter.tags}>
+      <PageHeader tags={frontmatter.tags}>
+        <h1>{frontmatter.title}</h1>
         <p className="lead">{frontmatter.summary}</p>
       </PageHeader>
       <ContentWrapper>

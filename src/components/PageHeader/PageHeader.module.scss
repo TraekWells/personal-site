@@ -9,4 +9,13 @@
     font-size: var(--font-size-md);
     max-width: 65ch;
   }
+
+  &Plain {
+    background-color: var(--color-base-white);
+  }
+
+  &Huge {
+    padding-block-start: var(--space-80);
+    padding-block-end: var(--space-80);
+  }
 }

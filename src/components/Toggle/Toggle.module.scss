@@ -5,9 +5,10 @@
 
   input {
     --input-height: 40px;
+    --input-width: 70px;
     appearance: none;
     height: var(--input-height);
-    width: 80px;
+    width: var(--input-width);
     background-color: var(--color-base-white);
     border-radius: var(--input-height);
     position: relative;
@@ -27,7 +28,7 @@
     }
 
     &:checked::before {
-      transform: translateX(40px);
+      transform: translateX(calc(var(--input-width) / 2 - 5px));
     }
   }
 

@@ -5,8 +5,8 @@ const Avatar = () => {
   return (
     <Image
       src="/images/header-image.webp"
-      width={60}
-      height={60}
+      width={50}
+      height={50}
       className={styles.avatar}
       alt="Traek Wells"
     />

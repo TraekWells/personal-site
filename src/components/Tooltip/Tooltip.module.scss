@@ -1,7 +1,38 @@
 .tooltip {
-  border-bottom: 3px dashed var(--color-primary-dark);
+  position: relative;
+  isolation: isolate;
 
   &:hover {
     cursor: pointer;
+  }
+
+  &Trigger {
+    border-bottom: 3px dashed var(--color-primary-dark);
+  }
+
+  &Message {
+    --offset: 75px;
+    position: absolute;
+    background-color: var(--color-primary-lighter);
+    padding: var(--space-8) var(--space-16);
+    border-radius: var(--border-radius-sm);
+    font-size: var(--font-size-sm);
+    z-index: 1;
+    bottom: calc(100% + var(--space-4));
+    width: calc(100% + var(--offset));
+    margin-left: calc(var(--offset) / -2);
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid var(--color-primary-lighter);
+      top: 99%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
