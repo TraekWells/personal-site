@@ -1,14 +1,12 @@
 "use client";
 import React from "react";
-import styles from "./BioWithToggle.module.scss";
+import styles from "./BioWithSwitch.module.scss";
 import Grid from "@/layout/Grid";
 import Image from "next/image";
-import Toggle from "@/components/Toggle";
+import Switch from "../Switch";
 
-const BioWithToggle = () => {
-  const [mode, setMode] = React.useState<"professional" | "casual">(
-    "professional"
-  );
+const BioWithSwitch = () => {
+  const [checked, setChecked] = React.useState(false);
   return (
     <Grid>
       <Image
@@ -19,8 +17,12 @@ const BioWithToggle = () => {
         alt="Traek Wells"
       />
       <article className={styles.bio}>
-        <Toggle mode={mode} setMode={setMode} />
-        {mode === "professional" ? (
+        <Switch
+          label={checked ? "Casual" : "Professional"}
+          checked={checked}
+          setChecked={setChecked}
+        />
+        {checked && "professional" ? (
           <p>
             I'm a freelance User Interface designer and developer who always
             puts the user first.
@@ -36,4 +38,4 @@ const BioWithToggle = () => {
   );
 };
 
-export default BioWithToggle;
+export default BioWithSwitch;

@@ -9,7 +9,7 @@ type TooltipProps = {
 const Tooltip = ({ children, message }: TooltipProps) => {
   return (
     <RadixTooltip.Provider delayDuration={400}>
-      <RadixTooltip.Root defaultOpen>
+      <RadixTooltip.Root>
         <RadixTooltip.Trigger className={styles.tooltipTrigger}>
           {children}
         </RadixTooltip.Trigger>

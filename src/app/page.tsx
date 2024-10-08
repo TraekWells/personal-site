@@ -3,7 +3,7 @@ import Container from "@/layout/Container";
 import Eyebrow from "@/components/Eyebrow";
 import Tooltip from "@/components/Tooltip";
 import Section from "@/layout/Section";
-import BioWithToggle from "@/components/BioWithToggle";
+import BioWithSwitch from "@/components/BioWithSwitch";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
@@ -29,7 +29,7 @@ const Home = async () => {
       </PageHeader>
       <Container>
         <Section>
-          <BioWithToggle />
+          <BioWithSwitch />
         </Section>
       </Container>
     </main>
