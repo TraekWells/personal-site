@@ -1,7 +1,5 @@
-"use client";
-import React from "react";
+import * as RadixTooltip from "@radix-ui/react-tooltip";
 import styles from "./Tooltip.module.scss";
-import { AnimatePresence, motion } from "framer-motion";
 
 type TooltipProps = {
   children: React.ReactNode;
@@ -9,36 +7,20 @@ type TooltipProps = {
 };
 
 const Tooltip = ({ children, message }: TooltipProps) => {
-  // TODO: Add a11y support for tooltip message
-  const [showMessage, setShowMessage] = React.useState(false);
-
   return (
-    <span className={styles.tooltip}>
-      <AnimatePresence>
-        {showMessage && (
-          <motion.span
-            animate={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 10 }}
-            exit={{ opacity: 0, y: 10 }}
-            className={styles.tooltipMessage}
-            aria-live="polite"
-          >
+    <RadixTooltip.Provider delayDuration={400}>
+      <RadixTooltip.Root defaultOpen>
+        <RadixTooltip.Trigger className={styles.tooltipTrigger}>
+          {children}
+        </RadixTooltip.Trigger>
+        <RadixTooltip.Portal>
+          <RadixTooltip.Content className={styles.tooltipContent}>
             {message}
-          </motion.span>
-        )}
-      </AnimatePresence>
-
-      <span
-        className={styles.tooltipTrigger}
-        onMouseOver={() => setShowMessage(true)}
-        onMouseLeave={() => setShowMessage(false)}
-        onFocus={() => setShowMessage(true)}
-        onBlur={() => setShowMessage(false)}
-        tabIndex={0}
-      >
-        {children}
-      </span>
-    </span>
+            <RadixTooltip.Arrow className={styles.tooltipArrow} />
+          </RadixTooltip.Content>
+        </RadixTooltip.Portal>
+      </RadixTooltip.Root>
+    </RadixTooltip.Provider>
   );
 };
 

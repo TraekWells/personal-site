@@ -1,38 +1,35 @@
-.tooltip {
-  position: relative;
-  isolation: isolate;
+.tooltipContent {
+  background-color: var(--color-primary-lightest);
+  max-width: calc(var(--radix-tooltip-trigger-width) + 6rem);
+  max-height: var(--radix-tooltip-content-available-height);
+  border-radius: var(--border-radius-sm);
+  padding: var(--space-8);
+  transform-origin: var(--radix-tooltip-content-transform-origin);
+
+  animation: slideUp 0.2s ease-out;
+}
+
+.tooltipTrigger {
+  background: none;
+  border: none;
+  border-bottom: 3px dashed var(--color-primary-darker);
 
   &:hover {
     cursor: pointer;
   }
+}
 
-  &Trigger {
-    border-bottom: 3px dashed var(--color-primary-dark);
+.tooltipArrow {
+  fill: var(--color-primary-lightest);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
   }
-
-  &Message {
-    --offset: 75px;
-    position: absolute;
-    background-color: var(--color-primary-lighter);
-    padding: var(--space-8) var(--space-16);
-    border-radius: var(--border-radius-sm);
-    font-size: var(--font-size-sm);
-    z-index: 1;
-    bottom: calc(100% + var(--space-4));
-    width: calc(100% + var(--offset));
-    margin-left: calc(var(--offset) / -2);
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 0;
-      height: 0;
-      border-left: 10px solid transparent;
-      border-right: 10px solid transparent;
-      border-top: 10px solid var(--color-primary-lighter);
-      top: 99%;
-      left: 50%;
-      transform: translateX(-50%);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
