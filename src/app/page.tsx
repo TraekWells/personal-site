@@ -23,8 +23,8 @@ const Home = async () => {
         <p className="lead">
           But seriously, I’m a{" "}
           <Tooltip message={tooltipMessage}>front-end engineer</Tooltip> from
-          Minnesota. Currently, I’m focused learning and implementing modern web
-          features.{" "}
+          Minnesota. Currently, I’m focused on learning and implementing modern
+          web features.{" "}
         </p>
       </PageHeader>
       <Container>

@@ -9,8 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "postbuild": "next-sitemap",
-    "test": "vitest watch --coverage",
-    "coverage": "vitest run --coverage"
+    "test": "vitest test --coverage",
+    "test:watch": "vitest watch --coverage"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.1",

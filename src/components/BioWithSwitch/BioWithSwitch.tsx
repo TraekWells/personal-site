@@ -4,19 +4,37 @@ import styles from "./BioWithSwitch.module.scss";
 import Grid from "@/layout/Grid";
 import Image from "next/image";
 import Switch from "../Switch";
+import bioImage from "@/../public/images/bio-image.webp";
+import Icon from "../Icon";
+import Link from "next/link";
 
 const BioWithSwitch = () => {
   const [checked, setChecked] = React.useState(false);
   return (
     <Grid>
-      <Image
-        src="/images/header-image.webp"
-        height={250}
-        width={250}
-        className={styles.bioImage}
-        alt="Traek Wells"
-      />
-      <article className={styles.bio}>
+      <article className={styles.bioImageWrapper}>
+        <Image
+          src={bioImage}
+          width={400}
+          className={styles.bioImage}
+          alt="Traek Wells"
+        />
+        <div className={styles.iconWrapper}>
+          <Link href="https://x.com/TraekWells" target="_blank">
+            <Icon type="twitter" />
+          </Link>
+          <Link href="https://instagram.com/traekwells" target="_blank">
+            <Icon type="instagram" />
+          </Link>
+          <Link href="https://dribbble.com/traekwells" target="_blank">
+            <Icon type="dribbble" />
+          </Link>
+          <Link href="https://github.com/TraekWells" target="_blank">
+            <Icon type="github" />
+          </Link>
+        </div>
+      </article>
+      <article className={styles.bioContent}>
         <Switch
           label={checked ? "Casual" : "Professional"}
           checked={checked}
@@ -42,9 +60,12 @@ const BioWithSwitch = () => {
               <strong>people seem to like working with me</strong>.
             </p>
             <p>
-              <a href="https://www.linkedin.com/in/traekwells/" target="_blank">
+              <Link
+                href="https://www.linkedin.com/in/traekwells/"
+                target="_blank"
+              >
                 Visit my outdated LinkedIn
-              </a>{" "}
+              </Link>{" "}
               for more.
             </p>
           </>
