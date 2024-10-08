@@ -6,6 +6,7 @@ import { useWindowSize } from "@uidotdev/usehooks";
 import DesktopNavigation from "./DesktopNavigation";
 import MobileNavigation from "./MobileNavigation";
 import Avatar from "../Avatar";
+import Link from "next/link";
 
 type SiteNavigationProps = {
   initialTheme: string;
@@ -46,7 +47,9 @@ const SiteNavigation = ({ initialTheme }: SiteNavigationProps) => {
 
   return (
     <Container className={styles.siteNavigationWrapper}>
-      <Avatar />
+      <Link href="/">
+        <Avatar />
+      </Link>
       <nav className={styles.nav}>
         {isMobile ? (
           <MobileNavigation items={navItems} initialTheme={initialTheme} />
