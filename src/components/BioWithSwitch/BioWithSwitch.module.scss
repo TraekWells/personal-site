@@ -1,13 +1,17 @@
-.bioImageWrapper {
+.bioMediaWrapper {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: var(--space-24);
 }
 
+.bioImageWrapper {
+  position: relative;
+}
+
 .bioImage {
   border-radius: var(--border-radius-md);
+  height: auto;
 }
 
 .bioContent {
@@ -22,4 +26,13 @@
 .iconWrapper {
   display: flex;
   gap: var(--space-16);
+}
+
+.thugLifeGlasses {
+  position: absolute;
+  width: 56%;
+  height: auto;
+  left: 59%;
+  transform: translateX(-53%);
+  top: 20%;
 }
