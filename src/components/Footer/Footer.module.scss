@@ -5,7 +5,7 @@
   background-color: var(--color-primary-lightest);
   position: relative;
   border-radius: var(--border-radius-md);
-  padding-block: var(--space-12);
+  padding: var(--space-16);
 
   ul {
     list-style-type: none;
@@ -22,7 +22,6 @@
 }
 
 .grid {
-  margin-block-end: var(--space-24);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: var(--space-24);

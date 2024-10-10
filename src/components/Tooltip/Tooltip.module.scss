@@ -10,9 +10,11 @@
 }
 
 .tooltipTrigger {
+  color: inherit;
   background: none;
   border: none;
   border-bottom: 3px dashed var(--color-primary-darker);
+  padding: 0;
 
   &:hover {
     cursor: pointer;
