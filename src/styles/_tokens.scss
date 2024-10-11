@@ -39,16 +39,16 @@
   --font-weight-bold: 650;
   --font-weight-boldest: 800;
 
-  --font-size-xs: 0.75rem;
-  --font-size-sm: 0.875rem;
-  --font-size-base: 1.0625rem;
-  --font-size-md: 1.25rem;
-  --font-size-lg: 1.5rem;
-  --font-size-xl: 1.8125rem;
-  --font-size-2xl: 2.1875rem;
-  --font-size-3xl: 2.625rem;
-  --font-size-4xl: clamp(2.4rem, 4vw, 3.1875rem);
-  --font-size-5xl: clamp(3rem, 4.15vw, 4rem);
+  --font-size-xs: clamp(0.72rem, 0.7441rem + -0.031vw, 0.7378rem);
+  --font-size-sm: clamp(0.8854rem, 0.8803rem + 0.0254vw, 0.9rem);
+  --font-size-base: clamp(1.0625rem, 1.0408rem + 0.1087vw, 1.125rem);
+  --font-size-md: clamp(1.275rem, 1.2293rem + 0.2283vw, 1.4063rem);
+  --font-size-lg: clamp(1.53rem, 1.4508rem + 0.3962vw, 1.7578rem);
+  --font-size-xl: clamp(1.836rem, 1.7103rem + 0.6283vw, 2.1973rem);
+  --font-size-2xl: clamp(2.2032rem, 2.0142rem + 0.945vw, 2.7466rem);
+  --font-size-3xl: clamp(2.6438rem, 2.3693rem + 1.3728vw, 3.4332rem);
+  --font-size-4xl: clamp(3.1726rem, 2.7834rem + 1.946vw, 4.2915rem);
+  --font-size-5xl: clamp(3.8071rem, 3.2655rem + 2.7083vw, 5.3644rem);
 
   --font-family-mono: monospace;
 

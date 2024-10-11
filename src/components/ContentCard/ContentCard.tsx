@@ -10,9 +10,9 @@ export type ContentCardProps = {
 function ContentCard({ title, summary, slug }: ContentCardProps) {
   return (
     <article className={styles.contentCard}>
-      <h3>
+      <h2 className="header-4">
         <Link href={slug}>{title}</Link>
-      </h3>
+      </h2>
       <p>{summary}</p>
     </article>
   );

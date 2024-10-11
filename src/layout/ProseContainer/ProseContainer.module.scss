@@ -1,10 +1,10 @@
 .proseContainer {
-  h2 {
-    margin-block-start: var(--space-24);
+  h2:not(:first-of-type) {
+    margin-block-start: var(--space-32);
   }
 
   h3 {
-    margin-block-start: var(--space-16);
+    margin-block-start: var(--space-24);
   }
 
   ul {
