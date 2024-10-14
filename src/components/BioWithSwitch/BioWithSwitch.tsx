@@ -19,9 +19,10 @@ const BioWithSwitch = () => {
           <AnimatePresence>
             {checked && (
               <motion.div
-                initial={{ y: 100, opacity: 0 }}
-                animate={{ y: 120, opacity: 1 }}
-                exit={{ y: 100, opacity: 0 }}
+                style={{ position: "relative" }}
+                initial={{ opacity: 0, bottom: 10 }}
+                animate={{ opacity: 1, bottom: 0 }}
+                exit={{ opacity: 0, bottom: 10 }}
                 transition={{ duration: 0.5 }}
               >
                 <Image
