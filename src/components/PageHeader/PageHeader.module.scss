@@ -7,6 +7,10 @@
   position: relative;
   border-radius: var(--border-radius-md);
 
+  h1 {
+    margin-block-end: 0;
+  }
+
   &Plain {
     background-color: var(--color-base-white);
   }
@@ -17,7 +21,6 @@
   }
 
   @media (min-width: $breakpoint-md) {
-    padding-block-start: var(--space-64);
-    padding-block-end: var(--space-56);
+    padding-block: var(--space-48);
   }
 }
