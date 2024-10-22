@@ -28,7 +28,7 @@ const Blog = async () => {
     <>
       <PageHeader>
         <h1>Writing</h1>
-        <p>
+        <p className="lead">
           Posts about topics ranging from User Experience, User Interface
           design, HTML, CSS, JavaScript and accessibility. See my{" "}
           <Link href="/journal">journal</Link> for everything else.

@@ -1,13 +1,14 @@
+@use "../../styles/breakpoints" as *;
+
 .header {
-  padding-block-start: var(--space-64);
-  padding-block-end: var(--space-56);
+  padding-block-start: var(--space-32);
+  padding-block-end: var(--space-24);
   background-color: var(--color-primary-lightest);
   position: relative;
   border-radius: var(--border-radius-md);
 
-  p {
-    font-size: var(--font-size-md);
-    max-width: 65ch;
+  h1 {
+    margin-block-end: 0;
   }
 
   &Plain {
@@ -17,5 +18,9 @@
   &Huge {
     padding-block-start: var(--space-80);
     padding-block-end: var(--space-80);
+  }
+
+  @media (min-width: $breakpoint-md) {
+    padding-block: var(--space-48);
   }
 }

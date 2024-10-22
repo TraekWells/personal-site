@@ -44,7 +44,6 @@ const BlogPost = async ({ params }: any) => {
     <>
       <PageHeader tags={frontmatter.tags}>
         <h1>{frontmatter.title}</h1>
-        <p className="lead">{frontmatter.summary}</p>
       </PageHeader>
       <ContentWrapper>
         <Section>
@@ -53,6 +52,7 @@ const BlogPost = async ({ params }: any) => {
               <TableOfContents headers={headers} />
               <ProseContainer>
                 <WordCount wordCount={wordCount} />
+                <p className="lead">{frontmatter.summary}</p>
                 {content}
                 <FancyRule />
               </ProseContainer>
