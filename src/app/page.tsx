@@ -5,6 +5,7 @@ import Tooltip from "@/components/Tooltip";
 import Section from "@/layout/Section";
 import BioWithSwitch from "@/components/BioWithSwitch";
 import PageHeader from "@/components/PageHeader";
+import TextWithShimmer from "@/components/TextWithShimmer";
 
 export const metadata: Metadata = {
   title: "Home | UX Designer & Front-End Developer",
@@ -19,7 +20,10 @@ const Home = async () => {
     <main id="main">
       <PageHeader huge plain>
         <Eyebrow>Howdy, I'm Traek</Eyebrow>
-        <h1 className="header-huge">I organize pixels on a screen ✨</h1>
+        <h1 className="header-huge">
+          <TextWithShimmer>I organize pixels on a screen</TextWithShimmer>✨
+        </h1>
+        {/* <h1 className="header-huge">I organize pixels on a screen ✨</h1> */}
         <p className="lead">
           But seriously, I’m a{" "}
           <Tooltip message={tooltipMessage}>front-end engineer</Tooltip> from
