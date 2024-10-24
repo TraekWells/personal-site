@@ -1,5 +1,5 @@
 .proseContainer {
-  h2:not(:first-of-type) {
+  h2:not(:first-child) {
     margin-block-start: var(--space-32);
   }
 
