@@ -6,7 +6,6 @@ import Link from "next/link";
 import { getContentList } from "@/helpers/file-helpers";
 import { CONTENT_PATHS } from "@/constants";
 import { Metadata } from "next";
-import GridWithSidebar from "@/layout/GridWithSidebar";
 import ContentWrapper from "@/layout/ContentWrapper";
 import ContentCardList from "@/components/ContentCardList";
 
@@ -20,7 +19,8 @@ const Journal = async () => {
   const journals = await getContentList(CONTENT_PATHS["journal"]);
   return (
     <>
-      <PageHeader title="Other thoughts">
+      <PageHeader>
+        <h1>Other thoughts</h1>
         <p className="lead">
           This is a place for me to share anything that doesn't fit into my
           normal <Link href="/blog">blog</Link> topics. Most likely about life,

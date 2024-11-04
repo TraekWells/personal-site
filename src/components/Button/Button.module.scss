@@ -16,4 +16,10 @@
   &:active {
     background-color: var(--color-primary);
   }
+
+  &Unstyled {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
 }

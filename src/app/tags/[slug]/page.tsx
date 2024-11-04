@@ -11,7 +11,7 @@ import slugify from "@/utilities/slugify";
 import unslug from "@/utilities/unslug";
 import ContentCard from "@/components/ContentCard";
 import TextLinkWithIcon from "@/components/TextLinkWithIcon";
-import ProseContainer from "@/components/ProseContainer";
+import ProseContainer from "@/layout/ProseContainer";
 
 export const generateStaticParams = async () => {
   const blogs = await getContentList(CONTENT_PATHS["blog"]);
@@ -47,7 +47,9 @@ const Tag = async ({ params }: any) => {
 
   return (
     <>
-      <PageHeader title={`Posts tagged ${unsluged}`}></PageHeader>
+      <PageHeader>
+        <h1>{`Posts tagged ${unsluged}`}</h1>
+      </PageHeader>
       <ContentWrapper>
         <Section>
           <Container>

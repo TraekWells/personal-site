@@ -1,0 +1,39 @@
+.bioMediaWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--space-24);
+}
+
+.bioImageWrapper {
+  position: relative;
+}
+
+.bioImage {
+  border-radius: var(--border-radius-md);
+  height: auto;
+}
+
+.bioContent {
+  background-color: var(--color-primary-lightest);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-24);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-24);
+  align-self: start;
+}
+
+.iconWrapper {
+  display: flex;
+  gap: var(--space-16);
+}
+
+.thugLifeGlasses {
+  position: absolute;
+  width: 56%;
+  height: auto;
+  left: 59%;
+  transform: translateX(-53%) translateY(105%);
+  top: 20%;
+}

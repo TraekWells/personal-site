@@ -13,7 +13,9 @@ const FourOhFour = () => {
         description="Uh oh, you've reached a page that doesn't exist. Sorry about that."
         canonical="https://www.traekwells.com/404"
       /> */}
-      <PageHeader title="Page not found" />
+      <PageHeader>
+        <h1>Page not found</h1>
+      </PageHeader>
       <main id="main">
         <Section>
           <Container>

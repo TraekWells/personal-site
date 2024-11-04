@@ -8,3 +8,6 @@ Todos:
 - [ ] Add a `Back to top` button
 - [ ] Do something with the content filters
 - [ ] Add cool animations
+- [x] Add language to codeblocks
+- [ ] Add search
+- [ ] Figure out how to animate the mobile menu out

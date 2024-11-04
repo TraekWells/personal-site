@@ -1,0 +1,42 @@
+.mobileMenu {
+  background-color: var(--color-primary-lightest);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  inset: var(--space-16);
+  border-radius: var(--border-radius-md);
+  overflow: auto;
+
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+
+  &Container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &ListItem {
+    &:not(:first-of-type) {
+      margin-block-start: var(--space-16);
+    }
+  }
+
+  &Link {
+    font-size: var(--font-size-md);
+    border-bottom: 0;
+
+    &:not(:first-of-type) {
+      margin-block-start: var(--space-16);
+    }
+  }
+}
+
+.mobileCloseButton {
+  margin-block: var(--space-16);
+  position: relative;
+  align-self: flex-end;
+  top: 3px;
+  color: var(--color-text);
+}

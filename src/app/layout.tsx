@@ -22,11 +22,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   const theme = savedTheme?.value || "light";
 
   return (
-    <html
-      lang="en"
-      className={`${bodyFont.variable} ${codeFont.variable}`}
-      data-theme={theme}
-    >
+    <html lang="en" className={`${bodyFont.variable} ${codeFont.variable}`}>
       <head>
         <link rel="icon" href="favicon.png" sizes="any" />
         <script
@@ -39,6 +35,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <SiteNavigation initialTheme={theme} />
         {children}
         <Footer />
+        <div id="mobile-menu-portal"></div>
       </body>
     </html>
   );

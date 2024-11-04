@@ -1,17 +1,8 @@
-@use "../../styles/breakpoints" as *;
-
-.navWrapper {
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    height: 13px;
-    width: 13px;
-    background-color: var(--color-primary-darker);
-    top: 0;
-    left: 0;
-  }
+.siteNavigationWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-end: var(--space-16);
 }
 
 .nav {
@@ -20,39 +11,4 @@
   justify-content: space-between;
   align-items: center;
   margin-block: var(--space-16);
-
-  @media screen and (min-width: $breakpoint-md) {
-    margin-block: 0;
-  }
-
-  &List {
-    display: none;
-
-    @media screen and (min-width: $breakpoint-md) {
-      display: flex;
-      list-style: none;
-      padding: 0;
-      gap: var(--space-8);
-      margin-block: var(--space-24);
-    }
-
-    @media screen and (min-width: $breakpoint-lg) {
-      gap: var(--space-24);
-    }
-  }
-
-  &Link {
-    --border-size: 2px;
-    border-radius: var(--border-radius-sm);
-    display: block;
-    padding: var(--space-8) var(--space-16);
-    border-bottom: var(--border-size) solid transparent;
-    color: var(--color-body-text);
-    font-size: var(--font-size-sm);
-
-    &:hover {
-      border-bottom: var(--border-size) solid transparent;
-      background-color: var(--color-primary-lightest);
-    }
-  }
 }

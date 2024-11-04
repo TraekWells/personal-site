@@ -1,16 +1,28 @@
+@use "../../styles/breakpoints" as *;
+
 .footer {
+  margin-top: auto;
   background-color: var(--color-primary-lightest);
-  padding-block: 5rem;
   position: relative;
+  border-radius: var(--border-radius-md);
+  padding: var(--space-16);
 
   ul {
     list-style-type: none;
     padding: 0;
   }
+
+  p {
+    font-size: var(--font-size-sm);
+  }
+
+  @media screen and (min-width: $breakpoint-md) {
+    padding-block: 2rem;
+  }
 }
 
 .grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: var(--space-24);
 }

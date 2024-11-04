@@ -16,5 +16,19 @@ body {
   }
 
   background-color: var(--color-surface);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &[data-scroll-locked] {
+    padding-left: var(--space-16) !important;
+    padding-right: var(--space-16) !important;
+    padding-top: var(--space-16) !important;
+    // padding-right: var(--space-16);
+    margin: 0;
+  }
+
+  min-height: 100vh;
+  padding: var(--space-16);
   overflow-x: hidden;
 }

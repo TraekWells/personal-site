@@ -41,7 +41,7 @@ h3 {
 }
 
 h1 {
-  font-size: var(--font-size-3xl);
+  font-size: var(--font-size-2xl);
   margin-block-end: var(--space-16);
   font-weight: var(--font-weight-boldest);
   color: var(--color-primary-darkest);
@@ -54,7 +54,7 @@ h2 {
 }
 
 h3 {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
   font-weight: var(--font-weight-boldest);
   color: var(--color-base-darkest);
 }
@@ -82,26 +82,28 @@ a {
   font-size: inherit;
   position: relative;
   text-decoration: none;
-  border-bottom: var(--border-size) solid var(--color-primary);
   transition: 0.1s ease border;
   color: var(--color-link);
 
-  // Come back to this
-  &:hover,
-  &:focus {
-    color: var(--color-primary-darkest);
-    border-bottom: var(--border-size) solid var(--color-primary-darker);
-  }
+  &:not(:has(svg)):not(:has(img)) {
+    border-bottom: var(--border-size) solid var(--color-primary);
 
-  &:active {
-    border-bottom: var(--border-size) solid var(--color-primary-darker);
-    color: var(--color-primary-darker);
+    // Come back to this
+    &:hover,
+    &:focus {
+      color: var(--color-primary-darkest);
+      border-bottom: var(--border-size) solid var(--color-primary-darker);
+    }
+
+    &:active {
+      border-bottom: var(--border-size) solid var(--color-primary-darker);
+      color: var(--color-primary-darker);
+    }
   }
 }
 
 strong {
   font-weight: var(--font-weight-boldest);
-  color: var(--color-primary-darker);
 }
 
 li {

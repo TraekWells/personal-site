@@ -46,7 +46,8 @@ const ProjectPost = async ({ params }: ProjectPostProps) => {
     .slice(0, 2);
   return (
     <>
-      <PageHeader title={frontmatter.title}>
+      <PageHeader>
+        <h1>{frontmatter.title}</h1>
         <p className="lead">{frontmatter.summary}</p>
       </PageHeader>
       <main className="post">

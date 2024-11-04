@@ -11,7 +11,7 @@ import GridWithSidebar from "@/layout/GridWithSidebar";
 import ContentWrapper from "@/layout/ContentWrapper";
 import TextLinkWithIcon from "@/components/TextLinkWithIcon";
 import FancyRule from "@/components/FancyRule";
-import ProseContainer from "@/components/ProseContainer";
+import ProseContainer from "@/layout/ProseContainer";
 
 // Generate static params for blog post slugs
 export const generateStaticParams = async () => {
@@ -42,8 +42,8 @@ const BlogPost = async ({ params }: any) => {
 
   return (
     <>
-      <PageHeader title={frontmatter.title} tags={frontmatter.tags}>
-        <p className="lead">{frontmatter.summary}</p>
+      <PageHeader tags={frontmatter.tags}>
+        <h1>{frontmatter.title}</h1>
       </PageHeader>
       <ContentWrapper>
         <Section>
@@ -52,6 +52,7 @@ const BlogPost = async ({ params }: any) => {
               <TableOfContents headers={headers} />
               <ProseContainer>
                 <WordCount wordCount={wordCount} />
+                <p className="lead">{frontmatter.summary}</p>
                 {content}
                 <FancyRule />
               </ProseContainer>
