@@ -87,4 +87,5 @@ html[data-theme="dark"] {
   --color-primary-lightest: hsl(283, 20%, 15%);
   --color-primary-darker: var(--color-base-lightest);
   --color-primary-darkest: var(--color-base-lightest);
+  --color-base-darkest: var(--color-base-lightest);
 }
