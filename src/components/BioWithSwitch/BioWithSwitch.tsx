@@ -41,9 +41,6 @@ const BioWithSwitch = () => {
           />
         </article>
         <div className={styles.iconWrapper}>
-          <Link href="https://x.com/TraekWells" target="_blank">
-            <Icon type="twitter" />
-          </Link>
           <Link href="https://instagram.com/ui.traek" target="_blank">
             <Icon type="instagram" />
           </Link>
