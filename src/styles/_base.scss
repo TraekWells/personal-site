@@ -15,7 +15,7 @@ body {
     background: var(--color-primary-700);
   }
 
-  background-color: var(--color-surface);
+  background-color: var(--color-surface-light);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -30,6 +30,6 @@ body {
   min-height: 100vh;
   padding: var(--space-16);
 
-  background-color: var(--color-surface);
+  background-color: var(--color-surface-light);
   overflow-x: hidden;
 }

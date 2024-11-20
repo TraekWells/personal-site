@@ -23,7 +23,8 @@
   --color-base-dark: hsl(285, 7%, 36%);
   --color-base-darkest: hsl(103, 7%, 19%);
 
-  --color-surface: hsl(0, 0%, 100%);
+  --color-surface-light: hsl(0, 0%, 100%);
+  --color-surface-dark: hsl(283, 5%, 9%);
 
   --color-error-light: hsl(0, 91%, 92%);
   --color-error: hsl(0, 91%, 37%);
@@ -82,7 +83,7 @@
 
 html[data-theme="dark"] {
   // dark mode stuff here
-  --color-surface: hsl(283, 5%, 9%);
+  --color-surface-light: var(--color-surface-dark);
   --color-text: var(--color-base-lightest);
   --color-primary-lightest: hsl(283, 20%, 15%);
   --color-primary-darker: var(--color-base-lightest);
