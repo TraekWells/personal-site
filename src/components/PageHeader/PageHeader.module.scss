@@ -23,4 +23,19 @@
   @media (min-width: $breakpoint-md) {
     padding-block: var(--space-48);
   }
+
+  @media (prefers-reduced-motion: no-preference) {
+    @supports ((animation-timeline: scroll()) and (animation-range: 0% 100%)) {
+      @keyframes leave-view {
+        to {
+          opacity: 0;
+          translate: 0 40px;
+        }
+      }
+
+      animation: leave-view linear both;
+      animation-timeline: scroll(root);
+      animation-range: 10vh 30vh;
+    }
+  }
 }
