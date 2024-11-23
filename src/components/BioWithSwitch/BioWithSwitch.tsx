@@ -54,16 +54,21 @@ const BioWithSwitch = () => {
       </div>
       <article className={styles.bioContent}>
         <Switch
-          label={checked ? "Casual" : "Professional"}
+          label={checked ? "Casual Bio" : "Professional Bio"}
           checked={checked}
           setChecked={setChecked}
         />
         {checked ? (
-          <p>
-            I'm a self-taught front-end engineer from the beautiful state of
-            Minnesota. I love to run, make weird noises on my guitar, and learn
-            about new and exciting stuff in web development.
-          </p>
+          <>
+            <p>
+              I'm a self-taught front-end engineer from the beautiful state of{" "}
+              <strong>Minnesota</strong>. I love to run, make weird noises on my
+              guitar, and learn about new and exciting stuff in web development.
+            </p>
+            <p>
+              I used to want to be a zoologist. I still do, but I used to too.
+            </p>
+          </>
         ) : (
           <>
             <p>

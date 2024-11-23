@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 const Home = async () => {
   const tooltipMessage =
-    "Also known as a Front-end Developer, UI Developer, Web Developer, UX Designer, etc.";
+    "Also known as a Front-end Developer, UI Developer, Web Developer, UX Designer, you get it.";
   return (
     <main id="main">
       <PageHeader huge plain>
@@ -23,9 +23,8 @@ const Home = async () => {
         <h1 className="header-huge">
           <TextWithShimmer>I organize pixels on a screen</TextWithShimmer>✨
         </h1>
-        {/* <h1 className="header-huge">I organize pixels on a screen ✨</h1> */}
         <p className="lead">
-          But seriously, I’m a{" "}
+          No but seriously, I’m a{" "}
           <Tooltip message={tooltipMessage}>front-end engineer</Tooltip> from
           Minnesota. Currently, I’m focused on learning and implementing modern
           web features.{" "}

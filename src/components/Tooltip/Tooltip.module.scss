@@ -3,8 +3,9 @@
   max-width: calc(var(--radix-tooltip-trigger-width) + 6rem);
   max-height: var(--radix-tooltip-content-available-height);
   border-radius: var(--border-radius-sm);
-  padding: var(--space-8);
+  padding: var(--space-16);
   transform-origin: var(--radix-tooltip-content-transform-origin);
+  font-size: var(--font-size-sm);
 
   animation: slideUp 0.2s ease-out;
 }
