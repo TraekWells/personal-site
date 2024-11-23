@@ -20,6 +20,7 @@ const Blog = async () => {
   const blogs = (await getContentList(CONTENT_PATHS["blog"])).filter(
     (blog) => blog.draft === false
   );
+
   const tags = blogs.flatMap((blog) => blog.tags).filter(Boolean);
   // This is sweet, it removes duplicates from the tags array
   const uniqueTags = [...new Set(tags)];
