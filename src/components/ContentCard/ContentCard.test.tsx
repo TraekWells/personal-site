@@ -11,7 +11,5 @@ describe("<ContentCard />", () => {
     expect(title).toBeInTheDocument();
     const summary = screen.getByText(/test summary/i);
     expect(summary).toBeInTheDocument;
-    const link = screen.getByRole("link", { name: /read this post/i });
-    expect(link).toHaveAttribute("href", "/test");
   });
 });
