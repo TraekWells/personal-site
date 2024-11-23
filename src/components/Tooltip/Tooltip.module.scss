@@ -5,6 +5,7 @@
   border-radius: var(--border-radius-sm);
   padding: var(--space-16);
   transform-origin: var(--radix-tooltip-content-transform-origin);
+  font-size: var(--font-size-sm);
 
   animation: slideUp 0.2s ease-out;
 }
