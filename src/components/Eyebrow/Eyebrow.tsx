@@ -5,7 +5,7 @@ type EyebrowProps = {
 };
 
 const Eyebrow = ({ children }: EyebrowProps) => {
-  return <h4 className={styles.eyebrow}>🐜 {children}</h4>;
+  return <h4 className={styles.eyebrow}>{children}</h4>;
 };
 
 export default Eyebrow;
