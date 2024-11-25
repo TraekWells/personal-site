@@ -29,7 +29,11 @@ const ColorThemeToggle = ({
 
   return (
     <Button onClick={handleClick} unstyled {...props}>
-      {theme === "light" ? <Sun /> : <Moon color="var(--color-text)" />}
+      {theme === "light" ? (
+        <Sun color="var(--color-text)" />
+      ) : (
+        <Moon color="var(--color-text)" />
+      )}
       <VisuallyHidden>Swap color mode</VisuallyHidden>
     </Button>
   );

@@ -32,7 +32,7 @@ const MobileNavigation = ({ items, initialTheme }: MobileNavigationProps) => {
         <>
           <ColorThemeToggle
             initialTheme={initialTheme}
-            className="margin-right-16 "
+            className="margin-right-8"
           />
           <Button unstyled onClick={handleMobileToggle}>
             <Menu color="var(--color-text)" />
