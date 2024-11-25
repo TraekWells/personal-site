@@ -9,11 +9,21 @@
   &.info {
     background-color: var(--color-info-light);
     border: 2px solid var(--color-info);
+
+    :global([data-theme="dark"]) & {
+      background-color: var(--color-info-dark);
+      border: 2px solid var(--color-info);
+    }
   }
 
   &.warning {
     background-color: var(--color-warning-light);
     border: 2px solid var(--color-warning);
+
+    :global([data-theme="dark"]) & {
+      background-color: var(--color-warning-dark);
+      border: 2px solid var(--color-warning);
+    }
   }
 
   svg {
@@ -25,5 +35,10 @@
     height: 1.5rem;
     background-color: var(--color-base-white);
     border-radius: 50%;
+
+    :global([data-theme="dark"]) & {
+      outline: 0.35rem solid hsl(283, 5%, 9%);
+      background-color: hsl(283, 5%, 9%);
+    }
   }
 }

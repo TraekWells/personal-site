@@ -21,7 +21,6 @@ const DesktopNavigation = ({ items, initialTheme }: DesktopNavigationProps) => {
           );
         })}
       </ul>
-      {/* <ColorThemeToggle initialTheme={initialTheme} /> */}
     </>
   );
 };

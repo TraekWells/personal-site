@@ -5,11 +5,14 @@ import VisuallyHidden from "../VisuallyHidden";
 import { Sun, Moon } from "react-feather";
 import Cookies from "js-cookie";
 
-type ColorThemeToggleProps = {
+type ColorThemeToggleProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   initialTheme: string;
 };
 
-const ColorThemeToggle = ({ initialTheme }: ColorThemeToggleProps) => {
+const ColorThemeToggle = ({
+  initialTheme,
+  ...props
+}: ColorThemeToggleProps) => {
   const [theme, setTheme] = React.useState(initialTheme);
 
   const handleClick = () => {
@@ -25,8 +28,8 @@ const ColorThemeToggle = ({ initialTheme }: ColorThemeToggleProps) => {
   };
 
   return (
-    <Button onClick={handleClick} unstyled>
-      {theme === "light" ? <Sun /> : <Moon />}
+    <Button onClick={handleClick} unstyled {...props}>
+      {theme === "light" ? <Sun /> : <Moon color="var(--color-text)" />}
       <VisuallyHidden>Swap color mode</VisuallyHidden>
     </Button>
   );

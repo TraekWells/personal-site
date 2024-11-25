@@ -6,6 +6,7 @@ import Button from "@/components/Button";
 import { Menu } from "react-feather";
 import MobileMenu from "../MobileMenu";
 import { usePathname } from "next/navigation";
+import ColorThemeToggle from "@/components/ColorThemeToggle";
 
 type MobileNavigationProps = {
   items: NavItemTypes[];
@@ -28,9 +29,15 @@ const MobileNavigation = ({ items, initialTheme }: MobileNavigationProps) => {
       {isOpen ? (
         <MobileMenu items={items} isOpen={isOpen} setIsOpen={setIsOpen} />
       ) : (
-        <Button unstyled onClick={handleMobileToggle}>
-          <Menu color="var(--color-text)" />
-        </Button>
+        <>
+          <ColorThemeToggle
+            initialTheme={initialTheme}
+            className="margin-right-16 "
+          />
+          <Button unstyled onClick={handleMobileToggle}>
+            <Menu color="var(--color-text)" />
+          </Button>
+        </>
       )}
     </>
   );

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from "./TableOfContents.module.scss";
 import slugify from "@/utilities/slugify";
+import Eyebrow from "../Eyebrow";
 
 type TableOfContentsProps = {
   headers: string[];
@@ -10,7 +11,7 @@ const TableOfContents = ({ headers }: TableOfContentsProps) => {
   return (
     <aside className={styles.tableOfContents}>
       <header>
-        <h4 className="eyebrowify">Table of Contents</h4>
+        <Eyebrow>Table of Contents</Eyebrow>
       </header>
       <ul>
         {headers.map((header, index) => {

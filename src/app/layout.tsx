@@ -22,7 +22,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
   const theme = savedTheme?.value || "light";
 
   return (
-    <html lang="en" className={`${bodyFont.variable} ${codeFont.variable}`}>
+    <html
+      lang="en"
+      className={`${bodyFont.variable} ${codeFont.variable}`}
+      data-theme={theme}
+    >
       <head>
         <link rel="icon" href="favicon.png" sizes="any" />
         <script

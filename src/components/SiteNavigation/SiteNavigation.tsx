@@ -57,6 +57,7 @@ const SiteNavigation = ({ initialTheme }: SiteNavigationProps) => {
           <DesktopNavigation items={navItems} initialTheme={initialTheme} />
         )}
       </nav>
+      {!isMobile && <ColorThemeToggle initialTheme={initialTheme} />}
     </Container>
   );
 };

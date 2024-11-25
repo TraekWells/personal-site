@@ -9,18 +9,23 @@
   --color-primary-dark: hsl(287, 50%, 42%);
   --color-primary-darker: hsl(283, 59%, 30%);
   --color-primary-darkest: hsl(283, 89%, 20%);
+
   --color-secondary-lightest: hsl(30, 63%, 97%);
   --color-secondary-light: hsl(35, 100%, 93%);
   --color-secondary: hsl(34, 100%, 86%);
   --color-secondary-dark: hsl(35, 100%, 75%);
   --color-secondary-darkest: hsl(36, 99%, 31%);
+
   --color-base-white: hsl(0, 0%, 100%);
   --color-base-lightest: hsl(300, 8%, 95%);
   --color-base-light: hsl(285, 7%, 89%);
   --color-base: hsl(282, 7%, 52%);
   --color-base-dark: hsl(285, 7%, 36%);
   --color-base-darkest: hsl(103, 7%, 19%);
-  --color-surface: hsl(0, 0%, 100%);
+
+  --color-surface-light: hsl(0, 0%, 100%);
+  --color-surface-dark: hsl(283, 5%, 9%);
+
   --color-error-light: hsl(0, 91%, 92%);
   --color-error: hsl(0, 91%, 37%);
   --color-success-light: hsl(130, 100%, 93%);
@@ -28,7 +33,9 @@
   --color-warning-light: hsl(42, 95%, 95%);
   --color-warning: hsl(42, 100%, 45%);
   --color-info-light: hsl(205, 100%, 97%);
-  --color-info: hsl(190, 100%, 42%);
+  --color-info: hsl(190, 100%, 32%);
+  --color-info-dark: hsl(190, 100%, 9%);
+
   --color-disabled: var(--color-base-light);
   --color-text-light: var(--color-base-dark);
   --color-text: var(--color-base-darkest);
@@ -77,4 +84,10 @@
 
 html[data-theme="dark"] {
   // dark mode stuff here
+  --color-surface-light: var(--color-surface-dark);
+  --color-text: var(--color-base-lightest);
+  --color-primary-lightest: hsl(283, 20%, 15%);
+  --color-primary-darker: var(--color-base-lightest);
+  --color-primary-darkest: var(--color-base-lightest);
+  --color-base-darkest: var(--color-base-lightest);
 }
