@@ -19,7 +19,9 @@ const Home = async () => {
   return (
     <main id="main">
       <PageHeader huge plain>
-        <Eyebrow>🐜 Howdy, I'm Traek</Eyebrow>
+        <Eyebrow style={{ color: "var(--color-primary-darker)" }}>
+          🐜 Howdy, I'm Traek
+        </Eyebrow>
         <h1 className="header-huge">
           <TextWithShimmer>I organize pixels on a screen</TextWithShimmer>✨
         </h1>

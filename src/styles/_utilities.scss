@@ -33,20 +33,28 @@
   max-width: 65ch;
 }
 
-.eyebrowify {
-  font-size: var(--font-size-base);
-  text-transform: uppercase;
-  font-weight: var(--font-weight-boldest);
-}
-
 .text-center {
   text-align: center;
 }
 
-.margin-right-8 {
-  margin-right: var(--space-8);
+@mixin generate-margin-utilities($directions, $spaces) {
+  @each $direction in $directions {
+    @each $space, $value in $spaces {
+      .margin-#{$direction}-#{$space} {
+        margin-#{$direction}: var(--space-#{$value});
+      }
+    }
+  }
 }
 
-.margin-right-16 {
-  margin-right: var(--space-16);
-}
+$directions: (top, right, bottom, left);
+$spaces: (
+  4: 4,
+  8: 8,
+  16: 16,
+  24: 24,
+  32: 32,
+  64: 64,
+);
+
+@include generate-margin-utilities($directions, $spaces);

@@ -2,6 +2,7 @@ import slugify from "@/utilities/slugify";
 import styles from "./ContentTagFilter.module.scss";
 import Link from "next/link";
 import { Tag } from "react-feather";
+import Eyebrow from "../Eyebrow";
 
 type ContentTagFilterProps = {
   tags: string[];
@@ -11,7 +12,7 @@ const ContentTagFilter = ({ tags }: ContentTagFilterProps) => {
   return (
     <aside className={styles.contentTagFilter}>
       <header>
-        <h4 className="eyebrowify">Filter By Tag</h4>
+        <Eyebrow>Filter by Tag</Eyebrow>
       </header>
       <ul>
         {tags.map((tag) => {

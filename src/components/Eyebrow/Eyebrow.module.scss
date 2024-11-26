@@ -1,7 +1,8 @@
 .eyebrow {
   display: block;
   text-transform: uppercase;
-  color: var(--color-primary-darker);
+  // color: var(--color-base-darker);
+  color: inherit;
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-boldest);
   margin-top: 0;

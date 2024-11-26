@@ -1,11 +1,15 @@
 import styles from "./Eyebrow.module.scss";
 
-type EyebrowProps = {
+type EyebrowProps = React.HTMLAttributes<HTMLHeadingElement> & {
   children: React.ReactNode;
 };
 
-const Eyebrow = ({ children }: EyebrowProps) => {
-  return <h4 className={styles.eyebrow}>{children}</h4>;
+const Eyebrow = ({ children, ...rest }: EyebrowProps) => {
+  return (
+    <h4 className={styles.eyebrow} {...rest}>
+      {children}
+    </h4>
+  );
 };
 
 export default Eyebrow;
