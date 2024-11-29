@@ -17,7 +17,7 @@ const ContactMe = () => {
       </PageHeader>
       <main id="main">
         <Section>
-          <Container narrow>
+          <Container>
             <div className="d-grid-two-columns">
               <div className="d-grid__half">
                 <p>

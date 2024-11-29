@@ -1,8 +1,8 @@
 import slugify from "@/utilities/slugify";
 import styles from "./ContentTagFilter.module.scss";
 import Link from "next/link";
-import { Tag } from "react-feather";
 import Eyebrow from "../Eyebrow";
+import { Tag } from "lucide-react";
 
 type ContentTagFilterProps = {
   tags: string[];

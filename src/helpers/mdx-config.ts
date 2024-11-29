@@ -4,6 +4,7 @@ import Note from "@/components/Note";
 import CodeSnippet from "@/components/CodeSnippet";
 import Video from "@/components/Video";
 import FancyRule from "@/components/FancyRule";
+import WordWithHint from "@/components/WordWithHint";
 
 export const mdxComponents = {
   components: {
@@ -11,6 +12,7 @@ export const mdxComponents = {
     pre: CodeSnippet,
     Video,
     hr: FancyRule,
+    WordWithHint,
   },
 };
 

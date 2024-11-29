@@ -19,4 +19,5 @@ export type BlogFrontmatterTypes = {
   tags: string[];
   draft: boolean;
   createdAt: Date;
+  updatedAt: Date;
 };

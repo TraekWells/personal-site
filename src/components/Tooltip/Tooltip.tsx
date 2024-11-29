@@ -4,13 +4,18 @@ import styles from "./Tooltip.module.scss";
 type TooltipProps = {
   children: React.ReactNode;
   message: string;
+  unstyled?: boolean;
+  classList?: string;
 };
 
-const Tooltip = ({ children, message }: TooltipProps) => {
+const Tooltip = ({ children, message, unstyled, classList }: TooltipProps) => {
   return (
     <RadixTooltip.Provider delayDuration={400}>
       <RadixTooltip.Root>
-        <RadixTooltip.Trigger className={styles.tooltipTrigger}>
+        <RadixTooltip.Trigger
+          className={`${styles.tooltipTrigger} ${classList}`}
+          style={{ borderBottom: unstyled ? "none" : "" }}
+        >
           {children}
         </RadixTooltip.Trigger>
         <RadixTooltip.Portal>

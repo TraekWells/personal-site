@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "./TextLinkWithIcon.module.scss";
-import { ArrowLeft } from "react-feather";
+import { ArrowLeft } from "lucide-react";
 
 type TextLinkWithIconProps = {
   href: string;

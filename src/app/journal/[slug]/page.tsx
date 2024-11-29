@@ -12,6 +12,7 @@ import GridWithSidebar from "@/layout/GridWithSidebar";
 import TextLinkWithIcon from "@/components/TextLinkWithIcon";
 import ProseContainer from "@/layout/ProseContainer";
 import FancyRule from "@/components/FancyRule";
+import parseDate from "@/utilities/parse-date";
 
 export const generateStaticParams = async () => {
   const journal = await getContentList(CONTENT_PATHS["journal"]);
@@ -37,6 +38,10 @@ const JournalPost = async ({ params }: any) => {
     `${CONTENT_PATHS["journal"]}/${params.slug}`
   );
 
+  const updatedDate = frontmatter.updatedAt
+    ? parseDate(frontmatter.updatedAt)
+    : null;
+
   return (
     <>
       <PageHeader>
@@ -50,6 +55,9 @@ const JournalPost = async ({ params }: any) => {
               <TableOfContents headers={headers} />
               <ProseContainer>
                 <WordCount wordCount={wordCount} />
+                {frontmatter.updatedAt && (
+                  <small>Last updated: {updatedDate}</small>
+                )}
                 {content}
                 <FancyRule />
               </ProseContainer>

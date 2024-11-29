@@ -3,10 +3,10 @@
 import React from "react";
 import { NavItemTypes } from "../SiteNavigation";
 import Button from "@/components/Button";
-import { Menu } from "react-feather";
 import MobileMenu from "../MobileMenu";
 import { usePathname } from "next/navigation";
 import ColorThemeToggle from "@/components/ColorThemeToggle";
+import { Menu } from "lucide-react";
 
 type MobileNavigationProps = {
   items: NavItemTypes[];

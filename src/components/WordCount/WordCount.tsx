@@ -1,4 +1,4 @@
-import { Clock } from "react-feather";
+import { Clock } from "lucide-react";
 import styles from "./WordCount.module.scss";
 
 type WordCountProps = {

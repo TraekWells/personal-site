@@ -8,7 +8,9 @@ import { extractHeaders } from "./extract-headers";
 import { getWordCount } from "./get-word-count";
 import { BlogFrontmatterTypes } from "@/types/types";
 
-export const getContentList = async (directory: string): Promise<any[]> => {
+export const getContentList = async (
+  directory: string
+): Promise<BlogFrontmatterTypes[]> => {
   const fileNames = await readDirectory(directory);
   const contentArray: BlogFrontmatterTypes[] = [];
   for (let fileName of fileNames) {
@@ -22,6 +24,7 @@ export const getContentList = async (directory: string): Promise<any[]> => {
       tags: frontmatter.tags,
       draft: frontmatter.draft,
       createdAt: frontmatter.createdAt,
+      updatedAt: frontmatter.updatedAt,
     };
 
     contentArray.push(contentObject);

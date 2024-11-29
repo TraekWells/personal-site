@@ -2,8 +2,8 @@
 import React from "react";
 import Button from "../Button";
 import VisuallyHidden from "../VisuallyHidden";
-import { Sun, Moon } from "react-feather";
 import Cookies from "js-cookie";
+import { Moon, Sun } from "lucide-react";
 
 type ColorThemeToggleProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   initialTheme: string;

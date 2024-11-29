@@ -1,9 +1,9 @@
 import React from "react";
 import { NavItemTypes } from "../SiteNavigation";
 import { createPortal } from "react-dom";
+import { X as Close } from "lucide-react";
 import Button from "@/components/Button";
 import styles from "./MobileMenu.module.scss";
-import { X as Close } from "react-feather";
 import Link from "next/link";
 import FocusLock from "react-focus-lock";
 import { RemoveScroll } from "react-remove-scroll";

@@ -1,5 +1,5 @@
+import { Info } from "lucide-react";
 import styles from "./Note.module.scss";
-import { Info } from "react-feather";
 
 type NoteProps = {
   type: "info" | "warning" | "error";
