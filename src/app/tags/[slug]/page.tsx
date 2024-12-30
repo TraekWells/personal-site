@@ -5,7 +5,6 @@ import Container from "@/layout/Container";
 import { getContentList } from "@/helpers/file-helpers";
 import { CONTENT_PATHS } from "@/constants";
 import { Metadata } from "next";
-import GridWithSidebar from "@/layout/GridWithSidebar";
 import ContentWrapper from "@/layout/ContentWrapper";
 import slugify from "@/utilities/slugify";
 import unslug from "@/utilities/unslug";
@@ -27,9 +26,9 @@ export const generateStaticParams = async () => {
   });
 };
 
-export const generateMetadata = async ({ params }: any): Promise<Metadata> => {
+export const generateMetadata = ({ params }: any): Metadata => {
   return {
-    title: "Test title",
+    title: `Posts tagged ${unslug(params.slug)}`,
     description: "Test description",
   };
 };
