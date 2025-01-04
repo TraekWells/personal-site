@@ -5,7 +5,8 @@ export type IconOptions =
   | "arrowRight"
   | "instagram"
   | "dribbble"
-  | "github";
+  | "github"
+  | "bluesky";
 
 type IconProps = {
   type: IconOptions;
@@ -81,6 +82,27 @@ const Icon = ({ type }: IconProps) => {
             <path d="M4.48 12.73h14.99c.41 0 .75-.34.75-.75 0-.42-.34-.75-.75-.75H4.48c-.42 0-.75.33-.75.75 0 .41.33.75.75.75Z" />
             <path d="M12.95 6.51l6.03 6.01v-1.07l-6.04 6.01c-.3.29-.3.76-.01 1.06 .29.29.76.29 1.06 0l6.03-6.02c.29-.3.29-.77 0-1.07l-6.04-6.02c-.3-.3-.77-.3-1.07 0 -.3.29-.3.76 0 1.06Z" />
           </g>
+        </IconWrapper>
+      );
+    case "bluesky":
+      return (
+        <IconWrapper>
+          <path
+            d="M12 8.56675C12 8.56675 7.87619 0.22183 2.70999 1.05903C-0.906331 1.64506 2.17634 10.571 3.21796 12.0702C4.25958 13.5694 6.32331 12.5684 6.32331 12.5684C6.32331 12.5684 0.640808 14.0699 5.29012 18.5743C9.73023 22.876 12 16.0718 12 16.0718"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          ></path>
+          <path
+            d="M12.1523 8.62388C12.1523 8.62388 16.2762 0.278959 21.4424 1.11616C25.0587 1.70219 21.976 10.6281 20.9344 12.1273C19.8928 13.6265 17.829 12.6255 17.829 12.6255C17.829 12.6255 23.5115 14.127 18.8622 18.6314C14.4221 22.9331 12.1523 16.129 12.1523 16.129"
+            stroke="currentColor"
+            fill="none"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          ></path>
         </IconWrapper>
       );
     default:

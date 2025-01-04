@@ -41,12 +41,19 @@ const BioWithSwitch = () => {
           />
         </article>
         <div className={styles.iconWrapper}>
+          <Link
+            href="https://bsky.app/profile/traekwells.bsky.social"
+            target="_blank"
+            style={{ paddingBlockStart: "2px" }}
+          >
+            <Icon type="bluesky" />
+          </Link>
           <Link href="https://instagram.com/ui.traek" target="_blank">
             <Icon type="instagram" />
           </Link>
-          <Link href="https://dribbble.com/traekwells" target="_blank">
+          {/* <Link href="https://dribbble.com/traekwells" target="_blank">
             <Icon type="dribbble" />
-          </Link>
+          </Link> */}
           <Link href="https://github.com/TraekWells" target="_blank">
             <Icon type="github" />
           </Link>
