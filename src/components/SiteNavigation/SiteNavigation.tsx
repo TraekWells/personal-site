@@ -19,27 +19,27 @@ export type NavItemTypes = {
 
 const navItems: NavItemTypes[] = [
   {
-    label: "Home",
+    label: "🏯 Home",
     href: "/",
   },
   {
-    label: "Writing",
+    label: "📝 Writing",
     href: "/blog",
   },
   {
-    label: "Impossible List",
-    href: "/journal/impossible-list",
+    label: "🔥 Design Tips",
+    href: "/design-tips",
   },
   {
-    label: "Bookshelf",
+    label: "📚Bookshelf",
     href: "/bookshelf",
   },
   // {
-  //   label: "Design Tips ",
-  //   href: "/design-tips",
+  //   label: "📚 Impossible List",
+  //   href: "/impossible-list",
   // },
   {
-    label: "Now",
+    label: "⌚️ Now",
     href: "/now",
   },
 ];
