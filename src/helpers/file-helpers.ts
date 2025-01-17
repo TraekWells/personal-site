@@ -6,31 +6,23 @@ import { mdxComponents, mdxOptions } from "./mdx-config";
 import React from "react";
 import { extractHeaders } from "./extract-headers";
 import { getWordCount } from "./get-word-count";
-import { BlogFrontmatterTypes } from "@/types/types";
 
-export const getContentList = async (
-  directory: string
-): Promise<BlogFrontmatterTypes[]> => {
+export const getContentList = async (directory: string): Promise<unknown> => {
   const fileNames = await readDirectory(directory);
-  const contentArray: BlogFrontmatterTypes[] = [];
+  const contentArray: unknown[] = [];
   for (let fileName of fileNames) {
     const rawContent = await readFile(`${directory}/${fileName}`);
     const { data: frontmatter } = matter(rawContent);
 
-    const contentObject: BlogFrontmatterTypes = {
+    const contentObject: unknown = {
       slug: fileName.replace(".mdx", ""),
-      title: frontmatter.title,
-      summary: frontmatter.summary,
-      tags: frontmatter.tags,
-      draft: frontmatter.draft,
-      createdAt: frontmatter.createdAt,
-      updatedAt: frontmatter.updatedAt,
+      ...frontmatter,
     };
 
     contentArray.push(contentObject);
   }
 
-  const sortedContent = contentArray.sort((a, b) => {
+  const sortedContent = contentArray.sort((a: any, b: any) => {
     const dateA = new Date(a.createdAt);
     const dateB = new Date(b.createdAt);
     return dateB.getTime() - dateA.getTime();

@@ -21,3 +21,10 @@ export type BlogFrontmatterTypes = {
   createdAt: Date;
   updatedAt: Date;
 };
+
+export type BookType = {
+  title: string;
+  summary: string;
+  image: string;
+  rating: number;
+};

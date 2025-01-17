@@ -30,6 +30,10 @@ const navItems: NavItemTypes[] = [
     label: "Impossible List",
     href: "/journal/impossible-list",
   },
+  {
+    label: "Bookshelf",
+    href: "/bookshelf",
+  },
   // {
   //   label: "Design Tips ",
   //   href: "/design-tips",

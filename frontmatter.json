@@ -97,14 +97,43 @@
       "filePrefix": null,
       "fields": [
         {
-          "title": "title",
+          "title": "Title",
           "name": "title",
           "type": "string"
         },
         {
-          "title": "summary",
+          "title": "Summary",
           "name": "summary",
           "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "book",
+      "pageBundle": false,
+      "filePrefix": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Summary",
+          "name": "summary",
+          "type": "string"
+        },
+        {
+          "title": "Book Cover",
+          "name": "bookCover",
+          "type": "image"
+        },
+        {
+          "title": "Rating",
+          "name": "rating",
+          "type": "number",
+          "min": 1,
+          "max": 5
         }
       ]
     }
@@ -112,7 +141,6 @@
   "frontMatter.framework.id": "next",
   "frontMatter.content.publicFolder": "public",
   "frontMatter.preview.host": "http://localhost:3000",
-  "frontMatter.content.defaultFileType": "mdx",
   "frontMatter.content.pageFolders": [
     {
       "title": "Blog",
@@ -129,7 +157,12 @@
     {
       "title": "Pages",
       "path": "[[workspace]]/content/pages"
+    },
+    {
+      "title": "Books",
+      "path": "[[workspace]]/content/books"
     }
   ],
+  "frontMatter.content.defaultFileType": "mdx",
   "frontMatter.git.enabled": true
 }
