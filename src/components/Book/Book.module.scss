@@ -1,0 +1,23 @@
+.book {
+  text-align: center;
+  &ImageContainer {
+    position: relative;
+    width: 100%;
+  }
+
+  &Image {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .rating {
+    display: flex;
+    gap: var(--space-4);
+    justify-content: center;
+  }
+
+  .star {
+    fill: var(--color-primary-dark);
+    stroke: var(--color-primary-dark);
+  }
+}

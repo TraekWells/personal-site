@@ -13,9 +13,12 @@ import TextLinkWithIcon from "@/components/TextLinkWithIcon";
 import ProseContainer from "@/layout/ProseContainer";
 import FancyRule from "@/components/FancyRule";
 import parseDate from "@/utilities/parse-date";
+import { BlogFrontmatterTypes } from "@/types/types";
 
 export const generateStaticParams = async () => {
-  const journal = await getContentList(CONTENT_PATHS["journal"]);
+  const journal = (await getContentList(
+    CONTENT_PATHS["journal"]
+  )) as BlogFrontmatterTypes[];
 
   return journal.map((journal) => ({
     slug: journal.slug,

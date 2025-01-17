@@ -11,9 +11,12 @@ import unslug from "@/utilities/unslug";
 import ContentCard from "@/components/ContentCard";
 import TextLinkWithIcon from "@/components/TextLinkWithIcon";
 import ProseContainer from "@/layout/ProseContainer";
+import { BlogFrontmatterTypes } from "@/types/types";
 
 export const generateStaticParams = async () => {
-  const blogs = await getContentList(CONTENT_PATHS["blog"]);
+  const blogs = (await getContentList(
+    CONTENT_PATHS["blog"]
+  )) as BlogFrontmatterTypes[];
   const tags = blogs.flatMap((blog) => blog.tags).filter(Boolean);
   // This is sweet, it removes duplicates from the tags array
   const uniqueTags = [...new Set(tags)];
@@ -35,7 +38,9 @@ export const generateMetadata = ({ params }: any): Metadata => {
 
 const Tag = async ({ params }: any) => {
   const unsluged = unslug(params.slug);
-  const blogs = await getContentList(CONTENT_PATHS["blog"]);
+  const blogs = (await getContentList(
+    CONTENT_PATHS["blog"]
+  )) as BlogFrontmatterTypes[];
 
   const taggedBlogs = blogs.filter((blog) => {
     if (blog.tags) {

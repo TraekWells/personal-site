@@ -9,6 +9,7 @@ import { Metadata } from "next";
 import GridWithSidebar from "@/layout/GridWithSidebar";
 import ContentCardList from "@/components/ContentCardList";
 import ContentTagFilter from "@/components/ContentTagFilter";
+import { BlogFrontmatterTypes } from "@/types/types";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -17,9 +18,9 @@ export const metadata: Metadata = {
 };
 
 const Blog = async () => {
-  const blogs = (await getContentList(CONTENT_PATHS["blog"])).filter(
-    (blog) => blog.draft === false
-  );
+  const blogs = (
+    (await getContentList(CONTENT_PATHS["blog"])) as BlogFrontmatterTypes[]
+  ).filter((blog) => blog.draft === false);
 
   const tags = blogs.flatMap((blog) => blog.tags).filter(Boolean);
   // This is sweet, it removes duplicates from the tags array

@@ -1,7 +1,8 @@
 import Book from "@/components/Book";
+import BookGrid from "@/components/BookGrid";
 import PageHeader from "@/components/PageHeader";
 import { CONTENT_PATHS } from "@/constants";
-import { getContentList, loadContent } from "@/helpers/file-helpers";
+import { getContentList } from "@/helpers/file-helpers";
 import Container from "@/layout/Container";
 import Section from "@/layout/Section";
 import { BookType } from "@/types/types";
@@ -12,21 +13,29 @@ const Page = async () => {
     CONTENT_PATHS["books"]
   )) as BookType[];
 
-  console.log(books);
-
   return (
     <>
       <PageHeader>
         <h1>Bookshelf</h1>
-        <p className="lead">What goes here?</p>
       </PageHeader>
       <main id="main">
         <Section>
           <Container>
-            <h1>Shelf</h1>
-            {books.map((book: BookType) => {
-              return <Book {...book} key={book.title} />;
-            })}
+            <BookGrid>
+              {books.map((book: BookType) => {
+                return (
+                  <Book
+                    title={book.title}
+                    image={book.bookCover}
+                    author={book.author}
+                    rating={book.rating}
+                    summary={book.summary}
+                    review={book.review}
+                    key={book.title}
+                  />
+                );
+              })}
+            </BookGrid>
           </Container>
         </Section>
       </main>

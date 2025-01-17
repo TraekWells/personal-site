@@ -8,6 +8,7 @@ import { CONTENT_PATHS } from "@/constants";
 import { Metadata } from "next";
 import ContentWrapper from "@/layout/ContentWrapper";
 import ContentCardList from "@/components/ContentCardList";
+import { BlogFrontmatterTypes } from "@/types/types";
 
 export const metadata: Metadata = {
   title: "Journal",
@@ -16,7 +17,9 @@ export const metadata: Metadata = {
 };
 
 const Journal = async () => {
-  const journals = await getContentList(CONTENT_PATHS["journal"]);
+  const journals = (await getContentList(
+    CONTENT_PATHS["journal"]
+  )) as BlogFrontmatterTypes[];
   return (
     <>
       <PageHeader>

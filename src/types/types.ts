@@ -24,7 +24,9 @@ export type BlogFrontmatterTypes = {
 
 export type BookType = {
   title: string;
+  author: string;
   summary: string;
-  image: string;
+  review: string;
+  bookCover: string;
   rating: number;
 };

@@ -12,10 +12,13 @@ import ContentWrapper from "@/layout/ContentWrapper";
 import TextLinkWithIcon from "@/components/TextLinkWithIcon";
 import FancyRule from "@/components/FancyRule";
 import ProseContainer from "@/layout/ProseContainer";
+import { BlogFrontmatterTypes } from "@/types/types";
 
 // Generate static params for blog post slugs
 export const generateStaticParams = async () => {
-  const blogs = await getContentList(CONTENT_PATHS["blog"]);
+  const blogs = (await getContentList(
+    CONTENT_PATHS["blog"]
+  )) as BlogFrontmatterTypes[];
 
   return blogs.map((blog) => ({
     slug: blog.slug,
