@@ -11,5 +11,6 @@
       "other": "off"
     },
     "editor.minimap.enabled": false
-  }
+  },
+  "cssvar.files": ["src/styles/_tokens.scss"]
 }
