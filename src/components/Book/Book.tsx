@@ -18,17 +18,19 @@ const Book = ({ title, author, rating, image, summary, review }: BookProps) => {
         <Image
           src={image}
           alt={`${title} book cover`}
-          width={400}
-          height={200}
+          width={350}
+          height={245}
           className={styles.bookImage}
         />
       </div>
-      <h3>{title}</h3>
-      <p>{author}</p>
-      <div className={styles.rating}>
-        {Array.from({ length: rating }).map((_, index) => {
-          return <Star key={index} className={styles.star} />;
-        })}
+      <div className="bookContent">
+        <h3 className={styles.bookTitle}>{title}</h3>
+        <p className={styles.bookAuthor}>{author}</p>
+        <div className={styles.bookRating}>
+          {Array.from({ length: rating }).map((_, index) => {
+            return <Star key={index} className={styles.star} />;
+          })}
+        </div>
       </div>
     </div>
   );

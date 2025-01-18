@@ -1,16 +1,29 @@
 .book {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+
   &ImageContainer {
     position: relative;
     width: 100%;
+    height: 245px;
   }
 
   &Image {
-    object-fit: cover;
+    object-fit: contain;
     height: 100%;
   }
 
-  .rating {
+  &Title {
+    font-size: var(--font-size-base);
+  }
+
+  &Author {
+    font-size: var(--font-size-sm);
+  }
+
+  &Rating {
     display: flex;
     gap: var(--space-4);
     justify-content: center;
