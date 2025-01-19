@@ -29,4 +29,5 @@ export type BookType = {
   review: string;
   bookCover: string;
   rating: number;
+  dateRead: Date;
 };
