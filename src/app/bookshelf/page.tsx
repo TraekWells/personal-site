@@ -6,7 +6,6 @@ import { getContentList } from "@/helpers/file-helpers";
 import Container from "@/layout/Container";
 import Section from "@/layout/Section";
 import { BookType } from "@/types/types";
-import { p } from "motion/react-client";
 import React from "react";
 
 const Page = async () => {
@@ -34,27 +33,25 @@ const Page = async () => {
       </PageHeader>
       <main id="main">
         <Section>
-          <Container>
-            {booksByYearArray.map((year) => {
+          <Container className="flow">
+            {booksByYearArray.map((currentYear) => {
+              const year = currentYear[0];
               return (
-                <>
-                  <h2>{year[0]}</h2>
-                  <BookGrid>
-                    {year[1].map((book) => {
-                      return (
-                        <Book
-                          title={book.title}
-                          image={book.bookCover}
-                          author={book.author}
-                          rating={book.rating}
-                          summary={book.summary}
-                          review={book.review}
-                          key={book.title}
-                        />
-                      );
-                    })}
-                  </BookGrid>
-                </>
+                <BookGrid header={year} key={year}>
+                  {currentYear[1].map((book) => {
+                    return (
+                      <Book
+                        title={book.title}
+                        image={book.bookCover}
+                        author={book.author}
+                        rating={book.rating}
+                        summary={book.summary}
+                        review={book.review}
+                        key={book.title}
+                      />
+                    );
+                  })}
+                </BookGrid>
               );
             })}
           </Container>

@@ -3,10 +3,16 @@ import styles from "./BookGrid.module.scss";
 
 type BookGridProps = {
   children: React.ReactNode;
+  header: string;
 };
 
-const BookGrid = ({ children }: BookGridProps) => {
-  return <div className={styles.bookGrid}>{children}</div>;
+const BookGrid = ({ children, header }: BookGridProps) => {
+  return (
+    <>
+      <h2>{header}</h2>
+      <div className={styles.bookGrid}>{children}</div>
+    </>
+  );
 };
 
 export default BookGrid;
