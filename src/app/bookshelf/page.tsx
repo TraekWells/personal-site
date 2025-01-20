@@ -36,9 +36,10 @@ const Page = async () => {
           <Container className="flow">
             {booksByYearArray.map((currentYear) => {
               const year = currentYear[0];
+              const books = currentYear[1];
               return (
                 <BookGrid header={year} key={year}>
-                  {currentYear[1].map((book) => {
+                  {books.map((book) => {
                     return (
                       <Book
                         title={book.title}
