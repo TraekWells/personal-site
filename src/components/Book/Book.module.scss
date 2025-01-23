@@ -11,7 +11,7 @@
   }
 
   &Image {
-    object-fit: contain;
+    object-fit: cover;
     height: 100%;
   }
 
@@ -21,6 +21,7 @@
 
   &Author {
     font-size: var(--font-size-sm);
+    line-height: auto;
   }
 
   &Rating {
