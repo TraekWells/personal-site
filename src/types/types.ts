@@ -28,6 +28,7 @@ export type BookType = {
   summary: string;
   review: string;
   bookCover: string;
-  rating: number;
+  rating?: number;
   dateRead: Date;
+  currentlyReading: boolean;
 };

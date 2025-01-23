@@ -13,14 +13,18 @@ const Page = async () => {
     CONTENT_PATHS["books"]
   )) as BookType[];
 
-  const booksByYear = books.reduce((acc, book) => {
-    const year = new Date(book.dateRead).getFullYear();
-    if (!acc[year]) {
-      acc[year] = [];
-    }
-    acc[year].push(book);
-    return acc;
-  }, {} as Record<string, BookType[]>);
+  const currentlyReading = books.filter((book) => book.currentlyReading);
+
+  const booksByYear = books
+    .filter((book) => !book.currentlyReading)
+    .reduce((acc, book) => {
+      const year = new Date(book.dateRead).getFullYear();
+      if (!acc[year]) {
+        acc[year] = [];
+      }
+      acc[year].push(book);
+      return acc;
+    }, {} as Record<string, BookType[]>);
 
   const booksByYearArray = Object.entries(booksByYear).sort(
     (a, b) => parseInt(b[0]) - parseInt(a[0])
@@ -34,11 +38,25 @@ const Page = async () => {
       <main id="main">
         <Section>
           <Container className="flow">
+            <BookGrid header="Currently Reading">
+              {currentlyReading.map((book) => {
+                return (
+                  <Book
+                    title={book.title}
+                    author={book.author}
+                    key={book.title}
+                    image={book.bookCover}
+                    summary={book.summary}
+                    review={book.review}
+                  />
+                );
+              })}
+            </BookGrid>
             {booksByYearArray.map((currentYear) => {
               const year = currentYear[0];
               const books = currentYear[1];
               return (
-                <BookGrid header={year} key={year}>
+                <BookGrid header={`Read in ${year}`} key={year}>
                   {books.map((book) => {
                     return (
                       <Book

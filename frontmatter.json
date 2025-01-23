@@ -154,6 +154,11 @@
           "name": "dateRead",
           "type": "datetime",
           "format": "date"
+        },
+        {
+          "title": "Currently Reading?",
+          "name": "currentlyReading",
+          "type": "boolean"
         }
       ]
     }

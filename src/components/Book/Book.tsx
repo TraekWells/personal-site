@@ -1,12 +1,11 @@
 import Image from "next/image";
 import styles from "./Book.module.scss";
-import { Star } from "lucide-react";
 import BookRating from "./BookRating";
 
 type BookProps = {
   title: string;
   author: string;
-  rating: number;
+  rating?: number;
   image: string;
   summary: string;
   review: string;
@@ -16,7 +15,7 @@ const Book = ({ title, author, rating, image, summary, review }: BookProps) => {
   return (
     <div className={styles.book}>
       <div className={styles.bookImageContainer}>
-        <BookRating rating={rating} />
+        {rating && <BookRating rating={rating} />}
         <Image
           src={image}
           alt={`${title} book cover`}
