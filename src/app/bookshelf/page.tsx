@@ -38,25 +38,31 @@ const Page = async () => {
       <main id="main">
         <Section>
           <Container className="flow">
-            <BookGrid header="Currently Reading">
-              {currentlyReading.map((book) => {
-                return (
-                  <Book
-                    title={book.title}
-                    author={book.author}
-                    key={book.title}
-                    image={book.bookCover}
-                    summary={book.summary}
-                    review={book.review}
-                  />
-                );
-              })}
-            </BookGrid>
+            {currentlyReading.length > 0 && (
+              <BookGrid header="Currently Reading">
+                {currentlyReading.map((book) => {
+                  return (
+                    <Book
+                      title={book.title}
+                      author={book.author}
+                      key={book.title}
+                      image={book.bookCover}
+                      summary={book.summary}
+                      review={book.review}
+                    />
+                  );
+                })}
+              </BookGrid>
+            )}
             {booksByYearArray.map((currentYear) => {
               const year = currentYear[0];
               const books = currentYear[1];
               return (
-                <BookGrid header={`Read in ${year}`} key={year}>
+                <BookGrid
+                  header={`Read in ${year}`}
+                  key={year}
+                  booksRead={books.length}
+                >
                   {books.map((book) => {
                     return (
                       <Book
