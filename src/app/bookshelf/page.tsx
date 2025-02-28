@@ -56,7 +56,11 @@ const Page = async () => {
             )}
             {booksByYearArray.map((currentYear) => {
               const year = currentYear[0];
-              const books = currentYear[1];
+              const books = currentYear[1].sort(
+                (a, b) =>
+                  new Date(b.dateRead).getTime() -
+                  new Date(a.dateRead).getTime()
+              );
               return (
                 <BookGrid
                   header={`Read in ${year}`}
