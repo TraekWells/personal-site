@@ -40,9 +40,7 @@ const Home = async () => {
       <Container>
         <Section>
           <h2>What I'm working now</h2>
-          <p>
-            Building my wife a website. I'm sure I'll add more details later.
-          </p>
+          <p>Building my wife a website! I'll go into more details later.</p>
         </Section>
       </Container>
     </main>
