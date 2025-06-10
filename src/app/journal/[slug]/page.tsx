@@ -26,8 +26,9 @@ export const generateStaticParams = async () => {
 };
 
 export const generateMetadata = async ({ params }: any): Promise<Metadata> => {
+  const { slug } = await params;
   const { frontmatter } = await loadContent(
-    `${CONTENT_PATHS["journal"]}/${params.slug}`
+    `${CONTENT_PATHS["journal"]}/${slug}`
   );
 
   return {
@@ -37,8 +38,9 @@ export const generateMetadata = async ({ params }: any): Promise<Metadata> => {
 };
 
 const JournalPost = async ({ params }: any) => {
+  const { slug } = await params;
   const { frontmatter, content, headers, wordCount } = await loadContent(
-    `${CONTENT_PATHS["journal"]}/${params.slug}`
+    `${CONTENT_PATHS["journal"]}/${slug}`
   );
 
   const updatedDate = frontmatter.updatedAt

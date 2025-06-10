@@ -27,9 +27,8 @@ export const generateStaticParams = async () => {
 
 // Generate metadata for each blog post
 export const generateMetadata = async ({ params }: any): Promise<Metadata> => {
-  const { frontmatter } = await loadContent(
-    `${CONTENT_PATHS["blog"]}/${params.slug}`
-  );
+  const { slug } = await params;
+  const { frontmatter } = await loadContent(`${CONTENT_PATHS["blog"]}/${slug}`);
 
   return {
     title: frontmatter.title,
@@ -39,8 +38,9 @@ export const generateMetadata = async ({ params }: any): Promise<Metadata> => {
 
 // Blog post component
 const BlogPost = async ({ params }: any) => {
+  const { slug } = await params;
   const { frontmatter, content, headers, wordCount } = await loadContent(
-    `${CONTENT_PATHS["blog"]}/${params.slug}`
+    `${CONTENT_PATHS["blog"]}/${slug}`
   );
 
   return (

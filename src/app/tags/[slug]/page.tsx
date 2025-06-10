@@ -29,15 +29,17 @@ export const generateStaticParams = async () => {
   });
 };
 
-export const generateMetadata = ({ params }: any): Metadata => {
+export const generateMetadata = async ({ params }: any): Promise<Metadata> => {
+  const { slug } = await params;
   return {
-    title: `Posts tagged ${unslug(params.slug)}`,
+    title: `Posts tagged ${unslug(slug)}`,
     description: "Test description",
   };
 };
 
 const Tag = async ({ params }: any) => {
-  const unsluged = unslug(params.slug);
+  const { slug } = await params;
+  const unsluged = unslug(slug);
   const blogs = (await getContentList(
     CONTENT_PATHS["blog"]
   )) as BlogFrontmatterTypes[];

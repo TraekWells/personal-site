@@ -9,8 +9,12 @@ import { getWordCount } from "./get-word-count";
 
 export const getContentList = async (directory: string): Promise<unknown> => {
   const fileNames = await readDirectory(directory);
+
+  // Filter to only include .mdx files
+  const mdxFiles = fileNames.filter((file) => file.endsWith(".mdx"));
+
   const contentArray: unknown[] = [];
-  for (let fileName of fileNames) {
+  for (let fileName of mdxFiles) {
     const rawContent = await readFile(`${directory}/${fileName}`);
     const { data: frontmatter } = matter(rawContent);
 
