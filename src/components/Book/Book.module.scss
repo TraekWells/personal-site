@@ -1,7 +1,6 @@
 @use "../../styles/breakpoints" as *;
 
 .book {
-  text-align: center;
   display: flex;
   flex-direction: column;
   gap: var(--space-8);
@@ -21,7 +20,7 @@
   }
 
   &Title {
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-sm);
   }
 
   &Author {
