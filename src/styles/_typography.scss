@@ -30,7 +30,6 @@ h3,
 h4,
 h5,
 h6 {
-  text-wrap: balance;
   margin-block-start: 0;
 }
 
@@ -45,12 +44,14 @@ h1 {
   margin-block-end: var(--space-16);
   font-weight: var(--font-weight-boldest);
   color: var(--color-primary-darkest);
+  text-wrap: pretty;
 }
 
 h2 {
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-boldest);
   color: var(--color-primary-darker);
+  text-wrap: pretty;
 }
 
 h3 {

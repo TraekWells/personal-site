@@ -17,6 +17,7 @@
   &Image {
     object-fit: cover;
     height: 100%;
+    border-radius: var(--border-radius-md);
   }
 
   &Title {
