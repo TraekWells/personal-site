@@ -189,5 +189,7 @@
     }
   ],
   "frontMatter.content.defaultFileType": "mdx",
-  "frontMatter.git.enabled": true
+  "frontMatter.git.enabled": true,
+  "frontMatter.media.publicFolder": "public",
+  "frontMatter.media.supportedMimeTypes": ["image/*"]
 }
