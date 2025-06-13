@@ -1,16 +1,18 @@
-import { defineConfig } from "vitest/config";
-import react from "@vitejs/plugin-react";
-import tsconfigPaths from "vite-tsconfig-paths";
+export default async () => {
+  const { defineConfig } = await import("vitest/config");
+  const { default: react } = await import("@vitejs/plugin-react");
+  const { default: tsconfigPaths } = await import("vite-tsconfig-paths");
 
-export default defineConfig({
-  plugins: [react(), tsconfigPaths()],
-  test: {
-    setupFiles: ["./vitest.setup.ts"],
-    environment: "jsdom",
-    include: ["./src/components/**/*.test.{ts,tsx}"],
-    coverage: {
+  return defineConfig({
+    plugins: [react(), tsconfigPaths()],
+    test: {
+      setupFiles: ["./vitest.setup.ts"],
+      environment: "jsdom",
       include: ["./src/components/**/*.test.{ts,tsx}"],
-      reporter: ["text", "json", "html"],
+      coverage: {
+        include: ["./src/components/**/*.test.{ts,tsx}"],
+        reporter: ["text", "json", "html"],
+      },
     },
-  },
-});
+  });
+};
