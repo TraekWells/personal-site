@@ -4,6 +4,7 @@ import { bodyFont, codeFont } from "@/fonts";
 import Footer from "@/components/Footer";
 import SiteNavigation from "@/components/SiteNavigation";
 import { cookies } from "next/headers";
+import BackgroundGridLines from "@/components/BackgroundGridLines";
 
 export const metadata: Metadata = {
   title: {
@@ -41,6 +42,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
         {children}
         <Footer />
         <div id="mobile-menu-portal"></div>
+        <BackgroundGridLines />
       </body>
     </html>
   );
