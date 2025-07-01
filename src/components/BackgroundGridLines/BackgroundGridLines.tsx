@@ -6,10 +6,9 @@ const BackgroundGridLines = () => {
   return (
     <Container>
       <div className={styles.backgroundGridLines}>
-        <span className={styles.line}></span>
-        <span className={styles.line}></span>
-        <span className={styles.line}></span>
-        <span className={styles.line}></span>
+        {Array.from({ length: 4 }).map((_, index) => (
+          <span key={index} className={styles.line}></span>
+        ))}
       </div>
     </Container>
   );
