@@ -1,0 +1,29 @@
+@use "../../styles/breakpoints" as *;
+
+.backgroundGridLines {
+  inset: 0;
+  position: absolute;
+  pointer-events: none;
+  z-index: -1;
+  margin-inline: auto;
+  width: 100%;
+  max-width: calc(63rem + var(--space-32));
+  padding-inline: var(--space-32);
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $breakpoint-md) {
+    padding-inline: var(--space-16);
+  }
+
+  .line {
+    height: 100%;
+    width: 1px;
+    background-color: aqua;
+    background-color: var(--color-base-lightest);
+
+    :global([data-theme="dark"]) & {
+      background-color: var(--color-primary-lightest);
+    }
+  }
+}
