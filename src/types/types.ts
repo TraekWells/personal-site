@@ -31,4 +31,5 @@ export type BookType = {
   rating?: number;
   dateRead: Date;
   currentlyReading: boolean;
+  didNotFinish: boolean;
 };

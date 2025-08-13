@@ -5,15 +5,26 @@ type BookGridProps = {
   children: React.ReactNode;
   header: string;
   booksRead?: number;
+  didNotFinishCount?: number;
 };
 
-const BookGrid = ({ children, header, booksRead }: BookGridProps) => {
+const BookGrid = ({
+  children,
+  header,
+  booksRead,
+  didNotFinishCount,
+}: BookGridProps) => {
+  const didNotFinish = didNotFinishCount;
+
   return (
     <>
       <h2>{header}</h2>
       {booksRead && (
         <small>
-          📖 {booksRead} {booksRead > 1 ? "books" : "book"} in total
+          📖 Finished {booksRead} {booksRead > 1 ? "books" : "book"} in total.{" "}
+          {didNotFinish &&
+            didNotFinish !== 0 &&
+            `Couldn't make it through ${didNotFinish}.`}
         </small>
       )}
       <div className={styles.bookGrid}>{children}</div>

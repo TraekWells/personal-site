@@ -1,21 +1,22 @@
 import Image from "next/image";
 import styles from "./Book.module.scss";
 import BookRating from "./BookRating";
+import BookDNFTag from "./BookDNFTag";
 
 type BookProps = {
   title: string;
   author: string;
   rating?: number;
   image: string;
-  summary: string;
-  review: string;
+  didNotFinish?: boolean;
 };
 
-const Book = ({ title, author, rating, image, summary, review }: BookProps) => {
+const Book = ({ title, author, rating, image, didNotFinish }: BookProps) => {
   return (
     <div className={styles.book}>
       <div className={styles.bookImageContainer}>
-        {rating && <BookRating rating={rating} />}
+        {didNotFinish && <BookDNFTag />}
+        {rating !== undefined && rating !== 0 && <BookRating rating={rating} />}
         <Image
           src={image}
           alt={`${title} book cover`}

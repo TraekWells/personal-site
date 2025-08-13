@@ -159,6 +159,12 @@
           "title": "Currently Reading?",
           "name": "currentlyReading",
           "type": "boolean"
+        },
+        {
+          "title": "Did Not Finish?",
+          "name": "didNotFinish",
+          "type": "boolean",
+          "default": false
         }
       ]
     }

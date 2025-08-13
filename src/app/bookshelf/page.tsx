@@ -47,8 +47,6 @@ const Page = async () => {
                       author={book.author}
                       key={book.title}
                       image={book.bookCover}
-                      summary={book.summary}
-                      review={book.review}
                     />
                   );
                 })}
@@ -61,11 +59,22 @@ const Page = async () => {
                   new Date(b.dateRead).getTime() -
                   new Date(a.dateRead).getTime()
               );
+              const didNotFinishCount = currentYear[1].filter((book) => {
+                return book.didNotFinish === true;
+              });
+
+              const booksReadCount = books.length - didNotFinishCount.length;
+
               return (
                 <BookGrid
                   header={`Read in ${year}`}
                   key={year}
-                  booksRead={books.length}
+                  booksRead={booksReadCount}
+                  didNotFinishCount={
+                    didNotFinishCount.length !== 0
+                      ? didNotFinishCount.length
+                      : undefined
+                  }
                 >
                   {books.map((book) => {
                     return (
@@ -73,9 +82,10 @@ const Page = async () => {
                         title={book.title}
                         image={book.bookCover}
                         author={book.author}
-                        rating={book.rating}
-                        summary={book.summary}
-                        review={book.review}
+                        rating={
+                          book.rating !== undefined ? book.rating : undefined
+                        }
+                        didNotFinish={book.didNotFinish}
                         key={book.title}
                       />
                     );
