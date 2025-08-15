@@ -48,12 +48,9 @@ const BioWithSwitch = () => {
           >
             <Icon type="bluesky" />
           </Link>
-          <Link href="https://instagram.com/ui.traek" target="_blank">
+          <Link href="https://instagram.com/theuilayer" target="_blank">
             <Icon type="instagram" />
           </Link>
-          {/* <Link href="https://dribbble.com/traekwells" target="_blank">
-            <Icon type="dribbble" />
-          </Link> */}
           <Link href="https://github.com/TraekWells" target="_blank">
             <Icon type="github" />
           </Link>
