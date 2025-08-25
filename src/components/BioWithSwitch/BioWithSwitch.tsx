@@ -54,6 +54,9 @@ const BioWithSwitch = () => {
           <Link href="https://github.com/TraekWells" target="_blank">
             <Icon type="github" />
           </Link>
+          <Link href="https://www.youtube.com/@theuilayer" target="_blank">
+            <Icon type="youtube" />
+          </Link>
         </div>
       </div>
       <article className={styles.bioContent}>
