@@ -37,12 +37,6 @@ const Home = async () => {
           <BioWithSwitch />
         </Section>
       </Container>
-      <Container>
-        <Section>
-          <h2>What I'm working now</h2>
-          <p>Building my wife a website! I'll go into more details later.</p>
-        </Section>
-      </Container>
     </main>
   );
 };
