@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "../styles/main.scss";
-import { bodyFont, codeFont } from "@/fonts";
+import { bodyFont, codeFont, headerFont } from "@/fonts";
 import Footer from "@/components/Footer";
 import SiteNavigation from "@/components/SiteNavigation";
 import { cookies } from "next/headers";
@@ -26,16 +26,11 @@ export default async function RootLayout({ children }: RootLayoutProps) {
   return (
     <html
       lang="en"
-      className={`${bodyFont.variable} ${codeFont.variable}`}
+      className={`${headerFont.variable} ${bodyFont.variable} ${codeFont.variable}`}
       data-theme={theme}
     >
       <head>
         <link rel="icon" href="favicon.png" sizes="any" />
-        <script
-          defer
-          data-domain="traekwells.com"
-          src="https://plausible.io/js/script.js"
-        ></script>
       </head>
       <body>
         <SiteNavigation initialTheme={theme} />

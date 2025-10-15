@@ -1,6 +1,12 @@
-import { Manrope, Fira_Code } from "next/font/google";
+import { Fira_Code, Permanent_Marker, Figtree } from "next/font/google";
 
-export const bodyFont = Manrope({
+export const headerFont = Permanent_Marker({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-family-header",
+});
+
+export const bodyFont = Figtree({
   subsets: ["latin"],
   variable: "--font-family-body",
 });
