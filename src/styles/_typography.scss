@@ -24,14 +24,17 @@ h6 {
   overflow-wrap: break-word;
 }
 
-h1,
+h1 {
+  font-family: var(--font-family-header);
+}
+
 h2,
 h3,
 h4,
 h5,
 h6 {
   margin-block-start: 0;
-  font-family: var(--font-family-header);
+  font-family: var(--font-family-body);
 }
 
 h1,
