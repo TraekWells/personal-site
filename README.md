@@ -13,3 +13,4 @@ Todos:
 - [x] Add language to codeblocks
 - [ ] Add search
 - [ ] Figure out how to animate the mobile menu out
+- [ ] Decide of hyphens or camelCase

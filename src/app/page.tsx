@@ -6,6 +6,7 @@ import Section from "@/layout/Section";
 import BioWithSwitch from "@/components/BioWithSwitch";
 import PageHeader from "@/components/PageHeader";
 import TextWithShimmer from "@/components/TextWithShimmer";
+import { getTimeOfDay } from "@/helpers/getTimeOfDay";
 
 export const metadata: Metadata = {
   title: "Home | UX Designer & Front-End Developer",
@@ -14,16 +15,18 @@ export const metadata: Metadata = {
 };
 
 const Home = async () => {
+  const timeOfDay = getTimeOfDay();
+
   const tooltipMessage =
     "Also known as a Front-end Developer, UI Developer, Web Developer, UX Designer, you get it.";
   return (
     <main id="main">
       <PageHeader huge plain>
         <Eyebrow style={{ color: "var(--color-primary-darker)" }}>
-          🐜 Howdy, I'm Traek
+          🐜 good {timeOfDay}
         </Eyebrow>
         <h1 className="header-huge">
-          <TextWithShimmer>I organize pixels on a screen</TextWithShimmer>✨
+          <TextWithShimmer>I'm Traek Wells</TextWithShimmer>
         </h1>
         <p className="lead">
           No but seriously, I’m a{" "}

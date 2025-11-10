@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "../styles/main.scss";
-import { bodyFont, codeFont, headerFont } from "@/fonts";
+import { bodyFont, codeFont } from "@/fonts";
 import Footer from "@/components/Footer";
 import SiteNavigation from "@/components/SiteNavigation";
 import { cookies } from "next/headers";
@@ -26,7 +26,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
   return (
     <html
       lang="en"
-      className={`${headerFont.variable} ${bodyFont.variable} ${codeFont.variable}`}
+      className={`${bodyFont.variable} ${codeFont.variable}`}
       data-theme={theme}
     >
       <head>

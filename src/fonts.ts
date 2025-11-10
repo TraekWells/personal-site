@@ -1,10 +1,4 @@
-import { Fira_Code, Permanent_Marker, Figtree } from "next/font/google";
-
-export const headerFont = Permanent_Marker({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-family-header",
-});
+import { Fira_Code, Figtree } from "next/font/google";
 
 export const bodyFont = Figtree({
   subsets: ["latin"],
