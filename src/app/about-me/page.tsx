@@ -36,8 +36,8 @@ const AboutMe = async () => {
         <Section>
           <Container>
             <GridWithSidebar>
-              <article className="prose flow">{content}</article>
               <TableOfContents headers={headers} />
+              <article className="prose flow">{content}</article>
             </GridWithSidebar>
           </Container>
         </Section>

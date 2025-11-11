@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { NavItemTypes } from "../SiteNavigation";
-import ColorThemeToggle from "@/components/ColorThemeToggle";
 import styles from "./DesktopNavigation.module.scss";
+import Icon from "@/components/Icon";
+import Button from "@/components/Button";
 
 type DesktopNavigationProps = {
   items: NavItemTypes[];
@@ -14,13 +15,20 @@ const DesktopNavigation = ({ items, initialTheme }: DesktopNavigationProps) => {
         {items.map((item, index) => {
           return (
             <li key={index}>
-              <Link href={item.href} className={styles.desktopNavigationLink}>
-                {item.label}
-              </Link>
+              {item.href ? (
+                <Link href={item.href} className={styles.desktopNavigationLink}>
+                  {item.label}
+                </Link>
+              ) : (
+                <Button className={styles.desktopNavigationLink} unstyled>
+                  {item.label}
+                </Button>
+              )}
             </li>
           );
         })}
       </ul>
+      <Icon type="settings" />
     </>
   );
 };

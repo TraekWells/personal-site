@@ -6,13 +6,13 @@
   pointer-events: none;
   z-index: -1;
   margin-inline: auto;
-  max-width: calc(63rem + var(--space-l));
-  padding-inline: var(--space-l);
+  max-width: calc(63rem + var(--space-lg));
+  padding-inline: var(--space-lg);
   display: flex;
   justify-content: space-between;
 
   @media (max-width: $breakpoint-md) {
-    padding-inline: var(--space-s);
+    padding-inline: var(--space-sm);
   }
 
   .line {

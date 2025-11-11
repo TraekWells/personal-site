@@ -42,7 +42,7 @@ h3 {
 
 h1 {
   font-size: var(--font-size-3xl);
-  margin-block-end: var(--space-s);
+  margin-block-end: var(--space-sm);
   font-weight: var(--font-weight-boldest);
   color: var(--color-primary-darkest);
   text-wrap: pretty;
@@ -110,9 +110,9 @@ strong {
 
 blockquote {
   background-color: var(--color-primary-lightest);
-  padding: var(--space-m);
+  padding: var(--space-md);
   border-radius: var(--border-radius-sm);
-  margin: var(--space-m) 0;
+  margin: var(--space-md) 0;
   border-left: 4px solid var(--color-primary-dark);
 
   p {

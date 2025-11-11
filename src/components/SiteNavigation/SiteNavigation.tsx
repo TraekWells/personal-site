@@ -1,7 +1,6 @@
 "use client";
 import styles from "./SiteNavigation.module.scss";
 import Container from "@/layout/Container";
-import ColorThemeToggle from "../ColorThemeToggle";
 import { useWindowSize } from "@uidotdev/usehooks";
 import DesktopNavigation from "./DesktopNavigation";
 import MobileNavigation from "./MobileNavigation";
@@ -14,33 +13,39 @@ type SiteNavigationProps = {
 
 export type NavItemTypes = {
   label: string;
-  href: string;
+  href?: string;
+  children?: NavItemTypes[];
 };
 
 const navItems: NavItemTypes[] = [
   {
-    label: "🏯 Home",
+    label: "Home",
     href: "/",
   },
   {
-    label: "📝 Writing",
+    label: "Writing",
     href: "/blog",
   },
-  // {
-  //   label: "🔥 Design Tips",
-  //   href: "/design-tips",
-  // },
   {
-    label: "📚Bookshelf",
-    href: "/bookshelf",
+    label: "About",
+    href: "/about-me",
   },
-  // {
-  //   label: "📚 Impossible List",
-  //   href: "/impossible-list",
-  // },
   {
-    label: "⌚️ Now",
-    href: "/now",
+    label: "🔥 Design Tips",
+    href: "/design-tips",
+  },
+  {
+    label: "Side Notes",
+    children: [
+      {
+        label: "Bookshelf",
+        href: "/bookshelf",
+      },
+      {
+        label: "Now",
+        href: "/now",
+      },
+    ],
   },
 ];
 
@@ -61,7 +66,6 @@ const SiteNavigation = ({ initialTheme }: SiteNavigationProps) => {
           <DesktopNavigation items={navItems} initialTheme={initialTheme} />
         )}
       </nav>
-      {!isMobile && <ColorThemeToggle initialTheme={initialTheme} />}
     </Container>
   );
 };
