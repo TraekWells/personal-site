@@ -21,7 +21,7 @@ const Home = async () => {
     "Also known as a Front-end Developer, UI Developer, Web Developer, UX Designer, you get it.";
   return (
     <main id="main">
-      <PageHeader huge plain>
+      <PageHeader>
         <Eyebrow style={{ color: "var(--color-primary-darker)" }}>
           🐜 good {timeOfDay}
         </Eyebrow>

@@ -13,12 +13,7 @@
     }
   }
 
-  &Huge {
-    padding-block-start: var(--space-2xl);
-    padding-block-end: var(--space-2xl);
-  }
-
   @media (min-width: $breakpoint-md) {
-    padding-block: var(--space-2xl);
+    padding-block: var(--space-l);
   }
 }

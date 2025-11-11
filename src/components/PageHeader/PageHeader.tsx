@@ -6,13 +6,11 @@ import classNames from "classnames";
 type PageHeaderProps = {
   children?: React.ReactNode;
   tags?: string[];
-  huge?: boolean;
   plain?: boolean;
 };
 
-const PageHeader = ({ children, tags, huge, plain }: PageHeaderProps) => {
+const PageHeader = ({ children, tags, plain }: PageHeaderProps) => {
   const headerClasses = classNames(styles.header, {
-    [styles.headerHuge]: huge,
     [styles.headerPlain]: plain,
   });
 
