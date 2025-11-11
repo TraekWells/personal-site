@@ -8,6 +8,7 @@ import Link from "next/link";
 import Icon from "@/components/Icon";
 import Container from "@/layout/Container";
 import Section from "@/layout/Section";
+import BackgroundCircle from "@/components/BackgroundCircle";
 
 export const metadata: Metadata = {
   title: "Home | UX Designer & Front-End Developer",
@@ -60,6 +61,7 @@ const Home = async () => {
           </div>
         </Container>
       </Section>
+      <BackgroundCircle />
     </main>
   );
 };

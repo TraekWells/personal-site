@@ -1,0 +1,12 @@
+.backgroundCircle {
+  background-color: var(--color-primary-lightest);
+  width: 100%;
+  max-width: 43rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: absolute;
+  top: -30%;
+  right: -20%;
+  z-index: -10;
+  pointer-events: none;
+}

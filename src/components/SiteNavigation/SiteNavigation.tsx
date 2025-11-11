@@ -27,13 +27,13 @@ const navItems: NavItemTypes[] = [
     href: "/blog",
   },
   {
-    label: "About",
+    label: "About Me",
     href: "/about-me",
   },
-  {
-    label: "🔥 Design Tips",
-    href: "/design-tips",
-  },
+  // {
+  //   label: "🔥 Design Tips",
+  //   href: "/design-tips",
+  // },
   {
     label: "Side Notes",
     children: [

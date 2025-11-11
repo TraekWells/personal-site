@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { NavItemTypes } from "../SiteNavigation";
 import styles from "./DesktopNavigation.module.scss";
-import Icon from "@/components/Icon";
 import Button from "@/components/Button";
+import SiteSettings from "@/components/SiteSettings";
 
 type DesktopNavigationProps = {
   items: NavItemTypes[];
@@ -28,7 +28,7 @@ const DesktopNavigation = ({ items, initialTheme }: DesktopNavigationProps) => {
           );
         })}
       </ul>
-      <Icon type="settings" />
+      <SiteSettings initialTheme={initialTheme} />
     </>
   );
 };

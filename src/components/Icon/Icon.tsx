@@ -12,6 +12,7 @@ export type IconOptions =
 
 type IconProps = {
   type: IconOptions;
+  className?: string;
 };
 
 const IconWrapper = ({ children }: { children: React.ReactNode }) => {
