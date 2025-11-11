@@ -3,7 +3,7 @@
 .gridWithSidebar {
   display: flex;
   flex-direction: column;
-  gap: var(--space-56);
+  gap: var(--space-xl);
 
   > aside {
     flex: 0 0 auto;

@@ -1,6 +1,6 @@
 .flow {
   > * + * {
-    margin-block-start: var(--space-24);
+    margin-block-start: var(--space-m);
   }
 }
 
@@ -49,12 +49,15 @@
 
 $directions: (top, right, bottom, left);
 $spaces: (
-  4: 4,
-  8: 8,
-  16: 16,
-  24: 24,
-  32: 32,
-  64: 64,
+  3xs: 3xs,
+  2xs: 2xs,
+  xs: xs,
+  s: s,
+  m: m,
+  l: l,
+  xl: xl,
+  2xl: 2xl,
+  3xl: 3xl,
 );
 
 @include generate-margin-utilities($directions, $spaces);

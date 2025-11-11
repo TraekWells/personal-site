@@ -3,7 +3,7 @@
 .book {
   display: flex;
   flex-direction: column;
-  gap: var(--space-8);
+  gap: var(--space-2xs);
   position: relative;
   isolation: isolate;
 
@@ -33,7 +33,7 @@
 
   &Rating {
     display: flex;
-    gap: var(--space-4);
+    gap: var(--space-3xs);
     justify-content: center;
   }
 

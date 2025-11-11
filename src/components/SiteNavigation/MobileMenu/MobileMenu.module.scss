@@ -3,7 +3,7 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  inset: var(--space-16);
+  inset: var(--space-s);
   border-radius: var(--border-radius-md);
   overflow: auto;
 
@@ -19,7 +19,7 @@
 
   &ListItem {
     &:not(:first-of-type) {
-      margin-block-start: var(--space-16);
+      margin-block-start: var(--space-s);
     }
   }
 
@@ -28,13 +28,13 @@
     border-bottom: 0;
 
     &:not(:first-of-type) {
-      margin-block-start: var(--space-16);
+      margin-block-start: var(--space-s);
     }
   }
 }
 
 .mobileCloseButton {
-  margin-block: var(--space-8);
+  margin-block: var(--space-2xs);
   position: relative;
   align-self: flex-end;
   top: 3px;

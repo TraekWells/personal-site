@@ -63,19 +63,15 @@
   --border-radius-lg: 1rem;
 
   /* Spacing  */
-  --space-4: 0.25rem;
-  --space-8: 0.5rem;
-  --space-16: 1rem;
-  --space-24: 1.5rem;
-  --space-32: 2em;
-  --space-40: 2.5rem;
-  --space-48: 3rem;
-  --space-56: 3.5rem;
-  --space-64: 4rem;
-  --space-72: 4.5rem;
-  --space-80: 5rem;
-  --space-120: 7.5rem;
-  --space-152: 9.5rem;
+  --space-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
+  --space-2xs: clamp(0.5625rem, 0.5369rem + 0.1136vw, 0.625rem);
+  --space-xs: clamp(0.875rem, 0.8494rem + 0.1136vw, 0.9375rem);
+  --space-s: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
+  --space-m: clamp(1.6875rem, 1.6108rem + 0.3409vw, 1.875rem);
+  --space-l: clamp(2.25rem, 2.1477rem + 0.4545vw, 2.5rem);
+  --space-xl: clamp(3.375rem, 3.2216rem + 0.6818vw, 3.75rem);
+  --space-2xl: clamp(4.5rem, 4.2955rem + 0.9091vw, 5rem);
+  --space-3xl: clamp(6.75rem, 6.4432rem + 1.3636vw, 7.5rem);
 
   --transition-slow: 300ms;
 }

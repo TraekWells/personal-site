@@ -1,14 +1,14 @@
 .desktopNavigationList {
   display: flex;
   list-style: none;
-  gap: var(--space-8);
+  gap: var(--space-2xs);
   padding: 0;
 }
 
 .desktopNavigationLink {
   --border-size: 2px;
   display: block;
-  padding: var(--space-8) var(--space-16);
+  padding: var(--space-2xs) var(--space-s);
   border-bottom: var(--border-size) solid transparent;
   color: var(--color-body-text);
   font-size: var(--font-size-sm);

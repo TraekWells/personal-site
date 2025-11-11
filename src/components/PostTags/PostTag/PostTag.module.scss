@@ -2,7 +2,7 @@
   color: var(--color-base-darkest);
   background-color: var(--color-base-white);
   border-radius: var(--border-radius-sm);
-  padding: var(--space-4) var(--space-16);
+  padding: var(--space-3xs) var(--space-s);
   font-size: var(--font-size-xs);
 
   :global([data-theme="dark"]) & {

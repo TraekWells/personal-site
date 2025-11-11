@@ -1,7 +1,7 @@
 @use "../../styles/breakpoints" as *;
 
 .header {
-  padding-block-start: var(--space-24);
+  padding-block-start: var(--space-m);
   position: relative;
   border-radius: var(--border-radius-md);
 
@@ -14,12 +14,12 @@
   }
 
   &Huge {
-    padding-block-start: var(--space-80);
-    padding-block-end: var(--space-80);
+    padding-block-start: var(--space-2xl);
+    padding-block-end: var(--space-2xl);
   }
 
   @media (min-width: $breakpoint-md) {
-    padding-block: var(--space-64);
+    padding-block: var(--space-2xl);
   }
 
   @media (prefers-reduced-motion: no-preference) {
