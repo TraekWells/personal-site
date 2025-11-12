@@ -13,8 +13,7 @@ type SiteNavigationProps = {
 
 export type NavItemTypes = {
   label: string;
-  href?: string;
-  children?: NavItemTypes[];
+  href: string;
 };
 
 const navItems: NavItemTypes[] = [
@@ -35,17 +34,8 @@ const navItems: NavItemTypes[] = [
   //   href: "/design-tips",
   // },
   {
-    label: "Side Notes",
-    children: [
-      {
-        label: "Bookshelf",
-        href: "/bookshelf",
-      },
-      {
-        label: "Now",
-        href: "/now",
-      },
-    ],
+    label: "Bookshelf",
+    href: "/bookshelf",
   },
 ];
 
@@ -61,7 +51,7 @@ const SiteNavigation = ({ initialTheme }: SiteNavigationProps) => {
       </Link>
       <nav className={styles.nav}>
         {isMobile ? (
-          <MobileNavigation items={navItems} initialTheme={initialTheme} />
+          <MobileNavigation items={navItems} />
         ) : (
           <DesktopNavigation items={navItems} initialTheme={initialTheme} />
         )}

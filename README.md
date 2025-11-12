@@ -2,6 +2,7 @@
 
 Todos:
 
+- [ ] Add the color theme to the mobile menu
 - [ ] Update breakpoints because right now it's a mess
 - [ ] Use unique icons
 - [ ] Sort posts by most recent

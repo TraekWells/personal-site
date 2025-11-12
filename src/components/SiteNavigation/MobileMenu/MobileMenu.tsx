@@ -46,9 +46,9 @@ const MobileMenu = ({ items, isOpen, setIsOpen }: MobileMenuProps) => {
                       exit={{ opacity: 0, translateY: 30 }}
                       key={index}
                     >
-                      {/* <Link href={item.href} className={styles.mobileMenuLink}>
+                      <Link href={item.href} className={styles.mobileMenuLink}>
                         {item.label}
-                      </Link> */}
+                      </Link>
                     </motion.li>
                   );
                 })}

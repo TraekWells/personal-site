@@ -5,15 +5,13 @@ import { NavItemTypes } from "../SiteNavigation";
 import Button from "@/components/Button";
 import MobileMenu from "../MobileMenu";
 import { usePathname } from "next/navigation";
-import ColorThemeToggle from "@/components/ColorThemeToggle";
 import { Menu } from "lucide-react";
 
 type MobileNavigationProps = {
   items: NavItemTypes[];
-  initialTheme: string;
 };
 
-const MobileNavigation = ({ items, initialTheme }: MobileNavigationProps) => {
+const MobileNavigation = ({ items }: MobileNavigationProps) => {
   const [isOpen, setIsOpen] = React.useState(false);
   const pathname = usePathname();
 
@@ -30,10 +28,6 @@ const MobileNavigation = ({ items, initialTheme }: MobileNavigationProps) => {
         <MobileMenu items={items} isOpen={isOpen} setIsOpen={setIsOpen} />
       ) : (
         <>
-          <ColorThemeToggle
-            initialTheme={initialTheme}
-            className="margin-right-8"
-          />
           <Button unstyled onClick={handleMobileToggle}>
             <Menu color="var(--color-text)" />
           </Button>
