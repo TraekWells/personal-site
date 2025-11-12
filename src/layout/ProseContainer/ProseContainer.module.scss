@@ -1,13 +1,13 @@
 .proseContainer {
   h2:not(:first-child) {
-    margin-block-start: var(--space-l);
+    margin-block-start: var(--space-lg);
   }
 
   h3 {
-    margin-block-start: var(--space-m);
+    margin-block-start: var(--space-md);
   }
 
   ul {
-    padding-inline-start: var(--space-s);
+    padding-inline-start: var(--space-sm);
   }
 }

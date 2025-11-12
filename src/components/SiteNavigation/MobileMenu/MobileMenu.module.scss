@@ -3,7 +3,7 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  inset: var(--space-s);
+  inset: var(--space-sm);
   border-radius: var(--border-radius-md);
   overflow: auto;
 
@@ -19,7 +19,7 @@
 
   &ListItem {
     &:not(:first-of-type) {
-      margin-block-start: var(--space-s);
+      margin-block-start: var(--space-sm);
     }
   }
 
@@ -28,7 +28,7 @@
     border-bottom: 0;
 
     &:not(:first-of-type) {
-      margin-block-start: var(--space-s);
+      margin-block-start: var(--space-sm);
     }
   }
 }

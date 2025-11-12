@@ -1,5 +1,5 @@
-import * as RadixTooltip from "@radix-ui/react-tooltip";
 import styles from "./Tooltip.module.scss";
+import { Tooltip as RadixTooltip } from "radix-ui";
 
 type TooltipProps = {
   children: React.ReactNode;

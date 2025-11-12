@@ -13,9 +13,6 @@
     "test:watch": "vitest watch --coverage"
   },
   "dependencies": {
-    "@radix-ui/react-dialog": "^1.1.14",
-    "@radix-ui/react-switch": "^1.2.5",
-    "@radix-ui/react-tooltip": "^1.2.7",
     "@uidotdev/usehooks": "^2.4.1",
     "bright": "^1.0.0",
     "classnames": "^2.5.1",
@@ -26,6 +23,7 @@
     "next": "15.3.3",
     "next-mdx-remote": "^5.0.0",
     "next-sitemap": "^4.2.3",
+    "radix-ui": "^1.4.3",
     "react": "^19",
     "react-dom": "^19",
     "react-focus-lock": "^2.13.6",

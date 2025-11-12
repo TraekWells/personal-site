@@ -2,7 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-block-end: var(--space-s);
+  margin-block-end: var(--space-sm);
+
+  svg {
+    color: var(--color-text);
+  }
 }
 
 .nav {
@@ -10,5 +14,5 @@
   isolation: isolate;
   justify-content: space-between;
   align-items: center;
-  margin-block: var(--space-s);
+  margin-block: var(--space-sm);
 }

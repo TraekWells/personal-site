@@ -1,7 +1,11 @@
 .flow {
   > * + * {
-    margin-block-start: var(--space-m);
+    margin-block-start: var(--space-md);
   }
+}
+
+.header-huge {
+  font-size: var(--font-size-5xl);
 }
 
 .header-1 {
@@ -31,6 +35,14 @@
 
 .text-center {
   text-align: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.gap-sm {
+  gap: var(--space-sm);
 }
 
 @mixin generate-margin-utilities($directions, $spaces) {

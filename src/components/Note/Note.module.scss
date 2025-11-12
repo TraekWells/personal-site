@@ -1,9 +1,9 @@
 .note {
   background-color: var(--color-primary-lightest);
   border-radius: var(--border-radius-md);
-  padding: var(--space-s) var(--space-m);
+  padding: var(--space-sm) var(--space-md);
   position: relative;
-  margin: var(--space-m) 0;
+  margin: var(--space-md) 0;
   border: 2px solid var(--color-primary-light);
 
   &.info {

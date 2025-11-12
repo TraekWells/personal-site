@@ -1,18 +1,13 @@
 "use client";
 import React from "react";
-import Button from "../Button";
-import VisuallyHidden from "../VisuallyHidden";
 import Cookies from "js-cookie";
-import { Moon, Sun } from "lucide-react";
+import Switch from "../Switch";
 
 type ColorThemeToggleProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   initialTheme: string;
 };
 
-const ColorThemeToggle = ({
-  initialTheme,
-  ...props
-}: ColorThemeToggleProps) => {
+const ColorThemeToggle = ({ initialTheme }: ColorThemeToggleProps) => {
   const [theme, setTheme] = React.useState(initialTheme);
 
   const handleClick = () => {
@@ -28,14 +23,11 @@ const ColorThemeToggle = ({
   };
 
   return (
-    <Button onClick={handleClick} unstyled {...props}>
-      {theme === "light" ? (
-        <Sun color="var(--color-text)" />
-      ) : (
-        <Moon color="var(--color-text)" />
-      )}
-      <VisuallyHidden>Swap color mode</VisuallyHidden>
-    </Button>
+    <Switch
+      label="Dark Mode"
+      checked={theme === "dark"}
+      setChecked={handleClick}
+    />
   );
 };
 

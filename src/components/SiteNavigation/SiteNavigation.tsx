@@ -1,7 +1,6 @@
 "use client";
 import styles from "./SiteNavigation.module.scss";
 import Container from "@/layout/Container";
-import ColorThemeToggle from "../ColorThemeToggle";
 import { useWindowSize } from "@uidotdev/usehooks";
 import DesktopNavigation from "./DesktopNavigation";
 import MobileNavigation from "./MobileNavigation";
@@ -19,28 +18,24 @@ export type NavItemTypes = {
 
 const navItems: NavItemTypes[] = [
   {
-    label: "🏯 Home",
+    label: "Home",
     href: "/",
   },
   {
-    label: "📝 Writing",
+    label: "Writing",
     href: "/blog",
+  },
+  {
+    label: "About Me",
+    href: "/about-me",
   },
   // {
   //   label: "🔥 Design Tips",
   //   href: "/design-tips",
   // },
   {
-    label: "📚Bookshelf",
+    label: "Bookshelf",
     href: "/bookshelf",
-  },
-  // {
-  //   label: "📚 Impossible List",
-  //   href: "/impossible-list",
-  // },
-  {
-    label: "⌚️ Now",
-    href: "/now",
   },
 ];
 
@@ -54,14 +49,13 @@ const SiteNavigation = ({ initialTheme }: SiteNavigationProps) => {
       <Link href="/">
         <Avatar />
       </Link>
-      <nav className={styles.nav}>
+      <nav className={`${styles.nav} gap-sm`}>
         {isMobile ? (
-          <MobileNavigation items={navItems} initialTheme={initialTheme} />
+          <MobileNavigation items={navItems} />
         ) : (
           <DesktopNavigation items={navItems} initialTheme={initialTheme} />
         )}
       </nav>
-      {!isMobile && <ColorThemeToggle initialTheme={initialTheme} />}
     </Container>
   );
 };
