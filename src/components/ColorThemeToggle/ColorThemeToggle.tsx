@@ -12,7 +12,6 @@ const ColorThemeToggle = ({ initialTheme }: ColorThemeToggleProps) => {
 
   const handleClick = () => {
     const nextTheme = theme === "light" ? "dark" : "light";
-    console.log(nextTheme);
     setTheme(nextTheme);
 
     Cookies.set("color-theme", nextTheme, {

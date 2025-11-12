@@ -2,6 +2,14 @@
   background-color: var(--color-base-white);
   padding: var(--space-xs);
   border-radius: var(--border-radius-md);
+
+  h4 {
+    color: hsl(283, 59%, 30%);
+  }
+
+  label {
+    color: hsl(103, 7%, 19%);
+  }
 }
 
 .arrow {

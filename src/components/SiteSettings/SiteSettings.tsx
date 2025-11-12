@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Icon from "../Icon";
 import { Popover } from "radix-ui";

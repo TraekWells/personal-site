@@ -3,6 +3,10 @@
   justify-content: space-between;
   align-items: center;
   margin-block-end: var(--space-sm);
+
+  svg {
+    color: var(--color-text);
+  }
 }
 
 .nav {
