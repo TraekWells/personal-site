@@ -49,7 +49,7 @@ const SiteNavigation = ({ initialTheme }: SiteNavigationProps) => {
       <Link href="/">
         <Avatar />
       </Link>
-      <nav className={styles.nav}>
+      <nav className={`${styles.nav} gap-sm`}>
         {isMobile ? (
           <MobileNavigation items={navItems} />
         ) : (
