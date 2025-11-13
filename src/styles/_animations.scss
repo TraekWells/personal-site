@@ -1,7 +1,8 @@
 .animation-spin {
   transition: transform 250ms ease;
 
-  &:hover {
+  &:hover,
+  &:focus {
     transform: rotate(20deg);
   }
 }
