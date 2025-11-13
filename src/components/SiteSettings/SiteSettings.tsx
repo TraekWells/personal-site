@@ -24,7 +24,7 @@ const SiteSettings = ({ initialTheme }: SiteSettingsProps) => {
     <Popover.Root>
       <Popover.Trigger asChild>
         <Button unstyled onClick={handleClick}>
-          <Icon type="settings" />
+          <Icon type="settings" className="animation-spin" />
         </Button>
       </Popover.Trigger>
       <Popover.Portal>
