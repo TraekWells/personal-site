@@ -9,6 +9,7 @@ Todos:
 - [ ] Make the `Make the table of contents` collapsible on
       mobile
 - [ ] Add a `Back to top` button
+- [ ] Add a `Skip to content` link for accessibility
 - [ ] Do something with the content filters
 - [ ] Add cool animations
 - [x] Add language to codeblocks
