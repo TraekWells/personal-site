@@ -8,7 +8,9 @@ type ColorThemeToggleProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
 };
 
 const ColorThemeToggle = ({ initialTheme }: ColorThemeToggleProps) => {
-  const [theme, setTheme] = React.useState(initialTheme);
+  const [theme, setTheme] = React.useState(() => {
+    return Cookies.get("color-theme") || initialTheme;
+  });
 
   const handleClick = () => {
     const nextTheme = theme === "light" ? "dark" : "light";

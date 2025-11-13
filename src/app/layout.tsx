@@ -23,6 +23,8 @@ export default async function RootLayout({ children }: RootLayoutProps) {
   const savedTheme = cookieStore.get("color-theme");
   const theme = savedTheme?.value || "light";
 
+  // Use context here instead of prop drilling?
+
   return (
     <html
       lang="en"
