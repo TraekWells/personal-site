@@ -3,13 +3,11 @@ import { NavItemTypes } from "../SiteNavigation";
 import styles from "./DesktopNavigation.module.scss";
 import Button from "@/components/Button";
 import SiteSettings from "@/components/SiteSettings";
-import { useTheme } from "@/context/ThemeContext";
 
 type DesktopNavigationProps = {
   items: NavItemTypes[];
 };
 const DesktopNavigation = ({ items }: DesktopNavigationProps) => {
-  const { initialTheme } = useTheme();
   return (
     <>
       <ul className={styles.desktopNavigationList}>
@@ -29,7 +27,7 @@ const DesktopNavigation = ({ items }: DesktopNavigationProps) => {
           );
         })}
       </ul>
-      <SiteSettings initialTheme={initialTheme} />
+      <SiteSettings />
     </>
   );
 };
