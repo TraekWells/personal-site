@@ -6,14 +6,9 @@ import { Popover } from "radix-ui";
 import Button from "../Button";
 import styles from "./SiteSettings.module.scss";
 import Eyebrow from "../Eyebrow";
-
 import ColorThemeToggle from "../ColorThemeToggle";
 
-type SiteSettingsProps = {
-  initialTheme: string;
-};
-
-const SiteSettings = ({ initialTheme }: SiteSettingsProps) => {
+const SiteSettings = () => {
   const [menuIsOpen, setMenuIsOpen] = React.useState(false);
 
   const handleClick = () => {
@@ -30,7 +25,7 @@ const SiteSettings = ({ initialTheme }: SiteSettingsProps) => {
       <Popover.Portal>
         <Popover.Content className={styles.content} sideOffset={5} align="end">
           <Eyebrow>Site Settings</Eyebrow>
-          <ColorThemeToggle initialTheme={initialTheme} />
+          <ColorThemeToggle />
           <Popover.Arrow className={styles.arrow} />
         </Popover.Content>
       </Popover.Portal>

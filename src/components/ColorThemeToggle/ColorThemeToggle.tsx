@@ -2,12 +2,11 @@
 import React from "react";
 import Cookies from "js-cookie";
 import Switch from "../Switch";
+import { useTheme } from "@/context/ThemeContext";
 
-type ColorThemeToggleProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
-  initialTheme: string;
-};
+const ColorThemeToggle = () => {
+  const { initialTheme } = useTheme();
 
-const ColorThemeToggle = ({ initialTheme }: ColorThemeToggleProps) => {
   const [theme, setTheme] = React.useState(() => {
     return Cookies.get("color-theme") || initialTheme;
   });

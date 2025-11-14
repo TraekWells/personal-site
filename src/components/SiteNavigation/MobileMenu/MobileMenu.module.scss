@@ -6,10 +6,12 @@
   inset: var(--space-sm);
   border-radius: var(--border-radius-md);
   overflow: auto;
+  height: calc(100vh - var(--space-sm) * 2);
 
   ul {
     padding: 0;
     list-style: none;
+    margin-block-end: var(--space-md);
   }
 
   &Container {

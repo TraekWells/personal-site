@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import SiteNavigation from "@/components/SiteNavigation";
 import { cookies } from "next/headers";
 import BackgroundGridLines from "@/components/BackgroundGridLines";
+import { ThemeProvider } from "@/context/ThemeContext";
 
 export const metadata: Metadata = {
   title: {
@@ -23,8 +24,6 @@ export default async function RootLayout({ children }: RootLayoutProps) {
   const savedTheme = cookieStore.get("color-theme");
   const theme = savedTheme?.value || "light";
 
-  // Use context here instead of prop drilling?
-
   return (
     <html
       lang="en"
@@ -35,11 +34,13 @@ export default async function RootLayout({ children }: RootLayoutProps) {
         <link rel="icon" href="favicon.png" sizes="any" />
       </head>
       <body>
-        <SiteNavigation initialTheme={theme} />
-        {children}
-        <Footer />
-        <div id="mobile-menu-portal"></div>
-        <BackgroundGridLines />
+        <ThemeProvider initialTheme={theme}>
+          <SiteNavigation />
+          {children}
+          <Footer />
+          <div id="mobile-menu-portal"></div>
+          <BackgroundGridLines />
+        </ThemeProvider>
       </body>
     </html>
   );

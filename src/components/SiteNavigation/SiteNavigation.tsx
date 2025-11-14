@@ -7,10 +7,6 @@ import MobileNavigation from "./MobileNavigation";
 import Avatar from "../Avatar";
 import Link from "next/link";
 
-type SiteNavigationProps = {
-  initialTheme: string;
-};
-
 export type NavItemTypes = {
   label: string;
   href: string;
@@ -39,7 +35,7 @@ const navItems: NavItemTypes[] = [
   },
 ];
 
-const SiteNavigation = ({ initialTheme }: SiteNavigationProps) => {
+const SiteNavigation = () => {
   const size = useWindowSize();
   // Is this too slow?
   const isMobile = size.width && size.width <= 749;
@@ -53,7 +49,7 @@ const SiteNavigation = ({ initialTheme }: SiteNavigationProps) => {
         {isMobile ? (
           <MobileNavigation items={navItems} />
         ) : (
-          <DesktopNavigation items={navItems} initialTheme={initialTheme} />
+          <DesktopNavigation items={navItems} />
         )}
       </nav>
     </Container>
