@@ -11,19 +11,27 @@ const DesktopNavigation = ({ items }: DesktopNavigationProps) => {
   return (
     <>
       <ul className={styles.desktopNavigationList}>
-        {items.map((item, index) => {
+        {items.map((item) => {
+          if (item.type === "link") {
+            return (
+              <Link
+                href={item.href}
+                key={item.label}
+                className={styles.desktopNavigationLink}
+              >
+                {item.label}
+              </Link>
+            );
+          }
+
           return (
-            <li key={index}>
-              {item.href ? (
-                <Link href={item.href} className={styles.desktopNavigationLink}>
-                  {item.label}
-                </Link>
-              ) : (
-                <Button className={styles.desktopNavigationLink} unstyled>
-                  {item.label}
-                </Button>
-              )}
-            </li>
+            <Button
+              key={item.label}
+              className={styles.desktopNavigationLink}
+              unstyled
+            >
+              {item.label}
+            </Button>
           );
         })}
       </ul>
