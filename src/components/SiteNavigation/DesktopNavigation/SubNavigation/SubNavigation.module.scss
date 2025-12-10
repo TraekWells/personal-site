@@ -1,0 +1,10 @@
+.subNavigationMenu {
+  display: grid;
+  list-style: none;
+  position: absolute;
+  background: var(--color-base-white);
+  left: 0;
+  top: 100%;
+  padding: var(--space-xs);
+  border-radius: var(--border-radius-sm);
+}

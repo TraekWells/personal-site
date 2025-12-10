@@ -16,7 +16,7 @@ type LinkNavItem = {
 type ButtonNavItem = {
   type: "button";
   label: string;
-  children?: LinkNavItem[];
+  children: LinkNavItem[];
 };
 
 export type NavItemTypes = LinkNavItem | ButtonNavItem;

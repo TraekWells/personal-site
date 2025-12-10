@@ -2,11 +2,10 @@
 
 import React from "react";
 import Icon from "../Icon";
-import { Popover } from "radix-ui";
 import Button from "../Button";
-import styles from "./SiteSettings.module.scss";
 import Eyebrow from "../Eyebrow";
 import ColorThemeToggle from "../ColorThemeToggle";
+import Popover from "@/components/Popover";
 
 const SiteSettings = () => {
   const [menuIsOpen, setMenuIsOpen] = React.useState(false);
@@ -16,20 +15,24 @@ const SiteSettings = () => {
   };
 
   return (
-    <Popover.Root>
-      <Popover.Trigger asChild>
-        <Button unstyled onClick={handleClick}>
-          <Icon type="settings" className="animation-spin" />
-        </Button>
-      </Popover.Trigger>
-      <Popover.Portal>
-        <Popover.Content className={styles.content} sideOffset={5} align="end">
-          <Eyebrow>Site Settings</Eyebrow>
-          <ColorThemeToggle />
-          <Popover.Arrow className={styles.arrow} />
-        </Popover.Content>
-      </Popover.Portal>
-    </Popover.Root>
+    <Popover align="end">
+      <Eyebrow>Site Settings</Eyebrow>
+      <ColorThemeToggle />
+    </Popover>
+    // <Popover.Root>
+    //   <Popover.Trigger asChild>
+    //     <Button unstyled onClick={handleClick}>
+    //       <Icon type="settings" className="animation-spin" />
+    //     </Button>
+    //   </Popover.Trigger>
+    //   <Popover.Portal>
+    //     <Popover.Content className={styles.content} sideOffset={5} align="end">
+    //       <Eyebrow>Site Settings</Eyebrow>
+    //       <ColorThemeToggle />
+    //       <Popover.Arrow className={styles.arrow} />
+    //     </Popover.Content>
+    //   </Popover.Portal>
+    // </Popover.Root>
   );
 };
 
