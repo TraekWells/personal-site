@@ -74,6 +74,8 @@
   --space-3xl: clamp(6.75rem, 6.4432rem + 1.3636vw, 7.5rem);
 
   --transition-slow: 300ms;
+
+  --box-shadow: 0 1px 10px 0 hsla(0 0 0 / 0.05);
 }
 
 html[data-theme="dark"] {

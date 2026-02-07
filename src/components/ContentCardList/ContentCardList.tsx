@@ -4,7 +4,7 @@ import styles from "./ContentCardList.module.scss";
 
 type ContentCardListProps = {
   content: ContentCardProps[];
-  type: "blog" | "journal";
+  type: "blog" | "journal" | "today-i-learned";
 };
 
 const ContentCardList = ({ content, type }: ContentCardListProps) => {

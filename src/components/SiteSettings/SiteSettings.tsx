@@ -15,24 +15,17 @@ const SiteSettings = () => {
   };
 
   return (
-    <Popover align="end">
+    <Popover
+      align="end"
+      trigger={
+        <Button unstyled onClick={handleClick}>
+          <Icon type="settings" className="animation-spin" />
+        </Button>
+      }
+    >
       <Eyebrow>Site Settings</Eyebrow>
       <ColorThemeToggle />
     </Popover>
-    // <Popover.Root>
-    //   <Popover.Trigger asChild>
-    //     <Button unstyled onClick={handleClick}>
-    //       <Icon type="settings" className="animation-spin" />
-    //     </Button>
-    //   </Popover.Trigger>
-    //   <Popover.Portal>
-    //     <Popover.Content className={styles.content} sideOffset={5} align="end">
-    //       <Eyebrow>Site Settings</Eyebrow>
-    //       <ColorThemeToggle />
-    //       <Popover.Arrow className={styles.arrow} />
-    //     </Popover.Content>
-    //   </Popover.Portal>
-    // </Popover.Root>
   );
 };
 

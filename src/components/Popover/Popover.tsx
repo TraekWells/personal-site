@@ -6,16 +6,18 @@ type PopoverProps = {
   children: React.ReactNode;
   align: "start" | "end";
   hasArrow?: boolean;
+  trigger: React.ReactNode;
 };
 
-const Popover = ({ align, hasArrow = true, children }: PopoverProps) => {
+const Popover = ({
+  align,
+  hasArrow = true,
+  trigger,
+  children,
+}: PopoverProps) => {
   return (
     <RadixPopover.Root>
-      {/* <RadixPopover.Trigger asChild>
-        <Button unstyled onClick={handleClick}>
-          <Icon type="settings" className="animation-spin" />
-        </Button>
-      </RadixPopover.Trigger> */}
+      <RadixPopover.Trigger asChild>{trigger}</RadixPopover.Trigger>
       <RadixPopover.Portal>
         <RadixPopover.Content
           className={styles.content}

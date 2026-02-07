@@ -5,6 +5,7 @@ import styles from "./DesktopNavigation.module.scss";
 import Button from "@/components/Button";
 import SiteSettings from "@/components/SiteSettings";
 import SubNavigation from "./SubNavigation/SubNavigation";
+import Popover from "@/components/Popover";
 
 type DesktopNavigationProps = {
   items: NavItemTypes[];
@@ -30,10 +31,16 @@ const DesktopNavigation = ({ items }: DesktopNavigationProps) => {
                 className={styles.desktopSubnavigationWrapper}
                 key={item.label}
               >
-                <Button className={styles.desktopNavigationLink} unstyled>
-                  {item.label}
-                </Button>
-                <SubNavigation items={item.children} />
+                <Popover
+                  align="end"
+                  trigger={
+                    <Button className={styles.desktopNavigationLink} unstyled>
+                      {item.label}
+                    </Button>
+                  }
+                >
+                  <SubNavigation items={item.children} />
+                </Popover>
               </li>
             );
           }
