@@ -1,3 +1,7 @@
+.desktopSubnavigationWrapper {
+  position: relative;
+}
+
 .desktopNavigationList {
   display: flex;
   list-style: none;
@@ -5,7 +9,8 @@
   padding: 0;
 }
 
-.desktopNavigationLink {
+.desktopNavigationLink,
+button.desktopNavigationLink {
   --border-size: 2px;
   display: block;
   padding: var(--space-2xs) var(--space-sm);

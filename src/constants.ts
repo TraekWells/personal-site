@@ -4,4 +4,5 @@ export const CONTENT_PATHS = {
   journal: "/content/journal/",
   pages: "/content/pages/",
   books: "/content/books/",
+  todayILearned: "/content/today-i-learned/",
 };

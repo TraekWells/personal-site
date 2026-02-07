@@ -109,6 +109,18 @@
       ]
     },
     {
+      "name": "til",
+      "pageBundle": false,
+      "filePrefix": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        }
+      ]
+    },
+    {
       "name": "book",
       "pageBundle": false,
       "filePrefix": null,
@@ -192,6 +204,10 @@
     {
       "title": "Books",
       "path": "[[workspace]]/content/books"
+    },
+    {
+      "title": "Today I Learned",
+      "path": "[[workspace]]/content/today-i-learned"
     }
   ],
   "frontMatter.content.defaultFileType": "mdx",
