@@ -23,7 +23,9 @@ const Learnings = async () => {
     <>
       <PageHeader>
         <h1>Today I learned</h1>
-        <p className="lead">todo</p>
+        <p className="lead">
+          A running collection of bite-sized notes on web development lessons I&apos;ve picked up along the way.
+        </p>
       </PageHeader>
       <ContentWrapper>
         <Section>
