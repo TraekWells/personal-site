@@ -31,35 +31,65 @@ const MobileMenu = ({ items, isOpen, setIsOpen }: MobileMenuProps) => {
           </Button>
           <AnimatePresence>
             {isOpen && (
-              <>
+              <React.Fragment>
+                <ColorThemeToggle />
                 <motion.ul
+                  style={{ marginBlockStart: "2rem" }}
                   className={styles.mobileMenuList}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                 >
                   {items.map((item, index) => {
-                    return (
-                      <motion.li
-                        className={styles.mobileMenuListItem}
-                        initial={{ opacity: 0, translateY: 20 }}
-                        animate={{ opacity: 1, translateY: 0 }}
-                        transition={{ duration: 0.25, delay: 0.1 * index }}
-                        exit={{ opacity: 0, translateY: 20 }}
-                        key={index}
-                      >
-                        <Link
-                          href={item.href}
-                          className={styles.mobileMenuLink}
+                    if (item.type === "link") {
+                      return (
+                        <motion.li
+                          className={styles.mobileMenuListItem}
+                          initial={{ opacity: 0, translateY: 20 }}
+                          animate={{ opacity: 1, translateY: 0 }}
+                          transition={{ duration: 0.25, delay: 0.1 * index }}
+                          key={item.href}
                         >
-                          {item.label}
-                        </Link>
-                      </motion.li>
-                    );
+                          <Link
+                            href={item.href}
+                            className={styles.mobileMenuLink}
+                          >
+                            {item.label}
+                          </Link>
+                        </motion.li>
+                      );
+                    }
+
+                    if (item.type === "button") {
+                      return (
+                        <React.Fragment key={item.label}>
+                          {item.children.map((child, index) => {
+                            return (
+                              <motion.li
+                                className={styles.mobileMenuListItem}
+                                initial={{ opacity: 0, translateY: 20 }}
+                                animate={{ opacity: 1, translateY: 0 }}
+                                transition={{
+                                  duration: 0.25,
+                                  delay: 0.1 * index,
+                                }}
+                                key={child.href}
+                              >
+                                <Link
+                                  href={child.href}
+                                  className={styles.mobileMenuLink}
+                                >
+                                  {child.label}
+                                </Link>
+                              </motion.li>
+                            );
+                          })}
+                        </React.Fragment>
+                      );
+                    }
                   })}
                 </motion.ul>
-                <ColorThemeToggle />
-              </>
+              </React.Fragment>
             )}
           </AnimatePresence>
         </Container>
