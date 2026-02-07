@@ -3,7 +3,6 @@ import Eyebrow from "@/components/Eyebrow";
 import Tooltip from "@/components/Tooltip";
 import PageHeader from "@/components/PageHeader";
 import TextWithShimmer from "@/components/TextWithShimmer";
-import { getTimeOfDay } from "@/helpers/getTimeOfDay";
 import Link from "next/link";
 import Icon from "@/components/Icon";
 import Container from "@/layout/Container";
@@ -17,15 +16,13 @@ export const metadata: Metadata = {
 };
 
 const Home = async () => {
-  const timeOfDay = getTimeOfDay();
-
   const tooltipMessage =
     "Also known as a Front-end Developer, UI Developer, Web Developer, UX Designer, you get it.";
   return (
     <main id="main">
       <PageHeader plain>
         <Eyebrow style={{ color: "var(--color-primary-darker)" }}>
-          🐜 good {timeOfDay}
+          🐜 Howdy
         </Eyebrow>
         <h1 className="header-huge">
           <TextWithShimmer>I'm Traek Wells</TextWithShimmer>
