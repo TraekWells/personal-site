@@ -44,6 +44,8 @@ const DesktopNavigation = ({ items }: DesktopNavigationProps) => {
               </li>
             );
           }
+
+          return null;
         })}
       </ul>
       <SiteSettings />
