@@ -1,0 +1,102 @@
+@layer variables {
+  :root {
+    /* Color stuff  */
+    --color-primary-lightest: hsl(283, 47%, 95%);
+    --color-primary-lighter: hsl(283, 46%, 85%);
+    --color-primary-light: hsl(283, 46%, 73%);
+    --color-primary: hsl(283, 50%, 54%);
+    --color-primary-dark: hsl(287, 50%, 42%);
+    --color-primary-darker: hsl(283, 59%, 30%);
+    --color-primary-darkest: hsl(283, 89%, 20%);
+
+    --color-secondary-lightest: hsl(30, 63%, 97%);
+    --color-secondary-light: hsl(35, 100%, 93%);
+    --color-secondary: hsl(34, 100%, 86%);
+    --color-secondary-dark: hsl(35, 100%, 75%);
+    --color-secondary-darkest: hsl(36, 99%, 31%);
+
+    --color-base-white: hsl(0, 0%, 100%);
+    --color-base-lightest: hsl(300, 8%, 95%);
+    --color-base-light: hsl(285, 7%, 89%);
+    --color-base: hsl(282, 7%, 52%);
+    --color-base-dark: hsl(285, 7%, 36%);
+    --color-base-darkest: hsl(103, 7%, 19%);
+
+    --color-surface-light: hsl(0, 0%, 100%);
+    --color-surface-dark: hsl(283, 5%, 9%);
+
+    --color-error-light: hsl(0, 91%, 92%);
+    --color-error: hsl(0, 91%, 37%);
+    --color-success-light: hsl(130, 100%, 93%);
+    --color-success: hsl(130, 100%, 33%);
+    --color-warning-light: hsl(42, 95%, 95%);
+    --color-warning: hsl(42, 100%, 45%);
+    --color-info-light: hsl(205, 100%, 97%);
+    --color-info: hsl(190, 100%, 32%);
+    --color-info-dark: hsl(190, 100%, 9%);
+
+    --color-disabled: var(--color-base-light);
+    --color-text-light: var(--color-base-dark);
+    --color-text: var(--color-base-darkest);
+    --color-link: var(--color-primary-darker);
+
+    /* Font Stuff  */
+    --font-weight-normal: 525;
+    --font-weight-bold: 650;
+    --font-weight-boldest: 800;
+
+    --font-size-xs: clamp(0.72rem, 0.7441rem + -0.031vw, 0.7378rem);
+    --font-size-sm: clamp(0.8854rem, 0.8803rem + 0.0254vw, 0.9rem);
+    --font-size-base: clamp(1.0625rem, 1.0408rem + 0.1087vw, 1.125rem);
+    --font-size-md: clamp(1.275rem, 1.2293rem + 0.2283vw, 1.4063rem);
+    --font-size-lg: clamp(1.53rem, 1.4508rem + 0.3962vw, 1.7578rem);
+    --font-size-xl: clamp(1.836rem, 1.7103rem + 0.6283vw, 2.1973rem);
+    --font-size-2xl: clamp(2.2032rem, 2.0142rem + 0.945vw, 2.7466rem);
+    --font-size-3xl: clamp(2.6438rem, 2.3693rem + 1.3728vw, 3.4332rem);
+    --font-size-4xl: clamp(3.1726rem, 2.7834rem + 1.946vw, 4.2915rem);
+    --font-size-5xl: clamp(3.8071rem, 3.2655rem + 2.7083vw, 5.3644rem);
+
+    /* Border Radius  */
+    --border-radius-sm: 0.25rem;
+    --border-radius-md: 0.5rem;
+    --border-radius-lg: 1rem;
+
+    /* Spacing  */
+    --space-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
+    --space-2xs: clamp(0.5625rem, 0.5369rem + 0.1136vw, 0.625rem);
+    --space-xs: clamp(0.875rem, 0.8494rem + 0.1136vw, 0.9375rem);
+    --space-sm: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
+    --space-md: clamp(1.6875rem, 1.6108rem + 0.3409vw, 1.875rem);
+    --space-lg: clamp(2.25rem, 2.1477rem + 0.4545vw, 2.5rem);
+    --space-xl: clamp(3.375rem, 3.2216rem + 0.6818vw, 3.75rem);
+    --space-2xl: clamp(4.5rem, 4.2955rem + 0.9091vw, 5rem);
+    --space-3xl: clamp(6.75rem, 6.4432rem + 1.3636vw, 7.5rem);
+
+    --transition-slow: 300ms;
+    --transition-fast: 100ms;
+
+    --letter-spacing-tight: -0.35px;
+
+    --box-shadow: 0 1px 10px 0 hsla(0 0 0 / 0.05);
+  }
+}
+
+@layer base {
+  body {
+    background-color: var(--color-secondary-lightest);
+    font-family: var(--font-family-figtree);
+  }
+}
+
+@layer layout {
+  .container {
+    margin-inline: auto;
+    width: 100%;
+    max-width: calc(63rem + var(--space-lg));
+    padding-inline: var(--space-lg);
+
+    /* @media (max-width: $breakpoint-md) {
+      padding-inline: var(--space-sm);
+    } */
+  }
+}

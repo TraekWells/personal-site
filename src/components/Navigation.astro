@@ -1,0 +1,89 @@
+---
+import image from "../images/navbar-avatar.webp";
+---
+
+<nav class="navbar container">
+  <a class="navbar__logo" href="/">
+    <img class="navbar__avatar" src={image.src} alt="Headshot of Traek Wells" />
+    <div class="navbar__title">
+      <p>Traek Wells</p>
+      <span>Front-end developer</span>
+    </div>
+  </a>
+  <ul class="navbar__list">
+    <li>
+      <a class="navbar__link" href="/work">Work</a>
+    </li>
+    <li>
+      <a class="navbar__link" href="/writing">Writing</a>
+    </li>
+    <li>
+      <a class="navbar__link" href="/explore">Explore</a>
+    </li>
+    <li>
+      <a class="navbar__link" href="/about-me">About</a>
+    </li>
+  </ul>
+  <button>Theme toggle</button>
+</nav>
+
+<style>
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-text);
+    margin-block-start: var(--space-md);
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .navbar__logo {
+    display: flex;
+    gap: var(--space-xs);
+    align-items: center;
+    color: inherit;
+    font-family: var(--font-family-mono);
+    letter-spacing: var(--letter-spacing-tight);
+
+    p {
+      margin-block: 0 var(--space-3xs);
+      font-weight: var(--font-weight-bold);
+    }
+
+    span {
+      font-size: var(--font-size-sm);
+    }
+  }
+
+  .navbar__avatar {
+    aspect-ratio: 1;
+    height: 3.5rem;
+    border-radius: 50%;
+  }
+
+  .navbar__list {
+    display: flex;
+    list-style: none;
+    gap: var(--space-2xs);
+    font-family: var(--font-family-mono);
+  }
+
+  .navbar__link {
+    padding-inline: var(--space-xs);
+    padding-block: var(--space-2xs);
+    border-radius: var(--border-radius-sm);
+    font-size: var(--font-size-sm);
+    transition: var(--transition-fast);
+    color: inherit;
+    opacity: 0.8;
+    letter-spacing: var(--letter-spacing-tight);
+
+    &:hover {
+      background-color: var(--color-base-light);
+      opacity: 1;
+    }
+  }
+</style>
