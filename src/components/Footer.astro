@@ -1,6 +1,8 @@
 ---
 const currentYear = new Date().getFullYear();
 import { Copyright } from "@lucide/astro";
+
+const border = "1px solid hsl(var(--color-base-light))";
 ---
 
 <footer>
@@ -8,3 +10,10 @@ import { Copyright } from "@lucide/astro";
     <Copyright />{currentYear} Traek Wells
   </div>
 </footer>
+
+<style define:vars={{ border }}>
+  footer {
+    padding-block: var(--space-xs);
+    border-top: var(--border);
+  }
+</style>

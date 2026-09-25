@@ -1,7 +1,23 @@
 ---
+import Button from "../components/Button.astro";
+import Eyebrow from "../components/Eyebrow.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+import { FolderGit2 } from "@lucide/astro";
 ---
 
 <BaseLayout>
-  <h1>Hello from homepage</h1>
+  <h1>I bridge the gap between design and code.</h1>
+  <p>
+    I create quick and user-friendly interfaces with neat CSS, paying attention
+    to the little things that often go unnoticed. Right now, I'm working on
+    design systems and interface elements for product teams that really value
+    good design.
+  </p>
+  <Button>See my work</Button>
+
+  <hgroup>
+    <Eyebrow><FolderGit2 size={16} />Selected Work</Eyebrow>
+    <h2 class="heading-2">Stuff I've Made</h2>
+  </hgroup>
 </BaseLayout>

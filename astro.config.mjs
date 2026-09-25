@@ -8,10 +8,11 @@ export default defineConfig({
       provider: fontProviders.fontsource(),
       name: "Figtree",
       cssVariable: "--font-family-figtree",
+      weights: ["100 900"],
     },
     {
       provider: fontProviders.fontsource(),
-      name: "IBM Plex Mono",
+      name: "JetBrains Mono",
       cssVariable: "--font-family-mono",
     },
   ],
