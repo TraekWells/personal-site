@@ -10,7 +10,6 @@ const posts = await getCollection("blog");
   <ul>
     {
       posts.map((post) => {
-        console.log(post);
         const { title } = post.data;
         return (
           <li>
