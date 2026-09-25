@@ -1,9 +1,12 @@
 ---
+import { getCollection } from "astro:content";
 import Button from "../components/Button.astro";
 import Eyebrow from "../components/Eyebrow.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
-import { FolderGit2 } from "@lucide/astro";
+const posts = await getCollection("blog");
+
+import { PencilLine } from "@lucide/astro";
 ---
 
 <BaseLayout>
@@ -17,7 +20,13 @@ import { FolderGit2 } from "@lucide/astro";
   <Button>See my work</Button>
 
   <hgroup>
-    <Eyebrow><FolderGit2 size={16} />Selected Work</Eyebrow>
-    <h2 class="heading-2">Stuff I've Made</h2>
+    <Eyebrow><PencilLine size={16} />Selected Work</Eyebrow>
+    <h2 class="heading-2">Front-end Notes</h2>
   </hgroup>
+
+  {
+    posts.map((post) => {
+      return <li>{post.data.title}</li>;
+    })
+  }
 </BaseLayout>
