@@ -91,12 +91,17 @@
 @layer layout {
   .container {
     margin-inline: auto;
-    width: 100%;
-    max-width: calc(63rem + var(--space-lg));
-    padding-inline: var(--space-lg);
+    max-width: calc(63rem + var(--space-md));
+    padding-inline: var(--space-xs);
 
-    /* @media (max-width: $breakpoint-md) {
-      padding-inline: var(--space-sm);
-    } */
+    @media (width >= 500px) {
+      padding-inline: var(--space-lg);
+    }
+  }
+}
+
+@layer utilities {
+  .font-mono {
+    font-family: var(--font-family-mono);
   }
 }

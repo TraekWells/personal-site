@@ -1,5 +1,7 @@
 ---
 import image from "../images/navbar-avatar.webp";
+import { MenuIcon } from "@lucide/astro";
+import Button from "./Button.astro";
 ---
 
 <nav class="navbar container">
@@ -24,7 +26,10 @@ import image from "../images/navbar-avatar.webp";
       <a class="navbar__link" href="/about-me">About</a>
     </li>
   </ul>
-  <button>Theme toggle</button>
+  <div class="navbar__actions">
+    <Button>Theme toggle</Button>
+    <Button class="font-mono"><MenuIcon size={20} /> Menu</Button>
+  </div>
 </nav>
 
 <style>
@@ -49,26 +54,37 @@ import image from "../images/navbar-avatar.webp";
     letter-spacing: var(--letter-spacing-tight);
 
     p {
-      margin-block: 0 var(--space-3xs);
+      margin-block: 0;
+      font-size: var(--font-size-sm);
       font-weight: var(--font-weight-bold);
     }
 
     span {
       font-size: var(--font-size-sm);
+      opacity: 0.9;
     }
   }
 
   .navbar__avatar {
-    aspect-ratio: 1;
-    height: 3.5rem;
-    border-radius: 50%;
+    display: none;
+
+    @media (width >= 500px) {
+      display: block;
+      aspect-ratio: 1;
+      height: 3.5rem;
+      border-radius: 50%;
+    }
   }
 
   .navbar__list {
-    display: flex;
+    display: none;
     list-style: none;
     gap: var(--space-2xs);
     font-family: var(--font-family-mono);
+
+    @media (width >= 500px) {
+      display: flex;
+    }
   }
 
   .navbar__link {
