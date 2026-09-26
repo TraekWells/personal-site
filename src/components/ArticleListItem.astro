@@ -1,0 +1,70 @@
+---
+import { ArrowUpRight } from "@lucide/astro";
+
+type PostTypes = {
+  id: string;
+  data: {
+    title: string;
+    createdAt: Date;
+  };
+};
+
+type Props = {
+  post: PostTypes;
+};
+
+const { post } = Astro.props;
+
+const { title, createdAt } = post.data;
+// Create a helper function
+const date = new Intl.DateTimeFormat("en-us", {
+  year: "numeric",
+  month: "short",
+  day: "numeric",
+}).format(createdAt);
+const url = `/blog/${post.id}`;
+---
+
+<li class="article-list-item">
+  <a href={url} class="article-list-item__link">
+    {title}
+    <p class="article-list-item__meta">{date}</p>
+    <ArrowUpRight size={16} class="article-list-item__icon" />
+  </a>
+</li>
+
+<style>
+  .article-list-item {
+    position: relative;
+    &:not(:last-of-type) {
+      border-bottom: var(--thin-border);
+    }
+  }
+
+  .article-list-item__link {
+    background-color: hsl(var(--color-primary-lightest));
+    display: block;
+    color: hsl(var(--color-base-text));
+    text-decoration: none;
+    padding: var(--space-xs);
+    font-weight: var(--font-weight-bold);
+    &:hover {
+      .article-list-item__icon {
+        transform: translate(3.5px, -3.5px);
+      }
+    }
+  }
+
+  .article-list-item__meta {
+    color: hsl(var(--color-base));
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-sm);
+  }
+
+  .article-list-item__icon {
+    position: absolute;
+    right: var(--space-xs);
+    top: var(--space-xs);
+    transition: var(--transition-fast);
+  }
+</style>

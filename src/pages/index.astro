@@ -4,10 +4,11 @@ import Eyebrow from "../components/Eyebrow.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 const posts = await getCollection("blog");
-const projects = await getCollection("projects");
 
-import { FolderGit2, PencilLine } from "@lucide/astro";
-import ProjectCard from "../components/ProjectCard.astro";
+import { ArrowRight, PencilLine } from "@lucide/astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import ArticleList from "../components/ArticleList.astro";
+import ArticleListItem from "../components/ArticleListItem.astro";
 ---
 
 <BaseLayout>
@@ -21,35 +22,17 @@ import ProjectCard from "../components/ProjectCard.astro";
   </p>
 
   <section>
-    <hgroup>
-      <Eyebrow><FolderGit2 size={16} />Selected Work</Eyebrow>
-      <h2 class="heading-2">Stuff I've Made</h2>
-    </hgroup>
-    <div class="project-wrapper">
+    <SectionHeader eyebrow="Writing" header="Front-end Notes">
+      <PencilLine size={16} slot="icon" />
+      <a href="/blog" slot="action">All Articles <ArrowRight size={16} /></a>
+    </SectionHeader>
+    <ArticleList>
       {
-        projects.map((project) => {
-          return (
-            <ProjectCard
-              title={project.data.title}
-              summary={project.data.summary}
-              tag={project.data.technology[0]}
-            />
-          );
+        posts.map((post) => {
+          return <ArticleListItem post={post} />;
         })
       }
-    </div>
-  </section>
-
-  <section>
-    <hgroup>
-      <Eyebrow><PencilLine size={16} />Writing</Eyebrow>
-      <h2 class="heading-2">Front-end Notes</h2>
-    </hgroup>
-    {
-      posts.map((post) => {
-        return <li>{post.data.title}</li>;
-      })
-    }
+    </ArticleList>
   </section>
 
   <section>

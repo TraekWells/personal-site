@@ -1,0 +1,35 @@
+---
+import type { HTMLAttributes } from "astro/types";
+import Eyebrow from "./Eyebrow.astro";
+
+type Props = HTMLAttributes<"header"> & {
+  eyebrow: string;
+  header: string;
+};
+
+const { eyebrow, header } = Astro.props;
+---
+
+<header class="section-header">
+  <hgroup>
+    <Eyebrow><slot name="icon" />{eyebrow}</Eyebrow>
+    <div class="section-header__header">
+      <h2 class="heading-2">{header}</h2>
+      <slot name="action" />
+    </div>
+  </hgroup>
+</header>
+
+<style>
+  .section-header {
+    a {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3xs);
+    }
+    .section-header__header {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+</style>

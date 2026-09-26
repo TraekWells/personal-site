@@ -3,8 +3,6 @@ import image from "../images/navbar-avatar.webp";
 import { MenuIcon, Sun, MoveRightIcon } from "@lucide/astro";
 import VisuallyHidden from "./VisuallyHidden.astro";
 
-const border = "1px solid hsl(var(--color-base-light))";
-
 const navItems = [
   {
     label: "Work",
@@ -64,13 +62,13 @@ const navItems = [
   </div>
 </nav>
 
-<style define:vars={{ border }}>
+<style>
   .navbar {
     position: sticky;
     background-color: hsl(var(--color-secondary-lightest));
     top: 0;
     z-index: 10;
-    border-bottom: var(--border);
+    border-bottom: var(--thin-border);
     color: hsl(var(--color-text));
 
     a {
@@ -134,7 +132,7 @@ const navItems = [
       padding-inline: 0;
       background-color: hsl(var(--color-secondary-lightest));
       margin-block-start: -1px;
-      border-bottom: var(--border);
+      border-bottom: var(--thin-border);
 
       &::before {
         content: "";
@@ -143,7 +141,7 @@ const navItems = [
         height: calc(100% - 2rem);
         top: 1rem;
         left: 1rem;
-        border: var(--border);
+        border: var(--thin-border);
         border-radius: var(--border-radius-md);
         background-color: hsla(var(--color-base-light), 0.2);
       }
@@ -189,7 +187,7 @@ const navItems = [
 
     button {
       border-radius: var(--border-radius-sm);
-      border: var(--border);
+      border: var(--thin-border);
       background-color: hsla(var(--color-base-light), 0.2);
       display: inline-flex;
       padding: var(--space-2xs);

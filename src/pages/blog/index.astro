@@ -6,7 +6,11 @@ const posts = await getCollection("blog");
 ---
 
 <BaseLayout>
-  <h1>Hello from the blog page</h1>
+  <h1>Notes on the front-end</h1>
+  <p>
+    Long-form and short thoughts on CSS, layout systems, accessibility, and the
+    small details that make interfaces feel considered.
+  </p>
   <ul>
     {
       posts.map((post) => {
