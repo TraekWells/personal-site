@@ -254,19 +254,24 @@
   hgroup {
     display: flex;
     flex-direction: column;
-    gap: var(--space-2xs);
+    gap: var(--space-3xs);
+    margin-block-end: var(--space-sm);
   }
 }
 
 @layer layout {
   .container {
     margin-inline: auto;
-    max-width: calc(68rem + var(--space-md));
+    max-width: calc(60rem + var(--space-md));
     padding-inline: var(--space-xs);
 
     @media (width >= 500px) {
       padding-inline: var(--space-lg);
     }
+  }
+
+  section {
+    margin-block-start: var(--space-md);
   }
 }
 

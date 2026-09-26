@@ -1,0 +1,44 @@
+---
+import type { HTMLAttributes } from "astro/types";
+import { ArrowUpRight } from "@lucide/astro";
+import Pill from "./Pill.astro";
+
+type Props = HTMLAttributes<"article"> & {
+  title: string;
+  summary: string;
+  tag: string;
+  // url: string;
+};
+
+const { title, summary, tag } = Astro.props;
+---
+
+<article class="project-card">
+  <div class="project-card__header">
+    <h3 class="heading-6">{title}</h3>
+    <p>{summary}</p>
+  </div>
+  <div class="project-card__meta">
+    <Pill>{tag}</Pill>
+  </div>
+  <ArrowUpRight size={20} class="project-card__icon" />
+</article>
+
+<style>
+  .project-card {
+    position: relative;
+    background-color: hsl(var(--color-primary-lightest));
+    border-radius: var(--border-radius-md);
+    border: 1px solid hsl(var(--color-base-light));
+    padding: var(--space-sm);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+
+  .project-card__icon {
+    position: absolute;
+    top: var(--space-md);
+    right: var(--space-md);
+  }
+</style>
