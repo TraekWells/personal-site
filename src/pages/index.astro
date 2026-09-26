@@ -1,24 +1,24 @@
 ---
 import { getCollection } from "astro:content";
-import Eyebrow from "../components/Eyebrow.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
-
-const posts = await getCollection("blog");
-
-import { ArrowRight, PencilLine } from "@lucide/astro";
+import { ArrowRight, BookSearch, PencilLine } from "@lucide/astro";
 import SectionHeader from "../components/SectionHeader.astro";
 import ArticleList from "../components/ArticleList.astro";
 import ArticleListItem from "../components/ArticleListItem.astro";
+
+const posts = await getCollection("blog");
 ---
 
 <BaseLayout>
-  <h1>
-    I'm re-building this site ad-hoc and pushing whatever changes I have some.
-    You've been warned.
-  </h1>
+  <small
+    >I'm re-building this site ad-hoc and pushing whatever changes I have some.
+    You've been warned.</small
+  >
+  <h1>Designed with intent. Built with care.</h1>
   <p>
-    Stuff is and will be broken until it's finished. But thanks for visiting.
-    Come back soon.
+    I build fast, accessible interfaces with clean CSS, and I care about the
+    small details most people miss. Lately I've been focused on design systems
+    and UI components for product teams.
   </p>
 
   <section>
@@ -36,9 +36,8 @@ import ArticleListItem from "../components/ArticleListItem.astro";
   </section>
 
   <section>
-    <hgroup>
-      <Eyebrow><PencilLine size={16} />Explore the Site</Eyebrow>
-      <h2 class="heading-2">Peek Around</h2>
-    </hgroup>
+    <SectionHeader eyebrow="Explore the Site" header="Peek around">
+      <BookSearch size={16} slot="icon" />
+    </SectionHeader>
   </section>
 </BaseLayout>

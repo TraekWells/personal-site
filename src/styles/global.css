@@ -251,6 +251,10 @@
     margin-block-end: var(--space-sm);
   }
 
+  a {
+    text-decoration: none;
+  }
+
   a,
   p {
     font-size: var(--font-size-base);
@@ -269,7 +273,7 @@
   }
 
   section {
-    margin-block-start: var(--space-md);
+    margin-block-start: var(--space-lg);
   }
 }
 

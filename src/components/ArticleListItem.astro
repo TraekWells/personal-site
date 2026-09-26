@@ -1,8 +1,10 @@
 ---
 import { ArrowUpRight } from "@lucide/astro";
+import { getReadingTime } from "../helpers/helpers";
 
 type PostTypes = {
   id: string;
+  body?: string;
   data: {
     title: string;
     createdAt: Date;
@@ -23,12 +25,13 @@ const date = new Intl.DateTimeFormat("en-us", {
   day: "numeric",
 }).format(createdAt);
 const url = `/blog/${post.id}`;
+const readingTime = getReadingTime(post.body ? post.body : "");
 ---
 
 <li class="article-list-item">
   <a href={url} class="article-list-item__link">
     {title}
-    <p class="article-list-item__meta">{date}</p>
+    <p class="article-list-item__meta">{date} • {readingTime}</p>
     <ArrowUpRight size={16} class="article-list-item__icon" />
   </a>
 </li>
