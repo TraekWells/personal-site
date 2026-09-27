@@ -20,12 +20,11 @@ const tocLinks = headers
 
 <aside class="table-of-contents">
   <h3>{title}</h3>
-  <!-- <p>{title}</p> -->
   <ul class="table-of-contents__list">
     {
       tocLinks.map((link) => {
         return (
-          <li>
+          <li class="table-of-contents__item">
             <a class="table-of-contents__link" href={link.url}>
               {link.text}
             </a>
@@ -38,16 +37,39 @@ const tocLinks = headers
 
 <style>
   .table-of-contents {
+    background-color: hsl(var(--color-base-lightest));
+    border: var(--thin-border);
+    border-radius: var(--border-radius-md);
+    padding: var(--space-xs);
+
     h3 {
       font-size: var(--font-size-sm);
-      font-weight: var(--font-weight-normal);
+      font-weight: var(--font-weight-bold);
       text-transform: uppercase;
       color: hsl(var(--color-text-light));
     }
   }
 
   .table-of-contents__list {
+    margin-block-start: var(--space-2xs);
     list-style: none;
     padding: 0;
+
+    .table-of-contents__item {
+      margin-block-start: -3px;
+    }
+  }
+
+  .table-of-contents__link {
+    font-size: var(--font-size-sm);
+    color: hsl(var(--color-text));
+    border-left: 2px solid hsl(var(--color-base-light));
+    padding-inline-start: var(--space-xs);
+    transition: var(--transition-slow);
+    padding-block: var(--space-3xs);
+
+    &:hover {
+      border-left-color: hsl(var(--color-primary-light));
+    }
   }
 </style>

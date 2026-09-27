@@ -39,7 +39,7 @@ const tag = tags && tags[0];
             date={date}
             tag={tag}
           />
-          <div class="post-body">
+          <div class="post-body flow">
             <slot />
           </div>
         </div>
@@ -51,7 +51,6 @@ const tag = tags && tags[0];
 <style>
   .post-back {
     font-size: var(--font-size-sm);
-
     svg {
       transition: transform ease var(--transition-slow);
     }
@@ -66,11 +65,14 @@ const tag = tags && tags[0];
     display: flex;
     flex-direction: row-reverse;
     gap: var(--space-lg);
+    position: relative;
   }
 
   .post-sidebar {
     flex: 1;
     align-self: flex-start;
+    position: sticky;
+    top: 7rem;
   }
 
   .post-main {

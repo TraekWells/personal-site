@@ -16,7 +16,7 @@
     --color-secondary-darkest: 36, 99%, 31%;
 
     --color-base-white: 0, 0%, 100%;
-    --color-base-lightest: 300, 8%, 95%;
+    --color-base-lightest: 300, 8%, 96%;
     --color-base-light: 285, 7%, 89%;
     --color-base: 282, 7%, 52%;
     --color-base-dark: 285, 7%, 36%;
@@ -274,6 +274,13 @@
       line-height: var(--heading-3-line-height);
       font-weight: var(--heading-3-font-weight);
       letter-spacing: var(--heading-3-letter-spacing);
+      margin-block-start: var(--space-sm);
+    }
+    h3 {
+      font-size: var(--font-size-lg);
+      line-height: var(--heading-4-line-height);
+      font-weight: var(--heading-4-font-weight);
+      letter-spacing: var(--heading-4-letter-spacing);
     }
   }
 }
@@ -291,6 +298,10 @@
 
   section {
     margin-block-start: var(--space-lg);
+  }
+
+  .flow * > * {
+    margin-block-start: 1rem;
   }
 }
 

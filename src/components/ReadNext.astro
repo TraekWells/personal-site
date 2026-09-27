@@ -1,0 +1,15 @@
+---
+import type { CollectionEntry } from "astro:content";
+import ArticleList from "./ArticleList.astro";
+import ArticleListItem from "./ArticleListItem.astro";
+
+type Props = {
+  post: CollectionEntry<"blog">;
+};
+
+const { post } = Astro.props;
+---
+
+<ArticleList>
+  <ArticleListItem post={post} />
+</ArticleList>
