@@ -1,16 +1,22 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import SectionHeader from "../../components/SectionHeader.astro";
+import { PencilLine } from "@lucide/astro/icons/index";
 
 const posts = await getCollection("blog");
 ---
 
 <BaseLayout>
-  <h1>Notes on the front-end</h1>
-  <p>
-    Long-form and short thoughts on CSS, layout systems, accessibility, and the
-    small details that make interfaces feel considered.
-  </p>
+  <section>
+    <SectionHeader as="h1" eyebrow="Writing" header="Front-end notes">
+      <PencilLine size={16} slot="icon" />
+      <p slot="intro">
+        Long-form and short thoughts on CSS, layout systems, accessibility, and
+        the small details that make interfaces feel considered.
+      </p>
+    </SectionHeader>
+  </section>
   <ul>
     {
       posts.map((post) => {

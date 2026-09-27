@@ -1,0 +1,37 @@
+---
+import type { MarkdownHeading } from "astro";
+import type { CollectionEntry } from "astro:content";
+import BaseLayout from "./BaseLayout.astro";
+import { ArrowLeft } from "@lucide/astro";
+import TableOfContents from "../components/TableOfContents.astro";
+
+type Props = CollectionEntry<"blog">["data"] & {
+  id: string;
+  headings: MarkdownHeading[];
+};
+
+const { id, title, headings } = Astro.props;
+---
+
+<BaseLayout>
+  <a href="/blog">
+    <ArrowLeft size={16} /> All Articles
+  </a>
+  <div class="post-wrapper">
+    <div class="post-sidebar">
+      <TableOfContents title="Table of contents" headers={headings} id={id} />
+    </div>
+    <div class="post-body">
+      <h1>{title}</h1>
+      <slot />
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .post-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: var(--space-lg);
+  }
+</style>

@@ -1,0 +1,32 @@
+---
+import type { MarkdownHeading } from "astro";
+
+type Props = {
+  title: string;
+  id: string;
+  headers: MarkdownHeading[];
+};
+
+const { title, id, headers } = Astro.props;
+const tocLinks = headers
+  .filter((header) => header.depth === 2)
+  .map((header) => {
+    return {
+      text: header.text,
+      url: `${id}#${header.slug}`,
+    };
+  });
+---
+
+<p>{title}</p>
+<ul>
+  {
+    tocLinks.map((link) => {
+      return (
+        <li>
+          <a href={link.url}>{link.text}</a>
+        </li>
+      );
+    })
+  }
+</ul>
