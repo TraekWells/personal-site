@@ -65,7 +65,8 @@ const navItems = [
 <style>
   .navbar {
     position: sticky;
-    background-color: hsl(var(--color-secondary-lightest));
+    background-color: hsla(var(--color-secondary-lightest), 0.92);
+    backdrop-filter: blur(6px);
     top: 0;
     z-index: 10;
     border-bottom: var(--thin-border);
@@ -92,7 +93,7 @@ const navItems = [
     letter-spacing: var(--letter-spacing-tight);
 
     p {
-      margin-block-end: -5px;
+      margin-block-end: -10px;
       font-size: var(--font-size-sm);
       font-weight: var(--font-weight-bold);
     }
@@ -170,7 +171,7 @@ const navItems = [
     opacity: 0.8;
 
     &:hover {
-      background-color: hsl(var(--color-base-light));
+      background-color: hsla(var(--color-primary-lighter), 0.5);
       opacity: 1;
     }
   }

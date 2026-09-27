@@ -1,6 +1,6 @@
 ---
 import { ArrowUpRight } from "@lucide/astro";
-import { getReadingTime } from "../helpers/helpers";
+import { formatDate, getReadingTime } from "../helpers/helpers";
 
 type PostTypes = {
   id: string;
@@ -18,14 +18,9 @@ type Props = {
 const { post } = Astro.props;
 
 const { title, createdAt } = post.data;
-// Create a helper function
-const date = new Intl.DateTimeFormat("en-us", {
-  year: "numeric",
-  month: "short",
-  day: "numeric",
-}).format(createdAt);
+const date = formatDate(createdAt);
 const url = `/blog/${post.id}`;
-const readingTime = getReadingTime(post.body ? post.body : "");
+const readingTime = getReadingTime(post.body ?? "");
 ---
 
 <li class="article-list-item">
@@ -59,7 +54,8 @@ const readingTime = getReadingTime(post.body ? post.body : "");
   }
 
   .article-list-item__meta {
-    color: hsl(var(--color-base));
+    color: hsl(var(--color-text-light));
+
     font-weight: var(--font-weight-normal);
     font-size: var(--font-size-sm);
   }

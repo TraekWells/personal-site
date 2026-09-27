@@ -253,11 +253,28 @@
 
   a {
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-3xs);
   }
 
   a,
   p {
     font-size: var(--font-size-base);
+  }
+  .post-wrapper {
+    h1 {
+      font-size: var(--font-size-2xl);
+      line-height: var(--heading-2-line-height);
+      font-weight: var(--heading-2-font-weight);
+      letter-spacing: var(--heading-2-letter-spacing);
+    }
+    h2 {
+      font-size: var(--font-size-xl);
+      line-height: var(--heading-3-line-height);
+      font-weight: var(--heading-3-font-weight);
+      letter-spacing: var(--heading-3-letter-spacing);
+    }
   }
 }
 

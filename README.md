@@ -1,6 +1,8 @@
-# Read books kids
+# Personal Site
 
-# personal-site-rewrite
+## Todos
+
+- [ ] Add page level SEO
 
 ## Questions
 

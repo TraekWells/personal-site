@@ -18,15 +18,36 @@ const tocLinks = headers
   });
 ---
 
-<p>{title}</p>
-<ul>
-  {
-    tocLinks.map((link) => {
-      return (
-        <li>
-          <a href={link.url}>{link.text}</a>
-        </li>
-      );
-    })
+<aside class="table-of-contents">
+  <h3>{title}</h3>
+  <!-- <p>{title}</p> -->
+  <ul class="table-of-contents__list">
+    {
+      tocLinks.map((link) => {
+        return (
+          <li>
+            <a class="table-of-contents__link" href={link.url}>
+              {link.text}
+            </a>
+          </li>
+        );
+      })
+    }
+  </ul>
+</aside>
+
+<style>
+  .table-of-contents {
+    h3 {
+      font-size: var(--font-size-sm);
+      font-weight: var(--font-weight-normal);
+      text-transform: uppercase;
+      color: hsl(var(--color-text-light));
+    }
   }
-</ul>
+
+  .table-of-contents__list {
+    list-style: none;
+    padding: 0;
+  }
+</style>

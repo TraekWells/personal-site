@@ -1,0 +1,61 @@
+---
+import Pill from "./Pill.astro";
+
+type Props = {
+  header: string;
+  date: string;
+  intro: string;
+  readingTime?: string;
+  tag?: string;
+};
+
+const { header, date, intro, readingTime, tag } = Astro.props;
+---
+
+<header class="post-header">
+  <div class="post-header__details">
+    <Pill>{tag}</Pill>
+    <div class="post-header__meta">
+      <span>{date}</span>
+      {readingTime && <span> • {readingTime}</span>}
+    </div>
+  </div>
+  <div class="post-header__title">
+    <h1 class="heading-2">{header}</h1>
+    <p>{intro}</p>
+  </div>
+</header>
+
+<style>
+  .post-header {
+    border-bottom: var(--thin-border);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    padding-block-end: var(--space-md);
+  }
+  .post-header__details {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2xs);
+  }
+  .post-header__meta {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size-sm);
+    color: hsl(var(--color-text-light));
+  }
+  .post-header__title {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+
+    h1 {
+      color: hsl(var(--color-primary-darkest));
+    }
+
+    p {
+      font-size: var(--font-size-md);
+    }
+  }
+</style>

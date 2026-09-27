@@ -4,34 +4,80 @@ import type { CollectionEntry } from "astro:content";
 import BaseLayout from "./BaseLayout.astro";
 import { ArrowLeft } from "@lucide/astro";
 import TableOfContents from "../components/TableOfContents.astro";
+import PostHeader from "../components/PostHeader.astro";
+import { formatDate } from "../helpers/helpers";
 
 type Props = CollectionEntry<"blog">["data"] & {
   id: string;
   headings: MarkdownHeading[];
+  readingTime: string;
 };
 
-const { id, title, headings } = Astro.props;
+const { id, title, summary, tags, createdAt, headings, readingTime } =
+  Astro.props;
+const date = formatDate(createdAt);
+const tag = tags && tags[0];
 ---
 
 <BaseLayout>
-  <a href="/blog">
-    <ArrowLeft size={16} /> All Articles
-  </a>
-  <div class="post-wrapper">
-    <div class="post-sidebar">
-      <TableOfContents title="Table of contents" headers={headings} id={id} />
-    </div>
-    <div class="post-body">
-      <h1>{title}</h1>
-      <slot />
-    </div>
+  <div class="post">
+    <section>
+      <a href="/blog" class="post-back">
+        <ArrowLeft size={16} /> All writing
+      </a>
+    </section>
+    <section>
+      <div class="post-wrapper">
+        <div class="post-sidebar">
+          <TableOfContents title="On this page" headers={headings} id={id} />
+        </div>
+        <div class="post-main">
+          <PostHeader
+            header={title}
+            intro={summary}
+            readingTime={readingTime}
+            date={date}
+            tag={tag}
+          />
+          <div class="post-body">
+            <slot />
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </BaseLayout>
 
 <style>
+  .post-back {
+    font-size: var(--font-size-sm);
+
+    svg {
+      transition: transform ease var(--transition-slow);
+    }
+
+    &:hover {
+      svg {
+        transform: translateX(-5px);
+      }
+    }
+  }
   .post-wrapper {
     display: flex;
     flex-direction: row-reverse;
     gap: var(--space-lg);
+  }
+
+  .post-sidebar {
+    flex: 1;
+    align-self: flex-start;
+  }
+
+  .post-main {
+    flex: 3;
+  }
+
+  .post-body {
+    margin-block-start: var(--space-md);
   }
 </style>
