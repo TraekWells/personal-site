@@ -72,10 +72,16 @@ const tag = tags && tags[0];
   }
 
   .post-sidebar {
-    flex: 1;
-    align-self: flex-start;
-    position: sticky;
-    top: 7rem;
+    display: none;
+
+    @media (width >= 700px) {
+      position: sticky;
+      display: initial;
+      flex: 1;
+      flex-shrink: 0;
+      align-self: flex-start;
+      top: 7rem;
+    }
   }
 
   .post-main {
