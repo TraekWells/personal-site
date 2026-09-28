@@ -14,7 +14,8 @@ const { header, date, intro, readingTime, tag } = Astro.props;
 
 <header class="post-header">
   <div class="post-header__details">
-    <Pill>{tag}</Pill>
+    {tag && <Pill>{tag}</Pill>}
+
     <div class="post-header__meta">
       <span>{date}</span>
       {readingTime && <span> • {readingTime}</span>}

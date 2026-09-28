@@ -1,21 +1,27 @@
 ---
-import { getCollection, render } from "astro:content";
+import { render } from "astro:content";
 import BlogPostLayout from "../../layouts/BlogPostLayout.astro";
-import { getReadingTime } from "../../helpers/helpers";
+import { getPublished, getReadingTime } from "../../helpers/helpers";
 
 export const getStaticPaths = async () => {
-  const posts = await getCollection("blog");
-  return posts.map((post) => {
+  const posts = await getPublished("blog");
+  const sortedPosts = posts.toSorted((a, b) => {
+    const aDate = a.data.createdAt.getTime();
+    const bDate = b.data.createdAt.getTime();
+    return bDate - aDate;
+  });
+  return sortedPosts.map((post, index) => {
+    const nextPost = sortedPosts[index + 1] ?? sortedPosts[0];
     return {
       params: {
         id: post.id,
       },
-      props: { post },
+      props: { post, nextPost },
     };
   });
 };
 
-const { post } = Astro.props;
+const { post, nextPost } = Astro.props;
 const { Content, headings } = await render(post);
 const readingTime = getReadingTime(post.body ?? "");
 ---
@@ -24,6 +30,7 @@ const readingTime = getReadingTime(post.body ?? "");
   id={post.id}
   headings={headings}
   readingTime={readingTime}
+  nextPost={nextPost}
   {...post.data}
 >
   <Content />

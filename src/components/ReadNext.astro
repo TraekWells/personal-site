@@ -2,6 +2,7 @@
 import type { CollectionEntry } from "astro:content";
 import ArticleList from "./ArticleList.astro";
 import ArticleListItem from "./ArticleListItem.astro";
+import Eyebrow from "./Eyebrow.astro";
 
 type Props = {
   post: CollectionEntry<"blog">;
@@ -10,6 +11,19 @@ type Props = {
 const { post } = Astro.props;
 ---
 
-<ArticleList>
-  <ArticleListItem post={post} />
-</ArticleList>
+<section class="read-next">
+  <Eyebrow>Read Next</Eyebrow>
+  <ArticleList>
+    <ArticleListItem post={post} />
+  </ArticleList>
+</section>
+
+<style>
+  .read-next {
+    border-top: var(--thin-border);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    padding-block-start: var(--space-lg);
+  }
+</style>

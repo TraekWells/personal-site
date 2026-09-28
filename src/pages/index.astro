@@ -1,12 +1,12 @@
 ---
-import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { ArrowRight, BookSearch, PencilLine } from "@lucide/astro";
 import SectionHeader from "../components/SectionHeader.astro";
 import ArticleList from "../components/ArticleList.astro";
 import ArticleListItem from "../components/ArticleListItem.astro";
+import { getPublished } from "../helpers/helpers";
 
-const posts = await getCollection("blog");
+const posts = await getPublished("blog");
 ---
 
 <BaseLayout>

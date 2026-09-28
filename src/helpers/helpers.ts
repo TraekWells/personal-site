@@ -1,3 +1,5 @@
+import { getCollection } from "astro:content";
+
 export const getReadingTime = (content: string) => {
   const averageReadingSpeed = 240;
   const wordCount = content.split(" ").length;
@@ -14,4 +16,12 @@ export const formatDate = (date: Date) => {
   }).format(date);
 
   return newDate;
+};
+
+type DraftableCollection = "blog" | "journal" | "projects";
+
+export const getPublished = <C extends DraftableCollection>(collection: C) => {
+  return getCollection(collection, ({ data }) => {
+    return import.meta.env.PROD ? !data.draft : true;
+  });
 };

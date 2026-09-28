@@ -6,14 +6,16 @@ import { ArrowLeft } from "@lucide/astro";
 import TableOfContents from "../components/TableOfContents.astro";
 import PostHeader from "../components/PostHeader.astro";
 import { formatDate } from "../helpers/helpers";
+import ReadNext from "../components/ReadNext.astro";
 
 type Props = CollectionEntry<"blog">["data"] & {
   id: string;
   headings: MarkdownHeading[];
   readingTime: string;
+  nextPost: CollectionEntry<"blog">;
 };
 
-const { id, title, summary, tags, createdAt, headings, readingTime } =
+const { id, title, summary, tags, createdAt, headings, readingTime, nextPost } =
   Astro.props;
 const date = formatDate(createdAt);
 const tag = tags && tags[0];
@@ -46,6 +48,7 @@ const tag = tags && tags[0];
       </div>
     </section>
   </div>
+  <ReadNext post={nextPost} />
 </BaseLayout>
 
 <style>
