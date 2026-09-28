@@ -104,6 +104,8 @@
     --space-2xl: clamp(4.5rem, 4.2955rem + 0.9091vw, 5rem);
     --space-3xl: clamp(6.75rem, 6.4432rem + 1.3636vw, 7.5rem);
 
+    --max-width-prose: 60ch;
+
     --transition-slow: 300ms;
     --transition-fast: 100ms;
 
@@ -262,6 +264,12 @@
   p {
     font-size: var(--font-size-base);
   }
+
+  .lead {
+    max-width: var(--max-width-prose);
+    font-size: var(--font-size-md);
+  }
+
   .post-wrapper {
     h1 {
       font-size: var(--font-size-2xl);
@@ -288,7 +296,7 @@
 @layer layout {
   .container {
     margin-inline: auto;
-    max-width: calc(60rem + var(--space-md));
+    max-width: calc(62rem + var(--space-md));
     padding-inline: var(--space-xs);
 
     @media (width >= 500px) {

@@ -23,7 +23,7 @@ const { header, date, intro, readingTime, tag } = Astro.props;
   </div>
   <div class="post-header__title">
     <h1 class="heading-2">{header}</h1>
-    <p>{intro}</p>
+    <p class="lead">{intro}</p>
   </div>
 </header>
 
@@ -53,10 +53,6 @@ const { header, date, intro, readingTime, tag } = Astro.props;
 
     h1 {
       color: hsl(var(--color-primary-darkest));
-    }
-
-    p {
-      font-size: var(--font-size-md);
     }
   }
 </style>
