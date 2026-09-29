@@ -1,0 +1,78 @@
+---
+import { ArrowUpRight } from "@lucide/astro";
+import Pill from "./Pill.astro";
+
+type Props = {
+  url: string;
+  tag: string;
+  title: string;
+  summary: string;
+  date: string;
+  readTime: string;
+};
+
+const { url, tag, title, summary, date, readTime } = Astro.props;
+---
+
+<article class="post-card">
+  <div class="post-card__tag"><Pill>{tag}</Pill></div>
+  <h3 class="post-card__title">
+    <a href={url} class="post-card__link">
+      {title}
+    </a>
+  </h3>
+  <p class="post-card__summary">{summary}</p>
+  <div class="post-card__meta">{date} • {readTime}</div>
+  <ArrowUpRight size={16} class="post-card__icon" aria-hidden="true" />
+</article>
+
+<style>
+  .post-card {
+    display: flex;
+    flex-direction: column;
+    color: hsl(var(--color-text));
+    gap: var(--space-xs);
+    border: var(--thin-border);
+    border-radius: var(--border-radius-md);
+    padding: var(--space-sm);
+    position: relative;
+
+    &:hover {
+      border-color: hsl(var(--color-primary-light));
+    }
+  }
+
+  .post-card__link {
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+    }
+  }
+
+  .post-card__title {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+  }
+
+  .post-card__title a {
+    color: hsl(var(--color-text));
+    font-size: var(--font-size-md);
+  }
+
+  .post-card__summary {
+    font-size: var(--font-size-base);
+  }
+
+  .post-card__icon {
+    position: absolute;
+    top: var(--space-sm);
+    right: var(--space-sm);
+  }
+
+  .post-card__meta {
+    margin-top: auto;
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-xs);
+  }
+</style>

@@ -27,7 +27,11 @@ const readingTime = getReadingTime(post.body ?? "");
   <a href={url} class="article-list-item__link">
     {title}
     <p class="article-list-item__meta">{date} • {readingTime}</p>
-    <ArrowUpRight size={16} class="article-list-item__icon" />
+    <ArrowUpRight
+      size={16}
+      class="article-list-item__icon"
+      aria-hidden="true"
+    />
   </a>
 </li>
 

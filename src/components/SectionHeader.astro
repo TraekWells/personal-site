@@ -9,9 +9,10 @@ type Props<Tag extends HeadingTag> = Polymorphic<{ as: Tag }> & {
   header: string;
   intro?: string;
   styleAs?: HeadingTag;
+  meta?: string;
 };
 
-const { as: Tag, eyebrow, header, styleAs } = Astro.props;
+const { as: Tag, eyebrow, header, styleAs, meta } = Astro.props;
 const headingStyle = (styleAs ?? Tag)[1];
 ---
 
@@ -24,6 +25,7 @@ const headingStyle = (styleAs ?? Tag)[1];
     </div>
     <slot name="intro" />
   </hgroup>
+  <slot name="meta" />
 </header>
 
 <style>

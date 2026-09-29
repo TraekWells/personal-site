@@ -1,0 +1,52 @@
+---
+import type { CollectionEntry } from "astro:content";
+import PostCard from "./PostCard.astro";
+import { formatDate, getReadingTime } from "../helpers/helpers";
+
+type Props = {
+  posts: CollectionEntry<"blog">[];
+};
+
+const { posts } = Astro.props;
+---
+
+<ul class="post-grid">
+  {
+    posts.map((post) => {
+      const { title, summary, tags } = post.data;
+      const readTime = getReadingTime(post.body ?? "");
+      const date = formatDate(post.data.createdAt);
+      return (
+        <li>
+          <PostCard
+            url={`/blog/${post.id}`}
+            title={title}
+            tag={tags ? tags[0] : ""}
+            summary={summary}
+            date={date}
+            readTime={readTime}
+          />
+        </li>
+      );
+    })
+  }
+</ul>
+
+<style>
+  .post-grid {
+    display: grid;
+    list-style: none;
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
+    padding: 0;
+    align-items: stretch;
+
+    @media (width >= 650px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    li {
+      display: grid;
+    }
+  }
+</style>

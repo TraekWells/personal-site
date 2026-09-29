@@ -3,11 +3,17 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import SectionHeader from "../../components/SectionHeader.astro";
 import { PencilLine } from "@lucide/astro/icons/index";
 import { getPublished } from "../../helpers/helpers";
+import PostCard from "../../components/PostCard.astro";
+import PostGrid from "../../components/PostGrid.astro";
 
 const posts = await getPublished("blog");
 ---
 
-<BaseLayout>
+<BaseLayout
+  title="Writing"
+  description="Long-form and short thoughts on CSS, layout systems, accessibility, and
+        the small details that make interfaces feel considered."
+>
   <section>
     <SectionHeader
       as="h1"
@@ -20,18 +26,10 @@ const posts = await getPublished("blog");
         Long-form and short thoughts on CSS, layout systems, accessibility, and
         the small details that make interfaces feel considered.
       </p>
+      <small slot="meta">{posts.length} articles</small>
     </SectionHeader>
   </section>
-  <ul>
-    {
-      posts.map((post) => {
-        const { title } = post.data;
-        return (
-          <li>
-            <a href={`/blog/${post.id}`}>{title}</a>
-          </li>
-        );
-      })
-    }
-  </ul>
+  <section>
+    <PostGrid posts={posts} />
+  </section>
 </BaseLayout>

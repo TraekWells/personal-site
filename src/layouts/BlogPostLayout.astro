@@ -21,11 +21,11 @@ const date = formatDate(createdAt);
 const tag = tags && tags[0];
 ---
 
-<BaseLayout>
+<BaseLayout title={`${title} • Traek Wells`} description={summary}>
   <div class="post">
     <section>
       <a href="/blog" class="post-back">
-        <ArrowLeft size={16} /> All writing
+        <ArrowLeft size={16} aria-hidden="true" /> All writing
       </a>
     </section>
     <section>

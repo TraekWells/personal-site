@@ -10,7 +10,10 @@ import IntroHero from "../components/IntroHero.astro";
 const posts = await getPublished("blog");
 ---
 
-<BaseLayout>
+<BaseLayout
+  title="Traek Wells"
+  description="Learn front-end development and UI design with Traek Wells: tutorials, free resources, and deep dives from the creator of The UI Layer on YouTube."
+>
   <IntroHero />
   <section>
     <SectionHeader

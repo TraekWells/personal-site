@@ -80,7 +80,7 @@ import Button from "./Button.astro";
   }
 
   .intro-hero__content {
-    /* background-color: hsl(var(--color-primary-lighter)); */
+    position: relative;
     background-color: hsl(var(--color-primary-lightest));
     padding: var(--space-lg);
     display: flex;
@@ -93,6 +93,18 @@ import Button from "./Button.astro";
 
     small {
       font-family: var(--font-family-mono);
+    }
+
+    &::after {
+      content: "";
+      z-index: -1;
+      top: -4rem;
+      right: -4rem;
+      position: absolute;
+      height: 13rem;
+      width: 13rem;
+      border: 1.25rem solid hsl(var(--color-primary-lighter));
+      border-radius: 50%;
     }
   }
 
@@ -117,7 +129,7 @@ import Button from "./Button.astro";
 
     p {
       font-family: var(--font-family-mono);
-      font-size: var(--font-size-sm);
+      font-size: var(--font-size-xs);
       color: hsl(var(--color-text-light));
     }
   }

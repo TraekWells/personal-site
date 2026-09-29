@@ -1,6 +1,5 @@
 ---
 import { MenuIcon, Sun, MoveRightIcon } from "@lucide/astro";
-import VisuallyHidden from "./VisuallyHidden.astro";
 
 const navItems = [
   {
@@ -44,15 +43,9 @@ const navItems = [
         })
       }
     </ul>
-    <div class="navbar__actions">
-      <!-- Add SR only text here -->
-      <button
-        ><Sun size={16} /><VisuallyHidden>Toggle theme</VisuallyHidden></button
-      >
-      <button data-mobile-toggle
-        ><MenuIcon size={16} /> <span data-mobile-label>Menu</span></button
-      >
-    </div>
+    <button data-mobile-toggle
+      ><MenuIcon size={16} /> <span data-mobile-label>Menu</span></button
+    >
   </div>
 </nav>
 
@@ -75,7 +68,7 @@ const navItems = [
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-block: var(--space-sm);
+    padding-block: var(--space-xs);
   }
 
   .navbar__logo {
@@ -165,31 +158,26 @@ const navItems = [
     }
   }
 
-  .navbar__actions {
-    display: flex;
+  button {
+    border-radius: var(--border-radius-sm);
+    border: var(--thin-border);
+    background-color: hsla(var(--color-base-light), 0.2);
+    display: inline-flex;
+    padding: var(--space-2xs);
+    align-items: center;
     gap: var(--space-3xs);
+    font-family: var(--font-family-mono);
+    color: inherit;
 
-    button {
-      border-radius: var(--border-radius-sm);
-      border: var(--thin-border);
-      background-color: hsla(var(--color-base-light), 0.2);
-      display: inline-flex;
-      padding: var(--space-2xs);
-      align-items: center;
-      gap: var(--space-3xs);
-      font-family: var(--font-family-mono);
-      color: inherit;
-
-      &:hover {
-        cursor: pointer;
-      }
+    &:hover {
+      cursor: pointer;
     }
+  }
 
-    [data-mobile-toggle] {
-      font-size: var(--font-size-xs);
-      @media (width >= 650px) {
-        display: none;
-      }
+  [data-mobile-toggle] {
+    font-size: var(--font-size-xs);
+    @media (width >= 650px) {
+      display: none;
     }
   }
 </style>
