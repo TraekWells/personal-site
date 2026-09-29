@@ -1,0 +1,77 @@
+---
+import { ArrowRight, MapPin } from "@lucide/astro";
+import Button from "./Button.astro";
+---
+
+<div class="intro-hero">
+  <div class="intro-hero__portrait"></div>
+  <div class="intro-hero__content">
+    <small>Hello, I'm Traek</small>
+    <h1 class="heading-2">Designed with intent. Built with care.</h1>
+    <p>
+      I build fast, accessible interfaces with clean CSS, and I care about the
+      small details most people miss. Lately I've been focused on design systems
+      and UI components for product teams.
+    </p>
+    <div class="intro-hero__content-actions">
+      <Button>See my work <ArrowRight size={16} /></Button>
+      <span class="location">
+        <MapPin size={16} /> Saint Paul, MN
+      </span>
+    </div>
+    <div class="intro-hero__extra">
+      <p>
+        Cool interfaces, solid systems, and those little things that make
+        products feel easy to use.
+      </p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .intro-hero {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--space-sm);
+  }
+
+  .intro-hero__content,
+  .intro-hero__portrait {
+    border-radius: var(--border-radius-md);
+    border: var(--thin-border);
+    background-color: hsl(var(--color-primary-lightest));
+  }
+
+  .intro-hero__content {
+    padding: var(--space-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .intro-hero__content-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2xs);
+  }
+
+  .location {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3xs);
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+  }
+
+  .intro-hero__extra {
+    border-top: var(--thin-border);
+    padding-block-start: var(--space-sm);
+
+    p {
+      font-family: var(--font-family-mono);
+      font-size: var(--font-size-sm);
+      color: var(--color-text);
+    }
+  }
+</style>

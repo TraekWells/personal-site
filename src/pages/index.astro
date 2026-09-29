@@ -5,6 +5,7 @@ import SectionHeader from "../components/SectionHeader.astro";
 import ArticleList from "../components/ArticleList.astro";
 import ArticleListItem from "../components/ArticleListItem.astro";
 import { getPublished } from "../helpers/helpers";
+import IntroHero from "../components/IntroHero.astro";
 
 const posts = await getPublished("blog");
 ---
@@ -14,13 +15,7 @@ const posts = await getPublished("blog");
     >I'm re-building this site ad-hoc and pushing whatever changes I have some.
     You've been warned.</small
   >
-  <h1>Designed with intent. Built with care.</h1>
-  <p class="lead">
-    I build fast, accessible interfaces with clean CSS, and I care about the
-    small details most people miss. Lately I've been focused on design systems
-    and UI components for product teams.
-  </p>
-
+  <IntroHero />
   <section>
     <SectionHeader
       as="h2"
