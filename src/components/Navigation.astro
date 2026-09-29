@@ -1,5 +1,4 @@
 ---
-import image from "../images/navbar-avatar.webp";
 import { MenuIcon, Sun, MoveRightIcon } from "@lucide/astro";
 import VisuallyHidden from "./VisuallyHidden.astro";
 
@@ -26,11 +25,6 @@ const navItems = [
 <nav class="navbar">
   <div class="navbar__inner container">
     <a class="navbar__logo" href="/">
-      <img
-        class="navbar__avatar"
-        src={image.src}
-        alt="Headshot of Traek Wells"
-      />
       <div class="navbar__title">
         <p>Traek Wells</p>
         <span>Front-end developer</span>
@@ -101,17 +95,6 @@ const navItems = [
     span {
       font-size: var(--font-size-xs);
       opacity: 0.9;
-    }
-  }
-
-  .navbar__avatar {
-    display: none;
-
-    @media (width >= 650px) {
-      display: block;
-      aspect-ratio: 1;
-      height: 2.5rem;
-      border-radius: 50%;
     }
   }
 

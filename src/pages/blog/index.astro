@@ -9,7 +9,12 @@ const posts = await getPublished("blog");
 
 <BaseLayout>
   <section>
-    <SectionHeader as="h1" eyebrow="Writing" header="Front-end notes">
+    <SectionHeader
+      as="h1"
+      styleAs="h2"
+      eyebrow="Writing"
+      header="Front-end notes"
+    >
       <PencilLine size={16} slot="icon" />
       <p class="lead" slot="intro">
         Long-form and short thoughts on CSS, layout systems, accessibility, and

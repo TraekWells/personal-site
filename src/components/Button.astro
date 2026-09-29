@@ -14,8 +14,19 @@ const { variant, class: className, type = "button", ...rest } = Astro.props;
 
 <style>
   button {
+    color: hsl(var(--color-base-white));
     display: inline-flex;
     align-items: center;
     gap: var(--space-3xs);
+    border-radius: var(--border-radius-sm);
+    border: 1px solid transparent;
+    padding: var(--space-2xs) var(--space-xs);
+    background-color: hsl(var(--color-primary-dark));
+    transition: var(--transition-slow);
+    cursor: pointer;
+
+    &:hover {
+      background-color: hsl(var(--color-primary-darker));
+    }
   }
 </style>

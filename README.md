@@ -4,6 +4,7 @@
 
 - [ ] Add page level SEO
 - [ ] Add quote fetch https://zenquotes.io/api/random
+- [ ] Tighten up gap on SectionHeader
 
 ## Questions
 

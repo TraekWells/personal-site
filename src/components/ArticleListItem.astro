@@ -40,7 +40,6 @@ const readingTime = getReadingTime(post.body ?? "");
   }
 
   .article-list-item__link {
-    /* background-color: hsl(var(--color-primary-lightest)); */
     background-color: hsl(var(--color-base-lightest));
     display: block;
     color: hsl(var(--color-base-text));
@@ -48,6 +47,7 @@ const readingTime = getReadingTime(post.body ?? "");
     padding: var(--space-xs);
     font-weight: var(--font-weight-bold);
     &:hover {
+      background-color: hsl(var(--color-base-lighter));
       .article-list-item__icon {
         transform: translate(3.5px, -3.5px);
       }

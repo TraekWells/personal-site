@@ -1,10 +1,14 @@
 ---
 import { ArrowRight, MapPin } from "@lucide/astro";
+import { Image } from "astro:assets";
+import heroImage from "../images/hero-image.webp";
 import Button from "./Button.astro";
 ---
 
 <div class="intro-hero">
-  <div class="intro-hero__portrait"></div>
+  <div class="intro-hero__portrait">
+    <Image src={heroImage} alt="My mugshot" />
+  </div>
   <div class="intro-hero__content">
     <small>Hello, I'm Traek</small>
     <h1 class="heading-2">Designed with intent. Built with care.</h1>
@@ -31,28 +35,71 @@ import Button from "./Button.astro";
 <style>
   .intro-hero {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
     gap: var(--space-sm);
+    margin-block-start: var(--space-xl);
+
+    @media (width >= 700px) {
+      grid-template-columns: 1fr 2fr;
+    }
   }
 
   .intro-hero__content,
   .intro-hero__portrait {
     border-radius: var(--border-radius-md);
     border: var(--thin-border);
-    background-color: hsl(var(--color-primary-lightest));
+    overflow: hidden;
+  }
+
+  .intro-hero__portrait {
+    position: relative;
+    isolation: isolate;
+    display: none;
+
+    @media (width >= 700px) {
+      display: unset;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      height: 100%;
+      filter: grayscale(1) brightness(1.1);
+    }
+
+    &::after {
+      content: "";
+      inset: 0;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: hsl(var(--color-primary-lighter));
+      mix-blend-mode: multiply;
+    }
   }
 
   .intro-hero__content {
+    /* background-color: hsl(var(--color-primary-lighter)); */
+    background-color: hsl(var(--color-primary-lightest));
     padding: var(--space-lg);
     display: flex;
     flex-direction: column;
     gap: var(--space-sm);
+
+    @media (width >= 700px) {
+      background-color: unset;
+    }
+
+    small {
+      font-family: var(--font-family-mono);
+    }
   }
 
   .intro-hero__content-actions {
     display: flex;
     align-items: center;
-    gap: var(--space-2xs);
+    gap: var(--space-sm);
   }
 
   .location {
@@ -61,7 +108,7 @@ import Button from "./Button.astro";
     gap: var(--space-3xs);
     font-family: var(--font-family-mono);
     font-size: var(--font-size-sm);
-    color: var(--color-text);
+    color: hsl(var(--color-text-light));
   }
 
   .intro-hero__extra {
@@ -71,7 +118,7 @@ import Button from "./Button.astro";
     p {
       font-family: var(--font-family-mono);
       font-size: var(--font-size-sm);
-      color: var(--color-text);
+      color: hsl(var(--color-text-light));
     }
   }
 </style>
