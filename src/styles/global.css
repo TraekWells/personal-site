@@ -307,7 +307,7 @@
   }
 
   section {
-    margin-block-start: var(--space-2xl);
+    margin-block-start: var(--space-xl);
   }
 
   .flow * > * {

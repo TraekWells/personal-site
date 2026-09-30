@@ -3,16 +3,39 @@ const currentYear = new Date().getFullYear();
 import { Copyright } from "@lucide/astro";
 ---
 
-<footer>
+<footer class="footer">
   <div class="container">
-    <Copyright />{currentYear} Traek Wells
+    <div class="footer__inner">
+      <div class="footer__copyright">
+        <Copyright size={16} />{currentYear} Traek Wells
+      </div>
+      <p class="footer__extra">Built with Astro and loved every second of it</p>
+    </div>
   </div>
 </footer>
 
 <style>
-  footer {
+  .footer {
     padding-block: var(--space-xs);
     border-top: var(--thin-border);
     margin-block-start: var(--space-2xl);
+  }
+
+  .footer__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer__copyright,
+  .footer__extra {
+    font-size: var(--font-size-sm);
+    font-family: var(--font-family-mono);
+  }
+
+  .footer__copyright {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3xs);
   }
 </style>
