@@ -1,0 +1,66 @@
+---
+type Props = {
+  title: string;
+  url: string;
+  eyebrow: string;
+  index: string;
+};
+
+const { title, url, eyebrow, index } = Astro.props;
+---
+
+<article class="section-card">
+  <span class="section-card__index" aria-hidden="true">{index}</span>
+  <p class="section-card__meta">{eyebrow}</p>
+  <h3 class="section-card__title">
+    <a href={url} class="section-card__link">
+      {title}
+    </a>
+  </h3>
+</article>
+
+<style>
+  .section-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    border: var(--thin-border);
+    border-radius: var(--border-radius-md);
+    padding-block: var(--space-xs);
+    padding-inline: var(--space-sm);
+    overflow: hidden;
+
+    &:hover {
+      border-color: hsl(var(--color-primary-light));
+    }
+  }
+  .section-card__index {
+    position: absolute;
+    font-weight: var(--font-weight-boldest);
+    color: hsla(var(--color-primary-lighter), 0.2);
+    font-size: var(--font-size-4xl);
+    right: -0.5rem;
+    top: -1rem;
+  }
+
+  .section-card__meta {
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-xs);
+    color: hsl(var(--color-text-light));
+  }
+
+  .section-card__title {
+    font-weight: var(--font-weight-bold);
+  }
+
+  .section-card__link {
+    color: hsl(var(--color-text));
+    font-size: var(--font-size-md);
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+    }
+  }
+</style>

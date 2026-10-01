@@ -6,6 +6,35 @@ import ArticleList from "../components/ArticleList.astro";
 import ArticleListItem from "../components/ArticleListItem.astro";
 import { getPublished } from "../helpers/helpers";
 import IntroHero from "../components/IntroHero.astro";
+import SectionCard from "../components/SectionCard.astro";
+
+const exploreLinks = [
+  {
+    title: "Bookshelf",
+    url: "/bookshelf",
+    eyebrow: "Sometimes I read",
+  },
+  {
+    title: "Impossible List",
+    url: "/journal/impossible-list",
+    eyebrow: "Get after it",
+  },
+  {
+    title: "Now",
+    url: "/now",
+    eyebrow: "What am I doing?",
+  },
+  {
+    title: "Today I learned",
+    url: "/today-i-learned",
+    eyebrow: "Stay sharp",
+  },
+  {
+    title: "Journal",
+    url: "/journal",
+    eyebrow: "Stay sharp",
+  },
+];
 
 const posts = await getPublished("blog");
 ---
@@ -43,6 +72,27 @@ const posts = await getPublished("blog");
     >
       <BookSearch size={16} slot="icon" />
     </SectionHeader>
-    <p>Coming soon</p>
+    <div class="section-card-grid">
+      {
+        exploreLinks.map((link, index) => {
+          return (
+            <SectionCard
+              title={link.title}
+              url={link.url}
+              eyebrow={link.eyebrow}
+              index={`0${index + 1}`}
+            />
+          );
+        })
+      }
+    </div>
   </section>
 </BaseLayout>
+
+<style>
+  .section-card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xs);
+  }
+</style>
