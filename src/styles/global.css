@@ -332,6 +332,10 @@
       }
     }
 
+    p {
+      line-height: 1.7;
+    }
+
     ul,
     ol {
       padding-inline-start: var(--space-lg);

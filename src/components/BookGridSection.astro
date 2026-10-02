@@ -1,0 +1,37 @@
+---
+import type { CollectionEntry } from "astro:content";
+import BookGrid from "./BookGrid.astro";
+
+type Props = {
+  title: string;
+  books: CollectionEntry<"books">[];
+};
+
+const { title, books } = Astro.props;
+---
+
+<section>
+  <div class="book-grid-section__header">
+    <h3 class="heading-4">{title}</h3>
+    <p class="book-grid-section__meta">
+      {books.length}{" "}
+      {books.length > 1 ? "books" : "book"}
+    </p>
+  </div>
+  <BookGrid books={books} />
+</section>
+
+<style>
+  .book-grid-section__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: var(--thin-border);
+  }
+
+  .book-grid-section__meta {
+    font-size: var(--font-size-xs);
+    font-family: var(--font-family-mono);
+    color: hsl(var(--color-text-light));
+  }
+</style>

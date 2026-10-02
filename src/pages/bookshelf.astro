@@ -4,13 +4,14 @@ import PageHero from "../components/PageHero.astro";
 import Pill from "../components/Pill.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
-import BookGrid from "../components/BookGrid.astro";
+import BookGridSection from "../components/BookGridSection.astro";
 
 const books = await getCollection("books");
 
 const currentlyReading = books.filter((book) => {
   return book.data.currentlyReading;
 });
+const booksDnfed = books.filter((book) => book.data.didNotFinish);
 const finishedBooks = books.filter((book) => book.data.dateRead);
 const byYear = finishedBooks.reduce<Record<number, typeof finishedBooks>>(
   (acc, book) => {
@@ -45,20 +46,20 @@ const organizedBooks = Object.entries(byYear)
     <Book slot="icon" size={16} />
     <div class="pills" slot="meta">
       <Pill>{books.length} books read</Pill>
-      <Pill>test</Pill>
-      <Pill>test</Pill>
+      <Pill>DNFed {booksDnfed.length} books</Pill>
     </div>
   </PageHero>
-  <section>
-    <h2 class="heading-3">Currently Reading</h2>
-    <BookGrid books={currentlyReading} />
-  </section>
+  <BookGridSection title="Currently Reading" books={currentlyReading} />
   {
     organizedBooks.map(({ year, books }) => (
-      <section>
-        <h2 class="heading-3">{year}</h2>
-        <BookGrid books={books} />
-      </section>
+      <BookGridSection title={`${year}`} books={books} />
     ))
   }
 </BaseLayout>
+
+<style>
+  .pills {
+    display: flex;
+    gap: var(--space-3xs);
+  }
+</style>
