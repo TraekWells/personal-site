@@ -10,6 +10,7 @@
 - [ ] Add sitemap
 - [ ] Figure out a way to re-download all of the book cover images
 - [ ] Update favicon
+- [ ] Make book rating respect decimal amounts. Currently rounds down.
 
 ## Questions
 

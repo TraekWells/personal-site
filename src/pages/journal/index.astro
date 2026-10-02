@@ -1,0 +1,34 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import SectionHeader from "../../components/SectionHeader.astro";
+import { NotebookPen } from "@lucide/astro/icons/index";
+import { getPublished } from "../../helpers/helpers";
+import PostGrid from "../../components/PostGrid.astro";
+
+const posts = await getPublished("journal");
+---
+
+<BaseLayout
+  metaTitle="Journal entries"
+  metaDescription="General thoughts, reflection and anything else that doesn't fit into a normal post format."
+>
+  <section>
+    <SectionHeader
+      as="h1"
+      styleAs="h2"
+      eyebrow="Other thoughts"
+      header="Journal"
+    >
+      <NotebookPen size={16} slot="icon" />
+      <p class="lead" slot="intro">
+        General thoughts, reflection and anything else that doesn't fit into a <em
+          >normal</em
+        > post format.
+      </p>
+      <small slot="meta">{posts.length} posts</small>
+    </SectionHeader>
+  </section>
+  <section>
+    <PostGrid posts={posts} />
+  </section>
+</BaseLayout>

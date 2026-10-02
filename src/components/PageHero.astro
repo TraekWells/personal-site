@@ -1,0 +1,47 @@
+---
+import Eyebrow from "./Eyebrow.astro";
+
+type Props = {
+  eyebrow: string;
+  title: string;
+  description: string;
+};
+
+const { eyebrow, title, description } = Astro.props;
+---
+
+<div class="page-hero">
+  <Eyebrow><slot name="icon" />{eyebrow}</Eyebrow>
+  <h1 class="heading-2">{title}</h1>
+  <p class="lead">{description}</p>
+  <slot name="meta" />
+</div>
+
+<style>
+  .page-hero {
+    position: relative;
+    border: var(--thin-border);
+    background-color: hsl(var(--color-base-lightest));
+    border-radius: var(--border-radius-md);
+    padding: var(--space-lg);
+    margin-block-start: var(--space-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    overflow: hidden;
+    isolation: isolate;
+
+    &::after {
+      position: absolute;
+      content: "";
+      z-index: -1;
+      top: -4rem;
+      right: -4rem;
+      height: 13rem;
+      width: 13rem;
+      border: 1.25rem solid hsl(var(--color-primary-lighter));
+      border-radius: 50%;
+      pointer-events: none;
+    }
+  }
+</style>

@@ -1,0 +1,73 @@
+---
+import type { CollectionEntry } from "astro:content";
+import BookRating from "./BookRating.astro";
+
+type BookTypes = CollectionEntry<"books">["data"];
+
+type Props = {
+  book: Pick<BookTypes, "title" | "author" | "rating" | "bookCover">;
+};
+
+const { book } = Astro.props;
+---
+
+<article class="book-card">
+  <div class="book-card__image-wrapper">
+    <img
+      class="book-card__image"
+      src={book.bookCover}
+      alt={`Book cover of ${book.title}`}
+    />
+  </div>
+  <div class="book-card__content">
+    {book.rating !== 0 && <BookRating rating={book.rating} />}
+    <div class="book-card__text">
+      <h3 class="book-card__title heading-5">{book.title}</h3>
+      <p class="book-card__author">{book.author}</p>
+    </div>
+  </div>
+</article>
+
+<style>
+  .book-card {
+    display: flex;
+    gap: var(--space-xs);
+    background-color: hsl(var(--color-base-lightest));
+    border: var(--thin-border);
+    border-radius: var(--border-radius-sm);
+    padding: var(--space-sm);
+    overflow: hidden;
+
+    &:hover {
+      .book-card__image {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .book-card__image-wrapper {
+    height: 13rem;
+    width: 9rem;
+    overflow: hidden;
+    border-radius: var(--border-radius-sm);
+  }
+
+  .book-card__image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+  }
+
+  .book-card__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .book-card__author {
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-sm);
+    color: hsl(var(--color-primary-darker));
+  }
+</style>

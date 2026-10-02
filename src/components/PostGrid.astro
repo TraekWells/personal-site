@@ -4,10 +4,12 @@ import PostCard from "./PostCard.astro";
 import { formatDate, getReadingTime } from "../helpers/helpers";
 
 type Props = {
-  posts: CollectionEntry<"blog">[];
+  posts: CollectionEntry<"blog" | "journal">[];
 };
 
 const { posts } = Astro.props;
+// I'm making the assumption here that the results will all share the same collection
+const postType = posts[0].collection;
 ---
 
 <ul class="post-grid">
@@ -19,7 +21,7 @@ const { posts } = Astro.props;
       return (
         <li>
           <PostCard
-            url={`/blog/${post.id}`}
+            url={`/${postType}/${post.id}`}
             title={title}
             tag={tags ? tags[0] : ""}
             summary={summary}

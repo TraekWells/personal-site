@@ -3,7 +3,6 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import SectionHeader from "../../components/SectionHeader.astro";
 import { PencilLine } from "@lucide/astro/icons/index";
 import { getPublished } from "../../helpers/helpers";
-import PostCard from "../../components/PostCard.astro";
 import PostGrid from "../../components/PostGrid.astro";
 
 const posts = await getPublished("blog");

@@ -8,11 +8,11 @@ import PostHeader from "../components/PostHeader.astro";
 import { formatDate } from "../helpers/helpers";
 import ReadNext from "../components/ReadNext.astro";
 
-type Props = CollectionEntry<"blog">["data"] & {
+type Props = CollectionEntry<"blog" | "journal">["data"] & {
   id: string;
   headings: MarkdownHeading[];
   readingTime: string;
-  nextPost: CollectionEntry<"blog">;
+  nextPost: CollectionEntry<"blog" | "journal">;
 };
 
 const { id, title, summary, tags, createdAt, headings, readingTime, nextPost } =
@@ -21,7 +21,7 @@ const date = formatDate(createdAt);
 const tag = tags && tags[0];
 ---
 
-<BaseLayout title={`${title} • Traek Wells`} description={summary}>
+<BaseLayout metaTitle={`${title} • Traek Wells`} metaDescription={summary}>
   <div class="post">
     <section>
       <a href="/blog" class="post-back">

@@ -1,0 +1,64 @@
+---
+import { Book } from "@lucide/astro";
+import PageHero from "../components/PageHero.astro";
+import Pill from "../components/Pill.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import BookGrid from "../components/BookGrid.astro";
+
+const books = await getCollection("books");
+
+const currentlyReading = books.filter((book) => {
+  return book.data.currentlyReading;
+});
+const finishedBooks = books.filter((book) => book.data.dateRead);
+const byYear = finishedBooks.reduce<Record<number, typeof finishedBooks>>(
+  (acc, book) => {
+    const year = book.data.dateRead!.getFullYear();
+    (acc[year] ??= []).push(book);
+    return acc;
+  },
+  {},
+);
+
+const organizedBooks = Object.entries(byYear)
+  .map(([year, yearBooks]) => {
+    return {
+      year: Number(year),
+      books: yearBooks.sort(
+        (a, b) => b.data.dateRead!.getTime() - a.data.dateRead!.getTime(),
+      ),
+    };
+  })
+  .sort((a, b) => b.year - a.year);
+---
+
+<BaseLayout
+  metaTitle="Bookshelf"
+  metaDescription="A digital shelf of what I've been reading"
+>
+  <PageHero
+    eyebrow="bookshelf"
+    title="A digital shelf of what I've been reading"
+    description="test"
+  >
+    <Book slot="icon" size={16} />
+    <div class="pills" slot="meta">
+      <Pill>{books.length} books read</Pill>
+      <Pill>test</Pill>
+      <Pill>test</Pill>
+    </div>
+  </PageHero>
+  <section>
+    <h2 class="heading-3">Currently Reading</h2>
+    <BookGrid books={currentlyReading} />
+  </section>
+  {
+    organizedBooks.map(({ year, books }) => (
+      <section>
+        <h2 class="heading-3">{year}</h2>
+        <BookGrid books={books} />
+      </section>
+    ))
+  }
+</BaseLayout>

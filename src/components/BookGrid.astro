@@ -1,0 +1,32 @@
+---
+import type { CollectionEntry } from "astro:content";
+import BookCard from "./BookCard.astro";
+
+type Props = {
+  books: CollectionEntry<"books">[];
+};
+
+const { books } = Astro.props;
+---
+
+<ul class="book-grid">
+  {
+    books.map((book) => {
+      return (
+        <li class="book-grid__item">
+          <BookCard book={book.data} />
+        </li>
+      );
+    })
+  }
+</ul>
+
+<style>
+  .book-grid {
+    padding: 0;
+    display: grid;
+    gap: var(--space-xs);
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+  }
+</style>

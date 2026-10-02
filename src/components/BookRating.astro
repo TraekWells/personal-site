@@ -1,0 +1,33 @@
+---
+import { Star } from "@lucide/astro";
+
+type Props = {
+  rating: number;
+};
+
+const { rating } = Astro.props;
+---
+
+<span class="book-rating">
+  {
+    Array.from({ length: 5 }).map((_, index) => {
+      const toFill = rating >= index + 1;
+      return (
+        <Star
+          stroke={
+            toFill ? "hsl(var(--color-primary))" : "hsl(var(--color-base))"
+          }
+          fill={toFill ? "hsl(var(--color-primary))" : "transparent"}
+          size={16}
+        />
+      );
+    })
+  }
+</span>
+
+<style>
+  .book-rating {
+    display: flex;
+    gap: var(--space-3xs);
+  }
+</style>

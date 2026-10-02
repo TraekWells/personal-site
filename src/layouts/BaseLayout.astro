@@ -5,11 +5,11 @@ import Footer from "../components/Footer.astro";
 import { Font } from "astro:assets";
 
 type Props = {
-  title: string;
-  description: string;
+  metaTitle: string;
+  metaDescription: string;
 };
 
-const { title, description } = Astro.props;
+const { metaTitle, metaDescription } = Astro.props;
 ---
 
 <!doctype html>
@@ -20,8 +20,8 @@ const { title, description } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
-    <meta name="description" content={description} />
+    <title>{metaTitle}</title>
+    <meta name="description" content={metaDescription} />
     <Font cssVariable="--font-family-figtree" />
     <Font cssVariable="--font-family-mono" />
   </head><body>

@@ -5,7 +5,7 @@ import ArticleListItem from "./ArticleListItem.astro";
 import Eyebrow from "./Eyebrow.astro";
 
 type Props = {
-  post: CollectionEntry<"blog">;
+  post: CollectionEntry<"blog" | "journal">;
 };
 
 const { post } = Astro.props;

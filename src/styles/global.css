@@ -196,6 +196,9 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     background-color: hsla(var(--color-secondary-lightest), 0.5);
     font-family:
@@ -310,6 +313,7 @@
       letter-spacing: var(--heading-3-letter-spacing);
       margin-block-start: var(--space-sm);
       color: hsl(var(--color-primary-darker));
+      scroll-margin-top: 5rem;
     }
     h3 {
       font-size: var(--font-size-lg);
