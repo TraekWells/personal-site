@@ -82,13 +82,14 @@ import Button from "./Button.astro";
   .intro-hero__content {
     position: relative;
     background-color: hsl(var(--color-primary-lightest));
-    padding: var(--space-lg);
+    padding: var(--space-md);
     display: flex;
     flex-direction: column;
     gap: var(--space-sm);
 
     @media (width >= 700px) {
       background-color: unset;
+      padding: var(--space-lg);
     }
 
     small {
@@ -110,8 +111,14 @@ import Button from "./Button.astro";
 
   .intro-hero__content-actions {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: var(--space-sm);
+    flex-direction: column;
+
+    @media (width >= 700px) {
+      flex-direction: unset;
+      align-items: center;
+    }
   }
 
   .location {
@@ -119,7 +126,7 @@ import Button from "./Button.astro";
     align-items: center;
     gap: var(--space-3xs);
     font-family: var(--font-family-mono);
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-xs);
     color: hsl(var(--color-text-light));
   }
 

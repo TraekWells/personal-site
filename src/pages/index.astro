@@ -92,7 +92,19 @@ const posts = await getPublished("blog");
 <style>
   .section-card-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: var(--space-xs);
+
+    @media (width >= 650px) {
+      grid-template-columns: repeat(6, 1fr);
+
+      > :global(*) {
+        grid-column: span 2;
+      }
+
+      > :global(:nth-child(-n + 2)) {
+        grid-column: span 3;
+      }
+    }
   }
 </style>
