@@ -271,28 +271,6 @@
     max-width: var(--max-width-prose);
     font-size: var(--font-size-md);
   }
-
-  .post-wrapper {
-    h1 {
-      font-size: var(--font-size-2xl);
-      line-height: var(--heading-2-line-height);
-      font-weight: var(--heading-2-font-weight);
-      letter-spacing: var(--heading-2-letter-spacing);
-    }
-    h2 {
-      font-size: var(--font-size-xl);
-      line-height: var(--heading-3-line-height);
-      font-weight: var(--heading-3-font-weight);
-      letter-spacing: var(--heading-3-letter-spacing);
-      margin-block-start: var(--space-sm);
-    }
-    h3 {
-      font-size: var(--font-size-lg);
-      line-height: var(--heading-4-line-height);
-      font-weight: var(--heading-4-font-weight);
-      letter-spacing: var(--heading-4-letter-spacing);
-    }
-  }
 }
 
 @layer layout {
@@ -310,8 +288,65 @@
     margin-block-start: var(--space-xl);
   }
 
-  .flow * > * {
+  .flow * + * {
     margin-block-start: 1rem;
+  }
+}
+
+@layer prose {
+  .prose {
+    padding-block-start: var(--space-md);
+    h1 {
+      font-size: var(--font-size-2xl);
+      line-height: var(--heading-2-line-height);
+      font-weight: var(--heading-2-font-weight);
+      letter-spacing: var(--heading-2-letter-spacing);
+    }
+    h2 {
+      font-size: var(--font-size-xl);
+      line-height: var(--heading-3-line-height);
+      font-weight: var(--heading-3-font-weight);
+      letter-spacing: var(--heading-3-letter-spacing);
+      margin-block-start: var(--space-sm);
+      color: hsl(var(--color-primary-darker));
+    }
+    h3 {
+      font-size: var(--font-size-lg);
+      line-height: var(--heading-4-line-height);
+      font-weight: var(--heading-4-font-weight);
+      letter-spacing: var(--heading-4-letter-spacing);
+    }
+
+    a {
+      margin: unset;
+      box-shadow: inset 0 -2px 0 hsl(var(--color-primary-dark));
+
+      &:hover {
+        color: hsl(var(--color-primary-darker));
+        box-shadow: inset 0 -2px 0 hsl(var(--color-primary-darker));
+      }
+    }
+
+    ul,
+    ol {
+      padding-inline-start: var(--space-lg);
+      font-size: inherit;
+      font-size: var(--font-size-base);
+    }
+
+    li {
+      margin-block-start: var(--space-2xs);
+      &::marker {
+        color: hsl(var(--color-primary-darkest));
+      }
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: var(--border-radius-md);
+    }
   }
 }
 

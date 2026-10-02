@@ -23,8 +23,15 @@ import { Copyright } from "@lucide/astro";
 
   .footer__inner {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    gap: var(--space-sm);
+    text-align: center;
+
+    @media (width >= 650px) {
+      flex-direction: unset;
+    }
   }
 
   .footer__copyright,
