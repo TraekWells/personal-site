@@ -1,6 +1,8 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import BookRating from "./BookRating.astro";
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
 
 type BookTypes = CollectionEntry<"books">["data"];
 
@@ -9,15 +11,29 @@ type Props = {
 };
 
 const { book } = Astro.props;
+
+const covers = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/images/bookshelf/*.{jpg,jpeg,png,webp}",
+  { eager: true },
+);
+
+// Frontmatter paths look like "../../images/bookshelf/x.jpg"; resolve to a glob key.
+const cover = covers[book.bookCover.replace(/^(\.\.\/)+/, "/src/")]?.default;
 ---
 
 <article class="book-card">
   <div class="book-card__image-wrapper">
-    <img
-      class="book-card__image"
-      src={book.bookCover}
-      alt={`Book cover of ${book.title}`}
-    />
+    {
+      cover && (
+        <Image
+          class="book-card__image"
+          src={cover}
+          alt={`Book cover of ${book.title}`}
+          width={700}
+          height={500}
+        />
+      )
+    }
   </div>
   <div class="book-card__content">
     {book.rating !== 0 && <BookRating rating={book.rating} />}
