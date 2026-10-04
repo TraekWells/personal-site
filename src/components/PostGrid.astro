@@ -16,14 +16,17 @@ const postType = posts[0].collection;
   {
     posts.map((post) => {
       const { title, summary, tags } = post.data;
+      const hasTags = tags && tags.length > 0;
+      console.log(hasTags);
       const readTime = getReadingTime(post.body ?? "");
       const date = formatDate(post.data.createdAt);
       return (
+        // There's probably a better way to get tags from posts
         <li>
           <PostCard
             url={`/${postType}/${post.id}`}
             title={title}
-            tag={tags ? tags[0] : ""}
+            tag={hasTags ? tags[0] : ""}
             summary={summary}
             date={date}
             readTime={readTime}

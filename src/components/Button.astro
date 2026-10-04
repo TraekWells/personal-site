@@ -26,8 +26,16 @@ const { variant, class: className, type = "button", ...rest } = Astro.props;
     cursor: pointer;
     flex-shrink: 0;
 
+    svg {
+      transition: var(--transition-slow);
+    }
+
     &:hover {
       background-color: hsl(var(--color-primary-darker));
+
+      svg {
+        transform: translateX(4px);
+      }
     }
   }
 </style>

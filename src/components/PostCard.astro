@@ -15,7 +15,13 @@ const { url, tag, title, summary, date, readTime } = Astro.props;
 ---
 
 <article class="post-card">
-  <div class="post-card__tag"><Pill>{tag}</Pill></div>
+  {
+    tag !== "" && (
+      <div class="post-card__tag">
+        <Pill>{tag}</Pill>
+      </div>
+    )
+  }
   <h3 class="post-card__title">
     <a href={url} class="post-card__link">
       {title}
