@@ -7,7 +7,10 @@ import type { ImageMetadata } from "astro";
 type BookTypes = CollectionEntry<"books">["data"];
 
 type Props = {
-  book: Pick<BookTypes, "title" | "author" | "rating" | "bookCover">;
+  book: Pick<
+    BookTypes,
+    "title" | "author" | "rating" | "bookCover" | "didNotFinish"
+  >;
 };
 
 const { book } = Astro.props;
@@ -22,6 +25,7 @@ const cover = covers[book.bookCover.replace(/^(\.\.\/)+/, "/src/")]?.default;
 ---
 
 <article class="book-card">
+  {book.didNotFinish && <span class="book-card__dnf">DNF</span>}
   <div class="book-card__image-wrapper">
     {
       cover && (
@@ -46,19 +50,34 @@ const cover = covers[book.bookCover.replace(/^(\.\.\/)+/, "/src/")]?.default;
 
 <style>
   .book-card {
+    position: relative;
     display: flex;
     gap: var(--space-xs);
     background-color: hsl(var(--color-base-lightest));
     border: var(--thin-border);
     border-radius: var(--border-radius-sm);
     padding: var(--space-sm);
-    overflow: hidden;
+    /* overflow: hidden; */
 
     &:hover {
       .book-card__image {
         transform: scale(1.1);
       }
     }
+  }
+
+  .book-card__dnf {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    background-color: hsl(var(--color-primary-dark));
+    color: hsl(var(--color-base-white));
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-xs);
+    padding-inline: var(--space-2xs);
+    padding-block: var(--space-3xs);
+    border-radius: var(--border-radius-sm);
+    transform: rotate(90deg);
   }
 
   .book-card__image-wrapper {

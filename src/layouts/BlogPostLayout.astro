@@ -21,7 +21,10 @@ const date = formatDate(createdAt);
 const tag = tags && tags[0];
 ---
 
-<BaseLayout metaTitle={`${title} • Traek Wells`} metaDescription={summary}>
+<BaseLayout
+  metaTitle={`${title} • Traek Wells`}
+  metaDescription={summary || `Read "${title}" by Traek Wells.`}
+>
   <div class="post">
     <section>
       <a href="/blog" class="post-back">

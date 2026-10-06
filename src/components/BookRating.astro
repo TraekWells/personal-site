@@ -8,26 +8,41 @@ type Props = {
 const { rating } = Astro.props;
 ---
 
-<span class="book-rating">
-  {
-    Array.from({ length: 5 }).map((_, index) => {
-      const toFill = rating >= index + 1;
-      return (
-        <Star
-          stroke={
-            toFill ? "hsl(var(--color-primary))" : "hsl(var(--color-base))"
-          }
-          fill={toFill ? "hsl(var(--color-primary))" : "transparent"}
-          size={16}
-        />
-      );
-    })
-  }
-</span>
+<div class="book-rating">
+  <span class="book-rating__stars">
+    {
+      Array.from({ length: 5 }).map((_, index) => {
+        const toFill = rating >= index + 1;
+        return (
+          <Star
+            stroke={
+              toFill ? "hsl(var(--color-primary))" : "hsl(var(--color-base))"
+            }
+            fill={toFill ? "hsl(var(--color-primary))" : "transparent"}
+            size={16}
+          />
+        );
+      })
+    }
+  </span>
+  <span class="book-rating__text">{rating}/5</span>
+</div>
 
 <style>
   .book-rating {
     display: flex;
+    gap: var(--space-2xs);
+  }
+
+  .book-rating__stars {
+    display: flex;
+    align-items: center;
     gap: var(--space-3xs);
+  }
+
+  .book-rating__text {
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-xs);
+    color: hsl(var(--color-text-light));
   }
 </style>

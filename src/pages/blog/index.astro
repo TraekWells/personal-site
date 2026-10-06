@@ -6,12 +6,16 @@ import { getPublished } from "../../helpers/helpers";
 import PostGrid from "../../components/PostGrid.astro";
 
 const posts = await getPublished("blog");
+const sortedPosts = posts.toSorted((a, b) => {
+  const aDate = a.data.createdAt.getTime();
+  const bDate = b.data.createdAt.getTime();
+  return bDate - aDate;
+});
 ---
 
 <BaseLayout
-  metaTitle="Writing"
-  metaDescription="Long-form and short thoughts on CSS, layout systems, accessibility, and
-        the small details that make interfaces feel considered."
+  metaTitle="Writing on CSS, Layout & Accessibility • Traek Wells"
+  metaDescription="Long-form and short thoughts on CSS, layout systems, accessibility and the small details that make interfaces feel considered."
 >
   <section>
     <SectionHeader
@@ -29,6 +33,6 @@ const posts = await getPublished("blog");
     </SectionHeader>
   </section>
   <section>
-    <PostGrid posts={posts} />
+    <PostGrid posts={sortedPosts} />
   </section>
 </BaseLayout>

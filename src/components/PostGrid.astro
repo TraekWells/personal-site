@@ -17,7 +17,6 @@ const postType = posts[0].collection;
     posts.map((post) => {
       const { title, summary, tags } = post.data;
       const hasTags = tags && tags.length > 0;
-      console.log(hasTags);
       const readTime = getReadingTime(post.body ?? "");
       const date = formatDate(post.data.createdAt);
       return (

@@ -22,6 +22,7 @@ export const getStaticPaths = async () => {
 };
 
 const { post, nextPost } = Astro.props;
+
 const { Content, headings } = await render(post);
 const readingTime = getReadingTime(post.body ?? "");
 ---

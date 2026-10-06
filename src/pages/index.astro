@@ -37,11 +37,16 @@ const exploreLinks = [
 ];
 
 const posts = await getPublished("blog");
+const sortedPosts = posts.toSorted((a, b) => {
+  const aDate = a.data.createdAt.getTime();
+  const bDate = b.data.createdAt.getTime();
+  return bDate - aDate;
+});
 ---
 
 <BaseLayout
   metaTitle="Traek Wells"
-  metaDescription="Learn front-end development and UI design with Traek Wells: tutorials, free resources, and deep dives from the creator of The UI Layer on YouTube."
+  metaDescription="Front-end development and UI design tutorials, free resources and deep dives from Traek Wells, creator of The UI Layer on YouTube."
 >
   <small
     >This website is a work in progress and I'm building it ad-hoc. Some stuff
@@ -60,7 +65,7 @@ const posts = await getPublished("blog");
     </SectionHeader>
     <ArticleList>
       {
-        posts.map((post) => {
+        sortedPosts.map((post) => {
           return <ArticleListItem post={post} />;
         })
       }

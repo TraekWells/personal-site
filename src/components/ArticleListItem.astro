@@ -1,25 +1,17 @@
 ---
 import { ArrowUpRight } from "@lucide/astro";
 import { formatDate, getReadingTime } from "../helpers/helpers";
-
-type PostTypes = {
-  id: string;
-  body?: string;
-  data: {
-    title: string;
-    createdAt: Date;
-  };
-};
+import type { CollectionEntry } from "astro:content";
 
 type Props = {
-  post: PostTypes;
+  post: CollectionEntry<"blog" | "journal">;
 };
 
 const { post } = Astro.props;
 
 const { title, createdAt } = post.data;
 const date = formatDate(createdAt);
-const url = `/blog/${post.id}`;
+const url = `/${post.collection}/${post.id}`;
 const readingTime = getReadingTime(post.body ?? "");
 ---
 

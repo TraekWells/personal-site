@@ -6,11 +6,16 @@ import { getPublished } from "../../helpers/helpers";
 import PostGrid from "../../components/PostGrid.astro";
 
 const posts = await getPublished("journal");
+const sortedPosts = posts.toSorted((a, b) => {
+  const aDate = a.data.createdAt.getTime();
+  const bDate = b.data.createdAt.getTime();
+  return bDate - aDate;
+});
 ---
 
 <BaseLayout
-  metaTitle="Journal entries"
-  metaDescription="General thoughts, reflection and anything else that doesn't fit into a normal post format."
+  metaTitle="Journal • Traek Wells"
+  metaDescription="Personal thoughts, reflections and yearly reviews. Everything that doesn't fit a regular post."
 >
   <section>
     <SectionHeader
@@ -29,6 +34,6 @@ const posts = await getPublished("journal");
     </SectionHeader>
   </section>
   <section>
-    <PostGrid posts={posts} />
+    <PostGrid posts={sortedPosts} />
   </section>
 </BaseLayout>
