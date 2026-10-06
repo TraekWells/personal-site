@@ -16,11 +16,11 @@ type Props = {
 const { book } = Astro.props;
 
 const covers = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/images/bookshelf/*.{jpg,jpeg,png,webp}",
+  "/src/assets/bookshelf/*.{jpg,jpeg,png,webp}",
   { eager: true },
 );
 
-// Frontmatter paths look like "../../images/bookshelf/x.jpg"; resolve to a glob key.
+// Frontmatter paths look like "../../assets/bookshelf/x.jpg"; resolve to a glob key.
 const cover = covers[book.bookCover.replace(/^(\.\.\/)+/, "/src/")]?.default;
 ---
 
