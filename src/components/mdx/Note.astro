@@ -1,4 +1,14 @@
-<div class="note">NOTE<slot /></div>
+---
+import { Info, MessageCircleWarning } from "@lucide/astro";
+
+type Props = {
+  type: "info" | "caution" | "success";
+};
+---
+
+<div class="note">
+  <Info size={16} /><MessageCircleWarning size={16} /><slot />
+</div>
 
 <style>
   .note {
