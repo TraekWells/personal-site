@@ -1,0 +1,30 @@
+---
+import { Lightbulb } from "@lucide/astro";
+import SectionHeader from "../../components/SectionHeader.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const posts = await getCollection("today-i-learned");
+console.log(posts);
+---
+
+<BaseLayout
+  metaTitle="Today I Learned • Traek Wells"
+  metaDescription="Short notes on things I've picked up while building for the web, from CSS and JavaScript to accessibility."
+>
+  <section>
+    <SectionHeader
+      as="h1"
+      styleAs="h2"
+      eyebrow="Tiny notes"
+      header="Today I Learned"
+    >
+      <Lightbulb size={16} slot="icon" />
+      <p class="lead" slot="intro">
+        A growing collection of things I've learned from CSS, JavaScript,
+        Accessibility, and anything else related to web development
+      </p>
+      <small slot="meta">{posts.length} articles</small>
+    </SectionHeader>
+  </section>
+</BaseLayout>

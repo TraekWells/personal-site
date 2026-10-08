@@ -77,7 +77,7 @@ const todayILearned = defineCollection({
   }),
   schema: z.object({
     title: z.string(),
-    tags: z.array(z.string()).optional(),
+    tags: z.array(z.string()),
     createdAt: z.coerce.date().optional(),
   }),
 });
