@@ -1,0 +1,52 @@
+---
+type Props = {
+  index: string;
+  title: string;
+  description: string;
+};
+
+const { index, title, description } = Astro.props;
+---
+
+<article class="principle-card">
+  <span class="principle-card__index" aria-hidden="true">{index}</span>
+  <div class="principle-card__content">
+    <h3 class="principle-card__title">{title}</h3>
+    <p class="principle-card__description">{description}</p>
+  </div>
+</article>
+
+<style>
+  .principle-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--space-lg);
+    border: var(--thin-border);
+    border-radius: var(--border-radius-md);
+    padding: var(--space-sm);
+    min-height: 10rem;
+  }
+
+  .principle-card__index {
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-sm);
+    color: hsl(var(--color-primary));
+  }
+
+  .principle-card__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2xs);
+  }
+
+  .principle-card__title {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-md);
+    color: hsl(var(--color-text));
+  }
+
+  .principle-card__description {
+    color: hsl(var(--color-text-light));
+  }
+</style>

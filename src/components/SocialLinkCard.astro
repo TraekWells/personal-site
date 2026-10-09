@@ -1,0 +1,98 @@
+---
+import { SquareArrowOutUpRight } from "@lucide/astro";
+
+type Props = {
+  platform: string;
+  handle: string;
+  url: string;
+};
+
+const { platform, handle, url } = Astro.props;
+---
+
+<article class="social-link-card">
+  <div class="social-link-card__top">
+    <span class="social-link-card__icon" aria-hidden="true">
+      <slot name="icon" />
+    </span>
+    <SquareArrowOutUpRight
+      size={16}
+      class="social-link-card__arrow"
+      aria-hidden="true"
+    />
+  </div>
+  <div class="social-link-card__content">
+    <h3 class="social-link-card__title">
+      <a
+        href={url}
+        class="social-link-card__link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {platform}
+      </a>
+    </h3>
+    <p class="social-link-card__handle">{handle}</p>
+  </div>
+</article>
+
+<style>
+  .social-link-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--space-lg);
+    position: relative;
+    border: var(--thin-border);
+    border-radius: var(--border-radius-md);
+    padding: var(--space-sm);
+    min-height: 10rem;
+    transition: all 300ms ease;
+
+    &:hover {
+      border-color: hsl(var(--color-primary-light));
+      background-color: hsl(var(--color-primary-lightest));
+
+      .social-link-card__arrow {
+        transform: translate(2px, -2px);
+      }
+    }
+  }
+
+  .social-link-card__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  .social-link-card__icon {
+    display: inline-flex;
+    color: hsl(var(--color-text));
+  }
+
+  .social-link-card__arrow {
+    color: hsl(var(--color-text-light));
+    transition: transform 300ms ease;
+  }
+
+  .social-link-card__title {
+    font-weight: var(--font-weight-bold);
+  }
+
+  .social-link-card__link {
+    color: hsl(var(--color-text));
+    font-size: var(--font-size-md);
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+    }
+  }
+
+  .social-link-card__handle {
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-xs);
+    color: hsl(var(--color-text-light));
+  }
+</style>

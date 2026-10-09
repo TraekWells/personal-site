@@ -1,6 +1,10 @@
 ---
+import { Code, Heart, MessageCircle } from "@lucide/astro";
 import AboutHero from "../components/AboutHero.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import PrincipleCard from "../components/PrincipleCard.astro";
+import SocialLinkCard from "../components/SocialLinkCard.astro";
 ---
 
 <BaseLayout
@@ -10,4 +14,67 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   <section>
     <AboutHero />
   </section>
+  <section>
+    <SectionHeader
+      as="h2"
+      styleAs="h4"
+      eyebrow="Personal Values"
+      header="How I work"
+    >
+      <Heart size={16} slot="icon" />
+      <p slot="action" class="meta">A few things I believe</p>
+    </SectionHeader>
+    <div class="grid-of-three">
+      <PrincipleCard
+        index="01"
+        title="Clarity over cleverness"
+        description="The best interface is usually the one that makes the next step feel obvious."
+      />
+      <PrincipleCard
+        index="02"
+        title="Fill out later"
+        description="Fill out later"
+      />
+      <PrincipleCard
+        index="03"
+        title="Fill out later"
+        description="Fill out later"
+      />
+    </div>
+  </section>
+  <section>
+    <SectionHeader
+      as="h2"
+      styleAs="h4"
+      eyebrow="On the innerwebs"
+      header="Let's connect"
+    >
+      <MessageCircle size={16} slot="icon" />
+      <p slot="action" class="meta">A few places I hang out</p>
+    </SectionHeader>
+    <div class="grid-of-three">
+      <SocialLinkCard
+        platform="LinkedIn"
+        handle="traekwells"
+        url="https://www.linkedin.com/in/traekwells/"
+      >
+        <Code size={20} slot="icon" />
+      </SocialLinkCard>
+      <SocialLinkCard
+        platform="YouTube"
+        handle="@theuilayer"
+        url="https://www.youtube.com/@theuilayer"
+      >
+        <Code size={20} slot="icon" />
+      </SocialLinkCard>
+    </div>
+  </section>
 </BaseLayout>
+
+<style>
+  .meta {
+    color: hsl(var(--color-text-light));
+    font-size: var(--font-size-xs);
+    font-family: var(--font-family-mono);
+  }
+</style>
