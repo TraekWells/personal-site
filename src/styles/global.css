@@ -310,6 +310,12 @@
     margin-block-start: 1rem;
   }
 
+  .grid-of-two {
+    display: grid;
+    gap: var(--space-xs);
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+
   .grid-of-three {
     display: grid;
     gap: var(--space-xs);
