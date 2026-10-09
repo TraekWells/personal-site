@@ -31,9 +31,15 @@ const { title, url, eyebrow, index } = Astro.props;
     padding-inline: var(--space-sm);
     overflow: hidden;
     min-height: 10rem;
+    transition: transform 300ms ease;
 
     &:hover {
       border-color: hsl(var(--color-primary-light));
+      transform: translateY(-3px);
+
+      .section-card__index {
+        transform: translate(5px, -3px);
+      }
     }
   }
   .section-card__index {
@@ -43,6 +49,7 @@ const { title, url, eyebrow, index } = Astro.props;
     font-size: var(--font-size-4xl);
     right: -0.5rem;
     top: -1rem;
+    transition: transform 300ms ease;
   }
 
   .section-card__meta {

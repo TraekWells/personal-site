@@ -11,10 +11,24 @@
     margin: 0;
   }
 
-  /* 3. Enable keyword animations */
+  /* 3. Enable keyword animations and turn off animations if preferred */
   @media (prefers-reduced-motion: no-preference) {
     html {
       interpolate-size: allow-keywords;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+      animation-delay: -1ms !important;
+      animation-duration: 1ms !important;
+      animation-iteration-count: 1 !important;
+      background-attachment: initial !important;
+      scroll-behavior: auto !important;
+      transition-duration: 0s !important;
+      transition-delay: 0s !important;
     }
   }
 
@@ -311,7 +325,7 @@
       line-height: var(--heading-3-line-height);
       font-weight: var(--heading-3-font-weight);
       letter-spacing: var(--heading-3-letter-spacing);
-      margin-block-start: var(--space-sm);
+      margin-block-start: var(--space-lg);
       color: hsl(var(--color-primary-darker));
       scroll-margin-top: 5rem;
     }

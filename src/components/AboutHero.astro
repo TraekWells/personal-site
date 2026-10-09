@@ -1,0 +1,133 @@
+---
+import { HeartHandshake, MapPin } from "@lucide/astro";
+import Eyebrow from "./Eyebrow.astro";
+import Pill from "./Pill.astro";
+import { Image } from "astro:assets";
+import image from "../assets/about-me-image.webp";
+---
+
+<div class="about-hero">
+  <div class="about-hero__content">
+    <Eyebrow><HeartHandshake size={16} /> About me</Eyebrow>
+    <h1 class="about-hero__title">Something cool to say here</h1>
+    <p>Something cool that's supporting here</p>
+    <div class="about-hero__meta">
+      <Pill>Web Developer</Pill>
+      <Pill>Husband & Father</Pill>
+      <Pill>Runner</Pill>
+    </div>
+  </div>
+  <div class="about-hero__image">
+    <div class="about-hero__image-wrapper">
+      <Image
+        src={image}
+        alt="Traek Wells standing in from of the capital building of Saint Paul, holding a 5k finisher medal"
+      />
+    </div>
+    <span class="location">
+      <MapPin size={16} /> Saint Paul, MN
+    </span>
+  </div>
+</div>
+
+<style>
+  .about-hero {
+    border: var(--thin-border);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-lg);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+    background-color: hsl(var(--color-primary-darkest));
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+
+    @media (width >= 850px) {
+      grid-template-columns: 2fr 1fr;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      z-index: 1;
+      top: -4rem;
+      right: -4rem;
+      height: 13rem;
+      width: 13rem;
+      border: 0.75rem solid hsla(var(--color-base-white), 0.4);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      z-index: -1;
+      bottom: -4rem;
+      left: -4rem;
+      height: 25rem;
+      width: 25rem;
+      border: 0.75rem solid hsla(var(--color-base-white), 0.2);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+  }
+
+  .about-hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+
+    .eyebrow,
+    h1,
+    p {
+      color: hsl(var(--color-primary-lightest));
+    }
+
+    h1 {
+      font-size: var(--font-size-5xl);
+      line-height: 0.9;
+    }
+  }
+
+  .about-hero__image {
+    align-self: end;
+    z-index: 2;
+    display: none;
+
+    @media (width >= 850px) {
+      display: block;
+    }
+  }
+
+  .about-hero__image-wrapper {
+    padding: var(--space-2xs);
+    border-radius: var(--border-radius-lg);
+    border: var(--thin-border);
+    background-color: hsla(var(--color-base-white), 0.2);
+    backdrop-filter: blur(3px);
+
+    img {
+      border-radius: var(--border-radius-md);
+      height: 100%;
+    }
+  }
+
+  .location {
+    background-color: hsl(var(--color-base-white));
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-3xs);
+    border-radius: var(--border-radius-sm);
+    padding: var(--space-3xs);
+    color: var(--color-text-light);
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-xs);
+  }
+
+  .about-hero__meta {
+    display: flex;
+    gap: var(--space-2xs);
+  }
+</style>
