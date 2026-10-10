@@ -1,19 +1,47 @@
 ---
 import type { HTMLAttributes } from "astro/types";
 
-type Props = HTMLAttributes<"button"> & {
+type BaseProps = {
   variant?: "primary" | "secondary" | "ghost";
 };
 
-const { variant, class: className, type = "button", ...rest } = Astro.props;
+type ButtonProps = BaseProps &
+  HTMLAttributes<"button"> & {
+    as?: "button";
+    href?: never;
+  };
+
+type AnchorProps = BaseProps &
+  Omit<HTMLAttributes<"a">, "href"> & {
+    as: "a";
+    href: string;
+  };
+
+type Props = ButtonProps | AnchorProps;
+
+const { as, variant, class: className, ...props } = Astro.props;
 ---
 
-<button type={type} data-variant={variant} class:list={[className]} {...rest}>
-  <slot />
-</button>
+{
+  as === "a" ? (
+    <a data-variant={variant} class:list={[className]} {...props}>
+      <slot />
+    </a>
+  ) : (
+    <button
+      type="button"
+      data-variant={variant}
+      class:list={[className]}
+      {...props}
+    >
+      <slot />
+    </button>
+  )
+}
 
 <style>
-  button {
+  button,
+  a {
     color: hsl(var(--color-base-white));
     display: inline-flex;
     align-items: center;
@@ -25,6 +53,8 @@ const { variant, class: className, type = "button", ...rest } = Astro.props;
     transition: var(--transition-slow);
     cursor: pointer;
     flex-shrink: 0;
+    text-decoration: none;
+    font-size: var(--font-size-base);
 
     svg {
       transition: var(--transition-slow);
