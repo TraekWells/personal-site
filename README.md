@@ -4,12 +4,11 @@
 
 - [ ] Add page level SEO
 - [ ] Add quote fetch https://zenquotes.io/api/random
-- [ ] Tighten up gap on SectionHeader
 - [ ] Add theme toggle
 - [ ] Add OG meta tags
 - [ ] Add sitemap
-- [ ] Figure out a way to re-download all of the book cover images
-- [ ] Update favicon
+- [x] Figure out a way to re-download all of the book cover images
+- [x] Update favicon
 - [ ] Make book rating respect decimal amounts. Currently rounds down.
 
 ## Questions

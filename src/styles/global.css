@@ -220,6 +220,7 @@
       system-ui,
       -apple-system,
       sans-serif;
+    color: hsl(var(--color-text));
   }
 
   h1 {
