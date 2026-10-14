@@ -1,14 +1,10 @@
 ---
-import { HeartHandshake } from "@lucide/astro";
-import Eyebrow from "./Eyebrow.astro";
-import Pill from "./Pill.astro";
 import { Image } from "astro:assets";
 import image from "../assets/about-me-image.webp";
 ---
 
 <div class="about-hero">
   <div class="about-hero__content">
-    <Eyebrow><HeartHandshake size={16} /> About me</Eyebrow>
     <h1 class="about-hero__title">
       Front-end developer who sweats the small stuff.
     </h1>
@@ -16,11 +12,7 @@ import image from "../assets/about-me-image.webp";
       Combining my love for tech, problem solving and design, being a web
       developer is a dream job.
     </p>
-    <div class="about-hero__meta">
-      <Pill>Web Developer</Pill>
-      <Pill>Husband & Father</Pill>
-      <Pill>Runner</Pill>
-    </div>
+    <span class="about-hero__meta">Web Developer, Husband & Dad, Runner</span>
   </div>
   <div class="about-hero__image">
     <div class="about-hero__image-wrapper">
@@ -72,7 +64,7 @@ import image from "../assets/about-me-image.webp";
       left: -4rem;
       height: 14rem;
       width: 14rem;
-      border: 0.75rem solid hsla(var(--color-base-white), 0.2);
+      border: 0.75rem solid hsla(var(--color-base-white), 0.15);
       border-radius: 50%;
       pointer-events: none;
     }
@@ -130,10 +122,15 @@ import image from "../assets/about-me-image.webp";
     font-size: var(--font-size-xs);
     top: calc(100% - var(--space-sm));
     left: 1.5rem;
+    letter-spacing: var(--letter-spacing-tight);
   }
 
   .about-hero__meta {
     display: flex;
     gap: var(--space-2xs);
+    color: hsla(var(--color-base-white), 0.85);
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-sm);
+    letter-spacing: var(--letter-spacing-tight);
   }
 </style>

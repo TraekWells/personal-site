@@ -1,5 +1,13 @@
 ---
-import { BookType, Code, Heart, MessageCircle } from "@lucide/astro";
+import {
+  BookType,
+  Code,
+  CodeXml,
+  Heart,
+  MessageCircle,
+  Video,
+} from "@lucide/astro";
+import Eyebrow from "../components/Eyebrow.astro";
 import AboutHero from "../components/AboutHero.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import SectionHeader from "../components/SectionHeader.astro";
@@ -14,14 +22,25 @@ import SocialLinkCard from "../components/SocialLinkCard.astro";
   <section>
     <AboutHero />
   </section>
-  <!-- <section>
-    <div class="grid-of-two">
-      <p class="lead">
-        Hello there. I'm Traek Wells, a front-end developer who loves learning
-        the intricacies of how things work.
-      </p>
+  <section>
+    <!-- Create a toggle that shows a short version and a longer version of my bio -->
+    <div class="grid-of-three">
+      <Eyebrow><CodeXml size={20} />About me</Eyebrow>
+      <div class="bio">
+        <p class="lead">
+          Howdy. I'm Traek Wells, a front-end developer who loves learning the
+          intricacies of how things work.
+        </p>
+        <p>
+          Outside of coding, I love testing the limits of my fitness in the form
+          of endurance sports (namely running). I'm learning how to play the
+          guitar and trying to get better at chess ♟️. Most importantly, I'm
+          doing my best to raise my two kids and be the best husband and role
+          model possible.
+        </p>
+      </div>
     </div>
-  </section> -->
+  </section>
   <section>
     <SectionHeader
       as="h2"
@@ -40,13 +59,13 @@ import SocialLinkCard from "../components/SocialLinkCard.astro";
       />
       <PrincipleCard
         index="02"
-        title="Fill out later"
-        description="Fill out later"
+        title="Take calculated risks"
+        description="Because life is way too short and unpredictable to play it safe."
       />
       <PrincipleCard
         index="03"
-        title="Fill out later"
-        description="Fill out later"
+        title="User first"
+        description="Accessible from step one, usable by all."
       />
     </div>
   </section>
@@ -73,7 +92,7 @@ import SocialLinkCard from "../components/SocialLinkCard.astro";
         handle="@theuilayer"
         url="https://www.youtube.com/@theuilayer"
       >
-        <Code size={20} slot="icon" />
+        <Video size={20} slot="icon" />
       </SocialLinkCard>
     </div>
   </section>
@@ -84,5 +103,24 @@ import SocialLinkCard from "../components/SocialLinkCard.astro";
     color: hsl(var(--color-text-light));
     font-size: var(--font-size-xs);
     font-family: var(--font-family-mono);
+  }
+
+  .bio {
+    grid-column: span 2;
+
+    .lead {
+      color: hsl(var(--color-primary-darkest));
+      font-size: var(--font-size-lg);
+      font-weight: var(--font-weight-bold);
+      line-height: var(--heading-4-line-height);
+    }
+
+    p {
+      font-size: var(--font-size-md);
+      color: hsla(var(--color-base-dark));
+    }
+    * + * {
+      margin-block-start: var(--space-sm);
+    }
   }
 </style>
