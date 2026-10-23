@@ -5,11 +5,13 @@ import Footer from "../components/Footer.astro";
 import { Font } from "astro:assets";
 
 type Props = {
-  metaTitle: string;
+  metaTitle?: string;
   metaDescription: string;
 };
 
 const { metaTitle, metaDescription } = Astro.props;
+const SITE_NAME = "Traek Wells";
+const fullTitle = metaTitle ? `${metaTitle} • ${SITE_NAME}` : SITE_NAME;
 ---
 
 <!doctype html>
@@ -23,7 +25,7 @@ const { metaTitle, metaDescription } = Astro.props;
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="generator" content={Astro.generator} />
-    <title>{metaTitle}</title>
+    <title>{fullTitle}</title>
     <meta name="description" content={metaDescription} />
     <Font cssVariable="--font-family-figtree" />
     <Font cssVariable="--font-family-mono" />

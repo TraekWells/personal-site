@@ -5,11 +5,10 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 
 const posts = await getCollection("today-i-learned");
-console.log(posts);
 ---
 
 <BaseLayout
-  metaTitle="Today I Learned • Traek Wells"
+  metaTitle="Today I Learned"
   metaDescription="Short notes on things I've picked up while building for the web, from CSS and JavaScript to accessibility."
 >
   <section>

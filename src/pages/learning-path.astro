@@ -1,0 +1,19 @@
+---
+import {
+  Content,
+  frontmatter,
+  getHeadings,
+} from "../content/frontend-skill-growth-plan.md";
+import BlogPostLayout from "../layouts/BlogPostLayout.astro";
+---
+
+<BlogPostLayout
+  title={frontmatter.title}
+  summary={frontmatter.summary}
+  draft={false}
+  createdAt={new Date(frontmatter.createdAt)}
+  id="learning-path"
+  headings={getHeadings()}
+>
+  <Content />
+</BlogPostLayout>

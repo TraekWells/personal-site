@@ -78,7 +78,7 @@
   h4,
   h5,
   h6 {
-    text-wrap: balance;
+    text-wrap: pretty;
   }
 
   /*
@@ -337,9 +337,12 @@
       line-height: var(--heading-3-line-height);
       font-weight: var(--heading-3-font-weight);
       letter-spacing: var(--heading-3-letter-spacing);
-      margin-block-start: var(--space-lg);
       color: hsl(var(--color-primary-darker));
       scroll-margin-top: 5rem;
+
+      &:not(:first-of-type) {
+        margin-block-start: var(--space-lg);
+      }
     }
     h3 {
       font-size: var(--font-size-lg);

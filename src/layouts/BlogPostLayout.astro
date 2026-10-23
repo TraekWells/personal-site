@@ -11,8 +11,8 @@ import ReadNext from "../components/ReadNext.astro";
 type Props = CollectionEntry<"blog" | "journal">["data"] & {
   id: string;
   headings: MarkdownHeading[];
-  readingTime: string;
-  nextPost: CollectionEntry<"blog" | "journal">;
+  readingTime?: string;
+  nextPost?: CollectionEntry<"blog" | "journal">;
 };
 
 const { id, title, summary, tags, createdAt, headings, readingTime, nextPost } =
@@ -22,7 +22,7 @@ const tag = tags && tags[0];
 ---
 
 <BaseLayout
-  metaTitle={`${title} • Traek Wells`}
+  metaTitle={title}
   metaDescription={summary || `Read "${title}" by Traek Wells.`}
 >
   <div class="post">
@@ -40,7 +40,7 @@ const tag = tags && tags[0];
           <PostHeader
             header={title}
             intro={summary}
-            readingTime={readingTime}
+            readingTime={readingTime && readingTime}
             date={date}
             tag={tag}
           />
@@ -51,7 +51,7 @@ const tag = tags && tags[0];
       </div>
     </section>
   </div>
-  <ReadNext post={nextPost} />
+  {nextPost && <ReadNext post={nextPost} />}
 </BaseLayout>
 
 <style>
