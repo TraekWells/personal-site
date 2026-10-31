@@ -1,4 +1,5 @@
 ---
+import { Quote } from "@lucide/astro";
 let quote = "The only way out is through.";
 let author = "Robert Frost";
 
@@ -15,5 +16,35 @@ try {
 }
 ---
 
-<p data-js-quote>{quote}</p>
-<p data-js-author>{author}</p>
+<blockquote>
+  <Quote
+    fill="hsl(var(--color-primary-dark))"
+    fill-opacity={0.4}
+    stroke={"none"}
+  />
+  <p class="quote" data-js-quote>"{quote}"</p>
+  <p class="author" data-js-author>- {author}</p>
+</blockquote>
+
+<style>
+  blockquote {
+    border: var(--thin-border);
+    border-radius: var(--border-radius-md);
+    background: hsl(var(--color-primary-lightest));
+    padding: var(--space-lg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+  }
+
+  .quote {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+  }
+
+  .author {
+    color: hsl(var(--color-base-dark));
+  }
+</style>
