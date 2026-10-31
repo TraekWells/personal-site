@@ -2,8 +2,8 @@
 
 ## Todos
 
-- [ ] Add page level SEO
-- [ ] Add quote fetch https://zenquotes.io/api/random
+- [x] Add page level SEO
+- [x] Add quote fetch https://zenquotes.io/api/random
 - [ ] Add theme toggle
 - [ ] Add OG meta tags
 - [ ] Add sitemap
