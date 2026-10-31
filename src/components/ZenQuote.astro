@@ -1,0 +1,19 @@
+---
+let quote = "The only way out is through.";
+let author = "Robert Frost";
+
+const api = "https://zenquotes.io/api/random";
+try {
+  const response = await fetch(api, { signal: AbortSignal.timeout(3000) });
+  if (response.ok) {
+    const [data] = await response.json();
+    quote = data.q;
+    author = data.a;
+  }
+} catch (error) {
+  console.error(error);
+}
+---
+
+<p data-js-quote>{quote}</p>
+<p data-js-author>{author}</p>

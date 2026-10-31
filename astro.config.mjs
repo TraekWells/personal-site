@@ -3,6 +3,8 @@ import { defineConfig, fontProviders } from "astro/config";
 
 import mdx from "@astrojs/mdx";
 
+import vercel from "@astrojs/vercel";
+
 // https://astro.build/config
 export default defineConfig({
   markdown: {
@@ -10,6 +12,7 @@ export default defineConfig({
       theme: "dracula",
     },
   },
+
   fonts: [
     {
       provider: fontProviders.fontsource(),
@@ -25,4 +28,5 @@ export default defineConfig({
   ],
 
   integrations: [mdx()],
+  adapter: vercel(),
 });
