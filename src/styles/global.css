@@ -350,6 +350,11 @@
       font-weight: var(--heading-4-font-weight);
       letter-spacing: var(--heading-4-letter-spacing);
     }
+    h4 {
+      font-size: var(--font-size-md);
+      line-height: var(--heading-4-line-height);
+      font-weight: var(--heading-4-font-weight);
+    }
 
     a {
       margin: unset;
